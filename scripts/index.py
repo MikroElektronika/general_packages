@@ -41,22 +41,6 @@ def get_headers(api, token):
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
         }
 
-# Function to fetch release details from GitHub
-def fetch_release_details(repo, token, version):
-    api_headers = get_headers(True, token)
-
-    if "latest" == version:
-        return support.get_latest_release(repo, api_headers), None
-    else:
-        release_check = None
-        release_check = support.get_specified_release(repo, api_headers, version)
-        if release_check:
-            return release_check, support.get_latest_release(repo, api_headers)
-        else:
-            ## Always fallback to latest release
-            print("WARNING: Falling back to LATEST release.")
-            return support.get_latest_release(repo, api_headers), None
-
 # Function to fetch content as JSON from the link
 def fetch_json_data(download_link, token):
     """
@@ -150,65 +134,30 @@ def resolve_publish_date(indexed_items, package_name):
     return None
 
 # Function to index release details into Elasticsearch
-def index_release_to_elasticsearch(es : Elasticsearch, index_name, release_details, token, keep_previous_date=False, templates_only=False):
+def index_release_to_elasticsearch(es, token, assets, index_names):
     necto_versions = {
-        'test': 'dev', ## Development NECTO version
-        'live': 'live', ## Live NECTO version
-        'experimental': 'experimental' ## Experimental NECTO version
+        os.environ['ES_INDEX_LIVE'] : 'dev',                  ## Development NECTO version
+        os.environ['ES_INDEX_TEST'] : 'live',                 ## Live NECTO version
+        os.environ['ES_INDEX_EXPERIMENTAL'] : 'experimental'  ## Experimental NECTO version
     }
 
-    # Get all currently indexed items
-    indexed_items = fetch_current_indexed_packages(es, index_name)
-    index_asset_names = []
-    for index_asset_name in indexed_items:
-        index_asset_names.append(index_asset_name['name'])
+    # Fetch metadata contents
+    metadata = support.fetch_release_metadata(assets, token)
 
-    # Iterate over each asset in the release and previous release
-    metadata_content = []
-    for each_release_details in release_details:
-        if each_release_details:
-            metadata_asset = next((a for a in each_release_details['assets'] if a['name'] == "metadata.json"), None)
-            if metadata_asset:
-                metadata_download_url = metadata_asset['url']
-                metadata_content.append(fetch_json_data(metadata_download_url, token)[0])
+    # Let's map all the items that we need to index with the index name
+    for index_name in index_names:
+        # Get all currently indexed items for this index
+        indexed_items = fetch_current_indexed_packages(es, index_name)
 
-    ## 0 is new one being indexed, 1 in previously indexed release
-    if 'mikrosdk' in metadata_content[0]:
-        version = metadata_content[0]['mikrosdk']['version']
-        version_index = check_from_index_version('mikrosdk', indexed_items)
-    else:
-        for asset in release_details[0].get('assets', []):
-            if 'mikrosdk.7z' == asset['name']:
-                # Download the current mikroSDK asset in order to read the version
-                support.extract_archive_from_url(
-                    asset['url'],
-                    os.path.join(os.path.dirname(__file__), 'tmp'),
-                    token
-                )
+        # Get all released assets for this index
+        for asset in assets:
+            doc = None
+            for indexed_item in indexed_items:
+                if asset['name'] == indexed_item['id']:
+                    # Found existing indexed item
+                    return
 
-                # Then fetch version from manifest file
-                version = support.fetch_version_from_asset(os.path.join(os.path.dirname(__file__), 'tmp'))
-                version_index = check_from_index_version('mikrosdk', indexed_items)
-                break
-
-    # Get the current time in UTC
-    current_time = datetime.now(timezone.utc).replace(microsecond=0)
-    # If you specifically want the 'Z' at the end instead of the offset
-    published_at = current_time.isoformat().replace('+00:00', 'Z')
-
-    # Set logger to display only fatal errors
-    logging.basicConfig(level=logging.FATAL)
-
-    cnt = 0
-    package_names = [{},{}]
-    for metadata in metadata_content:
-        for package in metadata['packages']:
-            package_names[cnt].update(
-                {metadata['packages'][package]['package_name']: metadata['packages'][package]['display_name']}
-            )
-        cnt += 1
-
-    for asset in release_details[0].get('assets', []):
+    for asset in assets:
         doc = None
         package_name = None
         name_without_extension = os.path.splitext(os.path.basename(asset['name']))[0]
@@ -534,13 +483,8 @@ if __name__ == '__main__':
 
     # Get arguments
     parser = argparse.ArgumentParser(description="Upload directories as release assets.")
-    parser.add_argument("repo", help="Repository name, e.g., 'username/repo'")
     parser.add_argument("token", help="GitHub Token")
-    parser.add_argument("release_version", help="Selected release version to index", type=str)
-    parser.add_argument("select_index", help="Provided index name")
-    parser.add_argument("promote_release_to_latest", help="Sets current release as latest", type=str2bool, default=False)
-    parser.add_argument("--keep_previous_dates", help="Repacks and uploads all packages with new copyright year, but keeps previous release dates.", type=str2bool, default=False)
-    parser.add_argument("--templates_only", help="Indexes only templates.", type=str2bool, default=False)
+    parser.add_argument("repo", help="Repository name, e.g., 'username/repo'")
     args = parser.parse_args()
 
     # Elasticsearch instance used for indexing
@@ -559,18 +503,21 @@ if __name__ == '__main__':
 
         time.sleep(1)
 
+    # Fetch current metadata contents
+    latest_release = support.get_latest_release(args.repo, args.token)
+    assets = support.get_release_assets(args.repo, latest_release['id'], args.token)
+
+    # Get all indexes to go through all of them recursively
+    index_names = [
+        os.environ['ES_INDEX_LIVE'],
+        os.environ['ES_INDEX_TEST'],
+        os.environ['ES_INDEX_EXPERIMENTAL']
+    ]
+
     # Now index the new release
     index_release_to_elasticsearch(
-        es, args.select_index,
-        fetch_release_details(args.repo, args.token, args.release_version),
+        es,
         args.token,
-        args.keep_previous_dates,
-        args.templates_only
+        assets,
+        index_names
     )
-
-    # And then promote to latest if requested
-    if (args.promote_release_to_latest):
-        # If current release isn't latest already
-        is_latest = is_release_latest(args.repo, args.token, args.release_version)
-        if (not is_latest):
-            promote_to_latest(args.repo, args.token, args.release_version)

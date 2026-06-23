@@ -191,7 +191,7 @@ def ensure_clean_output_dir(repo_root):
     return output_dir
 
 
-async def main(token, repo, necto_version):
+async def main(token, repo):
     repo_root = Path(os.getcwd()).resolve()
     # Clean the leftovers from previous runs if running it locally
     output_dir = ensure_clean_output_dir(repo_root)
@@ -224,7 +224,6 @@ if __name__ == "__main__":
     )
     parser.add_argument("token", help="GitHub token")
     parser.add_argument("repo", help="Repository name")
-    parser.add_argument("necto_version", help="NECTOStudio version (Live, Development or Experimental)")
     args = parser.parse_args()
 
-    asyncio.run(main(args.token, args.repo, args.necto_version))
+    asyncio.run(main(args.token, args.repo))

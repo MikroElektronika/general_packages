@@ -57,7 +57,7 @@ def fetch_release_metadata(assets, token):
 def delete_release_asset(asset, token):
     print(f"\033[93mDeleting existing asset: {asset['name']}\033[0m")
 
-    response = requests.delete(asset["url"], github_headers(token))
+    response = requests.delete(asset["url"], headers=github_headers(token))
     response.raise_for_status()
 
     print(f"\033[91mDeleted asset: {asset['name']}\033[0m")
