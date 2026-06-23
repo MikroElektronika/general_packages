@@ -29,12 +29,10 @@ def upload_changed_assets(token, repo, output_dir, metadata):
 
         return
 
-    existing_dependencies = existing_metadata.get("dependencies", {})
-
     changed_assets = []
 
     for archive_name, archive_metadata in metadata.items():
-        existing_archive_metadata = existing_dependencies.get(archive_name)
+        existing_archive_metadata = existing_metadata.get(archive_name)
         existing_asset = support.find_asset(assets, archive_name)
 
         if not existing_archive_metadata:
@@ -183,6 +181,19 @@ def package_utility_archives(repo_root, output_dir):
     return metadata_dependecies
 
 
+def package_image_archives(repo_root, output_dir):
+    metadata_dependecies = {}
+
+    for folder in ['images', 'images_sdk']:
+        archive_name = f"{folder}.7z"
+        archive_path = output_dir / archive_name
+        print(f"\033[94mCreating image archive: {archive_name}\033[0m")
+        create_7z_from_contents(repo_root / folder, archive_path)
+        metadata_dependecies[archive_name] = {"hash": hash_directory_contents(repo_root / folder)}
+
+    return metadata_dependecies
+
+
 def ensure_clean_output_dir(repo_root):
     output_dir = repo_root / "tmp" / "release_assets"
     if output_dir.exists():
@@ -209,6 +220,9 @@ async def main(token, repo):
 
     # Pack utils packages
     metadata.update(package_utility_archives(repo_root, output_dir))
+
+    # Pack images
+    metadata.update(package_image_archives(repo_root, output_dir))
 
     # Save metadata as a file
     with open(output_dir / "metadata.json", 'w') as metadata_file:
