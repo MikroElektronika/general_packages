@@ -51,3 +51,37 @@ jobs:
       - name: Package and upload changed assets
         run: |
           python -u scripts/package.py "${{ steps.app-token.outputs.token }}" "${{ github.repository }}"
+
+      - name: Build indexing dry-run message
+        env:
+          ES_HOST: ${{ secrets.ES_HOST }}
+          ES_USER: ${{ secrets.ES_USER }}
+          ES_PASSWORD: ${{ secrets.ES_PASSWORD }}
+          ES_INDEX_LIVE: ${{ secrets.ES_INDEX_LIVE }}
+          ES_INDEX_TEST: ${{ secrets.ES_INDEX_TEST }}
+          ES_INDEX_EXPERIMENTAL: ${{ secrets.ES_INDEX_EXPERIMENTAL }}
+        run: |
+          python -u scripts/index.py \
+            "${{ steps.app-token.outputs.token }}" \
+            "${{ github.repository }}" \
+            "${{ secrets.ES_INDEX_LIVE }}|${{ secrets.ES_INDEX_TEST }}|${{ secrets.ES_INDEX_EXPERIMENTAL }}" \
+            --dry-run "True"
+
+      - name: Notify Mattermost
+        env:
+          MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_WEBHOOK_URL_TEST }}
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          message = Path("message.md").read_text(encoding="utf-8")
+
+          with open("mattermost_payload.json", "w", encoding="utf-8") as f:
+              json.dump({"text": message}, f)
+          PY
+
+          curl -X POST \
+            -H "Content-Type: application/json" \
+            --data @mattermost_payload.json \
+            "$MATTERMOST_WEBHOOK_URL"

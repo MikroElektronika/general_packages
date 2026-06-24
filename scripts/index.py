@@ -4,6 +4,37 @@ import support
 from elasticsearch import Elasticsearch
 from datetime import datetime, timezone
 
+def write_dry_run_message(indexing_mapping):
+    index_names = {
+        os.environ['ES_INDEX_LIVE'] : 'Live',
+        os.environ['ES_INDEX_TEST'] : 'Development',
+        os.environ['ES_INDEX_EXPERIMENTAL'] : 'Experimental'
+    }
+    lines = []
+
+    lines.append("### General packages indexing info")
+    lines.append("")
+    lines.append("[Packaging](https://github.com/MikroElektronika/general_packages/releases/tag/general_packages_assets) finished successfully.")
+    lines.append("")
+    lines.append(
+        f"If you want to index mentioned packages, please use "
+        f"[Indexing workflow](https://github.com/MikroElektronika/general_packages/actions/workflows/index.yaml)."
+    )
+    lines.append("")
+
+    for index in indexing_mapping:
+        if len(indexing_mapping[index]):
+            lines.append(f"# {index_names[index]}")
+            for kibana_id, doc in index_names[index].items():
+                if '1.0.0' == doc['version']:
+                    lines.append(f"- **NEW** {doc['display_name']}")
+                else:
+                    lines.append(f"- **UPDATE** {doc['display_name']}")
+
+    if len(lines) > 7:
+        with open('message.md', 'w') as mattermost_message:
+            mattermost_message.write('\n'.join(lines))
+
 def increase_patch_version(version):
     parts = version.split(".")
 
@@ -16,7 +47,7 @@ def increase_patch_version(version):
 
 
 # Function to index release details into Elasticsearch
-def index_release_to_elasticsearch(es, token, assets, index_names):
+def index_release_to_elasticsearch(es, token, assets, index_names, dry_run=False):
     necto_versions = {
         os.environ['ES_INDEX_LIVE'] : 'live',
         os.environ['ES_INDEX_TEST'] : 'dev',
@@ -68,6 +99,10 @@ def index_release_to_elasticsearch(es, token, assets, index_names):
                 doc['version'] = '1.0.0'
                 indexing_mapping[index_name][kibana_id] = doc
 
+    # If it is dry run - create the Mattermost message file and finish without indexing
+    if dry_run:
+        write_dry_run_message(indexing_mapping)
+        return
 
     # Let's update/create all the items that we need to index for requested indexes
     for index_name in index_names:
@@ -106,6 +141,7 @@ if __name__ == '__main__':
     parser.add_argument("token", help="GitHub Token")
     parser.add_argument("repo", help="Repository name, e.g., 'username/repo'")
     parser.add_argument("index_names", help="Target index names divided by |")
+    parser.add_argument("--dry_run", help="Dry run flag with mattermost notification afterwards", type=str2bool, default=False)
     args = parser.parse_args()
 
     # Elasticsearch instance used for indexing
@@ -133,5 +169,6 @@ if __name__ == '__main__':
         es,
         args.token,
         assets,
-        args.index_names.split('|')
+        args.index_names.split('|'),
+        dry_run=args.dry_run
     )
