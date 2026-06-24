@@ -1,8 +1,0 @@
-{
-    "name": "necto-translations-zh_CN",
-    "version": "7.4.9.5",
-    "type": "translations",
-    "display_name": "Chinese Language Pack",
-    "author": "MikroElektronika",
-    "short_description": "NECTO Studio interface translation for 'zh_CN' (updatable without a new release)."
-}

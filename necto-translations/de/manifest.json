@@ -1,8 +1,0 @@
-{
-    "name": "necto-translations-de",
-    "version": "7.4.9.5",
-    "type": "translations",
-    "display_name": "German Language Pack",
-    "author": "MikroElektronika",
-    "short_description": "NECTO Studio interface translation for 'de' (updatable without a new release)."
-}
