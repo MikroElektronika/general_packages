@@ -65,12 +65,17 @@ jobs:
             "${{ steps.app-token.outputs.token }}" \
             "${{ github.repository }}" \
             "${{ secrets.ES_INDEX_LIVE }}|${{ secrets.ES_INDEX_TEST }}|${{ secrets.ES_INDEX_EXPERIMENTAL }}" \
-            --dry-run "True"
+            --dry_run "True"
 
       - name: Notify Mattermost
         env:
           MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_WEBHOOK_URL_TEST }}
         run: |
+          if [ ! -f "message.md" ]; then
+            echo "message.md does not exist. Skipping Mattermost notification."
+            exit 0
+          fi
+
           python - <<'PY'
           import json
           from pathlib import Path
