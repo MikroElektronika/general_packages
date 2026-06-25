@@ -69,7 +69,7 @@ jobs:
 
       - name: Notify Mattermost
         env:
-          MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_WEBHOOK_URL_TEST }}
+          MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_WEBHOOK_URL_GENERAL_PACKAGES }}
         run: |
           if [ ! -f "message.md" ]; then
             echo "message.md does not exist. Skipping Mattermost notification."
