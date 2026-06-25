@@ -14,7 +14,7 @@ def write_dry_run_message(indexing_mapping):
 
     lines.append("### General packages indexing info")
     lines.append("")
-    lines.append("[Packaging](https://github.com/MikroElektronika/general_packages/releases/tag/general_packages_assets) finished successfully.")
+    lines.append("There are [packages](https://github.com/MikroElektronika/general_packages/releases/tag/general_packages_assets) that will be indexed with the next indexing workflow trigger.")
     lines.append("")
     lines.append(
         f"If you want to index mentioned packages, please use "
