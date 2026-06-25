@@ -25,7 +25,7 @@ def write_dry_run_message(indexing_mapping):
     for index in indexing_mapping:
         if len(indexing_mapping[index]):
             lines.append(f"# {index_names[index]}")
-            for kibana_id, doc in index_names[index].items():
+            for kibana_id, doc in indexing_mapping[index].items():
                 if '1.0.0' == doc['version']:
                     lines.append(f"- **NEW** {doc['display_name']}")
                 else:
