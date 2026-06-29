@@ -49,6 +49,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
         with:
+          ref: necto-asssitant-translation-integration
           token: ${{ steps.app-token.outputs.token }}
 
       - name: Set up Python
