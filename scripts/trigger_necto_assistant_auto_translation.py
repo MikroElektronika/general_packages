@@ -12,11 +12,39 @@ from typing import Any
 import requests
 
 
-URLS = {
-    "live": "https://nectoassistant.mikroe.com/api/v1/necto-assistant-config/runtime-language/auto-translate",
-    "dev": "https://nectoassistant.mikroe.dev/api/v1/necto-assistant-config/runtime-language/auto-translate",
+URL_ENV_NAMES = {
+    "live": "NECTO_ASSISTANT_AUTO_TRANSLATE_URL_LIVE",
+    "dev": "NECTO_ASSISTANT_AUTO_TRANSLATE_URL_DEV",
 }
 
+SUPPORTED_ENVS = set(URL_ENV_NAMES)
+
+
+def load_auto_translate_urls(required_envs: list[str]) -> dict[str, str]:
+    urls: dict[str, str] = {}
+    missing: list[str] = []
+
+    for env in required_envs:
+        env_name = URL_ENV_NAMES.get(env)
+
+        if not env_name:
+            continue
+
+        url = os.environ.get(env_name, "").strip()
+
+        if not url:
+            missing.append(env_name)
+            continue
+
+        urls[env] = url
+
+    if missing:
+        raise RuntimeError(
+            "Missing NECTO Assistant auto-translation URL env variable(s): "
+            + ", ".join(missing)
+        )
+
+    return urls
 
 def load_targets(path: str) -> dict[str, list[str]]:
     target_path = Path(path)
@@ -32,7 +60,7 @@ def load_targets(path: str) -> dict[str, list[str]]:
     result = {}
 
     for env, locales in data.items():
-        if env not in URLS or not isinstance(locales, list):
+        if env not in SUPPORTED_ENVS or not isinstance(locales, list):
             continue
 
         clean_locales = []
@@ -60,6 +88,7 @@ def trigger_locale(
     env: str,
     locale: str,
     token: str | None,
+    urls: dict[str, str],
     interval_seconds: int,
     request_timeout_seconds: int,
     max_wait_minutes: int,
@@ -72,7 +101,7 @@ def trigger_locale(
     if token:
         headers["Authorization"] = f"Bearer {token}"
 
-    url = URLS[env]
+    url = urls[env]
     started_at = time.monotonic()
     attempt = 0
 
@@ -208,12 +237,15 @@ def main() -> None:
         print("[NECTO ASSISTANT] No auto-translation targets. Skipping.")
         return
 
+    urls = load_auto_translate_urls(list(targets.keys()))
+
     for env in ["dev", "live"]:
         for locale in targets.get(env, []):
             trigger_locale(
                 env=env,
                 locale=locale,
                 token=args.token,
+                urls=urls,
                 interval_seconds=max(5, args.interval_seconds),
                 request_timeout_seconds=max(5, args.request_timeout_seconds),
                 max_wait_minutes=args.max_wait_minutes,

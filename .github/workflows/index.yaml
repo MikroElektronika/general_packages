@@ -71,7 +71,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
         with:
-          ref: necto-asssitant-translation-integration
           token: ${{ steps.app-token.outputs.token }}
 
       - name: Set up Python
@@ -157,6 +156,8 @@ jobs:
       - name: Trigger NECTO Assistant language auto-generation
         env:
           NECTO_ASSISTANT_AUTO_TRANSLATE_TOKEN: ${{ secrets.NECTO_ASSISTANT_AUTO_TRANSLATE_TOKEN }}
+          NECTO_ASSISTANT_AUTO_TRANSLATE_URL_LIVE: ${{ secrets.NECTO_ASSISTANT_AUTO_TRANSLATE_URL_LIVE }}
+          NECTO_ASSISTANT_AUTO_TRANSLATE_URL_DEV: ${{ secrets.NECTO_ASSISTANT_AUTO_TRANSLATE_URL_DEV }}
 
           NECTO_ASSISTANT_IMPORT_PR_TOKEN: ${{ steps.necto-assistant-app-token.outputs.token }}
           NECTO_ASSISTANT_IMPORT_PR_REPO: MikroElektronika/${{ secrets.NECTO_ASSISTANT_REPO_NAME }}
