@@ -1,8 +1,89 @@
 import os, time, argparse
 import support
 
+import json
+import re
+from pathlib import Path
+
 from elasticsearch import Elasticsearch
 from datetime import datetime, timezone
+
+
+# # # # # # # # # #
+# NECTO Assistnat language packs/translations support
+# # # # # # # # # #
+
+LOCALIZATION_PACKAGE_RE = re.compile(
+    r"^localization_([a-zA-Z]{2,3})_([a-zA-Z0-9]{2,8})\.(zip|7z)$"
+)
+
+
+def locale_from_localization_package(asset_name):
+    match = LOCALIZATION_PACKAGE_RE.match(asset_name or "")
+
+    if not match:
+        return None
+
+    return f"{match.group(1).lower()}-{match.group(2).upper()}"
+
+
+def necto_assistant_env_for_index(index_name):
+    if index_name == os.environ["ES_INDEX_LIVE"]:
+        return "live"
+
+    if index_name in {
+        os.environ["ES_INDEX_TEST"],
+        os.environ["ES_INDEX_EXPERIMENTAL"],
+    }:
+        return "dev"
+
+    return None
+
+
+def add_necto_assistant_translation_target(targets, index_name, asset_name):
+    locale = locale_from_localization_package(asset_name)
+
+    if not locale:
+        return
+
+    assistant_env = necto_assistant_env_for_index(index_name)
+
+    if not assistant_env:
+        return
+
+    targets.setdefault(assistant_env, set()).add(locale)
+
+
+def write_necto_assistant_translation_targets(targets):
+    output_dir = Path("tmp")
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    payload = {
+        env: sorted(locales)
+        for env, locales in targets.items()
+        if locales
+    }
+
+    path = output_dir / "necto_assistant_auto_translation_targets.json"
+
+    path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=4) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
+
+    print("")
+    print("\033[94mNECTO Assistant auto-translation targets:\033[0m")
+
+    if not payload:
+        print("  none")
+        return
+
+    for env, locales in payload.items():
+        print(f"  {env}: {', '.join(locales)}")
+
+# # # # # # # # # #
+
 
 def write_dry_run_message(indexing_mapping):
     index_names = {
@@ -60,6 +141,13 @@ def index_release_to_elasticsearch(es, token, assets, index_names, dry_run=False
         os.environ['ES_INDEX_EXPERIMENTAL'] : {}
     }
 
+    # NECTO Assistant:
+    necto_assistant_auto_translation_targets = {
+        "dev": set(),
+        "live": set(),
+    }
+    # # # # # # # # # #
+
     # Get the current time in UTC
     current_time = datetime.now(timezone.utc).replace(microsecond=0)
     # If you specifically want the 'Z' at the end instead of the offset
@@ -95,9 +183,31 @@ def index_release_to_elasticsearch(es, token, assets, index_names, dry_run=False
                 if doc['hash'] != indexed_item['hash']:
                     doc['version'] = increase_patch_version(indexed_item['version'])
                     indexing_mapping[index_name][kibana_id] = doc
+
+                    # NECTO Assistant:
+                    add_necto_assistant_translation_target(
+                        necto_assistant_auto_translation_targets,
+                        index_name,
+                        asset['name'],
+                    )
+                    # # # # # # # # # #
             else:
                 doc['version'] = '1.0.0'
                 indexing_mapping[index_name][kibana_id] = doc
+
+                # NECTO Assistant:
+                add_necto_assistant_translation_target(
+                    necto_assistant_auto_translation_targets,
+                    index_name,
+                    asset['name'],
+                )
+                # # # # # # # # # #
+
+    # NECTO Assistant:
+    write_necto_assistant_translation_targets(
+        necto_assistant_auto_translation_targets
+    )
+    # # # # # # # # # #
 
     # If it is dry run - create the Mattermost message file and finish without indexing
     if dry_run:
