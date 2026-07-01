@@ -4048,7 +4048,7 @@ Do you wish to override the security check and continue ?   </source>
         <translation type="unfinished">选择 NECTO Studio 界面语言。重启后生效。</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+13" />
         <source>Enable animations</source>
         <translation>启用动画</translation>
     </message>
@@ -6848,7 +6848,7 @@ li.checked::marker { content: "\2612"; }
     <message>
         <location filename="../plugins/mattermost_client/src/mattermost_view.ui" line="+14" />
         <source>Form</source>
-        <translation type="unfinished">表单</translation>
+        <translation>表单</translation>
     </message>
 </context>
 <context>
@@ -13190,6 +13190,20 @@ li.checked::marker { content: "\2612"; }
     </message>
 </context>
 <context>
+    <name>Necto::Mattermost</name>
+    <message>
+        <source>NECTO Chat</source>
+        <translation>NECTO 聊天</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::MattermostView</name>
+    <message>
+        <source>Form</source>
+        <translation type="obsolete">表单</translation>
+    </message>
+</context>
+<context>
     <name>Necto::McuSettingsView</name>
     <message>
         <source>Frame</source>
@@ -13851,7 +13865,7 @@ li.checked::marker { content: "\2612"; }
         <translation>正在登录您的账户...</translation>
     </message>
     <message>
-        <location line="+45" />
+        <location line="+44" />
         <source>Loading packages...</source>
         <translation>正在加载软件包...</translation>
     </message>
@@ -13901,7 +13915,7 @@ li.checked::marker { content: "\2612"; }
         <translation>关于 NECTO Studio</translation>
     </message>
     <message>
-        <location line="+181" />
+        <location line="+192" />
         <source>Loading modules...</source>
         <translation>正在加载模块...</translation>
     </message>
@@ -20260,7 +20274,12 @@ Please, check your spelling.</source>
         <translation>一切就绪。下一步要做什么？</translation>
     </message>
     <message>
-        <location line="+93" />
+        <location line="+65" />
+        <source>Create example that combines %1</source>
+        <translation>创建组合 %1 的示例</translation>
+    </message>
+    <message>
+        <location line="+28" />
         <source> on %1</source>
         <translation>，位于 %1</translation>
     </message>
@@ -20270,7 +20289,12 @@ Please, check your spelling.</source>
         <translation>创建一个示例，将来自 %1 的数据显示在 %2%3 上。确保开发板已初始化并包含正确的中断例程</translation>
     </message>
     <message>
-        <location line="+61" />
+        <location line="+18" />
+        <source>%1 on %2</source>
+        <translation>%2 上的 %1</translation>
+    </message>
+    <message>
+        <location line="+43" />
         <source>This feature is available only when a project is open.</source>
         <translation>此功能仅在项目打开时可用。</translation>
     </message>
@@ -25287,17 +25311,17 @@ Do you want to reload the page ?</source>
     </message>
     <message>
         <location line="+36" />
-        <location line="+144" />
+        <location line="+148" />
         <source>Productivity Hub</source>
         <translation>生产力中心</translation>
     </message>
     <message>
-        <location line="-142" />
+        <location line="-146" />
         <source>Quick access to most important tools to boost your productivity.</source>
         <translation>快速访问最重要的工具，提高您的工作效率。</translation>
     </message>
     <message>
-        <location line="+84" />
+        <location line="+88" />
         <source>Package manager</source>
         <translation>包管理器</translation>
     </message>
@@ -25499,22 +25523,6 @@ Do you want to reload the page ?</source>
         <location line="+6" />
         <source>Configure %1:</source>
         <translation>配置 %1：</translation>
-    </message>
-</context>
-<context>
-    <name>Necto::MattermostView</name>
-    <message>
-        <location filename="../plugins/mattermost_client/src/mattermost_view.ui" line="+14" />
-        <source>Form</source>
-        <translation type="unfinished">表单</translation>
-    </message>
-</context>
-<context>
-    <name>Necto::Mattermost</name>
-    <message>
-        <location filename="../plugins/mattermost_client/src/mattermost.cpp" line="+25" />
-        <source>NECTO Chat</source>
-        <translation>NECTO 聊天</translation>
     </message>
 </context>
 <context>

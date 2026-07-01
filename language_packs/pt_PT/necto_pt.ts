@@ -4048,7 +4048,7 @@ Deseja ignorar a verificação de segurança e continuar?   </translation>
         <translation type="unfinished">Escolha o idioma da interface do NECTO Studio. Entra em vigor após reiniciar.</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+13" />
         <source>Enable animations</source>
         <translation>Ativar animações</translation>
     </message>
@@ -6848,7 +6848,7 @@ li.checked::marker { content: "\2612"; }
     <message>
         <location filename="../plugins/mattermost_client/src/mattermost_view.ui" line="+14" />
         <source>Form</source>
-        <translation type="unfinished">Formulário</translation>
+        <translation>Formulário</translation>
     </message>
 </context>
 <context>
@@ -13190,6 +13190,20 @@ li.checked::marker { content: "\2612"; }
     </message>
 </context>
 <context>
+    <name>Necto::Mattermost</name>
+    <message>
+        <source>NECTO Chat</source>
+        <translation>Chat NECTO</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::MattermostView</name>
+    <message>
+        <source>Form</source>
+        <translation type="obsolete">Formulário</translation>
+    </message>
+</context>
+<context>
     <name>Necto::McuSettingsView</name>
     <message>
         <source>Frame</source>
@@ -13851,7 +13865,7 @@ li.checked::marker { content: "\2612"; }
         <translation>Entrando na sua conta...</translation>
     </message>
     <message>
-        <location line="+45" />
+        <location line="+44" />
         <source>Loading packages...</source>
         <translation>Carregando pacotes...</translation>
     </message>
@@ -13901,7 +13915,7 @@ li.checked::marker { content: "\2612"; }
         <translation>Sobre o NECTO Studio</translation>
     </message>
     <message>
-        <location line="+181" />
+        <location line="+192" />
         <source>Loading modules...</source>
         <translation>Carregando módulos...</translation>
     </message>
@@ -20260,7 +20274,12 @@ Verifique a ortografia.</translation>
         <translation>Tudo pronto. Qual é o próximo passo?</translation>
     </message>
     <message>
-        <location line="+93" />
+        <location line="+65" />
+        <source>Create example that combines %1</source>
+        <translation>Criar exemplo que combine %1</translation>
+    </message>
+    <message>
+        <location line="+28" />
         <source> on %1</source>
         <translation> em %1</translation>
     </message>
@@ -20270,7 +20289,12 @@ Verifique a ortografia.</translation>
         <translation>Crie um exemplo onde os dados de %1 sejam exibidos em %2%3. Certifique-se de que a placa esteja inicializada e que as rotinas de interrupção adequadas estejam incluídas</translation>
     </message>
     <message>
-        <location line="+61" />
+        <location line="+18" />
+        <source>%1 on %2</source>
+        <translation>%1 em %2</translation>
+    </message>
+    <message>
+        <location line="+43" />
         <source>This feature is available only when a project is open.</source>
         <translation>Este recurso está disponível apenas quando um projeto está aberto.</translation>
     </message>
@@ -25287,17 +25311,17 @@ Deseja recarregar a página?</translation>
     </message>
     <message>
         <location line="+36" />
-        <location line="+144" />
+        <location line="+148" />
         <source>Productivity Hub</source>
         <translation>Hub de Produtividade</translation>
     </message>
     <message>
-        <location line="-142" />
+        <location line="-146" />
         <source>Quick access to most important tools to boost your productivity.</source>
         <translation>Acesso rápido às ferramentas mais importantes para aumentar sua produtividade.</translation>
     </message>
     <message>
-        <location line="+84" />
+        <location line="+88" />
         <source>Package manager</source>
         <translation>Gerenciador de pacotes</translation>
     </message>
@@ -25499,22 +25523,6 @@ Deseja recarregar a página?</translation>
         <location line="+6" />
         <source>Configure %1:</source>
         <translation>Configurar %1:</translation>
-    </message>
-</context>
-<context>
-    <name>Necto::MattermostView</name>
-    <message>
-        <location filename="../plugins/mattermost_client/src/mattermost_view.ui" line="+14" />
-        <source>Form</source>
-        <translation type="unfinished">Formulário</translation>
-    </message>
-</context>
-<context>
-    <name>Necto::Mattermost</name>
-    <message>
-        <location filename="../plugins/mattermost_client/src/mattermost.cpp" line="+25" />
-        <source>NECTO Chat</source>
-        <translation>Chat NECTO</translation>
     </message>
 </context>
 <context>

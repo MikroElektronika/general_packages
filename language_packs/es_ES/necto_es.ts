@@ -4047,7 +4047,7 @@ Do you wish to override the security check and continue ?   </source>
         <translation type="unfinished">Elija el idioma de la interfaz de NECTO Studio. Surte efecto tras reiniciar.</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+13" />
         <source>Enable animations</source>
         <translation>Habilitar animaciones</translation>
     </message>
@@ -12656,6 +12656,13 @@ Do you wish to override the security check and continue ?   </source>
     </message>
 </context>
 <context>
+    <name>Necto::Mattermost</name>
+    <message>
+        <source>NECTO Chat</source>
+        <translation>Chat NECTO</translation>
+    </message>
+</context>
+<context>
     <name>Necto::McuSettingsView</name>
     <message>
         <source>Frame</source>
@@ -13285,7 +13292,7 @@ Do you wish to override the security check and continue ?   </source>
         <translation>Iniciando sesión en su cuenta...</translation>
     </message>
     <message>
-        <location line="+45" />
+        <location line="+44" />
         <source>Loading packages...</source>
         <translation>Cargando paquetes...</translation>
     </message>
@@ -13335,7 +13342,7 @@ Do you wish to override the security check and continue ?   </source>
         <translation>Acerca de NECTO Studio</translation>
     </message>
     <message>
-        <location line="+181" />
+        <location line="+192" />
         <source>Loading modules...</source>
         <translation>Cargando módulos...</translation>
     </message>
@@ -19172,7 +19179,12 @@ Compruebe la ortografía.</translation>
         <translation>Todo listo. ¿Cuál es su siguiente paso?</translation>
     </message>
     <message>
-        <location line="+93" />
+        <location line="+65" />
+        <source>Create example that combines %1</source>
+        <translation>Crear ejemplo que combine %1</translation>
+    </message>
+    <message>
+        <location line="+28" />
         <source> on %1</source>
         <translation> en %1</translation>
     </message>
@@ -19182,7 +19194,12 @@ Compruebe la ortografía.</translation>
         <translation>Cree un ejemplo donde los datos de %1 se muestren en %2%3. Asegúrese de que la placa esté inicializada y de que se incluyan las rutinas de interrupción adecuadas</translation>
     </message>
     <message>
-        <location line="+61" />
+        <location line="+18" />
+        <source>%1 on %2</source>
+        <translation>%1 en %2</translation>
+    </message>
+    <message>
+        <location line="+43" />
         <source>This feature is available only when a project is open.</source>
         <translation>Esta función solo está disponible cuando hay un proyecto abierto.</translation>
     </message>
@@ -24195,17 +24212,17 @@ Do you want to reload the page ?</source>
     </message>
     <message>
         <location line="+36" />
-        <location line="+144" />
+        <location line="+148" />
         <source>Productivity Hub</source>
         <translation>Centro de productividad</translation>
     </message>
     <message>
-        <location line="-142" />
+        <location line="-146" />
         <source>Quick access to most important tools to boost your productivity.</source>
         <translation>Acceso rápido a las herramientas más importantes para aumentar su productividad.</translation>
     </message>
     <message>
-        <location line="+84" />
+        <location line="+88" />
         <source>Package manager</source>
         <translation>Gestor de paquetes</translation>
     </message>
@@ -24410,54 +24427,49 @@ Do you want to reload the page ?</source>
     </message>
 </context>
 <context>
-    <name>Necto::EditorSettingsPage</name>
+    <name>Necto::MattermostView</name>
     <message>
-        <location filename="../core/src/settings_manager/editor_settings_page.ui" line="+14" />
+        <location filename="../plugins/mattermost_client/src/mattermost_view.ui" line="+14" />
         <source>Form</source>
         <translation type="unfinished" />
     </message>
 </context>
 <context>
-    <name>Necto::Mattermost</name>
+    <name>Necto::DatabaseManager</name>
     <message>
-        <location filename="../plugins/mattermost_client/src/mattermost.cpp" line="+25" />
-        <source>NECTO Chat</source>
-        <translation>Chat NECTO</translation>
-    </message>
-</context>
-<context>
-    <name>Necto::PackageUpdateItem</name>
-    <message>
-        <location filename="../core/src/package_manager/view/package_update_item.ui" line="+62" />
-        <location line="+7" />
-        <source>TextLabel</source>
+        <location filename="../interfaces/src/database_manager/database_manager.cpp" line="+668" />
+        <source>Database Error</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../core/src/package_manager/view/package_update_item.cpp" line="+41" />
-        <source>v. %1</source>
+        <location line="+1" />
+        <source>Failed to initialize the database.</source>
         <translation type="unfinished" />
     </message>
 </context>
 <context>
-    <name>Necto::CloudChartGraphicDataView</name>
+    <name>Necto::LVGLResourcesView</name>
     <message>
-        <location filename="../core/src/output/cloud_chart/cloud_chart_graphic_data_view.ui" line="+14" />
+        <location filename="../plugins/editors/lvgl_designer_editor_v9/src/view/lvgl_resources_view.ui" line="+14" />
+        <location filename="../plugins/editors/lvgl_designer_editor_v8/src/view/lvgl_resources_view.ui" line="+14" />
         <source>Form</source>
         <translation type="unfinished" />
     </message>
 </context>
 <context>
-    <name>Necto::SimpleFloatingFrame</name>
+    <name>MemoryOverlayDialog</name>
     <message>
-        <location filename="../common/widgets/src/simple_floating_frame/simple_floating_frame.ui" line="+20" />
-        <location line="+33" />
-        <source>Click here to reset zoom</source>
+        <location filename="../core/src/memory_view/memory_overlay_dialog.cpp" line="+156" />
+        <location line="+4" />
+        <source>—</source>
         <translation type="unfinished" />
     </message>
+</context>
+<context>
+    <name>Necto::StepFrame</name>
     <message>
-        <location line="+3" />
-        <source>TextLabel</source>
+        <location filename="../core/src/project_explorer/view/step_frame.ui" line="+14" />
+        <source>Form</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -24478,23 +24490,6 @@ Do you want to reload the page ?</source>
     </message>
 </context>
 <context>
-    <name>MemoryOverlayDialog</name>
-    <message>
-        <location filename="../core/src/memory_view/memory_overlay_dialog.cpp" line="+156" />
-        <location line="+4" />
-        <source>—</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::ProjectEditPage</name>
-    <message>
-        <location filename="../core/src/project_explorer/view/project_edit_page.ui" line="+14" />
-        <source>WizardPage</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
     <name>Necto::RedPitayaView</name>
     <message>
         <location filename="../core/src/planet_debug/view/red_pitaya_view.ui" line="+14" />
@@ -24503,32 +24498,16 @@ Do you want to reload the page ?</source>
     </message>
 </context>
 <context>
-    <name>Necto::MattermostView</name>
+    <name>Necto::SimpleFloatingFrame</name>
     <message>
-        <location filename="../plugins/mattermost_client/src/mattermost_view.ui" line="+14" />
-        <source>Form</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::LVGLResourcesView</name>
-    <message>
-        <location filename="../plugins/editors/lvgl_designer_editor_v9/src/view/lvgl_resources_view.ui" line="+14" />
-        <location filename="../plugins/editors/lvgl_designer_editor_v8/src/view/lvgl_resources_view.ui" line="+14" />
-        <source>Form</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::DatabaseManager</name>
-    <message>
-        <location filename="../interfaces/src/database_manager/database_manager.cpp" line="+668" />
-        <source>Database Error</source>
+        <location filename="../common/widgets/src/simple_floating_frame/simple_floating_frame.ui" line="+20" />
+        <location line="+33" />
+        <source>Click here to reset zoom</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location line="+1" />
-        <source>Failed to initialize the database.</source>
+        <location line="+3" />
+        <source>TextLabel</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -24546,9 +24525,39 @@ Do you want to reload the page ?</source>
     </message>
 </context>
 <context>
-    <name>Necto::StepFrame</name>
+    <name>Necto::CloudChartGraphicDataView</name>
     <message>
-        <location filename="../core/src/project_explorer/view/step_frame.ui" line="+14" />
+        <location filename="../core/src/output/cloud_chart/cloud_chart_graphic_data_view.ui" line="+14" />
+        <source>Form</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::ProjectEditPage</name>
+    <message>
+        <location filename="../core/src/project_explorer/view/project_edit_page.ui" line="+14" />
+        <source>WizardPage</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::PackageUpdateItem</name>
+    <message>
+        <location filename="../core/src/package_manager/view/package_update_item.ui" line="+62" />
+        <location line="+7" />
+        <source>TextLabel</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/package_manager/view/package_update_item.cpp" line="+41" />
+        <source>v. %1</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::EditorSettingsPage</name>
+    <message>
+        <location filename="../core/src/settings_manager/editor_settings_page.ui" line="+14" />
         <source>Form</source>
         <translation type="unfinished" />
     </message>
