@@ -6865,27 +6865,27 @@ li.checked::marker { content: "\2612"; }
     <message>
         <location filename="../plugins/mattermost_client/src/mattermost_view.cpp" line="+779" />
         <source>Initializing NECTO Chat</source>
-        <translation type="unfinished" />
+        <translation>Inicializando NECTO Chat</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Connecting to the chat service. This will only take a moment…</source>
-        <translation type="unfinished" />
+        <translation>Conectando al servicio de chat. Esto solo tomará un momento…</translation>
     </message>
     <message>
         <location line="+15" />
         <source>NECTO Chat is unavailable</source>
-        <translation type="unfinished" />
+        <translation>NECTO Chat no está disponible</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The chat service could not be reached. It may be temporarily down or under maintenance. Please try again in a few minutes.</source>
-        <translation type="unfinished" />
+        <translation>No se pudo conectar con el servicio de chat. Puede estar temporalmente fuera de servicio o en mantenimiento. Vuelva a intentarlo en unos minutos.</translation>
     </message>
     <message>
         <location line="+31" />
         <source>Retry</source>
-        <translation type="unfinished">Reintentar</translation>
+        <translation>Reintentar</translation>
     </message>
 </context>
 <context>
@@ -11377,7 +11377,7 @@ Do you wish to override the security check and continue ?   </source>
         <source>Please wait while packages are being installed...</source>
         <translation>Espere mientras se instalan los paquetes...</translation>
     </message>
-</context>
+<message><source>Downloading</source><translation>Descargando</translation></message><message><source>Unpacking</source><translation>Descomprimiendo</translation></message><message><source>Updating installation record</source><translation>Actualizando el registro de instalación</translation></message><message><source>%1 %2...</source><translation>%1 %2...</translation></message></context>
 <context>
     <name>Necto::InterruptAssistant</name>
     <message>
@@ -24595,27 +24595,27 @@ Do you want to reload the page ?</source>
     <message>
         <location filename="../plugins/mattermost_client/src/mattermost_view.cpp" line="+779" />
         <source>Initializing NECTO Chat</source>
-        <translation type="unfinished" />
+        <translation>Inicializando NECTO Chat</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Connecting to the chat service. This will only take a moment…</source>
-        <translation type="unfinished" />
+        <translation>Conectando al servicio de chat. Esto solo tomará un momento…</translation>
     </message>
     <message>
         <location line="+15" />
         <source>NECTO Chat is unavailable</source>
-        <translation type="unfinished" />
+        <translation>NECTO Chat no está disponible</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The chat service could not be reached. It may be temporarily down or under maintenance. Please try again in a few minutes.</source>
-        <translation type="unfinished" />
+        <translation>No se pudo conectar con el servicio de chat. Puede estar temporalmente fuera de servicio o en mantenimiento. Vuelva a intentarlo en unos minutos.</translation>
     </message>
     <message>
         <location line="+31" />
         <source>Retry</source>
-        <translation type="unfinished">Reintentar</translation>
+        <translation>Reintentar</translation>
     </message>
 </context>
 <context>

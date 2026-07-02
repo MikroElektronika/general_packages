@@ -6873,27 +6873,27 @@ li.checked::marker { content: "\2612"; }
     <message>
         <location filename="../plugins/mattermost_client/src/mattermost_view.cpp" line="+779" />
         <source>Initializing NECTO Chat</source>
-        <translation type="unfinished" />
+        <translation>正在初始化 NECTO Chat</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Connecting to the chat service. This will only take a moment…</source>
-        <translation type="unfinished" />
+        <translation>正在连接聊天服务，请稍候…</translation>
     </message>
     <message>
         <location line="+15" />
         <source>NECTO Chat is unavailable</source>
-        <translation type="unfinished" />
+        <translation>NECTO Chat 不可用</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The chat service could not be reached. It may be temporarily down or under maintenance. Please try again in a few minutes.</source>
-        <translation type="unfinished" />
+        <translation>无法连接到聊天服务。它可能暂时停机或正在维护。请几分钟后重试。</translation>
     </message>
     <message>
         <location line="+31" />
         <source>Retry</source>
-        <translation type="unfinished">重试</translation>
+        <translation>重试</translation>
     </message>
 </context>
 <context>
@@ -11822,7 +11822,7 @@ Do you wish to override the security check and continue ?   </source>
         <source>Please wait while packages are being installed...</source>
         <translation>正在安装软件包，请稍候...</translation>
     </message>
-</context>
+<message><source>Downloading</source><translation>正在下载</translation></message><message><source>Unpacking</source><translation>正在解压</translation></message><message><source>%1 %2...</source><translation>%1 %2...</translation></message><message><source>Updating installation record</source><translation>正在更新安装记录</translation></message></context>
 <context>
     <name>Necto::InterruptAssistant</name>
     <message>
@@ -13247,7 +13247,7 @@ li.checked::marker { content: "\2612"; }
         <source>Form</source>
         <translation type="obsolete">表单</translation>
     </message>
-</context>
+<message><source>NECTO Chat is unavailable</source><translation>NECTO Chat 不可用</translation></message><message><source>Connecting to the chat service. This will only take a moment…</source><translation>正在连接聊天服务，请稍候…</translation></message><message><source>Retry</source><translation>重试</translation></message><message><source>Initializing NECTO Chat</source><translation>正在初始化 NECTO Chat</translation></message><message><source>The chat service could not be reached. It may be temporarily down or under maintenance. Please try again in a few minutes.</source><translation>无法连接到聊天服务。它可能暂时停机或正在维护。请几分钟后重试。</translation></message></context>
 <context>
     <name>Necto::McuSettingsView</name>
     <message>
