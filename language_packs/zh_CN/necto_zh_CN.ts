@@ -7749,201 +7749,201 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <name>Necto::AboutDialog</name>
     <message>
         <source>About</source>
-        <translation type="vanished">关于</translation>
+        <translation>关于</translation>
     </message>
     <message>
         <source>1.0.55</source>
-        <translation type="vanished">1.0.55</translation>
+        <translation>1.0.55</translation>
     </message>
     <message>
         <source>&lt;b&gt;NECTO Studio&lt;/b&gt; is a complete, cross-platform integrated development environment (IDE) for embedded applications providing everything necessary to start developing, and prototyping, including Click board applications and GUIs for embedded devices.&lt;br&gt;&lt;br&gt;
 Rapid software development is easily achieved as developers do not need to consider low-level code, freeing them up to focus on the application code itself.&lt;br&gt;&lt;br&gt;
 This means that changing the MCU or even the whole platform will not require developers to redevelop their code for the new MCU or platform. They can simply switch to the desired platform, apply the correct board definition file, and the application code will continue to run after a single compilation.
 </source>
-        <translation type="vanished">&lt;b&gt;NECTO Studio&lt;/b&gt; 是一个完整的跨平台嵌入式应用集成开发环境（IDE），提供开始开发和原型设计所需的一切，包括 Click 板应用以及嵌入式设备的 GUI。&lt;br&gt;&lt;br&gt;
+        <translation>&lt;b&gt;NECTO Studio&lt;/b&gt; 是一个完整的跨平台嵌入式应用集成开发环境（IDE），提供开始开发和原型设计所需的一切，包括 Click 板应用以及嵌入式设备的 GUI。&lt;br&gt;&lt;br&gt;
 开发人员无需考虑底层代码即可快速完成软件开发，从而专注于应用程序代码本身。&lt;br&gt;&lt;br&gt;
 这意味着更换 MCU，甚至更换整个平台时，开发人员无需为新的 MCU 或平台重新开发代码。他们只需切换到所需平台，应用正确的开发板定义文件，应用程序代码即可在一次编译后继续运行。
 </translation>
     </message>
     <message>
         <source>Third Party Licenses</source>
-        <translation type="vanished">第三方许可证</translation>
+        <translation>第三方许可证</translation>
     </message>
     <message>
         <source>© MikroElektronika. All rights reserved</source>
-        <translation type="vanished">© MikroElektronika。保留所有权利</translation>
+        <translation>© MikroElektronika。保留所有权利</translation>
     </message>
     <message>
         <source>2002-2019</source>
-        <translation type="vanished">2002-2019</translation>
+        <translation>2002-2019</translation>
     </message>
     <message>
         <source>The program is provided AS IS with NO WARRANTY OF ANY KIND.</source>
-        <translation type="vanished">本程序按“原样”提供，不提供任何形式的担保。</translation>
+        <translation>本程序按“原样”提供，不提供任何形式的担保。</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>version </source>
-        <translation type="vanished">版本 </translation>
+        <translation>版本 </translation>
     </message>
     <message>
         <source>2001 - </source>
-        <translation type="vanished">2001 - </translation>
+        <translation>2001 - </translation>
     </message>
     <message>
         <source>&lt;a href=&quot;%1&quot;&gt;Third Party Licenses&lt;/a&gt;</source>
-        <translation type="vanished">&lt;a href=&quot;%1&quot;&gt;第三方许可证&lt;/a&gt;</translation>
+        <translation>&lt;a href=&quot;%1&quot;&gt;第三方许可证&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
     <name>Necto::AboutForm</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>© MikroElektronika 2002 - 2022</source>
-        <translation type="vanished">© MikroElektronika 2002 - 2022</translation>
+        <translation>© MikroElektronika 2002 - 2022</translation>
     </message>
     <message>
         <source>Development Team:</source>
-        <translation type="vanished">开发团队：</translation>
+        <translation>开发团队：</translation>
     </message>
     <message>
         <source>Branislav Marton, Aleksandar Zecevic, 
 Nikola Lukic,  Marko Lukic,  Filip Jankovic</source>
-        <translation type="vanished">Branislav Marton, Aleksandar Zecevic, 
+        <translation>Branislav Marton, Aleksandar Zecevic, 
 Nikola Lukic,  Marko Lukic,  Filip Jankovic</translation>
     </message>
     <message>
         <source>Credits:</source>
-        <translation type="vanished">鸣谢：</translation>
+        <translation>鸣谢：</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://icons8.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;icons8.com &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://icons8.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;icons8.com &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://icons8.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;icons8.com &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>WebSite:</source>
-        <translation type="vanished">网站：</translation>
+        <translation>网站：</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://www.mikroe.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#F8C729;&quot;&gt;www.mikroe.com &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://www.mikroe.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#F8C729;&quot;&gt;www.mikroe.com &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://www.mikroe.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#F8C729;&quot;&gt;www.mikroe.com &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Forum:</source>
-        <translation type="vanished">论坛：</translation>
+        <translation>论坛：</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://forum.mikroe.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#F8C729;&quot;&gt;forum.mikroe.com &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://forum.mikroe.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#F8C729;&quot;&gt;forum.mikroe.com &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://forum.mikroe.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#F8C729;&quot;&gt;forum.mikroe.com &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>MIKROE Bootloader</source>
-        <translation type="vanished">MIKROE 引导加载器</translation>
+        <translation>MIKROE 引导加载器</translation>
     </message>
     <message>
         <source>Version: 1.0.0</source>
-        <translation type="vanished">版本：1.0.0</translation>
+        <translation>版本：1.0.0</translation>
     </message>
     <message>
         <source>Version: </source>
-        <translation type="vanished">版本：</translation>
+        <translation>版本：</translation>
     </message>
     <message>
         <source>MikroElektronika 2002-</source>
-        <translation type="vanished">MikroElektronika 2002-</translation>
+        <translation>MikroElektronika 2002-</translation>
     </message>
 </context>
 <context>
     <name>Necto::AddSetupListItem</name>
     <message>
         <source>Add new</source>
-        <translation type="vanished">新增</translation>
+        <translation>新增</translation>
     </message>
     <message>
         <source>Create New Configuration</source>
-        <translation type="vanished">创建新配置</translation>
+        <translation>创建新配置</translation>
     </message>
 </context>
 <context>
     <name>Necto::AiQa</name>
     <message>
         <source>NECTO Assistant</source>
-        <translation type="vanished">NECTO 助手</translation>
+        <translation>NECTO 助手</translation>
     </message>
 </context>
 <context>
     <name>Necto::AiQaView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;NECTO Assistant module is detached. Click on the &amp;quot;Attach&amp;quot; button to bring it back here. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;NECTO 助手模块已分离。点击 &amp;quot;附加&amp;quot; 按钮将其带回此处。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;NECTO 助手模块已分离。点击 &amp;quot;附加&amp;quot; 按钮将其带回此处。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Open Visual Code Generator</source>
-        <translation type="vanished">打开可视化代码生成器</translation>
+        <translation>打开可视化代码生成器</translation>
     </message>
     <message>
         <source>Visual Code Generator</source>
-        <translation type="vanished">可视化代码生成器</translation>
+        <translation>可视化代码生成器</translation>
     </message>
     <message>
         <source>Detach in separate window</source>
-        <translation type="vanished">在单独窗口中分离</translation>
+        <translation>在单独窗口中分离</translation>
     </message>
     <message>
         <source>NECTO Assistant</source>
-        <translation type="vanished">NECTO 助手</translation>
+        <translation>NECTO 助手</translation>
     </message>
     <message>
         <source>Attach</source>
-        <translation type="vanished">附加</translation>
+        <translation>附加</translation>
     </message>
     <message>
         <source>Detach</source>
-        <translation type="vanished">分离</translation>
+        <translation>分离</translation>
     </message>
 </context>
 <context>
     <name>Necto::ApplicationUpdater</name>
     <message>
         <source>Close</source>
-        <translation type="vanished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Your NECTO Studio is up to date - NECTO Studio v%1</source>
-        <translation type="vanished">您的 NECTO Studio 已是最新版本 - NECTO Studio v%1</translation>
+        <translation>您的 NECTO Studio 已是最新版本 - NECTO Studio v%1</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="vanished">是</translation>
+        <translation>是</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="vanished">否</translation>
+        <translation>否</translation>
     </message>
     <message>
         <source>New NECTO Studio update is available.
 Do you want to update now?</source>
-        <translation type="vanished">有新的 NECTO Studio 更新可用。
+        <translation>有新的 NECTO Studio 更新可用。
 是否立即更新？</translation>
     </message>
     <message>
         <source>New mikroSDK update is available.
 Do you want to update now?</source>
-        <translation type="vanished">有新的 mikroSDK 更新可用。
+        <translation>有新的 mikroSDK 更新可用。
 是否立即更新？</translation>
     </message>
 </context>
@@ -7951,120 +7951,120 @@ Do you want to update now?</source>
     <name>Necto::AutoSaveDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">对话框</translation>
+        <translation>对话框</translation>
     </message>
     <message>
         <source>Save modified files</source>
-        <translation type="vanished">保存已修改的文件</translation>
+        <translation>保存已修改的文件</translation>
     </message>
     <message>
         <source>You can change this in settings.</source>
-        <translation type="vanished">您可以在设置中更改此项。</translation>
+        <translation>您可以在设置中更改此项。</translation>
     </message>
     <message>
         <source>Always save modified files</source>
-        <translation type="vanished">始终保存已修改的文件</translation>
+        <translation>始终保存已修改的文件</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Don&apos;t save</source>
-        <translation type="vanished">不保存</translation>
+        <translation>不保存</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Save all</source>
-        <translation type="vanished">全部保存</translation>
+        <translation>全部保存</translation>
     </message>
     <message>
         <source>Save selected</source>
-        <translation type="vanished">保存所选项</translation>
+        <translation>保存所选项</translation>
     </message>
 </context>
 <context>
     <name>Necto::AvailableBoardItem</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>S/N: %1</source>
-        <translation type="vanished">序列号：%1</translation>
+        <translation>序列号：%1</translation>
     </message>
     <message>
         <source>Ip address: %1</source>
-        <translation type="vanished">IP 地址：%1</translation>
+        <translation>IP 地址：%1</translation>
     </message>
 </context>
 <context>
     <name>Necto::BaseEditPage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>Programmer options</source>
-        <translation type="vanished">编程器选项</translation>
+        <translation>编程器选项</translation>
     </message>
 </context>
 <context>
     <name>Necto::BasePage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>Create New Configuration</source>
-        <translation type="vanished">创建新配置</translation>
+        <translation>创建新配置</translation>
     </message>
     <message>
         <source>Add new board</source>
-        <translation type="vanished">添加新开发板</translation>
+        <translation>添加新开发板</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">下一步</translation>
+        <translation>下一步</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Reset Filters</source>
-        <translation type="vanished">重置筛选器</translation>
+        <translation>重置筛选器</translation>
     </message>
     <message>
         <source>Filters</source>
-        <translation type="vanished">筛选器</translation>
+        <translation>筛选器</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Close Filters</source>
-        <translation type="vanished">关闭筛选器</translation>
+        <translation>关闭筛选器</translation>
     </message>
     <message>
         <source>%1 %2 %3(s)</source>
-        <translation type="vanished">%1 %2 %3(s)</translation>
+        <translation>%1 %2 %3(s)</translation>
     </message>
     <message>
         <source>Found </source>
-        <translation type="vanished">已找到 </translation>
+        <translation>已找到 </translation>
     </message>
     <message>
         <source>Choose</source>
@@ -8076,406 +8076,406 @@ Do you want to update now?</source>
     </message>
     <message>
         <source>Search for %1</source>
-        <translation type="vanished">搜索 %1</translation>
+        <translation>搜索 %1</translation>
     </message>
 </context>
 <context>
     <name>Necto::BoardItemView</name>
     <message>
         <source>icon</source>
-        <translation type="vanished">图标</translation>
+        <translation>图标</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Free</source>
-        <translation type="vanished">空闲</translation>
+        <translation>空闲</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Go</source>
-        <translation type="vanished">开始</translation>
+        <translation>开始</translation>
     </message>
     <message>
         <source>Reserve</source>
-        <translation type="vanished">预约</translation>
+        <translation>预约</translation>
     </message>
     <message>
         <source>Remove reservation</source>
-        <translation type="vanished">取消预约</translation>
+        <translation>取消预约</translation>
     </message>
     <message>
         <source>Remote board info</source>
-        <translation type="vanished">远程开发板信息</translation>
+        <translation>远程开发板信息</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;p&gt;Loading...&lt;/p&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;p&gt;正在加载...&lt;/p&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;p&gt;正在加载...&lt;/p&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>S/N: %1</source>
-        <translation type="vanished">序列号：%1</translation>
+        <translation>序列号：%1</translation>
     </message>
     <message>
         <source>Busy</source>
-        <translation type="vanished">忙碌</translation>
+        <translation>忙碌</translation>
     </message>
     <message>
         <source>Connect</source>
-        <translation type="vanished">连接</translation>
+        <translation>连接</translation>
     </message>
 </context>
 <context>
     <name>Necto::BoardWizardPage</name>
     <message>
         <source>Choose a board</source>
-        <translation type="vanished">选择开发板</translation>
+        <translation>选择开发板</translation>
     </message>
     <message>
         <source> Vendor</source>
-        <translation type="vanished"> 厂商</translation>
+        <translation> 厂商</translation>
     </message>
     <message>
         <source> Category</source>
-        <translation type="vanished"> 类别</translation>
+        <translation> 类别</translation>
     </message>
     <message>
         <source> Display</source>
-        <translation type="vanished"> 显示屏</translation>
+        <translation> 显示屏</translation>
     </message>
     <message>
         <source> MikroBUS count</source>
-        <translation type="vanished"> mikroBUS 数量</translation>
+        <translation> mikroBUS 数量</translation>
     </message>
 </context>
 <context>
     <name>Necto::BootSettingsForm</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
 </context>
 <context>
     <name>Necto::BootloaderForm</name>
     <message>
         <source>Please restart your device to start the upload process...</source>
-        <translation type="vanished">请重启您的设备以开始上传过程...</translation>
+        <translation>请重启您的设备以开始上传过程...</translation>
     </message>
     <message>
         <source>Upload</source>
-        <translation type="vanished">上传</translation>
+        <translation>上传</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Uploading </source>
-        <translation type="vanished">正在上传 </translation>
+        <translation>正在上传 </translation>
     </message>
     <message>
         <source>Successfully uploaded your *.HEX file. 
 Please restart your device to start program...</source>
-        <translation type="vanished">已成功上传您的 *.HEX 文件。
+        <translation>已成功上传您的 *.HEX 文件。
 请重启设备以启动程序...</translation>
     </message>
     <message>
         <source>Upload failed. </source>
-        <translation type="vanished">上传失败。</translation>
+        <translation>上传失败。</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation type="vanished">错误：</translation>
+        <translation>错误：</translation>
     </message>
 </context>
 <context>
     <name>Necto::BootloaderMainWindow</name>
     <message>
         <source>MikroElektronika Bootloader Tool</source>
-        <translation type="vanished">MikroElektronika 引导加载器工具</translation>
+        <translation>MikroElektronika 引导加载器工具</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation type="vanished">选项</translation>
+        <translation>选项</translation>
     </message>
     <message>
         <source>Bootloader settings</source>
-        <translation type="vanished">引导加载器设置</translation>
+        <translation>引导加载器设置</translation>
     </message>
     <message>
         <source>Ctrl+Shift+S</source>
-        <translation type="vanished">Ctrl+Shift+S</translation>
+        <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
         <source>UART bootloader</source>
-        <translation type="vanished">UART 引导加载器</translation>
+        <translation>UART 引导加载器</translation>
     </message>
 </context>
 <context>
     <name>Necto::BootloaderWidgetItem</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Bootloader</source>
-        <translation type="vanished">引导加载器</translation>
+        <translation>引导加载器</translation>
     </message>
     <message>
         <source>Bootloader description.</source>
-        <translation type="vanished">引导加载器说明。</translation>
+        <translation>引导加载器说明。</translation>
     </message>
 </context>
 <context>
     <name>Necto::BreakPointsViewModel</name>
     <message>
         <source>Enabled</source>
-        <translation type="vanished">已启用</translation>
+        <translation>已启用</translation>
     </message>
     <message>
         <source>Disabled</source>
-        <translation type="vanished">已禁用</translation>
+        <translation>已禁用</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="vanished">文件</translation>
+        <translation>文件</translation>
     </message>
     <message>
         <source>Line</source>
-        <translation type="vanished">折线</translation>
+        <translation>折线</translation>
     </message>
 </context>
 <context>
     <name>Necto::BreakpointManager</name>
     <message>
         <source>DAP Server does not support instruction breakpoints. Setting breakpoints in dissasembly mode will not work.</source>
-        <translation type="vanished">DAP 服务器不支持指令断点。在反汇编模式下设置断点将不起作用。</translation>
+        <translation>DAP 服务器不支持指令断点。在反汇编模式下设置断点将不起作用。</translation>
     </message>
 </context>
 <context>
     <name>Necto::BuildSdkDialog</name>
     <message>
         <source>Building SDK</source>
-        <translation type="vanished">正在构建 SDK</translation>
+        <translation>正在构建 SDK</translation>
     </message>
     <message>
         <source>Show build log</source>
-        <translation type="vanished">显示构建日志</translation>
+        <translation>显示构建日志</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Setting up MCU...</source>
-        <translation type="vanished">正在设置 MCU...</translation>
+        <translation>正在设置 MCU...</translation>
     </message>
     <message>
         <source>Initializing CODEGRIP...</source>
-        <translation type="vanished">正在初始化 CODEGRIP...</translation>
+        <translation>正在初始化 CODEGRIP...</translation>
     </message>
     <message>
         <source>Building SDK...</source>
-        <translation type="vanished">正在构建 SDK...</translation>
+        <translation>正在构建 SDK...</translation>
     </message>
     <message>
         <source>Preparing board definitions...</source>
-        <translation type="vanished">正在准备开发板定义...</translation>
+        <translation>正在准备开发板定义...</translation>
     </message>
     <message>
         <source>The mikroSDK build did not complete successfully. Check the build log for details.</source>
-        <translation type="vanished">mikroSDK 构建未成功完成。请查看构建日志了解详细信息。</translation>
+        <translation>mikroSDK 构建未成功完成。请查看构建日志了解详细信息。</translation>
     </message>
     <message>
         <source>Build failed</source>
-        <translation type="vanished">构建失败</translation>
+        <translation>构建失败</translation>
     </message>
 </context>
 <context>
     <name>Necto::CMakeConfigPage</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Build system
  settings</source>
-        <translation type="vanished">构建系统
+        <translation>构建系统
 设置</translation>
     </message>
     <message>
         <source>Active target:</source>
-        <translation type="vanished">活动目标：</translation>
+        <translation>活动目标：</translation>
     </message>
     <message>
         <source>Build output path:</source>
-        <translation type="vanished">构建输出路径：</translation>
+        <translation>构建输出路径：</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation type="vanished">浏览</translation>
+        <translation>浏览</translation>
     </message>
     <message>
         <source>Cache entries:</source>
-        <translation type="vanished">缓存条目：</translation>
+        <translation>缓存条目：</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">添加</translation>
+        <translation>添加</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>Steps:</source>
-        <translation type="vanished">步骤：</translation>
+        <translation>步骤：</translation>
     </message>
     <message>
         <source>CMake Settings</source>
-        <translation type="vanished">CMake 设置</translation>
+        <translation>CMake 设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation type="vanished">路径</translation>
+        <translation>路径</translation>
     </message>
     <message>
         <source>Key</source>
-        <translation type="vanished">键</translation>
+        <translation>键</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">值</translation>
+        <translation>值</translation>
     </message>
     <message>
         <source>Build step</source>
-        <translation type="vanished">构建步骤</translation>
+        <translation>构建步骤</translation>
     </message>
     <message>
         <source>Install step</source>
-        <translation type="vanished">安装步骤</translation>
+        <translation>安装步骤</translation>
     </message>
     <message>
         <source>Custom step</source>
-        <translation type="vanished">自定义步骤</translation>
+        <translation>自定义步骤</translation>
     </message>
     <message>
         <source>Build</source>
-        <translation type="vanished">构建</translation>
+        <translation>构建</translation>
     </message>
     <message>
         <source>Clean step</source>
-        <translation type="vanished">清理步骤</translation>
+        <translation>清理步骤</translation>
     </message>
     <message>
         <source>Clean</source>
-        <translation type="vanished">清理</translation>
+        <translation>清理</translation>
     </message>
     <message>
         <source>&lt;KEY&gt;</source>
-        <translation type="vanished">&lt;KEY&gt;</translation>
+        <translation>&lt;KEY&gt;</translation>
     </message>
     <message>
         <source>&lt;VALUE&gt;</source>
-        <translation type="vanished">&lt;VALUE&gt;</translation>
+        <translation>&lt;VALUE&gt;</translation>
     </message>
     <message>
         <source>Browse for output path</source>
-        <translation type="vanished">浏览输出路径</translation>
+        <translation>浏览输出路径</translation>
     </message>
 </context>
 <context>
     <name>Necto::CMakeStepContainerFrame</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Build Steps:</source>
-        <translation type="vanished">构建步骤：</translation>
+        <translation>构建步骤：</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">添加</translation>
+        <translation>添加</translation>
     </message>
 </context>
 <context>
     <name>Necto::CMakeStepFrame</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Command</source>
-        <translation type="vanished">命令</translation>
+        <translation>命令</translation>
     </message>
     <message>
         <source>Arguments</source>
-        <translation type="vanished">参数</translation>
+        <translation>参数</translation>
     </message>
 </context>
 <context>
     <name>Necto::CallStackViewModel</name>
     <message>
         <source>Level</source>
-        <translation type="vanished">级别</translation>
+        <translation>级别</translation>
     </message>
     <message>
         <source>Function</source>
-        <translation type="vanished">函数</translation>
+        <translation>函数</translation>
     </message>
     <message>
         <source>Line</source>
-        <translation type="vanished">折线</translation>
+        <translation>折线</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="vanished">文件</translation>
+        <translation>文件</translation>
     </message>
 </context>
 <context>
     <name>Necto::CameraView</name>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;The camera view is detached. Close the detached window to bring it back here.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;摄像头视图已分离。关闭分离窗口可将其带回此处。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;摄像头视图已分离。关闭分离窗口可将其带回此处。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
     <name>Necto::CertificateErrorDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">对话框</translation>
+        <translation>对话框</translation>
     </message>
     <message>
         <source>Icon</source>
-        <translation type="vanished">图标</translation>
+        <translation>图标</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">错误</translation>
+        <translation>错误</translation>
     </message>
     <message>
         <source>If you wish so, you may continue with an unverified certificate. Accepting an unverified certificate mean you may not be connected with the host you tried to connect to.
 
 Do you wish to override the security check and continue ?   </source>
-        <translation type="vanished">如果愿意，您可以继续使用未经验证的证书。接受未经验证的证书意味着您可能并未连接到您尝试连接的主机。
+        <translation>如果愿意，您可以继续使用未经验证的证书。接受未经验证的证书意味着您可能并未连接到您尝试连接的主机。
 
 是否覆盖安全检查并继续？</translation>
     </message>
@@ -8484,700 +8484,700 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::ChartOptions</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Data source</source>
-        <translation type="vanished">数据源</translation>
+        <translation>数据源</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Data Source %1</source>
-        <translation type="vanished">数据源 %1</translation>
+        <translation>数据源 %1</translation>
     </message>
     <message>
         <source>Source Name:</source>
-        <translation type="vanished">源名称：</translation>
+        <translation>源名称：</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChartOptionsDialog</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Add Chart</source>
-        <translation type="vanished">添加图表</translation>
+        <translation>添加图表</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">类型</translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Units</source>
-        <translation type="vanished">单位</translation>
+        <translation>单位</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">名称</translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Create separate charts</source>
-        <translation type="vanished">创建独立图表</translation>
+        <translation>创建独立图表</translation>
     </message>
     <message>
         <source>Chart options</source>
-        <translation type="vanished">图表选项</translation>
+        <translation>图表选项</translation>
     </message>
     <message>
         <source>Line</source>
-        <translation type="vanished">折线</translation>
+        <translation>折线</translation>
     </message>
     <message>
         <source>Spline</source>
-        <translation type="vanished">样条</translation>
+        <translation>样条</translation>
     </message>
     <message>
         <source>Area</source>
-        <translation type="vanished">面积</translation>
+        <translation>面积</translation>
     </message>
     <message>
         <source>Scatter</source>
-        <translation type="vanished">散点</translation>
+        <translation>散点</translation>
     </message>
     <message>
         <source>Bar</source>
-        <translation type="vanished">柱状</translation>
+        <translation>柱状</translation>
     </message>
     <message>
         <source>Pie</source>
-        <translation type="vanished">饼图</translation>
+        <translation>饼图</translation>
     </message>
     <message>
         <source>Y-axis:</source>
-        <translation type="vanished">Y 轴：</translation>
+        <translation>Y 轴：</translation>
     </message>
     <message>
         <source>Enter chart name</source>
-        <translation type="vanished">输入图表名称</translation>
+        <translation>输入图表名称</translation>
     </message>
     <message>
         <source>My Chart:</source>
-        <translation type="vanished">我的图表：</translation>
+        <translation>我的图表：</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="vanished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <source>%1 Options</source>
-        <translation type="vanished">%1 选项</translation>
+        <translation>%1 选项</translation>
     </message>
 </context>
 <context>
     <name>Necto::CheckForLicenseFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Checking for license...</source>
-        <translation type="vanished">正在检查许可证...</translation>
+        <translation>正在检查许可证...</translation>
     </message>
     <message>
         <source>Choose your license type:</source>
-        <translation type="vanished">选择您的许可证类型：</translation>
+        <translation>选择您的许可证类型：</translation>
     </message>
     <message>
         <source>Check for license</source>
-        <translation type="vanished">检查许可证</translation>
+        <translation>检查许可证</translation>
     </message>
     <message>
         <source>Check if your license is ready! </source>
-        <translation type="vanished">检查您的许可证是否已准备就绪！</translation>
+        <translation>检查您的许可证是否已准备就绪！</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseBootloaderForm</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Please choose bootloader type:</source>
-        <translation type="vanished">请选择引导加载器类型：</translation>
+        <translation>请选择引导加载器类型：</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseClickPage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>NECTO Assistant</source>
-        <translation type="vanished">NECTO 助手</translation>
+        <translation>NECTO 助手</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">下一步</translation>
+        <translation>下一步</translation>
     </message>
     <message>
         <source>Assign Click boards </source>
-        <translation type="vanished">分配 Click 板</translation>
+        <translation>分配 Click 板</translation>
     </message>
     <message>
         <source>Based on Click board selection, the NECTO Assistant generates code</source>
-        <translation type="vanished">NECTO 助手会根据 Click 板选择生成代码</translation>
+        <translation>NECTO 助手会根据 Click 板选择生成代码</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseClicksDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">对话框</translation>
+        <translation>对话框</translation>
     </message>
     <message>
         <source>NECTO Assitant</source>
-        <translation type="vanished">NECTO 助手</translation>
+        <translation>NECTO 助手</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="vanished">选择</translation>
+        <translation>选择</translation>
     </message>
     <message>
         <source>mikroBUS Socket 3</source>
-        <translation type="vanished">mikroBUS 插座 3</translation>
+        <translation>mikroBUS 插座 3</translation>
     </message>
     <message>
         <source>Select a Click board to be used on this slot for code generation.</source>
-        <translation type="vanished">选择要在此插槽上用于代码生成的 Click 板。</translation>
+        <translation>选择要在此插槽上用于代码生成的 Click 板。</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation type="vanished">数量</translation>
+        <translation>数量</translation>
     </message>
     <message>
         <source>Reset Filter</source>
-        <translation type="vanished">重置筛选器</translation>
+        <translation>重置筛选器</translation>
     </message>
     <message>
         <source>Filters</source>
-        <translation type="vanished">筛选器</translation>
+        <translation>筛选器</translation>
     </message>
     <message>
         <source>Found</source>
-        <translation type="vanished">已找到</translation>
+        <translation>已找到</translation>
     </message>
     <message>
         <source>Search for</source>
-        <translation type="vanished">搜索</translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>%1 %2 click(s)</source>
-        <translation type="vanished">%1 %2 click(s)</translation>
+        <translation>%1 %2 click(s)</translation>
     </message>
     <message>
         <source>Open filters</source>
-        <translation type="vanished">打开筛选器</translation>
+        <translation>打开筛选器</translation>
     </message>
     <message>
         <source>Close Filters</source>
-        <translation type="vanished">关闭筛选器</translation>
+        <translation>关闭筛选器</translation>
     </message>
     <message>
         <source>Close filters</source>
-        <translation type="vanished">关闭筛选器</translation>
+        <translation>关闭筛选器</translation>
     </message>
     <message>
         <source>Search click boards</source>
-        <translation type="vanished">搜索 Click 板</translation>
+        <translation>搜索 Click 板</translation>
     </message>
     <message>
         <source>Reset all filters</source>
-        <translation type="vanished">重置所有筛选器</translation>
+        <translation>重置所有筛选器</translation>
     </message>
     <message>
         <source>mikroBUS Socket %1</source>
-        <translation type="vanished">mikroBUS 插座 %1</translation>
+        <translation>mikroBUS 插座 %1</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseCompilersPage</name>
     <message>
         <source>Search for compilers</source>
-        <translation type="vanished">搜索编译器</translation>
+        <translation>搜索编译器</translation>
     </message>
     <message>
         <source>Can not find compiler you have searched for</source>
-        <translation type="vanished">找不到您搜索的编译器</translation>
+        <translation>找不到您搜索的编译器</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseLicenseDialog</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Choose your license type:</source>
-        <translation type="vanished">选择您的许可证类型：</translation>
+        <translation>选择您的许可证类型：</translation>
     </message>
     <message>
         <source>Your subscription has expired. In order to continue using NECTO please:</source>
-        <translation type="vanished">您的订阅已过期。要继续使用 NECTO，请：</translation>
+        <translation>您的订阅已过期。要继续使用 NECTO，请：</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation type="vanished">离线</translation>
+        <translation>离线</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseLicenseFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Free</source>
-        <translation type="vanished">空闲</translation>
+        <translation>空闲</translation>
     </message>
     <message>
         <source>License used for non-commercial applications</source>
-        <translation type="vanished">用于非商业应用的许可证</translation>
+        <translation>用于非商业应用的许可证</translation>
     </message>
     <message>
         <source>Subscription</source>
-        <translation type="vanished">订阅</translation>
+        <translation>订阅</translation>
     </message>
     <message>
         <source>License used for commercial applications</source>
-        <translation type="vanished">用于商业应用的许可证</translation>
+        <translation>用于商业应用的许可证</translation>
     </message>
     <message>
         <source>There is no internet access. Please try again later.</source>
-        <translation type="vanished">没有互联网连接。请稍后再试。</translation>
+        <translation>没有互联网连接。请稍后再试。</translation>
     </message>
     <message>
         <source>Free license terms and agreement</source>
-        <translation type="vanished">免费许可证条款和协议</translation>
+        <translation>免费许可证条款和协议</translation>
     </message>
     <message>
         <source>Subscription license terms and agreement</source>
-        <translation type="vanished">订阅许可证条款和协议</translation>
+        <translation>订阅许可证条款和协议</translation>
     </message>
     <message>
         <source>Switch to free license</source>
-        <translation type="vanished">切换到免费许可证</translation>
+        <translation>切换到免费许可证</translation>
     </message>
     <message>
         <source>Renew subscription</source>
-        <translation type="vanished">续订订阅</translation>
+        <translation>续订订阅</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseOutputPage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>NECTO Assistant</source>
-        <translation type="vanished">NECTO 助手</translation>
+        <translation>NECTO 助手</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">下一步</translation>
+        <translation>下一步</translation>
     </message>
     <message>
         <source>Choose output</source>
-        <translation type="vanished">选择输出</translation>
+        <translation>选择输出</translation>
     </message>
     <message>
         <source>The selected output defines how the NECTO Assistant generates code</source>
-        <translation type="vanished">所选输出定义 NECTO 助手生成代码的方式</translation>
+        <translation>所选输出定义 NECTO 助手生成代码的方式</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseProgPage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Search Programmers</source>
-        <translation type="vanished">搜索编程器</translation>
+        <translation>搜索编程器</translation>
     </message>
     <message>
         <source>Can not find programmer you have searched for</source>
-        <translation type="vanished">找不到您搜索的编程器</translation>
+        <translation>找不到您搜索的编程器</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChoosePromptPage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>NECTO Assistant</source>
-        <translation type="vanished">NECTO 助手</translation>
+        <translation>NECTO 助手</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <source>Choose prompt</source>
-        <translation type="vanished">选择提示</translation>
+        <translation>选择提示</translation>
     </message>
     <message>
         <source>Select how NECTO Assistant should deliver your result</source>
-        <translation type="vanished">选择 NECTO 助手应如何交付结果</translation>
+        <translation>选择 NECTO 助手应如何交付结果</translation>
     </message>
     <message>
         <source>Create and Configure Project</source>
-        <translation type="vanished">创建并配置项目</translation>
+        <translation>创建并配置项目</translation>
     </message>
     <message>
         <source>Automatically create a new project, install necessary packages, and include necessary libraries</source>
-        <translation type="vanished">自动创建新项目、安装必要的软件包并包含必要的库</translation>
+        <translation>自动创建新项目、安装必要的软件包并包含必要的库</translation>
     </message>
     <message>
         <source>Code Only</source>
-        <translation type="vanished">仅代码</translation>
+        <translation>仅代码</translation>
     </message>
     <message>
         <source>Just generate the code and skip the project creation and package setup</source>
-        <translation type="vanished">仅生成代码，跳过项目创建和软件包设置</translation>
+        <translation>仅生成代码，跳过项目创建和软件包设置</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseSetupPage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>NECTO Assistant</source>
-        <translation type="vanished">NECTO 助手</translation>
+        <translation>NECTO 助手</translation>
     </message>
     <message>
         <source>New</source>
-        <translation type="vanished">新建</translation>
+        <translation>新建</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">下一步</translation>
+        <translation>下一步</translation>
     </message>
     <message>
         <source>Select configuration</source>
-        <translation type="vanished">选择配置</translation>
+        <translation>选择配置</translation>
     </message>
     <message>
         <source>The Visual Code Generator uses the selected configuration to define the starting point for code generation.</source>
-        <translation type="vanished">可视化代码生成器使用所选配置来定义代码生成的起点。</translation>
+        <translation>可视化代码生成器使用所选配置来定义代码生成的起点。</translation>
     </message>
 </context>
 <context>
     <name>Necto::ClangRISCVSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation type="vanished">调试器</translation>
+        <translation>调试器</translation>
     </message>
     <message>
         <source>LLDB</source>
-        <translation type="vanished">LLDB</translation>
+        <translation>LLDB</translation>
     </message>
     <message>
         <source>GDB</source>
-        <translation type="vanished">GDB</translation>
+        <translation>GDB</translation>
     </message>
     <message>
         <source>Change your program&apos;s debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
-        <translation type="vanished">根据您的具体需求，将程序调试器从 LLDB 更改为 GDB，或反向更改。</translation>
+        <translation>根据您的具体需求，将程序调试器从 LLDB 更改为 GDB，或反向更改。</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
 </context>
 <context>
     <name>Necto::ClangSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation type="vanished">调试器</translation>
+        <translation>调试器</translation>
     </message>
     <message>
         <source>LLDB</source>
-        <translation type="vanished">LLDB</translation>
+        <translation>LLDB</translation>
     </message>
     <message>
         <source>GDB</source>
-        <translation type="vanished">GDB</translation>
+        <translation>GDB</translation>
     </message>
     <message>
         <source>Change your program&apos;s debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
-        <translation type="vanished">根据您的具体需求，将程序调试器从 LLDB 更改为 GDB，或反向更改。</translation>
+        <translation>根据您的具体需求，将程序调试器从 LLDB 更改为 GDB，或反向更改。</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
 </context>
 <context>
     <name>Necto::ClickItem</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Caption</source>
-        <translation type="vanished">标题</translation>
+        <translation>标题</translation>
     </message>
     <message>
         <source>Desc</source>
-        <translation type="vanished">描述</translation>
+        <translation>描述</translation>
     </message>
 </context>
 <context>
     <name>Necto::CloudChartGraphicDataView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
 </context>
 <context>
     <name>Necto::CloudChartManagerView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Search for values</source>
-        <translation type="vanished">搜索值</translation>
+        <translation>搜索值</translation>
     </message>
     <message>
         <source>Search table</source>
-        <translation type="vanished">搜索表格</translation>
+        <translation>搜索表格</translation>
     </message>
     <message>
         <source>Erase table</source>
-        <translation type="vanished">清空表格</translation>
+        <translation>清空表格</translation>
     </message>
     <message>
         <source>Switch to chart view</source>
-        <translation type="vanished">切换到图表视图</translation>
+        <translation>切换到图表视图</translation>
     </message>
     <message>
         <source>Add new chart</source>
-        <translation type="vanished">添加新图表</translation>
+        <translation>添加新图表</translation>
     </message>
     <message>
         <source>Switch to table view</source>
-        <translation type="vanished">切换到表格视图</translation>
+        <translation>切换到表格视图</translation>
     </message>
     <message>
         <source>Show all plot sources in one chart</source>
-        <translation type="vanished">在一个图表中显示所有绘图源</translation>
+        <translation>在一个图表中显示所有绘图源</translation>
     </message>
     <message>
         <source>Show each plot source in a separate chart</source>
-        <translation type="vanished">在单独的图表中显示每个绘图源</translation>
+        <translation>在单独的图表中显示每个绘图源</translation>
     </message>
 </context>
 <context>
     <name>Necto::CloudChartNumeralDataView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Plot Functionality Guide&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Step 1: &lt;/span&gt;Call the Plot Function in your code. &lt;/p&gt;&lt;p&gt;Example: &lt;span style=&quot; font-weight:700;&quot;&gt;plot(&amp;quot;Temperature&amp;quot;, tempVal); &lt;/span&gt;&lt;/p&gt;&lt;p&gt;First paramteter: graph label (string)&lt;br/&gt;Second parameter: variable you want to visualize &lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Step 2: &lt;/span&gt;Run the debugger &lt;/p&gt;&lt;p&gt;Wait until at least two values are captured. &lt;br/&gt;The graph will appear automatically. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;绘图功能指南&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;步骤 1：&lt;/span&gt;在代码中调用 Plot 函数。&lt;/p&gt;&lt;p&gt;示例：&lt;span style=&quot; font-weight:700;&quot;&gt;plot(&amp;quot;Temperature&amp;quot;, tempVal); &lt;/span&gt;&lt;/p&gt;&lt;p&gt;第一个参数：图表标签（字符串）&lt;br/&gt;第二个参数：要可视化的变量&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;步骤 2：&lt;/span&gt;运行调试器&lt;/p&gt;&lt;p&gt;等待至少捕获两个值。&lt;br/&gt;图表将自动显示。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;绘图功能指南&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;步骤 1：&lt;/span&gt;在代码中调用 Plot 函数。&lt;/p&gt;&lt;p&gt;示例：&lt;span style=&quot; font-weight:700;&quot;&gt;plot(&amp;quot;Temperature&amp;quot;, tempVal); &lt;/span&gt;&lt;/p&gt;&lt;p&gt;第一个参数：图表标签（字符串）&lt;br/&gt;第二个参数：要可视化的变量&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;步骤 2：&lt;/span&gt;运行调试器&lt;/p&gt;&lt;p&gt;等待至少捕获两个值。&lt;br/&gt;图表将自动显示。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Create chart from selected</source>
-        <translation type="vanished">从所选项创建图表</translation>
+        <translation>从所选项创建图表</translation>
     </message>
     <message>
         <source>Export selected items to CSV</source>
-        <translation type="vanished">将所选项导出为 CSV</translation>
+        <translation>将所选项导出为 CSV</translation>
     </message>
     <message>
         <source>Export table to CSV</source>
-        <translation type="vanished">将表格导出为 CSV</translation>
+        <translation>将表格导出为 CSV</translation>
     </message>
     <message>
         <source>Remove column &quot;%1&quot;</source>
-        <translation type="vanished">移除列“%1”</translation>
+        <translation>移除列“%1”</translation>
     </message>
     <message>
         <source>Clear table</source>
-        <translation type="vanished">清空表格</translation>
+        <translation>清空表格</translation>
     </message>
     <message>
         <source>Save CSV File</source>
-        <translation type="vanished">保存 CSV 文件</translation>
+        <translation>保存 CSV 文件</translation>
     </message>
     <message>
         <source>Line Chart</source>
-        <translation type="vanished">折线图</translation>
+        <translation>折线图</translation>
     </message>
     <message>
         <source>Spline Chart</source>
-        <translation type="vanished">样条图</translation>
+        <translation>样条图</translation>
     </message>
     <message>
         <source>Area Chart</source>
-        <translation type="vanished">面积图</translation>
+        <translation>面积图</translation>
     </message>
     <message>
         <source>Scatter Chart</source>
-        <translation type="vanished">散点图</translation>
+        <translation>散点图</translation>
     </message>
     <message>
         <source>Bar Chart</source>
-        <translation type="vanished">柱状图</translation>
+        <translation>柱状图</translation>
     </message>
     <message>
         <source>Pie Chart</source>
-        <translation type="vanished">饼图</translation>
+        <translation>饼图</translation>
     </message>
     <message>
         <source>Pie Chart can only contain one value per column.</source>
-        <translation type="vanished">饼图每列只能包含一个值。</translation>
+        <translation>饼图每列只能包含一个值。</translation>
     </message>
 </context>
 <context>
     <name>Necto::CloudChartView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>_</source>
-        <translation type="vanished">_</translation>
+        <translation>_</translation>
     </message>
     <message>
         <source>&gt;</source>
-        <translation type="vanished">&gt;</translation>
+        <translation>&gt;</translation>
     </message>
     <message>
         <source>X</source>
-        <translation type="vanished">X</translation>
+        <translation>X</translation>
     </message>
     <message>
         <source>Close Chart View</source>
-        <translation type="vanished">关闭图表视图</translation>
+        <translation>关闭图表视图</translation>
     </message>
     <message>
         <source>Detach Chart View</source>
-        <translation type="vanished">分离图表视图</translation>
+        <translation>分离图表视图</translation>
     </message>
     <message>
         <source>Reset Chart View</source>
-        <translation type="vanished">重置图表视图</translation>
+        <translation>重置图表视图</translation>
     </message>
     <message>
         <source>Edit Chart Settings</source>
-        <translation type="vanished">编辑图表设置</translation>
+        <translation>编辑图表设置</translation>
     </message>
     <message>
         <source>Time (s)</source>
@@ -9185,22 +9185,22 @@ Do you wish to override the security check and continue ?   </source>
     </message>
     <message>
         <source>Attach Chart View</source>
-        <translation type="vanished">附加图表视图</translation>
+        <translation>附加图表视图</translation>
     </message>
 </context>
 <context>
     <name>Necto::CmakeBuildSystem</name>
     <message>
         <source>Building...</source>
-        <translation type="vanished">正在构建...</translation>
+        <translation>正在构建...</translation>
     </message>
     <message>
         <source>Cleaning...</source>
-        <translation type="vanished">正在清理...</translation>
+        <translation>正在清理...</translation>
     </message>
     <message>
         <source>No target</source>
-        <translation type="vanished">无目标</translation>
+        <translation>无目标</translation>
     </message>
 </context>
 <context>
@@ -9215,225 +9215,225 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::CodegripOptionsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
 </context>
 <context>
     <name>Necto::CodegripRangeOptionsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
 </context>
 <context>
     <name>Necto::CodegripScanOptions</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>    WiFi options       </source>
-        <translation type="vanished">    WiFi 选项       </translation>
+        <translation>    WiFi 选项       </translation>
     </message>
     <message>
         <source>Address:</source>
-        <translation type="vanished">地址：</translation>
+        <translation>地址：</translation>
     </message>
     <message>
         <source>Scan port:</source>
-        <translation type="vanished">扫描端口：</translation>
+        <translation>扫描端口：</translation>
     </message>
     <message>
         <source>Communication port:</source>
-        <translation type="vanished">通信端口：</translation>
+        <translation>通信端口：</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">添加</translation>
+        <translation>添加</translation>
     </message>
     <message>
         <source>Link password:</source>
-        <translation type="vanished">链接密码：</translation>
+        <translation>链接密码：</translation>
     </message>
     <message>
         <source>GDB server options</source>
-        <translation type="vanished">GDB 服务器选项</translation>
+        <translation>GDB 服务器选项</translation>
     </message>
     <message>
         <source>GDB Port:</source>
-        <translation type="vanished">GDB 端口：</translation>
+        <translation>GDB 端口：</translation>
     </message>
     <message>
         <source>GDB Port 2</source>
-        <translation type="vanished">GDB 端口 2</translation>
+        <translation>GDB 端口 2</translation>
     </message>
     <message>
         <source>Control Port:</source>
-        <translation type="vanished">控制端口：</translation>
+        <translation>控制端口：</translation>
     </message>
     <message>
         <source>Use default codegrip server path.</source>
-        <translation type="vanished">使用默认 CODEGRIP 服务器路径。</translation>
+        <translation>使用默认 CODEGRIP 服务器路径。</translation>
     </message>
     <message>
         <source>Auto start local GDB Server</source>
-        <translation type="vanished">自动启动本地 GDB 服务器</translation>
+        <translation>自动启动本地 GDB 服务器</translation>
     </message>
     <message>
         <source>Connect to remote GDB Server</source>
-        <translation type="vanished">连接到远程 GDB 服务器</translation>
+        <translation>连接到远程 GDB 服务器</translation>
     </message>
     <message>
         <source>Scan port</source>
-        <translation type="vanished">扫描端口</translation>
+        <translation>扫描端口</translation>
     </message>
     <message>
         <source>Communication port</source>
-        <translation type="vanished">通信端口</translation>
+        <translation>通信端口</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">地址</translation>
+        <translation>地址</translation>
     </message>
     <message>
         <source>CODEGRIP GDB server port</source>
-        <translation type="vanished">CODEGRIP GDB 服务器端口</translation>
+        <translation>CODEGRIP GDB 服务器端口</translation>
     </message>
     <message>
         <source>CODEGRIP GDB server port. Used for debugging</source>
-        <translation type="vanished">CODEGRIP GDB 服务器端口。用于调试</translation>
+        <translation>CODEGRIP GDB 服务器端口。用于调试</translation>
     </message>
     <message>
         <source>CODEGRIP GDB server second core port</source>
-        <translation type="vanished">CODEGRIP GDB 服务器第二核心端口</translation>
+        <translation>CODEGRIP GDB 服务器第二核心端口</translation>
     </message>
     <message>
         <source>Control server port</source>
-        <translation type="vanished">控制服务器端口</translation>
+        <translation>控制服务器端口</translation>
     </message>
     <message>
         <source>Control server port. Used for programming and board configuration</source>
-        <translation type="vanished">控制服务器端口。用于编程和开发板配置</translation>
+        <translation>控制服务器端口。用于编程和开发板配置</translation>
     </message>
     <message>
         <source>CODEGRIP GDB server address</source>
-        <translation type="vanished">CODEGRIP GDB 服务器地址</translation>
+        <translation>CODEGRIP GDB 服务器地址</translation>
     </message>
     <message>
         <source>Address on which GDB server is listening</source>
-        <translation type="vanished">GDB 服务器监听的地址</translation>
+        <translation>GDB 服务器监听的地址</translation>
     </message>
     <message>
         <source>Link password</source>
-        <translation type="vanished">链接密码</translation>
+        <translation>链接密码</translation>
     </message>
     <message>
         <source>No remote scan addresses.</source>
-        <translation type="vanished">没有远程扫描地址。</translation>
+        <translation>没有远程扫描地址。</translation>
     </message>
     <message>
         <source>CODEGRIP GDB server path</source>
-        <translation type="vanished">CODEGRIP GDB 服务器路径</translation>
+        <translation>CODEGRIP GDB 服务器路径</translation>
     </message>
     <message>
         <source>CODEGRIP GDB server executable path</source>
-        <translation type="vanished">CODEGRIP GDB 服务器可执行文件路径</translation>
+        <translation>CODEGRIP GDB 服务器可执行文件路径</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Cannot add empty item</source>
-        <translation type="vanished">无法添加空项</translation>
+        <translation>无法添加空项</translation>
     </message>
     <message>
         <source>Ip address is invalid</source>
-        <translation type="vanished">IP 地址无效</translation>
+        <translation>IP 地址无效</translation>
     </message>
     <message>
         <source>Item already exists in list</source>
-        <translation type="vanished">该项已在列表中存在</translation>
+        <translation>该项已在列表中存在</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation type="vanished">打开文件</translation>
+        <translation>打开文件</translation>
     </message>
 </context>
 <context>
     <name>Necto::CodegripTargetOptions</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Waiting for target options...</source>
-        <translation type="vanished">正在等待目标选项...</translation>
+        <translation>正在等待目标选项...</translation>
     </message>
     <message>
         <source>Target options</source>
-        <translation type="vanished">目标选项</translation>
+        <translation>目标选项</translation>
     </message>
     <message>
         <source>Target Settings</source>
-        <translation type="vanished">目标设置</translation>
+        <translation>目标设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Failed to get target options</source>
-        <translation type="vanished">获取目标选项失败</translation>
+        <translation>获取目标选项失败</translation>
     </message>
 </context>
 <context>
     <name>Necto::CodegripView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Programmer</source>
-        <translation type="vanished">编程器</translation>
+        <translation>编程器</translation>
     </message>
     <message>
         <source>Scan for available devices and configure programming options.</source>
-        <translation type="vanished">扫描可用设备并配置编程选项。</translation>
+        <translation>扫描可用设备并配置编程选项。</translation>
     </message>
     <message>
         <source>Open scan settings</source>
-        <translation type="vanished">打开扫描设置</translation>
+        <translation>打开扫描设置</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation type="vanished">选项</translation>
+        <translation>选项</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">扫描</translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Programmer Settings</source>
-        <translation type="vanished">编程器设置</translation>
+        <translation>编程器设置</translation>
     </message>
     <message>
         <source>No boards found. 
  To find available boards click scan button</source>
-        <translation type="vanished">未找到开发板。
+        <translation>未找到开发板。
  要查找可用开发板，请点击扫描按钮</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
 </context>
 <context>
@@ -9455,19 +9455,19 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::CommandsPallete</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">对话框</translation>
+        <translation>对话框</translation>
     </message>
     <message>
         <source>Type for an action name... (Press [ESC] to exit)</source>
-        <translation type="vanished">输入操作名称...（按 [ESC] 退出）</translation>
+        <translation>输入操作名称...（按 [ESC] 退出）</translation>
     </message>
     <message>
         <source>Command</source>
-        <translation type="vanished">命令</translation>
+        <translation>命令</translation>
     </message>
     <message>
         <source>Shortcut</source>
-        <translation type="vanished">快捷键</translation>
+        <translation>快捷键</translation>
     </message>
 </context>
 <context>
@@ -9485,666 +9485,666 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::CompilerWizardPage</name>
     <message>
         <source>Choose a compiler</source>
-        <translation type="vanished">选择编译器</translation>
+        <translation>选择编译器</translation>
     </message>
 </context>
 <context>
     <name>Necto::ComponentsView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Filter components</source>
-        <translation type="vanished">筛选组件</translation>
+        <translation>筛选组件</translation>
     </message>
 </context>
 <context>
     <name>Necto::ConfigurationFrame</name>
     <message>
         <source>Configuration</source>
-        <translation type="vanished">配置</translation>
+        <translation>配置</translation>
     </message>
     <message>
         <source>Create New Configuration</source>
-        <translation type="vanished">创建新配置</translation>
+        <translation>创建新配置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <source>Choose your starting point</source>
-        <translation type="vanished">选择起始点</translation>
+        <translation>选择起始点</translation>
     </message>
     <message>
         <source>Select an MCU or Board to begin</source>
-        <translation type="vanished">选择一个 MCU 或开发板以开始</translation>
+        <translation>选择一个 MCU 或开发板以开始</translation>
     </message>
     <message>
         <source>Configuration Name</source>
-        <translation type="vanished">配置名称</translation>
+        <translation>配置名称</translation>
     </message>
     <message>
         <source>MCU</source>
-        <translation type="vanished">MCU</translation>
+        <translation>MCU</translation>
     </message>
     <message>
         <source> Start with MCU </source>
-        <translation type="vanished"> 从 MCU 开始 </translation>
+        <translation> 从 MCU 开始 </translation>
     </message>
     <message>
         <source>Board</source>
-        <translation type="vanished">开发板</translation>
+        <translation>开发板</translation>
     </message>
     <message>
         <source>Start with board</source>
-        <translation type="vanished">从开发板开始</translation>
+        <translation>从开发板开始</translation>
     </message>
     <message>
         <source>Display</source>
-        <translation type="vanished">显示屏</translation>
+        <translation>显示屏</translation>
     </message>
     <message>
         <source>Compiler</source>
-        <translation type="vanished">编译器</translation>
+        <translation>编译器</translation>
     </message>
     <message>
         <source>Programmer</source>
-        <translation type="vanished">编程器</translation>
+        <translation>编程器</translation>
     </message>
     <message>
         <source>SDK</source>
-        <translation type="vanished">SDK</translation>
+        <translation>SDK</translation>
     </message>
     <message>
         <source>%1 Settings</source>
-        <translation type="vanished">%1 设置</translation>
+        <translation>%1 设置</translation>
     </message>
     <message>
         <source>Target Options</source>
-        <translation type="vanished">目标选项</translation>
+        <translation>目标选项</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Review Configuration</source>
-        <translation type="vanished">检查配置</translation>
+        <translation>检查配置</translation>
     </message>
     <message>
         <source>Review or modify selected components</source>
-        <translation type="vanished">检查或修改所选组件</translation>
+        <translation>检查或修改所选组件</translation>
     </message>
     <message>
         <source>Select an MCU or a development board to begin</source>
-        <translation type="vanished">选择一个 MCU 或开发板以开始</translation>
+        <translation>选择一个 MCU 或开发板以开始</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">扫描</translation>
+        <translation>扫描</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="vanished">设置</translation>
+        <translation>设置</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Changing the MCU will reset all other selected components. Continue?</source>
-        <translation type="vanished">更改 MCU 将重置所有其他已选组件。是否继续？</translation>
+        <translation>更改 MCU 将重置所有其他已选组件。是否继续？</translation>
     </message>
     <message>
         <source>Choose a MCU to begin</source>
-        <translation type="vanished">选择一个 MCU 以开始</translation>
+        <translation>选择一个 MCU 以开始</translation>
     </message>
     <message>
         <source>Choose a development board to begin</source>
-        <translation type="vanished">选择一个开发板以开始</translation>
+        <translation>选择一个开发板以开始</translation>
     </message>
     <message>
         <source>Display will be selected automatically</source>
-        <translation type="vanished">将自动选择显示屏</translation>
+        <translation>将自动选择显示屏</translation>
     </message>
     <message>
         <source>Compiler will be selected automatically</source>
-        <translation type="vanished">将自动选择编译器</translation>
+        <translation>将自动选择编译器</translation>
     </message>
     <message>
         <source>Programmer will be selected automatically</source>
-        <translation type="vanished">将自动选择编程器</translation>
+        <translation>将自动选择编程器</translation>
     </message>
     <message>
         <source>SDK will be selected automatically</source>
-        <translation type="vanished">将自动选择 SDK</translation>
+        <translation>将自动选择 SDK</translation>
     </message>
     <message>
         <source>Bare metal</source>
-        <translation type="vanished">裸机</translation>
+        <translation>裸机</translation>
     </message>
     <message>
         <source>LLDB debugger</source>
-        <translation type="vanished">LLDB 调试器</translation>
+        <translation>LLDB 调试器</translation>
     </message>
     <message>
         <source>GDB debugger</source>
-        <translation type="vanished">GDB 调试器</translation>
+        <translation>GDB 调试器</translation>
     </message>
     <message>
         <source>Flatten GPIO: %1</source>
-        <translation type="vanished">扁平化 GPIO：%1</translation>
+        <translation>扁平化 GPIO：%1</translation>
     </message>
     <message>
         <source>Change</source>
-        <translation type="vanished">更改</translation>
+        <translation>更改</translation>
     </message>
 </context>
 <context>
     <name>Necto::ConfigurationSectionFrame</name>
     <message>
         <source>Section</source>
-        <translation type="vanished">段</translation>
+        <translation>段</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="vanished">设置</translation>
+        <translation>设置</translation>
     </message>
     <message>
         <source>Target</source>
-        <translation type="vanished">目标</translation>
+        <translation>目标</translation>
     </message>
     <message>
         <source>Change</source>
-        <translation type="vanished">更改</translation>
+        <translation>更改</translation>
     </message>
 </context>
 <context>
     <name>Necto::ConverterPlugin</name>
     <message>
         <source>Converter</source>
-        <translation type="vanished">转换器</translation>
+        <translation>转换器</translation>
     </message>
 </context>
 <context>
     <name>Necto::ConverterWidget</name>
     <message>
         <source>Quick Converter</source>
-        <translation type="vanished">快速转换器</translation>
+        <translation>快速转换器</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">大小</translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>8 bits</source>
-        <translation type="vanished">8 bits</translation>
+        <translation>8 bits</translation>
     </message>
     <message>
         <source>16 bits</source>
-        <translation type="vanished">16 bits</translation>
+        <translation>16 bits</translation>
     </message>
     <message>
         <source>32 bits</source>
-        <translation type="vanished">32 bits</translation>
+        <translation>32 bits</translation>
     </message>
     <message>
         <source>64 bit</source>
-        <translation type="vanished">64 bit</translation>
+        <translation>64 bit</translation>
     </message>
     <message>
         <source>Sign</source>
-        <translation type="vanished">符号</translation>
+        <translation>符号</translation>
     </message>
     <message>
         <source>Unsigned</source>
-        <translation type="vanished">无符号</translation>
+        <translation>无符号</translation>
     </message>
     <message>
         <source>Signed</source>
-        <translation type="vanished">有符号</translation>
+        <translation>有符号</translation>
     </message>
     <message>
         <source>Decimal:</source>
-        <translation type="vanished">十进制：</translation>
+        <translation>十进制：</translation>
     </message>
     <message>
         <source>Hex:</source>
-        <translation type="vanished">十六进制：</translation>
+        <translation>十六进制：</translation>
     </message>
     <message>
         <source>Binary:</source>
-        <translation type="vanished">二进制：</translation>
+        <translation>二进制：</translation>
     </message>
     <message>
         <source>Char:</source>
-        <translation type="vanished">字符：</translation>
+        <translation>字符：</translation>
     </message>
     <message>
         <source>Float precision 32 bit</source>
-        <translation type="vanished">32 位浮点精度</translation>
+        <translation>32 位浮点精度</translation>
     </message>
     <message>
         <source>Double precision 64 bit</source>
-        <translation type="vanished">64 位双精度</translation>
+        <translation>64 位双精度</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation type="vanished">格式</translation>
+        <translation>格式</translation>
     </message>
     <message>
         <source>Bin</source>
-        <translation type="vanished">二进制</translation>
+        <translation>二进制</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">十六进制</translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Float decimal:</source>
-        <translation type="vanished">浮点十进制：</translation>
+        <translation>浮点十进制：</translation>
     </message>
     <message>
         <source>Float 32bit (IEEE)</source>
-        <translation type="vanished">32 位浮点（IEEE）</translation>
+        <translation>32 位浮点（IEEE）</translation>
     </message>
     <message>
         <source>Float (Microchip)</source>
-        <translation type="vanished">浮点（Microchip）</translation>
+        <translation>浮点（Microchip）</translation>
     </message>
     <message>
         <source>Radix 1.15:</source>
-        <translation type="vanished">基数 1.15：</translation>
+        <translation>基数 1.15：</translation>
     </message>
     <message>
         <source>Float decimal</source>
-        <translation type="vanished">浮点十进制</translation>
+        <translation>浮点十进制</translation>
     </message>
     <message>
         <source>Double decimal</source>
-        <translation type="vanished">双精度十进制</translation>
+        <translation>双精度十进制</translation>
     </message>
     <message>
         <source>Double 64bit (IEEE)</source>
-        <translation type="vanished">64 位双精度（IEEE）</translation>
+        <translation>64 位双精度（IEEE）</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoard</name>
     <message>
         <source>Delete</source>
-        <translation type="vanished">删除</translation>
+        <translation>删除</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Are you sure you want to delete: &lt;strong&gt;%1 &lt;/strong&gt;?</source>
-        <translation type="vanished">确定要删除：&lt;strong&gt;%1 &lt;/strong&gt; 吗？</translation>
+        <translation>确定要删除：&lt;strong&gt;%1 &lt;/strong&gt; 吗？</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="vanished">是</translation>
+        <translation>是</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="vanished">否</translation>
+        <translation>否</translation>
     </message>
     <message>
         <source>Board already exists. Overwrite?</source>
-        <translation type="vanished">开发板已存在。是否覆盖？</translation>
+        <translation>开发板已存在。是否覆盖？</translation>
     </message>
     <message>
         <source>NectoShare is currently unavailable. Please try again later.</source>
-        <translation type="vanished">NectoShare 当前不可用。请稍后再试。</translation>
+        <translation>NectoShare 当前不可用。请稍后再试。</translation>
     </message>
     <message>
         <source>Failed publish</source>
-        <translation type="vanished">发布失败</translation>
+        <translation>发布失败</translation>
     </message>
     <message>
         <source>Board files are uploaded successfully</source>
-        <translation type="vanished">开发板文件已成功上传</translation>
+        <translation>开发板文件已成功上传</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardDevicePage</name>
     <message>
         <source>Choose a MCU</source>
-        <translation type="vanished">选择 MCU</translation>
+        <translation>选择 MCU</translation>
     </message>
     <message>
         <source>Custom Board Tool</source>
-        <translation type="vanished">自定义开发板工具</translation>
+        <translation>自定义开发板工具</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardDialog</name>
     <message>
         <source>Building SDK</source>
-        <translation type="vanished">正在构建 SDK</translation>
+        <translation>正在构建 SDK</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Please wait</source>
-        <translation type="vanished">请稍候</translation>
+        <translation>请稍候</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Timeout...</source>
-        <translation type="vanished">超时...</translation>
+        <translation>超时...</translation>
     </message>
     <message>
         <source>Board generated successfully!</source>
-        <translation type="vanished">开发板生成成功！</translation>
+        <translation>开发板生成成功！</translation>
     </message>
     <message>
         <source>Error generating board...</source>
-        <translation type="vanished">生成开发板时出错...</translation>
+        <translation>生成开发板时出错...</translation>
     </message>
     <message>
         <source>Your link has been copied!</source>
-        <translation type="vanished">您的链接已复制！</translation>
+        <translation>您的链接已复制！</translation>
     </message>
     <message>
         <source>Generating board files...</source>
-        <translation type="vanished">正在生成开发板文件...</translation>
+        <translation>正在生成开发板文件...</translation>
     </message>
     <message>
         <source>Installing board to SDK</source>
-        <translation type="vanished">正在将开发板安装到 SDK</translation>
+        <translation>正在将开发板安装到 SDK</translation>
     </message>
     <message>
         <source>Sending your data to the mikroSDK server...</source>
-        <translation type="vanished">正在将您的数据发送到 mikroSDK 服务器...</translation>
+        <translation>正在将您的数据发送到 mikroSDK 服务器...</translation>
     </message>
     <message>
         <source>Waiting for server to finish upload process...</source>
-        <translation type="vanished">正在等待服务器完成上传过程...</translation>
+        <translation>正在等待服务器完成上传过程...</translation>
     </message>
     <message>
         <source>Your new generated board will be visible when creating new configuration</source>
-        <translation type="vanished">创建新配置时，您新生成的开发板将可见</translation>
+        <translation>创建新配置时，您新生成的开发板将可见</translation>
     </message>
     <message>
         <source>Failed to upload board file</source>
-        <translation type="vanished">上传开发板文件失败</translation>
+        <translation>上传开发板文件失败</translation>
     </message>
     <message>
         <source>Your link has been generated.</source>
-        <translation type="vanished">您的链接已生成。</translation>
+        <translation>您的链接已生成。</translation>
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="vanished">复制链接</translation>
+        <translation>复制链接</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardImportPage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>Add new board</source>
-        <translation type="vanished">添加新开发板</translation>
+        <translation>添加新开发板</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">下一步</translation>
+        <translation>下一步</translation>
     </message>
     <message>
         <source>Custom Board Tool</source>
-        <translation type="vanished">自定义开发板工具</translation>
+        <translation>自定义开发板工具</translation>
     </message>
     <message>
         <source>Import existing board</source>
-        <translation type="vanished">导入现有开发板</translation>
+        <translation>导入现有开发板</translation>
     </message>
     <message>
         <source>Choose board file path</source>
-        <translation type="vanished">选择开发板文件路径</translation>
+        <translation>选择开发板文件路径</translation>
     </message>
     <message>
         <source>Open zip file</source>
-        <translation type="vanished">打开 zip 文件</translation>
+        <translation>打开 zip 文件</translation>
     </message>
     <message>
         <source>ZIP file (*.zip)</source>
-        <translation type="vanished">ZIP 文件 (*.zip)</translation>
+        <translation>ZIP 文件 (*.zip)</translation>
     </message>
     <message>
         <source>Invalid file name</source>
-        <translation type="vanished">文件名无效</translation>
+        <translation>文件名无效</translation>
     </message>
     <message>
         <source>File does not exist</source>
-        <translation type="vanished">文件不存在</translation>
+        <translation>文件不存在</translation>
     </message>
     <message>
         <source>File larger than 5MB</source>
-        <translation type="vanished">文件大于 5MB</translation>
+        <translation>文件大于 5MB</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardModuleEditingPage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>Custom Board Tool</source>
-        <translation type="vanished">自定义开发板工具</translation>
+        <translation>自定义开发板工具</translation>
     </message>
     <message>
         <source>mikroBUS mapping</source>
-        <translation type="vanished">mikroBUS 映射</translation>
+        <translation>mikroBUS 映射</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>1</source>
-        <translation type="vanished">1</translation>
+        <translation>1</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardModuleTemplatePage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>Custom Board Tool</source>
-        <translation type="vanished">自定义开发板工具</translation>
+        <translation>自定义开发板工具</translation>
     </message>
     <message>
         <source>Choose module template</source>
-        <translation type="vanished">选择模块模板</translation>
+        <translation>选择模块模板</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">添加</translation>
+        <translation>添加</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardModulesPage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>Custom Board Tool</source>
-        <translation type="vanished">自定义开发板工具</translation>
+        <translation>自定义开发板工具</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <source>Add new</source>
-        <translation type="vanished">新增</translation>
+        <translation>新增</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardNamePage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>Custom Board Tool</source>
-        <translation type="vanished">自定义开发板工具</translation>
+        <translation>自定义开发板工具</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">下一步</translation>
+        <translation>下一步</translation>
     </message>
     <message>
         <source>Board name:</source>
-        <translation type="vanished">开发板名称：</translation>
+        <translation>开发板名称：</translation>
     </message>
     <message>
         <source>Selected SDK:</source>
-        <translation type="vanished">所选 SDK：</translation>
+        <translation>所选 SDK：</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="vanished">是</translation>
+        <translation>是</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="vanished">否</translation>
+        <translation>否</translation>
     </message>
     <message>
         <source>Board already exists. Overwrite?</source>
-        <translation type="vanished">开发板已存在。是否覆盖？</translation>
+        <translation>开发板已存在。是否覆盖？</translation>
     </message>
     <message>
         <source>File name exceeds 128 characters</source>
-        <translation type="vanished">文件名超过 128 个字符</translation>
+        <translation>文件名超过 128 个字符</translation>
     </message>
     <message>
         <source>Invalid characters in board name</source>
-        <translation type="vanished">开发板名称包含无效字符</translation>
+        <translation>开发板名称包含无效字符</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardOptionsPage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>Custom Board Tool</source>
-        <translation type="vanished">自定义开发板工具</translation>
+        <translation>自定义开发板工具</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Add new board</source>
-        <translation type="vanished">添加新开发板</translation>
+        <translation>添加新开发板</translation>
     </message>
     <message>
         <source>Create a new board from scratch</source>
-        <translation type="vanished">从头创建新开发板</translation>
+        <translation>从头创建新开发板</translation>
     </message>
     <message>
         <source>Import board</source>
-        <translation type="vanished">导入开发板</translation>
+        <translation>导入开发板</translation>
     </message>
     <message>
         <source>Import an existing board</source>
-        <translation type="vanished">导入现有开发板</translation>
+        <translation>导入现有开发板</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardSelectFileWidget</name>
     <message>
         <source>Please select or drag image</source>
-        <translation type="vanished">请选择或拖放图片</translation>
+        <translation>请选择或拖放图片</translation>
     </message>
     <message>
         <source>Maximum file size is 2MB!</source>
-        <translation type="vanished">最大文件大小为 2MB！</translation>
+        <translation>最大文件大小为 2MB！</translation>
     </message>
     <message>
         <source>Open image file</source>
-        <translation type="vanished">打开图片文件</translation>
+        <translation>打开图片文件</translation>
     </message>
     <message>
         <source>Image files (*.jpg *.jpeg *.png *.bmp)</source>
-        <translation type="vanished">图片文件 (*.jpg *.jpeg *.png *.bmp)</translation>
+        <translation>图片文件 (*.jpg *.jpeg *.png *.bmp)</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomChartView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Export clicked chart as .png</source>
-        <translation type="vanished">将点击的图表导出为 .png</translation>
+        <translation>将点击的图表导出为 .png</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation type="vanished">保存图片</translation>
+        <translation>保存图片</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomKeySequenceEdit</name>
     <message>
         <source>Press desired key combination...</source>
-        <translation type="vanished">按下所需的组合键...</translation>
+        <translation>按下所需的组合键...</translation>
     </message>
 </context>
 <context>
@@ -10159,365 +10159,365 @@ Do you wish to override the security check and continue ?   </source>
     </message>
     <message>
         <source>Search for %1</source>
-        <translation type="vanished">搜索 %1</translation>
+        <translation>搜索 %1</translation>
     </message>
     <message>
         <source>Can not find %1 you have searched for</source>
-        <translation type="vanished">找不到您搜索的 %1</translation>
+        <translation>找不到您搜索的 %1</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomTooltip</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>&lt;a href=&quot;%1&quot;&gt;Product page&lt;/a&gt;</source>
-        <translation type="vanished">&lt;a href=&quot;%1&quot;&gt;Product 页面&lt;/a&gt;</translation>
+        <translation>&lt;a href=&quot;%1&quot;&gt;Product 页面&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
     <name>Necto::DateDialog</name>
     <message>
         <source>OK</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Select Dates</source>
-        <translation type="vanished">选择日期</translation>
+        <translation>选择日期</translation>
     </message>
 </context>
 <context>
     <name>Necto::DebugPlanetLicenseManager</name>
     <message>
         <source>Waiting for server response..</source>
-        <translation type="vanished">正在等待服务器响应..</translation>
+        <translation>正在等待服务器响应..</translation>
     </message>
     <message>
         <source>Reading license data...</source>
-        <translation type="vanished">正在读取许可证数据...</translation>
+        <translation>正在读取许可证数据...</translation>
     </message>
     <message>
         <source>Waiting for server response...</source>
-        <translation type="vanished">正在等待服务器响应...</translation>
+        <translation>正在等待服务器响应...</translation>
     </message>
 </context>
 <context>
     <name>Necto::DebugSessionManager</name>
     <message>
         <source>Debugger cannot be started. There is no active project</source>
-        <translation type="vanished">无法启动调试器。没有活动项目</translation>
+        <translation>无法启动调试器。没有活动项目</translation>
     </message>
     <message>
         <source>Simulator is only supported for mikroC AI compilers.</source>
-        <translation type="vanished">模拟器仅支持 mikroC AI 编译器。</translation>
+        <translation>模拟器仅支持 mikroC AI 编译器。</translation>
     </message>
     <message>
         <source>Error occured: %1</source>
-        <translation type="vanished">发生错误：%1</translation>
+        <translation>发生错误：%1</translation>
     </message>
     <message>
         <source>Debugger: %1</source>
-        <translation type="vanished">调试器：%1</translation>
+        <translation>调试器：%1</translation>
     </message>
 </context>
 <context>
     <name>Necto::DebugView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>  Locals</source>
-        <translation type="vanished">  局部变量</translation>
+        <translation>  局部变量</translation>
     </message>
     <message>
         <source>  Expressions</source>
-        <translation type="vanished">  表达式</translation>
+        <translation>  表达式</translation>
     </message>
     <message>
         <source>  Breakpoints</source>
-        <translation type="vanished">  断点</translation>
+        <translation>  断点</translation>
     </message>
     <message>
         <source>  Registers</source>
-        <translation type="vanished">  寄存器</translation>
+        <translation>  寄存器</translation>
     </message>
     <message>
         <source>  Call stack</source>
-        <translation type="vanished">  调用堆栈</translation>
+        <translation>  调用堆栈</translation>
     </message>
     <message>
         <source>Remove breakpoint</source>
-        <translation type="vanished">移除断点</translation>
+        <translation>移除断点</translation>
     </message>
     <message>
         <source>Remove all breakpoints</source>
-        <translation type="vanished">移除所有断点</translation>
+        <translation>移除所有断点</translation>
     </message>
     <message>
         <source>Add new expression</source>
-        <translation type="vanished">添加新表达式</translation>
+        <translation>添加新表达式</translation>
     </message>
     <message>
         <source>Remove expression</source>
-        <translation type="vanished">移除表达式</translation>
+        <translation>移除表达式</translation>
     </message>
     <message>
         <source>Remove all expressions</source>
-        <translation type="vanished">移除所有表达式</translation>
+        <translation>移除所有表达式</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation type="vanished">默认</translation>
+        <translation>默认</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">十六进制</translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Binary</source>
-        <translation type="vanished">二进制</translation>
+        <translation>二进制</translation>
     </message>
     <message>
         <source>Decimal</source>
-        <translation type="vanished">十进制</translation>
+        <translation>十进制</translation>
     </message>
     <message>
         <source>Floating point</source>
-        <translation type="vanished">浮点</translation>
+        <translation>浮点</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">字符串</translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Add to expressions</source>
-        <translation type="vanished">添加到表达式</translation>
+        <translation>添加到表达式</translation>
     </message>
     <message>
         <source>Value format</source>
-        <translation type="vanished">值格式</translation>
+        <translation>值格式</translation>
     </message>
 </context>
 <context>
     <name>Necto::DebuggerUIController</name>
     <message>
         <source>Debugger</source>
-        <translation type="vanished">调试器</translation>
+        <translation>调试器</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation type="vanished">调试</translation>
+        <translation>调试</translation>
     </message>
     <message>
         <source>Simulator</source>
-        <translation type="vanished">模拟器</translation>
+        <translation>模拟器</translation>
     </message>
     <message>
         <source>Stop Debugger</source>
-        <translation type="vanished">停止调试器</translation>
+        <translation>停止调试器</translation>
     </message>
     <message>
         <source>Stop debugging active project.</source>
-        <translation type="vanished">停止调试活动项目。</translation>
+        <translation>停止调试活动项目。</translation>
     </message>
     <message>
         <source>Continue Debug</source>
-        <translation type="vanished">继续调试</translation>
+        <translation>继续调试</translation>
     </message>
     <message>
         <source>Restart Debug</source>
-        <translation type="vanished">重新开始调试</translation>
+        <translation>重新开始调试</translation>
     </message>
     <message>
         <source>Start HW Debugging</source>
-        <translation type="vanished">开始硬件调试</translation>
+        <translation>开始硬件调试</translation>
     </message>
     <message>
         <source>Start HW debugging, without building and programming.</source>
-        <translation type="vanished">开始硬件调试，不构建和烧录。</translation>
+        <translation>开始硬件调试，不构建和烧录。</translation>
     </message>
     <message>
         <source>Step Over</source>
-        <translation type="vanished">单步越过</translation>
+        <translation>单步越过</translation>
     </message>
     <message>
         <source>Step Into</source>
-        <translation type="vanished">单步进入</translation>
+        <translation>单步进入</translation>
     </message>
     <message>
         <source>Step Out</source>
-        <translation type="vanished">单步跳出</translation>
+        <translation>单步跳出</translation>
     </message>
     <message>
         <source>Run To Line</source>
-        <translation type="vanished">运行到行</translation>
+        <translation>运行到行</translation>
     </message>
     <message>
         <source>Disassembly mode</source>
-        <translation type="vanished">反汇编模式</translation>
+        <translation>反汇编模式</translation>
     </message>
     <message>
         <source>Pause Debug</source>
-        <translation type="vanished">暂停调试</translation>
+        <translation>暂停调试</translation>
     </message>
     <message>
         <source>Pause Debug (F6)</source>
-        <translation type="vanished">暂停调试 (F6)</translation>
+        <translation>暂停调试 (F6)</translation>
     </message>
     <message>
         <source>Continue Debug (F6)</source>
-        <translation type="vanished">继续调试 (F6)</translation>
+        <translation>继续调试 (F6)</translation>
     </message>
 </context>
 <context>
     <name>Necto::DesignerEditorPlugin</name>
     <message>
         <source>Design</source>
-        <translation type="vanished">设计</translation>
+        <translation>设计</translation>
     </message>
 </context>
 <context>
     <name>Necto::DesignerView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Cut</source>
-        <translation type="vanished">剪切</translation>
+        <translation>剪切</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">复制</translation>
+        <translation>复制</translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation type="vanished">粘贴</translation>
+        <translation>粘贴</translation>
     </message>
     <message>
         <source>Delete selected</source>
-        <translation type="vanished">删除所选项</translation>
+        <translation>删除所选项</translation>
     </message>
     <message>
         <source>Select All</source>
-        <translation type="vanished">全选</translation>
+        <translation>全选</translation>
     </message>
     <message>
         <source>Align left</source>
-        <translation type="vanished">左对齐</translation>
+        <translation>左对齐</translation>
     </message>
     <message>
         <source>Align top</source>
-        <translation type="vanished">顶端对齐</translation>
+        <translation>顶端对齐</translation>
     </message>
     <message>
         <source>Align bottom</source>
-        <translation type="vanished">底端对齐</translation>
+        <translation>底端对齐</translation>
     </message>
     <message>
         <source>Align right</source>
-        <translation type="vanished">右对齐</translation>
+        <translation>右对齐</translation>
     </message>
     <message>
         <source>Center vertical</source>
-        <translation type="vanished">垂直居中</translation>
+        <translation>垂直居中</translation>
     </message>
     <message>
         <source>Center horizontal</source>
-        <translation type="vanished">水平居中</translation>
+        <translation>水平居中</translation>
     </message>
     <message>
         <source>Make same height</source>
-        <translation type="vanished">设为相同高度</translation>
+        <translation>设为相同高度</translation>
     </message>
     <message>
         <source>Make same width</source>
-        <translation type="vanished">设为相同宽度</translation>
+        <translation>设为相同宽度</translation>
     </message>
     <message>
         <source>Make same size</source>
-        <translation type="vanished">设为相同大小</translation>
+        <translation>设为相同大小</translation>
     </message>
     <message>
         <source>Stick vertical</source>
-        <translation type="vanished">垂直贴合</translation>
+        <translation>垂直贴合</translation>
     </message>
     <message>
         <source>Stick horizontal</source>
-        <translation type="vanished">水平贴合</translation>
+        <translation>水平贴合</translation>
     </message>
     <message>
         <source>Space horizontal evenly</source>
-        <translation type="vanished">水平均匀分布</translation>
+        <translation>水平均匀分布</translation>
     </message>
     <message>
         <source>Space vertical evenly</source>
-        <translation type="vanished">垂直均匀分布</translation>
+        <translation>垂直均匀分布</translation>
     </message>
     <message>
         <source>Bring to front</source>
-        <translation type="vanished">置于顶层</translation>
+        <translation>置于顶层</translation>
     </message>
     <message>
         <source>Send to back</source>
-        <translation type="vanished">置于底层</translation>
+        <translation>置于底层</translation>
     </message>
     <message>
         <source>Group components</source>
-        <translation type="vanished">组合组件</translation>
+        <translation>组合组件</translation>
     </message>
     <message>
         <source>Ungroup components</source>
-        <translation type="vanished">取消组合组件</translation>
+        <translation>取消组合组件</translation>
     </message>
     <message>
         <source>Zoom in</source>
-        <translation type="vanished">放大</translation>
+        <translation>放大</translation>
     </message>
     <message>
         <source>Zoom out</source>
-        <translation type="vanished">缩小</translation>
+        <translation>缩小</translation>
     </message>
     <message>
         <source>Save as component</source>
-        <translation type="vanished">另存为组件</translation>
+        <translation>另存为组件</translation>
     </message>
     <message>
         <source>Save screen</source>
-        <translation type="vanished">保存屏幕</translation>
+        <translation>保存屏幕</translation>
     </message>
 </context>
 <context>
     <name>Necto::DetachFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Connected to: %1</source>
-        <translation type="vanished">已连接到：%1</translation>
+        <translation>已连接到：%1</translation>
     </message>
 </context>
 <context>
     <name>Necto::DeviceInfoView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Disconnected</source>
-        <translation type="vanished">已断开连接</translation>
+        <translation>已断开连接</translation>
     </message>
     <message>
         <source>Connected</source>
-        <translation type="vanished">已连接</translation>
+        <translation>已连接</translation>
     </message>
 </context>
 <context>
@@ -10528,161 +10528,161 @@ Do you wish to override the security check and continue ?   </source>
     </message>
     <message>
         <source>Choose a MCU</source>
-        <translation type="vanished">选择 MCU</translation>
+        <translation>选择 MCU</translation>
     </message>
     <message>
         <source> Vendor</source>
-        <translation type="vanished"> 厂商</translation>
+        <translation> 厂商</translation>
     </message>
     <message>
         <source> Core</source>
-        <translation type="vanished"> 内核</translation>
+        <translation> 内核</translation>
     </message>
     <message>
         <source> SDK support</source>
-        <translation type="vanished"> SDK 支持</translation>
+        <translation> SDK 支持</translation>
     </message>
     <message>
         <source> Architecture</source>
-        <translation type="vanished"> 架构</translation>
+        <translation> 架构</translation>
     </message>
     <message>
         <source>Flash (KB)</source>
-        <translation type="vanished">Flash (KB)</translation>
+        <translation>Flash (KB)</translation>
     </message>
     <message>
         <source>RAM (KB)</source>
-        <translation type="vanished">RAM (KB)</translation>
+        <translation>RAM (KB)</translation>
     </message>
     <message>
         <source> Memory</source>
-        <translation type="vanished"> 内存</translation>
+        <translation> 内存</translation>
     </message>
     <message>
         <source> Max speed</source>
-        <translation type="vanished"> 最大速度</translation>
+        <translation> 最大速度</translation>
     </message>
     <message>
         <source> Package</source>
-        <translation type="vanished"> 封装</translation>
+        <translation> 封装</translation>
     </message>
     <message>
         <source> Pin Count</source>
-        <translation type="vanished"> 引脚数</translation>
+        <translation> 引脚数</translation>
     </message>
     <message>
         <source>Package Type</source>
-        <translation type="vanished">封装类型</translation>
+        <translation>封装类型</translation>
     </message>
 </context>
 <context>
     <name>Necto::DialogBackFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
 </context>
 <context>
     <name>Necto::DisassemblyEditor</name>
     <message>
         <source>Disable Breakpoint</source>
-        <translation type="vanished">禁用断点</translation>
+        <translation>禁用断点</translation>
     </message>
     <message>
         <source>Remove Breakpoint</source>
-        <translation type="vanished">移除断点</translation>
+        <translation>移除断点</translation>
     </message>
     <message>
         <source>Toggle Bookmark</source>
-        <translation type="vanished">切换书签</translation>
+        <translation>切换书签</translation>
     </message>
 </context>
 <context>
     <name>Necto::DisplayWizardPage</name>
     <message>
         <source>Choose a display</source>
-        <translation type="vanished">选择显示屏</translation>
+        <translation>选择显示屏</translation>
     </message>
 </context>
 <context>
     <name>Necto::DownloadManagerWidget</name>
     <message>
         <source>Downloads</source>
-        <translation type="vanished">下载</translation>
+        <translation>下载</translation>
     </message>
     <message>
         <source>No downloads</source>
-        <translation type="vanished">无下载</translation>
+        <translation>无下载</translation>
     </message>
     <message>
         <source>All Files (*)</source>
-        <translation type="vanished">所有文件 (*)</translation>
+        <translation>所有文件 (*)</translation>
     </message>
     <message>
         <source>Save as</source>
-        <translation type="vanished">另存为</translation>
+        <translation>另存为</translation>
     </message>
 </context>
 <context>
     <name>Necto::DownloadWidget</name>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>%L1 B</source>
-        <translation type="vanished">%L1 B</translation>
+        <translation>%L1 B</translation>
     </message>
     <message>
         <source>%L1 KiB</source>
-        <translation type="vanished">%L1 KiB</translation>
+        <translation>%L1 KiB</translation>
     </message>
     <message>
         <source>%L1 MiB</source>
-        <translation type="vanished">%L1 MiB</translation>
+        <translation>%L1 MiB</translation>
     </message>
     <message>
         <source>%L1 GiB</source>
-        <translation type="vanished">%L1 GiB</translation>
+        <translation>%L1 GiB</translation>
     </message>
     <message>
         <source>%p% - %1 of %2 downloaded - %3/s</source>
-        <translation type="vanished">%p% - %1 的 %2 downloaded - %3/s</translation>
+        <translation>%p% - %1 的 %2 downloaded - %3/s</translation>
     </message>
     <message>
         <source>unknown size - %1 downloaded - %2/s</source>
-        <translation type="vanished">未知大小 - 已下载 %1 - %2/s</translation>
+        <translation>未知大小 - 已下载 %1 - %2/s</translation>
     </message>
     <message>
         <source>completed - %1 downloaded - %2/s</source>
-        <translation type="vanished">已完成 - 已下载 %1 - %2/s</translation>
+        <translation>已完成 - 已下载 %1 - %2/s</translation>
     </message>
     <message>
         <source>cancelled - %1 downloaded - %2/s</source>
-        <translation type="vanished">已取消 - 已下载 %1 - %2/s</translation>
+        <translation>已取消 - 已下载 %1 - %2/s</translation>
     </message>
     <message>
         <source>interrupted: %1</source>
-        <translation type="vanished">已中断：%1</translation>
+        <translation>已中断：%1</translation>
     </message>
     <message>
         <source>Stop downloading</source>
-        <translation type="vanished">停止下载</translation>
+        <translation>停止下载</translation>
     </message>
     <message>
         <source>Remove from list</source>
-        <translation type="vanished">从列表中移除</translation>
+        <translation>从列表中移除</translation>
     </message>
 </context>
 <context>
     <name>Necto::DownloadingWidget</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Synchronizing with Libstock. Please wait.</source>
-        <translation type="vanished">正在与 Libstock 同步。请稍候。</translation>
+        <translation>正在与 Libstock 同步。请稍候。</translation>
     </message>
 </context>
 <context>
@@ -10712,340 +10712,340 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::EditorPage</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Auto Closing Brackets</source>
-        <translation type="vanished">自动闭合括号</translation>
+        <translation>自动闭合括号</translation>
     </message>
     <message>
         <source>always</source>
-        <translation type="vanished">始终</translation>
+        <translation>始终</translation>
     </message>
     <message>
         <source>beforeWhitespace</source>
-        <translation type="vanished">空白前</translation>
+        <translation>空白前</translation>
     </message>
     <message>
         <source>never</source>
-        <translation type="vanished">从不</translation>
+        <translation>从不</translation>
     </message>
     <message>
         <source>Auto Closing Delete</source>
-        <translation type="vanished">自动闭合删除</translation>
+        <translation>自动闭合删除</translation>
     </message>
     <message>
         <source>Auto Closing Overtype</source>
-        <translation type="vanished">自动闭合覆盖输入</translation>
+        <translation>自动闭合覆盖输入</translation>
     </message>
     <message>
         <source>languageDefined</source>
-        <translation type="vanished">语言定义</translation>
+        <translation>语言定义</translation>
     </message>
     <message>
         <source>Auto Closing Quotes</source>
-        <translation type="vanished">自动闭合引号</translation>
+        <translation>自动闭合引号</translation>
     </message>
     <message>
         <source>Auto Indent</source>
-        <translation type="vanished">自动缩进</translation>
+        <translation>自动缩进</translation>
     </message>
     <message>
         <source>none</source>
-        <translation type="vanished">无</translation>
+        <translation>无</translation>
     </message>
     <message>
         <source>keep</source>
-        <translation type="vanished">保持</translation>
+        <translation>保持</translation>
     </message>
     <message>
         <source>brackets</source>
-        <translation type="vanished">括号</translation>
+        <translation>括号</translation>
     </message>
     <message>
         <source>advanced</source>
-        <translation type="vanished">高级</translation>
+        <translation>高级</translation>
     </message>
     <message>
         <source>full</source>
-        <translation type="vanished">完整</translation>
+        <translation>完整</translation>
     </message>
     <message>
         <source>Code Lens</source>
-        <translation type="vanished">Code Lens</translation>
+        <translation>Code Lens</translation>
     </message>
     <message>
         <source>Max Tokenization Line Length</source>
-        <translation type="vanished">最大分词行长度</translation>
+        <translation>最大分词行长度</translation>
     </message>
     <message>
         <source>Overtype Paste</source>
-        <translation type="vanished">覆盖粘贴</translation>
+        <translation>覆盖粘贴</translation>
     </message>
     <message>
         <source>Show Headers</source>
-        <translation type="vanished">显示标题</translation>
+        <translation>显示标题</translation>
     </message>
     <message>
         <source>Show Quick Fixes</source>
-        <translation type="vanished">显示快速修复</translation>
+        <translation>显示快速修复</translation>
     </message>
     <message>
         <source>Scroll Sensitivity</source>
-        <translation type="vanished">滚动灵敏度</translation>
+        <translation>滚动灵敏度</translation>
     </message>
     <message>
         <source>Tab Size</source>
-        <translation type="vanished">Tab 大小</translation>
+        <translation>Tab 大小</translation>
     </message>
     <message>
         <source>Word Wrap</source>
-        <translation type="vanished">自动换行</translation>
+        <translation>自动换行</translation>
     </message>
     <message>
         <source>off</source>
-        <translation type="vanished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>on</source>
-        <translation type="vanished">开启</translation>
+        <translation>开启</translation>
     </message>
     <message>
         <source>wordWrapColumn</source>
-        <translation type="vanished">自动换行列</translation>
+        <translation>自动换行列</translation>
     </message>
     <message>
         <source>bounded</source>
-        <translation type="vanished">受限</translation>
+        <translation>受限</translation>
     </message>
     <message>
         <source>Font Family</source>
-        <translation type="vanished">字体系列</translation>
+        <translation>字体系列</translation>
     </message>
     <message>
         <source>Font Size</source>
-        <translation type="vanished">字体大小</translation>
+        <translation>字体大小</translation>
     </message>
     <message>
         <source>Minimap</source>
-        <translation type="vanished">迷你地图</translation>
+        <translation>迷你地图</translation>
     </message>
     <message>
         <source>Controls whether the editor should automatically close quotes after the user adds an opening quote.</source>
-        <translation type="vanished">Controls whether the editor should automatically 关闭 quotes after the 用户 adds an opening quote.</translation>
+        <translation>Controls whether the editor should automatically 关闭 quotes after the 用户 adds an opening quote.</translation>
     </message>
     <message>
         <source>Controls whether the editor should automatically close brackets after the user opens them.</source>
-        <translation type="vanished">Controls whether the editor should automatically 关闭 brackets after the 用户 opens them.</translation>
+        <translation>Controls whether the editor should automatically 关闭 brackets after the 用户 opens them.</translation>
     </message>
     <message>
         <source>Controls whether the editor should remove auto-closed brackets and quotes when the opening bracket or quote is deleted.</source>
-        <translation type="vanished">Controls whether the editor should 移除 auto-closed brackets 和 quotes when the opening bracket 或 quote 是 deleted.</translation>
+        <translation>Controls whether the editor should 移除 auto-closed brackets 和 quotes when the opening bracket 或 quote 是 deleted.</translation>
     </message>
     <message>
         <source>Controls whether the editor should type over closing quotes or brackets when they already exist.</source>
-        <translation type="vanished">Controls whether the editor should 类型 over closing quotes 或 brackets when they already exist.</translation>
+        <translation>Controls whether the editor should 类型 over closing quotes 或 brackets when they already exist.</translation>
     </message>
     <message>
         <source>Controls whether the editor should automatically adjust indentation when users type, paste, move lines, or press Enter.</source>
-        <translation type="vanished">Controls whether the editor should automatically adjust indentation when users 类型, 粘贴, move lines, 或 press Enter.</translation>
+        <translation>Controls whether the editor should automatically adjust indentation when users 类型, 粘贴, move lines, 或 press Enter.</translation>
     </message>
     <message>
         <source>Controls how lines should wrap in the editor. Select &apos;on&apos; for automatic wrapping, &apos;off&apos; to disable it.</source>
-        <translation type="vanished">Controls how lines should wrap 在 the editor. 选择 &apos;在&apos; 用于 automatic wrapping, &apos;off&apos; 到 disable it.</translation>
+        <translation>Controls how lines should wrap 在 the editor. 选择 &apos;在&apos; 用于 automatic wrapping, &apos;off&apos; 到 disable it.</translation>
     </message>
     <message>
         <source>Show CodeLens in the editor, which provides actionable context information like references and test status above your code.</source>
-        <translation type="vanished">Show CodeLens 在 the editor, which provides actionable context 信息 like references 和 test 状态 above 您的 code.</translation>
+        <translation>Show CodeLens 在 the editor, which provides actionable context 信息 like references 和 test 状态 above 您的 code.</translation>
     </message>
     <message>
         <source>Show headers in the code action widget to group code actions and organize suggestions.</source>
-        <translation type="vanished">Show headers 在 the code 操作 widget 到 group code 操作 和 organize suggestions.</translation>
+        <translation>Show headers 在 the code 操作 widget 到 group code 操作 和 organize suggestions.</translation>
     </message>
     <message>
         <source>Show lightbulb or wrench icon inline for quick fixes and code actions.</source>
-        <translation type="vanished">Show lightbulb 或 wrench icon inline 用于 quick fixes 和 code 操作.</translation>
+        <translation>Show lightbulb 或 wrench icon inline 用于 quick fixes 和 code 操作.</translation>
     </message>
     <message>
         <source>Controls whether pasting over a selection should replace only as many characters as the pasted text contains.</source>
-        <translation type="vanished">Controls whether pasting over a selection should replace 仅 as many characters as the pasted text contains.</translation>
+        <translation>Controls whether pasting over a selection should replace 仅 as many characters as the pasted text contains.</translation>
     </message>
     <message>
         <source>Show a code overview mini map on the side of the editor for quick navigation.</source>
-        <translation type="vanished">Show a code overview mini map 在 the side 的 the editor 用于 quick navigation.</translation>
+        <translation>Show a code overview mini map 在 the side 的 the editor 用于 quick navigation.</translation>
     </message>
     <message>
         <source>Defines the maximum length of a line the editor will tokenize. Lines above this length will not be tokenized for performance.</source>
-        <translation type="vanished">Defines the maximum length 的 a 行 the editor 将 tokenize. Lines above 此 length 将 不 be tokenized 用于 performance.</translation>
+        <translation>Defines the maximum length 的 a 行 the editor 将 tokenize. Lines above 此 length 将 不 be tokenized 用于 performance.</translation>
     </message>
     <message>
         <source>Controls the sensitivity of mouse wheel scrolling in the editor.</source>
-        <translation type="vanished">Controls the sensitivity 的 mouse wheel scrolling 在 the editor.</translation>
+        <translation>Controls the sensitivity 的 mouse wheel scrolling 在 the editor.</translation>
     </message>
     <message>
         <source>The number of spaces a tab is equal to. This affects editor indentation and tab rendering.</source>
-        <translation type="vanished">The 数字 的 spaces a tab 是 equal 到. 此 affects editor indentation 和 tab rendering.</translation>
+        <translation>The 数字 的 spaces a tab 是 equal 到. 此 affects editor indentation 和 tab rendering.</translation>
     </message>
     <message>
         <source>Controls the font family used in the editor. Enter a font name like &apos;Fira Code&apos; or &apos;Courier New&apos;.</source>
-        <translation type="vanished">Controls the 字体 family 已使用 在 the editor. Enter a 字体 名称 like &apos;Fira Code&apos; 或 &apos;Courier 新建&apos;.</translation>
+        <translation>Controls the 字体 family 已使用 在 the editor. Enter a 字体 名称 like &apos;Fira Code&apos; 或 &apos;Courier 新建&apos;.</translation>
     </message>
     <message>
         <source>Controls the font size in pixels used in the editor.</source>
-        <translation type="vanished">Controls the 字体 大小 在 pixels 已使用 在 the editor.</translation>
+        <translation>Controls the 字体 大小 在 pixels 已使用 在 the editor.</translation>
     </message>
     <message>
         <source>Text editor settings</source>
-        <translation type="vanished">文本编辑器设置</translation>
+        <translation>文本编辑器设置</translation>
     </message>
     <message>
         <source>Restart now</source>
-        <translation type="vanished">立即重启</translation>
+        <translation>立即重启</translation>
     </message>
     <message>
         <source>Restart later</source>
-        <translation type="vanished">稍后重启</translation>
+        <translation>稍后重启</translation>
     </message>
     <message>
         <source>Changes will be visible after you restart NECTO Studio.</source>
-        <translation type="vanished">重启 NECTO Studio 后更改将生效。</translation>
+        <translation>重启 NECTO Studio 后更改将生效。</translation>
     </message>
 </context>
 <context>
     <name>Necto::EditorSettingsPage</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
 </context>
 <context>
     <name>Necto::ElementView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>MCU</source>
-        <translation type="vanished">MCU</translation>
+        <translation>MCU</translation>
     </message>
     <message>
         <source>STM32F407ZG</source>
-        <translation type="vanished">STM32F407ZG</translation>
+        <translation>STM32F407ZG</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="vanished">设置</translation>
+        <translation>设置</translation>
     </message>
     <message>
         <source>Change</source>
-        <translation type="vanished">更改</translation>
+        <translation>更改</translation>
     </message>
 </context>
 <context>
     <name>Necto::EnterKeyFrame</name>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Enter key</source>
-        <translation type="vanished">输入键</translation>
+        <translation>输入键</translation>
     </message>
 </context>
 <context>
     <name>Necto::EnvironmentPage</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Color theme:</source>
-        <translation type="vanished">颜色主题：</translation>
+        <translation>颜色主题：</translation>
     </message>
     <message>
         <source>Enable animations</source>
-        <translation type="vanished">启用动画</translation>
+        <translation>启用动画</translation>
     </message>
     <message>
         <source>Enable shadows</source>
-        <translation type="vanished">启用阴影</translation>
+        <translation>启用阴影</translation>
     </message>
     <message>
         <source>Restart now</source>
-        <translation type="vanished">立即重启</translation>
+        <translation>立即重启</translation>
     </message>
     <message>
         <source>Restart later</source>
-        <translation type="vanished">稍后重启</translation>
+        <translation>稍后重启</translation>
     </message>
     <message>
         <source>Changes will be visible after you restart NECTO Studio.</source>
-        <translation type="vanished">重启 NECTO Studio 后更改将生效。</translation>
+        <translation>重启 NECTO Studio 后更改将生效。</translation>
     </message>
     <message>
         <source>Appearance settings</source>
-        <translation type="vanished">外观设置</translation>
+        <translation>外观设置</translation>
     </message>
 </context>
 <context>
     <name>Necto::EventsInspector</name>
     <message>
         <source>Filter events</source>
-        <translation type="vanished">筛选事件</translation>
+        <translation>筛选事件</translation>
     </message>
     <message>
         <source>No events available for selected component(s)</source>
-        <translation type="vanished">所选组件没有可用事件</translation>
+        <translation>所选组件没有可用事件</translation>
     </message>
 </context>
 <context>
     <name>Necto::ExampleItemView</name>
     <message>
         <source>Example Name</source>
-        <translation type="vanished">示例名称</translation>
+        <translation>示例名称</translation>
     </message>
     <message>
         <source>Dscription</source>
-        <translation type="vanished">说明</translation>
+        <translation>说明</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
 </context>
 <context>
     <name>Necto::ExamplesView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Examples</source>
-        <translation type="vanished">示例</translation>
+        <translation>示例</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>All Examples</source>
-        <translation type="vanished">所有示例</translation>
+        <translation>所有示例</translation>
     </message>
     <message>
         <source>mikroSDK Examples</source>
-        <translation type="vanished">mikroSDK 示例</translation>
+        <translation>mikroSDK 示例</translation>
     </message>
     <message>
         <source>mikroC PRO Examples</source>
-        <translation type="vanished">mikroC PRO 示例</translation>
+        <translation>mikroC PRO 示例</translation>
     </message>
 </context>
 <context>
@@ -11075,483 +11075,483 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::Field</name>
     <message>
         <source>Disabled</source>
-        <translation type="vanished">已禁用</translation>
+        <translation>已禁用</translation>
     </message>
 </context>
 <context>
     <name>Necto::FieldView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
 </context>
 <context>
     <name>Necto::FileActionHandlers</name>
     <message>
         <source>Add new file</source>
-        <translation type="vanished">添加新文件</translation>
+        <translation>添加新文件</translation>
     </message>
     <message>
         <source>Add new file to project </source>
-        <translation type="vanished">向项目添加新文件</translation>
+        <translation>向项目添加新文件</translation>
     </message>
     <message>
         <source>Add new source file</source>
-        <translation type="vanished">添加新源文件</translation>
+        <translation>添加新源文件</translation>
     </message>
     <message>
         <source>Add new source file to project </source>
-        <translation type="vanished">向项目添加新源文件</translation>
+        <translation>向项目添加新源文件</translation>
     </message>
     <message>
         <source>Add new header file</source>
-        <translation type="vanished">添加新头文件</translation>
+        <translation>添加新头文件</translation>
     </message>
     <message>
         <source>Add new header file to project </source>
-        <translation type="vanished">向项目添加新头文件</translation>
+        <translation>向项目添加新头文件</translation>
     </message>
     <message>
         <source>Add new screen file</source>
-        <translation type="vanished">添加新屏幕文件</translation>
+        <translation>添加新屏幕文件</translation>
     </message>
     <message>
         <source>Add new screen to project </source>
-        <translation type="vanished">向项目添加新屏幕</translation>
+        <translation>向项目添加新屏幕</translation>
     </message>
     <message>
         <source>Rename file</source>
-        <translation type="vanished">重命名文件</translation>
+        <translation>重命名文件</translation>
     </message>
     <message>
         <source>Enter new file name.</source>
-        <translation type="vanished">输入新文件名。</translation>
+        <translation>输入新文件名。</translation>
     </message>
     <message>
         <source>Rename source file</source>
-        <translation type="vanished">重命名源文件</translation>
+        <translation>重命名源文件</translation>
     </message>
     <message>
         <source>Enter source file name.</source>
-        <translation type="vanished">输入源文件名。</translation>
+        <translation>输入源文件名。</translation>
     </message>
     <message>
         <source>Rename header file</source>
-        <translation type="vanished">重命名头文件</translation>
+        <translation>重命名头文件</translation>
     </message>
     <message>
         <source>Enter new header file name.</source>
-        <translation type="vanished">输入新头文件名。</translation>
+        <translation>输入新头文件名。</translation>
     </message>
     <message>
         <source>Rename screen</source>
-        <translation type="vanished">重命名屏幕</translation>
+        <translation>重命名屏幕</translation>
     </message>
     <message>
         <source>Enter new screen name.</source>
-        <translation type="vanished">输入新屏幕名称。</translation>
+        <translation>输入新屏幕名称。</translation>
     </message>
     <message>
         <source>Renaming screen will also rename screen header and source file.</source>
-        <translation type="vanished">重命名屏幕也会重命名屏幕头文件和源文件。</translation>
+        <translation>重命名屏幕也会重命名屏幕头文件和源文件。</translation>
     </message>
     <message>
         <source>Remove file</source>
-        <translation type="vanished">移除文件</translation>
+        <translation>移除文件</translation>
     </message>
     <message>
         <source>Remove file &quot;%1&quot; from a project?</source>
-        <translation type="vanished">是否从项目中移除文件“%1”？</translation>
+        <translation>是否从项目中移除文件“%1”？</translation>
     </message>
     <message>
         <source>Remove source file</source>
-        <translation type="vanished">移除源文件</translation>
+        <translation>移除源文件</translation>
     </message>
     <message>
         <source>Remove source file &quot;%1&quot; from a project?</source>
-        <translation type="vanished">是否从项目中移除源文件“%1”？</translation>
+        <translation>是否从项目中移除源文件“%1”？</translation>
     </message>
     <message>
         <source>Remove header file</source>
-        <translation type="vanished">移除头文件</translation>
+        <translation>移除头文件</translation>
     </message>
     <message>
         <source>Remove header file &quot;%1&quot; from a project?</source>
-        <translation type="vanished">是否从项目中移除头文件“%1”？</translation>
+        <translation>是否从项目中移除头文件“%1”？</translation>
     </message>
     <message>
         <source>Remove screen</source>
-        <translation type="vanished">移除屏幕</translation>
+        <translation>移除屏幕</translation>
     </message>
     <message>
         <source>Remove screen file &quot;%1&quot; from a project?</source>
-        <translation type="vanished">是否从项目中移除屏幕文件“%1”？</translation>
+        <translation>是否从项目中移除屏幕文件“%1”？</translation>
     </message>
     <message>
         <source>Removing screen will also remove screen header and source file.</source>
-        <translation type="vanished">移除屏幕也会移除屏幕头文件和源文件。</translation>
+        <translation>移除屏幕也会移除屏幕头文件和源文件。</translation>
     </message>
     <message>
         <source>Choose a file</source>
-        <translation type="vanished">选择文件</translation>
+        <translation>选择文件</translation>
     </message>
     <message>
         <source>Source files (*.c)</source>
-        <translation type="vanished">源文件 (*.c)</translation>
+        <translation>源文件 (*.c)</translation>
     </message>
     <message>
         <source>Header files (*.h)</source>
-        <translation type="vanished">头文件 (*.h)</translation>
+        <translation>头文件 (*.h)</translation>
     </message>
     <message>
         <source>All files (*.*)</source>
-        <translation type="vanished">所有文件 (*.*)</translation>
+        <translation>所有文件 (*.*)</translation>
     </message>
     <message>
         <source>Other</source>
-        <translation type="vanished">其他</translation>
+        <translation>其他</translation>
     </message>
     <message>
         <source>Source</source>
-        <translation type="vanished">源</translation>
+        <translation>源</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">头文件</translation>
+        <translation>头文件</translation>
     </message>
     <message>
         <source>Screen</source>
-        <translation type="vanished">屏幕</translation>
+        <translation>屏幕</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation type="vanished">重命名</translation>
+        <translation>重命名</translation>
     </message>
     <message>
         <source>Existing file</source>
-        <translation type="vanished">现有文件</translation>
+        <translation>现有文件</translation>
     </message>
     <message>
         <source>Open file location</source>
-        <translation type="vanished">打开文件位置</translation>
+        <translation>打开文件位置</translation>
     </message>
     <message>
         <source>Open build folder</source>
-        <translation type="vanished">打开构建文件夹</translation>
+        <translation>打开构建文件夹</translation>
     </message>
     <message>
         <source>Manage project libraries</source>
-        <translation type="vanished">管理项目库</translation>
+        <translation>管理项目库</translation>
     </message>
     <message>
         <source>Copy absolute path</source>
-        <translation type="vanished">复制绝对路径</translation>
+        <translation>复制绝对路径</translation>
     </message>
 </context>
 <context>
     <name>Necto::FilterButton</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
 </context>
 <context>
     <name>Necto::FilterWidget</name>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Search...</source>
-        <translation type="vanished">搜索...</translation>
+        <translation>搜索...</translation>
     </message>
 </context>
 <context>
     <name>Necto::FindInFilesView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">搜索</translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>Replace: </source>
-        <translation type="vanished">替换：</translation>
+        <translation>替换：</translation>
     </message>
     <message>
         <source>Replace all</source>
-        <translation type="vanished">全部替换</translation>
+        <translation>全部替换</translation>
     </message>
     <message>
         <source>Match case sensitive</source>
-        <translation type="vanished">匹配大小写</translation>
+        <translation>匹配大小写</translation>
     </message>
     <message>
         <source>Match whole word</source>
-        <translation type="vanished">匹配整个单词</translation>
+        <translation>匹配整个单词</translation>
     </message>
     <message>
         <source>Use regular expresion</source>
-        <translation type="vanished">使用正则表达式</translation>
+        <translation>使用正则表达式</translation>
     </message>
     <message>
         <source>Replace</source>
-        <translation type="vanished">替换</translation>
+        <translation>替换</translation>
     </message>
 </context>
 <context>
     <name>Necto::FindReferenceView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>found x mathes</source>
-        <translation type="vanished">找到 x 个匹配项</translation>
+        <translation>找到 x 个匹配项</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;No results to display yet.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Type a search query in the input field above to search across your entire codebase.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;尚无结果可显示。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;在上方输入字段中键入搜索查询，以在整个代码库中搜索。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;尚无结果可显示。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;在上方输入字段中键入搜索查询，以在整个代码库中搜索。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Searching....</source>
-        <translation type="vanished">正在搜索....</translation>
+        <translation>正在搜索....</translation>
     </message>
     <message>
         <source>Found: 0 matches</source>
-        <translation type="vanished">找到：0 个匹配项</translation>
+        <translation>找到：0 个匹配项</translation>
     </message>
     <message>
         <source>Expand all</source>
-        <translation type="vanished">全部展开</translation>
+        <translation>全部展开</translation>
     </message>
     <message>
         <source>Collapse all</source>
-        <translation type="vanished">全部折叠</translation>
+        <translation>全部折叠</translation>
     </message>
     <message>
         <source>Goto symbol</source>
-        <translation type="vanished">转到符号</translation>
+        <translation>转到符号</translation>
     </message>
 </context>
 <context>
     <name>Necto::FloatingMessageFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Insert at Cursor</source>
-        <translation type="vanished">在光标处插入</translation>
+        <translation>在光标处插入</translation>
     </message>
     <message>
         <source>Copy code</source>
-        <translation type="vanished">复制代码</translation>
+        <translation>复制代码</translation>
     </message>
 </context>
 <context>
     <name>Necto::Form</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
 </context>
 <context>
     <name>Necto::FormatSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Enable auto format on file save</source>
-        <translation type="vanished">保存文件时启用自动格式化</translation>
+        <translation>保存文件时启用自动格式化</translation>
     </message>
     <message>
         <source>Formatting</source>
-        <translation type="vanished">格式化</translation>
+        <translation>格式化</translation>
     </message>
 </context>
 <context>
     <name>Necto::GCCARMSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation type="vanished">调试器</translation>
+        <translation>调试器</translation>
     </message>
     <message>
         <source>LLDB</source>
-        <translation type="vanished">LLDB</translation>
+        <translation>LLDB</translation>
     </message>
     <message>
         <source>GDB</source>
-        <translation type="vanished">GDB</translation>
+        <translation>GDB</translation>
     </message>
     <message>
         <source>Change your program&apos;s debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
-        <translation type="vanished">根据您的具体需求，将程序调试器从 LLDB 更改为 GDB，或反向更改。</translation>
+        <translation>根据您的具体需求，将程序调试器从 LLDB 更改为 GDB，或反向更改。</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
 </context>
 <context>
     <name>Necto::GdbGeneralView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>GDB server options</source>
-        <translation type="vanished">GDB 服务器选项</translation>
+        <translation>GDB 服务器选项</translation>
     </message>
     <message>
         <source>IP Address:</source>
-        <translation type="vanished">IP 地址：</translation>
+        <translation>IP 地址：</translation>
     </message>
     <message>
         <source>Port:</source>
-        <translation type="vanished">端口：</translation>
+        <translation>端口：</translation>
     </message>
     <message>
         <source>Command line options:</source>
-        <translation type="vanished">命令行选项：</translation>
+        <translation>命令行选项：</translation>
     </message>
     <message>
         <source>Server Path:</source>
-        <translation type="vanished">服务器路径：</translation>
+        <translation>服务器路径：</translation>
     </message>
     <message>
         <source>Remote commands:</source>
-        <translation type="vanished">远程命令：</translation>
+        <translation>远程命令：</translation>
     </message>
     <message>
         <source>Remote commands</source>
-        <translation type="vanished">远程命令</translation>
+        <translation>远程命令</translation>
     </message>
     <message>
         <source>Auto start local GDB Server</source>
-        <translation type="vanished">自动启动本地 GDB 服务器</translation>
+        <translation>自动启动本地 GDB 服务器</translation>
     </message>
     <message>
         <source>Connect to remote GDB Server</source>
-        <translation type="vanished">连接到远程 GDB 服务器</translation>
+        <translation>连接到远程 GDB 服务器</translation>
     </message>
     <message>
         <source>GDB Settings</source>
-        <translation type="vanished">GDB 设置</translation>
+        <translation>GDB 设置</translation>
     </message>
     <message>
         <source>GDB server address</source>
-        <translation type="vanished">GDB 服务器地址</translation>
+        <translation>GDB 服务器地址</translation>
     </message>
     <message>
         <source>GDB server port</source>
-        <translation type="vanished">GDB 服务器端口</translation>
+        <translation>GDB 服务器端口</translation>
     </message>
     <message>
         <source>Command line parameters</source>
-        <translation type="vanished">命令行参数</translation>
+        <translation>命令行参数</translation>
     </message>
     <message>
         <source>GDB local server path</source>
-        <translation type="vanished">GDB 本地服务器路径</translation>
+        <translation>GDB 本地服务器路径</translation>
     </message>
     <message>
         <source>GDB local server executable path</source>
-        <translation type="vanished">GDB 本地服务器可执行文件路径</translation>
+        <translation>GDB 本地服务器可执行文件路径</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation type="vanished">打开文件</translation>
+        <translation>打开文件</translation>
     </message>
 </context>
 <context>
     <name>Necto::GeneralPage</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Default project path:</source>
-        <translation type="vanished">默认项目路径：</translation>
+        <translation>默认项目路径：</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation type="vanished">浏览</translation>
+        <translation>浏览</translation>
     </message>
     <message>
         <source>Save dialog: Don&apos;t ask, save all modified files.</source>
-        <translation type="vanished">保存对话框：不再询问，保存所有已修改文件。</translation>
+        <translation>保存对话框：不再询问，保存所有已修改文件。</translation>
     </message>
     <message>
         <source>Always use default Remote Board Farm configuration</source>
-        <translation type="vanished">始终使用默认远程板卡农场配置</translation>
+        <translation>始终使用默认远程板卡农场配置</translation>
     </message>
     <message>
         <source>When in debug session, evaluate expressions by hovering over them.</source>
-        <translation type="vanished">在调试会话中，将鼠标悬停在表达式上以计算表达式。</translation>
+        <translation>在调试会话中，将鼠标悬停在表达式上以计算表达式。</translation>
     </message>
     <message>
         <source>Evaluate expressions by hovering over them.</source>
-        <translation type="vanished">将鼠标悬停在表达式上以计算表达式。</translation>
+        <translation>将鼠标悬停在表达式上以计算表达式。</translation>
     </message>
     <message>
         <source>Use TabNine code completion</source>
-        <translation type="vanished">使用 TabNine 代码补全</translation>
+        <translation>使用 TabNine 代码补全</translation>
     </message>
     <message>
         <source>Restore last session on NECTO Studio startup</source>
-        <translation type="vanished">NECTO Studio 启动时恢复上一次会话</translation>
+        <translation>NECTO Studio 启动时恢复上一次会话</translation>
     </message>
     <message>
         <source>Telemetry assists in gaining insights into the performance of NECTO Studio, identifying areas for enhancement, and understanding the usage patterns of its features.</source>
-        <translation type="vanished">遥测有助于了解 NECTO Studio 的性能、识别改进区域，并理解其功能的使用模式。</translation>
+        <translation>遥测有助于了解 NECTO Studio 的性能、识别改进区域，并理解其功能的使用模式。</translation>
     </message>
     <message>
         <source>Enable sending telemetry events</source>
-        <translation type="vanished">启用发送遥测事件</translation>
+        <translation>启用发送遥测事件</translation>
     </message>
     <message>
         <source>Language:</source>
@@ -11563,35 +11563,35 @@ Do you wish to override the security check and continue ?   </source>
     </message>
     <message>
         <source>Mongoose port:</source>
-        <translation type="vanished">Mongoose 端口：</translation>
+        <translation>Mongoose 端口：</translation>
     </message>
     <message>
         <source>Enter the TCP port number for the Mongoose web server. Default: 8000.</source>
-        <translation type="vanished">输入 Mongoose Web 服务器的 TCP 端口号。默认值：8000。</translation>
+        <translation>输入 Mongoose Web 服务器的 TCP 端口号。默认值：8000。</translation>
     </message>
     <message>
         <source>Remote Debugging Timeout (seconds):</source>
-        <translation type="vanished">远程调试超时（秒）：</translation>
+        <translation>远程调试超时（秒）：</translation>
     </message>
     <message>
         <source>Defines the timeout for connecting to the remote debugger and waiting for responses from the target. Increase for slow targets or network delays.</source>
-        <translation type="vanished">定义连接到远程调试器并等待目标响应的超时时间。对于较慢目标或网络延迟，请增大此值。</translation>
+        <translation>定义连接到远程调试器并等待目标响应的超时时间。对于较慢目标或网络延迟，请增大此值。</translation>
     </message>
     <message>
         <source>Clear NECTO Studio cache files</source>
-        <translation type="vanished">清除 NECTO Studio 缓存文件</translation>
+        <translation>清除 NECTO Studio 缓存文件</translation>
     </message>
     <message>
         <source>Clear cache</source>
-        <translation type="vanished">清除缓存</translation>
+        <translation>清除缓存</translation>
     </message>
     <message>
         <source>Default projects path</source>
-        <translation type="vanished">默认项目路径</translation>
+        <translation>默认项目路径</translation>
     </message>
     <message>
         <source>Mongoose port</source>
-        <translation type="vanished">Mongoose 端口</translation>
+        <translation>Mongoose 端口</translation>
     </message>
     <message>
         <source>System default</source>
@@ -11599,380 +11599,380 @@ Do you wish to override the security check and continue ?   </source>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="vanished">是</translation>
+        <translation>是</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="vanished">否</translation>
+        <translation>否</translation>
     </message>
     <message>
         <source>Clear NECTO Studio cache files? &lt;br&gt;&lt;br&gt; NECTO Studio will be restarted</source>
-        <translation type="vanished">是否清除 NECTO Studio 缓存文件？&lt;br&gt;&lt;br&gt;NECTO Studio 将重启</translation>
+        <translation>是否清除 NECTO Studio 缓存文件？&lt;br&gt;&lt;br&gt;NECTO Studio 将重启</translation>
     </message>
     <message>
         <source>Miscellaneous settings</source>
-        <translation type="vanished">杂项设置</translation>
+        <translation>杂项设置</translation>
     </message>
     <message>
         <source>Browse folder</source>
-        <translation type="vanished">浏览文件夹</translation>
+        <translation>浏览文件夹</translation>
     </message>
     <message>
         <source>Restart now</source>
-        <translation type="vanished">立即重启</translation>
+        <translation>立即重启</translation>
     </message>
     <message>
         <source>Restart later</source>
-        <translation type="vanished">稍后重启</translation>
+        <translation>稍后重启</translation>
     </message>
     <message>
         <source>Changes will be visible after you restart NECTO Studio.</source>
-        <translation type="vanished">重启 NECTO Studio 后更改将生效。</translation>
+        <translation>重启 NECTO Studio 后更改将生效。</translation>
     </message>
 </context>
 <context>
     <name>Necto::HIDOptions</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>HID device:</source>
-        <translation type="vanished">HID 设备：</translation>
+        <translation>HID 设备：</translation>
     </message>
     <message>
         <source>Product ID</source>
-        <translation type="vanished">产品 ID</translation>
+        <translation>产品 ID</translation>
     </message>
     <message>
         <source>Manufacturer</source>
-        <translation type="vanished">制造商</translation>
+        <translation>制造商</translation>
     </message>
     <message>
         <source>Product</source>
-        <translation type="vanished">产品</translation>
+        <translation>产品</translation>
     </message>
     <message>
         <source>Vendor ID</source>
-        <translation type="vanished">供应商 ID</translation>
+        <translation>供应商 ID</translation>
     </message>
     <message>
         <source>Serial number</source>
-        <translation type="vanished">序列号</translation>
+        <translation>序列号</translation>
     </message>
     <message>
         <source>Fill character</source>
-        <translation type="vanished">填充字符</translation>
+        <translation>填充字符</translation>
     </message>
     <message>
         <source>Report size</source>
-        <translation type="vanished">报告大小</translation>
+        <translation>报告大小</translation>
     </message>
     <message>
         <source>Manufacturer string</source>
-        <translation type="vanished">制造商字符串</translation>
+        <translation>制造商字符串</translation>
     </message>
     <message>
         <source>Product string</source>
-        <translation type="vanished">产品字符串</translation>
+        <translation>产品字符串</translation>
     </message>
 </context>
 <context>
     <name>Necto::HelpPage</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation type="vanished">帮助</translation>
+        <translation>帮助</translation>
     </message>
 </context>
 <context>
     <name>Necto::HidBootloaderPlugin</name>
     <message>
         <source>HID Bootloader</source>
-        <translation type="vanished">HID 引导加载器</translation>
+        <translation>HID 引导加载器</translation>
     </message>
 </context>
 <context>
     <name>Necto::HidPlugin</name>
     <message>
         <source>HID Terminal</source>
-        <translation type="vanished">HID 终端</translation>
+        <translation>HID 终端</translation>
     </message>
 </context>
 <context>
     <name>Necto::HubFilterButton</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
 </context>
 <context>
     <name>Necto::HubFilterWidget</name>
     <message>
         <source>Search...</source>
-        <translation type="vanished">搜索...</translation>
+        <translation>搜索...</translation>
     </message>
 </context>
 <context>
     <name>Necto::HubSelectedFilters</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
 </context>
 <context>
     <name>Necto::IScreen</name>
     <message>
         <source>Add</source>
-        <translation type="vanished">添加</translation>
+        <translation>添加</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save as component</source>
-        <translation type="vanished">另存为组件</translation>
+        <translation>另存为组件</translation>
     </message>
     <message>
         <source>Enter component name</source>
-        <translation type="vanished">输入组件名称</translation>
+        <translation>输入组件名称</translation>
     </message>
 </context>
 <context>
     <name>Necto::InitFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>End tour</source>
-        <translation type="vanished">结束导览</translation>
+        <translation>结束导览</translation>
     </message>
     <message>
         <source>Show me</source>
-        <translation type="vanished">显示给我</translation>
+        <translation>显示给我</translation>
     </message>
 </context>
 <context>
     <name>Necto::InstallerDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">对话框</translation>
+        <translation>对话框</translation>
     </message>
     <message>
         <source>The folowing packages are neccessary to complete the setup:</source>
-        <translation type="vanished">完成设置需要以下软件包：</translation>
+        <translation>完成设置需要以下软件包：</translation>
     </message>
     <message>
         <source>icon</source>
-        <translation type="vanished">图标</translation>
+        <translation>图标</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Would you like to download and install them?</source>
-        <translation type="vanished">是否下载并安装它们？</translation>
+        <translation>是否下载并安装它们？</translation>
     </message>
     <message>
         <source>Verifying all required packages...</source>
-        <translation type="vanished">正在验证所有必需的软件包...</translation>
+        <translation>正在验证所有必需的软件包...</translation>
     </message>
     <message>
         <source>0</source>
-        <translation type="vanished">0</translation>
+        <translation>0</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="vanished">否</translation>
+        <translation>否</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="vanished">是</translation>
+        <translation>是</translation>
     </message>
     <message>
         <source>Error installing package...</source>
-        <translation type="vanished">安装软件包时出错...</translation>
+        <translation>安装软件包时出错...</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Confirm</source>
-        <translation type="vanished">确认</translation>
+        <translation>确认</translation>
     </message>
     <message>
         <source>NECTO will download and install them.</source>
-        <translation type="vanished">NECTO 将下载并安装它们。</translation>
+        <translation>NECTO 将下载并安装它们。</translation>
     </message>
     <message>
         <source>Please wait while packages are being installed...</source>
-        <translation type="vanished">正在安装软件包，请稍候...</translation>
+        <translation>正在安装软件包，请稍候...</translation>
     </message>
     <message>
         <source>Downloading</source>
-        <translation type="vanished">正在下载</translation>
+        <translation>正在下载</translation>
     </message>
     <message>
         <source>Unpacking</source>
-        <translation type="vanished">正在解压</translation>
+        <translation>正在解压</translation>
     </message>
     <message>
         <source>%1 %2...</source>
-        <translation type="vanished">%1 %2...</translation>
+        <translation>%1 %2...</translation>
     </message>
     <message>
         <source>Updating installation record</source>
-        <translation type="vanished">正在更新安装记录</translation>
+        <translation>正在更新安装记录</translation>
     </message>
 </context>
 <context>
     <name>Necto::InterruptAssistant</name>
     <message>
         <source>Please select a project</source>
-        <translation type="vanished">请选择项目</translation>
+        <translation>请选择项目</translation>
     </message>
     <message>
         <source>Please select a configuration</source>
-        <translation type="vanished">请选择配置</translation>
+        <translation>请选择配置</translation>
     </message>
     <message>
         <source>Interrupt file path not found for the selected compiler and MCU.</source>
-        <translation type="vanished">未找到所选编译器和 MCU 的中断文件路径。</translation>
+        <translation>未找到所选编译器和 MCU 的中断文件路径。</translation>
     </message>
     <message>
         <source>Compiler not supported.</source>
-        <translation type="vanished">不支持该编译器。</translation>
+        <translation>不支持该编译器。</translation>
     </message>
 </context>
 <context>
     <name>Necto::InterruptAssistantView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Choose interrupt :</source>
-        <translation type="vanished">选择中断：</translation>
+        <translation>选择中断：</translation>
     </message>
     <message>
         <source>Current compiler :</source>
-        <translation type="vanished">当前编译器：</translation>
+        <translation>当前编译器：</translation>
     </message>
     <message>
         <source>Current device :</source>
-        <translation type="vanished">当前设备：</translation>
+        <translation>当前设备：</translation>
     </message>
     <message>
         <source>Compiler</source>
-        <translation type="vanished">编译器</translation>
+        <translation>编译器</translation>
     </message>
     <message>
         <source>Device</source>
-        <translation type="vanished">设备</translation>
+        <translation>设备</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Copy code</source>
-        <translation type="vanished">复制代码</translation>
+        <translation>复制代码</translation>
     </message>
     <message>
         <source>Initialize interrupt</source>
-        <translation type="vanished">初始化中断</translation>
+        <translation>初始化中断</translation>
     </message>
     <message>
         <source>Code generated succefully</source>
-        <translation type="vanished">代码生成成功</translation>
+        <translation>代码生成成功</translation>
     </message>
     <message>
         <source>Code copied to cliboard.</source>
-        <translation type="vanished">代码已复制到剪贴板。</translation>
+        <translation>代码已复制到剪贴板。</translation>
     </message>
 </context>
 <context>
     <name>Necto::InterruptPlugin</name>
     <message>
         <source>Interrupt Assistant</source>
-        <translation type="vanished">中断助手</translation>
+        <translation>中断助手</translation>
     </message>
 </context>
 <context>
     <name>Necto::IssueOutputItemModel</name>
     <message>
         <source>Ask AI to explain this issue</source>
-        <translation type="vanished">请求 AI 解释此问题</translation>
+        <translation>请求 AI 解释此问题</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">类型</translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation type="vanished">消息</translation>
+        <translation>消息</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="vanished">文件</translation>
+        <translation>文件</translation>
     </message>
     <message>
         <source>Action</source>
-        <translation type="vanished">操作</translation>
+        <translation>操作</translation>
     </message>
     <message>
         <source>Unknown Section</source>
-        <translation type="vanished">未知部分</translation>
+        <translation>未知部分</translation>
     </message>
 </context>
 <context>
     <name>Necto::IssueOutputView</name>
     <message>
         <source>Copy</source>
-        <translation type="vanished">复制</translation>
+        <translation>复制</translation>
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="vanished">复制链接</translation>
+        <translation>复制链接</translation>
     </message>
     <message>
         <source>  Explain all</source>
-        <translation type="vanished">  全部解释</translation>
+        <translation>  全部解释</translation>
     </message>
     <message>
         <source>Toggle errors</source>
-        <translation type="vanished">切换错误显示</translation>
+        <translation>切换错误显示</translation>
     </message>
     <message>
         <source>Toggle warnings</source>
-        <translation type="vanished">切换警告显示</translation>
+        <translation>切换警告显示</translation>
     </message>
     <message>
         <source>Toggle hints</source>
-        <translation type="vanished">切换提示显示</translation>
+        <translation>切换提示显示</translation>
     </message>
     <message>
         <source>Ask AI to analyze all issues</source>
-        <translation type="vanished">请求 AI 分析所有问题</translation>
+        <translation>请求 AI 分析所有问题</translation>
     </message>
     <message>
         <source>Ask AI to analyze this issue</source>
-        <translation type="vanished">请求 AI 分析此问题</translation>
+        <translation>请求 AI 分析此问题</translation>
     </message>
 </context>
 <context>
@@ -12061,237 +12061,237 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::JobProgressWidget</name>
     <message>
         <source>Job Title</source>
-        <translation type="vanished">任务标题</translation>
+        <translation>任务标题</translation>
     </message>
 </context>
 <context>
     <name>Necto::KDevMI::MIDebugger</name>
     <message>
         <source>Process exited</source>
-        <translation type="vanished">进程已退出</translation>
+        <translation>进程已退出</translation>
     </message>
 </context>
 <context>
     <name>Necto::LSPClient</name>
     <message>
         <source>Initializing code model. Please wait.</source>
-        <translation type="vanished">正在初始化代码模型，请稍候。</translation>
+        <translation>正在初始化代码模型，请稍候。</translation>
     </message>
     <message>
         <source>Code model initialized.</source>
-        <translation type="vanished">代码模型已初始化。</translation>
+        <translation>代码模型已初始化。</translation>
     </message>
     <message>
         <source>Indexing project...</source>
-        <translation type="vanished">正在索引项目...</translation>
+        <translation>正在索引项目...</translation>
     </message>
     <message>
         <source>Indexing project failed. Check your configuration.</source>
-        <translation type="vanished">项目索引失败。请检查您的配置。</translation>
+        <translation>项目索引失败。请检查您的配置。</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLArrayPropertyEditor</name>
     <message>
         <source>Add</source>
-        <translation type="vanished">添加</translation>
+        <translation>添加</translation>
     </message>
     <message>
         <source>Add point</source>
-        <translation type="vanished">添加点</translation>
+        <translation>添加点</translation>
     </message>
     <message>
         <source>Remove series</source>
-        <translation type="vanished">移除序列</translation>
+        <translation>移除序列</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLComponentsView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Filter components</source>
-        <translation type="vanished">筛选组件</translation>
+        <translation>筛选组件</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLDesignerEditorPluginV9</name>
     <message>
         <source>Design</source>
-        <translation type="vanished">设计</translation>
+        <translation>设计</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLDesignerView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Align and distrubute</source>
-        <translation type="vanished">对齐并分布</translation>
+        <translation>对齐并分布</translation>
     </message>
     <message>
         <source> Object inspector</source>
-        <translation type="vanished"> 对象检查器</translation>
+        <translation> 对象检查器</translation>
     </message>
     <message>
         <source> Style inspector</source>
-        <translation type="vanished"> 样式检查器</translation>
+        <translation> 样式检查器</translation>
     </message>
     <message>
         <source> Events inspector</source>
-        <translation type="vanished"> 事件检查器</translation>
+        <translation> 事件检查器</translation>
     </message>
     <message>
         <source> Components</source>
-        <translation type="vanished"> 组件</translation>
+        <translation> 组件</translation>
     </message>
     <message>
         <source> Hierarchy</source>
-        <translation type="vanished"> 层级</translation>
+        <translation> 层级</translation>
     </message>
     <message>
         <source> User components</source>
-        <translation type="vanished"> 用户组件</translation>
+        <translation> 用户组件</translation>
     </message>
     <message>
         <source>Align left</source>
-        <translation type="vanished">左对齐</translation>
+        <translation>左对齐</translation>
     </message>
     <message>
         <source>Align top</source>
-        <translation type="vanished">顶端对齐</translation>
+        <translation>顶端对齐</translation>
     </message>
     <message>
         <source>Align bottom</source>
-        <translation type="vanished">底端对齐</translation>
+        <translation>底端对齐</translation>
     </message>
     <message>
         <source>Align right</source>
-        <translation type="vanished">右对齐</translation>
+        <translation>右对齐</translation>
     </message>
     <message>
         <source>Center vertical</source>
-        <translation type="vanished">垂直居中</translation>
+        <translation>垂直居中</translation>
     </message>
     <message>
         <source>Center horizontal</source>
-        <translation type="vanished">水平居中</translation>
+        <translation>水平居中</translation>
     </message>
     <message>
         <source>Make same height</source>
-        <translation type="vanished">设为相同高度</translation>
+        <translation>设为相同高度</translation>
     </message>
     <message>
         <source>Make same width</source>
-        <translation type="vanished">设为相同宽度</translation>
+        <translation>设为相同宽度</translation>
     </message>
     <message>
         <source>Make same size</source>
-        <translation type="vanished">设为相同大小</translation>
+        <translation>设为相同大小</translation>
     </message>
     <message>
         <source>Stick vertical</source>
-        <translation type="vanished">垂直贴合</translation>
+        <translation>垂直贴合</translation>
     </message>
     <message>
         <source>Stick horizontal</source>
-        <translation type="vanished">水平贴合</translation>
+        <translation>水平贴合</translation>
     </message>
     <message>
         <source>Space horizontal evenly</source>
-        <translation type="vanished">水平均匀分布</translation>
+        <translation>水平均匀分布</translation>
     </message>
     <message>
         <source>Space vertical evenly</source>
-        <translation type="vanished">垂直均匀分布</translation>
+        <translation>垂直均匀分布</translation>
     </message>
     <message>
         <source>Bring to front</source>
-        <translation type="vanished">置于顶层</translation>
+        <translation>置于顶层</translation>
     </message>
     <message>
         <source>Send to back</source>
-        <translation type="vanished">置于底层</translation>
+        <translation>置于底层</translation>
     </message>
     <message>
         <source>Send up</source>
-        <translation type="vanished">上移</translation>
+        <translation>上移</translation>
     </message>
     <message>
         <source>Send down</source>
-        <translation type="vanished">下移</translation>
+        <translation>下移</translation>
     </message>
     <message>
         <source>Zoom in</source>
-        <translation type="vanished">放大</translation>
+        <translation>放大</translation>
     </message>
     <message>
         <source>Zoom out</source>
-        <translation type="vanished">缩小</translation>
+        <translation>缩小</translation>
     </message>
     <message>
         <source>Cut</source>
-        <translation type="vanished">剪切</translation>
+        <translation>剪切</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">复制</translation>
+        <translation>复制</translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation type="vanished">粘贴</translation>
+        <translation>粘贴</translation>
     </message>
     <message>
         <source>Delete selected</source>
-        <translation type="vanished">删除所选项</translation>
+        <translation>删除所选项</translation>
     </message>
     <message>
         <source>Select All</source>
-        <translation type="vanished">全选</translation>
+        <translation>全选</translation>
     </message>
     <message>
         <source>Group components</source>
-        <translation type="vanished">组合组件</translation>
+        <translation>组合组件</translation>
     </message>
     <message>
         <source>Ungroup components</source>
-        <translation type="vanished">取消组合组件</translation>
+        <translation>取消组合组件</translation>
     </message>
     <message>
         <source>Save as component</source>
-        <translation type="vanished">另存为组件</translation>
+        <translation>另存为组件</translation>
     </message>
     <message>
         <source>Save screen</source>
-        <translation type="vanished">保存屏幕</translation>
+        <translation>保存屏幕</translation>
     </message>
     <message>
         <source>Object inspector</source>
-        <translation type="vanished">对象检查器</translation>
+        <translation>对象检查器</translation>
     </message>
     <message>
         <source>Style inspector</source>
-        <translation type="vanished">样式检查器</translation>
+        <translation>样式检查器</translation>
     </message>
     <message>
         <source>Events inspector</source>
-        <translation type="vanished">事件检查器</translation>
+        <translation>事件检查器</translation>
     </message>
     <message>
         <source>Components</source>
-        <translation type="vanished">组件</translation>
+        <translation>组件</translation>
     </message>
     <message>
         <source>Hierarchy</source>
-        <translation type="vanished">层级</translation>
+        <translation>层级</translation>
     </message>
     <message>
         <source>User components</source>
-        <translation type="vanished">用户组件</translation>
+        <translation>用户组件</translation>
     </message>
     <message>
         <source>Show snap guides</source>
@@ -12492,206 +12492,206 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::LVGLEventsInspector</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>No events available for selected component(s)</source>
-        <translation type="vanished">所选组件没有可用事件</translation>
+        <translation>所选组件没有可用事件</translation>
     </message>
     <message>
         <source>Filter events</source>
-        <translation type="vanished">筛选事件</translation>
+        <translation>筛选事件</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLFontDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">对话框</translation>
+        <translation>对话框</translation>
     </message>
     <message>
         <source>Add font to resource file</source>
-        <translation type="vanished">将字体添加到资源文件</translation>
+        <translation>将字体添加到资源文件</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">添加</translation>
+        <translation>添加</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Font family</source>
-        <translation type="vanished">字体系列</translation>
+        <translation>字体系列</translation>
     </message>
     <message>
         <source>Font style</source>
-        <translation type="vanished">字体样式</translation>
+        <translation>字体样式</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">大小</translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>Effects</source>
-        <translation type="vanished">效果</translation>
+        <translation>效果</translation>
     </message>
     <message>
         <source>Strikeout</source>
-        <translation type="vanished">删除线</translation>
+        <translation>删除线</translation>
     </message>
     <message>
         <source>Underline</source>
-        <translation type="vanished">下划线</translation>
+        <translation>下划线</translation>
     </message>
     <message>
         <source>Sample</source>
-        <translation type="vanished">示例</translation>
+        <translation>示例</translation>
     </message>
     <message>
         <source>AaBbYyZz</source>
-        <translation type="vanished">AaBbYyZz</translation>
+        <translation>AaBbYyZz</translation>
     </message>
     <message>
         <source>Add Custom Font...</source>
-        <translation type="vanished">添加自定义字体...</translation>
+        <translation>添加自定义字体...</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLHierarchyView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Filter components</source>
-        <translation type="vanished">筛选组件</translation>
+        <translation>筛选组件</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLIScreen</name>
     <message>
         <source>Add</source>
-        <translation type="vanished">添加</translation>
+        <translation>添加</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save as component</source>
-        <translation type="vanished">另存为组件</translation>
+        <translation>另存为组件</translation>
     </message>
     <message>
         <source>Enter component name</source>
-        <translation type="vanished">输入组件名称</translation>
+        <translation>输入组件名称</translation>
     </message>
     <message>
         <source>Undo</source>
-        <translation type="vanished">撤销</translation>
+        <translation>撤销</translation>
     </message>
     <message>
         <source>Redo</source>
-        <translation type="vanished">重做</translation>
+        <translation>重做</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLObjectInspector</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Filter properties</source>
-        <translation type="vanished">筛选属性</translation>
+        <translation>筛选属性</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLPropertyDelegate</name>
     <message>
         <source>Click the gear to add an action</source>
-        <translation type="vanished">点击齿轮以添加动作</translation>
+        <translation>点击齿轮以添加动作</translation>
     </message>
     <message>
         <source>Skip this point</source>
-        <translation type="vanished">跳过此点</translation>
+        <translation>跳过此点</translation>
     </message>
     <message>
         <source>Click here to add event handler</source>
-        <translation type="vanished">点击此处添加事件处理程序</translation>
+        <translation>点击此处添加事件处理程序</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="vanished">无</translation>
+        <translation>无</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLResourcesView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLSeriesInlinePopup</name>
     <message>
         <source>Series settings</source>
-        <translation type="vanished">序列设置</translation>
+        <translation>序列设置</translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation type="vanished">名称：</translation>
+        <translation>名称：</translation>
     </message>
     <message>
         <source>series_0</source>
-        <translation type="vanished">series_0</translation>
+        <translation>series_0</translation>
     </message>
     <message>
         <source>Line width:</source>
-        <translation type="vanished">线宽：</translation>
+        <translation>线宽：</translation>
     </message>
     <message>
         <source>Pick color</source>
-        <translation type="vanished">选择颜色</translation>
+        <translation>选择颜色</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Series name must be unique.</source>
-        <translation type="vanished">序列名称必须唯一。</translation>
+        <translation>序列名称必须唯一。</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLStyleInspector</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Choose object state</source>
-        <translation type="vanished">选择对象状态</translation>
+        <translation>选择对象状态</translation>
     </message>
     <message>
         <source>Filter style properties</source>
-        <translation type="vanished">筛选样式属性</translation>
+        <translation>筛选样式属性</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLUserComponentsView</name>
     <message>
         <source>User components</source>
-        <translation type="vanished">用户组件</translation>
+        <translation>用户组件</translation>
     </message>
     <message>
         <source>Filter user components</source>
-        <translation type="vanished">筛选用户组件</translation>
+        <translation>筛选用户组件</translation>
     </message>
 </context>
 <context>
@@ -12709,70 +12709,70 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::LayersView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Add new layer to the screen</source>
-        <translation type="vanished">向屏幕添加新图层</translation>
+        <translation>向屏幕添加新图层</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">添加</translation>
+        <translation>添加</translation>
     </message>
     <message>
         <source>Filter layers</source>
-        <translation type="vanished">筛选图层</translation>
+        <translation>筛选图层</translation>
     </message>
 </context>
 <context>
     <name>Necto::LcdChar</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Char Editor:</source>
-        <translation type="vanished">字符编辑器：</translation>
+        <translation>字符编辑器：</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation type="vanished">清除</translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Fill all</source>
-        <translation type="vanished">全部填充</translation>
+        <translation>全部填充</translation>
     </message>
     <message>
         <source>Invert</source>
-        <translation type="vanished">反转</translation>
+        <translation>反转</translation>
     </message>
     <message>
         <source>Save to library</source>
-        <translation type="vanished">保存到库</translation>
+        <translation>保存到库</translation>
     </message>
     <message>
         <source>Char library:</source>
-        <translation type="vanished">字符库：</translation>
+        <translation>字符库：</translation>
     </message>
     <message>
         <source>Load from library</source>
-        <translation type="vanished">从库加载</translation>
+        <translation>从库加载</translation>
     </message>
     <message>
         <source>Delete from library</source>
-        <translation type="vanished">从库删除</translation>
+        <translation>从库删除</translation>
     </message>
     <message>
         <source>Generated code:</source>
-        <translation type="vanished">生成的代码：</translation>
+        <translation>生成的代码：</translation>
     </message>
     <message>
         <source>Copy code</source>
-        <translation type="vanished">复制代码</translation>
+        <translation>复制代码</translation>
     </message>
     <message>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -12783,7 +12783,7 @@ li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Ubuntu Sans&apos;; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Ubuntu&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 hr { 高度: 1px; border-宽度: 0; }
@@ -12794,242 +12794,242 @@ li.checked::marker { content: &quot;\2612&quot;; }
     </message>
     <message>
         <source>Search for custom char</source>
-        <translation type="vanished">搜索自定义字符</translation>
+        <translation>搜索自定义字符</translation>
     </message>
     <message>
         <source>Enter valid char alias</source>
-        <translation type="vanished">输入有效的字符别名</translation>
+        <translation>输入有效的字符别名</translation>
     </message>
     <message>
         <source>Code copied to cliboard.</source>
-        <translation type="vanished">代码已复制到剪贴板。</translation>
+        <translation>代码已复制到剪贴板。</translation>
     </message>
     <message>
         <source>Code generated succefully</source>
-        <translation type="vanished">代码生成成功</translation>
+        <translation>代码生成成功</translation>
     </message>
 </context>
 <context>
     <name>Necto::LcdPlugin</name>
     <message>
         <source>Custom Char</source>
-        <translation type="vanished">自定义字符</translation>
+        <translation>自定义字符</translation>
     </message>
 </context>
 <context>
     <name>Necto::LcdWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Char editor</source>
-        <translation type="vanished">字符编辑器</translation>
+        <translation>字符编辑器</translation>
     </message>
     <message>
         <source>Char size:</source>
-        <translation type="vanished">字符大小：</translation>
+        <translation>字符大小：</translation>
     </message>
     <message>
         <source>Alias:</source>
-        <translation type="vanished">别名：</translation>
+        <translation>别名：</translation>
     </message>
     <message>
         <source>5x10</source>
-        <translation type="vanished">5x10</translation>
+        <translation>5x10</translation>
     </message>
     <message>
         <source>5x8</source>
-        <translation type="vanished">5x8</translation>
+        <translation>5x8</translation>
     </message>
     <message>
         <source>Fill all</source>
-        <translation type="vanished">全部填充</translation>
+        <translation>全部填充</translation>
     </message>
     <message>
         <source>fill</source>
-        <translation type="vanished">填充</translation>
+        <translation>填充</translation>
     </message>
     <message>
         <source>Char data row: </source>
-        <translation type="vanished">字符数据行：</translation>
+        <translation>字符数据行：</translation>
     </message>
     <message>
         <source>Clear all</source>
-        <translation type="vanished">全部清除</translation>
+        <translation>全部清除</translation>
     </message>
     <message>
         <source>clear</source>
-        <translation type="vanished">清除</translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>Char: </source>
-        <translation type="vanished">字符：</translation>
+        <translation>字符：</translation>
     </message>
     <message>
         <source>Invert</source>
-        <translation type="vanished">反转</translation>
+        <translation>反转</translation>
     </message>
     <message>
         <source>invert</source>
-        <translation type="vanished">反转</translation>
+        <translation>反转</translation>
     </message>
     <message>
         <source>Save to file</source>
-        <translation type="vanished">保存到文件</translation>
+        <translation>保存到文件</translation>
     </message>
     <message>
         <source>save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Char library</source>
-        <translation type="vanished">字符库</translation>
+        <translation>字符库</translation>
     </message>
     <message>
         <source>Add to library</source>
-        <translation type="vanished">添加到库</translation>
+        <translation>添加到库</translation>
     </message>
     <message>
         <source>add</source>
-        <translation type="vanished">添加</translation>
+        <translation>添加</translation>
     </message>
     <message>
         <source>Load from library</source>
-        <translation type="vanished">从库加载</translation>
+        <translation>从库加载</translation>
     </message>
     <message>
         <source>take</source>
-        <translation type="vanished">获取</translation>
+        <translation>获取</translation>
     </message>
     <message>
         <source>Remove from library</source>
-        <translation type="vanished">从库中移除</translation>
+        <translation>从库中移除</translation>
     </message>
     <message>
         <source>remove</source>
-        <translation type="vanished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>Search:</source>
-        <translation type="vanished">搜索：</translation>
+        <translation>搜索：</translation>
     </message>
     <message>
         <source>Enter character alias</source>
-        <translation type="vanished">输入字符别名</translation>
+        <translation>输入字符别名</translation>
     </message>
     <message>
         <source>Pattern</source>
-        <translation type="vanished">模式</translation>
+        <translation>模式</translation>
     </message>
     <message>
         <source>Choose folder</source>
-        <translation type="vanished">选择文件夹</translation>
+        <translation>选择文件夹</translation>
     </message>
     <message>
         <source>Alias already exists.</source>
-        <translation type="vanished">别名已存在。</translation>
+        <translation>别名已存在。</translation>
     </message>
     <message>
         <source>Invalid name.</source>
-        <translation type="vanished">名称无效。</translation>
+        <translation>名称无效。</translation>
     </message>
 </context>
 <context>
     <name>Necto::LibraryManagerView</name>
     <message>
         <source>Manage project libraries</source>
-        <translation type="vanished">管理项目库</translation>
+        <translation>管理项目库</translation>
     </message>
     <message>
         <source>Filter libraries</source>
-        <translation type="vanished">筛选库</translation>
+        <translation>筛选库</translation>
     </message>
     <message>
         <source>Open click example</source>
-        <translation type="vanished">打开 Click 示例</translation>
+        <translation>打开 Click 示例</translation>
     </message>
     <message>
         <source>Copy include directive</source>
-        <translation type="vanished">复制 include 指令</translation>
+        <translation>复制 include 指令</translation>
     </message>
     <message>
         <source>Open library folder</source>
-        <translation type="vanished">打开库文件夹</translation>
+        <translation>打开库文件夹</translation>
     </message>
     <message>
         <source>Remove package</source>
-        <translation type="vanished">移除软件包</translation>
+        <translation>移除软件包</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation type="vanished">帮助</translation>
+        <translation>帮助</translation>
     </message>
     <message>
         <source>Include directive copied to clipboard.</source>
-        <translation type="vanished">include 指令已复制到剪贴板。</translation>
+        <translation>include 指令已复制到剪贴板。</translation>
     </message>
     <message>
         <source>Collapse</source>
-        <translation type="vanished">折叠</translation>
+        <translation>折叠</translation>
     </message>
     <message>
         <source>Expand</source>
-        <translation type="vanished">展开</translation>
+        <translation>展开</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="vanished">是</translation>
+        <translation>是</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="vanished">否</translation>
+        <translation>否</translation>
     </message>
     <message>
         <source>Are you sure you want to remove &quot;%1&quot;?</source>
-        <translation type="vanished">确定要移除“%1”吗？</translation>
+        <translation>确定要移除“%1”吗？</translation>
     </message>
 </context>
 <context>
     <name>Necto::LibraryTreeModel</name>
     <message>
         <source>Click board libraries</source>
-        <translation type="vanished">Click board 库</translation>
+        <translation>Click board 库</translation>
     </message>
     <message>
         <source>Core libraries</source>
-        <translation type="vanished">核心库</translation>
+        <translation>核心库</translation>
     </message>
     <message>
         <source>Components</source>
-        <translation type="vanished">组件</translation>
+        <translation>组件</translation>
     </message>
 </context>
 <context>
     <name>Necto::LicenseAgreementFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>No, I do not agree</source>
-        <translation type="vanished">不，我不同意</translation>
+        <translation>不，我不同意</translation>
     </message>
     <message>
         <source>Yes, I agree</source>
-        <translation type="vanished">是，我同意</translation>
+        <translation>是，我同意</translation>
     </message>
     <message>
         <source>Activating your license...</source>
-        <translation type="vanished">正在激活许可证...</translation>
+        <translation>正在激活许可证...</translation>
     </message>
     <message>
         <source>One more step to go...</source>
-        <translation type="vanished">还剩一步...</translation>
+        <translation>还剩一步...</translation>
     </message>
     <message>
         <source>Choose your license type:</source>
-        <translation type="vanished">选择您的许可证类型：</translation>
+        <translation>选择您的许可证类型：</translation>
     </message>
 </context>
 <context>
@@ -13041,203 +13041,203 @@ li.checked::marker { content: &quot;\2612&quot;; }
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>License not ready yet</source>
-        <translation type="vanished">许可证尚未准备好</translation>
+        <translation>许可证尚未准备好</translation>
     </message>
     <message>
         <source>NECTO Studio v%1 %2</source>
-        <translation type="vanished">NECTO Studio v%1 %2</translation>
+        <translation>NECTO Studio v%1 %2</translation>
     </message>
     <message>
         <source>Choose your license</source>
-        <translation type="vanished">选择您的许可证</translation>
+        <translation>选择您的许可证</translation>
     </message>
     <message>
         <source>No internet connection.</source>
-        <translation type="vanished">无互联网连接。</translation>
+        <translation>无互联网连接。</translation>
     </message>
     <message>
         <source>Activation key is for different software.</source>
-        <translation type="vanished">激活密钥适用于其他软件。</translation>
+        <translation>激活密钥适用于其他软件。</translation>
     </message>
     <message>
         <source>Please restart NECTO Studio after you finish buying process.</source>
-        <translation type="vanished">购买完成后请重启 NECTO Studio。</translation>
+        <translation>购买完成后请重启 NECTO Studio。</translation>
     </message>
     <message>
         <source>Error reading license.</source>
-        <translation type="vanished">读取许可证时出错。</translation>
+        <translation>读取许可证时出错。</translation>
     </message>
     <message>
         <source>Choose your license type: </source>
-        <translation type="vanished">选择您的许可证类型：</translation>
+        <translation>选择您的许可证类型：</translation>
     </message>
     <message>
         <source>- Commercial license</source>
-        <translation type="vanished">- 商业许可证</translation>
+        <translation>- 商业许可证</translation>
     </message>
     <message>
         <source>One more step to go...</source>
-        <translation type="vanished">还剩一步...</translation>
+        <translation>还剩一步...</translation>
     </message>
     <message>
         <source>A network error occured</source>
-        <translation type="vanished">发生网络错误</translation>
+        <translation>发生网络错误</translation>
     </message>
     <message>
         <source>Server error. Try again later.</source>
-        <translation type="vanished">服务器错误。请稍后再试。</translation>
+        <translation>服务器错误。请稍后再试。</translation>
     </message>
     <message>
         <source>Already activated with this activation key and lid.</source>
-        <translation type="vanished">已使用此激活密钥和 LID 激活。</translation>
+        <translation>已使用此激活密钥和 LID 激活。</translation>
     </message>
     <message>
         <source>Buy commercial license</source>
-        <translation type="vanished">购买商业许可证</translation>
+        <translation>购买商业许可证</translation>
     </message>
 </context>
 <context>
     <name>Necto::LicenseView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Activate</source>
-        <translation type="vanished">激活</translation>
+        <translation>激活</translation>
     </message>
     <message>
         <source>Enter time token:</source>
-        <translation type="vanished">输入时间令牌：</translation>
+        <translation>输入时间令牌：</translation>
     </message>
     <message>
         <source>Enter time token</source>
-        <translation type="vanished">输入时间令牌</translation>
+        <translation>输入时间令牌</translation>
     </message>
     <message>
         <source>Activated</source>
-        <translation type="vanished">已激活</translation>
+        <translation>已激活</translation>
     </message>
 </context>
 <context>
     <name>Necto::LoginDialog</name>
     <message>
         <source>Login</source>
-        <translation type="vanished">登录</translation>
+        <translation>登录</translation>
     </message>
     <message>
         <source>Verifying MIKROE passport...</source>
-        <translation type="vanished">正在验证 MIKROE passport...</translation>
+        <translation>正在验证 MIKROE passport...</translation>
     </message>
     <message>
         <source>Checking token for secure access...</source>
-        <translation type="vanished">正在检查安全访问令牌...</translation>
+        <translation>正在检查安全访问令牌...</translation>
     </message>
     <message>
         <source>Logging in...</source>
-        <translation type="vanished">正在登录...</translation>
+        <translation>正在登录...</translation>
     </message>
 </context>
 <context>
     <name>Necto::LoginManager</name>
     <message>
         <source>NECTO Studio v%1 - %2</source>
-        <translation type="vanished">NECTO Studio v%1 - %2</translation>
+        <translation>NECTO Studio v%1 - %2</translation>
     </message>
     <message>
         <source>Offline mode</source>
-        <translation type="vanished">离线模式</translation>
+        <translation>离线模式</translation>
     </message>
     <message>
         <source>Unavailable in offline mode</source>
-        <translation type="vanished">离线模式下不可用</translation>
+        <translation>离线模式下不可用</translation>
     </message>
     <message>
         <source>Remote Board Farm (Ctrl + 6)</source>
-        <translation type="vanished">远程板卡农场 (Ctrl + 6)</translation>
+        <translation>远程板卡农场 (Ctrl + 6)</translation>
     </message>
     <message>
         <source>NECTO assistant (Ctrl + 8)</source>
-        <translation type="vanished">NECTO 助手 (Ctrl + 8)</translation>
+        <translation>NECTO 助手 (Ctrl + 8)</translation>
     </message>
     <message>
         <source>Updates (Ctrl + 0)</source>
-        <translation type="vanished">更新 (Ctrl + 0)</translation>
+        <translation>更新 (Ctrl + 0)</translation>
     </message>
     <message>
         <source>Package manager (Ctrl + 5)</source>
-        <translation type="vanished">包管理器 (Ctrl + 5)</translation>
+        <translation>包管理器 (Ctrl + 5)</translation>
     </message>
 </context>
 <context>
     <name>Necto::MainWindow</name>
     <message>
         <source>NECTO Studio</source>
-        <translation type="vanished">NECTO Studio</translation>
+        <translation>NECTO Studio</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Code</source>
-        <translation type="vanished">代码</translation>
+        <translation>代码</translation>
     </message>
     <message>
         <source>Show Remote Board</source>
-        <translation type="vanished">显示远程开发板</translation>
+        <translation>显示远程开发板</translation>
     </message>
     <message>
         <source>Open Programmer Settings</source>
-        <translation type="vanished">打开编程器设置</translation>
+        <translation>打开编程器设置</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="vanished">文件</translation>
+        <translation>文件</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">编辑</translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <source>Project</source>
-        <translation type="vanished">项目</translation>
+        <translation>项目</translation>
     </message>
     <message>
         <source>&amp;Debugger</source>
-        <translation type="vanished">调试器(&amp;D)</translation>
+        <translation>调试器(&amp;D)</translation>
     </message>
     <message>
         <source>&amp;Programmer</source>
-        <translation type="vanished">编程器(&amp;P)</translation>
+        <translation>编程器(&amp;P)</translation>
     </message>
     <message>
         <source>&amp;Tools</source>
-        <translation type="vanished">工具(&amp;T)</translation>
+        <translation>工具(&amp;T)</translation>
     </message>
     <message>
         <source>&amp;Show</source>
-        <translation type="vanished">显示(&amp;S)</translation>
+        <translation>显示(&amp;S)</translation>
     </message>
     <message>
         <source>&amp;Version Control</source>
-        <translation type="vanished">版本控制(&amp;V)</translation>
+        <translation>版本控制(&amp;V)</translation>
     </message>
     <message>
         <source>&amp;Help</source>
-        <translation type="vanished">帮助(&amp;H)</translation>
+        <translation>帮助(&amp;H)</translation>
     </message>
     <message>
         <source>A background operation is running. Please wait until it finishes before closing the application.</source>
-        <translation type="vanished">后台操作正在运行。请等待其完成后再关闭应用程序。</translation>
+        <translation>后台操作正在运行。请等待其完成后再关闭应用程序。</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
 </context>
 <context>
@@ -13255,7 +13255,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <name>Necto::Mattermost</name>
     <message>
         <source>NECTO Chat</source>
-        <translation type="vanished">NECTO 聊天</translation>
+        <translation>NECTO 聊天</translation>
     </message>
 </context>
 <context>
@@ -13266,66 +13266,66 @@ li.checked::marker { content: &quot;\2612&quot;; }
     </message>
     <message>
         <source>NECTO Chat is unavailable</source>
-        <translation type="vanished">NECTO Chat 不可用</translation>
+        <translation>NECTO Chat 不可用</translation>
     </message>
     <message>
         <source>Connecting to the chat service. This will only take a moment…</source>
-        <translation type="vanished">正在连接聊天服务，请稍候…</translation>
+        <translation>正在连接聊天服务，请稍候…</translation>
     </message>
     <message>
         <source>Retry</source>
-        <translation type="vanished">重试</translation>
+        <translation>重试</translation>
     </message>
     <message>
         <source>Initializing NECTO Chat</source>
-        <translation type="vanished">正在初始化 NECTO Chat</translation>
+        <translation>正在初始化 NECTO Chat</translation>
     </message>
     <message>
         <source>The chat service could not be reached. It may be temporarily down or under maintenance. Please try again in a few minutes.</source>
-        <translation type="vanished">无法连接到聊天服务。它可能暂时停机或正在维护。请几分钟后重试。</translation>
+        <translation>无法连接到聊天服务。它可能暂时停机或正在维护。请几分钟后重试。</translation>
     </message>
 </context>
 <context>
     <name>Necto::McuSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Configure MCU</source>
-        <translation type="vanished">配置 MCU</translation>
+        <translation>配置 MCU</translation>
     </message>
     <message>
         <source>Config scheme:</source>
-        <translation type="vanished">配置方案：</translation>
+        <translation>配置方案：</translation>
     </message>
     <message>
         <source>Clock:</source>
-        <translation type="vanished">时钟：</translation>
+        <translation>时钟：</translation>
     </message>
     <message>
         <source>MHz</source>
-        <translation type="vanished">MHz</translation>
+        <translation>MHz</translation>
     </message>
     <message>
         <source>MCU Settings</source>
-        <translation type="vanished">MCU 设置</translation>
+        <translation>MCU 设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Enter MCU clock</source>
-        <translation type="vanished">输入 MCU 时钟</translation>
+        <translation>输入 MCU 时钟</translation>
     </message>
     <message>
         <source>Configure %1:</source>
-        <translation type="vanished">配置 %1：</translation>
+        <translation>配置 %1：</translation>
     </message>
 </context>
 <context>
@@ -13341,11 +13341,11 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <name>Necto::MemoryOverlayWidget</name>
     <message>
         <source>Memory Usage</source>
-        <translation type="vanished">内存使用情况</translation>
+        <translation>内存使用情况</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
 </context>
 <context>
@@ -13381,452 +13381,452 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <name>Necto::MessageFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
 </context>
 <context>
     <name>Necto::MicrochipView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Server options</source>
-        <translation type="vanished">服务器选项</translation>
+        <translation>服务器选项</translation>
     </message>
     <message>
         <source>No available options</source>
-        <translation type="vanished">无可用选项</translation>
+        <translation>无可用选项</translation>
     </message>
     <message>
         <source>Programmer Settings</source>
-        <translation type="vanished">编程器设置</translation>
+        <translation>编程器设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikroCARMSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>ANSI pack BitFields</source>
-        <translation type="vanished">ANSI 打包位字段</translation>
+        <translation>ANSI 打包位字段</translation>
     </message>
     <message>
         <source>Case sensitive</source>
-        <translation type="vanished">区分大小写</translation>
+        <translation>区分大小写</translation>
     </message>
     <message>
         <source>Dynamic link for string litterals</source>
-        <translation type="vanished">字符串字面量动态链接</translation>
+        <translation>字符串字面量动态链接</translation>
     </message>
     <message>
         <source>Generate additional files (*.LST, *.ASM)</source>
-        <translation type="vanished">生成附加文件 (*.LST, *.ASM)</translation>
+        <translation>生成附加文件 (*.LST, *.ASM)</translation>
     </message>
     <message>
         <source>Generate BIN image file</source>
-        <translation type="vanished">生成 BIN 映像文件</translation>
+        <translation>生成 BIN 映像文件</translation>
     </message>
     <message>
         <source>Long hex format</source>
-        <translation type="vanished">长 HEX 格式</translation>
+        <translation>长 HEX 格式</translation>
     </message>
     <message>
         <source>Data type size:</source>
-        <translation type="vanished">数据类型大小：</translation>
+        <translation>数据类型大小：</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>default mE  (int 2 bytes)</source>
-        <translation type="vanished">默认 mE（int 2 字节）</translation>
+        <translation>默认 mE（int 2 字节）</translation>
     </message>
     <message>
         <source>other (int 4 bytes)</source>
-        <translation type="vanished">其他（int 4 字节）</translation>
+        <translation>其他（int 4 字节）</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikroCAVRSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>ANSI pack BitFields</source>
-        <translation type="vanished">ANSI 打包位字段</translation>
+        <translation>ANSI 打包位字段</translation>
     </message>
     <message>
         <source>Case sensitive</source>
-        <translation type="vanished">区分大小写</translation>
+        <translation>区分大小写</translation>
     </message>
     <message>
         <source>Dynamic link for string litterals</source>
-        <translation type="vanished">字符串字面量动态链接</translation>
+        <translation>字符串字面量动态链接</translation>
     </message>
     <message>
         <source>Generate additional files (*.LST, *.ASM)</source>
-        <translation type="vanished">生成附加文件 (*.LST, *.ASM)</translation>
+        <translation>生成附加文件 (*.LST, *.ASM)</translation>
     </message>
     <message>
         <source>Long hex format</source>
-        <translation type="vanished">长 HEX 格式</translation>
+        <translation>长 HEX 格式</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikroCDSPICSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>ANSI pack BitFields</source>
-        <translation type="vanished">ANSI 打包位字段</translation>
+        <translation>ANSI 打包位字段</translation>
     </message>
     <message>
         <source>Case sensitive</source>
-        <translation type="vanished">区分大小写</translation>
+        <translation>区分大小写</translation>
     </message>
     <message>
         <source>Dynamic link for string litterals</source>
-        <translation type="vanished">字符串字面量动态链接</translation>
+        <translation>字符串字面量动态链接</translation>
     </message>
     <message>
         <source>Generate additional files (*.LST, *.ASM)</source>
-        <translation type="vanished">生成附加文件 (*.LST, *.ASM)</translation>
+        <translation>生成附加文件 (*.LST, *.ASM)</translation>
     </message>
     <message>
         <source>Long hex format</source>
-        <translation type="vanished">长 HEX 格式</translation>
+        <translation>长 HEX 格式</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikroCPIC32SettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>ANSI pack BitFields</source>
-        <translation type="vanished">ANSI 打包位字段</translation>
+        <translation>ANSI 打包位字段</translation>
     </message>
     <message>
         <source>Case sensitive</source>
-        <translation type="vanished">区分大小写</translation>
+        <translation>区分大小写</translation>
     </message>
     <message>
         <source>Dynamic link for string literals</source>
-        <translation type="vanished">字符串字面量动态链接</translation>
+        <translation>字符串字面量动态链接</translation>
     </message>
     <message>
         <source>Generate additional files (*.LST, *.ASM)</source>
-        <translation type="vanished">生成附加文件 (*.LST, *.ASM)</translation>
+        <translation>生成附加文件 (*.LST, *.ASM)</translation>
     </message>
     <message>
         <source>Long hex format</source>
-        <translation type="vanished">长 HEX 格式</translation>
+        <translation>长 HEX 格式</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikroCPICSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>ANSI pack BitFields</source>
-        <translation type="vanished">ANSI 打包位字段</translation>
+        <translation>ANSI 打包位字段</translation>
     </message>
     <message>
         <source>Case sensitive</source>
-        <translation type="vanished">区分大小写</translation>
+        <translation>区分大小写</translation>
     </message>
     <message>
         <source>Dynamic link for string litterals</source>
-        <translation type="vanished">字符串字面量动态链接</translation>
+        <translation>字符串字面量动态链接</translation>
     </message>
     <message>
         <source>Generate additional files (*.LST, *.ASM)</source>
-        <translation type="vanished">生成附加文件 (*.LST, *.ASM)</translation>
+        <translation>生成附加文件 (*.LST, *.ASM)</translation>
     </message>
     <message>
         <source>Long hex format</source>
-        <translation type="vanished">长 HEX 格式</translation>
+        <translation>长 HEX 格式</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikroProgPathView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikroProgView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>MikroProg Options</source>
-        <translation type="vanished">MikroProg 选项</translation>
+        <translation>MikroProg 选项</translation>
     </message>
     <message>
         <source>Protocol:</source>
-        <translation type="vanished">协议：</translation>
+        <translation>协议：</translation>
     </message>
     <message>
         <source>JTAG</source>
-        <translation type="vanished">JTAG</translation>
+        <translation>JTAG</translation>
     </message>
     <message>
         <source>SWD</source>
-        <translation type="vanished">SWD</translation>
+        <translation>SWD</translation>
     </message>
     <message>
         <source>Quit mikroProg on finish</source>
-        <translation type="vanished">完成后退出 mikroProg</translation>
+        <translation>完成后退出 mikroProg</translation>
     </message>
     <message>
         <source>GDB Server Options</source>
-        <translation type="vanished">GDB 服务器选项</translation>
+        <translation>GDB 服务器选项</translation>
     </message>
     <message>
         <source>Remote commands</source>
-        <translation type="vanished">远程命令</translation>
+        <translation>远程命令</translation>
     </message>
     <message>
         <source>Auto start local GDB Server</source>
-        <translation type="vanished">自动启动本地 GDB 服务器</translation>
+        <translation>自动启动本地 GDB 服务器</translation>
     </message>
     <message>
         <source>Connect to remote GDB Server</source>
-        <translation type="vanished">连接到远程 GDB 服务器</translation>
+        <translation>连接到远程 GDB 服务器</translation>
     </message>
     <message>
         <source>IP Address:</source>
-        <translation type="vanished">IP 地址：</translation>
+        <translation>IP 地址：</translation>
     </message>
     <message>
         <source>Port:</source>
-        <translation type="vanished">端口：</translation>
+        <translation>端口：</translation>
     </message>
     <message>
         <source>Command parameters:</source>
-        <translation type="vanished">命令参数：</translation>
+        <translation>命令参数：</translation>
     </message>
     <message>
         <source>Remote commands:</source>
-        <translation type="vanished">远程命令：</translation>
+        <translation>远程命令：</translation>
     </message>
     <message>
         <source>GDB server port</source>
-        <translation type="vanished">GDB 服务器端口</translation>
+        <translation>GDB 服务器端口</translation>
     </message>
     <message>
         <source>GDB server address</source>
-        <translation type="vanished">GDB 服务器地址</translation>
+        <translation>GDB 服务器地址</translation>
     </message>
     <message>
         <source>Custom GDB server path</source>
-        <translation type="vanished">自定义 GDB 服务器路径</translation>
+        <translation>自定义 GDB 服务器路径</translation>
     </message>
     <message>
         <source>Path to custom GDB server executable</source>
-        <translation type="vanished">自定义 GDB 服务器可执行文件路径</translation>
+        <translation>自定义 GDB 服务器可执行文件路径</translation>
     </message>
     <message>
         <source>Command line parameters</source>
-        <translation type="vanished">命令行参数</translation>
+        <translation>命令行参数</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>mikroProg Suite path</source>
-        <translation type="vanished">mikroProg Suite 路径</translation>
+        <translation>mikroProg Suite 路径</translation>
     </message>
     <message>
         <source>Path to mikroProg for TI executable</source>
-        <translation type="vanished">mikroProg for TI 可执行文件路径</translation>
+        <translation>mikroProg for TI 可执行文件路径</translation>
     </message>
     <message>
         <source>Path to mikroProg for PIC executable</source>
-        <translation type="vanished">mikroProg for PIC 可执行文件路径</translation>
+        <translation>mikroProg for PIC 可执行文件路径</translation>
     </message>
     <message>
         <source>Path to mikroProg for CEC executable</source>
-        <translation type="vanished">mikroProg for CEC 可执行文件路径</translation>
+        <translation>mikroProg for CEC 可执行文件路径</translation>
     </message>
     <message>
         <source>Path to mikroProg for STM32 executable</source>
-        <translation type="vanished">mikroProg for STM32 可执行文件路径</translation>
+        <translation>mikroProg for STM32 可执行文件路径</translation>
     </message>
     <message>
         <source>Path to mikroProg for AVR executable</source>
-        <translation type="vanished">mikroProg for AVR 可执行文件路径</translation>
+        <translation>mikroProg for AVR 可执行文件路径</translation>
     </message>
     <message>
         <source>Path to mikroProg for NXP executable</source>
-        <translation type="vanished">mikroProg for NXP 可执行文件路径</translation>
+        <translation>mikroProg for NXP 可执行文件路径</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikrobusItem</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation type="vanished">图片</translation>
+        <translation>图片</translation>
     </message>
     <message>
         <source>1</source>
-        <translation type="vanished">1</translation>
+        <translation>1</translation>
     </message>
     <message>
         <source>Choose the Click Board</source>
-        <translation type="vanished">选择 Click 板</translation>
+        <translation>选择 Click 板</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikrobusSelector</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation type="vanished">图片</translation>
+        <translation>图片</translation>
     </message>
     <message>
         <source>1</source>
-        <translation type="vanished">1</translation>
+        <translation>1</translation>
     </message>
     <message>
         <source>Choose the Click Board</source>
-        <translation type="vanished">选择 Click 板</translation>
+        <translation>选择 Click 板</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="vanished">无</translation>
+        <translation>无</translation>
     </message>
 </context>
 <context>
     <name>Necto::ModuleItemView</name>
     <message>
         <source>Edit</source>
-        <translation type="vanished">编辑</translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">移除</translation>
+        <translation>移除</translation>
     </message>
 </context>
 <context>
@@ -13916,11 +13916,11 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <name>Necto::MonacoEditorView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Find in files</source>
-        <translation type="vanished">在文件中查找</translation>
+        <translation>在文件中查找</translation>
     </message>
 </context>
 <context>
@@ -14006,431 +14006,431 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <name>Necto::NetworkErrorDialog</name>
     <message>
         <source>Network Error</source>
-        <translation type="vanished">网络错误</translation>
+        <translation>网络错误</translation>
     </message>
     <message>
         <source>NECTO Studio can’t connect to the internet.</source>
-        <translation type="vanished">NECTO Studio 无法连接到互联网。</translation>
+        <translation>NECTO Studio 无法连接到互联网。</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Check your connection or set up a proxy if you&apos;re on a restricted or corporate network.&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Offline mode&lt;/span&gt; lets you build, program, and debug using all installed packages and examples.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;请检查您的连接；如果您处于受限网络或企业网络中，请设置代理。&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;离线模式&lt;/span&gt;允许您使用所有已安装的软件包和示例进行构建、编程和调试。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;请检查您的连接；如果您处于受限网络或企业网络中，请设置代理。&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;离线模式&lt;/span&gt;允许您使用所有已安装的软件包和示例进行构建、编程和调试。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Open Proxy Settings</source>
-        <translation type="vanished">打开代理设置</translation>
+        <translation>打开代理设置</translation>
     </message>
     <message>
         <source>Retry</source>
-        <translation type="vanished">重试</translation>
+        <translation>重试</translation>
     </message>
     <message>
         <source>Offline mode</source>
-        <translation type="vanished">离线模式</translation>
+        <translation>离线模式</translation>
     </message>
     <message>
         <source>Internet connection restored.</source>
-        <translation type="vanished">互联网连接已恢复。</translation>
+        <translation>互联网连接已恢复。</translation>
     </message>
     <message>
         <source>You’re back online — NECTO Studio will automatically restore access to all features and online services.</source>
-        <translation type="vanished">您已重新上线 — NECTO Studio 将自动恢复对所有功能和在线服务的访问。</translation>
+        <translation>您已重新上线 — NECTO Studio 将自动恢复对所有功能和在线服务的访问。</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>&lt;p&gt;Check your connection or set up a proxy if you&apos;re on a restricted or corporate network.&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Offline mode&lt;/span&gt; lets you build, program, and debug using all installed packages and examples.&lt;/p&gt;</source>
-        <translation type="vanished">&lt;p&gt;请检查您的连接；如果您处于受限网络或企业网络中，请设置代理。&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;离线模式&lt;/span&gt;允许您使用所有已安装的软件包和示例进行构建、编程和调试。&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;请检查您的连接；如果您处于受限网络或企业网络中，请设置代理。&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;离线模式&lt;/span&gt;允许您使用所有已安装的软件包和示例进行构建、编程和调试。&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
     <name>Necto::NetworkSettingsPage</name>
     <message>
         <source>Proxy Settings</source>
-        <translation type="vanished">代理设置</translation>
+        <translation>代理设置</translation>
     </message>
     <message>
         <source>Use system proxy settings</source>
-        <translation type="vanished">使用系统代理设置</translation>
+        <translation>使用系统代理设置</translation>
     </message>
     <message>
         <source>Manual proxy configuration</source>
-        <translation type="vanished">手动代理配置</translation>
+        <translation>手动代理配置</translation>
     </message>
     <message>
         <source>Hostname or IP</source>
-        <translation type="vanished">主机名或 IP</translation>
+        <translation>主机名或 IP</translation>
     </message>
     <message>
         <source>Port:</source>
-        <translation type="vanished">端口：</translation>
+        <translation>端口：</translation>
     </message>
     <message>
         <source>Proxy auth</source>
-        <translation type="vanished">代理认证</translation>
+        <translation>代理认证</translation>
     </message>
     <message>
         <source>Username:</source>
-        <translation type="vanished">用户名：</translation>
+        <translation>用户名：</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation type="vanished">密码</translation>
+        <translation>密码</translation>
     </message>
     <message>
         <source>Network settings</source>
-        <translation type="vanished">网络设置</translation>
+        <translation>网络设置</translation>
     </message>
 </context>
 <context>
     <name>Necto::NewProjectWizard</name>
     <message>
         <source>Wizard</source>
-        <translation type="vanished">向导</translation>
+        <translation>向导</translation>
     </message>
 </context>
 <context>
     <name>Necto::NotificationWidget</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Copy file path to clipboard</source>
-        <translation type="vanished">将文件路径复制到剪贴板</translation>
+        <translation>将文件路径复制到剪贴板</translation>
     </message>
 </context>
 <context>
     <name>Necto::ObjectInspector</name>
     <message>
         <source>Filter properties</source>
-        <translation type="vanished">筛选属性</translation>
+        <translation>筛选属性</translation>
     </message>
 </context>
 <context>
     <name>Necto::OptionsDialog</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Configure</source>
-        <translation type="vanished">配置</translation>
+        <translation>配置</translation>
     </message>
 </context>
 <context>
     <name>Necto::Output</name>
     <message>
         <source>Issues</source>
-        <translation type="vanished">问题</translation>
+        <translation>问题</translation>
     </message>
     <message>
         <source>Toggle output view</source>
-        <translation type="vanished">切换输出视图</translation>
+        <translation>切换输出视图</translation>
     </message>
     <message>
         <source>Hide output view</source>
-        <translation type="vanished">隐藏输出视图</translation>
+        <translation>隐藏输出视图</translation>
     </message>
     <message>
         <source>Compile Output</source>
-        <translation type="vanished">编译输出</translation>
+        <translation>编译输出</translation>
     </message>
     <message>
         <source>Compile output</source>
-        <translation type="vanished">编译输出</translation>
+        <translation>编译输出</translation>
     </message>
     <message>
         <source>Application Output</source>
-        <translation type="vanished">应用程序输出</translation>
+        <translation>应用程序输出</translation>
     </message>
     <message>
         <source>Application output</source>
-        <translation type="vanished">应用程序输出</translation>
+        <translation>应用程序输出</translation>
     </message>
     <message>
         <source>No build errors captured yet.</source>
-        <translation type="vanished">尚未捕获构建错误。</translation>
+        <translation>尚未捕获构建错误。</translation>
     </message>
     <message>
         <source>Unable to explain the selected issue.</source>
-        <translation type="vanished">无法解释所选问题。</translation>
+        <translation>无法解释所选问题。</translation>
     </message>
     <message>
         <source>NECTO Assistant is not available.</source>
-        <translation type="vanished">NECTO 助手不可用。</translation>
+        <translation>NECTO 助手不可用。</translation>
     </message>
 </context>
 <context>
     <name>Necto::OutputListItem</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
 </context>
 <context>
     <name>Necto::OutputManagerIssuesView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Clean output</source>
-        <translation type="vanished">清理输出</translation>
+        <translation>清理输出</translation>
     </message>
     <message>
         <source>Ask AI to analyze build errors</source>
-        <translation type="vanished">请求 AI 分析构建错误</translation>
+        <translation>请求 AI 分析构建错误</translation>
     </message>
     <message>
         <source>No issues found</source>
-        <translation type="vanished">未发现问题</translation>
+        <translation>未发现问题</translation>
     </message>
 </context>
 <context>
     <name>Necto::OutputView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Clean output</source>
-        <translation type="vanished">清理输出</translation>
+        <translation>清理输出</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Type your search here</source>
-        <translation type="vanished">在此输入搜索内容</translation>
+        <translation>在此输入搜索内容</translation>
     </message>
     <message>
         <source>Find previous</source>
-        <translation type="vanished">查找上一个</translation>
+        <translation>查找上一个</translation>
     </message>
     <message>
         <source>Shift+F3</source>
-        <translation type="vanished">Shift+F3</translation>
+        <translation>Shift+F3</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation type="vanished">查找下一个</translation>
+        <translation>查找下一个</translation>
     </message>
     <message>
         <source>F3</source>
-        <translation type="vanished">F3</translation>
+        <translation>F3</translation>
     </message>
     <message>
         <source>Match whole word</source>
-        <translation type="vanished">匹配整个单词</translation>
+        <translation>匹配整个单词</translation>
     </message>
     <message>
         <source>Match case sensitive</source>
-        <translation type="vanished">匹配大小写</translation>
+        <translation>匹配大小写</translation>
     </message>
     <message>
         <source>Case sensitive</source>
-        <translation type="vanished">区分大小写</translation>
+        <translation>区分大小写</translation>
     </message>
     <message>
         <source>Find Next</source>
-        <translation type="vanished">查找下一个</translation>
+        <translation>查找下一个</translation>
     </message>
     <message>
         <source>Find Previous</source>
-        <translation type="vanished">查找上一个</translation>
+        <translation>查找上一个</translation>
     </message>
 </context>
 <context>
     <name>Necto::PackageDownloadManager</name>
     <message>
         <source>Server took to long to respond</source>
-        <translation type="vanished">服务器响应时间过长</translation>
+        <translation>服务器响应时间过长</translation>
     </message>
 </context>
 <context>
     <name>Necto::PackageFilterCombo</name>
     <message>
         <source>All</source>
-        <translation type="vanished">全部</translation>
+        <translation>全部</translation>
     </message>
     <message>
         <source>Multiple</source>
-        <translation type="vanished">多个</translation>
+        <translation>多个</translation>
     </message>
     <message>
         <source>Selected filters: 
 
 </source>
-        <translation type="vanished">已选筛选器：
+        <translation>已选筛选器：
 
 </translation>
     </message>
     <message>
         <source>Search...</source>
-        <translation type="vanished">搜索...</translation>
+        <translation>搜索...</translation>
     </message>
 </context>
 <context>
     <name>Necto::PackageItem</name>
     <message>
         <source>Goto EmbeddedWiki Page</source>
-        <translation type="vanished">转到 EmbeddedWiki 页面</translation>
+        <translation>转到 EmbeddedWiki 页面</translation>
     </message>
     <message>
         <source>Goto product page</source>
-        <translation type="vanished">转到产品页面</translation>
+        <translation>转到产品页面</translation>
     </message>
     <message>
         <source>v. 2.1.0.11</source>
-        <translation type="vanished">v. 2.1.0.11</translation>
+        <translation>v. 2.1.0.11</translation>
     </message>
     <message>
         <source>•</source>
-        <translation type="vanished">•</translation>
+        <translation>•</translation>
     </message>
     <message>
         <source>Free</source>
-        <translation type="vanished">空闲</translation>
+        <translation>空闲</translation>
     </message>
     <message>
         <source>Author: </source>
-        <translation type="vanished">作者：</translation>
+        <translation>作者：</translation>
     </message>
     <message>
         <source>author</source>
-        <translation type="vanished">作者</translation>
+        <translation>作者</translation>
     </message>
     <message>
         <source>Compilers:</source>
-        <translation type="vanished">编译器：</translation>
+        <translation>编译器：</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Architecture:</source>
-        <translation type="vanished">架构：</translation>
+        <translation>架构：</translation>
     </message>
     <message>
         <source>Category:</source>
-        <translation type="vanished">类别：</translation>
+        <translation>类别：</translation>
     </message>
     <message>
         <source>category</source>
-        <translation type="vanished">类别</translation>
+        <translation>类别</translation>
     </message>
     <message>
         <source>MCU Count:</source>
-        <translation type="vanished">MCU 数量：</translation>
+        <translation>MCU 数量：</translation>
     </message>
     <message>
         <source>0</source>
-        <translation type="vanished">0</translation>
+        <translation>0</translation>
     </message>
     <message>
         <source>Installing...</source>
-        <translation type="vanished">正在安装...</translation>
+        <translation>正在安装...</translation>
     </message>
     <message>
         <source>Open bundled example</source>
-        <translation type="vanished">打开捆绑示例</translation>
+        <translation>打开捆绑示例</translation>
     </message>
     <message>
         <source>Open Example</source>
-        <translation type="vanished">打开示例</translation>
+        <translation>打开示例</translation>
     </message>
     <message>
         <source>Update package</source>
-        <translation type="vanished">更新软件包</translation>
+        <translation>更新软件包</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="vanished">更新</translation>
+        <translation>更新</translation>
     </message>
     <message>
         <source>Install package</source>
-        <translation type="vanished">安装软件包</translation>
+        <translation>安装软件包</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="vanished">安装</translation>
+        <translation>安装</translation>
     </message>
     <message>
         <source>Remove package</source>
-        <translation type="vanished">移除软件包</translation>
+        <translation>移除软件包</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>Always installed</source>
-        <translation type="vanished">始终安装</translation>
+        <translation>始终安装</translation>
     </message>
     <message>
         <source>Open GitHub page</source>
-        <translation type="vanished">打开 GitHub 页面</translation>
+        <translation>打开 GitHub 页面</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;p&gt;&lt;strong&gt;%1&lt;/strong&gt;&lt;/p&gt;Author: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;Version: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%3&lt;/strong&gt;&lt;br&gt;Category: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%4&lt;/strong&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;p&gt;&lt;strong&gt;%1&lt;/strong&gt;&lt;/p&gt;Author: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;版本: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%3&lt;/strong&gt;&lt;br&gt;Category: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%4&lt;/strong&gt;</translation>
+        <translation>&lt;html&gt;&lt;p&gt;&lt;strong&gt;%1&lt;/strong&gt;&lt;/p&gt;Author: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;版本: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%3&lt;/strong&gt;&lt;br&gt;Category: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%4&lt;/strong&gt;</translation>
     </message>
     <message>
         <source>&lt;br&gt;Compiler: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;Architecture: &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</source>
-        <translation type="vanished">&lt;br&gt;编译器: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;架构： &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</translation>
+        <translation>&lt;br&gt;编译器: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;架构： &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <source>&lt;br&gt;MCU Count: &lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;MCUs: &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</source>
-        <translation type="vanished">&lt;br&gt;MCU 数量： &lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;MCUs: &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</translation>
+        <translation>&lt;br&gt;MCU 数量： &lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;MCUs: &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <source>Downloading...</source>
-        <translation type="vanished">正在下载...</translation>
+        <translation>正在下载...</translation>
     </message>
     <message>
         <source>Uninstalling...</source>
-        <translation type="vanished">正在卸载...</translation>
+        <translation>正在卸载...</translation>
     </message>
     <message>
         <source>Updating...</source>
-        <translation type="vanished">正在更新...</translation>
+        <translation>正在更新...</translation>
     </message>
     <message>
         <source>Pending...</source>
-        <translation type="vanished">等待中...</translation>
+        <translation>等待中...</translation>
     </message>
     <message>
         <source>Open in external browser</source>
-        <translation type="vanished">在外部浏览器中打开</translation>
+        <translation>在外部浏览器中打开</translation>
     </message>
     <message>
         <source>Goto EmbeddedWiki page</source>
-        <translation type="vanished">转到 EmbeddedWiki 页面</translation>
+        <translation>转到 EmbeddedWiki 页面</translation>
     </message>
     <message>
         <source>Error updating package</source>
-        <translation type="vanished">更新软件包时出错</translation>
+        <translation>更新软件包时出错</translation>
     </message>
 </context>
 <context>
@@ -14504,100 +14504,100 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <name>Necto::PackageManagerView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Updating all packages...</source>
-        <translation type="vanished">正在更新所有软件包...</translation>
+        <translation>正在更新所有软件包...</translation>
     </message>
     <message>
         <source>Reset filters</source>
-        <translation type="vanished">重置筛选器</translation>
+        <translation>重置筛选器</translation>
     </message>
     <message>
         <source>Open filters</source>
-        <translation type="vanished">打开筛选器</translation>
+        <translation>打开筛选器</translation>
     </message>
     <message>
         <source>Filters</source>
-        <translation type="vanished">筛选器</translation>
+        <translation>筛选器</translation>
     </message>
     <message>
         <source>Update All</source>
-        <translation type="vanished">全部更新</translation>
+        <translation>全部更新</translation>
     </message>
     <message>
         <source>Filter packages</source>
-        <translation type="vanished">筛选软件包</translation>
+        <translation>筛选软件包</translation>
     </message>
     <message>
         <source>Found %1 package(s)</source>
-        <translation type="vanished">找到 %1 个软件包</translation>
+        <translation>找到 %1 个软件包</translation>
     </message>
     <message>
         <source>Apply</source>
-        <translation type="vanished">应用</translation>
+        <translation>应用</translation>
     </message>
     <message>
         <source>Apply selected filters</source>
-        <translation type="vanished">应用所选筛选器</translation>
+        <translation>应用所选筛选器</translation>
     </message>
     <message>
         <source>No internet connection</source>
-        <translation type="vanished">无互联网连接</translation>
+        <translation>无互联网连接</translation>
     </message>
     <message>
         <source>Reset all filters</source>
-        <translation type="vanished">重置所有筛选器</translation>
+        <translation>重置所有筛选器</translation>
     </message>
 </context>
 <context>
     <name>Necto::PackageUpdateCollection</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Double click to search in Package Manager</source>
-        <translation type="vanished">双击在包管理器中搜索</translation>
+        <translation>双击在包管理器中搜索</translation>
     </message>
 </context>
 <context>
     <name>Necto::PackageUpdateItem</name>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>v. %1</source>
-        <translation type="vanished">v. %1</translation>
+        <translation>v. %1</translation>
     </message>
 </context>
 <context>
     <name>Necto::PackagesStack</name>
     <message>
         <source>Updates</source>
-        <translation type="vanished">更新</translation>
+        <translation>更新</translation>
     </message>
     <message>
         <source>Package Manager</source>
-        <translation type="vanished">包管理器</translation>
+        <translation>包管理器</translation>
     </message>
 </context>
 <context>
     <name>Necto::PackagesView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Could not find a package you have searched. 
 Please, check your spelling.</source>
-        <translation type="vanished">找不到您搜索的软件包。
+        <translation>找不到您搜索的软件包。
 请检查拼写。</translation>
     </message>
 </context>
@@ -14605,286 +14605,286 @@ Please, check your spelling.</source>
     <name>Necto::PasswordDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">对话框</translation>
+        <translation>对话框</translation>
     </message>
     <message>
         <source>Icon</source>
-        <translation type="vanished">图标</translation>
+        <translation>图标</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">信息</translation>
+        <translation>信息</translation>
     </message>
     <message>
         <source>Username</source>
-        <translation type="vanished">用户名</translation>
+        <translation>用户名</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation type="vanished">密码</translation>
+        <translation>密码</translation>
     </message>
 </context>
 <context>
     <name>Necto::PlanetDebugManager</name>
     <message>
         <source>No internet access.</source>
-        <translation type="vanished">无互联网访问。</translation>
+        <translation>无互联网访问。</translation>
     </message>
     <message>
         <source>Error connecting to server. Please check your internet connection.</source>
-        <translation type="vanished">连接服务器时出错。请检查您的互联网连接。</translation>
+        <translation>连接服务器时出错。请检查您的互联网连接。</translation>
     </message>
     <message>
         <source>Waiting for server response..</source>
-        <translation type="vanished">正在等待服务器响应..</translation>
+        <translation>正在等待服务器响应..</translation>
     </message>
     <message>
         <source>Preparing boards...</source>
-        <translation type="vanished">正在准备开发板...</translation>
+        <translation>正在准备开发板...</translation>
     </message>
     <message>
         <source>%1 %2 Remote board(s)</source>
-        <translation type="vanished">%1 %2 个远程开发板</translation>
+        <translation>%1 %2 个远程开发板</translation>
     </message>
     <message>
         <source>Found</source>
-        <translation type="vanished">已找到</translation>
+        <translation>已找到</translation>
     </message>
     <message>
         <source>Remote Board Farm</source>
-        <translation type="vanished">远程板卡农场</translation>
+        <translation>远程板卡农场</translation>
     </message>
     <message>
         <source>Closing session</source>
-        <translation type="vanished">正在关闭会话</translation>
+        <translation>正在关闭会话</translation>
     </message>
     <message>
         <source>Time token has expired.</source>
-        <translation type="vanished">时间令牌已过期。</translation>
+        <translation>时间令牌已过期。</translation>
     </message>
     <message>
         <source>The default configuration cannot be used for this project type.</source>
-        <translation type="vanished">默认配置不能用于此项目类型。</translation>
+        <translation>默认配置不能用于此项目类型。</translation>
     </message>
     <message>
         <source>Please configure the project manually.</source>
-        <translation type="vanished">请手动配置项目。</translation>
+        <translation>请手动配置项目。</translation>
     </message>
     <message>
         <source>MCU selected in setup is different from one on Remote Board Farm board.</source>
-        <translation type="vanished">设置中选择的 MCU 与远程板卡农场开发板上的 MCU 不同。</translation>
+        <translation>设置中选择的 MCU 与远程板卡农场开发板上的 MCU 不同。</translation>
     </message>
     <message>
         <source>Remote Board Farm session has no backup of the original configuration and no default setup is available; you will need to reconfigure this project after disconnecting.</source>
-        <translation type="vanished">远程板卡农场会话没有原始配置备份，也没有可用的默认设置；断开连接后您需要重新配置此项目。</translation>
+        <translation>远程板卡农场会话没有原始配置备份，也没有可用的默认设置；断开连接后您需要重新配置此项目。</translation>
     </message>
     <message>
         <source>MCU selected in configuration is different from one on Remote Board Farm board.</source>
-        <translation type="vanished">配置中选择的 MCU 与远程板卡农场开发板上的 MCU 不同。</translation>
+        <translation>配置中选择的 MCU 与远程板卡农场开发板上的 MCU 不同。</translation>
     </message>
     <message>
         <source>Successfully reserved 
 </source>
-        <translation type="vanished">预约成功
+        <translation>预约成功
 </translation>
     </message>
     <message>
         <source>Board is no longer available.</source>
-        <translation type="vanished">开发板不再可用。</translation>
+        <translation>开发板不再可用。</translation>
     </message>
     <message>
         <source>Configure</source>
-        <translation type="vanished">配置</translation>
+        <translation>配置</translation>
     </message>
     <message>
         <source>Network error occured</source>
-        <translation type="vanished">发生网络错误</translation>
+        <translation>发生网络错误</translation>
     </message>
     <message>
         <source>A network error occured</source>
-        <translation type="vanished">发生网络错误</translation>
+        <translation>发生网络错误</translation>
     </message>
     <message>
         <source>Error building default configuration from Remote Board Farm! Project is configured with local configuration.</source>
-        <translation type="vanished">从远程板卡农场构建默认配置时出错！项目已使用本地配置。</translation>
+        <translation>从远程板卡农场构建默认配置时出错！项目已使用本地配置。</translation>
     </message>
 </context>
 <context>
     <name>Necto::PlanetDebugView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Reserve</source>
-        <translation type="vanished">预约</translation>
+        <translation>预约</translation>
     </message>
     <message>
         <source>Custom setup</source>
-        <translation type="vanished">自定义设置</translation>
+        <translation>自定义设置</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="vanished">筛选</translation>
+        <translation>筛选</translation>
     </message>
     <message>
         <source>Reserved boards</source>
-        <translation type="vanished">已预约开发板</translation>
+        <translation>已预约开发板</translation>
     </message>
     <message>
         <source>Free boards</source>
-        <translation type="vanished">空闲开发板</translation>
+        <translation>空闲开发板</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Filter boards</source>
-        <translation type="vanished">筛选开发板</translation>
+        <translation>筛选开发板</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation type="vanished">浏览</translation>
+        <translation>浏览</translation>
     </message>
     <message>
         <source>Connecting to Remote Board Farm...</source>
-        <translation type="vanished">正在连接到远程板卡农场...</translation>
+        <translation>正在连接到远程板卡农场...</translation>
     </message>
     <message>
         <source>Connecting to the remote board...</source>
-        <translation type="vanished">正在连接到远程开发板...</translation>
+        <translation>正在连接到远程开发板...</translation>
     </message>
     <message>
         <source>Preparing your board...</source>
-        <translation type="vanished">正在准备您的开发板...</translation>
+        <translation>正在准备您的开发板...</translation>
     </message>
     <message>
         <source>Setting up CODEGRIP...</source>
-        <translation type="vanished">正在设置 CODEGRIP...</translation>
+        <translation>正在设置 CODEGRIP...</translation>
     </message>
     <message>
         <source>Connecting to remote GDB server...</source>
-        <translation type="vanished">正在连接到远程 GDB 服务器...</translation>
+        <translation>正在连接到远程 GDB 服务器...</translation>
     </message>
     <message>
         <source>Enabling remote ports...</source>
-        <translation type="vanished">正在启用远程端口...</translation>
+        <translation>正在启用远程端口...</translation>
     </message>
     <message>
         <source>Initializing camera...</source>
-        <translation type="vanished">正在初始化摄像头...</translation>
+        <translation>正在初始化摄像头...</translation>
     </message>
     <message>
         <source>Transferring data...</source>
-        <translation type="vanished">正在传输数据...</translation>
+        <translation>正在传输数据...</translation>
     </message>
     <message>
         <source>Waiting for a stream to start...</source>
-        <translation type="vanished">正在等待视频流启动...</translation>
+        <translation>正在等待视频流启动...</translation>
     </message>
     <message>
         <source>Waiting for server response...</source>
-        <translation type="vanished">正在等待服务器响应...</translation>
+        <translation>正在等待服务器响应...</translation>
     </message>
     <message>
         <source>Removing board reservation...</source>
-        <translation type="vanished">正在移除开发板预约...</translation>
+        <translation>正在移除开发板预约...</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProductivityHub</name>
     <message>
         <source>Close</source>
-        <translation type="vanished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Productivity Hub</source>
-        <translation type="vanished">生产力中心</translation>
+        <translation>生产力中心</translation>
     </message>
     <message>
         <source>NECTO Assistant</source>
-        <translation type="vanished">NECTO 助手</translation>
+        <translation>NECTO 助手</translation>
     </message>
     <message>
         <source>Graphically tell AI to generate a code for a complex projects</source>
-        <translation type="vanished">通过图形方式让 AI 为复杂项目生成代码</translation>
+        <translation>通过图形方式让 AI 为复杂项目生成代码</translation>
     </message>
     <message>
         <source>Personal Remote Board Farm</source>
-        <translation type="vanished">个人远程板卡农场</translation>
+        <translation>个人远程板卡农场</translation>
     </message>
     <message>
         <source>Create your personal remote board farm request. Choose &amp; reserve setup just for you.</source>
-        <translation type="vanished">创建您的个人远程板卡农场请求。选择并预约专属于您的设置。</translation>
+        <translation>创建您的个人远程板卡农场请求。选择并预约专属于您的设置。</translation>
     </message>
     <message>
         <source>Custom board tool</source>
-        <translation type="vanished">自定义开发板工具</translation>
+        <translation>自定义开发板工具</translation>
     </message>
     <message>
         <source>Design your custom board using mikroBUS modules and integrate it with mikroSDK.</source>
-        <translation type="vanished">使用 mikroBUS 模块设计自定义开发板并将其集成到 mikroSDK。</translation>
+        <translation>使用 mikroBUS 模块设计自定义开发板并将其集成到 mikroSDK。</translation>
     </message>
     <message>
         <source>Upload Project</source>
-        <translation type="vanished">上传项目</translation>
+        <translation>上传项目</translation>
     </message>
     <message>
         <source>Share your project with the world by uploading it to a Package Manager.</source>
-        <translation type="vanished">通过上传到包管理器与全世界分享您的项目。</translation>
+        <translation>通过上传到包管理器与全世界分享您的项目。</translation>
     </message>
     <message>
         <source>User Statistics</source>
-        <translation type="vanished">用户统计</translation>
+        <translation>用户统计</translation>
     </message>
     <message>
         <source>Track your NECTO Studio usage. Stats for builds, debugging, programming, Remote Board Farm and more.</source>
-        <translation type="vanished">跟踪您的 NECTO Studio 使用情况。统计构建、调试、编程、远程板卡农场等数据。</translation>
+        <translation>跟踪您的 NECTO Studio 使用情况。统计构建、调试、编程、远程板卡农场等数据。</translation>
     </message>
     <message>
         <source>Version Control</source>
-        <translation type="vanished">版本控制</translation>
+        <translation>版本控制</translation>
     </message>
     <message>
         <source>Keep track of all of your local repositories and connect to remote repositories via GitHub.</source>
-        <translation type="vanished">跟踪所有本地仓库，并通过 GitHub 连接到远程仓库。</translation>
+        <translation>跟踪所有本地仓库，并通过 GitHub 连接到远程仓库。</translation>
     </message>
     <message>
         <source>Create and Configure Project</source>
-        <translation type="vanished">创建并配置项目</translation>
+        <translation>创建并配置项目</translation>
     </message>
     <message>
         <source>Generate Code Only</source>
-        <translation type="vanished">仅生成代码</translation>
+        <translation>仅生成代码</translation>
     </message>
     <message>
         <source>You are all set. What&apos;s your next step?</source>
-        <translation type="vanished">一切就绪。下一步要做什么？</translation>
+        <translation>一切就绪。下一步要做什么？</translation>
     </message>
     <message>
         <source> on %1</source>
-        <translation type="vanished">，位于 %1</translation>
+        <translation>，位于 %1</translation>
     </message>
     <message>
         <source>Create an example where data from %1 is displayed on the %2%3. Make sure board is initialized and proper interrupt routines are included</source>
-        <translation type="vanished">创建一个示例，将来自 %1 的数据显示在 %2%3 上。确保开发板已初始化并包含正确的中断例程</translation>
+        <translation>创建一个示例，将来自 %1 的数据显示在 %2%3 上。确保开发板已初始化并包含正确的中断例程</translation>
     </message>
     <message>
         <source>This feature is available only when a project is open.</source>
-        <translation type="vanished">此功能仅在项目打开时可用。</translation>
+        <translation>此功能仅在项目打开时可用。</translation>
     </message>
     <message>
         <source>Create example that combines %1</source>
-        <translation type="vanished">创建组合 %1 的示例</translation>
+        <translation>创建组合 %1 的示例</translation>
     </message>
     <message>
         <source>%1 on %2</source>
-        <translation type="vanished">%2 上的 %1</translation>
+        <translation>%2 上的 %1</translation>
     </message>
 </context>
 <context>
@@ -14892,37 +14892,37 @@ Please, check your spelling.</source>
     <message>
         <source>&lt;html&gt;&lt;p style=&quot;color:%1;&quot;&gt;Selected board: &lt;/p&gt;&lt;p
                             style=&quot;color:%2;&quot;&gt;No selected board&lt;/p&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;p style=&quot;color:%1;&quot;&gt;所选 开发板: &lt;/p&gt;&lt;p
+        <translation>&lt;html&gt;&lt;p style=&quot;color:%1;&quot;&gt;所选 开发板: &lt;/p&gt;&lt;p
                             style=&quot;color:%2;&quot;&gt;No 所选 开发板&lt;/p&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Click to scan for boards</source>
-        <translation type="vanished">点击扫描开发板</translation>
+        <translation>点击扫描开发板</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProgWizardPage</name>
     <message>
         <source>Choose a programmer</source>
-        <translation type="vanished">选择编程器</translation>
+        <translation>选择编程器</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProgramJob</name>
     <message>
         <source>Ok</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Don&apos;t show this again</source>
-        <translation type="vanished">不再显示</translation>
+        <translation>不再显示</translation>
     </message>
     <message>
         <source>Programming steps:
 1. Set fuse, lock bits and adequate clock value
 2. Click on Write 
 3. Close AVR Flash</source>
-        <translation type="vanished">编程步骤：
+        <translation>编程步骤：
 1. 设置熔丝位、锁定位和合适的时钟值
 2. 点击写入
 3. 关闭 AVR Flash</translation>
@@ -14932,231 +14932,231 @@ Please, check your spelling.</source>
     <name>Necto::ProgressFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Programming...</source>
-        <translation type="vanished">正在编程...</translation>
+        <translation>正在编程...</translation>
     </message>
     <message>
         <source>value</source>
-        <translation type="vanished">值</translation>
+        <translation>值</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProjectEditPage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProjectExplorerDialog</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Close dialog</source>
-        <translation type="vanished">关闭对话框</translation>
+        <translation>关闭对话框</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Add new file</source>
-        <translation type="vanished">添加新文件</translation>
+        <translation>添加新文件</translation>
     </message>
     <message>
         <source>Add new file to project</source>
-        <translation type="vanished">向项目添加新文件</translation>
+        <translation>向项目添加新文件</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">添加</translation>
+        <translation>添加</translation>
     </message>
     <message>
         <source>Enter a file name:</source>
-        <translation type="vanished">输入文件名：</translation>
+        <translation>输入文件名：</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation type="vanished">重命名</translation>
+        <translation>重命名</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProjectExplorerView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Upload your project to cloud. Upon validation, your project will be available trough Package Manager</source>
-        <translation type="vanished">将项目上传到云端。验证通过后，您的项目将可通过包管理器使用</translation>
+        <translation>将项目上传到云端。验证通过后，您的项目将可通过包管理器使用</translation>
     </message>
     <message>
         <source>Upload</source>
-        <translation type="vanished">上传</translation>
+        <translation>上传</translation>
     </message>
     <message>
         <source>Filter project files</source>
-        <translation type="vanished">筛选项目文件</translation>
+        <translation>筛选项目文件</translation>
     </message>
     <message>
         <source>New</source>
-        <translation type="vanished">新建</translation>
+        <translation>新建</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">添加</translation>
+        <translation>添加</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="vanished">打开</translation>
+        <translation>打开</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation type="vanished">打开文件</translation>
+        <translation>打开文件</translation>
     </message>
     <message>
         <source>Expand all</source>
-        <translation type="vanished">全部展开</translation>
+        <translation>全部展开</translation>
     </message>
     <message>
         <source>Collapse all</source>
-        <translation type="vanished">全部折叠</translation>
+        <translation>全部折叠</translation>
     </message>
     <message>
         <source>Flat view</source>
-        <translation type="vanished">平铺视图</translation>
+        <translation>平铺视图</translation>
     </message>
     <message>
         <source>Set target as active</source>
-        <translation type="vanished">设为活动目标</translation>
+        <translation>设为活动目标</translation>
     </message>
     <message>
         <source>Set Active Project</source>
-        <translation type="vanished">设为活动项目</translation>
+        <translation>设为活动项目</translation>
     </message>
     <message>
         <source>Build project</source>
-        <translation type="vanished">构建项目</translation>
+        <translation>构建项目</translation>
     </message>
     <message>
         <source>Open file location</source>
-        <translation type="vanished">打开文件位置</translation>
+        <translation>打开文件位置</translation>
     </message>
     <message>
         <source>Build</source>
-        <translation type="vanished">构建</translation>
+        <translation>构建</translation>
     </message>
     <message>
         <source>Clean project</source>
-        <translation type="vanished">清理项目</translation>
+        <translation>清理项目</translation>
     </message>
     <message>
         <source>Clean active project</source>
-        <translation type="vanished">清理活动项目</translation>
+        <translation>清理活动项目</translation>
     </message>
     <message>
         <source>Parse project</source>
-        <translation type="vanished">解析项目</translation>
+        <translation>解析项目</translation>
     </message>
     <message>
         <source>Program selected project</source>
-        <translation type="vanished">烧录所选项目</translation>
+        <translation>烧录所选项目</translation>
     </message>
     <message>
         <source>Flash</source>
-        <translation type="vanished">烧录</translation>
+        <translation>烧录</translation>
     </message>
     <message>
         <source>Erase</source>
-        <translation type="vanished">擦除</translation>
+        <translation>擦除</translation>
     </message>
     <message>
         <source>Change project configuration</source>
-        <translation type="vanished">更改项目配置</translation>
+        <translation>更改项目配置</translation>
     </message>
     <message>
         <source>Close active project</source>
-        <translation type="vanished">关闭活动项目</translation>
+        <translation>关闭活动项目</translation>
     </message>
     <message>
         <source>Close project</source>
-        <translation type="vanished">关闭项目</translation>
+        <translation>关闭项目</translation>
     </message>
     <message>
         <source>Close all projects</source>
-        <translation type="vanished">关闭所有项目</translation>
+        <translation>关闭所有项目</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="vanished">停止</translation>
+        <translation>停止</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProjectInfoPage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>Upload Project Wizard</source>
-        <translation type="vanished">上传项目向导</translation>
+        <translation>上传项目向导</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">下一步</translation>
+        <translation>下一步</translation>
     </message>
     <message>
         <source>Enter  project&apos;s name  and version.</source>
-        <translation type="vanished">输入项目名称和版本。</translation>
+        <translation>输入项目名称和版本。</translation>
     </message>
     <message>
         <source>This is a display name for project. It will be used in Package Manger and Info</source>
-        <translation type="vanished">这是项目的显示名称。它将用于包管理器和信息中</translation>
+        <translation>这是项目的显示名称。它将用于包管理器和信息中</translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation type="vanished">名称：</translation>
+        <translation>名称：</translation>
     </message>
     <message>
         <source>Enter the name that will be displayed in the Package Manager.</source>
-        <translation type="vanished">输入将在包管理器中显示的名称。</translation>
+        <translation>输入将在包管理器中显示的名称。</translation>
     </message>
     <message>
         <source>Project must  have a version for a package. It will be used for install and update</source>
-        <translation type="vanished">项目包必须有版本。它将用于安装和更新</translation>
+        <translation>项目包必须有版本。它将用于安装和更新</translation>
     </message>
     <message>
         <source>Version:</source>
-        <translation type="vanished">版本：</translation>
+        <translation>版本：</translation>
     </message>
     <message>
         <source>Specify the version of your project package. This will be used for managing updates.</source>
-        <translation type="vanished">指定项目包的版本。这将用于管理更新。</translation>
+        <translation>指定项目包的版本。这将用于管理更新。</translation>
     </message>
     <message>
         <source>Project description:</source>
-        <translation type="vanished">项目说明：</translation>
+        <translation>项目说明：</translation>
     </message>
     <message>
         <source>Enter a short project decription here</source>
-        <translation type="vanished">在此输入简短的项目说明</translation>
+        <translation>在此输入简短的项目说明</translation>
     </message>
 </context>
 <context>
@@ -15284,152 +15284,152 @@ Please, check your spelling.</source>
     <name>Necto::ProjectNamePage</name>
     <message>
         <source>Create New Project</source>
-        <translation type="vanished">创建新项目</translation>
+        <translation>创建新项目</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">下一步</translation>
+        <translation>下一步</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">名称</translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation type="vanished">路径</translation>
+        <translation>路径</translation>
     </message>
     <message>
         <source>Browse...</source>
-        <translation type="vanished">浏览...</translation>
+        <translation>浏览...</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation type="vanished">浏览</translation>
+        <translation>浏览</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">类型</translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Configuration</source>
-        <translation type="vanished">配置</translation>
+        <translation>配置</translation>
     </message>
     <message>
         <source>Path can&apos;t be empty</source>
-        <translation type="vanished">路径不能为空</translation>
+        <translation>路径不能为空</translation>
     </message>
     <message>
         <source>Browse folder</source>
-        <translation type="vanished">浏览文件夹</translation>
+        <translation>浏览文件夹</translation>
     </message>
     <message>
         <source>Enter project name</source>
-        <translation type="vanished">输入项目名称</translation>
+        <translation>输入项目名称</translation>
     </message>
     <message>
         <source>Enter project path</source>
-        <translation type="vanished">输入项目路径</translation>
+        <translation>输入项目路径</translation>
     </message>
     <message>
         <source>Project name is invalid.</source>
-        <translation type="vanished">项目名称无效。</translation>
+        <translation>项目名称无效。</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Project folder is not empty. Please change project name or project path.</source>
-        <translation type="vanished">项目文件夹不为空。请更改项目名称或项目路径。</translation>
+        <translation>项目文件夹不为空。请更改项目名称或项目路径。</translation>
     </message>
     <message>
         <source>This directory cannot be created.</source>
-        <translation type="vanished">无法创建此目录。</translation>
+        <translation>无法创建此目录。</translation>
     </message>
     <message>
         <source>Use absolute file path.</source>
-        <translation type="vanished">使用绝对文件路径。</translation>
+        <translation>使用绝对文件路径。</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProjectSetupListDelegate</name>
     <message>
         <source>Unavailable in offline mode</source>
-        <translation type="vanished">离线模式下不可用</translation>
+        <translation>离线模式下不可用</translation>
     </message>
     <message>
         <source>Click to create a new configuration</source>
-        <translation type="vanished">点击创建新配置</translation>
+        <translation>点击创建新配置</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProjectSetupPage</name>
     <message>
         <source>Create New Project</source>
-        <translation type="vanished">创建新项目</translation>
+        <translation>创建新项目</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <source>Choose configuration</source>
-        <translation type="vanished">选择配置</translation>
+        <translation>选择配置</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Connected to Remote Board Farm</source>
-        <translation type="vanished">已连接到远程板卡农场</translation>
+        <translation>已连接到远程板卡农场</translation>
     </message>
     <message>
         <source>This project will be configured automatically to match the connected remote board.</source>
-        <translation type="vanished">此项目将自动配置以匹配已连接的远程开发板。</translation>
+        <translation>此项目将自动配置以匹配已连接的远程开发板。</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">名称</translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">类型</translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Configuration</source>
-        <translation type="vanished">配置</translation>
+        <translation>配置</translation>
     </message>
     <message>
         <source>Choose</source>
-        <translation type="vanished">选择</translation>
+        <translation>选择</translation>
     </message>
     <message>
         <source>Configure project</source>
-        <translation type="vanished">配置项目</translation>
+        <translation>配置项目</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProjectSetupsModel</name>
     <message>
         <source>Add new</source>
-        <translation type="vanished">新增</translation>
+        <translation>新增</translation>
     </message>
 </context>
 <context>
@@ -15581,303 +15581,303 @@ RAM: &gt; 48 kB</translation>
     <name>Necto::ProjectTypeListDelegate</name>
     <message>
         <source>Included</source>
-        <translation type="vanished">已包含</translation>
+        <translation>已包含</translation>
     </message>
     <message>
         <source>Output</source>
-        <translation type="vanished">输出</translation>
+        <translation>输出</translation>
     </message>
     <message>
         <source>Requirements</source>
-        <translation type="vanished">要求</translation>
+        <translation>要求</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProjectTypePage</name>
     <message>
         <source>Create New Project</source>
-        <translation type="vanished">创建新项目</translation>
+        <translation>创建新项目</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">下一步</translation>
+        <translation>下一步</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">名称</translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">类型</translation>
+        <translation>类型</translation>
     </message>
     <message>
         <source>Configuration</source>
-        <translation type="vanished">配置</translation>
+        <translation>配置</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <source>The chosen configuration does not have a TFT display. This project type requires a display to work.</source>
-        <translation type="vanished">所选配置没有 TFT 显示器。此项目类型需要显示器才能工作。</translation>
+        <translation>所选配置没有 TFT 显示器。此项目类型需要显示器才能工作。</translation>
     </message>
     <message>
         <source>&lt;br/&gt;The active project requires a TFT display, but the chosen configuration does not provide one.&lt;br/&gt;</source>
-        <translation type="vanished">&lt;br/&gt;The 活动 项目 需要 a TFT 显示器, but the chosen 配置 不 provide one.&lt;br/&gt;</translation>
+        <translation>&lt;br/&gt;The 活动 项目 需要 a TFT 显示器, but the chosen 配置 不 provide one.&lt;br/&gt;</translation>
     </message>
     <message>
         <source>The chosen configuration uses a compiler that is not supported by the LVGL project type. GCC or Clang is required.</source>
-        <translation type="vanished">所选配置使用的编译器不受 LVGL 项目类型支持。需要 GCC 或 Clang。</translation>
+        <translation>所选配置使用的编译器不受 LVGL 项目类型支持。需要 GCC 或 Clang。</translation>
     </message>
     <message>
         <source>&lt;br/&gt;The active LVGL project requires a GCC or Clang toolchain,&lt;br/&gt;but the chosen configuration uses an unsupported compiler.&lt;br/&gt;</source>
-        <translation type="vanished">&lt;br/&gt;The 活动 LVGL 项目 需要 a GCC 或 Clang toolchain,&lt;br/&gt;but the chosen 配置 uses an unsupported 编译器.&lt;br/&gt;</translation>
+        <translation>&lt;br/&gt;The 活动 LVGL 项目 需要 a GCC 或 Clang toolchain,&lt;br/&gt;but the chosen 配置 uses an unsupported 编译器.&lt;br/&gt;</translation>
     </message>
     <message>
         <source>The chosen configuration uses a single-core MCU. This project type requires a dual-core MCU.</source>
-        <translation type="vanished">所选配置使用单核 MCU。此项目类型需要双核 MCU。</translation>
+        <translation>所选配置使用单核 MCU。此项目类型需要双核 MCU。</translation>
     </message>
     <message>
         <source>&lt;br/&gt;The active project targets a dual-core MCU, but the chosen configuration is single-core.&lt;br/&gt;</source>
-        <translation type="vanished">&lt;br/&gt;The 活动 项目 targets a dual-core MCU, but the chosen 配置 是 single-core.&lt;br/&gt;</translation>
+        <translation>&lt;br/&gt;The 活动 项目 targets a dual-core MCU, but the chosen 配置 是 single-core.&lt;br/&gt;</translation>
     </message>
 </context>
 <context>
     <name>Necto::QObject</name>
     <message>
         <source>Disabled</source>
-        <translation type="vanished">已禁用</translation>
+        <translation>已禁用</translation>
     </message>
     <message>
         <source>Low</source>
-        <translation type="vanished">低</translation>
+        <translation>低</translation>
     </message>
     <message>
         <source>Medium</source>
-        <translation type="vanished">中</translation>
+        <translation>中</translation>
     </message>
     <message>
         <source>High</source>
-        <translation type="vanished">高</translation>
+        <translation>高</translation>
     </message>
     <message>
         <source>Unable to evaluate expression</source>
-        <translation type="vanished">无法计算表达式</translation>
+        <translation>无法计算表达式</translation>
     </message>
     <message>
         <source>Binary</source>
-        <translation type="vanished">二进制</translation>
+        <translation>二进制</translation>
     </message>
     <message>
         <source>Decimal</source>
-        <translation type="vanished">十进制</translation>
+        <translation>十进制</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation type="vanished">默认</translation>
+        <translation>默认</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation type="vanished">十六进制</translation>
+        <translation>十六进制</translation>
     </message>
     <message>
         <source>Floating point</source>
-        <translation type="vanished">浮点</translation>
+        <translation>浮点</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">字符串</translation>
+        <translation>字符串</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>CODEGRIP Suite is not installed. 
 
  NECTO Studio will now run CODEGRIP Suite installer.</source>
-        <translation type="vanished">未安装 CODEGRIP Suite。
+        <translation>未安装 CODEGRIP Suite。
 
 NECTO Studio 现在将运行 CODEGRIP Suite 安装程序。</translation>
     </message>
     <message>
         <source>CODEGRIP Suite update is available.
 NECTO Studio will now run CODEGRIP Suite updater.</source>
-        <translation type="vanished">有 CODEGRIP Suite 更新可用。
+        <translation>有 CODEGRIP Suite 更新可用。
 NECTO Studio 现在将运行 CODEGRIP Suite 更新程序。</translation>
     </message>
     <message>
         <source>No target</source>
-        <translation type="vanished">无目标</translation>
+        <translation>无目标</translation>
     </message>
     <message>
         <source>Cannot extract project information.</source>
-        <translation type="vanished">无法提取项目信息。</translation>
+        <translation>无法提取项目信息。</translation>
     </message>
     <message>
         <source>Invalid reply file created by CMake.</source>
-        <translation type="vanished">CMake 创建的 reply 文件无效。</translation>
+        <translation>CMake 创建的 reply 文件无效。</translation>
     </message>
     <message>
         <source>Invalid cache file generated by CMake.</source>
-        <translation type="vanished">CMake 生成的缓存文件无效。</translation>
+        <translation>CMake 生成的缓存文件无效。</translation>
     </message>
     <message>
         <source>Invalid cmakeFiles file generated by CMake.</source>
-        <translation type="vanished">CMake 生成的 cmakeFiles 文件无效。</translation>
+        <translation>CMake 生成的 cmakeFiles 文件无效。</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: No directories.</source>
-        <translation type="vanished">CMake 生成的 codemodel 文件无效：没有目录。</translation>
+        <translation>CMake 生成的 codemodel 文件无效：没有目录。</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: Empty directory object.</source>
-        <translation type="vanished">CMake 生成的 codemodel 文件无效：目录对象为空。</translation>
+        <translation>CMake 生成的 codemodel 文件无效：目录对象为空。</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: No projects.</source>
-        <translation type="vanished">CMake 生成的 codemodel 文件无效：没有项目。</translation>
+        <translation>CMake 生成的 codemodel 文件无效：没有项目。</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: Empty project object.</source>
-        <translation type="vanished">CMake 生成的 codemodel 文件无效：项目对象为空。</translation>
+        <translation>CMake 生成的 codemodel 文件无效：项目对象为空。</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: Broken project data.</source>
-        <translation type="vanished">CMake 生成的 codemodel 文件无效：项目数据损坏。</translation>
+        <translation>CMake 生成的 codemodel 文件无效：项目数据损坏。</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: No targets.</source>
-        <translation type="vanished">CMake 生成的 codemodel 文件无效：没有目标。</translation>
+        <translation>CMake 生成的 codemodel 文件无效：没有目标。</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: Empty target object.</source>
-        <translation type="vanished">CMake 生成的 codemodel 文件无效：目标对象为空。</translation>
+        <translation>CMake 生成的 codemodel 文件无效：目标对象为空。</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: Broken target data.</source>
-        <translation type="vanished">CMake 生成的 codemodel 文件无效：目标数据损坏。</translation>
+        <translation>CMake 生成的 codemodel 文件无效：目标数据损坏。</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: No configurations.</source>
-        <translation type="vanished">CMake 生成的 codemodel 文件无效：没有配置。</translation>
+        <translation>CMake 生成的 codemodel 文件无效：没有配置。</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: Empty configuration object.</source>
-        <translation type="vanished">CMake 生成的 codemodel 文件无效：配置对象为空。</translation>
+        <translation>CMake 生成的 codemodel 文件无效：配置对象为空。</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake.</source>
-        <translation type="vanished">CMake 生成的 codemodel 文件无效。</translation>
+        <translation>CMake 生成的 codemodel 文件无效。</translation>
     </message>
     <message>
         <source>Invalid target file: Information is missing.</source>
-        <translation type="vanished">目标文件无效：信息缺失。</translation>
+        <translation>目标文件无效：信息缺失。</translation>
     </message>
     <message>
         <source>Invalid target file generated by CMake: Broken indexes in target details.</source>
-        <translation type="vanished">CMake 生成的目标文件无效：目标详情中的索引损坏。</translation>
+        <translation>CMake 生成的目标文件无效：目标详情中的索引损坏。</translation>
     </message>
     <message>
         <source>No CMake configuration found!</source>
-        <translation type="vanished">未找到 CMake 配置！</translation>
+        <translation>未找到 CMake 配置！</translation>
     </message>
     <message>
         <source>No &quot;%1&quot; CMake configuration found. Available configurations: &quot;%2&quot;.
 Make sure that CMAKE_CONFIGURATION_TYPES variable contains the &quot;Build type&quot; field.</source>
-        <translation type="vanished">No &quot;%1&quot; CMake 配置 found. 可用 configurations: &quot;%2&quot;.
+        <translation>No &quot;%1&quot; CMake 配置 found. 可用 configurations: &quot;%2&quot;.
 Make sure that CMAKE_CONFIGURATION_TYPES variable contains the &quot;构建 类型&quot; field.</translation>
     </message>
     <message>
         <source>No &quot;%1&quot; CMake configuration found. Available configuration: &quot;%2&quot;.
 Make sure that CMAKE_BUILD_TYPE variable matches the &quot;Build type&quot; field.</source>
-        <translation type="vanished">No &quot;%1&quot; CMake 配置 found. 可用 配置: &quot;%2&quot;.
+        <translation>No &quot;%1&quot; CMake 配置 found. 可用 配置: &quot;%2&quot;.
 Make sure that CMAKE_BUILD_TYPE variable matches the &quot;构建 类型&quot; field.</translation>
     </message>
     <message>
         <source>Reparent %1 components</source>
-        <translation type="vanished">重新指定 %1 个组件的父级</translation>
+        <translation>重新指定 %1 个组件的父级</translation>
     </message>
     <message>
         <source>Reparent %1 components to screen</source>
-        <translation type="vanished">将 %1 个组件重新指定到屏幕</translation>
+        <translation>将 %1 个组件重新指定到屏幕</translation>
     </message>
     <message>
         <source>Move %1 components</source>
-        <translation type="vanished">移动 %1 个组件</translation>
+        <translation>移动 %1 个组件</translation>
     </message>
     <message>
         <source>Add %1</source>
-        <translation type="vanished">添加 %1</translation>
+        <translation>添加 %1</translation>
     </message>
     <message>
         <source>Remove %1 component(s)</source>
-        <translation type="vanished">移除 %1 个组件</translation>
+        <translation>移除 %1 个组件</translation>
     </message>
     <message>
         <source>Cut %1 component(s)</source>
-        <translation type="vanished">剪切 %1 个组件</translation>
+        <translation>剪切 %1 个组件</translation>
     </message>
     <message>
         <source>Paste %1 component(s)</source>
-        <translation type="vanished">粘贴 %1 个组件</translation>
+        <translation>粘贴 %1 个组件</translation>
     </message>
     <message>
         <source>Group %1 component(s)</source>
-        <translation type="vanished">组合 %1 个组件</translation>
+        <translation>组合 %1 个组件</translation>
     </message>
     <message>
         <source>Ungroup %1 group(s)</source>
-        <translation type="vanished">取消组合 %1 个组</translation>
+        <translation>取消组合 %1 个组</translation>
     </message>
     <message>
         <source>Reparent %1</source>
-        <translation type="vanished">重新指定 %1 的父级</translation>
+        <translation>重新指定 %1 的父级</translation>
     </message>
     <message>
         <source>Move/resize %1</source>
-        <translation type="vanished">移动/调整 %1 大小</translation>
+        <translation>移动/调整 %1 大小</translation>
     </message>
     <message>
         <source>Resize screen</source>
-        <translation type="vanished">调整屏幕大小</translation>
+        <translation>调整屏幕大小</translation>
     </message>
     <message>
         <source>Set %1.%2</source>
-        <translation type="vanished">设置 %1.%2</translation>
+        <translation>设置 %1.%2</translation>
     </message>
     <message>
         <source>Edit series</source>
-        <translation type="vanished">编辑序列</translation>
+        <translation>编辑序列</translation>
     </message>
     <message>
         <source>Edit array element</source>
-        <translation type="vanished">编辑数组元素</translation>
+        <translation>编辑数组元素</translation>
     </message>
     <message>
         <source>Delete array element</source>
-        <translation type="vanished">删除数组元素</translation>
+        <translation>删除数组元素</translation>
     </message>
     <message>
         <source>Edit %1</source>
-        <translation type="vanished">编辑 %1</translation>
+        <translation>编辑 %1</translation>
     </message>
     <message>
         <source>Property structure</source>
-        <translation type="vanished">属性结构</translation>
+        <translation>属性结构</translation>
     </message>
     <message>
         <source>Resize %1</source>
-        <translation type="vanished">调整 %1 大小</translation>
+        <translation>调整 %1 大小</translation>
     </message>
 </context>
 <context>
@@ -15899,220 +15899,220 @@ Make sure that CMAKE_BUILD_TYPE variable matches the &quot;构建 类型&quot; f
     <name>Necto::RISCVGNUSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation type="vanished">调试器</translation>
+        <translation>调试器</translation>
     </message>
     <message>
         <source>LLDB</source>
-        <translation type="vanished">LLDB</translation>
+        <translation>LLDB</translation>
     </message>
     <message>
         <source>GDB</source>
-        <translation type="vanished">GDB</translation>
+        <translation>GDB</translation>
     </message>
     <message>
         <source>Change your program&apos;s debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
-        <translation type="vanished">根据您的具体需求，将程序调试器从 LLDB 更改为 GDB，或反向更改。</translation>
+        <translation>根据您的具体需求，将程序调试器从 LLDB 更改为 GDB，或反向更改。</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
 </context>
 <context>
     <name>Necto::RecentListItem</name>
     <message>
         <source>2018-08-08 12:00</source>
-        <translation type="vanished">2018-08-08 12:00</translation>
+        <translation>2018-08-08 12:00</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;strong&gt;Project: &lt;/strong&gt;%1&lt;p&gt;&lt;strong&gt;Date: &lt;/strong&gt; &lt;i&gt;%2&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Path: &lt;/strong&gt; %3&lt;/p&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;strong&gt;项目: &lt;/strong&gt;%1&lt;p&gt;&lt;strong&gt;日期: &lt;/strong&gt; &lt;i&gt;%2&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;路径: &lt;/strong&gt; %3&lt;/p&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;strong&gt;项目: &lt;/strong&gt;%1&lt;p&gt;&lt;strong&gt;日期: &lt;/strong&gt; &lt;i&gt;%2&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;路径: &lt;/strong&gt; %3&lt;/p&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Open project location</source>
-        <translation type="vanished">打开项目位置</translation>
+        <translation>打开项目位置</translation>
     </message>
     <message>
         <source>Remove from recent</source>
-        <translation type="vanished">从最近列表中移除</translation>
+        <translation>从最近列表中移除</translation>
     </message>
 </context>
 <context>
     <name>Necto::RecentProjectsView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;No recent projects found. &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;First time you open a project it will appear here&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;未找到最近项目。&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;首次打开项目后，它将显示在此处&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;未找到最近项目。&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;首次打开项目后，它将显示在此处&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
     <name>Necto::RedPitayaView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
 </context>
 <context>
     <name>Necto::RegisterDialog</name>
     <message>
         <source>Register</source>
-        <translation type="vanished">注册</translation>
+        <translation>注册</translation>
     </message>
     <message>
         <source>Create account</source>
-        <translation type="vanished">创建账户</translation>
+        <translation>创建账户</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Field of work:</source>
-        <translation type="vanished">工作领域：</translation>
+        <translation>工作领域：</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>*First name: </source>
-        <translation type="vanished">*名字：</translation>
+        <translation>*名字：</translation>
     </message>
     <message>
         <source>*Last name: </source>
-        <translation type="vanished">*姓氏：</translation>
+        <translation>*姓氏：</translation>
     </message>
     <message>
         <source>*Company: </source>
-        <translation type="vanished">*公司：</translation>
+        <translation>*公司：</translation>
     </message>
     <message>
         <source>*Password: </source>
-        <translation type="vanished">*密码：</translation>
+        <translation>*密码：</translation>
     </message>
     <message>
         <source>*Confirm password: </source>
-        <translation type="vanished">*确认密码：</translation>
+        <translation>*确认密码：</translation>
     </message>
     <message>
         <source>*Username: </source>
-        <translation type="vanished">*用户名：</translation>
+        <translation>*用户名：</translation>
     </message>
     <message>
         <source>*Email: </source>
-        <translation type="vanished">*电子邮件：</translation>
+        <translation>*电子邮件：</translation>
     </message>
     <message>
         <source>*Confirm email: </source>
-        <translation type="vanished">*确认电子邮件：</translation>
+        <translation>*确认电子邮件：</translation>
     </message>
     <message>
         <source>Profile image: </source>
-        <translation type="vanished">个人资料图片：</translation>
+        <translation>个人资料图片：</translation>
     </message>
     <message>
         <source>Field can&apos;t be empty</source>
-        <translation type="vanished">字段不能为空</translation>
+        <translation>字段不能为空</translation>
     </message>
     <message>
         <source>Passwords do not match</source>
-        <translation type="vanished">密码不匹配</translation>
+        <translation>密码不匹配</translation>
     </message>
     <message>
         <source>Email format not valid</source>
-        <translation type="vanished">电子邮件格式无效</translation>
+        <translation>电子邮件格式无效</translation>
     </message>
     <message>
         <source>Emails do not match</source>
-        <translation type="vanished">电子邮件不匹配</translation>
+        <translation>电子邮件不匹配</translation>
     </message>
     <message>
         <source>Waiting for server response. Please wait.</source>
-        <translation type="vanished">正在等待服务器响应。请稍候。</translation>
+        <translation>正在等待服务器响应。请稍候。</translation>
     </message>
     <message>
         <source>Choose picture</source>
-        <translation type="vanished">选择图片</translation>
+        <translation>选择图片</translation>
     </message>
 </context>
 <context>
     <name>Necto::RemoteAdressItem</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">移除</translation>
+        <translation>移除</translation>
     </message>
 </context>
 <context>
     <name>Necto::RequestHandler</name>
     <message>
         <source>Not available</source>
-        <translation type="vanished">不可用</translation>
+        <translation>不可用</translation>
     </message>
 </context>
 <context>
     <name>Necto::ReserveBoardView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Reserve</source>
-        <translation type="vanished">预约</translation>
+        <translation>预约</translation>
     </message>
     <message>
         <source>From:</source>
-        <translation type="vanished">从：</translation>
+        <translation>从：</translation>
     </message>
     <message>
         <source>To:</source>
-        <translation type="vanished">到：</translation>
+        <translation>到：</translation>
     </message>
     <message>
         <source>Waiting for server response</source>
-        <translation type="vanished">正在等待服务器响应</translation>
+        <translation>正在等待服务器响应</translation>
     </message>
     <message>
         <source>Email</source>
-        <translation type="vanished">电子邮件</translation>
+        <translation>电子邮件</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">名称</translation>
+        <translation>名称</translation>
     </message>
 </context>
 <context>
@@ -16149,50 +16149,50 @@ Make sure that CMAKE_BUILD_TYPE variable matches the &quot;构建 类型&quot; f
     <name>Necto::ResourcesView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Filter image and font resources</source>
-        <translation type="vanished">筛选图片和字体资源</translation>
+        <translation>筛选图片和字体资源</translation>
     </message>
     <message>
         <source>Can&apos;t find what you have searched for</source>
-        <translation type="vanished">找不到您搜索的内容</translation>
+        <translation>找不到您搜索的内容</translation>
     </message>
     <message>
         <source>Edit resource</source>
-        <translation type="vanished">编辑资源</translation>
+        <translation>编辑资源</translation>
     </message>
     <message>
         <source>Add new image resource</source>
-        <translation type="vanished">添加新图片资源</translation>
+        <translation>添加新图片资源</translation>
     </message>
     <message>
         <source>Add new font resource</source>
-        <translation type="vanished">添加新字体资源</translation>
+        <translation>添加新字体资源</translation>
     </message>
     <message>
         <source>Remove resource</source>
-        <translation type="vanished">移除资源</translation>
+        <translation>移除资源</translation>
     </message>
     <message>
         <source>Remove missing resources</source>
-        <translation type="vanished">移除缺失资源</translation>
+        <translation>移除缺失资源</translation>
     </message>
 </context>
 <context>
     <name>Necto::RpcSocket</name>
     <message>
         <source>Choose how to apply the generated code to your file.</source>
-        <translation type="vanished">选择如何将生成的代码应用到您的文件。</translation>
+        <translation>选择如何将生成的代码应用到您的文件。</translation>
     </message>
     <message>
         <source>Replace Entire File</source>
-        <translation type="vanished">替换整个文件</translation>
+        <translation>替换整个文件</translation>
     </message>
     <message>
         <source>NECTO Assistant has finished generating code</source>
-        <translation type="vanished">NECTO Assistant 已完成代码生成</translation>
+        <translation>NECTO Assistant 已完成代码生成</translation>
     </message>
 </context>
 <context>
@@ -16222,189 +16222,189 @@ Make sure that CMAKE_BUILD_TYPE variable matches the &quot;构建 类型&quot; f
     <name>Necto::SdkWizardPage</name>
     <message>
         <source>Choose a SDK</source>
-        <translation type="vanished">选择 SDK</translation>
+        <translation>选择 SDK</translation>
     </message>
 </context>
 <context>
     <name>Necto::SeggerJlinkView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>SEGGER J-Link server options</source>
-        <translation type="vanished">SEGGER J-Link 服务器选项</translation>
+        <translation>SEGGER J-Link 服务器选项</translation>
     </message>
     <message>
         <source>IP Address:</source>
-        <translation type="vanished">IP 地址：</translation>
+        <translation>IP 地址：</translation>
     </message>
     <message>
         <source>Port:</source>
-        <translation type="vanished">端口：</translation>
+        <translation>端口：</translation>
     </message>
     <message>
         <source>Command line options:</source>
-        <translation type="vanished">命令行选项：</translation>
+        <translation>命令行选项：</translation>
     </message>
     <message>
         <source>SEGGER GDB Server Path:</source>
-        <translation type="vanished">SEGGER GDB 服务器路径：</translation>
+        <translation>SEGGER GDB 服务器路径：</translation>
     </message>
     <message>
         <source>Remote commands:</source>
-        <translation type="vanished">远程命令：</translation>
+        <translation>远程命令：</translation>
     </message>
     <message>
         <source>Remote commands</source>
-        <translation type="vanished">远程命令</translation>
+        <translation>远程命令</translation>
     </message>
     <message>
         <source>Auto start local SEGGER server</source>
-        <translation type="vanished">自动启动本地 SEGGER 服务器</translation>
+        <translation>自动启动本地 SEGGER 服务器</translation>
     </message>
     <message>
         <source>Connect to remote SEGGER GDB Server</source>
-        <translation type="vanished">连接到远程 SEGGER GDB 服务器</translation>
+        <translation>连接到远程 SEGGER GDB 服务器</translation>
     </message>
     <message>
         <source>Programmer Settings</source>
-        <translation type="vanished">编程器设置</translation>
+        <translation>编程器设置</translation>
     </message>
     <message>
         <source>J-Link GDB server port</source>
-        <translation type="vanished">J-Link GDB 服务器端口</translation>
+        <translation>J-Link GDB 服务器端口</translation>
     </message>
     <message>
         <source>SEGGER GDB server address</source>
-        <translation type="vanished">SEGGER GDB 服务器地址</translation>
+        <translation>SEGGER GDB 服务器地址</translation>
     </message>
     <message>
         <source>Additional command line options</source>
-        <translation type="vanished">附加命令行选项</translation>
+        <translation>附加命令行选项</translation>
     </message>
     <message>
         <source>J-Link GDB server path</source>
-        <translation type="vanished">J-Link GDB 服务器路径</translation>
+        <translation>J-Link GDB 服务器路径</translation>
     </message>
     <message>
         <source>Path to JLinkGDBServerCL executable</source>
-        <translation type="vanished">JLinkGDBServerCL 可执行文件路径</translation>
+        <translation>JLinkGDBServerCL 可执行文件路径</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation type="vanished">打开文件</translation>
+        <translation>打开文件</translation>
     </message>
 </context>
 <context>
     <name>Necto::SelectFileWidget</name>
     <message>
         <source>Select HEX</source>
-        <translation type="vanished">选择 HEX</translation>
+        <translation>选择 HEX</translation>
     </message>
     <message>
         <source>Please choose or drop a *.HEX file</source>
-        <translation type="vanished">请选择或拖放 *.HEX 文件</translation>
+        <translation>请选择或拖放 *.HEX 文件</translation>
     </message>
     <message>
         <source>Open HEX file</source>
-        <translation type="vanished">打开 HEX 文件</translation>
+        <translation>打开 HEX 文件</translation>
     </message>
     <message>
         <source>Hex files (*.hex)</source>
-        <translation type="vanished">Hex 文件 (*.hex)</translation>
+        <translation>Hex 文件 (*.hex)</translation>
     </message>
     <message>
         <source>All files (*)</source>
-        <translation type="vanished">所有文件 (*)</translation>
+        <translation>所有文件 (*)</translation>
     </message>
 </context>
 <context>
     <name>Necto::SelectMikroBusPage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>Upload Project Wizard</source>
-        <translation type="vanished">上传项目向导</translation>
+        <translation>上传项目向导</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">下一步</translation>
+        <translation>下一步</translation>
     </message>
     <message>
         <source>Assign Click boards to mikroBUS sockets</source>
-        <translation type="vanished">将 Click 板分配到 mikroBUS 插座</translation>
+        <translation>将 Click 板分配到 mikroBUS 插座</translation>
     </message>
 </context>
 <context>
     <name>Necto::SelectedFilters</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
 </context>
 <context>
     <name>Necto::SelectedMikroBusItem</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Remove this Click board?</source>
-        <translation type="vanished">移除此 Click 板？</translation>
+        <translation>移除此 Click 板？</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Loading...</source>
-        <translation type="vanished">正在加载...</translation>
+        <translation>正在加载...</translation>
     </message>
 </context>
 <context>
     <name>Necto::SettingsCategory</name>
     <message>
         <source>User interface</source>
-        <translation type="vanished">用户界面</translation>
+        <translation>用户界面</translation>
     </message>
     <message>
         <source>General settings</source>
-        <translation type="vanished">常规设置</translation>
+        <translation>常规设置</translation>
     </message>
     <message>
         <source>Network settings</source>
-        <translation type="vanished">网络设置</translation>
+        <translation>网络设置</translation>
     </message>
     <message>
         <source>Appearance settings</source>
-        <translation type="vanished">外观设置</translation>
+        <translation>外观设置</translation>
     </message>
     <message>
         <source>Editor settings</source>
-        <translation type="vanished">编辑器设置</translation>
+        <translation>编辑器设置</translation>
     </message>
     <message>
         <source>Shortcuts settings</source>
-        <translation type="vanished">快捷键设置</translation>
+        <translation>快捷键设置</translation>
     </message>
 </context>
 <context>
@@ -16424,220 +16424,220 @@ Make sure that CMAKE_BUILD_TYPE variable matches the &quot;构建 类型&quot; f
     <name>Necto::SettingsView</name>
     <message>
         <source>Settings</source>
-        <translation type="vanished">设置</translation>
+        <translation>设置</translation>
     </message>
     <message>
         <source>Reset</source>
-        <translation type="vanished">重置</translation>
+        <translation>重置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">搜索</translation>
+        <translation>搜索</translation>
     </message>
 </context>
 <context>
     <name>Necto::SetupDetailFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">编辑</translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <source>Edit2</source>
-        <translation type="vanished">编辑2</translation>
+        <translation>编辑2</translation>
     </message>
     <message>
         <source>Edit Target</source>
-        <translation type="vanished">编辑目标</translation>
+        <translation>编辑目标</translation>
     </message>
     <message>
         <source>Board: </source>
-        <translation type="vanished">开发板：</translation>
+        <translation>开发板：</translation>
     </message>
     <message>
         <source>Category</source>
-        <translation type="vanished">类别</translation>
+        <translation>类别</translation>
     </message>
     <message>
         <source>mikroBUS count</source>
-        <translation type="vanished">mikroBUS 数量</translation>
+        <translation>mikroBUS 数量</translation>
     </message>
     <message>
         <source>Display: </source>
-        <translation type="vanished">显示器：</translation>
+        <translation>显示器：</translation>
     </message>
     <message>
         <source>TFT Socket</source>
-        <translation type="vanished">TFT 插座</translation>
+        <translation>TFT 插座</translation>
     </message>
     <message>
         <source>Built-in Display</source>
-        <translation type="vanished">内置显示器</translation>
+        <translation>内置显示器</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="vanished">无</translation>
+        <translation>无</translation>
     </message>
     <message>
         <source>Display socket</source>
-        <translation type="vanished">显示器插座</translation>
+        <translation>显示器插座</translation>
     </message>
     <message>
         <source>Width</source>
-        <translation type="vanished">宽度</translation>
+        <translation>宽度</translation>
     </message>
     <message>
         <source>N/A</source>
-        <translation type="vanished">不适用</translation>
+        <translation>不适用</translation>
     </message>
     <message>
         <source>Height</source>
-        <translation type="vanished">高度</translation>
+        <translation>高度</translation>
     </message>
     <message>
         <source>SDK: </source>
-        <translation type="vanished">SDK：</translation>
+        <translation>SDK：</translation>
     </message>
     <message>
         <source>Families</source>
-        <translation type="vanished">系列</translation>
+        <translation>系列</translation>
     </message>
     <message>
         <source>Legacy</source>
-        <translation type="vanished">旧版</translation>
+        <translation>旧版</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="vanished">是</translation>
+        <translation>是</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="vanished">否</translation>
+        <translation>否</translation>
     </message>
     <message>
         <source>SDK Dev kit</source>
-        <translation type="vanished">SDK 开发套件</translation>
+        <translation>SDK 开发套件</translation>
     </message>
     <message>
         <source>Compiler: </source>
-        <translation type="vanished">编译器：</translation>
+        <translation>编译器：</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation type="vanished">语言</translation>
+        <translation>语言</translation>
     </message>
     <message>
         <source>Vendor</source>
-        <translation type="vanished">供应商</translation>
+        <translation>供应商</translation>
     </message>
     <message>
         <source>MCU: </source>
-        <translation type="vanished">MCU：</translation>
+        <translation>MCU：</translation>
     </message>
     <message>
         <source>Flash</source>
-        <translation type="vanished">烧录</translation>
+        <translation>烧录</translation>
     </message>
     <message>
         <source>RAM</source>
-        <translation type="vanished">RAM</translation>
+        <translation>RAM</translation>
     </message>
     <message>
         <source>Max speed</source>
-        <translation type="vanished">最高速度</translation>
+        <translation>最高速度</translation>
     </message>
     <message>
         <source>Prog-Debug: </source>
-        <translation type="vanished">编程-调试：</translation>
+        <translation>编程-调试：</translation>
     </message>
     <message>
         <source>Supports Planet Debug</source>
-        <translation type="vanished">支持 Planet Debug</translation>
+        <translation>支持 Planet Debug</translation>
     </message>
     <message>
         <source>Device Name</source>
-        <translation type="vanished">设备名称</translation>
+        <translation>设备名称</translation>
     </message>
     <message>
         <source>S/N</source>
-        <translation type="vanished">序列号</translation>
+        <translation>序列号</translation>
     </message>
     <message>
         <source>WiFi</source>
-        <translation type="vanished">WiFi</translation>
+        <translation>WiFi</translation>
     </message>
     <message>
         <source>USB</source>
-        <translation type="vanished">USB</translation>
+        <translation>USB</translation>
     </message>
     <message>
         <source>Communication Type</source>
-        <translation type="vanished">通信类型</translation>
+        <translation>通信类型</translation>
     </message>
     <message>
         <source>IP</source>
-        <translation type="vanished">IP</translation>
+        <translation>IP</translation>
     </message>
 </context>
 <context>
     <name>Necto::SetupFilterPanel</name>
     <message>
         <source>Filters</source>
-        <translation type="vanished">筛选器</translation>
+        <translation>筛选器</translation>
     </message>
     <message>
         <source>Search filters</source>
-        <translation type="vanished">搜索筛选器</translation>
+        <translation>搜索筛选器</translation>
     </message>
 </context>
 <context>
     <name>Necto::SetupItemView</name>
     <message>
         <source>Compatible with</source>
-        <translation type="vanished">兼容于</translation>
+        <translation>兼容于</translation>
     </message>
     <message>
         <source>Advanced</source>
-        <translation type="vanished">高级</translation>
+        <translation>高级</translation>
     </message>
     <message>
         <source>Target options</source>
-        <translation type="vanished">目标选项</translation>
+        <translation>目标选项</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">编辑</translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation type="vanished">分享</translation>
+        <translation>分享</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>Publish</source>
-        <translation type="vanished">发布</translation>
+        <translation>发布</translation>
     </message>
     <message>
         <source>Single core MCU</source>
-        <translation type="vanished">单核 MCU</translation>
+        <translation>单核 MCU</translation>
     </message>
     <message>
         <source>Dual core MCU</source>
-        <translation type="vanished">双核 MCU</translation>
+        <translation>双核 MCU</translation>
     </message>
 </context>
 <context>
@@ -16950,135 +16950,135 @@ Make sure that CMAKE_BUILD_TYPE variable matches the &quot;构建 类型&quot; f
     </message>
     <message>
         <source>boardIcon</source>
-        <translation type="vanished">boardIcon</translation>
+        <translation>boardIcon</translation>
     </message>
     <message>
         <source>Create New project with this configuration</source>
-        <translation type="vanished">使用此配置创建新项目</translation>
+        <translation>使用此配置创建新项目</translation>
     </message>
     <message>
         <source>Selected display</source>
-        <translation type="vanished">所选显示器</translation>
+        <translation>所选显示器</translation>
     </message>
     <message>
         <source>compiler</source>
-        <translation type="vanished">编译器</translation>
+        <translation>编译器</translation>
     </message>
     <message>
         <source>prog</source>
-        <translation type="vanished">prog</translation>
+        <translation>prog</translation>
     </message>
     <message>
         <source>]</source>
-        <translation type="vanished">]</translation>
+        <translation>]</translation>
     </message>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>mcuLbl</source>
-        <translation type="vanished">mcuLbl</translation>
+        <translation>mcuLbl</translation>
     </message>
     <message>
         <source>Open target programming options</source>
-        <translation type="vanished">打开目标编程选项</translation>
+        <translation>打开目标编程选项</translation>
     </message>
     <message>
         <source>Selected SDK</source>
-        <translation type="vanished">所选 SDK</translation>
+        <translation>所选 SDK</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Click to redirect the standard application output</source>
-        <translation type="vanished">点击重定向标准应用程序输出</translation>
+        <translation>点击重定向标准应用程序输出</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation type="vanished">重命名</translation>
+        <translation>重命名</translation>
     </message>
     <message>
         <source>progIcon</source>
-        <translation type="vanished">progIcon</translation>
+        <translation>progIcon</translation>
     </message>
     <message>
         <source>Repair</source>
-        <translation type="vanished">修复</translation>
+        <translation>修复</translation>
     </message>
     <message>
         <source>sdkIcon</source>
-        <translation type="vanished">sdkIcon</translation>
+        <translation>sdkIcon</translation>
     </message>
     <message>
         <source>displayIcon</source>
-        <translation type="vanished">displayIcon</translation>
+        <translation>displayIcon</translation>
     </message>
     <message>
         <source>Click to change the MCU clock</source>
-        <translation type="vanished">Click 到 change the MCU clock</translation>
+        <translation>Click 到 change the MCU clock</translation>
     </message>
     <message>
         <source>Repair required for configuration</source>
-        <translation type="vanished">配置需要修复</translation>
+        <translation>配置需要修复</translation>
     </message>
     <message>
         <source>Click to change MCU settings</source>
-        <translation type="vanished">点击更改 MCU 设置</translation>
+        <translation>点击更改 MCU 设置</translation>
     </message>
     <message>
         <source>compilerIcon</source>
-        <translation type="vanished">compilerIcon</translation>
+        <translation>compilerIcon</translation>
     </message>
     <message>
         <source>Selected board</source>
-        <translation type="vanished">所选开发板</translation>
+        <translation>所选开发板</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="vanished">删除</translation>
+        <translation>删除</translation>
     </message>
     <message>
         <source>stdOutIcon</source>
-        <translation type="vanished">stdOutIcon</translation>
+        <translation>stdOutIcon</translation>
     </message>
     <message>
         <source>clockIcon</source>
-        <translation type="vanished">clockIcon</translation>
+        <translation>clockIcon</translation>
     </message>
     <message>
         <source>Start NECTO Assistant</source>
-        <translation type="vanished">启动 NECTO 助手</translation>
+        <translation>启动 NECTO 助手</translation>
     </message>
     <message>
         <source>mcuIcon</source>
-        <translation type="vanished">mcuIcon</translation>
+        <translation>mcuIcon</translation>
     </message>
     <message>
         <source>Target options</source>
-        <translation type="vanished">目标选项</translation>
+        <translation>目标选项</translation>
     </message>
     <message>
         <source>Set as default configuration</source>
-        <translation type="vanished">设为默认配置</translation>
+        <translation>设为默认配置</translation>
     </message>
     <message>
         <source>[</source>
-        <translation type="vanished">[</translation>
+        <translation>[</translation>
     </message>
     <message>
         <source>Clone</source>
-        <translation type="vanished">克隆</translation>
+        <translation>克隆</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">编辑</translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <source>Selected compiler</source>
-        <translation type="vanished">所选编译器</translation>
+        <translation>所选编译器</translation>
     </message>
 </context>
 <context>
@@ -17195,19 +17195,19 @@ Make sure that CMAKE_BUILD_TYPE variable matches the &quot;构建 类型&quot; f
     <name>Necto::SetupRangeFilterWidget</name>
     <message>
         <source>0</source>
-        <translation type="vanished">0</translation>
+        <translation>0</translation>
     </message>
     <message>
         <source>Range</source>
-        <translation type="vanished">范围</translation>
+        <translation>范围</translation>
     </message>
     <message>
         <source> 0</source>
-        <translation type="vanished"> 0</translation>
+        <translation> 0</translation>
     </message>
     <message>
         <source>MHz</source>
-        <translation type="vanished">MHz</translation>
+        <translation>MHz</translation>
     </message>
 </context>
 <context>
@@ -17231,124 +17231,124 @@ Make sure that CMAKE_BUILD_TYPE variable matches the &quot;构建 类型&quot; f
     </message>
     <message>
         <source>No configuration found.</source>
-        <translation type="vanished">未找到配置。</translation>
+        <translation>未找到配置。</translation>
     </message>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Click &quot;New&quot; to create your first configuration.</source>
-        <translation type="vanished">点击“新建”创建您的第一个配置。</translation>
+        <translation>点击“新建”创建您的第一个配置。</translation>
     </message>
 </context>
 <context>
     <name>Necto::SetupsView</name>
     <message>
         <source>My configurations</source>
-        <translation type="vanished">我的配置</translation>
+        <translation>我的配置</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">关闭</translation>
+        <translation>关闭</translation>
     </message>
 </context>
 <context>
     <name>Necto::ShortcutsEditorPage</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>This shortcut is already in use. Choose another</source>
-        <translation type="vanished">此快捷键已被使用。请选择另一个</translation>
+        <translation>此快捷键已被使用。请选择另一个</translation>
     </message>
     <message>
         <source>Shortcut editor settings</source>
-        <translation type="vanished">快捷键编辑器设置</translation>
+        <translation>快捷键编辑器设置</translation>
     </message>
     <message>
         <source>Restart now</source>
-        <translation type="vanished">立即重启</translation>
+        <translation>立即重启</translation>
     </message>
     <message>
         <source>Restart later</source>
-        <translation type="vanished">稍后重启</translation>
+        <translation>稍后重启</translation>
     </message>
     <message>
         <source>Changes will be visible after you restart NECTO Studio.</source>
-        <translation type="vanished">重启 NECTO Studio 后更改将生效。</translation>
+        <translation>重启 NECTO Studio 后更改将生效。</translation>
     </message>
     <message>
         <source>Undo</source>
-        <translation type="vanished">撤销</translation>
+        <translation>撤销</translation>
     </message>
     <message>
         <source>Redo</source>
-        <translation type="vanished">重做</translation>
+        <translation>重做</translation>
     </message>
     <message>
         <source>Cut</source>
-        <translation type="vanished">剪切</translation>
+        <translation>剪切</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">复制</translation>
+        <translation>复制</translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation type="vanished">粘贴</translation>
+        <translation>粘贴</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation type="vanished">全选</translation>
+        <translation>全选</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation type="vanished">查找</translation>
+        <translation>查找</translation>
     </message>
     <message>
         <source>Find and Replace</source>
-        <translation type="vanished">查找和替换</translation>
+        <translation>查找和替换</translation>
     </message>
     <message>
         <source>Find in Files</source>
-        <translation type="vanished">在文件中查找</translation>
+        <translation>在文件中查找</translation>
     </message>
     <message>
         <source>Replace in Files</source>
-        <translation type="vanished">在文件中替换</translation>
+        <translation>在文件中替换</translation>
     </message>
     <message>
         <source>Zoom In</source>
-        <translation type="vanished">放大</translation>
+        <translation>放大</translation>
     </message>
     <message>
         <source>Zoom Out</source>
-        <translation type="vanished">缩小</translation>
+        <translation>缩小</translation>
     </message>
     <message>
         <source>Zoom Reset</source>
-        <translation type="vanished">重置缩放</translation>
+        <translation>重置缩放</translation>
     </message>
     <message>
         <source>Go Back</source>
-        <translation type="vanished">后退</translation>
+        <translation>后退</translation>
     </message>
     <message>
         <source>Go Forward</source>
-        <translation type="vanished">前进</translation>
+        <translation>前进</translation>
     </message>
     <message>
         <source>Go To Line</source>
-        <translation type="vanished">转到行</translation>
+        <translation>转到行</translation>
     </message>
 </context>
 <context>
     <name>Necto::SidePanelTab</name>
     <message>
         <source>Page</source>
-        <translation type="vanished">页面</translation>
+        <translation>页面</translation>
     </message>
 </context>
 <context>
@@ -17362,18 +17362,18 @@ Make sure that CMAKE_BUILD_TYPE variable matches the &quot;构建 类型&quot; f
     <name>Necto::SimulatorPlugin</name>
     <message>
         <source>Simulator does not have any additional settings.</source>
-        <translation type="vanished">模拟器没有任何附加设置。</translation>
+        <translation>模拟器没有任何附加设置。</translation>
     </message>
 </context>
 <context>
     <name>Necto::SimulatorSettingsView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>mikroeSimulator</source>
-        <translation type="vanished">mikroeSimulator</translation>
+        <translation>mikroeSimulator</translation>
     </message>
 </context>
 <context>
@@ -17500,19 +17500,19 @@ Make sure that CMAKE_BUILD_TYPE variable matches the &quot;构建 类型&quot; f
     </message>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Connected to:</source>
-        <translation type="vanished">已连接到：</translation>
+        <translation>已连接到：</translation>
     </message>
     <message>
         <source>Clicks</source>
-        <translation type="vanished">Click 板</translation>
+        <translation>Click 板</translation>
     </message>
     <message>
         <source>MCU: %1</source>
-        <translation type="vanished">MCU：%1</translation>
+        <translation>MCU：%1</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -17544,102 +17544,102 @@ Make sure that CMAKE_BUILD_TYPE variable matches the &quot;构建 类型&quot; f
     <name>Necto::SplashScreen</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>@ MIKROE - All rights reserved, 2019 - %1.</source>
-        <translation type="vanished">@ MIKROE - 全部 rights reserved, 2019 - %1.</translation>
+        <translation>@ MIKROE - 全部 rights reserved, 2019 - %1.</translation>
     </message>
 </context>
 <context>
     <name>Necto::StatisticsItem</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Gathering your stats...</source>
-        <translation type="vanished">正在收集您的统计信息...</translation>
+        <translation>正在收集您的统计信息...</translation>
     </message>
     <message>
         <source>Time</source>
-        <translation type="vanished">时间</translation>
+        <translation>时间</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation type="vanished">日期</translation>
+        <translation>日期</translation>
     </message>
     <message>
         <source>No data available.</source>
-        <translation type="vanished">无可用数据。</translation>
+        <translation>无可用数据。</translation>
     </message>
 </context>
 <context>
     <name>Necto::StatisticsManager</name>
     <message>
         <source>Time range</source>
-        <translation type="vanished">时间范围</translation>
+        <translation>时间范围</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation type="vanished">日期</translation>
+        <translation>日期</translation>
     </message>
     <message>
         <source>Statistics for </source>
-        <translation type="vanished">统计对象：</translation>
+        <translation>统计对象：</translation>
     </message>
     <message>
         <source> between </source>
-        <translation type="vanished"> 介于 </translation>
+        <translation> 介于 </translation>
     </message>
     <message>
         <source> and </source>
-        <translation type="vanished"> 和 </translation>
+        <translation> 和 </translation>
     </message>
     <message>
         <source>
 This PDF file will be available for the following 15 days, starting with </source>
-        <translation type="vanished">
+        <translation>
 此 PDF 文件 将 be 可用 用于 the following 15 days, 正在启动 使用 </translation>
     </message>
     <message>
         <source>NectoShare is currently unavailable. Please try again later.</source>
-        <translation type="vanished">NectoShare 当前不可用。请稍后再试。</translation>
+        <translation>NectoShare 当前不可用。请稍后再试。</translation>
     </message>
 </context>
 <context>
     <name>Necto::StatisticsPage</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>NECTO Usage Statistics</source>
-        <translation type="vanished">NECTO 使用统计</translation>
+        <translation>NECTO 使用统计</translation>
     </message>
     <message>
         <source>Click here to manage dates</source>
-        <translation type="vanished">点击此处管理日期</translation>
+        <translation>点击此处管理日期</translation>
     </message>
     <message>
         <source>Adjust</source>
-        <translation type="vanished">调整</translation>
+        <translation>调整</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation type="vanished">分享</translation>
+        <translation>分享</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Statistics</source>
-        <translation type="vanished">统计</translation>
+        <translation>统计</translation>
     </message>
     <message>
         <source>User statistics</source>
-        <translation type="vanished">用户统计</translation>
+        <translation>用户统计</translation>
     </message>
     <message>
         <source>&lt;html&gt;
@@ -17647,7 +17647,7 @@ This PDF file will be available for the following 15 days, starting with </sourc
                                                                       %1NOTE: This PDF file will be available for the following 15 days
                                                                 &lt;/body&gt;
                                                             &lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;
+        <translation>&lt;html&gt;
                                                                 &lt;body&gt;
                                                                       %1NOTE: 此 PDF 文件 将 be 可用 用于 the following 15 days
                                                                 &lt;/body&gt;
@@ -17655,260 +17655,260 @@ This PDF file will be available for the following 15 days, starting with </sourc
     </message>
     <message>
         <source>Link to statistics document copied to clipboard.</source>
-        <translation type="vanished">统计文档链接已复制到剪贴板。</translation>
+        <translation>统计文档链接已复制到剪贴板。</translation>
     </message>
     <message>
         <source>    User: </source>
-        <translation type="vanished">    用户：</translation>
+        <translation>    用户：</translation>
     </message>
     <message>
         <source>NECTO Studio version</source>
-        <translation type="vanished">NECTO Studio 版本</translation>
+        <translation>NECTO Studio 版本</translation>
     </message>
     <message>
         <source>License type</source>
-        <translation type="vanished">许可证类型</translation>
+        <translation>许可证类型</translation>
     </message>
     <message>
         <source>Total NECTO Studio usage time</source>
-        <translation type="vanished">NECTO Studio 总使用时间</translation>
+        <translation>NECTO Studio 总使用时间</translation>
     </message>
     <message>
         <source>Time spent on Remote Board Farm</source>
-        <translation type="vanished">在远程板卡农场花费的时间</translation>
+        <translation>在远程板卡农场花费的时间</translation>
     </message>
     <message>
         <source>Time spent in simulator</source>
-        <translation type="vanished">在模拟器中花费的时间</translation>
+        <translation>在模拟器中花费的时间</translation>
     </message>
     <message>
         <source>Time spent in debugger</source>
-        <translation type="vanished">在调试器中花费的时间</translation>
+        <translation>在调试器中花费的时间</translation>
     </message>
     <message>
         <source>Successful build attempts</source>
-        <translation type="vanished">成功构建次数</translation>
+        <translation>成功构建次数</translation>
     </message>
     <message>
         <source>Successful MCU flashing attempts</source>
-        <translation type="vanished">成功 MCU 烧录次数</translation>
+        <translation>成功 MCU 烧录次数</translation>
     </message>
     <message>
         <source>Actions summary over time</source>
-        <translation type="vanished">操作随时间汇总</translation>
+        <translation>操作随时间汇总</translation>
     </message>
     <message>
         <source>NECTO Studio usage over time</source>
-        <translation type="vanished">NECTO Studio 使用随时间变化</translation>
+        <translation>NECTO Studio 使用随时间变化</translation>
     </message>
     <message>
         <source>Actions count</source>
-        <translation type="vanished">操作次数</translation>
+        <translation>操作次数</translation>
     </message>
     <message>
         <source>Build attempts</source>
-        <translation type="vanished">构建次数</translation>
+        <translation>构建次数</translation>
     </message>
     <message>
         <source>MCU flashing attempts</source>
-        <translation type="vanished">MCU 烧录次数</translation>
+        <translation>MCU 烧录次数</translation>
     </message>
     <message>
         <source>Debug sessions</source>
-        <translation type="vanished">调试会话</translation>
+        <translation>调试会话</translation>
     </message>
     <message>
         <source>Simulator sessions</source>
-        <translation type="vanished">模拟器会话</translation>
+        <translation>模拟器会话</translation>
     </message>
     <message>
         <source>Minutes spent</source>
-        <translation type="vanished">花费分钟数</translation>
+        <translation>花费分钟数</translation>
     </message>
     <message>
         <source>Hours spent</source>
-        <translation type="vanished">花费小时数</translation>
+        <translation>花费小时数</translation>
     </message>
 </context>
 <context>
     <name>Necto::StepFrame</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
 </context>
 <context>
     <name>Necto::TabWidget</name>
     <message>
         <source>(Untitled)</source>
-        <translation type="vanished">（未命名）</translation>
+        <translation>（未命名）</translation>
     </message>
     <message>
         <source>New &amp;Tab</source>
-        <translation type="vanished">新建标签页(&amp;T)</translation>
+        <translation>新建标签页(&amp;T)</translation>
     </message>
     <message>
         <source>Clone &amp;Tab</source>
-        <translation type="vanished">克隆标签页(&amp;T)</translation>
+        <translation>克隆标签页(&amp;T)</translation>
     </message>
     <message>
         <source>&amp;Close Tab</source>
-        <translation type="vanished">关闭标签页(&amp;C)</translation>
+        <translation>关闭标签页(&amp;C)</translation>
     </message>
     <message>
         <source>Close &amp;Other Tabs</source>
-        <translation type="vanished">关闭其他标签页(&amp;O)</translation>
+        <translation>关闭其他标签页(&amp;O)</translation>
     </message>
     <message>
         <source>Reload Tab</source>
-        <translation type="vanished">重新加载标签页</translation>
+        <translation>重新加载标签页</translation>
     </message>
     <message>
         <source>Reload All Tabs</source>
-        <translation type="vanished">重新加载所有标签页</translation>
+        <translation>重新加载所有标签页</translation>
     </message>
 </context>
 <context>
     <name>Necto::TerminalView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Disconnected</source>
-        <translation type="vanished">已断开连接</translation>
+        <translation>已断开连接</translation>
     </message>
     <message>
         <source>Set terminal options</source>
-        <translation type="vanished">设置终端选项</translation>
+        <translation>设置终端选项</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation type="vanished">选项</translation>
+        <translation>选项</translation>
     </message>
     <message>
         <source>Connect to host</source>
-        <translation type="vanished">连接到主机</translation>
+        <translation>连接到主机</translation>
     </message>
     <message>
         <source>Connect</source>
-        <translation type="vanished">连接</translation>
+        <translation>连接</translation>
     </message>
     <message>
         <source>Show timestamp</source>
-        <translation type="vanished">显示时间戳</translation>
+        <translation>显示时间戳</translation>
     </message>
     <message>
         <source>T</source>
-        <translation type="vanished">T</translation>
+        <translation>T</translation>
     </message>
     <message>
         <source>Append carriage return</source>
-        <translation type="vanished">追加回车</translation>
+        <translation>追加回车</translation>
     </message>
     <message>
         <source>CR</source>
-        <translation type="vanished">CR</translation>
+        <translation>CR</translation>
     </message>
     <message>
         <source>Append line feed</source>
-        <translation type="vanished">追加换行</translation>
+        <translation>追加换行</translation>
     </message>
     <message>
         <source>LF</source>
-        <translation type="vanished">LF</translation>
+        <translation>LF</translation>
     </message>
     <message>
         <source>Send data as you type</source>
-        <translation type="vanished">输入时发送数据</translation>
+        <translation>输入时发送数据</translation>
     </message>
     <message>
         <source>Instant send</source>
-        <translation type="vanished">即时发送</translation>
+        <translation>即时发送</translation>
     </message>
     <message>
         <source>Enable auto send data in loop</source>
-        <translation type="vanished">启用循环自动发送数据</translation>
+        <translation>启用循环自动发送数据</translation>
     </message>
     <message>
         <source>Loop Every</source>
-        <translation type="vanished">循环间隔</translation>
+        <translation>循环间隔</translation>
     </message>
     <message>
         <source>ms</source>
-        <translation type="vanished">ms</translation>
+        <translation>ms</translation>
     </message>
     <message>
         <source>Send data from file mode</source>
-        <translation type="vanished">从文件发送数据模式</translation>
+        <translation>从文件发送数据模式</translation>
     </message>
     <message>
         <source>Send File</source>
-        <translation type="vanished">发送文件</translation>
+        <translation>发送文件</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation type="vanished">浏览</translation>
+        <translation>浏览</translation>
     </message>
     <message>
         <source>Send</source>
-        <translation type="vanished">发送</translation>
+        <translation>发送</translation>
     </message>
     <message>
         <source>Received data:</source>
-        <translation type="vanished">接收的数据：</translation>
+        <translation>接收的数据：</translation>
     </message>
     <message>
         <source>View received data as ASCII</source>
-        <translation type="vanished">以 ASCII 查看接收的数据</translation>
+        <translation>以 ASCII 查看接收的数据</translation>
     </message>
     <message>
         <source>ASCII</source>
-        <translation type="vanished">ASCII</translation>
+        <translation>ASCII</translation>
     </message>
     <message>
         <source>View received data in decimal mode</source>
-        <translation type="vanished">以十进制模式查看接收的数据</translation>
+        <translation>以十进制模式查看接收的数据</translation>
     </message>
     <message>
         <source>DEC</source>
-        <translation type="vanished">DEC</translation>
+        <translation>DEC</translation>
     </message>
     <message>
         <source>View received data in hex mode</source>
-        <translation type="vanished">以十六进制模式查看接收的数据</translation>
+        <translation>以十六进制模式查看接收的数据</translation>
     </message>
     <message>
         <source>HEX</source>
-        <translation type="vanished">HEX</translation>
+        <translation>HEX</translation>
     </message>
     <message>
         <source>View received data in binary mode</source>
-        <translation type="vanished">以二进制模式查看接收的数据</translation>
+        <translation>以二进制模式查看接收的数据</translation>
     </message>
     <message>
         <source>BIN</source>
-        <translation type="vanished">BIN</translation>
+        <translation>BIN</translation>
     </message>
     <message>
         <source>Type your data here</source>
-        <translation type="vanished">在此输入数据</translation>
+        <translation>在此输入数据</translation>
     </message>
     <message>
         <source>Disconnect</source>
-        <translation type="vanished">断开连接</translation>
+        <translation>断开连接</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation type="vanished">打开文件</translation>
+        <translation>打开文件</translation>
     </message>
     <message>
         <source>All files (*)</source>
-        <translation type="vanished">所有文件 (*)</translation>
+        <translation>所有文件 (*)</translation>
     </message>
 </context>
 <context>
@@ -17923,738 +17923,738 @@ This PDF file will be available for the following 15 days, starting with </sourc
     <name>Necto::TimerPlugin</name>
     <message>
         <source>Timer Calculator</source>
-        <translation type="vanished">定时器计算器</translation>
+        <translation>定时器计算器</translation>
     </message>
     <message>
         <source>Timer calculator</source>
-        <translation type="vanished">定时器计算器</translation>
+        <translation>定时器计算器</translation>
     </message>
 </context>
 <context>
     <name>Necto::TimerWidget</name>
     <message>
         <source>Timer Calculator</source>
-        <translation type="vanished">定时器计算器</translation>
+        <translation>定时器计算器</translation>
     </message>
     <message>
         <source>Chose timer :</source>
-        <translation type="vanished">选择定时器：</translation>
+        <translation>选择定时器：</translation>
     </message>
     <message>
         <source>Select device :</source>
-        <translation type="vanished">选择设备：</translation>
+        <translation>选择设备：</translation>
     </message>
     <message>
         <source>Frequency</source>
-        <translation type="vanished">频率</translation>
+        <translation>频率</translation>
     </message>
     <message>
         <source>Mhz</source>
-        <translation type="vanished">Mhz</translation>
+        <translation>Mhz</translation>
     </message>
     <message>
         <source>/</source>
-        <translation type="vanished">/</translation>
+        <translation>/</translation>
     </message>
     <message>
         <source>Interrupt time</source>
-        <translation type="vanished">中断时间</translation>
+        <translation>中断时间</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="vanished">删除</translation>
+        <translation>删除</translation>
     </message>
     <message>
         <source>Load preset :</source>
-        <translation type="vanished">加载预设：</translation>
+        <translation>加载预设：</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Copy code</source>
-        <translation type="vanished">复制代码</translation>
+        <translation>复制代码</translation>
     </message>
     <message>
         <source>Mcu frequency</source>
-        <translation type="vanished">MCU 频率</translation>
+        <translation>MCU 频率</translation>
     </message>
     <message>
         <source>Interrput time</source>
-        <translation type="vanished">中断时间</translation>
+        <translation>中断时间</translation>
     </message>
     <message>
         <source>Interrupt must be a number greater than 0!</source>
-        <translation type="vanished">中断时间必须是大于 0 的数字！</translation>
+        <translation>中断时间必须是大于 0 的数字！</translation>
     </message>
     <message>
         <source>Frequency must be a number greater than 0!</source>
-        <translation type="vanished">频率必须是大于 0 的数字！</translation>
+        <translation>频率必须是大于 0 的数字！</translation>
     </message>
     <message>
         <source>Some mcu device must be selected!</source>
-        <translation type="vanished">必须选择一个 MCU 设备！</translation>
+        <translation>必须选择一个 MCU 设备！</translation>
     </message>
     <message>
         <source>Some timer must be selected!</source>
-        <translation type="vanished">必须选择一个定时器！</translation>
+        <translation>必须选择一个定时器！</translation>
     </message>
     <message>
         <source>Code generated successfully</source>
-        <translation type="vanished">代码生成成功</translation>
+        <translation>代码生成成功</translation>
     </message>
     <message>
         <source>Couldn&apos;t calculate timer for given parameters</source>
-        <translation type="vanished">无法根据给定参数计算定时器</translation>
+        <translation>无法根据给定参数计算定时器</translation>
     </message>
     <message>
         <source>Error loading setting JSON!</source>
-        <translation type="vanished">加载设置 JSON 时出错！</translation>
+        <translation>加载设置 JSON 时出错！</translation>
     </message>
     <message>
         <source>Loaded preset</source>
-        <translation type="vanished">已加载预设</translation>
+        <translation>已加载预设</translation>
     </message>
     <message>
         <source>Code copied to Clipboard</source>
-        <translation type="vanished">代码已复制到剪贴板</translation>
+        <translation>代码已复制到剪贴板</translation>
     </message>
     <message>
         <source>Preset successfully saved</source>
-        <translation type="vanished">预设保存成功</translation>
+        <translation>预设保存成功</translation>
     </message>
     <message>
         <source>Save preset</source>
-        <translation type="vanished">保存预设</translation>
+        <translation>保存预设</translation>
     </message>
     <message>
         <source>Preset already exists, are you sure you want to overwrite it?</source>
-        <translation type="vanished">预设已存在，确定要覆盖它吗？</translation>
+        <translation>预设已存在，确定要覆盖它吗？</translation>
     </message>
     <message>
         <source>Preset successfully changed</source>
-        <translation type="vanished">预设更改成功</translation>
+        <translation>预设更改成功</translation>
     </message>
     <message>
         <source>Delete preset</source>
-        <translation type="vanished">删除预设</translation>
+        <translation>删除预设</translation>
     </message>
     <message>
         <source>Are you sure you want to delete selected preset??</source>
-        <translation type="vanished">确定要删除所选预设吗？？</translation>
+        <translation>确定要删除所选预设吗？？</translation>
     </message>
     <message>
         <source>Deleted preset </source>
-        <translation type="vanished">已删除预设 </translation>
+        <translation>已删除预设 </translation>
     </message>
     <message>
         <source>Select something to delete!</source>
-        <translation type="vanished">请选择要删除的内容！</translation>
+        <translation>请选择要删除的内容！</translation>
     </message>
 </context>
 <context>
     <name>Necto::ToolListItem</name>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Tool name</source>
-        <translation type="vanished">工具名称</translation>
+        <translation>工具名称</translation>
     </message>
 </context>
 <context>
     <name>Necto::ToolsManager</name>
     <message>
         <source>Tools</source>
-        <translation type="vanished">工具</translation>
+        <translation>工具</translation>
     </message>
 </context>
 <context>
     <name>Necto::ToolsView</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Filter tools</source>
-        <translation type="vanished">筛选工具</translation>
+        <translation>筛选工具</translation>
     </message>
     <message>
         <source>You need to have an active configuration to enable this tool.</source>
-        <translation type="vanished">需要活动配置才能启用此工具。</translation>
+        <translation>需要活动配置才能启用此工具。</translation>
     </message>
     <message>
         <source>Create custom board</source>
-        <translation type="vanished">创建自定义开发板</translation>
+        <translation>创建自定义开发板</translation>
     </message>
     <message>
         <source>Plot</source>
-        <translation type="vanished">绘图</translation>
+        <translation>绘图</translation>
     </message>
 </context>
 <context>
     <name>Necto::TooltipChart</name>
     <message>
         <source>%1 min %2 sec</source>
-        <translation type="vanished">%1 min %2 sec</translation>
+        <translation>%1 min %2 sec</translation>
     </message>
     <message>
         <source>%1 min</source>
-        <translation type="vanished">%1 min</translation>
+        <translation>%1 min</translation>
     </message>
     <message>
         <source>%1 %2</source>
-        <translation type="vanished">%1 %2</translation>
+        <translation>%1 %2</translation>
     </message>
     <message>
         <source>h</source>
-        <translation type="vanished">h</translation>
+        <translation>h</translation>
     </message>
     <message>
         <source>Time range</source>
-        <translation type="vanished">时间范围</translation>
+        <translation>时间范围</translation>
     </message>
     <message>
         <source>Time</source>
-        <translation type="vanished">时间</translation>
+        <translation>时间</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation type="vanished">日期</translation>
+        <translation>日期</translation>
     </message>
 </context>
 <context>
     <name>Necto::TourBubble</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Your text goes here</source>
-        <translation type="vanished">文本写在这里</translation>
+        <translation>文本写在这里</translation>
     </message>
     <message>
         <source>Finish guided tour.</source>
-        <translation type="vanished">结束引导导览。</translation>
+        <translation>结束引导导览。</translation>
     </message>
     <message>
         <source>End tour</source>
-        <translation type="vanished">结束导览</translation>
+        <translation>结束导览</translation>
     </message>
     <message>
         <source>Goto next step.</source>
-        <translation type="vanished">转到下一步。</translation>
+        <translation>转到下一步。</translation>
     </message>
     <message>
         <source>Next step</source>
-        <translation type="vanished">下一步</translation>
+        <translation>下一步</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">完成</translation>
+        <translation>完成</translation>
     </message>
 </context>
 <context>
     <name>Necto::TourFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
 </context>
 <context>
     <name>Necto::TutorialsItemView</name>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Tutorial Name</source>
-        <translation type="vanished">教程名称</translation>
+        <translation>教程名称</translation>
     </message>
     <message>
         <source>Description</source>
-        <translation type="vanished">说明</translation>
+        <translation>说明</translation>
     </message>
     <message>
         <source>Video tutorial</source>
-        <translation type="vanished">视频教程</translation>
+        <translation>视频教程</translation>
     </message>
     <message>
         <source>Tutorial</source>
-        <translation type="vanished">教程</translation>
+        <translation>教程</translation>
     </message>
     <message>
         <source>NECTO talks</source>
-        <translation type="vanished">NECTO 讲座</translation>
+        <translation>NECTO 讲座</translation>
     </message>
 </context>
 <context>
     <name>Necto::TutorialsView</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">对话框</translation>
+        <translation>对话框</translation>
     </message>
     <message>
         <source>Tutorials</source>
-        <translation type="vanished">教程</translation>
+        <translation>教程</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">关闭</translation>
+        <translation>关闭</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Search tutorials</source>
-        <translation type="vanished">搜索教程</translation>
+        <translation>搜索教程</translation>
     </message>
     <message>
         <source>New to NECTO Studio? Get started with tutorials</source>
-        <translation type="vanished">初次使用 NECTO Studio？从教程开始</translation>
+        <translation>初次使用 NECTO Studio？从教程开始</translation>
     </message>
     <message>
         <source>Found</source>
-        <translation type="vanished">已找到</translation>
+        <translation>已找到</translation>
     </message>
     <message>
         <source>Search for</source>
-        <translation type="vanished">搜索</translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>%1 %2 tutorial(s)</source>
-        <translation type="vanished">%1 %2 个教程</translation>
+        <translation>%1 %2 个教程</translation>
     </message>
     <message>
         <source>Error reading login response</source>
-        <translation type="vanished">读取登录响应时出错</translation>
+        <translation>读取登录响应时出错</translation>
     </message>
 </context>
 <context>
     <name>Necto::UartBootloaderPlugin</name>
     <message>
         <source>UART Bootloader</source>
-        <translation type="vanished">UART 引导加载器</translation>
+        <translation>UART 引导加载器</translation>
     </message>
 </context>
 <context>
     <name>Necto::UartOptions</name>
     <message>
         <source>Options</source>
-        <translation type="vanished">选项</translation>
+        <translation>选项</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation type="vanished">端口</translation>
+        <translation>端口</translation>
     </message>
     <message>
         <source>Baud rate</source>
-        <translation type="vanished">波特率</translation>
+        <translation>波特率</translation>
     </message>
     <message>
         <source>110 bps</source>
-        <translation type="vanished">110 bps</translation>
+        <translation>110 bps</translation>
     </message>
     <message>
         <source>300 bps</source>
-        <translation type="vanished">300 bps</translation>
+        <translation>300 bps</translation>
     </message>
     <message>
         <source>600 bps</source>
-        <translation type="vanished">600 bps</translation>
+        <translation>600 bps</translation>
     </message>
     <message>
         <source>1200 bps</source>
-        <translation type="vanished">1200 bps</translation>
+        <translation>1200 bps</translation>
     </message>
     <message>
         <source>2400 bps</source>
-        <translation type="vanished">2400 bps</translation>
+        <translation>2400 bps</translation>
     </message>
     <message>
         <source>4800 bps</source>
-        <translation type="vanished">4800 bps</translation>
+        <translation>4800 bps</translation>
     </message>
     <message>
         <source>9600 bps</source>
-        <translation type="vanished">9600 bps</translation>
+        <translation>9600 bps</translation>
     </message>
     <message>
         <source>14400 bps</source>
-        <translation type="vanished">14400 bps</translation>
+        <translation>14400 bps</translation>
     </message>
     <message>
         <source>19200 bps</source>
-        <translation type="vanished">19200 bps</translation>
+        <translation>19200 bps</translation>
     </message>
     <message>
         <source>38400 bps</source>
-        <translation type="vanished">38400 bps</translation>
+        <translation>38400 bps</translation>
     </message>
     <message>
         <source>56000 bps</source>
-        <translation type="vanished">56000 bps</translation>
+        <translation>56000 bps</translation>
     </message>
     <message>
         <source>57600 bps</source>
-        <translation type="vanished">57600 bps</translation>
+        <translation>57600 bps</translation>
     </message>
     <message>
         <source>115200 bps</source>
-        <translation type="vanished">115200 bps</translation>
+        <translation>115200 bps</translation>
     </message>
     <message>
         <source>128000 bps</source>
-        <translation type="vanished">128000 bps</translation>
+        <translation>128000 bps</translation>
     </message>
     <message>
         <source>256000 bps</source>
-        <translation type="vanished">256000 bps</translation>
+        <translation>256000 bps</translation>
     </message>
     <message>
         <source>Data bits</source>
-        <translation type="vanished">数据位</translation>
+        <translation>数据位</translation>
     </message>
     <message>
         <source>5</source>
-        <translation type="vanished">5</translation>
+        <translation>5</translation>
     </message>
     <message>
         <source>6</source>
-        <translation type="vanished">6</translation>
+        <translation>6</translation>
     </message>
     <message>
         <source>7</source>
-        <translation type="vanished">7</translation>
+        <translation>7</translation>
     </message>
     <message>
         <source>8</source>
-        <translation type="vanished">8</translation>
+        <translation>8</translation>
     </message>
     <message>
         <source>Parity</source>
-        <translation type="vanished">校验</translation>
+        <translation>校验</translation>
     </message>
     <message>
         <source>Even</source>
-        <translation type="vanished">偶校验</translation>
+        <translation>偶校验</translation>
     </message>
     <message>
         <source>Mark</source>
-        <translation type="vanished">标记</translation>
+        <translation>标记</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="vanished">无</translation>
+        <translation>无</translation>
     </message>
     <message>
         <source>Odd</source>
-        <translation type="vanished">奇校验</translation>
+        <translation>奇校验</translation>
     </message>
     <message>
         <source>Space</source>
-        <translation type="vanished">空格</translation>
+        <translation>空格</translation>
     </message>
     <message>
         <source>Buffer size</source>
-        <translation type="vanished">缓冲区大小</translation>
+        <translation>缓冲区大小</translation>
     </message>
     <message>
         <source>1024</source>
-        <translation type="vanished">1024</translation>
+        <translation>1024</translation>
     </message>
     <message>
         <source>2048</source>
-        <translation type="vanished">2048</translation>
+        <translation>2048</translation>
     </message>
     <message>
         <source>4096</source>
-        <translation type="vanished">4096</translation>
+        <translation>4096</translation>
     </message>
     <message>
         <source>8192</source>
-        <translation type="vanished">8192</translation>
+        <translation>8192</translation>
     </message>
     <message>
         <source>16384</source>
-        <translation type="vanished">16384</translation>
+        <translation>16384</translation>
     </message>
     <message>
         <source>32768</source>
-        <translation type="vanished">32768</translation>
+        <translation>32768</translation>
     </message>
     <message>
         <source>65536</source>
-        <translation type="vanished">65536</translation>
+        <translation>65536</translation>
     </message>
     <message>
         <source>Flow control</source>
-        <translation type="vanished">流控制</translation>
+        <translation>流控制</translation>
     </message>
     <message>
         <source>Hardware</source>
-        <translation type="vanished">硬件</translation>
+        <translation>硬件</translation>
     </message>
     <message>
         <source>Software</source>
-        <translation type="vanished">软件</translation>
+        <translation>软件</translation>
     </message>
     <message>
         <source>Stop bits</source>
-        <translation type="vanished">停止位</translation>
+        <translation>停止位</translation>
     </message>
     <message>
         <source>1</source>
-        <translation type="vanished">1</translation>
+        <translation>1</translation>
     </message>
     <message>
         <source>1.5</source>
-        <translation type="vanished">1.5</translation>
+        <translation>1.5</translation>
     </message>
     <message>
         <source>2</source>
-        <translation type="vanished">2</translation>
+        <translation>2</translation>
     </message>
 </context>
 <context>
     <name>Necto::UartPlugin</name>
     <message>
         <source>UART Terminal</source>
-        <translation type="vanished">UART 终端</translation>
+        <translation>UART 终端</translation>
     </message>
 </context>
 <context>
     <name>Necto::UdpOptions</name>
     <message>
         <source>Form</source>
-        <translation type="vanished">表单</translation>
+        <translation>表单</translation>
     </message>
     <message>
         <source>Destination port</source>
-        <translation type="vanished">目标端口</translation>
+        <translation>目标端口</translation>
     </message>
     <message>
         <source>Destination IP</source>
-        <translation type="vanished">目标 IP</translation>
+        <translation>目标 IP</translation>
     </message>
     <message>
         <source>Source port</source>
-        <translation type="vanished">源端口</translation>
+        <translation>源端口</translation>
     </message>
     <message>
         <source>Source IP</source>
-        <translation type="vanished">源 IP</translation>
+        <translation>源 IP</translation>
     </message>
     <message>
         <source>Buffer size</source>
-        <translation type="vanished">缓冲区大小</translation>
+        <translation>缓冲区大小</translation>
     </message>
     <message>
         <source>Destination address</source>
-        <translation type="vanished">目标地址</translation>
+        <translation>目标地址</translation>
     </message>
     <message>
         <source>Source address</source>
-        <translation type="vanished">源地址</translation>
+        <translation>源地址</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">大小</translation>
+        <translation>大小</translation>
     </message>
 </context>
 <context>
     <name>Necto::UdpPlugin</name>
     <message>
         <source>UDP Terminal</source>
-        <translation type="vanished">UDP 终端</translation>
+        <translation>UDP 终端</translation>
     </message>
 </context>
 <context>
     <name>Necto::UpdatesView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Show last 7 days</source>
-        <translation type="vanished">显示最近 7 天</translation>
+        <translation>显示最近 7 天</translation>
     </message>
     <message>
         <source>Show last 15 days</source>
-        <translation type="vanished">显示最近 15 天</translation>
+        <translation>显示最近 15 天</translation>
     </message>
     <message>
         <source>Show last 30 days</source>
-        <translation type="vanished">显示最近 30 天</translation>
+        <translation>显示最近 30 天</translation>
     </message>
     <message>
         <source>Show last 3 months</source>
-        <translation type="vanished">显示最近 3 个月</translation>
+        <translation>显示最近 3 个月</translation>
     </message>
     <message>
         <source>Show last 6 months</source>
-        <translation type="vanished">显示最近 6 个月</translation>
+        <translation>显示最近 6 个月</translation>
     </message>
     <message>
         <source>Update all</source>
-        <translation type="vanished">全部更新</translation>
+        <translation>全部更新</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;An update is currently in progress for all packages.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Please wait for the process to complete.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;当前正在更新所有软件包。&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;请等待过程完成。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;当前正在更新所有软件包。&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;请等待过程完成。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
     <name>Necto::UploadPage</name>
     <message>
         <source>WizardPage</source>
-        <translation type="vanished">向导页</translation>
+        <translation>向导页</translation>
     </message>
     <message>
         <source>Upload Project Wizard</source>
-        <translation type="vanished">上传项目向导</translation>
+        <translation>上传项目向导</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <source>Project upload summary</source>
-        <translation type="vanished">项目上传摘要</translation>
+        <translation>项目上传摘要</translation>
     </message>
     <message>
         <source>Here’s a summary of the information you’ve provided:</source>
-        <translation type="vanished">以下是您提供信息的摘要：</translation>
+        <translation>以下是您提供信息的摘要：</translation>
     </message>
     <message>
         <source>Project information:</source>
-        <translation type="vanished">项目信息：</translation>
+        <translation>项目信息：</translation>
     </message>
     <message>
         <source>Display name:</source>
-        <translation type="vanished">显示名称：</translation>
+        <translation>显示名称：</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Version:</source>
-        <translation type="vanished">版本：</translation>
+        <translation>版本：</translation>
     </message>
     <message>
         <source>projectVersion</source>
-        <translation type="vanished">projectVersion</translation>
+        <translation>projectVersion</translation>
     </message>
     <message>
         <source>Board:</source>
-        <translation type="vanished">开发板：</translation>
+        <translation>开发板：</translation>
     </message>
     <message>
         <source>mikroBUS Count:</source>
-        <translation type="vanished">mikroBUS 数量：</translation>
+        <translation>mikroBUS 数量：</translation>
     </message>
     <message>
         <source>Display:</source>
-        <translation type="vanished">显示器：</translation>
+        <translation>显示器：</translation>
     </message>
     <message>
         <source>MCU:</source>
-        <translation type="vanished">MCU：</translation>
+        <translation>MCU：</translation>
     </message>
     <message>
         <source>SDK:</source>
-        <translation type="vanished">SDK：</translation>
+        <translation>SDK：</translation>
     </message>
     <message>
         <source>WARNING: No Click libraries are included in your project. To add Click boards, you can:
 
     1. Go Back to the previous page and assign Click libraries to the desired mikroBUS sockets.
     2. Click Cancel to exit the wizard, then open the Library Manager and select the Click board(s) you wish to use in this project.</source>
-        <translation type="vanished">WARNING: No Click 库 是 included 在 您的 项目. To add Click 板, 您 can:
+        <translation>WARNING: No Click 库 是 included 在 您的 项目. To add Click 板, 您 can:
 
     1. Go Back 到 the previous 页面 和 assign Click 库 到 the desired mikroBUS sockets.
     2. Click Cancel 到 exit the 向导, then 打开 the 库管理器 和 选择 the Click 板(s) 您 wish 到 use 在 此 项目.</translation>
     </message>
     <message>
         <source>Assigned Click boards</source>
-        <translation type="vanished">已分配的 Click 板</translation>
+        <translation>已分配的 Click 板</translation>
     </message>
     <message>
         <source>Bare metal</source>
-        <translation type="vanished">裸机</translation>
+        <translation>裸机</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="vanished">无</translation>
+        <translation>无</translation>
     </message>
 </context>
 <context>
     <name>Necto::UploadProjectDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">对话框</translation>
+        <translation>对话框</translation>
     </message>
     <message>
         <source>Uploading your project</source>
-        <translation type="vanished">正在上传您的项目</translation>
+        <translation>正在上传您的项目</translation>
     </message>
     <message>
         <source>icon</source>
-        <translation type="vanished">图标</translation>
+        <translation>图标</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Packing your project and prepare for upload</source>
-        <translation type="vanished">正在打包项目并准备上传</translation>
+        <translation>正在打包项目并准备上传</translation>
     </message>
     <message>
         <source>Packing your poject was succesfull</source>
-        <translation type="vanished">项目打包成功</translation>
+        <translation>项目打包成功</translation>
     </message>
     <message>
         <source>Starting upload to server</source>
-        <translation type="vanished">正在开始上传到服务器</translation>
+        <translation>正在开始上传到服务器</translation>
     </message>
     <message>
         <source>Error: Project packing failed.</source>
-        <translation type="vanished">错误：项目打包失败。</translation>
+        <translation>错误：项目打包失败。</translation>
     </message>
     <message>
         <source>Upload to server was succesfull</source>
-        <translation type="vanished">上传到服务器成功</translation>
+        <translation>上传到服务器成功</translation>
     </message>
     <message>
         <source>Upload to server failed. Please try again.</source>
-        <translation type="vanished">上传到服务器失败。请重试。</translation>
+        <translation>上传到服务器失败。请重试。</translation>
     </message>
     <message>
         <source>Project upload failed:
 
 %1</source>
-        <translation type="vanished">项目上传失败：
+        <translation>项目上传失败：
 
 %1</translation>
     </message>
@@ -18663,96 +18663,96 @@ This PDF file will be available for the following 15 days, starting with </sourc
     <name>Necto::UploadProjectWizard</name>
     <message>
         <source>Wizard</source>
-        <translation type="vanished">向导</translation>
+        <translation>向导</translation>
     </message>
 </context>
 <context>
     <name>Necto::UploadingPackageDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">对话框</translation>
+        <translation>对话框</translation>
     </message>
     <message>
         <source>Upload package to Libstock</source>
-        <translation type="vanished">将软件包上传到 Libstock</translation>
+        <translation>将软件包上传到 Libstock</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="vanished">更新</translation>
+        <translation>更新</translation>
     </message>
     <message>
         <source>Create new</source>
-        <translation type="vanished">新建</translation>
+        <translation>新建</translation>
     </message>
     <message>
         <source>Uploading package to server. Please wait.</source>
-        <translation type="vanished">正在将软件包上传到服务器。请稍候。</translation>
+        <translation>正在将软件包上传到服务器。请稍候。</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Upload</source>
-        <translation type="vanished">上传</translation>
+        <translation>上传</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Package path</source>
-        <translation type="vanished">软件包路径</translation>
+        <translation>软件包路径</translation>
     </message>
     <message>
         <source>Waiting for server to process request</source>
-        <translation type="vanished">正在等待服务器处理请求</translation>
+        <translation>正在等待服务器处理请求</translation>
     </message>
     <message>
         <source>Select package to upload</source>
-        <translation type="vanished">选择要上传的软件包</translation>
+        <translation>选择要上传的软件包</translation>
     </message>
     <message>
         <source>Package files (*.zip)</source>
-        <translation type="vanished">软件包文件 (*.zip)</translation>
+        <translation>软件包文件 (*.zip)</translation>
     </message>
 </context>
 <context>
     <name>Necto::UserComponentsView</name>
     <message>
         <source>Filter user components</source>
-        <translation type="vanished">筛选用户组件</translation>
+        <translation>筛选用户组件</translation>
     </message>
 </context>
 <context>
     <name>Necto::UserInfoView</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">对话框</translation>
+        <translation>对话框</translation>
     </message>
     <message>
         <source>UserName</source>
-        <translation type="vanished">UserName</translation>
+        <translation>UserName</translation>
     </message>
     <message>
         <source>user@user.com</source>
-        <translation type="vanished">用户@用户.com</translation>
+        <translation>用户@用户.com</translation>
     </message>
     <message>
         <source>Sign out</source>
-        <translation type="vanished">退出登录</translation>
+        <translation>退出登录</translation>
     </message>
     <message>
         <source>Privacy policy  -  Terms of service</source>
-        <translation type="vanished">隐私政策 - 服务条款</translation>
+        <translation>隐私政策 - 服务条款</translation>
     </message>
     <message>
         <source>&lt;a href=&quot;https://www.mikroe.com/legal/privacy-policy&quot;&gt;Privacy policy - Terms of service&lt;/a&gt;</source>
-        <translation type="vanished">&lt;a href=&quot;https://www.mikroe.com/legal/privacy-policy&quot;&gt;Privacy policy - 条款 的 service&lt;/a&gt;</translation>
+        <translation>&lt;a href=&quot;https://www.mikroe.com/legal/privacy-policy&quot;&gt;Privacy policy - 条款 的 service&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
@@ -18782,7 +18782,7 @@ This PDF file will be available for the following 15 days, starting with </sourc
     <name>Necto::VersionControl</name>
     <message>
         <source>Version Control</source>
-        <translation type="vanished">版本控制</translation>
+        <translation>版本控制</translation>
     </message>
 </context>
 <context>
@@ -18812,145 +18812,145 @@ This PDF file will be available for the following 15 days, starting with </sourc
     <name>Necto::WaitingFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Closing session</source>
-        <translation type="vanished">正在关闭会话</translation>
+        <translation>正在关闭会话</translation>
     </message>
 </context>
 <context>
     <name>Necto::WebBrowser</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">返回</translation>
+        <translation>返回</translation>
     </message>
     <message>
         <source>back</source>
-        <translation type="vanished">后退</translation>
+        <translation>后退</translation>
     </message>
     <message>
         <source>Forward</source>
-        <translation type="vanished">前进</translation>
+        <translation>前进</translation>
     </message>
     <message>
         <source>forward</source>
-        <translation type="vanished">前进</translation>
+        <translation>前进</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="vanished">重新加载</translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>reload</source>
-        <translation type="vanished">重新加载</translation>
+        <translation>重新加载</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="vanished">停止</translation>
+        <translation>停止</translation>
     </message>
     <message>
         <source>stop</source>
-        <translation type="vanished">停止</translation>
+        <translation>停止</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="vanished">主页</translation>
+        <translation>主页</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="vanished">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Enter address</source>
-        <translation type="vanished">输入地址</translation>
+        <translation>输入地址</translation>
     </message>
     <message>
         <source>Web</source>
-        <translation type="vanished">网页</translation>
+        <translation>网页</translation>
     </message>
     <message>
         <source>Web Browser</source>
-        <translation type="vanished">网页浏览器</translation>
+        <translation>网页浏览器</translation>
     </message>
 </context>
 <context>
     <name>Necto::WebPage</name>
     <message>
         <source>Certificate Error</source>
-        <translation type="vanished">证书错误</translation>
+        <translation>证书错误</translation>
     </message>
     <message>
         <source>Enter username and password for &quot;%1&quot; at %2</source>
-        <translation type="vanished">为 %2 上的“%1”输入用户名和密码</translation>
+        <translation>为 %2 上的“%1”输入用户名和密码</translation>
     </message>
     <message>
         <source>Allow %1 to access your location information?</source>
-        <translation type="vanished">允许 %1 访问您的位置信息吗？</translation>
+        <translation>允许 %1 访问您的位置信息吗？</translation>
     </message>
     <message>
         <source>Allow %1 to access your microphone?</source>
-        <translation type="vanished">允许 %1 访问您的麦克风吗？</translation>
+        <translation>允许 %1 访问您的麦克风吗？</translation>
     </message>
     <message>
         <source>Allow %1 to access your webcam?</source>
-        <translation type="vanished">允许 %1 访问您的摄像头吗？</translation>
+        <translation>允许 %1 访问您的摄像头吗？</translation>
     </message>
     <message>
         <source>Allow %1 to access your microphone and webcam?</source>
-        <translation type="vanished">允许 %1 访问您的麦克风和摄像头吗？</translation>
+        <translation>允许 %1 访问您的麦克风和摄像头吗？</translation>
     </message>
     <message>
         <source>Allow %1 to lock your mouse cursor?</source>
-        <translation type="vanished">允许 %1 锁定您的鼠标光标吗？</translation>
+        <translation>允许 %1 锁定您的鼠标光标吗？</translation>
     </message>
     <message>
         <source>Allow %1 to capture video of your desktop?</source>
-        <translation type="vanished">允许 %1 捕获桌面视频吗？</translation>
+        <translation>允许 %1 捕获桌面视频吗？</translation>
     </message>
     <message>
         <source>Allow %1 to capture audio and video of your desktop?</source>
-        <translation type="vanished">允许 %1 捕获桌面的音频和视频吗？</translation>
+        <translation>允许 %1 捕获桌面的音频和视频吗？</translation>
     </message>
     <message>
         <source>Permission Request</source>
-        <translation type="vanished">权限请求</translation>
+        <translation>权限请求</translation>
     </message>
     <message>
         <source>Connect to proxy &quot;%1&quot; using:</source>
-        <translation type="vanished">使用以下方式连接到代理“%1”：</translation>
+        <translation>使用以下方式连接到代理“%1”：</translation>
     </message>
     <message>
         <source>Allow %1 to open all %2 links?</source>
-        <translation type="vanished">允许 %1 打开所有 %2 链接吗？</translation>
+        <translation>允许 %1 打开所有 %2 链接吗？</translation>
     </message>
 </context>
 <context>
     <name>Necto::WebView</name>
     <message>
         <source>Render process normal exit</source>
-        <translation type="vanished">渲染进程正常退出</translation>
+        <translation>渲染进程正常退出</translation>
     </message>
     <message>
         <source>Render process abnormal exit</source>
-        <translation type="vanished">渲染进程异常退出</translation>
+        <translation>渲染进程异常退出</translation>
     </message>
     <message>
         <source>Render process crashed</source>
-        <translation type="vanished">渲染进程崩溃</translation>
+        <translation>渲染进程崩溃</translation>
     </message>
     <message>
         <source>Render process killed</source>
-        <translation type="vanished">渲染进程被终止</translation>
+        <translation>渲染进程被终止</translation>
     </message>
     <message>
         <source>Render process exited with code: %1
 Do you want to reload the page ?</source>
-        <translation type="vanished">渲染进程以代码 %1 退出
+        <translation>渲染进程以代码 %1 退出
 是否重新加载页面？</translation>
     </message>
 </context>
@@ -18958,142 +18958,142 @@ Do you want to reload the page ?</source>
     <name>Necto::WelcomePage</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
     <message>
         <source>Click to open the Package Manager - Explore the growing collection of MCUs updated daily.</source>
-        <translation type="vanished">点击打开包管理器 - 探索每日更新、不断增长的 MCU 集合。</translation>
+        <translation>点击打开包管理器 - 探索每日更新、不断增长的 MCU 集合。</translation>
     </message>
     <message>
         <source>-</source>
-        <translation type="vanished">-</translation>
+        <translation>-</translation>
     </message>
     <message>
         <source>SUPPORTED MCUs</source>
-        <translation type="vanished">支持的 MCU</translation>
+        <translation>支持的 MCU</translation>
     </message>
     <message>
         <source>Click to open the Package Manager - Explore the growing collection of libraries and examples updated daily.</source>
-        <translation type="vanished">点击打开包管理器 - 探索每日更新、不断增长的库和示例集合。</translation>
+        <translation>点击打开包管理器 - 探索每日更新、不断增长的库和示例集合。</translation>
     </message>
     <message>
         <source>LIBRARIES &amp; EXAMPLES</source>
-        <translation type="vanished">库和示例</translation>
+        <translation>库和示例</translation>
     </message>
     <message>
         <source>Click to open the Remote Board Farm- Unique tool for programming and real-time debugging powered by HD live camera stream.
  Program and debug remotely, from any place in the World.
  You are no longer limited by the hardware on your desk.</source>
-        <translation type="vanished">Click 到 打开 the 远程板卡农场- Unique tool 用于 编程 和 real-时间 debugging powered 由 HD live 摄像头 stream.
+        <translation>Click 到 打开 the 远程板卡农场- Unique tool 用于 编程 和 real-时间 debugging powered 由 HD live 摄像头 stream.
  Program 和 调试 remotely, 从 any place 在 the World.
  您 是 no longer limited 由 the hardware 在 您的 desk.</translation>
     </message>
     <message>
         <source>REMOTE BOARDS </source>
-        <translation type="vanished">远程开发板</translation>
+        <translation>远程开发板</translation>
     </message>
     <message>
         <source>Get started</source>
-        <translation type="vanished">开始使用</translation>
+        <translation>开始使用</translation>
     </message>
     <message>
         <source>Recent projects</source>
-        <translation type="vanished">最近项目</translation>
+        <translation>最近项目</translation>
     </message>
     <message>
         <source>Need help?</source>
-        <translation type="vanished">需要帮助？</translation>
+        <translation>需要帮助？</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation type="vanished">帮助</translation>
+        <translation>帮助</translation>
     </message>
     <message>
         <source>Tutorials</source>
-        <translation type="vanished">教程</translation>
+        <translation>教程</translation>
     </message>
     <message>
         <source>Support</source>
-        <translation type="vanished">支持</translation>
+        <translation>支持</translation>
     </message>
     <message>
         <source>Forum</source>
-        <translation type="vanished">论坛</translation>
+        <translation>论坛</translation>
     </message>
     <message>
         <source>Send feedback</source>
-        <translation type="vanished">发送反馈</translation>
+        <translation>发送反馈</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="vanished">主页</translation>
+        <translation>主页</translation>
     </message>
     <message>
         <source>New project</source>
-        <translation type="vanished">新建项目</translation>
+        <translation>新建项目</translation>
     </message>
     <message>
         <source>Create a new project using one of the setups.</source>
-        <translation type="vanished">使用某个设置创建新项目。</translation>
+        <translation>使用某个设置创建新项目。</translation>
     </message>
     <message>
         <source>Open project</source>
-        <translation type="vanished">打开项目</translation>
+        <translation>打开项目</translation>
     </message>
     <message>
         <source>Open an existing project and continue right where you left off.</source>
-        <translation type="vanished">打开现有项目，并从上次离开的地方继续。</translation>
+        <translation>打开现有项目，并从上次离开的地方继续。</translation>
     </message>
     <message>
         <source>Configurations</source>
-        <translation type="vanished">配置</translation>
+        <translation>配置</translation>
     </message>
     <message>
         <source>Configure hardware and software once and reuse it in multiple projects.</source>
-        <translation type="vanished">一次配置硬件和软件，并在多个项目中重复使用。</translation>
+        <translation>一次配置硬件和软件，并在多个项目中重复使用。</translation>
     </message>
     <message>
         <source>Productivity Hub</source>
-        <translation type="vanished">生产力中心</translation>
+        <translation>生产力中心</translation>
     </message>
     <message>
         <source>Quick access to most important tools to boost your productivity.</source>
-        <translation type="vanished">快速访问最重要的工具，提高您的工作效率。</translation>
+        <translation>快速访问最重要的工具，提高您的工作效率。</translation>
     </message>
     <message>
         <source>Package manager</source>
-        <translation type="vanished">包管理器</translation>
+        <translation>包管理器</translation>
     </message>
     <message>
         <source>Remote Board Farm</source>
-        <translation type="vanished">远程板卡农场</translation>
+        <translation>远程板卡农场</translation>
     </message>
     <message>
         <source>Library Manager</source>
-        <translation type="vanished">库管理器</translation>
+        <translation>库管理器</translation>
     </message>
     <message>
         <source>Debug view</source>
-        <translation type="vanished">调试视图</translation>
+        <translation>调试视图</translation>
     </message>
     <message>
         <source>Unavailable in offline mode</source>
-        <translation type="vanished">离线模式下不可用</translation>
+        <translation>离线模式下不可用</translation>
     </message>
 </context>
 <context>
     <name>Necto::WelcomePageButton</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
 </context>
 <context>
@@ -19108,7 +19108,7 @@ Do you want to reload the page ?</source>
     </message>
     <message>
         <source>Detach</source>
-        <translation type="vanished">分离</translation>
+        <translation>分离</translation>
     </message>
     <message>
         <source>...</source>
@@ -19123,111 +19123,111 @@ Do you want to reload the page ?</source>
     <name>Necto::XC16SettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
 </context>
 <context>
     <name>Necto::XC32SettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
 </context>
 <context>
     <name>Necto::XC8SettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">编译器设置</translation>
+        <translation>编译器设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
 </context>
 <context>
     <name>Necto::XCFieldView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="vanished">文本标签</translation>
+        <translation>文本标签</translation>
     </message>
 </context>
 <context>
     <name>Necto::XCMcuSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Configure MCU</source>
-        <translation type="vanished">配置 MCU</translation>
+        <translation>配置 MCU</translation>
     </message>
     <message>
         <source>Config scheme:</source>
-        <translation type="vanished">配置方案：</translation>
+        <translation>配置方案：</translation>
     </message>
     <message>
         <source>Clock:</source>
-        <translation type="vanished">时钟：</translation>
+        <translation>时钟：</translation>
     </message>
     <message>
         <source>MHz</source>
-        <translation type="vanished">MHz</translation>
+        <translation>MHz</translation>
     </message>
     <message>
         <source>MCU Settings</source>
-        <translation type="vanished">MCU 设置</translation>
+        <translation>MCU 设置</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Enter MCU clock</source>
-        <translation type="vanished">输入 MCU 时钟</translation>
+        <translation>输入 MCU 时钟</translation>
     </message>
     <message>
         <source>Configure %1:</source>
-        <translation type="vanished">配置 %1：</translation>
+        <translation>配置 %1：</translation>
     </message>
 </context>
 <context>

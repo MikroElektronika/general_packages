@@ -7734,151 +7734,151 @@ li.checked::marker { content: &quot;\2612&quot;; }
     <name>Necto::AboutDialog</name>
     <message>
         <source>About</source>
-        <translation type="vanished">Acerca de</translation>
+        <translation>Acerca de</translation>
     </message>
     <message>
         <source>&lt;b&gt;NECTO Studio&lt;/b&gt; is a complete, cross-platform integrated development environment (IDE) for embedded applications providing everything necessary to start developing, and prototyping, including Click board applications and GUIs for embedded devices.&lt;br&gt;&lt;br&gt;
 Rapid software development is easily achieved as developers do not need to consider low-level code, freeing them up to focus on the application code itself.&lt;br&gt;&lt;br&gt;
 This means that changing the MCU or even the whole platform will not require developers to redevelop their code for the new MCU or platform. They can simply switch to the desired platform, apply the correct board definition file, and the application code will continue to run after a single compilation.
 </source>
-        <translation type="vanished">&lt;b&gt;NECTO Studio&lt;/b&gt; es un entorno de desarrollo integrado (IDE) completo y multiplataforma para aplicaciones embebidas que proporciona todo lo necesario para empezar a desarrollar y crear prototipos, incluidas aplicaciones de placas Click e interfaces gráficas para dispositivos embebidos.&lt;br&gt;&lt;br&gt;
+        <translation>&lt;b&gt;NECTO Studio&lt;/b&gt; es un entorno de desarrollo integrado (IDE) completo y multiplataforma para aplicaciones embebidas que proporciona todo lo necesario para empezar a desarrollar y crear prototipos, incluidas aplicaciones de placas Click e interfaces gráficas para dispositivos embebidos.&lt;br&gt;&lt;br&gt;
 Se logra un desarrollo de software rápido fácilmente, ya que los desarrolladores no necesitan ocuparse del código de bajo nivel, lo que les permite centrarse en el propio código de la aplicación.&lt;br&gt;&lt;br&gt;
 Esto significa que cambiar el MCU o incluso toda la plataforma no obligará a los desarrolladores a reescribir su código para el nuevo MCU o plataforma. Pueden simplemente cambiar a la plataforma deseada, aplicar el archivo de definición de placa correcto, y el código de la aplicación seguirá funcionando tras una única compilación.
 </translation>
     </message>
     <message>
         <source>Third Party Licenses</source>
-        <translation type="vanished">Licencias de terceros</translation>
+        <translation>Licencias de terceros</translation>
     </message>
     <message>
         <source>© MikroElektronika. All rights reserved</source>
-        <translation type="vanished">© MikroElektronika. Todos los derechos reservados</translation>
+        <translation>© MikroElektronika. Todos los derechos reservados</translation>
     </message>
     <message>
         <source>The program is provided AS IS with NO WARRANTY OF ANY KIND.</source>
-        <translation type="vanished">El programa se proporciona TAL CUAL, SIN GARANTÍA DE NINGÚN TIPO.</translation>
+        <translation>El programa se proporciona TAL CUAL, SIN GARANTÍA DE NINGÚN TIPO.</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Cerrar</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <source>version </source>
-        <translation type="vanished">versión </translation>
+        <translation>versión </translation>
     </message>
     <message>
         <source>&lt;a href=&quot;%1&quot;&gt;Third Party Licenses&lt;/a&gt;</source>
-        <translation type="vanished">&lt;a href=&quot;%1&quot;&gt;Licencias de terceros&lt;/a&gt;</translation>
+        <translation>&lt;a href=&quot;%1&quot;&gt;Licencias de terceros&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
     <name>Necto::AboutForm</name>
     <message>
         <source>Development Team:</source>
-        <translation type="vanished">Equipo de desarrollo:</translation>
+        <translation>Equipo de desarrollo:</translation>
     </message>
     <message>
         <source>Credits:</source>
-        <translation type="vanished">Créditos:</translation>
+        <translation>Créditos:</translation>
     </message>
     <message>
         <source>WebSite:</source>
-        <translation type="vanished">Sitio web:</translation>
+        <translation>Sitio web:</translation>
     </message>
     <message>
         <source>Forum:</source>
-        <translation type="vanished">Foro:</translation>
+        <translation>Foro:</translation>
     </message>
     <message>
         <source>MIKROE Bootloader</source>
-        <translation type="vanished">Bootloader MIKROE</translation>
+        <translation>Bootloader MIKROE</translation>
     </message>
     <message>
         <source>Version: 1.0.0</source>
-        <translation type="vanished">Versión: 1.0.0</translation>
+        <translation>Versión: 1.0.0</translation>
     </message>
     <message>
         <source>Version: </source>
-        <translation type="vanished">Versión: </translation>
+        <translation>Versión: </translation>
     </message>
 </context>
 <context>
     <name>Necto::AddSetupListItem</name>
     <message>
         <source>Add new</source>
-        <translation type="vanished">Añadir nuevo</translation>
+        <translation>Añadir nuevo</translation>
     </message>
     <message>
         <source>Create New Configuration</source>
-        <translation type="vanished">Crear nueva configuración</translation>
+        <translation>Crear nueva configuración</translation>
     </message>
 </context>
 <context>
     <name>Necto::AiQa</name>
     <message>
         <source>NECTO Assistant</source>
-        <translation type="vanished">Asistente NECTO</translation>
+        <translation>Asistente NECTO</translation>
     </message>
 </context>
 <context>
     <name>Necto::AiQaView</name>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;NECTO Assistant module is detached. Click on the &amp;quot;Attach&amp;quot; button to bring it back here. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;El módulo del Asistente NECTO está desacoplado. Haga clic en el botón &amp;quot;Acoplar&amp;quot; para traerlo de vuelta aquí. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;El módulo del Asistente NECTO está desacoplado. Haga clic en el botón &amp;quot;Acoplar&amp;quot; para traerlo de vuelta aquí. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Open Visual Code Generator</source>
-        <translation type="vanished">Abrir el Generador visual de código</translation>
+        <translation>Abrir el Generador visual de código</translation>
     </message>
     <message>
         <source>Visual Code Generator</source>
-        <translation type="vanished">Generador visual de código</translation>
+        <translation>Generador visual de código</translation>
     </message>
     <message>
         <source>Detach in separate window</source>
-        <translation type="vanished">Desacoplar en una ventana separada</translation>
+        <translation>Desacoplar en una ventana separada</translation>
     </message>
     <message>
         <source>NECTO Assistant</source>
-        <translation type="vanished">Asistente NECTO</translation>
+        <translation>Asistente NECTO</translation>
     </message>
     <message>
         <source>Attach</source>
-        <translation type="vanished">Acoplar</translation>
+        <translation>Acoplar</translation>
     </message>
     <message>
         <source>Detach</source>
-        <translation type="vanished">Desacoplar</translation>
+        <translation>Desacoplar</translation>
     </message>
 </context>
 <context>
     <name>Necto::ApplicationUpdater</name>
     <message>
         <source>Close</source>
-        <translation type="vanished">Cerrar</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <source>Your NECTO Studio is up to date - NECTO Studio v%1</source>
-        <translation type="vanished">Su NECTO Studio está actualizado - NECTO Studio v%1</translation>
+        <translation>Su NECTO Studio está actualizado - NECTO Studio v%1</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="vanished">Sí</translation>
+        <translation>Sí</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="vanished">No</translation>
+        <translation>No</translation>
     </message>
     <message>
         <source>New NECTO Studio update is available.
 Do you want to update now?</source>
-        <translation type="vanished">Hay una nueva actualización de NECTO Studio disponible.
+        <translation>Hay una nueva actualización de NECTO Studio disponible.
 ¿Desea actualizar ahora?</translation>
     </message>
     <message>
         <source>New mikroSDK update is available.
 Do you want to update now?</source>
-        <translation type="vanished">Hay una nueva actualización de mikroSDK disponible.
+        <translation>Hay una nueva actualización de mikroSDK disponible.
 ¿Desea actualizar ahora?</translation>
     </message>
 </context>
@@ -7886,310 +7886,310 @@ Do you want to update now?</source>
     <name>Necto::AutoSaveDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">Diálogo</translation>
+        <translation>Diálogo</translation>
     </message>
     <message>
         <source>Save modified files</source>
-        <translation type="vanished">Guardar archivos modificados</translation>
+        <translation>Guardar archivos modificados</translation>
     </message>
     <message>
         <source>You can change this in settings.</source>
-        <translation type="vanished">Puede cambiar esto en los ajustes.</translation>
+        <translation>Puede cambiar esto en los ajustes.</translation>
     </message>
     <message>
         <source>Always save modified files</source>
-        <translation type="vanished">Guardar siempre los archivos modificados</translation>
+        <translation>Guardar siempre los archivos modificados</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Don&apos;t save</source>
-        <translation type="vanished">No guardar</translation>
+        <translation>No guardar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>Save all</source>
-        <translation type="vanished">Guardar todo</translation>
+        <translation>Guardar todo</translation>
     </message>
     <message>
         <source>Save selected</source>
-        <translation type="vanished">Guardar seleccionados</translation>
+        <translation>Guardar seleccionados</translation>
     </message>
 </context>
 <context>
     <name>Necto::AvailableBoardItem</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>S/N: %1</source>
-        <translation type="vanished">N/S: %1</translation>
+        <translation>N/S: %1</translation>
     </message>
     <message>
         <source>Ip address: %1</source>
-        <translation type="vanished">Dirección IP: %1</translation>
+        <translation>Dirección IP: %1</translation>
     </message>
 </context>
 <context>
     <name>Necto::BaseEditPage</name>
     <message>
         <source>Programmer options</source>
-        <translation type="vanished">Opciones del programador</translation>
+        <translation>Opciones del programador</translation>
     </message>
 </context>
 <context>
     <name>Necto::BasePage</name>
     <message>
         <source>Create New Configuration</source>
-        <translation type="vanished">Crear nueva configuración</translation>
+        <translation>Crear nueva configuración</translation>
     </message>
     <message>
         <source>Add new board</source>
-        <translation type="vanished">Añadir nueva placa</translation>
+        <translation>Añadir nueva placa</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">Siguiente</translation>
+        <translation>Siguiente</translation>
     </message>
     <message>
         <source>Reset Filters</source>
-        <translation type="vanished">Restablecer filtros</translation>
+        <translation>Restablecer filtros</translation>
     </message>
     <message>
         <source>Filters</source>
-        <translation type="vanished">Filtros</translation>
+        <translation>Filtros</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Close Filters</source>
-        <translation type="vanished">Cerrar filtros</translation>
+        <translation>Cerrar filtros</translation>
     </message>
     <message>
         <source>%1 %2 %3(s)</source>
-        <translation type="vanished">%1 %2 %3(s)</translation>
+        <translation>%1 %2 %3(s)</translation>
     </message>
     <message>
         <source>Found </source>
-        <translation type="vanished">Encontrados </translation>
+        <translation>Encontrados </translation>
     </message>
     <message>
         <source>Choose</source>
-        <translation type="vanished">Elegir</translation>
+        <translation>Elegir</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">Finalizar</translation>
+        <translation>Finalizar</translation>
     </message>
     <message>
         <source>Search for %1</source>
-        <translation type="vanished">Buscar %1</translation>
+        <translation>Buscar %1</translation>
     </message>
 </context>
 <context>
     <name>Necto::BoardItemView</name>
     <message>
         <source>icon</source>
-        <translation type="vanished">icono</translation>
+        <translation>icono</translation>
     </message>
     <message>
         <source>Free</source>
-        <translation type="vanished">Gratis</translation>
+        <translation>Gratis</translation>
     </message>
     <message>
         <source>Go</source>
-        <translation type="vanished">Ir</translation>
+        <translation>Ir</translation>
     </message>
     <message>
         <source>Reserve</source>
-        <translation type="vanished">Reservar</translation>
+        <translation>Reservar</translation>
     </message>
     <message>
         <source>Remove reservation</source>
-        <translation type="vanished">Quitar reserva</translation>
+        <translation>Quitar reserva</translation>
     </message>
     <message>
         <source>Remote board info</source>
-        <translation type="vanished">Información de la placa remota</translation>
+        <translation>Información de la placa remota</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;p&gt;Loading...&lt;/p&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;p&gt;Cargando...&lt;/p&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;p&gt;Cargando...&lt;/p&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>S/N: %1</source>
-        <translation type="vanished">N/S: %1</translation>
+        <translation>N/S: %1</translation>
     </message>
     <message>
         <source>Busy</source>
-        <translation type="vanished">Ocupado</translation>
+        <translation>Ocupado</translation>
     </message>
     <message>
         <source>Connect</source>
-        <translation type="vanished">Conectar</translation>
+        <translation>Conectar</translation>
     </message>
 </context>
 <context>
     <name>Necto::BoardWizardPage</name>
     <message>
         <source>Choose a board</source>
-        <translation type="vanished">Elegir una placa</translation>
+        <translation>Elegir una placa</translation>
     </message>
     <message>
         <source> Vendor</source>
-        <translation type="vanished"> Fabricante</translation>
+        <translation> Fabricante</translation>
     </message>
     <message>
         <source> Category</source>
-        <translation type="vanished"> Categoría</translation>
+        <translation> Categoría</translation>
     </message>
     <message>
         <source> Display</source>
-        <translation type="vanished"> Pantalla</translation>
+        <translation> Pantalla</translation>
     </message>
     <message>
         <source> MikroBUS count</source>
-        <translation type="vanished"> Cantidad de mikroBUS</translation>
+        <translation> Cantidad de mikroBUS</translation>
     </message>
 </context>
 <context>
     <name>Necto::BootloaderForm</name>
     <message>
         <source>Please restart your device to start the upload process...</source>
-        <translation type="vanished">Reinicie su dispositivo para iniciar el proceso de subida...</translation>
+        <translation>Reinicie su dispositivo para iniciar el proceso de subida...</translation>
     </message>
     <message>
         <source>Upload</source>
-        <translation type="vanished">Subir</translation>
+        <translation>Subir</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Uploading </source>
-        <translation type="vanished">Subiendo </translation>
+        <translation>Subiendo </translation>
     </message>
     <message>
         <source>Successfully uploaded your *.HEX file. 
 Please restart your device to start program...</source>
-        <translation type="vanished">Su archivo *.HEX se subió correctamente. 
+        <translation>Su archivo *.HEX se subió correctamente. 
 Reinicie su dispositivo para iniciar el programa...</translation>
     </message>
     <message>
         <source>Upload failed. </source>
-        <translation type="vanished">Error al subir. </translation>
+        <translation>Error al subir. </translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation type="vanished">Error: </translation>
+        <translation>Error: </translation>
     </message>
 </context>
 <context>
     <name>Necto::BootloaderMainWindow</name>
     <message>
         <source>MikroElektronika Bootloader Tool</source>
-        <translation type="vanished">Herramienta de bootloader de MikroElektronika</translation>
+        <translation>Herramienta de bootloader de MikroElektronika</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation type="vanished">Opciones</translation>
+        <translation>Opciones</translation>
     </message>
     <message>
         <source>Bootloader settings</source>
-        <translation type="vanished">Ajustes del bootloader</translation>
+        <translation>Ajustes del bootloader</translation>
     </message>
     <message>
         <source>UART bootloader</source>
-        <translation type="vanished">Bootloader UART</translation>
+        <translation>Bootloader UART</translation>
     </message>
 </context>
 <context>
     <name>Necto::BootloaderWidgetItem</name>
     <message>
         <source>Bootloader</source>
-        <translation type="vanished">Bootloader</translation>
+        <translation>Bootloader</translation>
     </message>
     <message>
         <source>Bootloader description.</source>
-        <translation type="vanished">Descripción del bootloader.</translation>
+        <translation>Descripción del bootloader.</translation>
     </message>
 </context>
 <context>
     <name>Necto::BreakPointsViewModel</name>
     <message>
         <source>Enabled</source>
-        <translation type="vanished">Habilitado</translation>
+        <translation>Habilitado</translation>
     </message>
     <message>
         <source>Disabled</source>
-        <translation type="vanished">Deshabilitado</translation>
+        <translation>Deshabilitado</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="vanished">Archivo</translation>
+        <translation>Archivo</translation>
     </message>
     <message>
         <source>Line</source>
-        <translation type="vanished">Línea</translation>
+        <translation>Línea</translation>
     </message>
 </context>
 <context>
     <name>Necto::BreakpointManager</name>
     <message>
         <source>DAP Server does not support instruction breakpoints. Setting breakpoints in dissasembly mode will not work.</source>
-        <translation type="vanished">El servidor DAP no admite puntos de interrupción por instrucción. Establecerlos en modo desensamblado no funcionará.</translation>
+        <translation>El servidor DAP no admite puntos de interrupción por instrucción. Establecerlos en modo desensamblado no funcionará.</translation>
     </message>
 </context>
 <context>
     <name>Necto::BuildSdkDialog</name>
     <message>
         <source>Building SDK</source>
-        <translation type="vanished">Compilando SDK</translation>
+        <translation>Compilando SDK</translation>
     </message>
     <message>
         <source>Show build log</source>
-        <translation type="vanished">Mostrar registro de compilación</translation>
+        <translation>Mostrar registro de compilación</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Cerrar</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <source>Setting up MCU...</source>
-        <translation type="vanished">Configurando MCU...</translation>
+        <translation>Configurando MCU...</translation>
     </message>
     <message>
         <source>Initializing CODEGRIP...</source>
-        <translation type="vanished">Inicializando CODEGRIP...</translation>
+        <translation>Inicializando CODEGRIP...</translation>
     </message>
     <message>
         <source>Building SDK...</source>
-        <translation type="vanished">Compilando SDK...</translation>
+        <translation>Compilando SDK...</translation>
     </message>
     <message>
         <source>Preparing board definitions...</source>
-        <translation type="vanished">Preparando definiciones de placa...</translation>
+        <translation>Preparando definiciones de placa...</translation>
     </message>
     <message>
         <source>The mikroSDK build did not complete successfully. Check the build log for details.</source>
-        <translation type="vanished">La compilación de mikroSDK no se completó correctamente. Revise el registro de compilación.</translation>
+        <translation>La compilación de mikroSDK no se completó correctamente. Revise el registro de compilación.</translation>
     </message>
     <message>
         <source>Build failed</source>
-        <translation type="vanished">Compilación fallida</translation>
+        <translation>Compilación fallida</translation>
     </message>
 </context>
 <context>
@@ -8197,157 +8197,157 @@ Reinicie su dispositivo para iniciar el programa...</translation>
     <message>
         <source>Build system
  settings</source>
-        <translation type="vanished">Ajustes del sistema
+        <translation>Ajustes del sistema
  de compilación</translation>
     </message>
     <message>
         <source>Active target:</source>
-        <translation type="vanished">Destino activo:</translation>
+        <translation>Destino activo:</translation>
     </message>
     <message>
         <source>Build output path:</source>
-        <translation type="vanished">Ruta de salida de compilación:</translation>
+        <translation>Ruta de salida de compilación:</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation type="vanished">Examinar</translation>
+        <translation>Examinar</translation>
     </message>
     <message>
         <source>Cache entries:</source>
-        <translation type="vanished">Entradas de caché:</translation>
+        <translation>Entradas de caché:</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">Añadir</translation>
+        <translation>Añadir</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">Quitar</translation>
+        <translation>Quitar</translation>
     </message>
     <message>
         <source>Steps:</source>
-        <translation type="vanished">Pasos:</translation>
+        <translation>Pasos:</translation>
     </message>
     <message>
         <source>CMake Settings</source>
-        <translation type="vanished">Ajustes de CMake</translation>
+        <translation>Ajustes de CMake</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation type="vanished">Ruta</translation>
+        <translation>Ruta</translation>
     </message>
     <message>
         <source>Key</source>
-        <translation type="vanished">Clave</translation>
+        <translation>Clave</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="vanished">Valor</translation>
+        <translation>Valor</translation>
     </message>
     <message>
         <source>Build step</source>
-        <translation type="vanished">Paso de compilación</translation>
+        <translation>Paso de compilación</translation>
     </message>
     <message>
         <source>Install step</source>
-        <translation type="vanished">Paso de instalación</translation>
+        <translation>Paso de instalación</translation>
     </message>
     <message>
         <source>Custom step</source>
-        <translation type="vanished">Paso personalizado</translation>
+        <translation>Paso personalizado</translation>
     </message>
     <message>
         <source>Build</source>
-        <translation type="vanished">Compilar</translation>
+        <translation>Compilar</translation>
     </message>
     <message>
         <source>Clean step</source>
-        <translation type="vanished">Paso de limpieza</translation>
+        <translation>Paso de limpieza</translation>
     </message>
     <message>
         <source>Clean</source>
-        <translation type="vanished">Limpiar</translation>
+        <translation>Limpiar</translation>
     </message>
     <message>
         <source>Browse for output path</source>
-        <translation type="vanished">Examinar ruta de salida</translation>
+        <translation>Examinar ruta de salida</translation>
     </message>
 </context>
 <context>
     <name>Necto::CMakeStepContainerFrame</name>
     <message>
         <source>Build Steps:</source>
-        <translation type="vanished">Pasos de compilación:</translation>
+        <translation>Pasos de compilación:</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">Añadir</translation>
+        <translation>Añadir</translation>
     </message>
 </context>
 <context>
     <name>Necto::CMakeStepFrame</name>
     <message>
         <source>Command</source>
-        <translation type="vanished">Comando</translation>
+        <translation>Comando</translation>
     </message>
     <message>
         <source>Arguments</source>
-        <translation type="vanished">Argumentos</translation>
+        <translation>Argumentos</translation>
     </message>
 </context>
 <context>
     <name>Necto::CallStackViewModel</name>
     <message>
         <source>Level</source>
-        <translation type="vanished">Nivel</translation>
+        <translation>Nivel</translation>
     </message>
     <message>
         <source>Function</source>
-        <translation type="vanished">Función</translation>
+        <translation>Función</translation>
     </message>
     <message>
         <source>Line</source>
-        <translation type="vanished">Línea</translation>
+        <translation>Línea</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="vanished">Archivo</translation>
+        <translation>Archivo</translation>
     </message>
 </context>
 <context>
     <name>Necto::CameraView</name>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;The camera view is detached. Close the detached window to bring it back here.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;La vista de la cámara está desacoplada. Cierre la ventana desacoplada para traerla de vuelta aquí.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;La vista de la cámara está desacoplada. Cierre la ventana desacoplada para traerla de vuelta aquí.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
     <name>Necto::CertificateErrorDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">Diálogo</translation>
+        <translation>Diálogo</translation>
     </message>
     <message>
         <source>Icon</source>
-        <translation type="vanished">Icono</translation>
+        <translation>Icono</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">Error</translation>
+        <translation>Error</translation>
     </message>
     <message>
         <source>If you wish so, you may continue with an unverified certificate. Accepting an unverified certificate mean you may not be connected with the host you tried to connect to.
 
 Do you wish to override the security check and continue ?   </source>
-        <translation type="vanished">Si lo desea, puede continuar con un certificado no verificado. Aceptar un certificado no verificado significa que podría no estar conectado con el host al que intentó conectarse.
+        <translation>Si lo desea, puede continuar con un certificado no verificado. Aceptar un certificado no verificado significa que podría no estar conectado con el host al que intentó conectarse.
 
 ¿Desea anular la comprobación de seguridad y continuar?   </translation>
     </message>
@@ -8356,605 +8356,605 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::ChartOptions</name>
     <message>
         <source>Data source</source>
-        <translation type="vanished">Origen de datos</translation>
+        <translation>Origen de datos</translation>
     </message>
     <message>
         <source>Data Source %1</source>
-        <translation type="vanished">Origen de datos %1</translation>
+        <translation>Origen de datos %1</translation>
     </message>
     <message>
         <source>Source Name:</source>
-        <translation type="vanished">Nombre de fuente:</translation>
+        <translation>Nombre de fuente:</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChartOptionsDialog</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Add Chart</source>
-        <translation type="vanished">Añadir gráfico</translation>
+        <translation>Añadir gráfico</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Tipo</translation>
+        <translation>Tipo</translation>
     </message>
     <message>
         <source>Units</source>
-        <translation type="vanished">Unidades</translation>
+        <translation>Unidades</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Nombre</translation>
+        <translation>Nombre</translation>
     </message>
     <message>
         <source>Create separate charts</source>
-        <translation type="vanished">Crear gráficos separados</translation>
+        <translation>Crear gráficos separados</translation>
     </message>
     <message>
         <source>Chart options</source>
-        <translation type="vanished">Opciones de gráfico</translation>
+        <translation>Opciones de gráfico</translation>
     </message>
     <message>
         <source>Line</source>
-        <translation type="vanished">Línea</translation>
+        <translation>Línea</translation>
     </message>
     <message>
         <source>Spline</source>
-        <translation type="vanished">Spline</translation>
+        <translation>Spline</translation>
     </message>
     <message>
         <source>Area</source>
-        <translation type="vanished">Área</translation>
+        <translation>Área</translation>
     </message>
     <message>
         <source>Scatter</source>
-        <translation type="vanished">Dispersión</translation>
+        <translation>Dispersión</translation>
     </message>
     <message>
         <source>Bar</source>
-        <translation type="vanished">Barras</translation>
+        <translation>Barras</translation>
     </message>
     <message>
         <source>Pie</source>
-        <translation type="vanished">Circular</translation>
+        <translation>Circular</translation>
     </message>
     <message>
         <source>Y-axis:</source>
-        <translation type="vanished">Eje Y:</translation>
+        <translation>Eje Y:</translation>
     </message>
     <message>
         <source>Enter chart name</source>
-        <translation type="vanished">Introducir nombre del gráfico</translation>
+        <translation>Introducir nombre del gráfico</translation>
     </message>
     <message>
         <source>My Chart:</source>
-        <translation type="vanished">Mi gráfico:</translation>
+        <translation>Mi gráfico:</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="vanished">Hecho</translation>
+        <translation>Hecho</translation>
     </message>
     <message>
         <source>%1 Options</source>
-        <translation type="vanished">%1 Opciones</translation>
+        <translation>%1 Opciones</translation>
     </message>
 </context>
 <context>
     <name>Necto::CheckForLicenseFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Checking for license...</source>
-        <translation type="vanished">Comprobando licencia...</translation>
+        <translation>Comprobando licencia...</translation>
     </message>
     <message>
         <source>Choose your license type:</source>
-        <translation type="vanished">Elija su tipo de licencia:</translation>
+        <translation>Elija su tipo de licencia:</translation>
     </message>
     <message>
         <source>Check for license</source>
-        <translation type="vanished">Comprobar licencia</translation>
+        <translation>Comprobar licencia</translation>
     </message>
     <message>
         <source>Check if your license is ready! </source>
-        <translation type="vanished">¡Compruebe si su licencia está lista! </translation>
+        <translation>¡Compruebe si su licencia está lista! </translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseBootloaderForm</name>
     <message>
         <source>Please choose bootloader type:</source>
-        <translation type="vanished">Elija el tipo de bootloader:</translation>
+        <translation>Elija el tipo de bootloader:</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseClickPage</name>
     <message>
         <source>NECTO Assistant</source>
-        <translation type="vanished">Asistente NECTO</translation>
+        <translation>Asistente NECTO</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">Siguiente</translation>
+        <translation>Siguiente</translation>
     </message>
     <message>
         <source>Assign Click boards </source>
-        <translation type="vanished">Asignar placas Click </translation>
+        <translation>Asignar placas Click </translation>
     </message>
     <message>
         <source>Based on Click board selection, the NECTO Assistant generates code</source>
-        <translation type="vanished">Según la placa Click seleccionada, el Asistente NECTO genera código</translation>
+        <translation>Según la placa Click seleccionada, el Asistente NECTO genera código</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseClicksDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">Diálogo</translation>
+        <translation>Diálogo</translation>
     </message>
     <message>
         <source>NECTO Assitant</source>
-        <translation type="vanished">Asistente NECTO</translation>
+        <translation>Asistente NECTO</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation type="vanished">Seleccionar</translation>
+        <translation>Seleccionar</translation>
     </message>
     <message>
         <source>Select a Click board to be used on this slot for code generation.</source>
-        <translation type="vanished">Seleccione una placa Click para usar en esta ranura para la generación de código.</translation>
+        <translation>Seleccione una placa Click para usar en esta ranura para la generación de código.</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation type="vanished">Cantidad</translation>
+        <translation>Cantidad</translation>
     </message>
     <message>
         <source>Reset Filter</source>
-        <translation type="vanished">Restablecer filtro</translation>
+        <translation>Restablecer filtro</translation>
     </message>
     <message>
         <source>Filters</source>
-        <translation type="vanished">Filtros</translation>
+        <translation>Filtros</translation>
     </message>
     <message>
         <source>Found</source>
-        <translation type="vanished">Encontrados</translation>
+        <translation>Encontrados</translation>
     </message>
     <message>
         <source>Search for</source>
-        <translation type="vanished">Buscar</translation>
+        <translation>Buscar</translation>
     </message>
     <message>
         <source>%1 %2 click(s)</source>
-        <translation type="vanished">%1 %2 click(s)</translation>
+        <translation>%1 %2 click(s)</translation>
     </message>
     <message>
         <source>Open filters</source>
-        <translation type="vanished">Abrir filtros</translation>
+        <translation>Abrir filtros</translation>
     </message>
     <message>
         <source>Close Filters</source>
-        <translation type="vanished">Cerrar filtros</translation>
+        <translation>Cerrar filtros</translation>
     </message>
     <message>
         <source>Close filters</source>
-        <translation type="vanished">Cerrar filtros</translation>
+        <translation>Cerrar filtros</translation>
     </message>
     <message>
         <source>Search click boards</source>
-        <translation type="vanished">Buscar placas Click</translation>
+        <translation>Buscar placas Click</translation>
     </message>
     <message>
         <source>Reset all filters</source>
-        <translation type="vanished">Restablecer todos los filtros</translation>
+        <translation>Restablecer todos los filtros</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseCompilersPage</name>
     <message>
         <source>Search for compilers</source>
-        <translation type="vanished">Buscar compiladores</translation>
+        <translation>Buscar compiladores</translation>
     </message>
     <message>
         <source>Can not find compiler you have searched for</source>
-        <translation type="vanished">No se encuentra el compilador que ha buscado</translation>
+        <translation>No se encuentra el compilador que ha buscado</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseLicenseDialog</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Choose your license type:</source>
-        <translation type="vanished">Elija su tipo de licencia:</translation>
+        <translation>Elija su tipo de licencia:</translation>
     </message>
     <message>
         <source>Your subscription has expired. In order to continue using NECTO please:</source>
-        <translation type="vanished">Su suscripción ha expirado. Para seguir usando NECTO:</translation>
+        <translation>Su suscripción ha expirado. Para seguir usando NECTO:</translation>
     </message>
     <message>
         <source>Offline</source>
-        <translation type="vanished">Sin conexión</translation>
+        <translation>Sin conexión</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseLicenseFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Free</source>
-        <translation type="vanished">Gratis</translation>
+        <translation>Gratis</translation>
     </message>
     <message>
         <source>License used for non-commercial applications</source>
-        <translation type="vanished">Licencia para aplicaciones no comerciales</translation>
+        <translation>Licencia para aplicaciones no comerciales</translation>
     </message>
     <message>
         <source>Subscription</source>
-        <translation type="vanished">Suscripción</translation>
+        <translation>Suscripción</translation>
     </message>
     <message>
         <source>License used for commercial applications</source>
-        <translation type="vanished">Licencia para aplicaciones comerciales</translation>
+        <translation>Licencia para aplicaciones comerciales</translation>
     </message>
     <message>
         <source>There is no internet access. Please try again later.</source>
-        <translation type="vanished">No hay acceso a internet. Inténtelo más tarde.</translation>
+        <translation>No hay acceso a internet. Inténtelo más tarde.</translation>
     </message>
     <message>
         <source>Free license terms and agreement</source>
-        <translation type="vanished">Términos y condiciones de la licencia gratuita</translation>
+        <translation>Términos y condiciones de la licencia gratuita</translation>
     </message>
     <message>
         <source>Subscription license terms and agreement</source>
-        <translation type="vanished">Términos y condiciones de la licencia por suscripción</translation>
+        <translation>Términos y condiciones de la licencia por suscripción</translation>
     </message>
     <message>
         <source>Switch to free license</source>
-        <translation type="vanished">Cambiar a licencia gratuita</translation>
+        <translation>Cambiar a licencia gratuita</translation>
     </message>
     <message>
         <source>Renew subscription</source>
-        <translation type="vanished">Renovar suscripción</translation>
+        <translation>Renovar suscripción</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseOutputPage</name>
     <message>
         <source>NECTO Assistant</source>
-        <translation type="vanished">Asistente NECTO</translation>
+        <translation>Asistente NECTO</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">Siguiente</translation>
+        <translation>Siguiente</translation>
     </message>
     <message>
         <source>Choose output</source>
-        <translation type="vanished">Elegir salida</translation>
+        <translation>Elegir salida</translation>
     </message>
     <message>
         <source>The selected output defines how the NECTO Assistant generates code</source>
-        <translation type="vanished">La salida seleccionada define cómo el Asistente NECTO genera el código</translation>
+        <translation>La salida seleccionada define cómo el Asistente NECTO genera el código</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseProgPage</name>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">Finalizar</translation>
+        <translation>Finalizar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>Search Programmers</source>
-        <translation type="vanished">Buscar programadores</translation>
+        <translation>Buscar programadores</translation>
     </message>
     <message>
         <source>Can not find programmer you have searched for</source>
-        <translation type="vanished">No se encuentra el programador que ha buscado</translation>
+        <translation>No se encuentra el programador que ha buscado</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChoosePromptPage</name>
     <message>
         <source>NECTO Assistant</source>
-        <translation type="vanished">Asistente NECTO</translation>
+        <translation>Asistente NECTO</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">Finalizar</translation>
+        <translation>Finalizar</translation>
     </message>
     <message>
         <source>Choose prompt</source>
-        <translation type="vanished">Elegir indicación</translation>
+        <translation>Elegir indicación</translation>
     </message>
     <message>
         <source>Select how NECTO Assistant should deliver your result</source>
-        <translation type="vanished">Elija cómo debe entregar el resultado el Asistente NECTO</translation>
+        <translation>Elija cómo debe entregar el resultado el Asistente NECTO</translation>
     </message>
     <message>
         <source>Create and Configure Project</source>
-        <translation type="vanished">Crear y configurar proyecto</translation>
+        <translation>Crear y configurar proyecto</translation>
     </message>
     <message>
         <source>Automatically create a new project, install necessary packages, and include necessary libraries</source>
-        <translation type="vanished">Crear automáticamente un nuevo proyecto, instalar los paquetes necesarios e incluir las bibliotecas necesarias</translation>
+        <translation>Crear automáticamente un nuevo proyecto, instalar los paquetes necesarios e incluir las bibliotecas necesarias</translation>
     </message>
     <message>
         <source>Code Only</source>
-        <translation type="vanished">Solo código</translation>
+        <translation>Solo código</translation>
     </message>
     <message>
         <source>Just generate the code and skip the project creation and package setup</source>
-        <translation type="vanished">Solo generar el código y omitir la creación del proyecto y la configuración del paquete</translation>
+        <translation>Solo generar el código y omitir la creación del proyecto y la configuración del paquete</translation>
     </message>
 </context>
 <context>
     <name>Necto::ChooseSetupPage</name>
     <message>
         <source>NECTO Assistant</source>
-        <translation type="vanished">Asistente NECTO</translation>
+        <translation>Asistente NECTO</translation>
     </message>
     <message>
         <source>New</source>
-        <translation type="vanished">Nuevo</translation>
+        <translation>Nuevo</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">Siguiente</translation>
+        <translation>Siguiente</translation>
     </message>
     <message>
         <source>Select configuration</source>
-        <translation type="vanished">Seleccionar configuración</translation>
+        <translation>Seleccionar configuración</translation>
     </message>
     <message>
         <source>The Visual Code Generator uses the selected configuration to define the starting point for code generation.</source>
-        <translation type="vanished">El Generador visual de código usa la configuración seleccionada para definir el punto de partida de la generación de código.</translation>
+        <translation>El Generador visual de código usa la configuración seleccionada para definir el punto de partida de la generación de código.</translation>
     </message>
 </context>
 <context>
     <name>Necto::ClangRISCVSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">Ajustes del compilador </translation>
+        <translation>Ajustes del compilador </translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation type="vanished">Depurador</translation>
+        <translation>Depurador</translation>
     </message>
     <message>
         <source>Change your program&apos;s debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
-        <translation type="vanished">Cambie el depurador de su programa de LLDB a GDB o viceversa, según sus requisitos específicos.</translation>
+        <translation>Cambie el depurador de su programa de LLDB a GDB o viceversa, según sus requisitos específicos.</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">Ajustes del compilador</translation>
+        <translation>Ajustes del compilador</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
 </context>
 <context>
     <name>Necto::ClangSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">Ajustes del compilador </translation>
+        <translation>Ajustes del compilador </translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation type="vanished">Depurador</translation>
+        <translation>Depurador</translation>
     </message>
     <message>
         <source>Change your program&apos;s debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
-        <translation type="vanished">Cambie el depurador de su programa de LLDB a GDB o viceversa, según sus requisitos específicos.</translation>
+        <translation>Cambie el depurador de su programa de LLDB a GDB o viceversa, según sus requisitos específicos.</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">Ajustes del compilador</translation>
+        <translation>Ajustes del compilador</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
 </context>
 <context>
     <name>Necto::ClickItem</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Caption</source>
-        <translation type="vanished">Título</translation>
+        <translation>Título</translation>
     </message>
     <message>
         <source>Desc</source>
-        <translation type="vanished">Desc</translation>
+        <translation>Desc</translation>
     </message>
 </context>
 <context>
     <name>Necto::CloudChartManagerView</name>
     <message>
         <source>Search for values</source>
-        <translation type="vanished">Buscar valores</translation>
+        <translation>Buscar valores</translation>
     </message>
     <message>
         <source>Search table</source>
-        <translation type="vanished">Buscar en tabla</translation>
+        <translation>Buscar en tabla</translation>
     </message>
     <message>
         <source>Erase table</source>
-        <translation type="vanished">Borrar tabla</translation>
+        <translation>Borrar tabla</translation>
     </message>
     <message>
         <source>Switch to chart view</source>
-        <translation type="vanished">Cambiar a vista de gráfico</translation>
+        <translation>Cambiar a vista de gráfico</translation>
     </message>
     <message>
         <source>Add new chart</source>
-        <translation type="vanished">Añadir nuevo gráfico</translation>
+        <translation>Añadir nuevo gráfico</translation>
     </message>
     <message>
         <source>Switch to table view</source>
-        <translation type="vanished">Cambiar a vista de tabla</translation>
+        <translation>Cambiar a vista de tabla</translation>
     </message>
     <message>
         <source>Show all plot sources in one chart</source>
-        <translation type="vanished">Mostrar todas las fuentes de trazado en un gráfico</translation>
+        <translation>Mostrar todas las fuentes de trazado en un gráfico</translation>
     </message>
     <message>
         <source>Show each plot source in a separate chart</source>
-        <translation type="vanished">Mostrar cada fuente de trazado en un gráfico separado</translation>
+        <translation>Mostrar cada fuente de trazado en un gráfico separado</translation>
     </message>
 </context>
 <context>
     <name>Necto::CloudChartNumeralDataView</name>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Plot Functionality Guide&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Step 1: &lt;/span&gt;Call the Plot Function in your code. &lt;/p&gt;&lt;p&gt;Example: &lt;span style=&quot; font-weight:700;&quot;&gt;plot(&amp;quot;Temperature&amp;quot;, tempVal); &lt;/span&gt;&lt;/p&gt;&lt;p&gt;First paramteter: graph label (string)&lt;br/&gt;Second parameter: variable you want to visualize &lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Step 2: &lt;/span&gt;Run the debugger &lt;/p&gt;&lt;p&gt;Wait until at least two values are captured. &lt;br/&gt;The graph will appear automatically. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Guía de la funcionalidad de gráficos&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Paso 1: &lt;/span&gt;Llame a la función de gráfico en su código. &lt;/p&gt;&lt;p&gt;Ejemplo: &lt;span style=&quot; font-weight:700;&quot;&gt;plot(&amp;quot;Temperature&amp;quot;, tempVal); &lt;/span&gt;&lt;/p&gt;&lt;p&gt;Primer parámetro: etiqueta del gráfico (cadena)&lt;br/&gt;Segundo parámetro: variable que desea visualizar &lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Paso 2: &lt;/span&gt;Ejecute el depurador &lt;/p&gt;&lt;p&gt;Espere hasta que se capturen al menos dos valores. &lt;br/&gt;El gráfico aparecerá automáticamente. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Guía de la funcionalidad de gráficos&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Paso 1: &lt;/span&gt;Llame a la función de gráfico en su código. &lt;/p&gt;&lt;p&gt;Ejemplo: &lt;span style=&quot; font-weight:700;&quot;&gt;plot(&amp;quot;Temperature&amp;quot;, tempVal); &lt;/span&gt;&lt;/p&gt;&lt;p&gt;Primer parámetro: etiqueta del gráfico (cadena)&lt;br/&gt;Segundo parámetro: variable que desea visualizar &lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Paso 2: &lt;/span&gt;Ejecute el depurador &lt;/p&gt;&lt;p&gt;Espere hasta que se capturen al menos dos valores. &lt;br/&gt;El gráfico aparecerá automáticamente. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Create chart from selected</source>
-        <translation type="vanished">Crear gráfico a partir de lo seleccionado</translation>
+        <translation>Crear gráfico a partir de lo seleccionado</translation>
     </message>
     <message>
         <source>Export selected items to CSV</source>
-        <translation type="vanished">Exportar elementos seleccionados a CSV</translation>
+        <translation>Exportar elementos seleccionados a CSV</translation>
     </message>
     <message>
         <source>Export table to CSV</source>
-        <translation type="vanished">Exportar tabla a CSV</translation>
+        <translation>Exportar tabla a CSV</translation>
     </message>
     <message>
         <source>Remove column &quot;%1&quot;</source>
-        <translation type="vanished">Quitar columna &quot;%1&quot;</translation>
+        <translation>Quitar columna &quot;%1&quot;</translation>
     </message>
     <message>
         <source>Clear table</source>
-        <translation type="vanished">Borrar tabla</translation>
+        <translation>Borrar tabla</translation>
     </message>
     <message>
         <source>Save CSV File</source>
-        <translation type="vanished">Guardar archivo CSV</translation>
+        <translation>Guardar archivo CSV</translation>
     </message>
     <message>
         <source>Line Chart</source>
-        <translation type="vanished">Gráfico de líneas</translation>
+        <translation>Gráfico de líneas</translation>
     </message>
     <message>
         <source>Spline Chart</source>
-        <translation type="vanished">Gráfico spline</translation>
+        <translation>Gráfico spline</translation>
     </message>
     <message>
         <source>Area Chart</source>
-        <translation type="vanished">Gráfico de área</translation>
+        <translation>Gráfico de área</translation>
     </message>
     <message>
         <source>Scatter Chart</source>
-        <translation type="vanished">Gráfico de dispersión</translation>
+        <translation>Gráfico de dispersión</translation>
     </message>
     <message>
         <source>Bar Chart</source>
-        <translation type="vanished">Gráfico de barras</translation>
+        <translation>Gráfico de barras</translation>
     </message>
     <message>
         <source>Pie Chart</source>
-        <translation type="vanished">Gráfico circular</translation>
+        <translation>Gráfico circular</translation>
     </message>
     <message>
         <source>Pie Chart can only contain one value per column.</source>
-        <translation type="vanished">El gráfico circular solo puede contener un valor por columna.</translation>
+        <translation>El gráfico circular solo puede contener un valor por columna.</translation>
     </message>
 </context>
 <context>
     <name>Necto::CloudChartView</name>
     <message>
         <source>Close Chart View</source>
-        <translation type="vanished">Cerrar vista de gráfico</translation>
+        <translation>Cerrar vista de gráfico</translation>
     </message>
     <message>
         <source>Detach Chart View</source>
-        <translation type="vanished">Desacoplar vista de gráfico</translation>
+        <translation>Desacoplar vista de gráfico</translation>
     </message>
     <message>
         <source>Reset Chart View</source>
-        <translation type="vanished">Restablecer vista de gráfico</translation>
+        <translation>Restablecer vista de gráfico</translation>
     </message>
     <message>
         <source>Edit Chart Settings</source>
-        <translation type="vanished">Editar ajustes del gráfico</translation>
+        <translation>Editar ajustes del gráfico</translation>
     </message>
     <message>
         <source>Time (s)</source>
@@ -8962,22 +8962,22 @@ Do you wish to override the security check and continue ?   </source>
     </message>
     <message>
         <source>Attach Chart View</source>
-        <translation type="vanished">Acoplar vista de gráfico</translation>
+        <translation>Acoplar vista de gráfico</translation>
     </message>
 </context>
 <context>
     <name>Necto::CmakeBuildSystem</name>
     <message>
         <source>Building...</source>
-        <translation type="vanished">Compilando...</translation>
+        <translation>Compilando...</translation>
     </message>
     <message>
         <source>Cleaning...</source>
-        <translation type="vanished">Limpiando...</translation>
+        <translation>Limpiando...</translation>
     </message>
     <message>
         <source>No target</source>
-        <translation type="vanished">Sin destino</translation>
+        <translation>Sin destino</translation>
     </message>
 </context>
 <context>
@@ -8992,1362 +8992,1362 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::CodegripOptionsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
 </context>
 <context>
     <name>Necto::CodegripRangeOptionsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
 </context>
 <context>
     <name>Necto::CodegripScanOptions</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>    WiFi options       </source>
-        <translation type="vanished">    Opciones de WiFi       </translation>
+        <translation>    Opciones de WiFi       </translation>
     </message>
     <message>
         <source>Address:</source>
-        <translation type="vanished">Dirección:</translation>
+        <translation>Dirección:</translation>
     </message>
     <message>
         <source>Scan port:</source>
-        <translation type="vanished">Escanear puerto:</translation>
+        <translation>Escanear puerto:</translation>
     </message>
     <message>
         <source>Communication port:</source>
-        <translation type="vanished">Puerto de comunicación:</translation>
+        <translation>Puerto de comunicación:</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">Añadir</translation>
+        <translation>Añadir</translation>
     </message>
     <message>
         <source>Link password:</source>
-        <translation type="vanished">Contraseña del enlace:</translation>
+        <translation>Contraseña del enlace:</translation>
     </message>
     <message>
         <source>GDB server options</source>
-        <translation type="vanished">Opciones del servidor GDB</translation>
+        <translation>Opciones del servidor GDB</translation>
     </message>
     <message>
         <source>GDB Port:</source>
-        <translation type="vanished">Puerto GDB:</translation>
+        <translation>Puerto GDB:</translation>
     </message>
     <message>
         <source>GDB Port 2</source>
-        <translation type="vanished">Puerto GDB 2</translation>
+        <translation>Puerto GDB 2</translation>
     </message>
     <message>
         <source>Control Port:</source>
-        <translation type="vanished">Puerto de control:</translation>
+        <translation>Puerto de control:</translation>
     </message>
     <message>
         <source>Use default codegrip server path.</source>
-        <translation type="vanished">Usar la ruta predeterminada del servidor CODEGRIP.</translation>
+        <translation>Usar la ruta predeterminada del servidor CODEGRIP.</translation>
     </message>
     <message>
         <source>Auto start local GDB Server</source>
-        <translation type="vanished">Iniciar automáticamente el servidor GDB local</translation>
+        <translation>Iniciar automáticamente el servidor GDB local</translation>
     </message>
     <message>
         <source>Connect to remote GDB Server</source>
-        <translation type="vanished">Conectar al servidor GDB remoto</translation>
+        <translation>Conectar al servidor GDB remoto</translation>
     </message>
     <message>
         <source>Scan port</source>
-        <translation type="vanished">Escanear puerto</translation>
+        <translation>Escanear puerto</translation>
     </message>
     <message>
         <source>Communication port</source>
-        <translation type="vanished">Puerto de comunicación</translation>
+        <translation>Puerto de comunicación</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation type="vanished">Dirección</translation>
+        <translation>Dirección</translation>
     </message>
     <message>
         <source>CODEGRIP GDB server port</source>
-        <translation type="vanished">Puerto del servidor GDB CODEGRIP</translation>
+        <translation>Puerto del servidor GDB CODEGRIP</translation>
     </message>
     <message>
         <source>CODEGRIP GDB server port. Used for debugging</source>
-        <translation type="vanished">Puerto del servidor GDB CODEGRIP. Usado para depurar</translation>
+        <translation>Puerto del servidor GDB CODEGRIP. Usado para depurar</translation>
     </message>
     <message>
         <source>CODEGRIP GDB server second core port</source>
-        <translation type="vanished">Puerto del segundo núcleo del servidor GDB CODEGRIP</translation>
+        <translation>Puerto del segundo núcleo del servidor GDB CODEGRIP</translation>
     </message>
     <message>
         <source>Control server port</source>
-        <translation type="vanished">Puerto del servidor de control</translation>
+        <translation>Puerto del servidor de control</translation>
     </message>
     <message>
         <source>Control server port. Used for programming and board configuration</source>
-        <translation type="vanished">Puerto del servidor de control. Usado para programar y configurar la placa</translation>
+        <translation>Puerto del servidor de control. Usado para programar y configurar la placa</translation>
     </message>
     <message>
         <source>CODEGRIP GDB server address</source>
-        <translation type="vanished">Dirección del servidor GDB CODEGRIP</translation>
+        <translation>Dirección del servidor GDB CODEGRIP</translation>
     </message>
     <message>
         <source>Address on which GDB server is listening</source>
-        <translation type="vanished">Dirección en la que escucha el servidor GDB</translation>
+        <translation>Dirección en la que escucha el servidor GDB</translation>
     </message>
     <message>
         <source>Link password</source>
-        <translation type="vanished">Contraseña del enlace</translation>
+        <translation>Contraseña del enlace</translation>
     </message>
     <message>
         <source>No remote scan addresses.</source>
-        <translation type="vanished">No hay direcciones de escaneo remoto.</translation>
+        <translation>No hay direcciones de escaneo remoto.</translation>
     </message>
     <message>
         <source>CODEGRIP GDB server path</source>
-        <translation type="vanished">Ruta del servidor GDB CODEGRIP</translation>
+        <translation>Ruta del servidor GDB CODEGRIP</translation>
     </message>
     <message>
         <source>CODEGRIP GDB server executable path</source>
-        <translation type="vanished">Ruta del ejecutable del servidor GDB CODEGRIP</translation>
+        <translation>Ruta del ejecutable del servidor GDB CODEGRIP</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>Cannot add empty item</source>
-        <translation type="vanished">No se puede añadir un elemento vacío</translation>
+        <translation>No se puede añadir un elemento vacío</translation>
     </message>
     <message>
         <source>Ip address is invalid</source>
-        <translation type="vanished">La dirección IP no es válida</translation>
+        <translation>La dirección IP no es válida</translation>
     </message>
     <message>
         <source>Item already exists in list</source>
-        <translation type="vanished">El elemento ya existe en la lista</translation>
+        <translation>El elemento ya existe en la lista</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation type="vanished">Abrir archivo</translation>
+        <translation>Abrir archivo</translation>
     </message>
 </context>
 <context>
     <name>Necto::CodegripTargetOptions</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Waiting for target options...</source>
-        <translation type="vanished">Esperando opciones de destino...</translation>
+        <translation>Esperando opciones de destino...</translation>
     </message>
     <message>
         <source>Target options</source>
-        <translation type="vanished">Opciones de destino</translation>
+        <translation>Opciones de destino</translation>
     </message>
     <message>
         <source>Target Settings</source>
-        <translation type="vanished">Ajustes de destino</translation>
+        <translation>Ajustes de destino</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>Failed to get target options</source>
-        <translation type="vanished">Error al obtener las opciones de destino</translation>
+        <translation>Error al obtener las opciones de destino</translation>
     </message>
 </context>
 <context>
     <name>Necto::CodegripView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Programmer</source>
-        <translation type="vanished">Programador</translation>
+        <translation>Programador</translation>
     </message>
     <message>
         <source>Scan for available devices and configure programming options.</source>
-        <translation type="vanished">Escanear dispositivos disponibles y configurar las opciones de programación.</translation>
+        <translation>Escanear dispositivos disponibles y configurar las opciones de programación.</translation>
     </message>
     <message>
         <source>Open scan settings</source>
-        <translation type="vanished">Abrir ajustes de escaneo</translation>
+        <translation>Abrir ajustes de escaneo</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation type="vanished">Opciones</translation>
+        <translation>Opciones</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Escanear</translation>
+        <translation>Escanear</translation>
     </message>
     <message>
         <source>Programmer Settings</source>
-        <translation type="vanished">Ajustes del programador</translation>
+        <translation>Ajustes del programador</translation>
     </message>
     <message>
         <source>No boards found. 
  To find available boards click scan button</source>
-        <translation type="vanished">No se encontraron placas. 
+        <translation>No se encontraron placas. 
  Para buscar placas disponibles haga clic en el botón escanear</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
 </context>
 <context>
     <name>Necto::ColorDialog</name>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Choose</source>
-        <translation type="vanished">Elegir</translation>
+        <translation>Elegir</translation>
     </message>
 </context>
 <context>
     <name>Necto::CommandsPallete</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">Diálogo</translation>
+        <translation>Diálogo</translation>
     </message>
     <message>
         <source>Type for an action name... (Press [ESC] to exit)</source>
-        <translation type="vanished">Escriba el nombre de una acción... (Presione [ESC] para salir)</translation>
+        <translation>Escriba el nombre de una acción... (Presione [ESC] para salir)</translation>
     </message>
     <message>
         <source>Command</source>
-        <translation type="vanished">Comando</translation>
+        <translation>Comando</translation>
     </message>
     <message>
         <source>Shortcut</source>
-        <translation type="vanished">Atajo</translation>
+        <translation>Atajo</translation>
     </message>
 </context>
 <context>
     <name>Necto::CompilerItemFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
 </context>
 <context>
     <name>Necto::CompilerWizardPage</name>
     <message>
         <source>Choose a compiler</source>
-        <translation type="vanished">Elegir un compilador</translation>
+        <translation>Elegir un compilador</translation>
     </message>
 </context>
 <context>
     <name>Necto::ComponentsView</name>
     <message>
         <source>Filter components</source>
-        <translation type="vanished">Filtrar componentes</translation>
+        <translation>Filtrar componentes</translation>
     </message>
 </context>
 <context>
     <name>Necto::ConfigurationFrame</name>
     <message>
         <source>Configuration</source>
-        <translation type="vanished">Configuración</translation>
+        <translation>Configuración</translation>
     </message>
     <message>
         <source>Create New Configuration</source>
-        <translation type="vanished">Crear nueva configuración</translation>
+        <translation>Crear nueva configuración</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">Finalizar</translation>
+        <translation>Finalizar</translation>
     </message>
     <message>
         <source>Choose your starting point</source>
-        <translation type="vanished">Elija su punto de partida</translation>
+        <translation>Elija su punto de partida</translation>
     </message>
     <message>
         <source>Select an MCU or Board to begin</source>
-        <translation type="vanished">Seleccione un MCU o placa para comenzar</translation>
+        <translation>Seleccione un MCU o placa para comenzar</translation>
     </message>
     <message>
         <source>Configuration Name</source>
-        <translation type="vanished">Nombre de configuración</translation>
+        <translation>Nombre de configuración</translation>
     </message>
     <message>
         <source>MCU</source>
-        <translation type="vanished">MCU</translation>
+        <translation>MCU</translation>
     </message>
     <message>
         <source> Start with MCU </source>
-        <translation type="vanished"> Comenzar con MCU </translation>
+        <translation> Comenzar con MCU </translation>
     </message>
     <message>
         <source>Board</source>
-        <translation type="vanished">Placa</translation>
+        <translation>Placa</translation>
     </message>
     <message>
         <source>Start with board</source>
-        <translation type="vanished">Comenzar con placa</translation>
+        <translation>Comenzar con placa</translation>
     </message>
     <message>
         <source>Display</source>
-        <translation type="vanished">Pantalla</translation>
+        <translation>Pantalla</translation>
     </message>
     <message>
         <source>Compiler</source>
-        <translation type="vanished">Compilador</translation>
+        <translation>Compilador</translation>
     </message>
     <message>
         <source>Programmer</source>
-        <translation type="vanished">Programador</translation>
+        <translation>Programador</translation>
     </message>
     <message>
         <source>SDK</source>
-        <translation type="vanished">SDK</translation>
+        <translation>SDK</translation>
     </message>
     <message>
         <source>%1 Settings</source>
-        <translation type="vanished">%1 Ajustes</translation>
+        <translation>%1 Ajustes</translation>
     </message>
     <message>
         <source>Target Options</source>
-        <translation type="vanished">Opciones de destino</translation>
+        <translation>Opciones de destino</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>Review Configuration</source>
-        <translation type="vanished">Revisar configuración</translation>
+        <translation>Revisar configuración</translation>
     </message>
     <message>
         <source>Review or modify selected components</source>
-        <translation type="vanished">Revisar o modificar los componentes seleccionados</translation>
+        <translation>Revisar o modificar los componentes seleccionados</translation>
     </message>
     <message>
         <source>Select an MCU or a development board to begin</source>
-        <translation type="vanished">Seleccione un MCU o una placa de desarrollo para comenzar</translation>
+        <translation>Seleccione un MCU o una placa de desarrollo para comenzar</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation type="vanished">Escanear</translation>
+        <translation>Escanear</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="vanished">Ajustes</translation>
+        <translation>Ajustes</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>Changing the MCU will reset all other selected components. Continue?</source>
-        <translation type="vanished">Cambiar el MCU restablecerá todos los demás componentes seleccionados. ¿Continuar?</translation>
+        <translation>Cambiar el MCU restablecerá todos los demás componentes seleccionados. ¿Continuar?</translation>
     </message>
     <message>
         <source>Choose a MCU to begin</source>
-        <translation type="vanished">Elija un MCU para comenzar</translation>
+        <translation>Elija un MCU para comenzar</translation>
     </message>
     <message>
         <source>Choose a development board to begin</source>
-        <translation type="vanished">Elija una placa de desarrollo para comenzar</translation>
+        <translation>Elija una placa de desarrollo para comenzar</translation>
     </message>
     <message>
         <source>Display will be selected automatically</source>
-        <translation type="vanished">La pantalla se seleccionará automáticamente</translation>
+        <translation>La pantalla se seleccionará automáticamente</translation>
     </message>
     <message>
         <source>Compiler will be selected automatically</source>
-        <translation type="vanished">El compilador se seleccionará automáticamente</translation>
+        <translation>El compilador se seleccionará automáticamente</translation>
     </message>
     <message>
         <source>Programmer will be selected automatically</source>
-        <translation type="vanished">El programador se seleccionará automáticamente</translation>
+        <translation>El programador se seleccionará automáticamente</translation>
     </message>
     <message>
         <source>SDK will be selected automatically</source>
-        <translation type="vanished">El SDK se seleccionará automáticamente</translation>
+        <translation>El SDK se seleccionará automáticamente</translation>
     </message>
     <message>
         <source>Bare metal</source>
-        <translation type="vanished">Bare metal</translation>
+        <translation>Bare metal</translation>
     </message>
     <message>
         <source>LLDB debugger</source>
-        <translation type="vanished">Depurador LLDB</translation>
+        <translation>Depurador LLDB</translation>
     </message>
     <message>
         <source>GDB debugger</source>
-        <translation type="vanished">Depurador GDB</translation>
+        <translation>Depurador GDB</translation>
     </message>
     <message>
         <source>Flatten GPIO: %1</source>
-        <translation type="vanished">Aplanar GPIO: %1</translation>
+        <translation>Aplanar GPIO: %1</translation>
     </message>
     <message>
         <source>Change</source>
-        <translation type="vanished">Cambiar</translation>
+        <translation>Cambiar</translation>
     </message>
 </context>
 <context>
     <name>Necto::ConfigurationSectionFrame</name>
     <message>
         <source>Section</source>
-        <translation type="vanished">Sección</translation>
+        <translation>Sección</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="vanished">Ajustes</translation>
+        <translation>Ajustes</translation>
     </message>
     <message>
         <source>Target</source>
-        <translation type="vanished">Destino</translation>
+        <translation>Destino</translation>
     </message>
     <message>
         <source>Change</source>
-        <translation type="vanished">Cambiar</translation>
+        <translation>Cambiar</translation>
     </message>
 </context>
 <context>
     <name>Necto::ConverterPlugin</name>
     <message>
         <source>Converter</source>
-        <translation type="vanished">Conversor</translation>
+        <translation>Conversor</translation>
     </message>
 </context>
 <context>
     <name>Necto::ConverterWidget</name>
     <message>
         <source>Quick Converter</source>
-        <translation type="vanished">Conversor rápido</translation>
+        <translation>Conversor rápido</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">Tamaño</translation>
+        <translation>Tamaño</translation>
     </message>
     <message>
         <source>Sign</source>
-        <translation type="vanished">Iniciar sesión</translation>
+        <translation>Iniciar sesión</translation>
     </message>
     <message>
         <source>Unsigned</source>
-        <translation type="vanished">Sin signo</translation>
+        <translation>Sin signo</translation>
     </message>
     <message>
         <source>Signed</source>
-        <translation type="vanished">Con signo</translation>
+        <translation>Con signo</translation>
     </message>
     <message>
         <source>Decimal:</source>
-        <translation type="vanished">Decimal:</translation>
+        <translation>Decimal:</translation>
     </message>
     <message>
         <source>Hex:</source>
-        <translation type="vanished">Hex:</translation>
+        <translation>Hex:</translation>
     </message>
     <message>
         <source>Binary:</source>
-        <translation type="vanished">Binario:</translation>
+        <translation>Binario:</translation>
     </message>
     <message>
         <source>Char:</source>
-        <translation type="vanished">Carácter:</translation>
+        <translation>Carácter:</translation>
     </message>
     <message>
         <source>Float precision 32 bit</source>
-        <translation type="vanished">Precisión float de 32 bits</translation>
+        <translation>Precisión float de 32 bits</translation>
     </message>
     <message>
         <source>Double precision 64 bit</source>
-        <translation type="vanished">Precisión double de 64 bits</translation>
+        <translation>Precisión double de 64 bits</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation type="vanished">Formato</translation>
+        <translation>Formato</translation>
     </message>
     <message>
         <source>Float decimal:</source>
-        <translation type="vanished">Decimal flotante:</translation>
+        <translation>Decimal flotante:</translation>
     </message>
     <message>
         <source>Float 32bit (IEEE)</source>
-        <translation type="vanished">Float 32 bits (IEEE)</translation>
+        <translation>Float 32 bits (IEEE)</translation>
     </message>
     <message>
         <source>Float (Microchip)</source>
-        <translation type="vanished">Float (Microchip)</translation>
+        <translation>Float (Microchip)</translation>
     </message>
     <message>
         <source>Radix 1.15:</source>
-        <translation type="vanished">Radix 1.15:</translation>
+        <translation>Radix 1.15:</translation>
     </message>
     <message>
         <source>Float decimal</source>
-        <translation type="vanished">Decimal flotante</translation>
+        <translation>Decimal flotante</translation>
     </message>
     <message>
         <source>Double decimal</source>
-        <translation type="vanished">Decimal doble</translation>
+        <translation>Decimal doble</translation>
     </message>
     <message>
         <source>Double 64bit (IEEE)</source>
-        <translation type="vanished">Double 64 bits (IEEE)</translation>
+        <translation>Double 64 bits (IEEE)</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoard</name>
     <message>
         <source>Delete</source>
-        <translation type="vanished">Eliminar</translation>
+        <translation>Eliminar</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Are you sure you want to delete: &lt;strong&gt;%1 &lt;/strong&gt;?</source>
-        <translation type="vanished">¿Seguro que desea eliminar: &lt;strong&gt;%1 &lt;/strong&gt;?</translation>
+        <translation>¿Seguro que desea eliminar: &lt;strong&gt;%1 &lt;/strong&gt;?</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="vanished">Sí</translation>
+        <translation>Sí</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="vanished">No</translation>
+        <translation>No</translation>
     </message>
     <message>
         <source>Board already exists. Overwrite?</source>
-        <translation type="vanished">La placa ya existe. ¿Sobrescribir?</translation>
+        <translation>La placa ya existe. ¿Sobrescribir?</translation>
     </message>
     <message>
         <source>NectoShare is currently unavailable. Please try again later.</source>
-        <translation type="vanished">NectoShare no está disponible actualmente. Inténtelo más tarde.</translation>
+        <translation>NectoShare no está disponible actualmente. Inténtelo más tarde.</translation>
     </message>
     <message>
         <source>Failed publish</source>
-        <translation type="vanished">Publicación fallida</translation>
+        <translation>Publicación fallida</translation>
     </message>
     <message>
         <source>Board files are uploaded successfully</source>
-        <translation type="vanished">Los archivos de la placa se subieron correctamente</translation>
+        <translation>Los archivos de la placa se subieron correctamente</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardDevicePage</name>
     <message>
         <source>Choose a MCU</source>
-        <translation type="vanished">Elegir un MCU</translation>
+        <translation>Elegir un MCU</translation>
     </message>
     <message>
         <source>Custom Board Tool</source>
-        <translation type="vanished">Herramienta de placa personalizada</translation>
+        <translation>Herramienta de placa personalizada</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardDialog</name>
     <message>
         <source>Building SDK</source>
-        <translation type="vanished">Compilando SDK</translation>
+        <translation>Compilando SDK</translation>
     </message>
     <message>
         <source>Please wait</source>
-        <translation type="vanished">Espere</translation>
+        <translation>Espere</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>Timeout...</source>
-        <translation type="vanished">Tiempo agotado...</translation>
+        <translation>Tiempo agotado...</translation>
     </message>
     <message>
         <source>Board generated successfully!</source>
-        <translation type="vanished">¡Placa generada correctamente!</translation>
+        <translation>¡Placa generada correctamente!</translation>
     </message>
     <message>
         <source>Error generating board...</source>
-        <translation type="vanished">Error al generar la placa...</translation>
+        <translation>Error al generar la placa...</translation>
     </message>
     <message>
         <source>Your link has been copied!</source>
-        <translation type="vanished">¡Su enlace ha sido copiado!</translation>
+        <translation>¡Su enlace ha sido copiado!</translation>
     </message>
     <message>
         <source>Generating board files...</source>
-        <translation type="vanished">Generando archivos de la placa...</translation>
+        <translation>Generando archivos de la placa...</translation>
     </message>
     <message>
         <source>Installing board to SDK</source>
-        <translation type="vanished">Instalando placa en el SDK</translation>
+        <translation>Instalando placa en el SDK</translation>
     </message>
     <message>
         <source>Sending your data to the mikroSDK server...</source>
-        <translation type="vanished">Enviando sus datos al servidor de mikroSDK...</translation>
+        <translation>Enviando sus datos al servidor de mikroSDK...</translation>
     </message>
     <message>
         <source>Waiting for server to finish upload process...</source>
-        <translation type="vanished">Esperando a que el servidor termine el proceso de subida...</translation>
+        <translation>Esperando a que el servidor termine el proceso de subida...</translation>
     </message>
     <message>
         <source>Your new generated board will be visible when creating new configuration</source>
-        <translation type="vanished">Su nueva placa generada será visible al crear una nueva configuración</translation>
+        <translation>Su nueva placa generada será visible al crear una nueva configuración</translation>
     </message>
     <message>
         <source>Failed to upload board file</source>
-        <translation type="vanished">Error al subir el archivo de la placa</translation>
+        <translation>Error al subir el archivo de la placa</translation>
     </message>
     <message>
         <source>Your link has been generated.</source>
-        <translation type="vanished">Su enlace ha sido generado.</translation>
+        <translation>Su enlace ha sido generado.</translation>
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="vanished">Copiar enlace</translation>
+        <translation>Copiar enlace</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardImportPage</name>
     <message>
         <source>Add new board</source>
-        <translation type="vanished">Añadir nueva placa</translation>
+        <translation>Añadir nueva placa</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">Siguiente</translation>
+        <translation>Siguiente</translation>
     </message>
     <message>
         <source>Custom Board Tool</source>
-        <translation type="vanished">Herramienta de placa personalizada</translation>
+        <translation>Herramienta de placa personalizada</translation>
     </message>
     <message>
         <source>Import existing board</source>
-        <translation type="vanished">Importar placa existente</translation>
+        <translation>Importar placa existente</translation>
     </message>
     <message>
         <source>Choose board file path</source>
-        <translation type="vanished">Elegir ruta del archivo de placa</translation>
+        <translation>Elegir ruta del archivo de placa</translation>
     </message>
     <message>
         <source>Open zip file</source>
-        <translation type="vanished">Abrir archivo zip</translation>
+        <translation>Abrir archivo zip</translation>
     </message>
     <message>
         <source>ZIP file (*.zip)</source>
-        <translation type="vanished">Archivo ZIP (*.zip)</translation>
+        <translation>Archivo ZIP (*.zip)</translation>
     </message>
     <message>
         <source>Invalid file name</source>
-        <translation type="vanished">Nombre de archivo no válido</translation>
+        <translation>Nombre de archivo no válido</translation>
     </message>
     <message>
         <source>File does not exist</source>
-        <translation type="vanished">El archivo no existe</translation>
+        <translation>El archivo no existe</translation>
     </message>
     <message>
         <source>File larger than 5MB</source>
-        <translation type="vanished">Archivo mayor de 5 MB</translation>
+        <translation>Archivo mayor de 5 MB</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardModuleEditingPage</name>
     <message>
         <source>Custom Board Tool</source>
-        <translation type="vanished">Herramienta de placa personalizada</translation>
+        <translation>Herramienta de placa personalizada</translation>
     </message>
     <message>
         <source>mikroBUS mapping</source>
-        <translation type="vanished">Mapeo de mikroBUS</translation>
+        <translation>Mapeo de mikroBUS</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardModuleTemplatePage</name>
     <message>
         <source>Custom Board Tool</source>
-        <translation type="vanished">Herramienta de placa personalizada</translation>
+        <translation>Herramienta de placa personalizada</translation>
     </message>
     <message>
         <source>Choose module template</source>
-        <translation type="vanished">Elegir plantilla de módulo</translation>
+        <translation>Elegir plantilla de módulo</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">Añadir</translation>
+        <translation>Añadir</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardModulesPage</name>
     <message>
         <source>Custom Board Tool</source>
-        <translation type="vanished">Herramienta de placa personalizada</translation>
+        <translation>Herramienta de placa personalizada</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">Finalizar</translation>
+        <translation>Finalizar</translation>
     </message>
     <message>
         <source>Add new</source>
-        <translation type="vanished">Añadir nuevo</translation>
+        <translation>Añadir nuevo</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardNamePage</name>
     <message>
         <source>Custom Board Tool</source>
-        <translation type="vanished">Herramienta de placa personalizada</translation>
+        <translation>Herramienta de placa personalizada</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">Siguiente</translation>
+        <translation>Siguiente</translation>
     </message>
     <message>
         <source>Board name:</source>
-        <translation type="vanished">Nombre de placa:</translation>
+        <translation>Nombre de placa:</translation>
     </message>
     <message>
         <source>Selected SDK:</source>
-        <translation type="vanished">SDK seleccionado:</translation>
+        <translation>SDK seleccionado:</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="vanished">Sí</translation>
+        <translation>Sí</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="vanished">No</translation>
+        <translation>No</translation>
     </message>
     <message>
         <source>Board already exists. Overwrite?</source>
-        <translation type="vanished">La placa ya existe. ¿Sobrescribir?</translation>
+        <translation>La placa ya existe. ¿Sobrescribir?</translation>
     </message>
     <message>
         <source>File name exceeds 128 characters</source>
-        <translation type="vanished">El nombre de archivo supera los 128 caracteres</translation>
+        <translation>El nombre de archivo supera los 128 caracteres</translation>
     </message>
     <message>
         <source>Invalid characters in board name</source>
-        <translation type="vanished">Caracteres no válidos en el nombre de la placa</translation>
+        <translation>Caracteres no válidos en el nombre de la placa</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardOptionsPage</name>
     <message>
         <source>Custom Board Tool</source>
-        <translation type="vanished">Herramienta de placa personalizada</translation>
+        <translation>Herramienta de placa personalizada</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Cerrar</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <source>Add new board</source>
-        <translation type="vanished">Añadir nueva placa</translation>
+        <translation>Añadir nueva placa</translation>
     </message>
     <message>
         <source>Create a new board from scratch</source>
-        <translation type="vanished">Crear una nueva placa desde cero</translation>
+        <translation>Crear una nueva placa desde cero</translation>
     </message>
     <message>
         <source>Import an existing board</source>
-        <translation type="vanished">Importar una placa existente</translation>
+        <translation>Importar una placa existente</translation>
     </message>
     <message>
         <source>Import board</source>
-        <translation type="vanished">Importar placa</translation>
+        <translation>Importar placa</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomBoardSelectFileWidget</name>
     <message>
         <source>Please select or drag image</source>
-        <translation type="vanished">Seleccione o arrastre una imagen</translation>
+        <translation>Seleccione o arrastre una imagen</translation>
     </message>
     <message>
         <source>Maximum file size is 2MB!</source>
-        <translation type="vanished">¡El tamaño máximo de archivo es 2 MB!</translation>
+        <translation>¡El tamaño máximo de archivo es 2 MB!</translation>
     </message>
     <message>
         <source>Open image file</source>
-        <translation type="vanished">Abrir archivo de imagen</translation>
+        <translation>Abrir archivo de imagen</translation>
     </message>
     <message>
         <source>Image files (*.jpg *.jpeg *.png *.bmp)</source>
-        <translation type="vanished">Archivos de imagen (*.jpg *.jpeg *.png *.bmp)</translation>
+        <translation>Archivos de imagen (*.jpg *.jpeg *.png *.bmp)</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomChartView</name>
     <message>
         <source>Export clicked chart as .png</source>
-        <translation type="vanished">Exportar gráfico seleccionado como .png</translation>
+        <translation>Exportar gráfico seleccionado como .png</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation type="vanished">Guardar imagen</translation>
+        <translation>Guardar imagen</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomKeySequenceEdit</name>
     <message>
         <source>Press desired key combination...</source>
-        <translation type="vanished">Presione la combinación de teclas deseada...</translation>
+        <translation>Presione la combinación de teclas deseada...</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomNamePage</name>
     <message>
         <source>Next</source>
-        <translation type="vanished">Siguiente</translation>
+        <translation>Siguiente</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">Finalizar</translation>
+        <translation>Finalizar</translation>
     </message>
     <message>
         <source>Search for %1</source>
-        <translation type="vanished">Buscar %1</translation>
+        <translation>Buscar %1</translation>
     </message>
     <message>
         <source>Can not find %1 you have searched for</source>
-        <translation type="vanished">No se encuentra %1 que ha buscado</translation>
+        <translation>No se encuentra %1 que ha buscado</translation>
     </message>
 </context>
 <context>
     <name>Necto::CustomTooltip</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>&lt;a href=&quot;%1&quot;&gt;Product page&lt;/a&gt;</source>
-        <translation type="vanished">&lt;a href=&quot;%1&quot;&gt;Página del producto&lt;/a&gt;</translation>
+        <translation>&lt;a href=&quot;%1&quot;&gt;Página del producto&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
     <name>Necto::DateDialog</name>
     <message>
         <source>OK</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Select Dates</source>
-        <translation type="vanished">Seleccionar fechas</translation>
+        <translation>Seleccionar fechas</translation>
     </message>
 </context>
 <context>
     <name>Necto::DebugPlanetLicenseManager</name>
     <message>
         <source>Waiting for server response..</source>
-        <translation type="vanished">Esperando respuesta del servidor..</translation>
+        <translation>Esperando respuesta del servidor..</translation>
     </message>
     <message>
         <source>Reading license data...</source>
-        <translation type="vanished">Leyendo datos de licencia...</translation>
+        <translation>Leyendo datos de licencia...</translation>
     </message>
     <message>
         <source>Waiting for server response...</source>
-        <translation type="vanished">Esperando respuesta del servidor...</translation>
+        <translation>Esperando respuesta del servidor...</translation>
     </message>
 </context>
 <context>
     <name>Necto::DebugSessionManager</name>
     <message>
         <source>Debugger cannot be started. There is no active project</source>
-        <translation type="vanished">No se puede iniciar el depurador. No hay un proyecto activo</translation>
+        <translation>No se puede iniciar el depurador. No hay un proyecto activo</translation>
     </message>
     <message>
         <source>Simulator is only supported for mikroC AI compilers.</source>
-        <translation type="vanished">El simulador solo es compatible con compiladores mikroC AI.</translation>
+        <translation>El simulador solo es compatible con compiladores mikroC AI.</translation>
     </message>
     <message>
         <source>Error occured: %1</source>
-        <translation type="vanished">Se produjo un error: %1</translation>
+        <translation>Se produjo un error: %1</translation>
     </message>
     <message>
         <source>Debugger: %1</source>
-        <translation type="vanished">Depurador: %1</translation>
+        <translation>Depurador: %1</translation>
     </message>
 </context>
 <context>
     <name>Necto::DebugView</name>
     <message>
         <source>  Locals</source>
-        <translation type="vanished">  Locales</translation>
+        <translation>  Locales</translation>
     </message>
     <message>
         <source>  Expressions</source>
-        <translation type="vanished">  Expresiones</translation>
+        <translation>  Expresiones</translation>
     </message>
     <message>
         <source>  Breakpoints</source>
-        <translation type="vanished">  Puntos de interrupción</translation>
+        <translation>  Puntos de interrupción</translation>
     </message>
     <message>
         <source>  Registers</source>
-        <translation type="vanished">  Registros</translation>
+        <translation>  Registros</translation>
     </message>
     <message>
         <source>  Call stack</source>
-        <translation type="vanished">  Pila de llamadas</translation>
+        <translation>  Pila de llamadas</translation>
     </message>
     <message>
         <source>Remove breakpoint</source>
-        <translation type="vanished">Quitar punto de interrupción</translation>
+        <translation>Quitar punto de interrupción</translation>
     </message>
     <message>
         <source>Remove all breakpoints</source>
-        <translation type="vanished">Quitar todos los puntos de interrupción</translation>
+        <translation>Quitar todos los puntos de interrupción</translation>
     </message>
     <message>
         <source>Add new expression</source>
-        <translation type="vanished">Añadir nueva expresión</translation>
+        <translation>Añadir nueva expresión</translation>
     </message>
     <message>
         <source>Remove expression</source>
-        <translation type="vanished">Quitar expresión</translation>
+        <translation>Quitar expresión</translation>
     </message>
     <message>
         <source>Remove all expressions</source>
-        <translation type="vanished">Quitar todas las expresiones</translation>
+        <translation>Quitar todas las expresiones</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation type="vanished">Predeterminado</translation>
+        <translation>Predeterminado</translation>
     </message>
     <message>
         <source>Decimal</source>
-        <translation type="vanished">Decimal</translation>
+        <translation>Decimal</translation>
     </message>
     <message>
         <source>Floating point</source>
-        <translation type="vanished">Punto flotante</translation>
+        <translation>Punto flotante</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">Cadena</translation>
+        <translation>Cadena</translation>
     </message>
     <message>
         <source>Add to expressions</source>
-        <translation type="vanished">Añadir a expresiones</translation>
+        <translation>Añadir a expresiones</translation>
     </message>
     <message>
         <source>Value format</source>
-        <translation type="vanished">Formato de valor</translation>
+        <translation>Formato de valor</translation>
     </message>
 </context>
 <context>
     <name>Necto::DebuggerUIController</name>
     <message>
         <source>Debugger</source>
-        <translation type="vanished">Depurador</translation>
+        <translation>Depurador</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation type="vanished">Depurar</translation>
+        <translation>Depurar</translation>
     </message>
     <message>
         <source>Simulator</source>
-        <translation type="vanished">Simulador</translation>
+        <translation>Simulador</translation>
     </message>
     <message>
         <source>Stop Debugger</source>
-        <translation type="vanished">Detener depurador</translation>
+        <translation>Detener depurador</translation>
     </message>
     <message>
         <source>Stop debugging active project.</source>
-        <translation type="vanished">Detener la depuración del proyecto activo.</translation>
+        <translation>Detener la depuración del proyecto activo.</translation>
     </message>
     <message>
         <source>Continue Debug</source>
-        <translation type="vanished">Continuar depuración</translation>
+        <translation>Continuar depuración</translation>
     </message>
     <message>
         <source>Restart Debug</source>
-        <translation type="vanished">Reiniciar depuración</translation>
+        <translation>Reiniciar depuración</translation>
     </message>
     <message>
         <source>Start HW Debugging</source>
-        <translation type="vanished">Iniciar depuración por HW</translation>
+        <translation>Iniciar depuración por HW</translation>
     </message>
     <message>
         <source>Start HW debugging, without building and programming.</source>
-        <translation type="vanished">Iniciar depuración por HW, sin compilar ni programar.</translation>
+        <translation>Iniciar depuración por HW, sin compilar ni programar.</translation>
     </message>
     <message>
         <source>Step Over</source>
-        <translation type="vanished">Saltar</translation>
+        <translation>Saltar</translation>
     </message>
     <message>
         <source>Step Into</source>
-        <translation type="vanished">Entrar en</translation>
+        <translation>Entrar en</translation>
     </message>
     <message>
         <source>Step Out</source>
-        <translation type="vanished">Salir</translation>
+        <translation>Salir</translation>
     </message>
     <message>
         <source>Run To Line</source>
-        <translation type="vanished">Ejecutar hasta la línea</translation>
+        <translation>Ejecutar hasta la línea</translation>
     </message>
     <message>
         <source>Disassembly mode</source>
-        <translation type="vanished">Modo desensamblado</translation>
+        <translation>Modo desensamblado</translation>
     </message>
     <message>
         <source>Pause Debug</source>
-        <translation type="vanished">Pausar depuración</translation>
+        <translation>Pausar depuración</translation>
     </message>
     <message>
         <source>Pause Debug (F6)</source>
-        <translation type="vanished">Pausar depuración (F6)</translation>
+        <translation>Pausar depuración (F6)</translation>
     </message>
     <message>
         <source>Continue Debug (F6)</source>
-        <translation type="vanished">Continuar depuración (F6)</translation>
+        <translation>Continuar depuración (F6)</translation>
     </message>
 </context>
 <context>
     <name>Necto::DesignerEditorPlugin</name>
     <message>
         <source>Design</source>
-        <translation type="vanished">Diseño</translation>
+        <translation>Diseño</translation>
     </message>
 </context>
 <context>
     <name>Necto::DesignerView</name>
     <message>
         <source>Cut</source>
-        <translation type="vanished">Cortar</translation>
+        <translation>Cortar</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">Copiar</translation>
+        <translation>Copiar</translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation type="vanished">Pegar</translation>
+        <translation>Pegar</translation>
     </message>
     <message>
         <source>Delete selected</source>
-        <translation type="vanished">Eliminar seleccionados</translation>
+        <translation>Eliminar seleccionados</translation>
     </message>
     <message>
         <source>Select All</source>
-        <translation type="vanished">Seleccionar todo</translation>
+        <translation>Seleccionar todo</translation>
     </message>
     <message>
         <source>Align left</source>
-        <translation type="vanished">Alinear izquierda</translation>
+        <translation>Alinear izquierda</translation>
     </message>
     <message>
         <source>Align top</source>
-        <translation type="vanished">Alinear arriba</translation>
+        <translation>Alinear arriba</translation>
     </message>
     <message>
         <source>Align bottom</source>
-        <translation type="vanished">Alinear abajo</translation>
+        <translation>Alinear abajo</translation>
     </message>
     <message>
         <source>Align right</source>
-        <translation type="vanished">Alinear derecha</translation>
+        <translation>Alinear derecha</translation>
     </message>
     <message>
         <source>Center vertical</source>
-        <translation type="vanished">Centrar vertical</translation>
+        <translation>Centrar vertical</translation>
     </message>
     <message>
         <source>Center horizontal</source>
-        <translation type="vanished">Centrar horizontal</translation>
+        <translation>Centrar horizontal</translation>
     </message>
     <message>
         <source>Make same height</source>
-        <translation type="vanished">Igualar alto</translation>
+        <translation>Igualar alto</translation>
     </message>
     <message>
         <source>Make same width</source>
-        <translation type="vanished">Igualar ancho</translation>
+        <translation>Igualar ancho</translation>
     </message>
     <message>
         <source>Make same size</source>
-        <translation type="vanished">Igualar tamaño</translation>
+        <translation>Igualar tamaño</translation>
     </message>
     <message>
         <source>Stick vertical</source>
-        <translation type="vanished">Pegar vertical</translation>
+        <translation>Pegar vertical</translation>
     </message>
     <message>
         <source>Stick horizontal</source>
-        <translation type="vanished">Pegar horizontal</translation>
+        <translation>Pegar horizontal</translation>
     </message>
     <message>
         <source>Space horizontal evenly</source>
-        <translation type="vanished">Espaciar horizontal uniformemente</translation>
+        <translation>Espaciar horizontal uniformemente</translation>
     </message>
     <message>
         <source>Space vertical evenly</source>
-        <translation type="vanished">Espaciar vertical uniformemente</translation>
+        <translation>Espaciar vertical uniformemente</translation>
     </message>
     <message>
         <source>Bring to front</source>
-        <translation type="vanished">Traer al frente</translation>
+        <translation>Traer al frente</translation>
     </message>
     <message>
         <source>Send to back</source>
-        <translation type="vanished">Enviar al fondo</translation>
+        <translation>Enviar al fondo</translation>
     </message>
     <message>
         <source>Group components</source>
-        <translation type="vanished">Agrupar componentes</translation>
+        <translation>Agrupar componentes</translation>
     </message>
     <message>
         <source>Ungroup components</source>
-        <translation type="vanished">Desagrupar componentes</translation>
+        <translation>Desagrupar componentes</translation>
     </message>
     <message>
         <source>Zoom in</source>
-        <translation type="vanished">Acercar</translation>
+        <translation>Acercar</translation>
     </message>
     <message>
         <source>Zoom out</source>
-        <translation type="vanished">Alejar</translation>
+        <translation>Alejar</translation>
     </message>
     <message>
         <source>Save as component</source>
-        <translation type="vanished">Guardar como componente</translation>
+        <translation>Guardar como componente</translation>
     </message>
     <message>
         <source>Save screen</source>
-        <translation type="vanished">Guardar pantalla</translation>
+        <translation>Guardar pantalla</translation>
     </message>
 </context>
 <context>
     <name>Necto::DetachFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Connected to: %1</source>
-        <translation type="vanished">Conectado a: %1</translation>
+        <translation>Conectado a: %1</translation>
     </message>
 </context>
 <context>
     <name>Necto::DeviceInfoView</name>
     <message>
         <source>Disconnected</source>
-        <translation type="vanished">Desconectado</translation>
+        <translation>Desconectado</translation>
     </message>
     <message>
         <source>Connected</source>
-        <translation type="vanished">Conectado</translation>
+        <translation>Conectado</translation>
     </message>
 </context>
 <context>
     <name>Necto::DeviceWizardPage</name>
     <message>
         <source>Create New Configuration</source>
-        <translation type="vanished">Crear nueva configuración</translation>
+        <translation>Crear nueva configuración</translation>
     </message>
     <message>
         <source>Choose a MCU</source>
-        <translation type="vanished">Elegir un MCU</translation>
+        <translation>Elegir un MCU</translation>
     </message>
     <message>
         <source> Vendor</source>
-        <translation type="vanished"> Fabricante</translation>
+        <translation> Fabricante</translation>
     </message>
     <message>
         <source> Core</source>
-        <translation type="vanished"> Núcleo</translation>
+        <translation> Núcleo</translation>
     </message>
     <message>
         <source> SDK support</source>
-        <translation type="vanished"> Compatibilidad con SDK</translation>
+        <translation> Compatibilidad con SDK</translation>
     </message>
     <message>
         <source> Architecture</source>
-        <translation type="vanished"> Arquitectura</translation>
+        <translation> Arquitectura</translation>
     </message>
     <message>
         <source>Flash (KB)</source>
-        <translation type="vanished">Flash (KB)</translation>
+        <translation>Flash (KB)</translation>
     </message>
     <message>
         <source>RAM (KB)</source>
-        <translation type="vanished">RAM (KB)</translation>
+        <translation>RAM (KB)</translation>
     </message>
     <message>
         <source> Memory</source>
-        <translation type="vanished"> Memoria</translation>
+        <translation> Memoria</translation>
     </message>
     <message>
         <source> Max speed</source>
-        <translation type="vanished"> Velocidad máxima</translation>
+        <translation> Velocidad máxima</translation>
     </message>
     <message>
         <source> Package</source>
-        <translation type="vanished"> Encapsulado</translation>
+        <translation> Encapsulado</translation>
     </message>
     <message>
         <source> Pin Count</source>
-        <translation type="vanished"> Cantidad de pines</translation>
+        <translation> Cantidad de pines</translation>
     </message>
     <message>
         <source>Package Type</source>
-        <translation type="vanished">Tipo de encapsulado</translation>
+        <translation>Tipo de encapsulado</translation>
     </message>
 </context>
 <context>
     <name>Necto::DialogBackFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
 </context>
 <context>
     <name>Necto::DisassemblyEditor</name>
     <message>
         <source>Disable Breakpoint</source>
-        <translation type="vanished">Deshabilitar punto de interrupción</translation>
+        <translation>Deshabilitar punto de interrupción</translation>
     </message>
     <message>
         <source>Remove Breakpoint</source>
-        <translation type="vanished">Quitar punto de interrupción</translation>
+        <translation>Quitar punto de interrupción</translation>
     </message>
     <message>
         <source>Toggle Bookmark</source>
-        <translation type="vanished">Alternar marcador</translation>
+        <translation>Alternar marcador</translation>
     </message>
 </context>
 <context>
     <name>Necto::DisplayWizardPage</name>
     <message>
         <source>Choose a display</source>
-        <translation type="vanished">Elegir una pantalla</translation>
+        <translation>Elegir una pantalla</translation>
     </message>
 </context>
 <context>
     <name>Necto::DownloadManagerWidget</name>
     <message>
         <source>Downloads</source>
-        <translation type="vanished">Descargas</translation>
+        <translation>Descargas</translation>
     </message>
     <message>
         <source>No downloads</source>
-        <translation type="vanished">Sin descargas</translation>
+        <translation>Sin descargas</translation>
     </message>
     <message>
         <source>All Files (*)</source>
-        <translation type="vanished">Todos los archivos (*)</translation>
+        <translation>Todos los archivos (*)</translation>
     </message>
     <message>
         <source>Save as</source>
-        <translation type="vanished">Guardar como</translation>
+        <translation>Guardar como</translation>
     </message>
 </context>
 <context>
     <name>Necto::DownloadWidget</name>
     <message>
         <source>%p% - %1 of %2 downloaded - %3/s</source>
-        <translation type="vanished">%p% - %1 de %2 descargado - %3/s</translation>
+        <translation>%p% - %1 de %2 descargado - %3/s</translation>
     </message>
     <message>
         <source>unknown size - %1 downloaded - %2/s</source>
-        <translation type="vanished">tamaño desconocido - %1 descargado - %2/s</translation>
+        <translation>tamaño desconocido - %1 descargado - %2/s</translation>
     </message>
     <message>
         <source>completed - %1 downloaded - %2/s</source>
-        <translation type="vanished">completado - %1 descargado - %2/s</translation>
+        <translation>completado - %1 descargado - %2/s</translation>
     </message>
     <message>
         <source>cancelled - %1 downloaded - %2/s</source>
-        <translation type="vanished">cancelado - %1 descargado - %2/s</translation>
+        <translation>cancelado - %1 descargado - %2/s</translation>
     </message>
     <message>
         <source>interrupted: %1</source>
-        <translation type="vanished">interrumpido: %1</translation>
+        <translation>interrumpido: %1</translation>
     </message>
     <message>
         <source>Stop downloading</source>
-        <translation type="vanished">Detener descarga</translation>
+        <translation>Detener descarga</translation>
     </message>
     <message>
         <source>Remove from list</source>
-        <translation type="vanished">Quitar de la lista</translation>
+        <translation>Quitar de la lista</translation>
     </message>
 </context>
 <context>
     <name>Necto::DownloadingWidget</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Synchronizing with Libstock. Please wait.</source>
-        <translation type="vanished">Sincronizando con Libstock. Espere.</translation>
+        <translation>Sincronizando con Libstock. Espere.</translation>
     </message>
 </context>
 <context>
@@ -10377,289 +10377,289 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::EditorPage</name>
     <message>
         <source>Auto Closing Brackets</source>
-        <translation type="vanished">Paréntesis de cierre automático</translation>
+        <translation>Paréntesis de cierre automático</translation>
     </message>
     <message>
         <source>always</source>
-        <translation type="vanished">siempre</translation>
+        <translation>siempre</translation>
     </message>
     <message>
         <source>never</source>
-        <translation type="vanished">nunca</translation>
+        <translation>nunca</translation>
     </message>
     <message>
         <source>Auto Closing Delete</source>
-        <translation type="vanished">Eliminación de cierre automático</translation>
+        <translation>Eliminación de cierre automático</translation>
     </message>
     <message>
         <source>Auto Closing Overtype</source>
-        <translation type="vanished">Sobrescritura de cierre automático</translation>
+        <translation>Sobrescritura de cierre automático</translation>
     </message>
     <message>
         <source>Auto Closing Quotes</source>
-        <translation type="vanished">Comillas de cierre automático</translation>
+        <translation>Comillas de cierre automático</translation>
     </message>
     <message>
         <source>Auto Indent</source>
-        <translation type="vanished">Sangría automática</translation>
+        <translation>Sangría automática</translation>
     </message>
     <message>
         <source>none</source>
-        <translation type="vanished">ninguno</translation>
+        <translation>ninguno</translation>
     </message>
     <message>
         <source>keep</source>
-        <translation type="vanished">mantener</translation>
+        <translation>mantener</translation>
     </message>
     <message>
         <source>brackets</source>
-        <translation type="vanished">paréntesis</translation>
+        <translation>paréntesis</translation>
     </message>
     <message>
         <source>advanced</source>
-        <translation type="vanished">avanzado</translation>
+        <translation>avanzado</translation>
     </message>
     <message>
         <source>full</source>
-        <translation type="vanished">completo</translation>
+        <translation>completo</translation>
     </message>
     <message>
         <source>Code Lens</source>
-        <translation type="vanished">Code Lens</translation>
+        <translation>Code Lens</translation>
     </message>
     <message>
         <source>Max Tokenization Line Length</source>
-        <translation type="vanished">Longitud máxima de línea para tokenización</translation>
+        <translation>Longitud máxima de línea para tokenización</translation>
     </message>
     <message>
         <source>Overtype Paste</source>
-        <translation type="vanished">Pegar sobrescribiendo</translation>
+        <translation>Pegar sobrescribiendo</translation>
     </message>
     <message>
         <source>Show Headers</source>
-        <translation type="vanished">Mostrar encabezados</translation>
+        <translation>Mostrar encabezados</translation>
     </message>
     <message>
         <source>Show Quick Fixes</source>
-        <translation type="vanished">Mostrar soluciones rápidas</translation>
+        <translation>Mostrar soluciones rápidas</translation>
     </message>
     <message>
         <source>Scroll Sensitivity</source>
-        <translation type="vanished">Sensibilidad de desplazamiento</translation>
+        <translation>Sensibilidad de desplazamiento</translation>
     </message>
     <message>
         <source>Tab Size</source>
-        <translation type="vanished">Tamaño de tabulación</translation>
+        <translation>Tamaño de tabulación</translation>
     </message>
     <message>
         <source>Word Wrap</source>
-        <translation type="vanished">Ajuste de línea</translation>
+        <translation>Ajuste de línea</translation>
     </message>
     <message>
         <source>off</source>
-        <translation type="vanished">desactivado</translation>
+        <translation>desactivado</translation>
     </message>
     <message>
         <source>bounded</source>
-        <translation type="vanished">acotado</translation>
+        <translation>acotado</translation>
     </message>
     <message>
         <source>Font Family</source>
-        <translation type="vanished">Familia de fuente</translation>
+        <translation>Familia de fuente</translation>
     </message>
     <message>
         <source>Font Size</source>
-        <translation type="vanished">Tamaño de fuente</translation>
+        <translation>Tamaño de fuente</translation>
     </message>
     <message>
         <source>Minimap</source>
-        <translation type="vanished">Minimapa</translation>
+        <translation>Minimapa</translation>
     </message>
     <message>
         <source>Controls whether the editor should automatically close quotes after the user adds an opening quote.</source>
-        <translation type="vanished">Controla si el editor debe cerrar automáticamente las comillas después de que el usuario añade una de apertura.</translation>
+        <translation>Controla si el editor debe cerrar automáticamente las comillas después de que el usuario añade una de apertura.</translation>
     </message>
     <message>
         <source>Controls whether the editor should automatically close brackets after the user opens them.</source>
-        <translation type="vanished">Controla si el editor debe cerrar automáticamente los paréntesis después de que el usuario los abre.</translation>
+        <translation>Controla si el editor debe cerrar automáticamente los paréntesis después de que el usuario los abre.</translation>
     </message>
     <message>
         <source>Controls whether the editor should remove auto-closed brackets and quotes when the opening bracket or quote is deleted.</source>
-        <translation type="vanished">Controla si el editor debe quitar los paréntesis y comillas cerrados automáticamente cuando se elimina el de apertura.</translation>
+        <translation>Controla si el editor debe quitar los paréntesis y comillas cerrados automáticamente cuando se elimina el de apertura.</translation>
     </message>
     <message>
         <source>Controls whether the editor should type over closing quotes or brackets when they already exist.</source>
-        <translation type="vanished">Controla si el editor debe sobrescribir las comillas o paréntesis de cierre cuando ya existen.</translation>
+        <translation>Controla si el editor debe sobrescribir las comillas o paréntesis de cierre cuando ya existen.</translation>
     </message>
     <message>
         <source>Controls whether the editor should automatically adjust indentation when users type, paste, move lines, or press Enter.</source>
-        <translation type="vanished">Controla si el editor debe ajustar automáticamente la sangría cuando el usuario escribe, pega, mueve líneas o presiona Intro.</translation>
+        <translation>Controla si el editor debe ajustar automáticamente la sangría cuando el usuario escribe, pega, mueve líneas o presiona Intro.</translation>
     </message>
     <message>
         <source>Controls how lines should wrap in the editor. Select &apos;on&apos; for automatic wrapping, &apos;off&apos; to disable it.</source>
-        <translation type="vanished">Controla cómo se ajustan las líneas en el editor. Seleccione &apos;on&apos; para ajuste automático, &apos;off&apos; para desactivarlo.</translation>
+        <translation>Controla cómo se ajustan las líneas en el editor. Seleccione &apos;on&apos; para ajuste automático, &apos;off&apos; para desactivarlo.</translation>
     </message>
     <message>
         <source>Show CodeLens in the editor, which provides actionable context information like references and test status above your code.</source>
-        <translation type="vanished">Mostrar CodeLens en el editor, que ofrece información de contexto útil como referencias y estado de pruebas sobre su código.</translation>
+        <translation>Mostrar CodeLens en el editor, que ofrece información de contexto útil como referencias y estado de pruebas sobre su código.</translation>
     </message>
     <message>
         <source>Show headers in the code action widget to group code actions and organize suggestions.</source>
-        <translation type="vanished">Mostrar encabezados en el widget de acciones de código para agruparlas y organizar las sugerencias.</translation>
+        <translation>Mostrar encabezados en el widget de acciones de código para agruparlas y organizar las sugerencias.</translation>
     </message>
     <message>
         <source>Show lightbulb or wrench icon inline for quick fixes and code actions.</source>
-        <translation type="vanished">Mostrar el icono de bombilla o llave en línea para soluciones rápidas y acciones de código.</translation>
+        <translation>Mostrar el icono de bombilla o llave en línea para soluciones rápidas y acciones de código.</translation>
     </message>
     <message>
         <source>Controls whether pasting over a selection should replace only as many characters as the pasted text contains.</source>
-        <translation type="vanished">Controla si al pegar sobre una selección solo se reemplazan tantos caracteres como contiene el texto pegado.</translation>
+        <translation>Controla si al pegar sobre una selección solo se reemplazan tantos caracteres como contiene el texto pegado.</translation>
     </message>
     <message>
         <source>Show a code overview mini map on the side of the editor for quick navigation.</source>
-        <translation type="vanished">Mostrar un minimapa general del código al lado del editor para una navegación rápida.</translation>
+        <translation>Mostrar un minimapa general del código al lado del editor para una navegación rápida.</translation>
     </message>
     <message>
         <source>Defines the maximum length of a line the editor will tokenize. Lines above this length will not be tokenized for performance.</source>
-        <translation type="vanished">Define la longitud máxima de línea que tokenizará el editor. Las líneas que superen esta longitud no se tokenizarán por rendimiento.</translation>
+        <translation>Define la longitud máxima de línea que tokenizará el editor. Las líneas que superen esta longitud no se tokenizarán por rendimiento.</translation>
     </message>
     <message>
         <source>Controls the sensitivity of mouse wheel scrolling in the editor.</source>
-        <translation type="vanished">Controla la sensibilidad del desplazamiento con la rueda del ratón en el editor.</translation>
+        <translation>Controla la sensibilidad del desplazamiento con la rueda del ratón en el editor.</translation>
     </message>
     <message>
         <source>The number of spaces a tab is equal to. This affects editor indentation and tab rendering.</source>
-        <translation type="vanished">El número de espacios equivalente a una tabulación. Afecta a la sangría y la representación de tabulaciones.</translation>
+        <translation>El número de espacios equivalente a una tabulación. Afecta a la sangría y la representación de tabulaciones.</translation>
     </message>
     <message>
         <source>Controls the font family used in the editor. Enter a font name like &apos;Fira Code&apos; or &apos;Courier New&apos;.</source>
-        <translation type="vanished">Controla la familia de fuente usada en el editor. Introduzca un nombre de fuente como &apos;Fira Code&apos; o &apos;Courier New&apos;.</translation>
+        <translation>Controla la familia de fuente usada en el editor. Introduzca un nombre de fuente como &apos;Fira Code&apos; o &apos;Courier New&apos;.</translation>
     </message>
     <message>
         <source>Controls the font size in pixels used in the editor.</source>
-        <translation type="vanished">Controla el tamaño de fuente en píxeles usado en el editor.</translation>
+        <translation>Controla el tamaño de fuente en píxeles usado en el editor.</translation>
     </message>
     <message>
         <source>Text editor settings</source>
-        <translation type="vanished">Ajustes del editor de texto</translation>
+        <translation>Ajustes del editor de texto</translation>
     </message>
     <message>
         <source>Restart now</source>
-        <translation type="vanished">Reiniciar ahora</translation>
+        <translation>Reiniciar ahora</translation>
     </message>
     <message>
         <source>Restart later</source>
-        <translation type="vanished">Reiniciar más tarde</translation>
+        <translation>Reiniciar más tarde</translation>
     </message>
     <message>
         <source>Changes will be visible after you restart NECTO Studio.</source>
-        <translation type="vanished">Los cambios se verán después de reiniciar NECTO Studio.</translation>
+        <translation>Los cambios se verán después de reiniciar NECTO Studio.</translation>
     </message>
 </context>
 <context>
     <name>Necto::ElementView</name>
     <message>
         <source>MCU</source>
-        <translation type="vanished">MCU</translation>
+        <translation>MCU</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="vanished">Ajustes</translation>
+        <translation>Ajustes</translation>
     </message>
     <message>
         <source>Change</source>
-        <translation type="vanished">Cambiar</translation>
+        <translation>Cambiar</translation>
     </message>
 </context>
 <context>
     <name>Necto::EnterKeyFrame</name>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>Enter key</source>
-        <translation type="vanished">Tecla Intro</translation>
+        <translation>Tecla Intro</translation>
     </message>
 </context>
 <context>
     <name>Necto::EnvironmentPage</name>
     <message>
         <source>Color theme:</source>
-        <translation type="vanished">Tema de color:</translation>
+        <translation>Tema de color:</translation>
     </message>
     <message>
         <source>Enable animations</source>
-        <translation type="vanished">Habilitar animaciones</translation>
+        <translation>Habilitar animaciones</translation>
     </message>
     <message>
         <source>Enable shadows</source>
-        <translation type="vanished">Habilitar sombras</translation>
+        <translation>Habilitar sombras</translation>
     </message>
     <message>
         <source>Restart now</source>
-        <translation type="vanished">Reiniciar ahora</translation>
+        <translation>Reiniciar ahora</translation>
     </message>
     <message>
         <source>Restart later</source>
-        <translation type="vanished">Reiniciar más tarde</translation>
+        <translation>Reiniciar más tarde</translation>
     </message>
     <message>
         <source>Changes will be visible after you restart NECTO Studio.</source>
-        <translation type="vanished">Los cambios se verán después de reiniciar NECTO Studio.</translation>
+        <translation>Los cambios se verán después de reiniciar NECTO Studio.</translation>
     </message>
     <message>
         <source>Appearance settings</source>
-        <translation type="vanished">Ajustes de apariencia</translation>
+        <translation>Ajustes de apariencia</translation>
     </message>
 </context>
 <context>
     <name>Necto::EventsInspector</name>
     <message>
         <source>Filter events</source>
-        <translation type="vanished">Filtrar eventos</translation>
+        <translation>Filtrar eventos</translation>
     </message>
     <message>
         <source>No events available for selected component(s)</source>
-        <translation type="vanished">No hay eventos disponibles para los componentes seleccionados</translation>
+        <translation>No hay eventos disponibles para los componentes seleccionados</translation>
     </message>
 </context>
 <context>
     <name>Necto::ExampleItemView</name>
     <message>
         <source>Example Name</source>
-        <translation type="vanished">Nombre del ejemplo</translation>
+        <translation>Nombre del ejemplo</translation>
     </message>
     <message>
         <source>Dscription</source>
-        <translation type="vanished">Descripción</translation>
+        <translation>Descripción</translation>
     </message>
 </context>
 <context>
     <name>Necto::ExamplesView</name>
     <message>
         <source>Examples</source>
-        <translation type="vanished">Ejemplos</translation>
+        <translation>Ejemplos</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Cerrar</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <source>All Examples</source>
-        <translation type="vanished">Todos los ejemplos</translation>
+        <translation>Todos los ejemplos</translation>
     </message>
     <message>
         <source>mikroSDK Examples</source>
-        <translation type="vanished">Ejemplos de mikroSDK</translation>
+        <translation>Ejemplos de mikroSDK</translation>
     </message>
     <message>
         <source>mikroC PRO Examples</source>
-        <translation type="vanished">Ejemplos de mikroC PRO</translation>
+        <translation>Ejemplos de mikroC PRO</translation>
     </message>
 </context>
 <context>
@@ -10689,444 +10689,444 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::Field</name>
     <message>
         <source>Disabled</source>
-        <translation type="vanished">Deshabilitado</translation>
+        <translation>Deshabilitado</translation>
     </message>
 </context>
 <context>
     <name>Necto::FieldView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
 </context>
 <context>
     <name>Necto::FileActionHandlers</name>
     <message>
         <source>Add new file</source>
-        <translation type="vanished">Añadir nuevo archivo</translation>
+        <translation>Añadir nuevo archivo</translation>
     </message>
     <message>
         <source>Add new file to project </source>
-        <translation type="vanished">Añadir nuevo archivo al proyecto </translation>
+        <translation>Añadir nuevo archivo al proyecto </translation>
     </message>
     <message>
         <source>Add new source file</source>
-        <translation type="vanished">Añadir nuevo archivo fuente</translation>
+        <translation>Añadir nuevo archivo fuente</translation>
     </message>
     <message>
         <source>Add new source file to project </source>
-        <translation type="vanished">Añadir nuevo archivo fuente al proyecto </translation>
+        <translation>Añadir nuevo archivo fuente al proyecto </translation>
     </message>
     <message>
         <source>Add new header file</source>
-        <translation type="vanished">Añadir nuevo archivo de encabezado</translation>
+        <translation>Añadir nuevo archivo de encabezado</translation>
     </message>
     <message>
         <source>Add new header file to project </source>
-        <translation type="vanished">Añadir nuevo archivo de encabezado al proyecto </translation>
+        <translation>Añadir nuevo archivo de encabezado al proyecto </translation>
     </message>
     <message>
         <source>Add new screen file</source>
-        <translation type="vanished">Añadir nuevo archivo de pantalla</translation>
+        <translation>Añadir nuevo archivo de pantalla</translation>
     </message>
     <message>
         <source>Add new screen to project </source>
-        <translation type="vanished">Añadir nueva pantalla al proyecto </translation>
+        <translation>Añadir nueva pantalla al proyecto </translation>
     </message>
     <message>
         <source>Rename file</source>
-        <translation type="vanished">Renombrar archivo</translation>
+        <translation>Renombrar archivo</translation>
     </message>
     <message>
         <source>Enter new file name.</source>
-        <translation type="vanished">Introducir nuevo nombre de archivo.</translation>
+        <translation>Introducir nuevo nombre de archivo.</translation>
     </message>
     <message>
         <source>Rename source file</source>
-        <translation type="vanished">Renombrar archivo fuente</translation>
+        <translation>Renombrar archivo fuente</translation>
     </message>
     <message>
         <source>Enter source file name.</source>
-        <translation type="vanished">Introducir nombre del archivo fuente.</translation>
+        <translation>Introducir nombre del archivo fuente.</translation>
     </message>
     <message>
         <source>Rename header file</source>
-        <translation type="vanished">Renombrar archivo de encabezado</translation>
+        <translation>Renombrar archivo de encabezado</translation>
     </message>
     <message>
         <source>Enter new header file name.</source>
-        <translation type="vanished">Introducir nuevo nombre del archivo de encabezado.</translation>
+        <translation>Introducir nuevo nombre del archivo de encabezado.</translation>
     </message>
     <message>
         <source>Rename screen</source>
-        <translation type="vanished">Renombrar pantalla</translation>
+        <translation>Renombrar pantalla</translation>
     </message>
     <message>
         <source>Enter new screen name.</source>
-        <translation type="vanished">Introducir nuevo nombre de pantalla.</translation>
+        <translation>Introducir nuevo nombre de pantalla.</translation>
     </message>
     <message>
         <source>Renaming screen will also rename screen header and source file.</source>
-        <translation type="vanished">Al renombrar la pantalla también se renombrarán su archivo de encabezado y fuente.</translation>
+        <translation>Al renombrar la pantalla también se renombrarán su archivo de encabezado y fuente.</translation>
     </message>
     <message>
         <source>Remove file</source>
-        <translation type="vanished">Quitar archivo</translation>
+        <translation>Quitar archivo</translation>
     </message>
     <message>
         <source>Remove file &quot;%1&quot; from a project?</source>
-        <translation type="vanished">¿Quitar el archivo &quot;%1&quot; de un proyecto?</translation>
+        <translation>¿Quitar el archivo &quot;%1&quot; de un proyecto?</translation>
     </message>
     <message>
         <source>Remove source file</source>
-        <translation type="vanished">Quitar archivo fuente</translation>
+        <translation>Quitar archivo fuente</translation>
     </message>
     <message>
         <source>Remove source file &quot;%1&quot; from a project?</source>
-        <translation type="vanished">¿Quitar el archivo fuente &quot;%1&quot; de un proyecto?</translation>
+        <translation>¿Quitar el archivo fuente &quot;%1&quot; de un proyecto?</translation>
     </message>
     <message>
         <source>Remove header file</source>
-        <translation type="vanished">Quitar archivo de encabezado</translation>
+        <translation>Quitar archivo de encabezado</translation>
     </message>
     <message>
         <source>Remove header file &quot;%1&quot; from a project?</source>
-        <translation type="vanished">¿Quitar el archivo de encabezado &quot;%1&quot; de un proyecto?</translation>
+        <translation>¿Quitar el archivo de encabezado &quot;%1&quot; de un proyecto?</translation>
     </message>
     <message>
         <source>Remove screen</source>
-        <translation type="vanished">Quitar pantalla</translation>
+        <translation>Quitar pantalla</translation>
     </message>
     <message>
         <source>Remove screen file &quot;%1&quot; from a project?</source>
-        <translation type="vanished">¿Quitar el archivo de pantalla &quot;%1&quot; de un proyecto?</translation>
+        <translation>¿Quitar el archivo de pantalla &quot;%1&quot; de un proyecto?</translation>
     </message>
     <message>
         <source>Removing screen will also remove screen header and source file.</source>
-        <translation type="vanished">Al quitar la pantalla también se quitarán su archivo de encabezado y fuente.</translation>
+        <translation>Al quitar la pantalla también se quitarán su archivo de encabezado y fuente.</translation>
     </message>
     <message>
         <source>Choose a file</source>
-        <translation type="vanished">Elegir un archivo</translation>
+        <translation>Elegir un archivo</translation>
     </message>
     <message>
         <source>Source files (*.c)</source>
-        <translation type="vanished">Archivos fuente (*.c)</translation>
+        <translation>Archivos fuente (*.c)</translation>
     </message>
     <message>
         <source>Header files (*.h)</source>
-        <translation type="vanished">Archivos de encabezado (*.h)</translation>
+        <translation>Archivos de encabezado (*.h)</translation>
     </message>
     <message>
         <source>All files (*.*)</source>
-        <translation type="vanished">Todos los archivos (*.*)</translation>
+        <translation>Todos los archivos (*.*)</translation>
     </message>
     <message>
         <source>Other</source>
-        <translation type="vanished">Otro</translation>
+        <translation>Otro</translation>
     </message>
     <message>
         <source>Source</source>
-        <translation type="vanished">Fuente</translation>
+        <translation>Fuente</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation type="vanished">Encabezado</translation>
+        <translation>Encabezado</translation>
     </message>
     <message>
         <source>Screen</source>
-        <translation type="vanished">Pantalla</translation>
+        <translation>Pantalla</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">Quitar</translation>
+        <translation>Quitar</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation type="vanished">Renombrar</translation>
+        <translation>Renombrar</translation>
     </message>
     <message>
         <source>Existing file</source>
-        <translation type="vanished">Archivo existente</translation>
+        <translation>Archivo existente</translation>
     </message>
     <message>
         <source>Open file location</source>
-        <translation type="vanished">Abrir ubicación del archivo</translation>
+        <translation>Abrir ubicación del archivo</translation>
     </message>
     <message>
         <source>Open build folder</source>
-        <translation type="vanished">Abrir carpeta de compilación</translation>
+        <translation>Abrir carpeta de compilación</translation>
     </message>
     <message>
         <source>Manage project libraries</source>
-        <translation type="vanished">Gestionar bibliotecas del proyecto</translation>
+        <translation>Gestionar bibliotecas del proyecto</translation>
     </message>
     <message>
         <source>Copy absolute path</source>
-        <translation type="vanished">Copiar ruta absoluta</translation>
+        <translation>Copiar ruta absoluta</translation>
     </message>
 </context>
 <context>
     <name>Necto::FilterButton</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
 </context>
 <context>
     <name>Necto::FilterWidget</name>
     <message>
         <source>Search...</source>
-        <translation type="vanished">Buscar...</translation>
+        <translation>Buscar...</translation>
     </message>
 </context>
 <context>
     <name>Necto::FindInFilesView</name>
     <message>
         <source>Search</source>
-        <translation type="vanished">Buscar</translation>
+        <translation>Buscar</translation>
     </message>
     <message>
         <source>Replace: </source>
-        <translation type="vanished">Reemplazar: </translation>
+        <translation>Reemplazar: </translation>
     </message>
     <message>
         <source>Replace all</source>
-        <translation type="vanished">Reemplazar todo</translation>
+        <translation>Reemplazar todo</translation>
     </message>
     <message>
         <source>Match case sensitive</source>
-        <translation type="vanished">Distinguir mayúsculas</translation>
+        <translation>Distinguir mayúsculas</translation>
     </message>
     <message>
         <source>Match whole word</source>
-        <translation type="vanished">Coincidir palabra completa</translation>
+        <translation>Coincidir palabra completa</translation>
     </message>
     <message>
         <source>Use regular expresion</source>
-        <translation type="vanished">Usar expresión regular</translation>
+        <translation>Usar expresión regular</translation>
     </message>
     <message>
         <source>Replace</source>
-        <translation type="vanished">Reemplazar</translation>
+        <translation>Reemplazar</translation>
     </message>
 </context>
 <context>
     <name>Necto::FindReferenceView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>found x mathes</source>
-        <translation type="vanished">x coincidencias encontradas</translation>
+        <translation>x coincidencias encontradas</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;No results to display yet.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Type a search query in the input field above to search across your entire codebase.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Aún no hay resultados para mostrar.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Escriba una consulta en el campo de arriba para buscar en todo su código.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Aún no hay resultados para mostrar.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Escriba una consulta en el campo de arriba para buscar en todo su código.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Searching....</source>
-        <translation type="vanished">Buscando....</translation>
+        <translation>Buscando....</translation>
     </message>
     <message>
         <source>Found: 0 matches</source>
-        <translation type="vanished">Encontradas: 0 coincidencias</translation>
+        <translation>Encontradas: 0 coincidencias</translation>
     </message>
     <message>
         <source>Expand all</source>
-        <translation type="vanished">Expandir todo</translation>
+        <translation>Expandir todo</translation>
     </message>
     <message>
         <source>Collapse all</source>
-        <translation type="vanished">Contraer todo</translation>
+        <translation>Contraer todo</translation>
     </message>
     <message>
         <source>Goto symbol</source>
-        <translation type="vanished">Ir al símbolo</translation>
+        <translation>Ir al símbolo</translation>
     </message>
 </context>
 <context>
     <name>Necto::FloatingMessageFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Insert at Cursor</source>
-        <translation type="vanished">Insertar en el cursor</translation>
+        <translation>Insertar en el cursor</translation>
     </message>
     <message>
         <source>Copy code</source>
-        <translation type="vanished">Copiar código</translation>
+        <translation>Copiar código</translation>
     </message>
 </context>
 <context>
     <name>Necto::FormatSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Enable auto format on file save</source>
-        <translation type="vanished">Habilitar formato automático al guardar</translation>
+        <translation>Habilitar formato automático al guardar</translation>
     </message>
     <message>
         <source>Formatting</source>
-        <translation type="vanished">Formato</translation>
+        <translation>Formato</translation>
     </message>
 </context>
 <context>
     <name>Necto::GCCARMSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">Ajustes del compilador </translation>
+        <translation>Ajustes del compilador </translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation type="vanished">Depurador</translation>
+        <translation>Depurador</translation>
     </message>
     <message>
         <source>Change your program&apos;s debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
-        <translation type="vanished">Cambie el depurador de su programa de LLDB a GDB o viceversa, según sus requisitos específicos.</translation>
+        <translation>Cambie el depurador de su programa de LLDB a GDB o viceversa, según sus requisitos específicos.</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">Ajustes del compilador</translation>
+        <translation>Ajustes del compilador</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
 </context>
 <context>
     <name>Necto::GdbGeneralView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>GDB server options</source>
-        <translation type="vanished">Opciones del servidor GDB</translation>
+        <translation>Opciones del servidor GDB</translation>
     </message>
     <message>
         <source>IP Address:</source>
-        <translation type="vanished">Dirección IP:</translation>
+        <translation>Dirección IP:</translation>
     </message>
     <message>
         <source>Port:</source>
-        <translation type="vanished">Puerto:</translation>
+        <translation>Puerto:</translation>
     </message>
     <message>
         <source>Command line options:</source>
-        <translation type="vanished">Opciones de línea de comandos:</translation>
+        <translation>Opciones de línea de comandos:</translation>
     </message>
     <message>
         <source>Server Path:</source>
-        <translation type="vanished">Ruta del servidor:</translation>
+        <translation>Ruta del servidor:</translation>
     </message>
     <message>
         <source>Remote commands:</source>
-        <translation type="vanished">Comandos remotos:</translation>
+        <translation>Comandos remotos:</translation>
     </message>
     <message>
         <source>Remote commands</source>
-        <translation type="vanished">Comandos remotos</translation>
+        <translation>Comandos remotos</translation>
     </message>
     <message>
         <source>Auto start local GDB Server</source>
-        <translation type="vanished">Iniciar automáticamente el servidor GDB local</translation>
+        <translation>Iniciar automáticamente el servidor GDB local</translation>
     </message>
     <message>
         <source>Connect to remote GDB Server</source>
-        <translation type="vanished">Conectar al servidor GDB remoto</translation>
+        <translation>Conectar al servidor GDB remoto</translation>
     </message>
     <message>
         <source>GDB Settings</source>
-        <translation type="vanished">Ajustes de GDB</translation>
+        <translation>Ajustes de GDB</translation>
     </message>
     <message>
         <source>GDB server address</source>
-        <translation type="vanished">Dirección del servidor GDB</translation>
+        <translation>Dirección del servidor GDB</translation>
     </message>
     <message>
         <source>GDB server port</source>
-        <translation type="vanished">Puerto del servidor GDB</translation>
+        <translation>Puerto del servidor GDB</translation>
     </message>
     <message>
         <source>Command line parameters</source>
-        <translation type="vanished">Parámetros de línea de comandos</translation>
+        <translation>Parámetros de línea de comandos</translation>
     </message>
     <message>
         <source>GDB local server path</source>
-        <translation type="vanished">Ruta del servidor GDB local</translation>
+        <translation>Ruta del servidor GDB local</translation>
     </message>
     <message>
         <source>GDB local server executable path</source>
-        <translation type="vanished">Ruta del ejecutable del servidor GDB local</translation>
+        <translation>Ruta del ejecutable del servidor GDB local</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation type="vanished">Abrir archivo</translation>
+        <translation>Abrir archivo</translation>
     </message>
 </context>
 <context>
     <name>Necto::GeneralPage</name>
     <message>
         <source>Default project path:</source>
-        <translation type="vanished">Ruta de proyecto predeterminada:</translation>
+        <translation>Ruta de proyecto predeterminada:</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation type="vanished">Examinar</translation>
+        <translation>Examinar</translation>
     </message>
     <message>
         <source>Save dialog: Don&apos;t ask, save all modified files.</source>
-        <translation type="vanished">Diálogo de guardar: No preguntar, guardar todos los archivos modificados.</translation>
+        <translation>Diálogo de guardar: No preguntar, guardar todos los archivos modificados.</translation>
     </message>
     <message>
         <source>Always use default Remote Board Farm configuration</source>
-        <translation type="vanished">Usar siempre la configuración predeterminada de Remote Board Farm</translation>
+        <translation>Usar siempre la configuración predeterminada de Remote Board Farm</translation>
     </message>
     <message>
         <source>When in debug session, evaluate expressions by hovering over them.</source>
-        <translation type="vanished">Durante una sesión de depuración, evalúe expresiones al pasar el cursor sobre ellas.</translation>
+        <translation>Durante una sesión de depuración, evalúe expresiones al pasar el cursor sobre ellas.</translation>
     </message>
     <message>
         <source>Evaluate expressions by hovering over them.</source>
-        <translation type="vanished">Evaluar expresiones al pasar el cursor sobre ellas.</translation>
+        <translation>Evaluar expresiones al pasar el cursor sobre ellas.</translation>
     </message>
     <message>
         <source>Use TabNine code completion</source>
-        <translation type="vanished">Usar autocompletado de TabNine</translation>
+        <translation>Usar autocompletado de TabNine</translation>
     </message>
     <message>
         <source>Restore last session on NECTO Studio startup</source>
-        <translation type="vanished">Restaurar la última sesión al iniciar NECTO Studio</translation>
+        <translation>Restaurar la última sesión al iniciar NECTO Studio</translation>
     </message>
     <message>
         <source>Telemetry assists in gaining insights into the performance of NECTO Studio, identifying areas for enhancement, and understanding the usage patterns of its features.</source>
-        <translation type="vanished">La telemetría ayuda a conocer el rendimiento de NECTO Studio, identificar áreas de mejora y comprender los patrones de uso de sus funciones.</translation>
+        <translation>La telemetría ayuda a conocer el rendimiento de NECTO Studio, identificar áreas de mejora y comprender los patrones de uso de sus funciones.</translation>
     </message>
     <message>
         <source>Enable sending telemetry events</source>
-        <translation type="vanished">Habilitar el envío de eventos de telemetría</translation>
+        <translation>Habilitar el envío de eventos de telemetría</translation>
     </message>
     <message>
         <source>Language:</source>
@@ -11138,35 +11138,35 @@ Do you wish to override the security check and continue ?   </source>
     </message>
     <message>
         <source>Mongoose port:</source>
-        <translation type="vanished">Puerto de Mongoose:</translation>
+        <translation>Puerto de Mongoose:</translation>
     </message>
     <message>
         <source>Enter the TCP port number for the Mongoose web server. Default: 8000.</source>
-        <translation type="vanished">Introduzca el número de puerto TCP del servidor web Mongoose. Predeterminado: 8000.</translation>
+        <translation>Introduzca el número de puerto TCP del servidor web Mongoose. Predeterminado: 8000.</translation>
     </message>
     <message>
         <source>Remote Debugging Timeout (seconds):</source>
-        <translation type="vanished">Tiempo de espera de depuración remota (segundos):</translation>
+        <translation>Tiempo de espera de depuración remota (segundos):</translation>
     </message>
     <message>
         <source>Defines the timeout for connecting to the remote debugger and waiting for responses from the target. Increase for slow targets or network delays.</source>
-        <translation type="vanished">Define el tiempo de espera para conectar con el depurador remoto y esperar respuestas del destino. Auméntelo para destinos lentos o retrasos de red.</translation>
+        <translation>Define el tiempo de espera para conectar con el depurador remoto y esperar respuestas del destino. Auméntelo para destinos lentos o retrasos de red.</translation>
     </message>
     <message>
         <source>Clear NECTO Studio cache files</source>
-        <translation type="vanished">Borrar los archivos de caché de NECTO Studio</translation>
+        <translation>Borrar los archivos de caché de NECTO Studio</translation>
     </message>
     <message>
         <source>Clear cache</source>
-        <translation type="vanished">Borrar caché</translation>
+        <translation>Borrar caché</translation>
     </message>
     <message>
         <source>Default projects path</source>
-        <translation type="vanished">Ruta de proyectos predeterminada</translation>
+        <translation>Ruta de proyectos predeterminada</translation>
     </message>
     <message>
         <source>Mongoose port</source>
-        <translation type="vanished">Puerto de Mongoose</translation>
+        <translation>Puerto de Mongoose</translation>
     </message>
     <message>
         <source>System default</source>
@@ -11174,352 +11174,352 @@ Do you wish to override the security check and continue ?   </source>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="vanished">Sí</translation>
+        <translation>Sí</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="vanished">No</translation>
+        <translation>No</translation>
     </message>
     <message>
         <source>Clear NECTO Studio cache files? &lt;br&gt;&lt;br&gt; NECTO Studio will be restarted</source>
-        <translation type="vanished">¿Borrar los archivos de caché de NECTO Studio? &lt;br&gt;&lt;br&gt; NECTO Studio se reiniciará</translation>
+        <translation>¿Borrar los archivos de caché de NECTO Studio? &lt;br&gt;&lt;br&gt; NECTO Studio se reiniciará</translation>
     </message>
     <message>
         <source>Miscellaneous settings</source>
-        <translation type="vanished">Ajustes varios</translation>
+        <translation>Ajustes varios</translation>
     </message>
     <message>
         <source>Browse folder</source>
-        <translation type="vanished">Examinar carpeta</translation>
+        <translation>Examinar carpeta</translation>
     </message>
     <message>
         <source>Restart now</source>
-        <translation type="vanished">Reiniciar ahora</translation>
+        <translation>Reiniciar ahora</translation>
     </message>
     <message>
         <source>Restart later</source>
-        <translation type="vanished">Reiniciar más tarde</translation>
+        <translation>Reiniciar más tarde</translation>
     </message>
     <message>
         <source>Changes will be visible after you restart NECTO Studio.</source>
-        <translation type="vanished">Los cambios se verán después de reiniciar NECTO Studio.</translation>
+        <translation>Los cambios se verán después de reiniciar NECTO Studio.</translation>
     </message>
 </context>
 <context>
     <name>Necto::HIDOptions</name>
     <message>
         <source>HID device:</source>
-        <translation type="vanished">Dispositivo HID:</translation>
+        <translation>Dispositivo HID:</translation>
     </message>
     <message>
         <source>Product ID</source>
-        <translation type="vanished">ID de producto</translation>
+        <translation>ID de producto</translation>
     </message>
     <message>
         <source>Manufacturer</source>
-        <translation type="vanished">Fabricante</translation>
+        <translation>Fabricante</translation>
     </message>
     <message>
         <source>Product</source>
-        <translation type="vanished">Producto</translation>
+        <translation>Producto</translation>
     </message>
     <message>
         <source>Vendor ID</source>
-        <translation type="vanished">ID de fabricante</translation>
+        <translation>ID de fabricante</translation>
     </message>
     <message>
         <source>Serial number</source>
-        <translation type="vanished">Número de serie</translation>
+        <translation>Número de serie</translation>
     </message>
     <message>
         <source>Fill character</source>
-        <translation type="vanished">Carácter de relleno</translation>
+        <translation>Carácter de relleno</translation>
     </message>
     <message>
         <source>Report size</source>
-        <translation type="vanished">Tamaño de informe</translation>
+        <translation>Tamaño de informe</translation>
     </message>
     <message>
         <source>Manufacturer string</source>
-        <translation type="vanished">Cadena de fabricante</translation>
+        <translation>Cadena de fabricante</translation>
     </message>
     <message>
         <source>Product string</source>
-        <translation type="vanished">Cadena de producto</translation>
+        <translation>Cadena de producto</translation>
     </message>
 </context>
 <context>
     <name>Necto::HelpPage</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation type="vanished">Ayuda</translation>
+        <translation>Ayuda</translation>
     </message>
 </context>
 <context>
     <name>Necto::HidBootloaderPlugin</name>
     <message>
         <source>HID Bootloader</source>
-        <translation type="vanished">Bootloader HID</translation>
+        <translation>Bootloader HID</translation>
     </message>
 </context>
 <context>
     <name>Necto::HidPlugin</name>
     <message>
         <source>HID Terminal</source>
-        <translation type="vanished">Terminal HID</translation>
+        <translation>Terminal HID</translation>
     </message>
 </context>
 <context>
     <name>Necto::HubFilterButton</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
 </context>
 <context>
     <name>Necto::HubFilterWidget</name>
     <message>
         <source>Search...</source>
-        <translation type="vanished">Buscar...</translation>
+        <translation>Buscar...</translation>
     </message>
 </context>
 <context>
     <name>Necto::HubSelectedFilters</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
 </context>
 <context>
     <name>Necto::IScreen</name>
     <message>
         <source>Add</source>
-        <translation type="vanished">Añadir</translation>
+        <translation>Añadir</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save as component</source>
-        <translation type="vanished">Guardar como componente</translation>
+        <translation>Guardar como componente</translation>
     </message>
     <message>
         <source>Enter component name</source>
-        <translation type="vanished">Introducir nombre del componente</translation>
+        <translation>Introducir nombre del componente</translation>
     </message>
 </context>
 <context>
     <name>Necto::InitFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>End tour</source>
-        <translation type="vanished">Finalizar recorrido</translation>
+        <translation>Finalizar recorrido</translation>
     </message>
     <message>
         <source>Show me</source>
-        <translation type="vanished">Mostrarme</translation>
+        <translation>Mostrarme</translation>
     </message>
 </context>
 <context>
     <name>Necto::InstallerDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">Diálogo</translation>
+        <translation>Diálogo</translation>
     </message>
     <message>
         <source>The folowing packages are neccessary to complete the setup:</source>
-        <translation type="vanished">Los siguientes paquetes son necesarios para completar la configuración:</translation>
+        <translation>Los siguientes paquetes son necesarios para completar la configuración:</translation>
     </message>
     <message>
         <source>icon</source>
-        <translation type="vanished">icono</translation>
+        <translation>icono</translation>
     </message>
     <message>
         <source>Would you like to download and install them?</source>
-        <translation type="vanished">¿Desea descargarlos e instalarlos?</translation>
+        <translation>¿Desea descargarlos e instalarlos?</translation>
     </message>
     <message>
         <source>Verifying all required packages...</source>
-        <translation type="vanished">Verificando todos los paquetes necesarios...</translation>
+        <translation>Verificando todos los paquetes necesarios...</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="vanished">No</translation>
+        <translation>No</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="vanished">Sí</translation>
+        <translation>Sí</translation>
     </message>
     <message>
         <source>Error installing package...</source>
-        <translation type="vanished">Error al instalar el paquete...</translation>
+        <translation>Error al instalar el paquete...</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>Confirm</source>
-        <translation type="vanished">Confirmar</translation>
+        <translation>Confirmar</translation>
     </message>
     <message>
         <source>NECTO will download and install them.</source>
-        <translation type="vanished">NECTO los descargará e instalará.</translation>
+        <translation>NECTO los descargará e instalará.</translation>
     </message>
     <message>
         <source>Please wait while packages are being installed...</source>
-        <translation type="vanished">Espere mientras se instalan los paquetes...</translation>
+        <translation>Espere mientras se instalan los paquetes...</translation>
     </message>
     <message>
         <source>Downloading</source>
-        <translation type="vanished">Descargando</translation>
+        <translation>Descargando</translation>
     </message>
     <message>
         <source>Unpacking</source>
-        <translation type="vanished">Descomprimiendo</translation>
+        <translation>Descomprimiendo</translation>
     </message>
     <message>
         <source>Updating installation record</source>
-        <translation type="vanished">Actualizando el registro de instalación</translation>
+        <translation>Actualizando el registro de instalación</translation>
     </message>
     <message>
         <source>%1 %2...</source>
-        <translation type="vanished">%1 %2...</translation>
+        <translation>%1 %2...</translation>
     </message>
 </context>
 <context>
     <name>Necto::InterruptAssistant</name>
     <message>
         <source>Please select a project</source>
-        <translation type="vanished">Seleccione un proyecto</translation>
+        <translation>Seleccione un proyecto</translation>
     </message>
     <message>
         <source>Please select a configuration</source>
-        <translation type="vanished">Seleccione una configuración</translation>
+        <translation>Seleccione una configuración</translation>
     </message>
     <message>
         <source>Interrupt file path not found for the selected compiler and MCU.</source>
-        <translation type="vanished">No se encontró la ruta del archivo de interrupción para el compilador y MCU seleccionados.</translation>
+        <translation>No se encontró la ruta del archivo de interrupción para el compilador y MCU seleccionados.</translation>
     </message>
     <message>
         <source>Compiler not supported.</source>
-        <translation type="vanished">Compilador no compatible.</translation>
+        <translation>Compilador no compatible.</translation>
     </message>
 </context>
 <context>
     <name>Necto::InterruptAssistantView</name>
     <message>
         <source>Choose interrupt :</source>
-        <translation type="vanished">Elegir interrupción :</translation>
+        <translation>Elegir interrupción :</translation>
     </message>
     <message>
         <source>Current compiler :</source>
-        <translation type="vanished">Compilador actual :</translation>
+        <translation>Compilador actual :</translation>
     </message>
     <message>
         <source>Current device :</source>
-        <translation type="vanished">Dispositivo actual :</translation>
+        <translation>Dispositivo actual :</translation>
     </message>
     <message>
         <source>Compiler</source>
-        <translation type="vanished">Compilador</translation>
+        <translation>Compilador</translation>
     </message>
     <message>
         <source>Device</source>
-        <translation type="vanished">Dispositivo</translation>
+        <translation>Dispositivo</translation>
     </message>
     <message>
         <source>Copy code</source>
-        <translation type="vanished">Copiar código</translation>
+        <translation>Copiar código</translation>
     </message>
     <message>
         <source>Initialize interrupt</source>
-        <translation type="vanished">Inicializar interrupción</translation>
+        <translation>Inicializar interrupción</translation>
     </message>
     <message>
         <source>Code generated succefully</source>
-        <translation type="vanished">Código generado correctamente</translation>
+        <translation>Código generado correctamente</translation>
     </message>
     <message>
         <source>Code copied to cliboard.</source>
-        <translation type="vanished">Código copiado al portapapeles.</translation>
+        <translation>Código copiado al portapapeles.</translation>
     </message>
 </context>
 <context>
     <name>Necto::InterruptPlugin</name>
     <message>
         <source>Interrupt Assistant</source>
-        <translation type="vanished">Interrupciones</translation>
+        <translation>Interrupciones</translation>
     </message>
 </context>
 <context>
     <name>Necto::IssueOutputItemModel</name>
     <message>
         <source>Ask AI to explain this issue</source>
-        <translation type="vanished">Pedir a la IA que explique este problema</translation>
+        <translation>Pedir a la IA que explique este problema</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Tipo</translation>
+        <translation>Tipo</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation type="vanished">Mensaje</translation>
+        <translation>Mensaje</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="vanished">Archivo</translation>
+        <translation>Archivo</translation>
     </message>
     <message>
         <source>Action</source>
-        <translation type="vanished">Acción</translation>
+        <translation>Acción</translation>
     </message>
     <message>
         <source>Unknown Section</source>
-        <translation type="vanished">Sección desconocida</translation>
+        <translation>Sección desconocida</translation>
     </message>
 </context>
 <context>
     <name>Necto::IssueOutputView</name>
     <message>
         <source>Copy</source>
-        <translation type="vanished">Copiar</translation>
+        <translation>Copiar</translation>
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="vanished">Copiar enlace</translation>
+        <translation>Copiar enlace</translation>
     </message>
     <message>
         <source>  Explain all</source>
-        <translation type="vanished">  Explicar todo</translation>
+        <translation>  Explicar todo</translation>
     </message>
     <message>
         <source>Toggle errors</source>
-        <translation type="vanished">Alternar errores</translation>
+        <translation>Alternar errores</translation>
     </message>
     <message>
         <source>Toggle warnings</source>
-        <translation type="vanished">Alternar advertencias</translation>
+        <translation>Alternar advertencias</translation>
     </message>
     <message>
         <source>Toggle hints</source>
-        <translation type="vanished">Alternar sugerencias</translation>
+        <translation>Alternar sugerencias</translation>
     </message>
     <message>
         <source>Ask AI to analyze all issues</source>
-        <translation type="vanished">Pedir a la IA que analice todos los problemas</translation>
+        <translation>Pedir a la IA que analice todos los problemas</translation>
     </message>
     <message>
         <source>Ask AI to analyze this issue</source>
-        <translation type="vanished">Pedir a la IA que analice este problema</translation>
+        <translation>Pedir a la IA que analice este problema</translation>
     </message>
 </context>
 <context>
@@ -11608,229 +11608,229 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::JobProgressWidget</name>
     <message>
         <source>Job Title</source>
-        <translation type="vanished">Cargo</translation>
+        <translation>Cargo</translation>
     </message>
 </context>
 <context>
     <name>Necto::KDevMI::MIDebugger</name>
     <message>
         <source>Process exited</source>
-        <translation type="vanished">El proceso finalizó</translation>
+        <translation>El proceso finalizó</translation>
     </message>
 </context>
 <context>
     <name>Necto::LSPClient</name>
     <message>
         <source>Initializing code model. Please wait.</source>
-        <translation type="vanished">Inicializando el modelo de código. Espere.</translation>
+        <translation>Inicializando el modelo de código. Espere.</translation>
     </message>
     <message>
         <source>Code model initialized.</source>
-        <translation type="vanished">Modelo de código inicializado.</translation>
+        <translation>Modelo de código inicializado.</translation>
     </message>
     <message>
         <source>Indexing project...</source>
-        <translation type="vanished">Indexando proyecto...</translation>
+        <translation>Indexando proyecto...</translation>
     </message>
     <message>
         <source>Indexing project failed. Check your configuration.</source>
-        <translation type="vanished">Error al indexar el proyecto. Revise su configuración.</translation>
+        <translation>Error al indexar el proyecto. Revise su configuración.</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLArrayPropertyEditor</name>
     <message>
         <source>Add</source>
-        <translation type="vanished">Añadir</translation>
+        <translation>Añadir</translation>
     </message>
     <message>
         <source>Add point</source>
-        <translation type="vanished">Añadir punto</translation>
+        <translation>Añadir punto</translation>
     </message>
     <message>
         <source>Remove series</source>
-        <translation type="vanished">Quitar serie</translation>
+        <translation>Quitar serie</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLComponentsView</name>
     <message>
         <source>Filter components</source>
-        <translation type="vanished">Filtrar componentes</translation>
+        <translation>Filtrar componentes</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLDesignerEditorPluginV9</name>
     <message>
         <source>Design</source>
-        <translation type="vanished">Diseño</translation>
+        <translation>Diseño</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLDesignerView</name>
     <message>
         <source>Align and distrubute</source>
-        <translation type="vanished">Alinear y distribuir</translation>
+        <translation>Alinear y distribuir</translation>
     </message>
     <message>
         <source> Object inspector</source>
-        <translation type="vanished"> Inspector de objetos</translation>
+        <translation> Inspector de objetos</translation>
     </message>
     <message>
         <source> Style inspector</source>
-        <translation type="vanished"> Inspector de estilos</translation>
+        <translation> Inspector de estilos</translation>
     </message>
     <message>
         <source> Events inspector</source>
-        <translation type="vanished"> Inspector de eventos</translation>
+        <translation> Inspector de eventos</translation>
     </message>
     <message>
         <source> Components</source>
-        <translation type="vanished"> Componentes</translation>
+        <translation> Componentes</translation>
     </message>
     <message>
         <source> Hierarchy</source>
-        <translation type="vanished"> Jerarquía</translation>
+        <translation> Jerarquía</translation>
     </message>
     <message>
         <source> User components</source>
-        <translation type="vanished"> Componentes de usuario</translation>
+        <translation> Componentes de usuario</translation>
     </message>
     <message>
         <source>Align left</source>
-        <translation type="vanished">Alinear izquierda</translation>
+        <translation>Alinear izquierda</translation>
     </message>
     <message>
         <source>Align top</source>
-        <translation type="vanished">Alinear arriba</translation>
+        <translation>Alinear arriba</translation>
     </message>
     <message>
         <source>Align bottom</source>
-        <translation type="vanished">Alinear abajo</translation>
+        <translation>Alinear abajo</translation>
     </message>
     <message>
         <source>Align right</source>
-        <translation type="vanished">Alinear derecha</translation>
+        <translation>Alinear derecha</translation>
     </message>
     <message>
         <source>Center vertical</source>
-        <translation type="vanished">Centrar vertical</translation>
+        <translation>Centrar vertical</translation>
     </message>
     <message>
         <source>Center horizontal</source>
-        <translation type="vanished">Centrar horizontal</translation>
+        <translation>Centrar horizontal</translation>
     </message>
     <message>
         <source>Make same height</source>
-        <translation type="vanished">Igualar alto</translation>
+        <translation>Igualar alto</translation>
     </message>
     <message>
         <source>Make same width</source>
-        <translation type="vanished">Igualar ancho</translation>
+        <translation>Igualar ancho</translation>
     </message>
     <message>
         <source>Make same size</source>
-        <translation type="vanished">Igualar tamaño</translation>
+        <translation>Igualar tamaño</translation>
     </message>
     <message>
         <source>Stick vertical</source>
-        <translation type="vanished">Pegar vertical</translation>
+        <translation>Pegar vertical</translation>
     </message>
     <message>
         <source>Stick horizontal</source>
-        <translation type="vanished">Pegar horizontal</translation>
+        <translation>Pegar horizontal</translation>
     </message>
     <message>
         <source>Space horizontal evenly</source>
-        <translation type="vanished">Espaciar horizontal uniformemente</translation>
+        <translation>Espaciar horizontal uniformemente</translation>
     </message>
     <message>
         <source>Space vertical evenly</source>
-        <translation type="vanished">Espaciar vertical uniformemente</translation>
+        <translation>Espaciar vertical uniformemente</translation>
     </message>
     <message>
         <source>Bring to front</source>
-        <translation type="vanished">Traer al frente</translation>
+        <translation>Traer al frente</translation>
     </message>
     <message>
         <source>Send to back</source>
-        <translation type="vanished">Enviar al fondo</translation>
+        <translation>Enviar al fondo</translation>
     </message>
     <message>
         <source>Send up</source>
-        <translation type="vanished">Subir</translation>
+        <translation>Subir</translation>
     </message>
     <message>
         <source>Send down</source>
-        <translation type="vanished">Bajar</translation>
+        <translation>Bajar</translation>
     </message>
     <message>
         <source>Zoom in</source>
-        <translation type="vanished">Acercar</translation>
+        <translation>Acercar</translation>
     </message>
     <message>
         <source>Zoom out</source>
-        <translation type="vanished">Alejar</translation>
+        <translation>Alejar</translation>
     </message>
     <message>
         <source>Cut</source>
-        <translation type="vanished">Cortar</translation>
+        <translation>Cortar</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">Copiar</translation>
+        <translation>Copiar</translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation type="vanished">Pegar</translation>
+        <translation>Pegar</translation>
     </message>
     <message>
         <source>Delete selected</source>
-        <translation type="vanished">Eliminar seleccionados</translation>
+        <translation>Eliminar seleccionados</translation>
     </message>
     <message>
         <source>Select All</source>
-        <translation type="vanished">Seleccionar todo</translation>
+        <translation>Seleccionar todo</translation>
     </message>
     <message>
         <source>Group components</source>
-        <translation type="vanished">Agrupar componentes</translation>
+        <translation>Agrupar componentes</translation>
     </message>
     <message>
         <source>Ungroup components</source>
-        <translation type="vanished">Desagrupar componentes</translation>
+        <translation>Desagrupar componentes</translation>
     </message>
     <message>
         <source>Save as component</source>
-        <translation type="vanished">Guardar como componente</translation>
+        <translation>Guardar como componente</translation>
     </message>
     <message>
         <source>Save screen</source>
-        <translation type="vanished">Guardar pantalla</translation>
+        <translation>Guardar pantalla</translation>
     </message>
     <message>
         <source>Object inspector</source>
-        <translation type="vanished">Inspector de objetos</translation>
+        <translation>Inspector de objetos</translation>
     </message>
     <message>
         <source>Style inspector</source>
-        <translation type="vanished">Inspector de estilos</translation>
+        <translation>Inspector de estilos</translation>
     </message>
     <message>
         <source>Events inspector</source>
-        <translation type="vanished">Inspector de eventos</translation>
+        <translation>Inspector de eventos</translation>
     </message>
     <message>
         <source>Components</source>
-        <translation type="vanished">Componentes</translation>
+        <translation>Componentes</translation>
     </message>
     <message>
         <source>Hierarchy</source>
-        <translation type="vanished">Jerarquía</translation>
+        <translation>Jerarquía</translation>
     </message>
     <message>
         <source>User components</source>
-        <translation type="vanished">Componentes de usuario</translation>
+        <translation>Componentes de usuario</translation>
     </message>
     <message>
         <source>Show snap guides</source>
@@ -12031,479 +12031,479 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::LVGLEventsInspector</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>No events available for selected component(s)</source>
-        <translation type="vanished">No hay eventos disponibles para los componentes seleccionados</translation>
+        <translation>No hay eventos disponibles para los componentes seleccionados</translation>
     </message>
     <message>
         <source>Filter events</source>
-        <translation type="vanished">Filtrar eventos</translation>
+        <translation>Filtrar eventos</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLFontDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">Diálogo</translation>
+        <translation>Diálogo</translation>
     </message>
     <message>
         <source>Add font to resource file</source>
-        <translation type="vanished">Añadir fuente al archivo de recursos</translation>
+        <translation>Añadir fuente al archivo de recursos</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">Añadir</translation>
+        <translation>Añadir</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Font family</source>
-        <translation type="vanished">Familia de fuente</translation>
+        <translation>Familia de fuente</translation>
     </message>
     <message>
         <source>Font style</source>
-        <translation type="vanished">Estilo de fuente</translation>
+        <translation>Estilo de fuente</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">Tamaño</translation>
+        <translation>Tamaño</translation>
     </message>
     <message>
         <source>Effects</source>
-        <translation type="vanished">Efectos</translation>
+        <translation>Efectos</translation>
     </message>
     <message>
         <source>Strikeout</source>
-        <translation type="vanished">Tachado</translation>
+        <translation>Tachado</translation>
     </message>
     <message>
         <source>Underline</source>
-        <translation type="vanished">Subrayado</translation>
+        <translation>Subrayado</translation>
     </message>
     <message>
         <source>Sample</source>
-        <translation type="vanished">Muestra</translation>
+        <translation>Muestra</translation>
     </message>
     <message>
         <source>Add Custom Font...</source>
-        <translation type="vanished">Añadir fuente personalizada...</translation>
+        <translation>Añadir fuente personalizada...</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLHierarchyView</name>
     <message>
         <source>Filter components</source>
-        <translation type="vanished">Filtrar componentes</translation>
+        <translation>Filtrar componentes</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLIScreen</name>
     <message>
         <source>Add</source>
-        <translation type="vanished">Añadir</translation>
+        <translation>Añadir</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save as component</source>
-        <translation type="vanished">Guardar como componente</translation>
+        <translation>Guardar como componente</translation>
     </message>
     <message>
         <source>Enter component name</source>
-        <translation type="vanished">Introducir nombre del componente</translation>
+        <translation>Introducir nombre del componente</translation>
     </message>
     <message>
         <source>Undo</source>
-        <translation type="vanished">Deshacer</translation>
+        <translation>Deshacer</translation>
     </message>
     <message>
         <source>Redo</source>
-        <translation type="vanished">Rehacer</translation>
+        <translation>Rehacer</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLObjectInspector</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Filter properties</source>
-        <translation type="vanished">Filtrar propiedades</translation>
+        <translation>Filtrar propiedades</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLPropertyDelegate</name>
     <message>
         <source>Click the gear to add an action</source>
-        <translation type="vanished">Haga clic en el engranaje para añadir una acción</translation>
+        <translation>Haga clic en el engranaje para añadir una acción</translation>
     </message>
     <message>
         <source>Skip this point</source>
-        <translation type="vanished">Omitir este punto</translation>
+        <translation>Omitir este punto</translation>
     </message>
     <message>
         <source>Click here to add event handler</source>
-        <translation type="vanished">Haga clic aquí para añadir un manejador de eventos</translation>
+        <translation>Haga clic aquí para añadir un manejador de eventos</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="vanished">Ninguno</translation>
+        <translation>Ninguno</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLSeriesInlinePopup</name>
     <message>
         <source>Series settings</source>
-        <translation type="vanished">Ajustes de serie</translation>
+        <translation>Ajustes de serie</translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation type="vanished">Nombre:</translation>
+        <translation>Nombre:</translation>
     </message>
     <message>
         <source>Line width:</source>
-        <translation type="vanished">Ancho de línea:</translation>
+        <translation>Ancho de línea:</translation>
     </message>
     <message>
         <source>Pick color</source>
-        <translation type="vanished">Elegir color</translation>
+        <translation>Elegir color</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>Series name must be unique.</source>
-        <translation type="vanished">El nombre de la serie debe ser único.</translation>
+        <translation>El nombre de la serie debe ser único.</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLStyleInspector</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Choose object state</source>
-        <translation type="vanished">Elegir estado del objeto</translation>
+        <translation>Elegir estado del objeto</translation>
     </message>
     <message>
         <source>Filter style properties</source>
-        <translation type="vanished">Filtrar propiedades de estilo</translation>
+        <translation>Filtrar propiedades de estilo</translation>
     </message>
 </context>
 <context>
     <name>Necto::LVGLUserComponentsView</name>
     <message>
         <source>User components</source>
-        <translation type="vanished">Componentes de usuario</translation>
+        <translation>Componentes de usuario</translation>
     </message>
     <message>
         <source>Filter user components</source>
-        <translation type="vanished">Filtrar componentes de usuario</translation>
+        <translation>Filtrar componentes de usuario</translation>
     </message>
 </context>
 <context>
     <name>Necto::LargeButton</name>
     <message>
         <source>New project</source>
-        <translation type="vanished">Nuevo proyecto</translation>
+        <translation>Nuevo proyecto</translation>
     </message>
 </context>
 <context>
     <name>Necto::LayersView</name>
     <message>
         <source>Add new layer to the screen</source>
-        <translation type="vanished">Añadir nueva capa a la pantalla</translation>
+        <translation>Añadir nueva capa a la pantalla</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">Añadir</translation>
+        <translation>Añadir</translation>
     </message>
     <message>
         <source>Filter layers</source>
-        <translation type="vanished">Filtrar capas</translation>
+        <translation>Filtrar capas</translation>
     </message>
 </context>
 <context>
     <name>Necto::LcdChar</name>
     <message>
         <source>Char Editor:</source>
-        <translation type="vanished">Editor de caracteres:</translation>
+        <translation>Editor de caracteres:</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation type="vanished">Borrar</translation>
+        <translation>Borrar</translation>
     </message>
     <message>
         <source>Fill all</source>
-        <translation type="vanished">Rellenar todo</translation>
+        <translation>Rellenar todo</translation>
     </message>
     <message>
         <source>Invert</source>
-        <translation type="vanished">Invertir</translation>
+        <translation>Invertir</translation>
     </message>
     <message>
         <source>Save to library</source>
-        <translation type="vanished">Guardar en la biblioteca</translation>
+        <translation>Guardar en la biblioteca</translation>
     </message>
     <message>
         <source>Char library:</source>
-        <translation type="vanished">Biblioteca de caracteres:</translation>
+        <translation>Biblioteca de caracteres:</translation>
     </message>
     <message>
         <source>Load from library</source>
-        <translation type="vanished">Cargar de la biblioteca</translation>
+        <translation>Cargar de la biblioteca</translation>
     </message>
     <message>
         <source>Delete from library</source>
-        <translation type="vanished">Eliminar de la biblioteca</translation>
+        <translation>Eliminar de la biblioteca</translation>
     </message>
     <message>
         <source>Generated code:</source>
-        <translation type="vanished">Código generado:</translation>
+        <translation>Código generado:</translation>
     </message>
     <message>
         <source>Copy code</source>
-        <translation type="vanished">Copiar código</translation>
+        <translation>Copiar código</translation>
     </message>
     <message>
         <source>Search for custom char</source>
-        <translation type="vanished">Buscar carácter personalizado</translation>
+        <translation>Buscar carácter personalizado</translation>
     </message>
     <message>
         <source>Enter valid char alias</source>
-        <translation type="vanished">Introducir alias de carácter válido</translation>
+        <translation>Introducir alias de carácter válido</translation>
     </message>
     <message>
         <source>Code copied to cliboard.</source>
-        <translation type="vanished">Código copiado al portapapeles.</translation>
+        <translation>Código copiado al portapapeles.</translation>
     </message>
     <message>
         <source>Code generated succefully</source>
-        <translation type="vanished">Código generado correctamente</translation>
+        <translation>Código generado correctamente</translation>
     </message>
 </context>
 <context>
     <name>Necto::LcdPlugin</name>
     <message>
         <source>Custom Char</source>
-        <translation type="vanished">Carácter personalizado</translation>
+        <translation>Carácter personalizado</translation>
     </message>
 </context>
 <context>
     <name>Necto::LcdWidget</name>
     <message>
         <source>Char editor</source>
-        <translation type="vanished">Editor de caracteres</translation>
+        <translation>Editor de caracteres</translation>
     </message>
     <message>
         <source>Char size:</source>
-        <translation type="vanished">Tamaño de carácter:</translation>
+        <translation>Tamaño de carácter:</translation>
     </message>
     <message>
         <source>Alias:</source>
-        <translation type="vanished">Alias:</translation>
+        <translation>Alias:</translation>
     </message>
     <message>
         <source>Fill all</source>
-        <translation type="vanished">Rellenar todo</translation>
+        <translation>Rellenar todo</translation>
     </message>
     <message>
         <source>fill</source>
-        <translation type="vanished">rellenar</translation>
+        <translation>rellenar</translation>
     </message>
     <message>
         <source>Char data row: </source>
-        <translation type="vanished">Fila de datos del carácter: </translation>
+        <translation>Fila de datos del carácter: </translation>
     </message>
     <message>
         <source>Clear all</source>
-        <translation type="vanished">Borrar todo</translation>
+        <translation>Borrar todo</translation>
     </message>
     <message>
         <source>clear</source>
-        <translation type="vanished">borrar</translation>
+        <translation>borrar</translation>
     </message>
     <message>
         <source>Char: </source>
-        <translation type="vanished">Carácter: </translation>
+        <translation>Carácter: </translation>
     </message>
     <message>
         <source>Invert</source>
-        <translation type="vanished">Invertir</translation>
+        <translation>Invertir</translation>
     </message>
     <message>
         <source>invert</source>
-        <translation type="vanished">invertir</translation>
+        <translation>invertir</translation>
     </message>
     <message>
         <source>Save to file</source>
-        <translation type="vanished">Guardar en archivo</translation>
+        <translation>Guardar en archivo</translation>
     </message>
     <message>
         <source>save</source>
-        <translation type="vanished">guardar</translation>
+        <translation>guardar</translation>
     </message>
     <message>
         <source>Char library</source>
-        <translation type="vanished">Biblioteca de caracteres</translation>
+        <translation>Biblioteca de caracteres</translation>
     </message>
     <message>
         <source>Add to library</source>
-        <translation type="vanished">Añadir a la biblioteca</translation>
+        <translation>Añadir a la biblioteca</translation>
     </message>
     <message>
         <source>add</source>
-        <translation type="vanished">añadir</translation>
+        <translation>añadir</translation>
     </message>
     <message>
         <source>Load from library</source>
-        <translation type="vanished">Cargar de la biblioteca</translation>
+        <translation>Cargar de la biblioteca</translation>
     </message>
     <message>
         <source>take</source>
-        <translation type="vanished">tomar</translation>
+        <translation>tomar</translation>
     </message>
     <message>
         <source>Remove from library</source>
-        <translation type="vanished">Quitar de la biblioteca</translation>
+        <translation>Quitar de la biblioteca</translation>
     </message>
     <message>
         <source>remove</source>
-        <translation type="vanished">quitar</translation>
+        <translation>quitar</translation>
     </message>
     <message>
         <source>Search:</source>
-        <translation type="vanished">Buscar:</translation>
+        <translation>Buscar:</translation>
     </message>
     <message>
         <source>Enter character alias</source>
-        <translation type="vanished">Introducir alias del carácter</translation>
+        <translation>Introducir alias del carácter</translation>
     </message>
     <message>
         <source>Pattern</source>
-        <translation type="vanished">Patrón</translation>
+        <translation>Patrón</translation>
     </message>
     <message>
         <source>Choose folder</source>
-        <translation type="vanished">Elegir carpeta</translation>
+        <translation>Elegir carpeta</translation>
     </message>
     <message>
         <source>Alias already exists.</source>
-        <translation type="vanished">El alias ya existe.</translation>
+        <translation>El alias ya existe.</translation>
     </message>
     <message>
         <source>Invalid name.</source>
-        <translation type="vanished">Nombre no válido.</translation>
+        <translation>Nombre no válido.</translation>
     </message>
 </context>
 <context>
     <name>Necto::LibraryManagerView</name>
     <message>
         <source>Manage project libraries</source>
-        <translation type="vanished">Gestionar bibliotecas del proyecto</translation>
+        <translation>Gestionar bibliotecas del proyecto</translation>
     </message>
     <message>
         <source>Filter libraries</source>
-        <translation type="vanished">Filtrar bibliotecas</translation>
+        <translation>Filtrar bibliotecas</translation>
     </message>
     <message>
         <source>Open click example</source>
-        <translation type="vanished">Abrir ejemplo de Click</translation>
+        <translation>Abrir ejemplo de Click</translation>
     </message>
     <message>
         <source>Copy include directive</source>
-        <translation type="vanished">Copiar directiva include</translation>
+        <translation>Copiar directiva include</translation>
     </message>
     <message>
         <source>Open library folder</source>
-        <translation type="vanished">Abrir carpeta de bibliotecas</translation>
+        <translation>Abrir carpeta de bibliotecas</translation>
     </message>
     <message>
         <source>Remove package</source>
-        <translation type="vanished">Quitar paquete</translation>
+        <translation>Quitar paquete</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation type="vanished">Ayuda</translation>
+        <translation>Ayuda</translation>
     </message>
     <message>
         <source>Include directive copied to clipboard.</source>
-        <translation type="vanished">Directiva include copiada al portapapeles.</translation>
+        <translation>Directiva include copiada al portapapeles.</translation>
     </message>
     <message>
         <source>Collapse</source>
-        <translation type="vanished">Contraer</translation>
+        <translation>Contraer</translation>
     </message>
     <message>
         <source>Expand</source>
-        <translation type="vanished">Expandir</translation>
+        <translation>Expandir</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="vanished">Sí</translation>
+        <translation>Sí</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="vanished">No</translation>
+        <translation>No</translation>
     </message>
     <message>
         <source>Are you sure you want to remove &quot;%1&quot;?</source>
-        <translation type="vanished">¿Seguro que desea quitar &quot;%1&quot;?</translation>
+        <translation>¿Seguro que desea quitar &quot;%1&quot;?</translation>
     </message>
 </context>
 <context>
     <name>Necto::LibraryTreeModel</name>
     <message>
         <source>Click board libraries</source>
-        <translation type="vanished">Bibliotecas de placas Click</translation>
+        <translation>Bibliotecas de placas Click</translation>
     </message>
     <message>
         <source>Core libraries</source>
-        <translation type="vanished">Bibliotecas base</translation>
+        <translation>Bibliotecas base</translation>
     </message>
     <message>
         <source>Components</source>
-        <translation type="vanished">Componentes</translation>
+        <translation>Componentes</translation>
     </message>
 </context>
 <context>
     <name>Necto::LicenseAgreementFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>No, I do not agree</source>
-        <translation type="vanished">No, no acepto</translation>
+        <translation>No, no acepto</translation>
     </message>
     <message>
         <source>Yes, I agree</source>
-        <translation type="vanished">Sí, acepto</translation>
+        <translation>Sí, acepto</translation>
     </message>
     <message>
         <source>Activating your license...</source>
-        <translation type="vanished">Activando su licencia...</translation>
+        <translation>Activando su licencia...</translation>
     </message>
     <message>
         <source>One more step to go...</source>
-        <translation type="vanished">Un paso más...</translation>
+        <translation>Un paso más...</translation>
     </message>
     <message>
         <source>Choose your license type:</source>
-        <translation type="vanished">Elija su tipo de licencia:</translation>
+        <translation>Elija su tipo de licencia:</translation>
     </message>
 </context>
 <context>
@@ -12515,275 +12515,275 @@ Do you wish to override the security check and continue ?   </source>
     </message>
     <message>
         <source>Already activated with this activation key and lid.</source>
-        <translation type="vanished">Ya activado con esta clave de activación y lid.</translation>
+        <translation>Ya activado con esta clave de activación y lid.</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>License not ready yet</source>
-        <translation type="vanished">La licencia aún no está lista</translation>
+        <translation>La licencia aún no está lista</translation>
     </message>
     <message>
         <source>Buy commercial license</source>
-        <translation type="vanished">Comprar licencia comercial</translation>
+        <translation>Comprar licencia comercial</translation>
     </message>
     <message>
         <source>Choose your license</source>
-        <translation type="vanished">Elegir su licencia</translation>
+        <translation>Elegir su licencia</translation>
     </message>
     <message>
         <source>Choose your license type: </source>
-        <translation type="vanished">Elija su tipo de licencia: </translation>
+        <translation>Elija su tipo de licencia: </translation>
     </message>
     <message>
         <source>- Commercial license</source>
-        <translation type="vanished">- Licencia comercial</translation>
+        <translation>- Licencia comercial</translation>
     </message>
     <message>
         <source>One more step to go...</source>
-        <translation type="vanished">Un paso más...</translation>
+        <translation>Un paso más...</translation>
     </message>
     <message>
         <source>Activation key is for different software.</source>
-        <translation type="vanished">La clave de activación es para otro software.</translation>
+        <translation>La clave de activación es para otro software.</translation>
     </message>
     <message>
         <source>Server error. Try again later.</source>
-        <translation type="vanished">Error del servidor. Inténtelo más tarde.</translation>
+        <translation>Error del servidor. Inténtelo más tarde.</translation>
     </message>
     <message>
         <source>Error reading license.</source>
-        <translation type="vanished">Error al leer la licencia.</translation>
+        <translation>Error al leer la licencia.</translation>
     </message>
     <message>
         <source>Please restart NECTO Studio after you finish buying process.</source>
-        <translation type="vanished">Reinicie NECTO Studio después de finalizar el proceso de compra.</translation>
+        <translation>Reinicie NECTO Studio después de finalizar el proceso de compra.</translation>
     </message>
     <message>
         <source>NECTO Studio v%1 %2</source>
-        <translation type="vanished">NECTO Studio v%1 %2</translation>
+        <translation>NECTO Studio v%1 %2</translation>
     </message>
     <message>
         <source>A network error occured</source>
-        <translation type="vanished">Se produjo un error de red</translation>
+        <translation>Se produjo un error de red</translation>
     </message>
     <message>
         <source>No internet connection.</source>
-        <translation type="vanished">Sin conexión a internet.</translation>
+        <translation>Sin conexión a internet.</translation>
     </message>
 </context>
 <context>
     <name>Necto::LicenseView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Activate</source>
-        <translation type="vanished">Activar</translation>
+        <translation>Activar</translation>
     </message>
     <message>
         <source>Enter time token:</source>
-        <translation type="vanished">Introducir token de tiempo:</translation>
+        <translation>Introducir token de tiempo:</translation>
     </message>
     <message>
         <source>Enter time token</source>
-        <translation type="vanished">Introducir token de tiempo</translation>
+        <translation>Introducir token de tiempo</translation>
     </message>
     <message>
         <source>Activated</source>
-        <translation type="vanished">Activado</translation>
+        <translation>Activado</translation>
     </message>
 </context>
 <context>
     <name>Necto::LoginDialog</name>
     <message>
         <source>Login</source>
-        <translation type="vanished">Iniciar sesión</translation>
+        <translation>Iniciar sesión</translation>
     </message>
     <message>
         <source>Verifying MIKROE passport...</source>
-        <translation type="vanished">Verificando MIKROE passport...</translation>
+        <translation>Verificando MIKROE passport...</translation>
     </message>
     <message>
         <source>Checking token for secure access...</source>
-        <translation type="vanished">Comprobando el token para acceso seguro...</translation>
+        <translation>Comprobando el token para acceso seguro...</translation>
     </message>
     <message>
         <source>Logging in...</source>
-        <translation type="vanished">Iniciando sesión...</translation>
+        <translation>Iniciando sesión...</translation>
     </message>
 </context>
 <context>
     <name>Necto::LoginManager</name>
     <message>
         <source>NECTO Studio v%1 - %2</source>
-        <translation type="vanished">NECTO Studio v%1 - %2</translation>
+        <translation>NECTO Studio v%1 - %2</translation>
     </message>
     <message>
         <source>Offline mode</source>
-        <translation type="vanished">Modo sin conexión</translation>
+        <translation>Modo sin conexión</translation>
     </message>
     <message>
         <source>Unavailable in offline mode</source>
-        <translation type="vanished">No disponible en modo sin conexión</translation>
+        <translation>No disponible en modo sin conexión</translation>
     </message>
     <message>
         <source>Remote Board Farm (Ctrl + 6)</source>
-        <translation type="vanished">Remote Board Farm (Ctrl + 6)</translation>
+        <translation>Remote Board Farm (Ctrl + 6)</translation>
     </message>
     <message>
         <source>NECTO assistant (Ctrl + 8)</source>
-        <translation type="vanished">Asistente NECTO (Ctrl + 8)</translation>
+        <translation>Asistente NECTO (Ctrl + 8)</translation>
     </message>
     <message>
         <source>Updates (Ctrl + 0)</source>
-        <translation type="vanished">Actualizaciones (Ctrl + 0)</translation>
+        <translation>Actualizaciones (Ctrl + 0)</translation>
     </message>
     <message>
         <source>Package manager (Ctrl + 5)</source>
-        <translation type="vanished">Gestor de paquetes (Ctrl + 5)</translation>
+        <translation>Gestor de paquetes (Ctrl + 5)</translation>
     </message>
 </context>
 <context>
     <name>Necto::MainWindow</name>
     <message>
         <source>NECTO Studio</source>
-        <translation type="vanished">NECTO Studio</translation>
+        <translation>NECTO Studio</translation>
     </message>
     <message>
         <source>Code</source>
-        <translation type="vanished">Código</translation>
+        <translation>Código</translation>
     </message>
     <message>
         <source>Show Remote Board</source>
-        <translation type="vanished">Mostrar placa remota</translation>
+        <translation>Mostrar placa remota</translation>
     </message>
     <message>
         <source>Open Programmer Settings</source>
-        <translation type="vanished">Abrir ajustes del programador</translation>
+        <translation>Abrir ajustes del programador</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="vanished">Archivo</translation>
+        <translation>Archivo</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">Editar</translation>
+        <translation>Editar</translation>
     </message>
     <message>
         <source>Project</source>
-        <translation type="vanished">Proyecto</translation>
+        <translation>Proyecto</translation>
     </message>
     <message>
         <source>&amp;Debugger</source>
-        <translation type="vanished">&amp;Depurador</translation>
+        <translation>&amp;Depurador</translation>
     </message>
     <message>
         <source>&amp;Programmer</source>
-        <translation type="vanished">&amp;Programador</translation>
+        <translation>&amp;Programador</translation>
     </message>
     <message>
         <source>&amp;Tools</source>
-        <translation type="vanished">&amp;Herramientas</translation>
+        <translation>&amp;Herramientas</translation>
     </message>
     <message>
         <source>&amp;Show</source>
-        <translation type="vanished">&amp;Mostrar</translation>
+        <translation>&amp;Ver</translation>
     </message>
     <message>
         <source>&amp;Version Control</source>
-        <translation type="vanished">&amp;Control de versiones</translation>
+        <translation>&amp;Control de versiones</translation>
     </message>
     <message>
         <source>&amp;Help</source>
-        <translation type="vanished">&amp;Ayuda</translation>
+        <translation>&amp;Ayuda</translation>
     </message>
     <message>
         <source>A background operation is running. Please wait until it finishes before closing the application.</source>
-        <translation type="vanished">Se está ejecutando una operación en segundo plano. Espere a que termine antes de cerrar la aplicación.</translation>
+        <translation>Se está ejecutando una operación en segundo plano. Espere a que termine antes de cerrar la aplicación.</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
 </context>
 <context>
     <name>Necto::MaterialLineEdit</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
 </context>
 <context>
     <name>Necto::Mattermost</name>
     <message>
         <source>NECTO Chat</source>
-        <translation type="vanished">Chat NECTO</translation>
+        <translation>Chat NECTO</translation>
     </message>
 </context>
 <context>
     <name>Necto::MattermostView</name>
     <message>
         <source>Initializing NECTO Chat</source>
-        <translation type="vanished">Inicializando NECTO Chat</translation>
+        <translation>Inicializando NECTO Chat</translation>
     </message>
     <message>
         <source>Connecting to the chat service. This will only take a moment…</source>
-        <translation type="vanished">Conectando al servicio de chat. Esto solo tomará un momento…</translation>
+        <translation>Conectando al servicio de chat. Esto solo tomará un momento…</translation>
     </message>
     <message>
         <source>NECTO Chat is unavailable</source>
-        <translation type="vanished">NECTO Chat no está disponible</translation>
+        <translation>NECTO Chat no está disponible</translation>
     </message>
     <message>
         <source>The chat service could not be reached. It may be temporarily down or under maintenance. Please try again in a few minutes.</source>
-        <translation type="vanished">No se pudo conectar con el servicio de chat. Puede estar temporalmente fuera de servicio o en mantenimiento. Vuelva a intentarlo en unos minutos.</translation>
+        <translation>No se pudo conectar con el servicio de chat. Puede estar temporalmente fuera de servicio o en mantenimiento. Vuelva a intentarlo en unos minutos.</translation>
     </message>
     <message>
         <source>Retry</source>
-        <translation type="vanished">Reintentar</translation>
+        <translation>Reintentar</translation>
     </message>
 </context>
 <context>
     <name>Necto::McuSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Configure MCU</source>
-        <translation type="vanished">Configurar MCU</translation>
+        <translation>Configurar MCU</translation>
     </message>
     <message>
         <source>Config scheme:</source>
-        <translation type="vanished">Esquema de configuración:</translation>
+        <translation>Esquema de configuración:</translation>
     </message>
     <message>
         <source>Clock:</source>
-        <translation type="vanished">Reloj:</translation>
+        <translation>Reloj:</translation>
     </message>
     <message>
         <source>MCU Settings</source>
-        <translation type="vanished">Ajustes de MCU</translation>
+        <translation>Ajustes de MCU</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>Enter MCU clock</source>
-        <translation type="vanished">Introducir reloj del MCU</translation>
+        <translation>Introducir reloj del MCU</translation>
     </message>
     <message>
         <source>Configure %1:</source>
-        <translation type="vanished">Configurar %1:</translation>
+        <translation>Configurar %1:</translation>
     </message>
 </context>
 <context>
@@ -12799,7 +12799,7 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::MemoryOverlayWidget</name>
     <message>
         <source>Memory Usage</source>
-        <translation type="vanished">Uso de memoria</translation>
+        <translation>Uso de memoria</translation>
     </message>
 </context>
 <context>
@@ -12835,428 +12835,428 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::MessageFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
 </context>
 <context>
     <name>Necto::MicrochipView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Server options</source>
-        <translation type="vanished">Opciones del servidor</translation>
+        <translation>Opciones del servidor</translation>
     </message>
     <message>
         <source>No available options</source>
-        <translation type="vanished">No hay opciones disponibles</translation>
+        <translation>No hay opciones disponibles</translation>
     </message>
     <message>
         <source>Programmer Settings</source>
-        <translation type="vanished">Ajustes del programador</translation>
+        <translation>Ajustes del programador</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikroCARMSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">Ajustes del compilador </translation>
+        <translation>Ajustes del compilador </translation>
     </message>
     <message>
         <source>ANSI pack BitFields</source>
-        <translation type="vanished">Campos de bits ANSI</translation>
+        <translation>Campos de bits ANSI</translation>
     </message>
     <message>
         <source>Case sensitive</source>
-        <translation type="vanished">Distinguir mayúsculas</translation>
+        <translation>Distinguir mayúsculas</translation>
     </message>
     <message>
         <source>Dynamic link for string litterals</source>
-        <translation type="vanished">Enlace dinámico para literales de cadena</translation>
+        <translation>Enlace dinámico para literales de cadena</translation>
     </message>
     <message>
         <source>Generate additional files (*.LST, *.ASM)</source>
-        <translation type="vanished">Generar archivos adicionales (*.LST, *.ASM)</translation>
+        <translation>Generar archivos adicionales (*.LST, *.ASM)</translation>
     </message>
     <message>
         <source>Generate BIN image file</source>
-        <translation type="vanished">Generar archivo de imagen BIN</translation>
+        <translation>Generar archivo de imagen BIN</translation>
     </message>
     <message>
         <source>Long hex format</source>
-        <translation type="vanished">Formato hex largo</translation>
+        <translation>Formato hex largo</translation>
     </message>
     <message>
         <source>Data type size:</source>
-        <translation type="vanished">Tamaño del tipo de dato:</translation>
+        <translation>Tamaño del tipo de dato:</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">Ajustes del compilador</translation>
+        <translation>Ajustes del compilador</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>default mE  (int 2 bytes)</source>
-        <translation type="vanished">mE predeterminado  (int 2 bytes)</translation>
+        <translation>mE predeterminado  (int 2 bytes)</translation>
     </message>
     <message>
         <source>other (int 4 bytes)</source>
-        <translation type="vanished">otro (int 4 bytes)</translation>
+        <translation>otro (int 4 bytes)</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikroCAVRSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">Ajustes del compilador </translation>
+        <translation>Ajustes del compilador </translation>
     </message>
     <message>
         <source>ANSI pack BitFields</source>
-        <translation type="vanished">Campos de bits ANSI</translation>
+        <translation>Campos de bits ANSI</translation>
     </message>
     <message>
         <source>Case sensitive</source>
-        <translation type="vanished">Distinguir mayúsculas</translation>
+        <translation>Distinguir mayúsculas</translation>
     </message>
     <message>
         <source>Dynamic link for string litterals</source>
-        <translation type="vanished">Enlace dinámico para literales de cadena</translation>
+        <translation>Enlace dinámico para literales de cadena</translation>
     </message>
     <message>
         <source>Generate additional files (*.LST, *.ASM)</source>
-        <translation type="vanished">Generar archivos adicionales (*.LST, *.ASM)</translation>
+        <translation>Generar archivos adicionales (*.LST, *.ASM)</translation>
     </message>
     <message>
         <source>Long hex format</source>
-        <translation type="vanished">Formato hex largo</translation>
+        <translation>Formato hex largo</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">Ajustes del compilador</translation>
+        <translation>Ajustes del compilador</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikroCDSPICSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">Ajustes del compilador </translation>
+        <translation>Ajustes del compilador </translation>
     </message>
     <message>
         <source>ANSI pack BitFields</source>
-        <translation type="vanished">Campos de bits ANSI</translation>
+        <translation>Campos de bits ANSI</translation>
     </message>
     <message>
         <source>Case sensitive</source>
-        <translation type="vanished">Distinguir mayúsculas</translation>
+        <translation>Distinguir mayúsculas</translation>
     </message>
     <message>
         <source>Dynamic link for string litterals</source>
-        <translation type="vanished">Enlace dinámico para literales de cadena</translation>
+        <translation>Enlace dinámico para literales de cadena</translation>
     </message>
     <message>
         <source>Generate additional files (*.LST, *.ASM)</source>
-        <translation type="vanished">Generar archivos adicionales (*.LST, *.ASM)</translation>
+        <translation>Generar archivos adicionales (*.LST, *.ASM)</translation>
     </message>
     <message>
         <source>Long hex format</source>
-        <translation type="vanished">Formato hex largo</translation>
+        <translation>Formato hex largo</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">Ajustes del compilador</translation>
+        <translation>Ajustes del compilador</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikroCPIC32SettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">Ajustes del compilador </translation>
+        <translation>Ajustes del compilador </translation>
     </message>
     <message>
         <source>ANSI pack BitFields</source>
-        <translation type="vanished">Campos de bits ANSI</translation>
+        <translation>Campos de bits ANSI</translation>
     </message>
     <message>
         <source>Case sensitive</source>
-        <translation type="vanished">Distinguir mayúsculas</translation>
+        <translation>Distinguir mayúsculas</translation>
     </message>
     <message>
         <source>Dynamic link for string literals</source>
-        <translation type="vanished">Enlace dinámico para literales de cadena</translation>
+        <translation>Enlace dinámico para literales de cadena</translation>
     </message>
     <message>
         <source>Generate additional files (*.LST, *.ASM)</source>
-        <translation type="vanished">Generar archivos adicionales (*.LST, *.ASM)</translation>
+        <translation>Generar archivos adicionales (*.LST, *.ASM)</translation>
     </message>
     <message>
         <source>Long hex format</source>
-        <translation type="vanished">Formato hex largo</translation>
+        <translation>Formato hex largo</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">Ajustes del compilador</translation>
+        <translation>Ajustes del compilador</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikroCPICSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">Ajustes del compilador </translation>
+        <translation>Ajustes del compilador </translation>
     </message>
     <message>
         <source>ANSI pack BitFields</source>
-        <translation type="vanished">Campos de bits ANSI</translation>
+        <translation>Campos de bits ANSI</translation>
     </message>
     <message>
         <source>Case sensitive</source>
-        <translation type="vanished">Distinguir mayúsculas</translation>
+        <translation>Distinguir mayúsculas</translation>
     </message>
     <message>
         <source>Dynamic link for string litterals</source>
-        <translation type="vanished">Enlace dinámico para literales de cadena</translation>
+        <translation>Enlace dinámico para literales de cadena</translation>
     </message>
     <message>
         <source>Generate additional files (*.LST, *.ASM)</source>
-        <translation type="vanished">Generar archivos adicionales (*.LST, *.ASM)</translation>
+        <translation>Generar archivos adicionales (*.LST, *.ASM)</translation>
     </message>
     <message>
         <source>Long hex format</source>
-        <translation type="vanished">Formato hex largo</translation>
+        <translation>Formato hex largo</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">Ajustes del compilador</translation>
+        <translation>Ajustes del compilador</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikroProgPathView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikroProgView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>MikroProg Options</source>
-        <translation type="vanished">Opciones de MikroProg</translation>
+        <translation>Opciones de MikroProg</translation>
     </message>
     <message>
         <source>Protocol:</source>
-        <translation type="vanished">Protocolo:</translation>
+        <translation>Protocolo:</translation>
     </message>
     <message>
         <source>Quit mikroProg on finish</source>
-        <translation type="vanished">Salir de mikroProg al finalizar</translation>
+        <translation>Salir de mikroProg al finalizar</translation>
     </message>
     <message>
         <source>GDB Server Options</source>
-        <translation type="vanished">Opciones del servidor GDB</translation>
+        <translation>Opciones del servidor GDB</translation>
     </message>
     <message>
         <source>IP Address:</source>
-        <translation type="vanished">Dirección IP:</translation>
+        <translation>Dirección IP:</translation>
     </message>
     <message>
         <source>Port:</source>
-        <translation type="vanished">Puerto:</translation>
+        <translation>Puerto:</translation>
     </message>
     <message>
         <source>Command parameters:</source>
-        <translation type="vanished">Parámetros del comando:</translation>
+        <translation>Parámetros del comando:</translation>
     </message>
     <message>
         <source>Remote commands:</source>
-        <translation type="vanished">Comandos remotos:</translation>
+        <translation>Comandos remotos:</translation>
     </message>
     <message>
         <source>Remote commands</source>
-        <translation type="vanished">Comandos remotos</translation>
+        <translation>Comandos remotos</translation>
     </message>
     <message>
         <source>Auto start local GDB Server</source>
-        <translation type="vanished">Iniciar automáticamente el servidor GDB local</translation>
+        <translation>Iniciar automáticamente el servidor GDB local</translation>
     </message>
     <message>
         <source>Connect to remote GDB Server</source>
-        <translation type="vanished">Conectar al servidor GDB remoto</translation>
+        <translation>Conectar al servidor GDB remoto</translation>
     </message>
     <message>
         <source>GDB server port</source>
-        <translation type="vanished">Puerto del servidor GDB</translation>
+        <translation>Puerto del servidor GDB</translation>
     </message>
     <message>
         <source>GDB server address</source>
-        <translation type="vanished">Dirección del servidor GDB</translation>
+        <translation>Dirección del servidor GDB</translation>
     </message>
     <message>
         <source>Custom GDB server path</source>
-        <translation type="vanished">Ruta personalizada del servidor GDB</translation>
+        <translation>Ruta personalizada del servidor GDB</translation>
     </message>
     <message>
         <source>Path to custom GDB server executable</source>
-        <translation type="vanished">Ruta al ejecutable del servidor GDB personalizado</translation>
+        <translation>Ruta al ejecutable del servidor GDB personalizado</translation>
     </message>
     <message>
         <source>Command line parameters</source>
-        <translation type="vanished">Parámetros de línea de comandos</translation>
+        <translation>Parámetros de línea de comandos</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>mikroProg Suite path</source>
-        <translation type="vanished">Ruta de mikroProg Suite</translation>
+        <translation>Ruta de mikroProg Suite</translation>
     </message>
     <message>
         <source>Path to mikroProg for NXP executable</source>
-        <translation type="vanished">Ruta al ejecutable de mikroProg para NXP</translation>
+        <translation>Ruta al ejecutable de mikroProg para NXP</translation>
     </message>
     <message>
         <source>Path to mikroProg for TI executable</source>
-        <translation type="vanished">Ruta al ejecutable de mikroProg para TI</translation>
+        <translation>Ruta al ejecutable de mikroProg para TI</translation>
     </message>
     <message>
         <source>Path to mikroProg for CEC executable</source>
-        <translation type="vanished">Ruta al ejecutable de mikroProg para CEC</translation>
+        <translation>Ruta al ejecutable de mikroProg para CEC</translation>
     </message>
     <message>
         <source>Path to mikroProg for STM32 executable</source>
-        <translation type="vanished">Ruta al ejecutable de mikroProg para STM32</translation>
+        <translation>Ruta al ejecutable de mikroProg para STM32</translation>
     </message>
     <message>
         <source>Path to mikroProg for PIC executable</source>
-        <translation type="vanished">Ruta al ejecutable de mikroProg para PIC</translation>
+        <translation>Ruta al ejecutable de mikroProg para PIC</translation>
     </message>
     <message>
         <source>Path to mikroProg for AVR executable</source>
-        <translation type="vanished">Ruta al ejecutable de mikroProg para AVR</translation>
+        <translation>Ruta al ejecutable de mikroProg para AVR</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikrobusItem</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation type="vanished">Imagen</translation>
+        <translation>Imagen</translation>
     </message>
     <message>
         <source>Choose the Click Board</source>
-        <translation type="vanished">Elegir la placa Click</translation>
+        <translation>Elegir la placa Click</translation>
     </message>
 </context>
 <context>
     <name>Necto::MikrobusSelector</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation type="vanished">Imagen</translation>
+        <translation>Imagen</translation>
     </message>
     <message>
         <source>Choose the Click Board</source>
-        <translation type="vanished">Elegir la placa Click</translation>
+        <translation>Elegir la placa Click</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="vanished">Ninguno</translation>
+        <translation>Ninguno</translation>
     </message>
 </context>
 <context>
     <name>Necto::ModuleItemView</name>
     <message>
         <source>Edit</source>
-        <translation type="vanished">Editar</translation>
+        <translation>Editar</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">Quitar</translation>
+        <translation>Quitar</translation>
     </message>
 </context>
 <context>
@@ -13346,22 +13346,22 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::MonacoEditorView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Find in files</source>
-        <translation type="vanished">Buscar en archivos</translation>
+        <translation>Buscar en archivos</translation>
     </message>
 </context>
 <context>
     <name>Necto::NECTOTextBrowser</name>
     <message>
         <source>Copy</source>
-        <translation type="vanished">Copiar</translation>
+        <translation>Copiar</translation>
     </message>
     <message>
         <source>Select All</source>
-        <translation type="vanished">Seleccionar todo</translation>
+        <translation>Seleccionar todo</translation>
     </message>
 </context>
 <context>
@@ -13436,383 +13436,383 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::NetworkErrorDialog</name>
     <message>
         <source>Network Error</source>
-        <translation type="vanished">Error de red</translation>
+        <translation>Error de red</translation>
     </message>
     <message>
         <source>NECTO Studio can’t connect to the internet.</source>
-        <translation type="vanished">NECTO Studio no puede conectarse a internet.</translation>
+        <translation>NECTO Studio no puede conectarse a internet.</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Check your connection or set up a proxy if you&apos;re on a restricted or corporate network.&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Offline mode&lt;/span&gt; lets you build, program, and debug using all installed packages and examples.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Compruebe su conexión o configure un proxy si está en una red restringida o corporativa.&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Modo sin conexión&lt;/span&gt; le permite compilar, programar y depurar usando todos los paquetes y ejemplos instalados.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Compruebe su conexión o configure un proxy si está en una red restringida o corporativa.&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Modo sin conexión&lt;/span&gt; le permite compilar, programar y depurar usando todos los paquetes y ejemplos instalados.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Open Proxy Settings</source>
-        <translation type="vanished">Abrir ajustes de proxy</translation>
+        <translation>Abrir ajustes de proxy</translation>
     </message>
     <message>
         <source>Retry</source>
-        <translation type="vanished">Reintentar</translation>
+        <translation>Reintentar</translation>
     </message>
     <message>
         <source>Offline mode</source>
-        <translation type="vanished">Modo sin conexión</translation>
+        <translation>Modo sin conexión</translation>
     </message>
     <message>
         <source>Internet connection restored.</source>
-        <translation type="vanished">Conexión a internet restablecida.</translation>
+        <translation>Conexión a internet restablecida.</translation>
     </message>
     <message>
         <source>You’re back online — NECTO Studio will automatically restore access to all features and online services.</source>
-        <translation type="vanished">Está de nuevo en línea — NECTO Studio restaurará automáticamente el acceso a todas las funciones y servicios en línea.</translation>
+        <translation>Está de nuevo en línea — NECTO Studio restaurará automáticamente el acceso a todas las funciones y servicios en línea.</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>&lt;p&gt;Check your connection or set up a proxy if you&apos;re on a restricted or corporate network.&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Offline mode&lt;/span&gt; lets you build, program, and debug using all installed packages and examples.&lt;/p&gt;</source>
-        <translation type="vanished">&lt;p&gt;Compruebe su conexión o configure un proxy si está en una red restringida o corporativa.&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Modo sin conexión&lt;/span&gt; le permite compilar, programar y depurar usando todos los paquetes y ejemplos instalados.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;Compruebe su conexión o configure un proxy si está en una red restringida o corporativa.&lt;br/&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Modo sin conexión&lt;/span&gt; le permite compilar, programar y depurar usando todos los paquetes y ejemplos instalados.&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
     <name>Necto::NetworkSettingsPage</name>
     <message>
         <source>Proxy Settings</source>
-        <translation type="vanished">Ajustes de proxy</translation>
+        <translation>Ajustes de proxy</translation>
     </message>
     <message>
         <source>Use system proxy settings</source>
-        <translation type="vanished">Usar ajustes de proxy del sistema</translation>
+        <translation>Usar ajustes de proxy del sistema</translation>
     </message>
     <message>
         <source>Manual proxy configuration</source>
-        <translation type="vanished">Configuración manual de proxy</translation>
+        <translation>Configuración manual de proxy</translation>
     </message>
     <message>
         <source>Hostname or IP</source>
-        <translation type="vanished">Nombre de host o IP</translation>
+        <translation>Nombre de host o IP</translation>
     </message>
     <message>
         <source>Port:</source>
-        <translation type="vanished">Puerto:</translation>
+        <translation>Puerto:</translation>
     </message>
     <message>
         <source>Proxy auth</source>
-        <translation type="vanished">Autenticación de proxy</translation>
+        <translation>Autenticación de proxy</translation>
     </message>
     <message>
         <source>Username:</source>
-        <translation type="vanished">Usuario:</translation>
+        <translation>Usuario:</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation type="vanished">Contraseña</translation>
+        <translation>Contraseña</translation>
     </message>
     <message>
         <source>Network settings</source>
-        <translation type="vanished">Ajustes de red</translation>
+        <translation>Ajustes de red</translation>
     </message>
 </context>
 <context>
     <name>Necto::NewProjectWizard</name>
     <message>
         <source>Wizard</source>
-        <translation type="vanished">Asistente</translation>
+        <translation>Asistente</translation>
     </message>
 </context>
 <context>
     <name>Necto::NotificationWidget</name>
     <message>
         <source>Copy file path to clipboard</source>
-        <translation type="vanished">Copiar ruta del archivo al portapapeles</translation>
+        <translation>Copiar ruta del archivo al portapapeles</translation>
     </message>
 </context>
 <context>
     <name>Necto::ObjectInspector</name>
     <message>
         <source>Filter properties</source>
-        <translation type="vanished">Filtrar propiedades</translation>
+        <translation>Filtrar propiedades</translation>
     </message>
 </context>
 <context>
     <name>Necto::OptionsDialog</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Configure</source>
-        <translation type="vanished">Configurar</translation>
+        <translation>Configurar</translation>
     </message>
 </context>
 <context>
     <name>Necto::Output</name>
     <message>
         <source>Issues</source>
-        <translation type="vanished">Problemas</translation>
+        <translation>Problemas</translation>
     </message>
     <message>
         <source>Toggle output view</source>
-        <translation type="vanished">Alternar vista de salida</translation>
+        <translation>Alternar vista de salida</translation>
     </message>
     <message>
         <source>Hide output view</source>
-        <translation type="vanished">Ocultar vista de salida</translation>
+        <translation>Ocultar vista de salida</translation>
     </message>
     <message>
         <source>Compile Output</source>
-        <translation type="vanished">Salida de compilación</translation>
+        <translation>Salida de compilación</translation>
     </message>
     <message>
         <source>Compile output</source>
-        <translation type="vanished">Salida de compilación</translation>
+        <translation>Salida de compilación</translation>
     </message>
     <message>
         <source>Application Output</source>
-        <translation type="vanished">Salida de la aplicación</translation>
+        <translation>Salida de la aplicación</translation>
     </message>
     <message>
         <source>Application output</source>
-        <translation type="vanished">Salida de la aplicación</translation>
+        <translation>Salida de la aplicación</translation>
     </message>
     <message>
         <source>No build errors captured yet.</source>
-        <translation type="vanished">Aún no se han capturado errores de compilación.</translation>
+        <translation>Aún no se han capturado errores de compilación.</translation>
     </message>
     <message>
         <source>Unable to explain the selected issue.</source>
-        <translation type="vanished">No se puede explicar el problema seleccionado.</translation>
+        <translation>No se puede explicar el problema seleccionado.</translation>
     </message>
     <message>
         <source>NECTO Assistant is not available.</source>
-        <translation type="vanished">El Asistente NECTO no está disponible.</translation>
+        <translation>El Asistente NECTO no está disponible.</translation>
     </message>
 </context>
 <context>
     <name>Necto::OutputListItem</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
 </context>
 <context>
     <name>Necto::OutputManagerIssuesView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Clean output</source>
-        <translation type="vanished">Limpiar salida</translation>
+        <translation>Limpiar salida</translation>
     </message>
     <message>
         <source>Ask AI to analyze build errors</source>
-        <translation type="vanished">Pedir a la IA que analice los errores de compilación</translation>
+        <translation>Pedir a la IA que analice los errores de compilación</translation>
     </message>
     <message>
         <source>No issues found</source>
-        <translation type="vanished">No se encontraron problemas</translation>
+        <translation>No se encontraron problemas</translation>
     </message>
 </context>
 <context>
     <name>Necto::OutputView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Clean output</source>
-        <translation type="vanished">Limpiar salida</translation>
+        <translation>Limpiar salida</translation>
     </message>
     <message>
         <source>Type your search here</source>
-        <translation type="vanished">Escriba su búsqueda aquí</translation>
+        <translation>Escriba su búsqueda aquí</translation>
     </message>
     <message>
         <source>Find previous</source>
-        <translation type="vanished">Buscar anterior</translation>
+        <translation>Buscar anterior</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation type="vanished">Buscar siguiente</translation>
+        <translation>Buscar siguiente</translation>
     </message>
     <message>
         <source>Match whole word</source>
-        <translation type="vanished">Coincidir palabra completa</translation>
+        <translation>Coincidir palabra completa</translation>
     </message>
     <message>
         <source>Match case sensitive</source>
-        <translation type="vanished">Distinguir mayúsculas</translation>
+        <translation>Distinguir mayúsculas</translation>
     </message>
     <message>
         <source>Case sensitive</source>
-        <translation type="vanished">Distinguir mayúsculas</translation>
+        <translation>Distinguir mayúsculas</translation>
     </message>
     <message>
         <source>Find Next</source>
-        <translation type="vanished">Buscar siguiente</translation>
+        <translation>Buscar siguiente</translation>
     </message>
     <message>
         <source>Find Previous</source>
-        <translation type="vanished">Buscar anterior</translation>
+        <translation>Buscar anterior</translation>
     </message>
 </context>
 <context>
     <name>Necto::PackageDownloadManager</name>
     <message>
         <source>Server took to long to respond</source>
-        <translation type="vanished">El servidor tardó demasiado en responder</translation>
+        <translation>El servidor tardó demasiado en responder</translation>
     </message>
 </context>
 <context>
     <name>Necto::PackageFilterCombo</name>
     <message>
         <source>All</source>
-        <translation type="vanished">Todo</translation>
+        <translation>Todo</translation>
     </message>
     <message>
         <source>Multiple</source>
-        <translation type="vanished">Múltiple</translation>
+        <translation>Múltiple</translation>
     </message>
     <message>
         <source>Selected filters: 
 
 </source>
-        <translation type="vanished">Filtros seleccionados: 
+        <translation>Filtros seleccionados: 
 
 </translation>
     </message>
     <message>
         <source>Search...</source>
-        <translation type="vanished">Buscar...</translation>
+        <translation>Buscar...</translation>
     </message>
 </context>
 <context>
     <name>Necto::PackageItem</name>
     <message>
         <source>Goto EmbeddedWiki Page</source>
-        <translation type="vanished">Ir a la página EmbeddedWiki</translation>
+        <translation>Ir a la página EmbeddedWiki</translation>
     </message>
     <message>
         <source>Goto product page</source>
-        <translation type="vanished">Ir a la página del producto</translation>
+        <translation>Ir a la página del producto</translation>
     </message>
     <message>
         <source>Free</source>
-        <translation type="vanished">Gratis</translation>
+        <translation>Gratis</translation>
     </message>
     <message>
         <source>Author: </source>
-        <translation type="vanished">Autor: </translation>
+        <translation>Autor: </translation>
     </message>
     <message>
         <source>author</source>
-        <translation type="vanished">autor</translation>
+        <translation>autor</translation>
     </message>
     <message>
         <source>Compilers:</source>
-        <translation type="vanished">Compiladores:</translation>
+        <translation>Compiladores:</translation>
     </message>
     <message>
         <source>Architecture:</source>
-        <translation type="vanished">Arquitectura:</translation>
+        <translation>Arquitectura:</translation>
     </message>
     <message>
         <source>Category:</source>
-        <translation type="vanished">Categoría:</translation>
+        <translation>Categoría:</translation>
     </message>
     <message>
         <source>category</source>
-        <translation type="vanished">categoría</translation>
+        <translation>categoría</translation>
     </message>
     <message>
         <source>MCU Count:</source>
-        <translation type="vanished">Cantidad de MCU:</translation>
+        <translation>Cantidad de MCU:</translation>
     </message>
     <message>
         <source>Installing...</source>
-        <translation type="vanished">Instalando...</translation>
+        <translation>Instalando...</translation>
     </message>
     <message>
         <source>Open bundled example</source>
-        <translation type="vanished">Abrir ejemplo incluido</translation>
+        <translation>Abrir ejemplo incluido</translation>
     </message>
     <message>
         <source>Open Example</source>
-        <translation type="vanished">Abrir ejemplo</translation>
+        <translation>Abrir ejemplo</translation>
     </message>
     <message>
         <source>Update package</source>
-        <translation type="vanished">Actualizar paquete</translation>
+        <translation>Actualizar paquete</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="vanished">Actualizar</translation>
+        <translation>Actualizar</translation>
     </message>
     <message>
         <source>Install package</source>
-        <translation type="vanished">Instalar paquete</translation>
+        <translation>Instalar paquete</translation>
     </message>
     <message>
         <source>Install</source>
-        <translation type="vanished">Instalar</translation>
+        <translation>Instalar</translation>
     </message>
     <message>
         <source>Remove package</source>
-        <translation type="vanished">Quitar paquete</translation>
+        <translation>Quitar paquete</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">Quitar</translation>
+        <translation>Quitar</translation>
     </message>
     <message>
         <source>Always installed</source>
-        <translation type="vanished">Siempre instalado</translation>
+        <translation>Siempre instalado</translation>
     </message>
     <message>
         <source>Open GitHub page</source>
-        <translation type="vanished">Abrir página de GitHub</translation>
+        <translation>Abrir página de GitHub</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;p&gt;&lt;strong&gt;%1&lt;/strong&gt;&lt;/p&gt;Author: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;Version: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%3&lt;/strong&gt;&lt;br&gt;Category: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%4&lt;/strong&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;p&gt;&lt;strong&gt;%1&lt;/strong&gt;&lt;/p&gt;Autor: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;Versión: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%3&lt;/strong&gt;&lt;br&gt;Categoría: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%4&lt;/strong&gt;</translation>
+        <translation>&lt;html&gt;&lt;p&gt;&lt;strong&gt;%1&lt;/strong&gt;&lt;/p&gt;Autor: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;Versión: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%3&lt;/strong&gt;&lt;br&gt;Categoría: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%4&lt;/strong&gt;</translation>
     </message>
     <message>
         <source>&lt;br&gt;Compiler: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;Architecture: &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</source>
-        <translation type="vanished">&lt;br&gt;Compilador: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;Arquitectura: &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</translation>
+        <translation>&lt;br&gt;Compilador: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;Arquitectura: &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <source>&lt;br&gt;MCU Count: &lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;MCUs: &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</source>
-        <translation type="vanished">&lt;br&gt;Cantidad de MCU: &lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;MCU: &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</translation>
+        <translation>&lt;br&gt;Cantidad de MCU: &lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;MCU: &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <source>Downloading...</source>
-        <translation type="vanished">Descargando...</translation>
+        <translation>Descargando...</translation>
     </message>
     <message>
         <source>Uninstalling...</source>
-        <translation type="vanished">Desinstalando...</translation>
+        <translation>Desinstalando...</translation>
     </message>
     <message>
         <source>Updating...</source>
-        <translation type="vanished">Actualizando...</translation>
+        <translation>Actualizando...</translation>
     </message>
     <message>
         <source>Pending...</source>
-        <translation type="vanished">Pendiente...</translation>
+        <translation>Pendiente...</translation>
     </message>
     <message>
         <source>Open in external browser</source>
-        <translation type="vanished">Abrir en navegador externo</translation>
+        <translation>Abrir en navegador externo</translation>
     </message>
     <message>
         <source>Goto EmbeddedWiki page</source>
-        <translation type="vanished">Ir a la página EmbeddedWiki</translation>
+        <translation>Ir a la página EmbeddedWiki</translation>
     </message>
     <message>
         <source>Error updating package</source>
-        <translation type="vanished">Error al actualizar el paquete</translation>
+        <translation>Error al actualizar el paquete</translation>
     </message>
 </context>
 <context>
@@ -13886,85 +13886,85 @@ Do you wish to override the security check and continue ?   </source>
     <name>Necto::PackageManagerView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Updating all packages...</source>
-        <translation type="vanished">Actualizando todos los paquetes...</translation>
+        <translation>Actualizando todos los paquetes...</translation>
     </message>
     <message>
         <source>Reset filters</source>
-        <translation type="vanished">Restablecer filtros</translation>
+        <translation>Restablecer filtros</translation>
     </message>
     <message>
         <source>Open filters</source>
-        <translation type="vanished">Abrir filtros</translation>
+        <translation>Abrir filtros</translation>
     </message>
     <message>
         <source>Filters</source>
-        <translation type="vanished">Filtros</translation>
+        <translation>Filtros</translation>
     </message>
     <message>
         <source>Update All</source>
-        <translation type="vanished">Actualizar todo</translation>
+        <translation>Actualizar todo</translation>
     </message>
     <message>
         <source>Filter packages</source>
-        <translation type="vanished">Filtrar paquetes</translation>
+        <translation>Filtrar paquetes</translation>
     </message>
     <message>
         <source>Found %1 package(s)</source>
-        <translation type="vanished">%1 paquete(s) encontrado(s)</translation>
+        <translation>%1 paquete(s) encontrado(s)</translation>
     </message>
     <message>
         <source>Apply</source>
-        <translation type="vanished">Aplicar</translation>
+        <translation>Aplicar</translation>
     </message>
     <message>
         <source>Apply selected filters</source>
-        <translation type="vanished">Aplicar filtros seleccionados</translation>
+        <translation>Aplicar filtros seleccionados</translation>
     </message>
     <message>
         <source>No internet connection</source>
-        <translation type="vanished">Sin conexión a internet</translation>
+        <translation>Sin conexión a internet</translation>
     </message>
     <message>
         <source>Reset all filters</source>
-        <translation type="vanished">Restablecer todos los filtros</translation>
+        <translation>Restablecer todos los filtros</translation>
     </message>
 </context>
 <context>
     <name>Necto::PackageUpdateCollection</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Double click to search in Package Manager</source>
-        <translation type="vanished">Haga doble clic para buscar en el Gestor de paquetes</translation>
+        <translation>Haga doble clic para buscar en el Gestor de paquetes</translation>
     </message>
 </context>
 <context>
     <name>Necto::PackagesStack</name>
     <message>
         <source>Updates</source>
-        <translation type="vanished">Actualizaciones</translation>
+        <translation>Actualizaciones</translation>
     </message>
     <message>
         <source>Package Manager</source>
-        <translation type="vanished">Gestor de paquetes</translation>
+        <translation>Gestor de paquetes</translation>
     </message>
 </context>
 <context>
     <name>Necto::PackagesView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Could not find a package you have searched. 
 Please, check your spelling.</source>
-        <translation type="vanished">No se encontró el paquete que ha buscado. 
+        <translation>No se encontró el paquete que ha buscado. 
 Compruebe la ortografía.</translation>
     </message>
 </context>
@@ -13972,286 +13972,286 @@ Compruebe la ortografía.</translation>
     <name>Necto::PasswordDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">Diálogo</translation>
+        <translation>Diálogo</translation>
     </message>
     <message>
         <source>Icon</source>
-        <translation type="vanished">Icono</translation>
+        <translation>Icono</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">Info</translation>
+        <translation>Info</translation>
     </message>
     <message>
         <source>Username</source>
-        <translation type="vanished">Usuario</translation>
+        <translation>Usuario</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation type="vanished">Contraseña</translation>
+        <translation>Contraseña</translation>
     </message>
 </context>
 <context>
     <name>Necto::PlanetDebugManager</name>
     <message>
         <source>No internet access.</source>
-        <translation type="vanished">Sin acceso a internet.</translation>
+        <translation>Sin acceso a internet.</translation>
     </message>
     <message>
         <source>Error connecting to server. Please check your internet connection.</source>
-        <translation type="vanished">Error al conectar con el servidor. Compruebe su conexión a internet.</translation>
+        <translation>Error al conectar con el servidor. Compruebe su conexión a internet.</translation>
     </message>
     <message>
         <source>Waiting for server response..</source>
-        <translation type="vanished">Esperando respuesta del servidor..</translation>
+        <translation>Esperando respuesta del servidor..</translation>
     </message>
     <message>
         <source>Preparing boards...</source>
-        <translation type="vanished">Preparando placas...</translation>
+        <translation>Preparando placas...</translation>
     </message>
     <message>
         <source>%1 %2 Remote board(s)</source>
-        <translation type="vanished">%1 %2 placa(s) remota(s)</translation>
+        <translation>%1 %2 placa(s) remota(s)</translation>
     </message>
     <message>
         <source>Found</source>
-        <translation type="vanished">Encontrados</translation>
+        <translation>Encontrados</translation>
     </message>
     <message>
         <source>Remote Board Farm</source>
-        <translation type="vanished">Remote Board Farm</translation>
+        <translation>Remote Board Farm</translation>
     </message>
     <message>
         <source>Closing session</source>
-        <translation type="vanished">Cerrando sesión</translation>
+        <translation>Cerrando sesión</translation>
     </message>
     <message>
         <source>Time token has expired.</source>
-        <translation type="vanished">El token de tiempo ha expirado.</translation>
+        <translation>El token de tiempo ha expirado.</translation>
     </message>
     <message>
         <source>The default configuration cannot be used for this project type.</source>
-        <translation type="vanished">La configuración predeterminada no se puede usar para este tipo de proyecto.</translation>
+        <translation>La configuración predeterminada no se puede usar para este tipo de proyecto.</translation>
     </message>
     <message>
         <source>Please configure the project manually.</source>
-        <translation type="vanished">Configure el proyecto manualmente.</translation>
+        <translation>Configure el proyecto manualmente.</translation>
     </message>
     <message>
         <source>MCU selected in setup is different from one on Remote Board Farm board.</source>
-        <translation type="vanished">El MCU seleccionado en la configuración es distinto del de la placa de Remote Board Farm.</translation>
+        <translation>El MCU seleccionado en la configuración es distinto del de la placa de Remote Board Farm.</translation>
     </message>
     <message>
         <source>Remote Board Farm session has no backup of the original configuration and no default setup is available; you will need to reconfigure this project after disconnecting.</source>
-        <translation type="vanished">La sesión de Remote Board Farm no tiene copia de seguridad de la configuración original ni hay una configuración predeterminada disponible; deberá reconfigurar este proyecto tras desconectarse.</translation>
+        <translation>La sesión de Remote Board Farm no tiene copia de seguridad de la configuración original ni hay una configuración predeterminada disponible; deberá reconfigurar este proyecto tras desconectarse.</translation>
     </message>
     <message>
         <source>MCU selected in configuration is different from one on Remote Board Farm board.</source>
-        <translation type="vanished">El MCU seleccionado en la configuración es distinto del de la placa de Remote Board Farm.</translation>
+        <translation>El MCU seleccionado en la configuración es distinto del de la placa de Remote Board Farm.</translation>
     </message>
     <message>
         <source>Successfully reserved 
 </source>
-        <translation type="vanished">Reservado correctamente 
+        <translation>Reservado correctamente 
 </translation>
     </message>
     <message>
         <source>Board is no longer available.</source>
-        <translation type="vanished">La placa ya no está disponible.</translation>
+        <translation>La placa ya no está disponible.</translation>
     </message>
     <message>
         <source>Configure</source>
-        <translation type="vanished">Configurar</translation>
+        <translation>Configurar</translation>
     </message>
     <message>
         <source>Network error occured</source>
-        <translation type="vanished">Se produjo un error de red</translation>
+        <translation>Se produjo un error de red</translation>
     </message>
     <message>
         <source>A network error occured</source>
-        <translation type="vanished">Se produjo un error de red</translation>
+        <translation>Se produjo un error de red</translation>
     </message>
     <message>
         <source>Error building default configuration from Remote Board Farm! Project is configured with local configuration.</source>
-        <translation type="vanished">¡Error al compilar la configuración predeterminada desde Remote Board Farm! El proyecto se configuró con la configuración local.</translation>
+        <translation>¡Error al compilar la configuración predeterminada desde Remote Board Farm! El proyecto se configuró con la configuración local.</translation>
     </message>
 </context>
 <context>
     <name>Necto::PlanetDebugView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Reserve</source>
-        <translation type="vanished">Reservar</translation>
+        <translation>Reservar</translation>
     </message>
     <message>
         <source>Custom setup</source>
-        <translation type="vanished">Configuración personalizada</translation>
+        <translation>Configuración personalizada</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="vanished">Filtrar</translation>
+        <translation>Filtrar</translation>
     </message>
     <message>
         <source>Reserved boards</source>
-        <translation type="vanished">Placas reservadas</translation>
+        <translation>Placas reservadas</translation>
     </message>
     <message>
         <source>Free boards</source>
-        <translation type="vanished">Placas gratuitas</translation>
+        <translation>Placas gratuitas</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>Filter boards</source>
-        <translation type="vanished">Filtrar placas</translation>
+        <translation>Filtrar placas</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Cerrar</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation type="vanished">Examinar</translation>
+        <translation>Examinar</translation>
     </message>
     <message>
         <source>Connecting to Remote Board Farm...</source>
-        <translation type="vanished">Conectando a Remote Board Farm...</translation>
+        <translation>Conectando a Remote Board Farm...</translation>
     </message>
     <message>
         <source>Connecting to the remote board...</source>
-        <translation type="vanished">Conectando a la placa remota...</translation>
+        <translation>Conectando a la placa remota...</translation>
     </message>
     <message>
         <source>Preparing your board...</source>
-        <translation type="vanished">Preparando su placa...</translation>
+        <translation>Preparando su placa...</translation>
     </message>
     <message>
         <source>Setting up CODEGRIP...</source>
-        <translation type="vanished">Configurando CODEGRIP...</translation>
+        <translation>Configurando CODEGRIP...</translation>
     </message>
     <message>
         <source>Connecting to remote GDB server...</source>
-        <translation type="vanished">Conectando al servidor GDB remoto...</translation>
+        <translation>Conectando al servidor GDB remoto...</translation>
     </message>
     <message>
         <source>Enabling remote ports...</source>
-        <translation type="vanished">Habilitando puertos remotos...</translation>
+        <translation>Habilitando puertos remotos...</translation>
     </message>
     <message>
         <source>Initializing camera...</source>
-        <translation type="vanished">Inicializando cámara...</translation>
+        <translation>Inicializando cámara...</translation>
     </message>
     <message>
         <source>Transferring data...</source>
-        <translation type="vanished">Transfiriendo datos...</translation>
+        <translation>Transfiriendo datos...</translation>
     </message>
     <message>
         <source>Waiting for a stream to start...</source>
-        <translation type="vanished">Esperando a que inicie una transmisión...</translation>
+        <translation>Esperando a que inicie una transmisión...</translation>
     </message>
     <message>
         <source>Waiting for server response...</source>
-        <translation type="vanished">Esperando respuesta del servidor...</translation>
+        <translation>Esperando respuesta del servidor...</translation>
     </message>
     <message>
         <source>Removing board reservation...</source>
-        <translation type="vanished">Quitando la reserva de la placa...</translation>
+        <translation>Quitando la reserva de la placa...</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProductivityHub</name>
     <message>
         <source>Close</source>
-        <translation type="vanished">Cerrar</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <source>Productivity Hub</source>
-        <translation type="vanished">Centro de productividad</translation>
+        <translation>Centro de productividad</translation>
     </message>
     <message>
         <source>NECTO Assistant</source>
-        <translation type="vanished">Asistente NECTO</translation>
+        <translation>Asistente NECTO</translation>
     </message>
     <message>
         <source>Graphically tell AI to generate a code for a complex projects</source>
-        <translation type="vanished">Indique gráficamente a la IA que genere código para proyectos complejos</translation>
+        <translation>Indique gráficamente a la IA que genere código para proyectos complejos</translation>
     </message>
     <message>
         <source>Personal Remote Board Farm</source>
-        <translation type="vanished">Remote Board Farm personal</translation>
+        <translation>Remote Board Farm personal</translation>
     </message>
     <message>
         <source>Create your personal remote board farm request. Choose &amp; reserve setup just for you.</source>
-        <translation type="vanished">Cree su solicitud personal de Remote Board Farm. Elija y reserve una configuración solo para usted.</translation>
+        <translation>Cree su solicitud personal de Remote Board Farm. Elija y reserve una configuración solo para usted.</translation>
     </message>
     <message>
         <source>Custom board tool</source>
-        <translation type="vanished">Herramienta de placa personalizada</translation>
+        <translation>Herramienta de placa personalizada</translation>
     </message>
     <message>
         <source>Design your custom board using mikroBUS modules and integrate it with mikroSDK.</source>
-        <translation type="vanished">Diseñe su placa personalizada usando módulos mikroBUS e intégrela con mikroSDK.</translation>
+        <translation>Diseñe su placa personalizada usando módulos mikroBUS e intégrela con mikroSDK.</translation>
     </message>
     <message>
         <source>Upload Project</source>
-        <translation type="vanished">Subir proyecto</translation>
+        <translation>Subir proyecto</translation>
     </message>
     <message>
         <source>Share your project with the world by uploading it to a Package Manager.</source>
-        <translation type="vanished">Comparta su proyecto con el mundo subiéndolo a un Gestor de paquetes.</translation>
+        <translation>Comparta su proyecto con el mundo subiéndolo a un Gestor de paquetes.</translation>
     </message>
     <message>
         <source>User Statistics</source>
-        <translation type="vanished">Estadísticas de usuario</translation>
+        <translation>Estadísticas de usuario</translation>
     </message>
     <message>
         <source>Track your NECTO Studio usage. Stats for builds, debugging, programming, Remote Board Farm and more.</source>
-        <translation type="vanished">Controle su uso de NECTO Studio. Estadísticas de compilaciones, depuración, programación, Remote Board Farm y más.</translation>
+        <translation>Controle su uso de NECTO Studio. Estadísticas de compilaciones, depuración, programación, Remote Board Farm y más.</translation>
     </message>
     <message>
         <source>Version Control</source>
-        <translation type="vanished">Control de versiones</translation>
+        <translation>Control de versiones</translation>
     </message>
     <message>
         <source>Keep track of all of your local repositories and connect to remote repositories via GitHub.</source>
-        <translation type="vanished">Lleve el control de todos sus repositorios locales y conéctese a repositorios remotos mediante GitHub.</translation>
+        <translation>Lleve el control de todos sus repositorios locales y conéctese a repositorios remotos mediante GitHub.</translation>
     </message>
     <message>
         <source>Create and Configure Project</source>
-        <translation type="vanished">Crear y configurar proyecto</translation>
+        <translation>Crear y configurar proyecto</translation>
     </message>
     <message>
         <source>Generate Code Only</source>
-        <translation type="vanished">Generar solo código</translation>
+        <translation>Generar solo código</translation>
     </message>
     <message>
         <source>You are all set. What&apos;s your next step?</source>
-        <translation type="vanished">Todo listo. ¿Cuál es su siguiente paso?</translation>
+        <translation>Todo listo. ¿Cuál es su siguiente paso?</translation>
     </message>
     <message>
         <source> on %1</source>
-        <translation type="vanished"> en %1</translation>
+        <translation> en %1</translation>
     </message>
     <message>
         <source>Create an example where data from %1 is displayed on the %2%3. Make sure board is initialized and proper interrupt routines are included</source>
-        <translation type="vanished">Cree un ejemplo donde los datos de %1 se muestren en %2%3. Asegúrese de que la placa esté inicializada y de que se incluyan las rutinas de interrupción adecuadas</translation>
+        <translation>Cree un ejemplo donde los datos de %1 se muestren en %2%3. Asegúrese de que la placa esté inicializada y de que se incluyan las rutinas de interrupción adecuadas</translation>
     </message>
     <message>
         <source>This feature is available only when a project is open.</source>
-        <translation type="vanished">Esta función solo está disponible cuando hay un proyecto abierto.</translation>
+        <translation>Esta función solo está disponible cuando hay un proyecto abierto.</translation>
     </message>
     <message>
         <source>Create example that combines %1</source>
-        <translation type="vanished">Crear ejemplo que combine %1</translation>
+        <translation>Crear ejemplo que combine %1</translation>
     </message>
     <message>
         <source>%1 on %2</source>
-        <translation type="vanished">%1 en %2</translation>
+        <translation>%1 en %2</translation>
     </message>
 </context>
 <context>
@@ -14259,37 +14259,37 @@ Compruebe la ortografía.</translation>
     <message>
         <source>&lt;html&gt;&lt;p style=&quot;color:%1;&quot;&gt;Selected board: &lt;/p&gt;&lt;p
                             style=&quot;color:%2;&quot;&gt;No selected board&lt;/p&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;p style=&quot;color:%1;&quot;&gt;Placa seleccionada: &lt;/p&gt;&lt;p
+        <translation>&lt;html&gt;&lt;p style=&quot;color:%1;&quot;&gt;Placa seleccionada: &lt;/p&gt;&lt;p
                             style=&quot;color:%2;&quot;&gt;Ninguna placa seleccionada&lt;/p&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Click to scan for boards</source>
-        <translation type="vanished">Haga clic para escanear placas</translation>
+        <translation>Haga clic para escanear placas</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProgWizardPage</name>
     <message>
         <source>Choose a programmer</source>
-        <translation type="vanished">Elegir un programador</translation>
+        <translation>Elegir un programador</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProgramJob</name>
     <message>
         <source>Ok</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>Don&apos;t show this again</source>
-        <translation type="vanished">No volver a mostrar</translation>
+        <translation>No volver a mostrar</translation>
     </message>
     <message>
         <source>Programming steps:
 1. Set fuse, lock bits and adequate clock value
 2. Click on Write 
 3. Close AVR Flash</source>
-        <translation type="vanished">Pasos de programación:
+        <translation>Pasos de programación:
 1. Configure los fusibles, los bits de bloqueo y el valor de reloj adecuado
 2. Haga clic en Escribir 
 3. Cierre AVR Flash</translation>
@@ -14299,208 +14299,208 @@ Compruebe la ortografía.</translation>
     <name>Necto::ProgressFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Programming...</source>
-        <translation type="vanished">Programando...</translation>
+        <translation>Programando...</translation>
     </message>
     <message>
         <source>value</source>
-        <translation type="vanished">valor</translation>
+        <translation>valor</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProjectExplorerDialog</name>
     <message>
         <source>Close dialog</source>
-        <translation type="vanished">Cerrar diálogo</translation>
+        <translation>Cerrar diálogo</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Add new file</source>
-        <translation type="vanished">Añadir nuevo archivo</translation>
+        <translation>Añadir nuevo archivo</translation>
     </message>
     <message>
         <source>Add new file to project</source>
-        <translation type="vanished">Añadir nuevo archivo al proyecto</translation>
+        <translation>Añadir nuevo archivo al proyecto</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">Añadir</translation>
+        <translation>Añadir</translation>
     </message>
     <message>
         <source>Enter a file name:</source>
-        <translation type="vanished">Introducir un nombre de archivo:</translation>
+        <translation>Introducir un nombre de archivo:</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">Quitar</translation>
+        <translation>Quitar</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation type="vanished">Renombrar</translation>
+        <translation>Renombrar</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProjectExplorerView</name>
     <message>
         <source>Upload your project to cloud. Upon validation, your project will be available trough Package Manager</source>
-        <translation type="vanished">Suba su proyecto a la nube. Tras la validación, estará disponible a través del Gestor de paquetes</translation>
+        <translation>Suba su proyecto a la nube. Tras la validación, estará disponible a través del Gestor de paquetes</translation>
     </message>
     <message>
         <source>Upload</source>
-        <translation type="vanished">Subir</translation>
+        <translation>Subir</translation>
     </message>
     <message>
         <source>Filter project files</source>
-        <translation type="vanished">Filtrar archivos del proyecto</translation>
+        <translation>Filtrar archivos del proyecto</translation>
     </message>
     <message>
         <source>New</source>
-        <translation type="vanished">Nuevo</translation>
+        <translation>Nuevo</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">Añadir</translation>
+        <translation>Añadir</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="vanished">Abrir</translation>
+        <translation>Abrir</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation type="vanished">Abrir archivo</translation>
+        <translation>Abrir archivo</translation>
     </message>
     <message>
         <source>Expand all</source>
-        <translation type="vanished">Expandir todo</translation>
+        <translation>Expandir todo</translation>
     </message>
     <message>
         <source>Collapse all</source>
-        <translation type="vanished">Contraer todo</translation>
+        <translation>Contraer todo</translation>
     </message>
     <message>
         <source>Flat view</source>
-        <translation type="vanished">Vista plana</translation>
+        <translation>Vista plana</translation>
     </message>
     <message>
         <source>Set target as active</source>
-        <translation type="vanished">Establecer destino como activo</translation>
+        <translation>Establecer destino como activo</translation>
     </message>
     <message>
         <source>Set Active Project</source>
-        <translation type="vanished">Establecer proyecto activo</translation>
+        <translation>Establecer proyecto activo</translation>
     </message>
     <message>
         <source>Build project</source>
-        <translation type="vanished">Compilar proyecto</translation>
+        <translation>Compilar proyecto</translation>
     </message>
     <message>
         <source>Open file location</source>
-        <translation type="vanished">Abrir ubicación del archivo</translation>
+        <translation>Abrir ubicación del archivo</translation>
     </message>
     <message>
         <source>Build</source>
-        <translation type="vanished">Compilar</translation>
+        <translation>Compilar</translation>
     </message>
     <message>
         <source>Clean project</source>
-        <translation type="vanished">Limpiar proyecto</translation>
+        <translation>Limpiar proyecto</translation>
     </message>
     <message>
         <source>Clean active project</source>
-        <translation type="vanished">Limpiar proyecto activo</translation>
+        <translation>Limpiar proyecto activo</translation>
     </message>
     <message>
         <source>Parse project</source>
-        <translation type="vanished">Analizar proyecto</translation>
+        <translation>Analizar proyecto</translation>
     </message>
     <message>
         <source>Program selected project</source>
-        <translation type="vanished">Programar proyecto seleccionado</translation>
+        <translation>Programar proyecto seleccionado</translation>
     </message>
     <message>
         <source>Flash</source>
-        <translation type="vanished">Flash</translation>
+        <translation>Flash</translation>
     </message>
     <message>
         <source>Erase</source>
-        <translation type="vanished">Borrar</translation>
+        <translation>Borrar</translation>
     </message>
     <message>
         <source>Change project configuration</source>
-        <translation type="vanished">Cambiar configuración del proyecto</translation>
+        <translation>Cambiar configuración del proyecto</translation>
     </message>
     <message>
         <source>Close active project</source>
-        <translation type="vanished">Cerrar proyecto activo</translation>
+        <translation>Cerrar proyecto activo</translation>
     </message>
     <message>
         <source>Close project</source>
-        <translation type="vanished">Cerrar proyecto</translation>
+        <translation>Cerrar proyecto</translation>
     </message>
     <message>
         <source>Close all projects</source>
-        <translation type="vanished">Cerrar todos los proyectos</translation>
+        <translation>Cerrar todos los proyectos</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="vanished">Detener</translation>
+        <translation>Detener</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProjectInfoPage</name>
     <message>
         <source>Upload Project Wizard</source>
-        <translation type="vanished">Asistente de subida de proyecto</translation>
+        <translation>Asistente de subida de proyecto</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">Siguiente</translation>
+        <translation>Siguiente</translation>
     </message>
     <message>
         <source>Enter  project&apos;s name  and version.</source>
-        <translation type="vanished">Introduzca el nombre y la versión del proyecto.</translation>
+        <translation>Introduzca el nombre y la versión del proyecto.</translation>
     </message>
     <message>
         <source>This is a display name for project. It will be used in Package Manger and Info</source>
-        <translation type="vanished">Este es un nombre visible para el proyecto. Se usará en el Gestor de paquetes e Información</translation>
+        <translation>Este es un nombre visible para el proyecto. Se usará en el Gestor de paquetes e Información</translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation type="vanished">Nombre:</translation>
+        <translation>Nombre:</translation>
     </message>
     <message>
         <source>Enter the name that will be displayed in the Package Manager.</source>
-        <translation type="vanished">Introduzca el nombre que se mostrará en el Gestor de paquetes.</translation>
+        <translation>Introduzca el nombre que se mostrará en el Gestor de paquetes.</translation>
     </message>
     <message>
         <source>Project must  have a version for a package. It will be used for install and update</source>
-        <translation type="vanished">El proyecto debe tener una versión para el paquete. Se usará para instalar y actualizar</translation>
+        <translation>El proyecto debe tener una versión para el paquete. Se usará para instalar y actualizar</translation>
     </message>
     <message>
         <source>Version:</source>
-        <translation type="vanished">Versión:</translation>
+        <translation>Versión:</translation>
     </message>
     <message>
         <source>Specify the version of your project package. This will be used for managing updates.</source>
-        <translation type="vanished">Especifique la versión del paquete de su proyecto. Se usará para gestionar las actualizaciones.</translation>
+        <translation>Especifique la versión del paquete de su proyecto. Se usará para gestionar las actualizaciones.</translation>
     </message>
     <message>
         <source>Project description:</source>
-        <translation type="vanished">Descripción del proyecto:</translation>
+        <translation>Descripción del proyecto:</translation>
     </message>
     <message>
         <source>Enter a short project decription here</source>
-        <translation type="vanished">Introduzca aquí una breve descripción del proyecto</translation>
+        <translation>Introduzca aquí una breve descripción del proyecto</translation>
     </message>
 </context>
 <context>
@@ -14628,148 +14628,148 @@ Compruebe la ortografía.</translation>
     <name>Necto::ProjectNamePage</name>
     <message>
         <source>Create New Project</source>
-        <translation type="vanished">Crear nuevo proyecto</translation>
+        <translation>Crear nuevo proyecto</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">Siguiente</translation>
+        <translation>Siguiente</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Nombre</translation>
+        <translation>Nombre</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation type="vanished">Ruta</translation>
+        <translation>Ruta</translation>
     </message>
     <message>
         <source>Browse...</source>
-        <translation type="vanished">Examinar...</translation>
+        <translation>Examinar...</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation type="vanished">Examinar</translation>
+        <translation>Examinar</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Tipo</translation>
+        <translation>Tipo</translation>
     </message>
     <message>
         <source>Configuration</source>
-        <translation type="vanished">Configuración</translation>
+        <translation>Configuración</translation>
     </message>
     <message>
         <source>Path can&apos;t be empty</source>
-        <translation type="vanished">La ruta no puede estar vacía</translation>
+        <translation>La ruta no puede estar vacía</translation>
     </message>
     <message>
         <source>Browse folder</source>
-        <translation type="vanished">Examinar carpeta</translation>
+        <translation>Examinar carpeta</translation>
     </message>
     <message>
         <source>Enter project name</source>
-        <translation type="vanished">Introducir nombre del proyecto</translation>
+        <translation>Introducir nombre del proyecto</translation>
     </message>
     <message>
         <source>Enter project path</source>
-        <translation type="vanished">Introducir ruta del proyecto</translation>
+        <translation>Introducir ruta del proyecto</translation>
     </message>
     <message>
         <source>Project name is invalid.</source>
-        <translation type="vanished">El nombre del proyecto no es válido.</translation>
+        <translation>El nombre del proyecto no es válido.</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>Project folder is not empty. Please change project name or project path.</source>
-        <translation type="vanished">La carpeta del proyecto no está vacía. Cambie el nombre o la ruta del proyecto.</translation>
+        <translation>La carpeta del proyecto no está vacía. Cambie el nombre o la ruta del proyecto.</translation>
     </message>
     <message>
         <source>This directory cannot be created.</source>
-        <translation type="vanished">No se puede crear este directorio.</translation>
+        <translation>No se puede crear este directorio.</translation>
     </message>
     <message>
         <source>Use absolute file path.</source>
-        <translation type="vanished">Usar ruta de archivo absoluta.</translation>
+        <translation>Usar ruta de archivo absoluta.</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProjectSetupListDelegate</name>
     <message>
         <source>Unavailable in offline mode</source>
-        <translation type="vanished">No disponible en modo sin conexión</translation>
+        <translation>No disponible en modo sin conexión</translation>
     </message>
     <message>
         <source>Click to create a new configuration</source>
-        <translation type="vanished">Haga clic para crear una nueva configuración</translation>
+        <translation>Haga clic para crear una nueva configuración</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProjectSetupPage</name>
     <message>
         <source>Create New Project</source>
-        <translation type="vanished">Crear nuevo proyecto</translation>
+        <translation>Crear nuevo proyecto</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">Finalizar</translation>
+        <translation>Finalizar</translation>
     </message>
     <message>
         <source>Choose configuration</source>
-        <translation type="vanished">Elegir configuración</translation>
+        <translation>Elegir configuración</translation>
     </message>
     <message>
         <source>Connected to Remote Board Farm</source>
-        <translation type="vanished">Conectado a Remote Board Farm</translation>
+        <translation>Conectado a Remote Board Farm</translation>
     </message>
     <message>
         <source>This project will be configured automatically to match the connected remote board.</source>
-        <translation type="vanished">Este proyecto se configurará automáticamente para coincidir con la placa remota conectada.</translation>
+        <translation>Este proyecto se configurará automáticamente para coincidir con la placa remota conectada.</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Nombre</translation>
+        <translation>Nombre</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Tipo</translation>
+        <translation>Tipo</translation>
     </message>
     <message>
         <source>Configuration</source>
-        <translation type="vanished">Configuración</translation>
+        <translation>Configuración</translation>
     </message>
     <message>
         <source>Choose</source>
-        <translation type="vanished">Elegir</translation>
+        <translation>Elegir</translation>
     </message>
     <message>
         <source>Configure project</source>
-        <translation type="vanished">Configurar proyecto</translation>
+        <translation>Configurar proyecto</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProjectSetupsModel</name>
     <message>
         <source>Add new</source>
-        <translation type="vanished">Añadir nuevo</translation>
+        <translation>Añadir nuevo</translation>
     </message>
 </context>
 <context>
@@ -14921,771 +14921,771 @@ RAM: &gt; 48 kB</translation>
     <name>Necto::ProjectTypeListDelegate</name>
     <message>
         <source>Included</source>
-        <translation type="vanished">Incluido</translation>
+        <translation>Incluido</translation>
     </message>
     <message>
         <source>Output</source>
-        <translation type="vanished">Salida</translation>
+        <translation>Salida</translation>
     </message>
     <message>
         <source>Requirements</source>
-        <translation type="vanished">Requisitos</translation>
+        <translation>Requisitos</translation>
     </message>
 </context>
 <context>
     <name>Necto::ProjectTypePage</name>
     <message>
         <source>Create New Project</source>
-        <translation type="vanished">Crear nuevo proyecto</translation>
+        <translation>Crear nuevo proyecto</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">Siguiente</translation>
+        <translation>Siguiente</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Nombre</translation>
+        <translation>Nombre</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="vanished">Tipo</translation>
+        <translation>Tipo</translation>
     </message>
     <message>
         <source>Configuration</source>
-        <translation type="vanished">Configuración</translation>
+        <translation>Configuración</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">Finalizar</translation>
+        <translation>Finalizar</translation>
     </message>
     <message>
         <source>The chosen configuration does not have a TFT display. This project type requires a display to work.</source>
-        <translation type="vanished">La configuración elegida no tiene una pantalla TFT. Este tipo de proyecto requiere una pantalla para funcionar.</translation>
+        <translation>La configuración elegida no tiene una pantalla TFT. Este tipo de proyecto requiere una pantalla para funcionar.</translation>
     </message>
     <message>
         <source>&lt;br/&gt;The active project requires a TFT display, but the chosen configuration does not provide one.&lt;br/&gt;</source>
-        <translation type="vanished">&lt;br/&gt;El proyecto activo requiere una pantalla TFT, pero la configuración elegida no proporciona una.&lt;br/&gt;</translation>
+        <translation>&lt;br/&gt;El proyecto activo requiere una pantalla TFT, pero la configuración elegida no proporciona una.&lt;br/&gt;</translation>
     </message>
     <message>
         <source>The chosen configuration uses a compiler that is not supported by the LVGL project type. GCC or Clang is required.</source>
-        <translation type="vanished">La configuración elegida usa un compilador no compatible con el tipo de proyecto LVGL. Se requiere GCC o Clang.</translation>
+        <translation>La configuración elegida usa un compilador no compatible con el tipo de proyecto LVGL. Se requiere GCC o Clang.</translation>
     </message>
     <message>
         <source>&lt;br/&gt;The active LVGL project requires a GCC or Clang toolchain,&lt;br/&gt;but the chosen configuration uses an unsupported compiler.&lt;br/&gt;</source>
-        <translation type="vanished">&lt;br/&gt;El proyecto LVGL activo requiere una cadena de herramientas GCC o Clang,&lt;br/&gt;pero la configuración elegida usa un compilador no compatible.&lt;br/&gt;</translation>
+        <translation>&lt;br/&gt;El proyecto LVGL activo requiere una cadena de herramientas GCC o Clang,&lt;br/&gt;pero la configuración elegida usa un compilador no compatible.&lt;br/&gt;</translation>
     </message>
     <message>
         <source>The chosen configuration uses a single-core MCU. This project type requires a dual-core MCU.</source>
-        <translation type="vanished">La configuración elegida usa un MCU de un solo núcleo. Este tipo de proyecto requiere un MCU de doble núcleo.</translation>
+        <translation>La configuración elegida usa un MCU de un solo núcleo. Este tipo de proyecto requiere un MCU de doble núcleo.</translation>
     </message>
     <message>
         <source>&lt;br/&gt;The active project targets a dual-core MCU, but the chosen configuration is single-core.&lt;br/&gt;</source>
-        <translation type="vanished">&lt;br/&gt;El proyecto activo apunta a un MCU de doble núcleo, pero la configuración elegida es de un solo núcleo.&lt;br/&gt;</translation>
+        <translation>&lt;br/&gt;El proyecto activo apunta a un MCU de doble núcleo, pero la configuración elegida es de un solo núcleo.&lt;br/&gt;</translation>
     </message>
 </context>
 <context>
     <name>Necto::QObject</name>
     <message>
         <source>Ok</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>CODEGRIP Suite is not installed. 
 
  NECTO Studio will now run CODEGRIP Suite installer.</source>
-        <translation type="vanished">CODEGRIP Suite no está instalado. 
+        <translation>CODEGRIP Suite no está instalado. 
 
  NECTO Studio ejecutará ahora el instalador de CODEGRIP Suite.</translation>
     </message>
     <message>
         <source>CODEGRIP Suite update is available.
 NECTO Studio will now run CODEGRIP Suite updater.</source>
-        <translation type="vanished">Hay una actualización de CODEGRIP Suite disponible.
+        <translation>Hay una actualización de CODEGRIP Suite disponible.
 NECTO Studio ejecutará ahora el actualizador de CODEGRIP Suite.</translation>
     </message>
     <message>
         <source>Unable to evaluate expression</source>
-        <translation type="vanished">No se puede evaluar la expresión</translation>
+        <translation>No se puede evaluar la expresión</translation>
     </message>
     <message>
         <source>Decimal</source>
-        <translation type="vanished">Decimal</translation>
+        <translation>Decimal</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation type="vanished">Predeterminado</translation>
+        <translation>Predeterminado</translation>
     </message>
     <message>
         <source>Floating point</source>
-        <translation type="vanished">Punto flotante</translation>
+        <translation>Punto flotante</translation>
     </message>
     <message>
         <source>String</source>
-        <translation type="vanished">Cadena</translation>
+        <translation>Cadena</translation>
     </message>
     <message>
         <source>No target</source>
-        <translation type="vanished">Sin destino</translation>
+        <translation>Sin destino</translation>
     </message>
     <message>
         <source>Cannot extract project information.</source>
-        <translation type="vanished">No se puede extraer la información del proyecto.</translation>
+        <translation>No se puede extraer la información del proyecto.</translation>
     </message>
     <message>
         <source>Invalid reply file created by CMake.</source>
-        <translation type="vanished">Archivo de respuesta no válido creado por CMake.</translation>
+        <translation>Archivo de respuesta no válido creado por CMake.</translation>
     </message>
     <message>
         <source>Invalid cache file generated by CMake.</source>
-        <translation type="vanished">Archivo de caché no válido generado por CMake.</translation>
+        <translation>Archivo de caché no válido generado por CMake.</translation>
     </message>
     <message>
         <source>Invalid cmakeFiles file generated by CMake.</source>
-        <translation type="vanished">Archivo cmakeFiles no válido generado por CMake.</translation>
+        <translation>Archivo cmakeFiles no válido generado por CMake.</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: No directories.</source>
-        <translation type="vanished">Archivo codemodel no válido generado por CMake: sin directorios.</translation>
+        <translation>Archivo codemodel no válido generado por CMake: sin directorios.</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: Empty directory object.</source>
-        <translation type="vanished">Archivo codemodel no válido generado por CMake: objeto de directorio vacío.</translation>
+        <translation>Archivo codemodel no válido generado por CMake: objeto de directorio vacío.</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: No projects.</source>
-        <translation type="vanished">Archivo codemodel no válido generado por CMake: sin proyectos.</translation>
+        <translation>Archivo codemodel no válido generado por CMake: sin proyectos.</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: Empty project object.</source>
-        <translation type="vanished">Archivo codemodel no válido generado por CMake: objeto de proyecto vacío.</translation>
+        <translation>Archivo codemodel no válido generado por CMake: objeto de proyecto vacío.</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: Broken project data.</source>
-        <translation type="vanished">Archivo codemodel no válido generado por CMake: datos de proyecto dañados.</translation>
+        <translation>Archivo codemodel no válido generado por CMake: datos de proyecto dañados.</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: No targets.</source>
-        <translation type="vanished">Archivo codemodel no válido generado por CMake: sin destinos.</translation>
+        <translation>Archivo codemodel no válido generado por CMake: sin destinos.</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: Empty target object.</source>
-        <translation type="vanished">Archivo codemodel no válido generado por CMake: objeto de destino vacío.</translation>
+        <translation>Archivo codemodel no válido generado por CMake: objeto de destino vacío.</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: Broken target data.</source>
-        <translation type="vanished">Archivo codemodel no válido generado por CMake: datos de destino dañados.</translation>
+        <translation>Archivo codemodel no válido generado por CMake: datos de destino dañados.</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: No configurations.</source>
-        <translation type="vanished">Archivo codemodel no válido generado por CMake: sin configuraciones.</translation>
+        <translation>Archivo codemodel no válido generado por CMake: sin configuraciones.</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake: Empty configuration object.</source>
-        <translation type="vanished">Archivo codemodel no válido generado por CMake: objeto de configuración vacío.</translation>
+        <translation>Archivo codemodel no válido generado por CMake: objeto de configuración vacío.</translation>
     </message>
     <message>
         <source>Invalid codemodel file generated by CMake.</source>
-        <translation type="vanished">Archivo codemodel no válido generado por CMake.</translation>
+        <translation>Archivo codemodel no válido generado por CMake.</translation>
     </message>
     <message>
         <source>Invalid target file: Information is missing.</source>
-        <translation type="vanished">Archivo de destino no válido: falta información.</translation>
+        <translation>Archivo de destino no válido: falta información.</translation>
     </message>
     <message>
         <source>Invalid target file generated by CMake: Broken indexes in target details.</source>
-        <translation type="vanished">Archivo de destino no válido generado por CMake: índices dañados en los detalles del destino.</translation>
+        <translation>Archivo de destino no válido generado por CMake: índices dañados en los detalles del destino.</translation>
     </message>
     <message>
         <source>No CMake configuration found!</source>
-        <translation type="vanished">¡No se encontró configuración de CMake!</translation>
+        <translation>¡No se encontró configuración de CMake!</translation>
     </message>
     <message>
         <source>No &quot;%1&quot; CMake configuration found. Available configurations: &quot;%2&quot;.
 Make sure that CMAKE_CONFIGURATION_TYPES variable contains the &quot;Build type&quot; field.</source>
-        <translation type="vanished">No se encontró la configuración de CMake &quot;%1&quot;. Configuraciones disponibles: &quot;%2&quot;.
+        <translation>No se encontró la configuración de CMake &quot;%1&quot;. Configuraciones disponibles: &quot;%2&quot;.
 Asegúrese de que la variable CMAKE_CONFIGURATION_TYPES contenga el campo &quot;Build type&quot;.</translation>
     </message>
     <message>
         <source>No &quot;%1&quot; CMake configuration found. Available configuration: &quot;%2&quot;.
 Make sure that CMAKE_BUILD_TYPE variable matches the &quot;Build type&quot; field.</source>
-        <translation type="vanished">No se encontró la configuración de CMake &quot;%1&quot;. Configuración disponible: &quot;%2&quot;.
+        <translation>No se encontró la configuración de CMake &quot;%1&quot;. Configuración disponible: &quot;%2&quot;.
 Asegúrese de que la variable CMAKE_BUILD_TYPE coincida con el campo &quot;Build type&quot;.</translation>
     </message>
     <message>
         <source>Disabled</source>
-        <translation type="vanished">Deshabilitado</translation>
+        <translation>Deshabilitado</translation>
     </message>
     <message>
         <source>Low</source>
-        <translation type="vanished">Bajo</translation>
+        <translation>Bajo</translation>
     </message>
     <message>
         <source>Medium</source>
-        <translation type="vanished">Medio</translation>
+        <translation>Medio</translation>
     </message>
     <message>
         <source>High</source>
-        <translation type="vanished">Alto</translation>
+        <translation>Alto</translation>
     </message>
     <message>
         <source>Reparent %1 components</source>
-        <translation type="vanished">Reasignar %1 componentes</translation>
+        <translation>Reasignar %1 componentes</translation>
     </message>
     <message>
         <source>Reparent %1 components to screen</source>
-        <translation type="vanished">Reasignar %1 componentes a la pantalla</translation>
+        <translation>Reasignar %1 componentes a la pantalla</translation>
     </message>
     <message>
         <source>Move %1 components</source>
-        <translation type="vanished">Mover %1 componentes</translation>
+        <translation>Mover %1 componentes</translation>
     </message>
     <message>
         <source>Add %1</source>
-        <translation type="vanished">Añadir %1</translation>
+        <translation>Añadir %1</translation>
     </message>
     <message>
         <source>Remove %1 component(s)</source>
-        <translation type="vanished">Quitar %1 componente(s)</translation>
+        <translation>Quitar %1 componente(s)</translation>
     </message>
     <message>
         <source>Cut %1 component(s)</source>
-        <translation type="vanished">Cortar %1 componente(s)</translation>
+        <translation>Cortar %1 componente(s)</translation>
     </message>
     <message>
         <source>Paste %1 component(s)</source>
-        <translation type="vanished">Pegar %1 componente(s)</translation>
+        <translation>Pegar %1 componente(s)</translation>
     </message>
     <message>
         <source>Group %1 component(s)</source>
-        <translation type="vanished">Agrupar %1 componente(s)</translation>
+        <translation>Agrupar %1 componente(s)</translation>
     </message>
     <message>
         <source>Ungroup %1 group(s)</source>
-        <translation type="vanished">Desagrupar %1 grupo(s)</translation>
+        <translation>Desagrupar %1 grupo(s)</translation>
     </message>
     <message>
         <source>Reparent %1</source>
-        <translation type="vanished">Reasignar %1</translation>
+        <translation>Reasignar %1</translation>
     </message>
     <message>
         <source>Move/resize %1</source>
-        <translation type="vanished">Mover/redimensionar %1</translation>
+        <translation>Mover/redimensionar %1</translation>
     </message>
     <message>
         <source>Resize screen</source>
-        <translation type="vanished">Redimensionar pantalla</translation>
+        <translation>Redimensionar pantalla</translation>
     </message>
     <message>
         <source>Set %1.%2</source>
-        <translation type="vanished">Establecer %1.%2</translation>
+        <translation>Establecer %1.%2</translation>
     </message>
     <message>
         <source>Edit series</source>
-        <translation type="vanished">Editar serie</translation>
+        <translation>Editar serie</translation>
     </message>
     <message>
         <source>Edit array element</source>
-        <translation type="vanished">Editar elemento del arreglo</translation>
+        <translation>Editar elemento del arreglo</translation>
     </message>
     <message>
         <source>Delete array element</source>
-        <translation type="vanished">Eliminar elemento del arreglo</translation>
+        <translation>Eliminar elemento del arreglo</translation>
     </message>
     <message>
         <source>Edit %1</source>
-        <translation type="vanished">Editar %1</translation>
+        <translation>Editar %1</translation>
     </message>
     <message>
         <source>Property structure</source>
-        <translation type="vanished">Estructura de propiedades</translation>
+        <translation>Estructura de propiedades</translation>
     </message>
     <message>
         <source>Resize %1</source>
-        <translation type="vanished">Redimensionar %1</translation>
+        <translation>Redimensionar %1</translation>
     </message>
 </context>
 <context>
     <name>Necto::QuestionDialog</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="vanished">Info</translation>
+        <translation>Info</translation>
     </message>
 </context>
 <context>
     <name>Necto::RISCVGNUSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="vanished">Ajustes del compilador </translation>
+        <translation>Ajustes del compilador </translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation type="vanished">Depurador</translation>
+        <translation>Depurador</translation>
     </message>
     <message>
         <source>Change your program&apos;s debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
-        <translation type="vanished">Cambie el depurador de su programa de LLDB a GDB o viceversa, según sus requisitos específicos.</translation>
+        <translation>Cambie el depurador de su programa de LLDB a GDB o viceversa, según sus requisitos específicos.</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">Ajustes del compilador</translation>
+        <translation>Ajustes del compilador</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
 </context>
 <context>
     <name>Necto::RecentListItem</name>
     <message>
         <source>&lt;html&gt;&lt;strong&gt;Project: &lt;/strong&gt;%1&lt;p&gt;&lt;strong&gt;Date: &lt;/strong&gt; &lt;i&gt;%2&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Path: &lt;/strong&gt; %3&lt;/p&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;strong&gt;Proyecto: &lt;/strong&gt;%1&lt;p&gt;&lt;strong&gt;Fecha: &lt;/strong&gt; &lt;i&gt;%2&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Ruta: &lt;/strong&gt; %3&lt;/p&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;strong&gt;Proyecto: &lt;/strong&gt;%1&lt;p&gt;&lt;strong&gt;Fecha: &lt;/strong&gt; &lt;i&gt;%2&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Ruta: &lt;/strong&gt; %3&lt;/p&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Open project location</source>
-        <translation type="vanished">Abrir ubicación del proyecto</translation>
+        <translation>Abrir ubicación del proyecto</translation>
     </message>
     <message>
         <source>Remove from recent</source>
-        <translation type="vanished">Quitar de recientes</translation>
+        <translation>Quitar de recientes</translation>
     </message>
 </context>
 <context>
     <name>Necto::RecentProjectsView</name>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;No recent projects found. &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;First time you open a project it will appear here&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;No se encontraron proyectos recientes. &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;La primera vez que abra un proyecto aparecerá aquí&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;No se encontraron proyectos recientes. &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;La primera vez que abra un proyecto aparecerá aquí&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
     <name>Necto::RegisterDialog</name>
     <message>
         <source>Register</source>
-        <translation type="vanished">Registrar</translation>
+        <translation>Registrar</translation>
     </message>
     <message>
         <source>Create account</source>
-        <translation type="vanished">Crear cuenta</translation>
+        <translation>Crear cuenta</translation>
     </message>
     <message>
         <source>Field of work:</source>
-        <translation type="vanished">Campo de trabajo:</translation>
+        <translation>Campo de trabajo:</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>*First name: </source>
-        <translation type="vanished">*Nombre: </translation>
+        <translation>*Nombre: </translation>
     </message>
     <message>
         <source>*Last name: </source>
-        <translation type="vanished">*Apellido: </translation>
+        <translation>*Apellido: </translation>
     </message>
     <message>
         <source>*Company: </source>
-        <translation type="vanished">*Empresa: </translation>
+        <translation>*Empresa: </translation>
     </message>
     <message>
         <source>*Password: </source>
-        <translation type="vanished">*Contraseña: </translation>
+        <translation>*Contraseña: </translation>
     </message>
     <message>
         <source>*Confirm password: </source>
-        <translation type="vanished">*Confirmar contraseña: </translation>
+        <translation>*Confirmar contraseña: </translation>
     </message>
     <message>
         <source>*Username: </source>
-        <translation type="vanished">*Usuario: </translation>
+        <translation>*Usuario: </translation>
     </message>
     <message>
         <source>*Email: </source>
-        <translation type="vanished">*Correo: </translation>
+        <translation>*Correo: </translation>
     </message>
     <message>
         <source>*Confirm email: </source>
-        <translation type="vanished">*Confirmar correo: </translation>
+        <translation>*Confirmar correo: </translation>
     </message>
     <message>
         <source>Profile image: </source>
-        <translation type="vanished">Imagen de perfil: </translation>
+        <translation>Imagen de perfil: </translation>
     </message>
     <message>
         <source>Field can&apos;t be empty</source>
-        <translation type="vanished">El campo no puede estar vacío</translation>
+        <translation>El campo no puede estar vacío</translation>
     </message>
     <message>
         <source>Passwords do not match</source>
-        <translation type="vanished">Las contraseñas no coinciden</translation>
+        <translation>Las contraseñas no coinciden</translation>
     </message>
     <message>
         <source>Email format not valid</source>
-        <translation type="vanished">Formato de correo no válido</translation>
+        <translation>Formato de correo no válido</translation>
     </message>
     <message>
         <source>Emails do not match</source>
-        <translation type="vanished">Los correos no coinciden</translation>
+        <translation>Los correos no coinciden</translation>
     </message>
     <message>
         <source>Waiting for server response. Please wait.</source>
-        <translation type="vanished">Esperando respuesta del servidor. Espere.</translation>
+        <translation>Esperando respuesta del servidor. Espere.</translation>
     </message>
     <message>
         <source>Choose picture</source>
-        <translation type="vanished">Elegir imagen</translation>
+        <translation>Elegir imagen</translation>
     </message>
 </context>
 <context>
     <name>Necto::RemoteAdressItem</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">Quitar</translation>
+        <translation>Quitar</translation>
     </message>
 </context>
 <context>
     <name>Necto::RequestHandler</name>
     <message>
         <source>Not available</source>
-        <translation type="vanished">No disponible</translation>
+        <translation>No disponible</translation>
     </message>
 </context>
 <context>
     <name>Necto::ReserveBoardView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Reserve</source>
-        <translation type="vanished">Reservar</translation>
+        <translation>Reservar</translation>
     </message>
     <message>
         <source>From:</source>
-        <translation type="vanished">Desde:</translation>
+        <translation>Desde:</translation>
     </message>
     <message>
         <source>Waiting for server response</source>
-        <translation type="vanished">Esperando respuesta del servidor</translation>
+        <translation>Esperando respuesta del servidor</translation>
     </message>
     <message>
         <source>Email</source>
-        <translation type="vanished">Correo</translation>
+        <translation>Correo</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="vanished">Nombre</translation>
+        <translation>Nombre</translation>
     </message>
 </context>
 <context>
     <name>Necto::ResourceFontDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">Diálogo</translation>
+        <translation>Diálogo</translation>
     </message>
     <message>
         <source>Add font to resource file</source>
-        <translation type="vanished">Añadir fuente al archivo de recursos</translation>
+        <translation>Añadir fuente al archivo de recursos</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="vanished">Añadir</translation>
+        <translation>Añadir</translation>
     </message>
 </context>
 <context>
     <name>Necto::ResourceImageDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">Diálogo</translation>
+        <translation>Diálogo</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation type="vanished">Ruta</translation>
+        <translation>Ruta</translation>
     </message>
 </context>
 <context>
     <name>Necto::ResourcesView</name>
     <message>
         <source>Filter image and font resources</source>
-        <translation type="vanished">Filtrar recursos de imagen y fuente</translation>
+        <translation>Filtrar recursos de imagen y fuente</translation>
     </message>
     <message>
         <source>Can&apos;t find what you have searched for</source>
-        <translation type="vanished">No se encuentra lo que ha buscado</translation>
+        <translation>No se encuentra lo que ha buscado</translation>
     </message>
     <message>
         <source>Edit resource</source>
-        <translation type="vanished">Editar recurso</translation>
+        <translation>Editar recurso</translation>
     </message>
     <message>
         <source>Add new image resource</source>
-        <translation type="vanished">Añadir nuevo recurso de imagen</translation>
+        <translation>Añadir nuevo recurso de imagen</translation>
     </message>
     <message>
         <source>Add new font resource</source>
-        <translation type="vanished">Añadir nuevo recurso de fuente</translation>
+        <translation>Añadir nuevo recurso de fuente</translation>
     </message>
     <message>
         <source>Remove resource</source>
-        <translation type="vanished">Quitar recurso</translation>
+        <translation>Quitar recurso</translation>
     </message>
     <message>
         <source>Remove missing resources</source>
-        <translation type="vanished">Quitar recursos faltantes</translation>
+        <translation>Quitar recursos faltantes</translation>
     </message>
 </context>
 <context>
     <name>Necto::RpcSocket</name>
     <message>
         <source>Choose how to apply the generated code to your file.</source>
-        <translation type="vanished">Elija cómo aplicar el código generado a su archivo.</translation>
+        <translation>Elija cómo aplicar el código generado a su archivo.</translation>
     </message>
     <message>
         <source>Replace Entire File</source>
-        <translation type="vanished">Reemplazar todo el archivo</translation>
+        <translation>Reemplazar todo el archivo</translation>
     </message>
     <message>
         <source>NECTO Assistant has finished generating code</source>
-        <translation type="vanished">NECTO Assistant ha terminado de generar el código</translation>
+        <translation>NECTO Assistant ha terminado de generar el código</translation>
     </message>
 </context>
 <context>
     <name>Necto::SDKConfigPage</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Disabled</source>
-        <translation type="vanished">Deshabilitado</translation>
+        <translation>Deshabilitado</translation>
     </message>
     <message>
         <source>Low</source>
-        <translation type="vanished">Bajo</translation>
+        <translation>Bajo</translation>
     </message>
     <message>
         <source>Medium</source>
-        <translation type="vanished">Medio</translation>
+        <translation>Medio</translation>
     </message>
     <message>
         <source>High</source>
-        <translation type="vanished">Alto</translation>
+        <translation>Alto</translation>
     </message>
 </context>
 <context>
     <name>Necto::SdkWizardPage</name>
     <message>
         <source>Choose a SDK</source>
-        <translation type="vanished">Elegir un SDK</translation>
+        <translation>Elegir un SDK</translation>
     </message>
 </context>
 <context>
     <name>Necto::SeggerJlinkView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>SEGGER J-Link server options</source>
-        <translation type="vanished">Opciones del servidor SEGGER J-Link</translation>
+        <translation>Opciones del servidor SEGGER J-Link</translation>
     </message>
     <message>
         <source>IP Address:</source>
-        <translation type="vanished">Dirección IP:</translation>
+        <translation>Dirección IP:</translation>
     </message>
     <message>
         <source>Port:</source>
-        <translation type="vanished">Puerto:</translation>
+        <translation>Puerto:</translation>
     </message>
     <message>
         <source>Command line options:</source>
-        <translation type="vanished">Opciones de línea de comandos:</translation>
+        <translation>Opciones de línea de comandos:</translation>
     </message>
     <message>
         <source>SEGGER GDB Server Path:</source>
-        <translation type="vanished">Ruta del servidor GDB SEGGER:</translation>
+        <translation>Ruta del servidor GDB SEGGER:</translation>
     </message>
     <message>
         <source>Remote commands:</source>
-        <translation type="vanished">Comandos remotos:</translation>
+        <translation>Comandos remotos:</translation>
     </message>
     <message>
         <source>Remote commands</source>
-        <translation type="vanished">Comandos remotos</translation>
+        <translation>Comandos remotos</translation>
     </message>
     <message>
         <source>Auto start local SEGGER server</source>
-        <translation type="vanished">Iniciar automáticamente el servidor SEGGER local</translation>
+        <translation>Iniciar automáticamente el servidor SEGGER local</translation>
     </message>
     <message>
         <source>Connect to remote SEGGER GDB Server</source>
-        <translation type="vanished">Conectar al servidor GDB SEGGER remoto</translation>
+        <translation>Conectar al servidor GDB SEGGER remoto</translation>
     </message>
     <message>
         <source>Programmer Settings</source>
-        <translation type="vanished">Ajustes del programador</translation>
+        <translation>Ajustes del programador</translation>
     </message>
     <message>
         <source>J-Link GDB server port</source>
-        <translation type="vanished">Puerto del servidor GDB J-Link</translation>
+        <translation>Puerto del servidor GDB J-Link</translation>
     </message>
     <message>
         <source>SEGGER GDB server address</source>
-        <translation type="vanished">Dirección del servidor GDB SEGGER</translation>
+        <translation>Dirección del servidor GDB SEGGER</translation>
     </message>
     <message>
         <source>Additional command line options</source>
-        <translation type="vanished">Opciones adicionales de línea de comandos</translation>
+        <translation>Opciones adicionales de línea de comandos</translation>
     </message>
     <message>
         <source>J-Link GDB server path</source>
-        <translation type="vanished">Ruta del servidor GDB J-Link</translation>
+        <translation>Ruta del servidor GDB J-Link</translation>
     </message>
     <message>
         <source>Path to JLinkGDBServerCL executable</source>
-        <translation type="vanished">Ruta al ejecutable JLinkGDBServerCL</translation>
+        <translation>Ruta al ejecutable JLinkGDBServerCL</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation type="vanished">Abrir archivo</translation>
+        <translation>Abrir archivo</translation>
     </message>
 </context>
 <context>
     <name>Necto::SelectFileWidget</name>
     <message>
         <source>Select HEX</source>
-        <translation type="vanished">Seleccionar HEX</translation>
+        <translation>Seleccionar HEX</translation>
     </message>
     <message>
         <source>Please choose or drop a *.HEX file</source>
-        <translation type="vanished">Elija o suelte un archivo *.HEX</translation>
+        <translation>Elija o suelte un archivo *.HEX</translation>
     </message>
     <message>
         <source>Open HEX file</source>
-        <translation type="vanished">Abrir archivo HEX</translation>
+        <translation>Abrir archivo HEX</translation>
     </message>
     <message>
         <source>Hex files (*.hex)</source>
-        <translation type="vanished">Archivos hex (*.hex)</translation>
+        <translation>Archivos hex (*.hex)</translation>
     </message>
     <message>
         <source>All files (*)</source>
-        <translation type="vanished">Todos los archivos (*)</translation>
+        <translation>Todos los archivos (*)</translation>
     </message>
 </context>
 <context>
     <name>Necto::SelectMikroBusPage</name>
     <message>
         <source>Upload Project Wizard</source>
-        <translation type="vanished">Asistente de subida de proyecto</translation>
+        <translation>Asistente de subida de proyecto</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">Siguiente</translation>
+        <translation>Siguiente</translation>
     </message>
     <message>
         <source>Assign Click boards to mikroBUS sockets</source>
-        <translation type="vanished">Asignar placas Click a los zócalos mikroBUS</translation>
+        <translation>Asignar placas Click a los zócalos mikroBUS</translation>
     </message>
 </context>
 <context>
     <name>Necto::SelectedFilters</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
 </context>
 <context>
     <name>Necto::SelectedMikroBusItem</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Remove this Click board?</source>
-        <translation type="vanished">¿Quitar esta placa Click?</translation>
+        <translation>¿Quitar esta placa Click?</translation>
     </message>
     <message>
         <source>Loading...</source>
-        <translation type="vanished">Cargando...</translation>
+        <translation>Cargando...</translation>
     </message>
 </context>
 <context>
     <name>Necto::SettingsCategory</name>
     <message>
         <source>User interface</source>
-        <translation type="vanished">Interfaz de usuario</translation>
+        <translation>Interfaz de usuario</translation>
     </message>
     <message>
         <source>General settings</source>
-        <translation type="vanished">Ajustes generales</translation>
+        <translation>Ajustes generales</translation>
     </message>
     <message>
         <source>Editor settings</source>
-        <translation type="vanished">Ajustes del editor</translation>
+        <translation>Ajustes del editor</translation>
     </message>
     <message>
         <source>Shortcuts settings</source>
-        <translation type="vanished">Ajustes de atajos</translation>
+        <translation>Ajustes de atajos</translation>
     </message>
     <message>
         <source>Network settings</source>
-        <translation type="vanished">Ajustes de red</translation>
+        <translation>Ajustes de red</translation>
     </message>
     <message>
         <source>Appearance settings</source>
-        <translation type="vanished">Ajustes de apariencia</translation>
+        <translation>Ajustes de apariencia</translation>
     </message>
 </context>
 <context>
@@ -15705,192 +15705,192 @@ Asegúrese de que la variable CMAKE_BUILD_TYPE coincida con el campo &quot;Build
     <name>Necto::SettingsView</name>
     <message>
         <source>Settings</source>
-        <translation type="vanished">Ajustes</translation>
+        <translation>Ajustes</translation>
     </message>
     <message>
         <source>Reset</source>
-        <translation type="vanished">Restablecer</translation>
+        <translation>Restablecer</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="vanished">Buscar</translation>
+        <translation>Buscar</translation>
     </message>
 </context>
 <context>
     <name>Necto::SetupDetailFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">Editar</translation>
+        <translation>Editar</translation>
     </message>
     <message>
         <source>Edit Target</source>
-        <translation type="vanished">Editar destino</translation>
+        <translation>Editar destino</translation>
     </message>
     <message>
         <source>Board: </source>
-        <translation type="vanished">Placa: </translation>
+        <translation>Placa: </translation>
     </message>
     <message>
         <source>Category</source>
-        <translation type="vanished">Categoría</translation>
+        <translation>Categoría</translation>
     </message>
     <message>
         <source>mikroBUS count</source>
-        <translation type="vanished">cantidad de mikroBUS</translation>
+        <translation>cantidad de mikroBUS</translation>
     </message>
     <message>
         <source>Display: </source>
-        <translation type="vanished">Pantalla: </translation>
+        <translation>Pantalla: </translation>
     </message>
     <message>
         <source>TFT Socket</source>
-        <translation type="vanished">Zócalo TFT</translation>
+        <translation>Zócalo TFT</translation>
     </message>
     <message>
         <source>Built-in Display</source>
-        <translation type="vanished">Pantalla integrada</translation>
+        <translation>Pantalla integrada</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="vanished">Ninguno</translation>
+        <translation>Ninguno</translation>
     </message>
     <message>
         <source>Display socket</source>
-        <translation type="vanished">Zócalo de pantalla</translation>
+        <translation>Zócalo de pantalla</translation>
     </message>
     <message>
         <source>Width</source>
-        <translation type="vanished">Ancho</translation>
+        <translation>Ancho</translation>
     </message>
     <message>
         <source>Height</source>
-        <translation type="vanished">Alto</translation>
+        <translation>Alto</translation>
     </message>
     <message>
         <source>SDK: </source>
-        <translation type="vanished">SDK: </translation>
+        <translation>SDK: </translation>
     </message>
     <message>
         <source>Families</source>
-        <translation type="vanished">Familias</translation>
+        <translation>Familias</translation>
     </message>
     <message>
         <source>Legacy</source>
-        <translation type="vanished">Heredado</translation>
+        <translation>Heredado</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="vanished">Sí</translation>
+        <translation>Sí</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="vanished">No</translation>
+        <translation>No</translation>
     </message>
     <message>
         <source>SDK Dev kit</source>
-        <translation type="vanished">Kit de desarrollo SDK</translation>
+        <translation>Kit de desarrollo SDK</translation>
     </message>
     <message>
         <source>Compiler: </source>
-        <translation type="vanished">Compilador: </translation>
+        <translation>Compilador: </translation>
     </message>
     <message>
         <source>Language</source>
-        <translation type="vanished">Idioma</translation>
+        <translation>Idioma</translation>
     </message>
     <message>
         <source>Vendor</source>
-        <translation type="vanished">Fabricante</translation>
+        <translation>Fabricante</translation>
     </message>
     <message>
         <source>MCU: </source>
-        <translation type="vanished">MCU: </translation>
+        <translation>MCU: </translation>
     </message>
     <message>
         <source>Flash</source>
-        <translation type="vanished">Flash</translation>
+        <translation>Flash</translation>
     </message>
     <message>
         <source>Max speed</source>
-        <translation type="vanished">Velocidad máxima</translation>
+        <translation>Velocidad máxima</translation>
     </message>
     <message>
         <source>Prog-Debug: </source>
-        <translation type="vanished">Prog-Depur: </translation>
+        <translation>Prog-Depur: </translation>
     </message>
     <message>
         <source>Supports Planet Debug</source>
-        <translation type="vanished">Compatible con Planet Debug</translation>
+        <translation>Compatible con Planet Debug</translation>
     </message>
     <message>
         <source>Device Name</source>
-        <translation type="vanished">Nombre de dispositivo</translation>
+        <translation>Nombre de dispositivo</translation>
     </message>
     <message>
         <source>Communication Type</source>
-        <translation type="vanished">Tipo de comunicación</translation>
+        <translation>Tipo de comunicación</translation>
     </message>
 </context>
 <context>
     <name>Necto::SetupFilterPanel</name>
     <message>
         <source>Filters</source>
-        <translation type="vanished">Filtros</translation>
+        <translation>Filtros</translation>
     </message>
     <message>
         <source>Search filters</source>
-        <translation type="vanished">Filtros de búsqueda</translation>
+        <translation>Filtros de búsqueda</translation>
     </message>
 </context>
 <context>
     <name>Necto::SetupItemView</name>
     <message>
         <source>Compatible with</source>
-        <translation type="vanished">Compatible con</translation>
+        <translation>Compatible con</translation>
     </message>
     <message>
         <source>Advanced</source>
-        <translation type="vanished">Avanzado</translation>
+        <translation>Avanzado</translation>
     </message>
     <message>
         <source>Target options</source>
-        <translation type="vanished">Opciones de destino</translation>
+        <translation>Opciones de destino</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">Editar</translation>
+        <translation>Editar</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation type="vanished">Compartir</translation>
+        <translation>Compartir</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">Quitar</translation>
+        <translation>Quitar</translation>
     </message>
     <message>
         <source>Publish</source>
-        <translation type="vanished">Publicar</translation>
+        <translation>Publicar</translation>
     </message>
     <message>
         <source>Single core MCU</source>
-        <translation type="vanished">MCU de un solo núcleo</translation>
+        <translation>MCU de un solo núcleo</translation>
     </message>
     <message>
         <source>Dual core MCU</source>
-        <translation type="vanished">MCU de doble núcleo</translation>
+        <translation>MCU de doble núcleo</translation>
     </message>
 </context>
 <context>
@@ -16203,83 +16203,83 @@ Asegúrese de que la variable CMAKE_BUILD_TYPE coincida con el campo &quot;Build
     </message>
     <message>
         <source>Create New project with this configuration</source>
-        <translation type="vanished">Crear nuevo proyecto con esta configuración</translation>
+        <translation>Crear nuevo proyecto con esta configuración</translation>
     </message>
     <message>
         <source>Open target programming options</source>
-        <translation type="vanished">Abrir opciones de programación de destino</translation>
+        <translation>Abrir opciones de programación de destino</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation type="vanished">Renombrar</translation>
+        <translation>Renombrar</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="vanished">Editar</translation>
+        <translation>Editar</translation>
     </message>
     <message>
         <source>Selected display</source>
-        <translation type="vanished">Pantalla seleccionada</translation>
+        <translation>Pantalla seleccionada</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="vanished">Eliminar</translation>
+        <translation>Eliminar</translation>
     </message>
     <message>
         <source>Set as default configuration</source>
-        <translation type="vanished">Establecer como configuración predeterminada</translation>
+        <translation>Establecer como configuración predeterminada</translation>
     </message>
     <message>
         <source>Click to change MCU settings</source>
-        <translation type="vanished">Haga clic para cambiar los ajustes del MCU</translation>
+        <translation>Haga clic para cambiar los ajustes del MCU</translation>
     </message>
     <message>
         <source>compiler</source>
-        <translation type="vanished">compilador</translation>
+        <translation>compilador</translation>
     </message>
     <message>
         <source>Selected SDK</source>
-        <translation type="vanished">SDK seleccionado</translation>
+        <translation>SDK seleccionado</translation>
     </message>
     <message>
         <source>Target options</source>
-        <translation type="vanished">Opciones de destino</translation>
+        <translation>Opciones de destino</translation>
     </message>
     <message>
         <source>Click to change the MCU clock</source>
-        <translation type="vanished">Haga clic para cambiar el reloj del MCU</translation>
+        <translation>Haga clic para cambiar el reloj del MCU</translation>
     </message>
     <message>
         <source>Click to redirect the standard application output</source>
-        <translation type="vanished">Haga clic para redirigir la salida estándar de la aplicación</translation>
+        <translation>Haga clic para redirigir la salida estándar de la aplicación</translation>
     </message>
     <message>
         <source>Start NECTO Assistant</source>
-        <translation type="vanished">Iniciar Asistente NECTO</translation>
+        <translation>Iniciar Asistente NECTO</translation>
     </message>
     <message>
         <source>Repair required for configuration</source>
-        <translation type="vanished">La configuración requiere reparación</translation>
+        <translation>La configuración requiere reparación</translation>
     </message>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Selected board</source>
-        <translation type="vanished">Placa seleccionada</translation>
+        <translation>Placa seleccionada</translation>
     </message>
     <message>
         <source>Clone</source>
-        <translation type="vanished">Clonar</translation>
+        <translation>Clonar</translation>
     </message>
     <message>
         <source>Selected compiler</source>
-        <translation type="vanished">Compilador seleccionado</translation>
+        <translation>Compilador seleccionado</translation>
     </message>
     <message>
         <source>Repair</source>
-        <translation type="vanished">Reparar</translation>
+        <translation>Reparar</translation>
     </message>
 </context>
 <context>
@@ -16396,7 +16396,7 @@ Asegúrese de que la variable CMAKE_BUILD_TYPE coincida con el campo &quot;Build
     <name>Necto::SetupRangeFilterWidget</name>
     <message>
         <source>Range</source>
-        <translation type="vanished">Rango</translation>
+        <translation>Rango</translation>
     </message>
 </context>
 <context>
@@ -16420,127 +16420,127 @@ Asegúrese de que la variable CMAKE_BUILD_TYPE coincida con el campo &quot;Build
     </message>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Click &quot;New&quot; to create your first configuration.</source>
-        <translation type="vanished">Haga clic en &quot;Nuevo&quot; para crear su primera configuración.</translation>
+        <translation>Haga clic en &quot;Nuevo&quot; para crear su primera configuración.</translation>
     </message>
     <message>
         <source>No configuration found.</source>
-        <translation type="vanished">No se encontró configuración.</translation>
+        <translation>No se encontró configuración.</translation>
     </message>
 </context>
 <context>
     <name>Necto::SetupsView</name>
     <message>
         <source>My configurations</source>
-        <translation type="vanished">Mis configuraciones</translation>
+        <translation>Mis configuraciones</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Cerrar</translation>
+        <translation>Cerrar</translation>
     </message>
 </context>
 <context>
     <name>Necto::ShortcutsEditorPage</name>
     <message>
         <source>This shortcut is already in use. Choose another</source>
-        <translation type="vanished">Este atajo ya está en uso. Elija otro</translation>
+        <translation>Este atajo ya está en uso. Elija otro</translation>
     </message>
     <message>
         <source>Shortcut editor settings</source>
-        <translation type="vanished">Ajustes del editor de atajos</translation>
+        <translation>Ajustes del editor de atajos</translation>
     </message>
     <message>
         <source>Restart now</source>
-        <translation type="vanished">Reiniciar ahora</translation>
+        <translation>Reiniciar ahora</translation>
     </message>
     <message>
         <source>Restart later</source>
-        <translation type="vanished">Reiniciar más tarde</translation>
+        <translation>Reiniciar más tarde</translation>
     </message>
     <message>
         <source>Changes will be visible after you restart NECTO Studio.</source>
-        <translation type="vanished">Los cambios se verán después de reiniciar NECTO Studio.</translation>
+        <translation>Los cambios se verán después de reiniciar NECTO Studio.</translation>
     </message>
     <message>
         <source>Undo</source>
-        <translation type="vanished">Deshacer</translation>
+        <translation>Deshacer</translation>
     </message>
     <message>
         <source>Redo</source>
-        <translation type="vanished">Rehacer</translation>
+        <translation>Rehacer</translation>
     </message>
     <message>
         <source>Cut</source>
-        <translation type="vanished">Cortar</translation>
+        <translation>Cortar</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">Copiar</translation>
+        <translation>Copiar</translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation type="vanished">Pegar</translation>
+        <translation>Pegar</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation type="vanished">Seleccionar todo</translation>
+        <translation>Seleccionar todo</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation type="vanished">Buscar</translation>
+        <translation>Buscar</translation>
     </message>
     <message>
         <source>Find and Replace</source>
-        <translation type="vanished">Buscar y reemplazar</translation>
+        <translation>Buscar y reemplazar</translation>
     </message>
     <message>
         <source>Find in Files</source>
-        <translation type="vanished">Buscar en archivos</translation>
+        <translation>Buscar en archivos</translation>
     </message>
     <message>
         <source>Replace in Files</source>
-        <translation type="vanished">Reemplazar en archivos</translation>
+        <translation>Reemplazar en archivos</translation>
     </message>
     <message>
         <source>Zoom In</source>
-        <translation type="vanished">Acercar</translation>
+        <translation>Acercar</translation>
     </message>
     <message>
         <source>Zoom Out</source>
-        <translation type="vanished">Alejar</translation>
+        <translation>Alejar</translation>
     </message>
     <message>
         <source>Zoom Reset</source>
-        <translation type="vanished">Restablecer zoom</translation>
+        <translation>Restablecer zoom</translation>
     </message>
     <message>
         <source>Go Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Go Forward</source>
-        <translation type="vanished">Adelante</translation>
+        <translation>Adelante</translation>
     </message>
     <message>
         <source>Go To Line</source>
-        <translation type="vanished">Ir a la línea</translation>
+        <translation>Ir a la línea</translation>
     </message>
 </context>
 <context>
     <name>Necto::SidePanelTab</name>
     <message>
         <source>Page</source>
-        <translation type="vanished">Página</translation>
+        <translation>Página</translation>
     </message>
 </context>
 <context>
     <name>Necto::SimulatorPlugin</name>
     <message>
         <source>Simulator does not have any additional settings.</source>
-        <translation type="vanished">El simulador no tiene ajustes adicionales.</translation>
+        <translation>El simulador no tiene ajustes adicionales.</translation>
     </message>
 </context>
 <context>
@@ -16667,19 +16667,19 @@ Asegúrese de que la variable CMAKE_BUILD_TYPE coincida con el campo &quot;Build
     </message>
     <message>
         <source>Connected to:</source>
-        <translation type="vanished">Conectado a:</translation>
+        <translation>Conectado a:</translation>
     </message>
     <message>
         <source>MCU: %1</source>
-        <translation type="vanished">MCU: %1</translation>
+        <translation>MCU: %1</translation>
     </message>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Clicks</source>
-        <translation type="vanished">Clicks</translation>
+        <translation>Clicks</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -16711,94 +16711,94 @@ Asegúrese de que la variable CMAKE_BUILD_TYPE coincida con el campo &quot;Build
     <name>Necto::SplashScreen</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>@ MIKROE - All rights reserved, 2019 - %1.</source>
-        <translation type="vanished">@ MIKROE - Todos los derechos reservados, 2019 - %1.</translation>
+        <translation>@ MIKROE - Todos los derechos reservados, 2019 - %1.</translation>
     </message>
 </context>
 <context>
     <name>Necto::StatisticsItem</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Gathering your stats...</source>
-        <translation type="vanished">Recopilando sus estadísticas...</translation>
+        <translation>Recopilando sus estadísticas...</translation>
     </message>
     <message>
         <source>Time</source>
-        <translation type="vanished">Tiempo</translation>
+        <translation>Tiempo</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation type="vanished">Fecha</translation>
+        <translation>Fecha</translation>
     </message>
     <message>
         <source>No data available.</source>
-        <translation type="vanished">No hay datos disponibles.</translation>
+        <translation>No hay datos disponibles.</translation>
     </message>
 </context>
 <context>
     <name>Necto::StatisticsManager</name>
     <message>
         <source>Time range</source>
-        <translation type="vanished">Intervalo de tiempo</translation>
+        <translation>Intervalo de tiempo</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation type="vanished">Fecha</translation>
+        <translation>Fecha</translation>
     </message>
     <message>
         <source>Statistics for </source>
-        <translation type="vanished">Estadísticas de </translation>
+        <translation>Estadísticas de </translation>
     </message>
     <message>
         <source> and </source>
-        <translation type="vanished"> y </translation>
+        <translation> y </translation>
     </message>
     <message>
         <source>
 This PDF file will be available for the following 15 days, starting with </source>
-        <translation type="vanished">
+        <translation>
 Este archivo PDF estará disponible durante los siguientes 15 días, a partir del </translation>
     </message>
     <message>
         <source>NectoShare is currently unavailable. Please try again later.</source>
-        <translation type="vanished">NectoShare no está disponible actualmente. Inténtelo más tarde.</translation>
+        <translation>NectoShare no está disponible actualmente. Inténtelo más tarde.</translation>
     </message>
 </context>
 <context>
     <name>Necto::StatisticsPage</name>
     <message>
         <source>NECTO Usage Statistics</source>
-        <translation type="vanished">Estadísticas de uso de NECTO</translation>
+        <translation>Estadísticas de uso de NECTO</translation>
     </message>
     <message>
         <source>Click here to manage dates</source>
-        <translation type="vanished">Haga clic aquí para gestionar fechas</translation>
+        <translation>Haga clic aquí para gestionar fechas</translation>
     </message>
     <message>
         <source>Adjust</source>
-        <translation type="vanished">Ajustar</translation>
+        <translation>Ajustar</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation type="vanished">Compartir</translation>
+        <translation>Compartir</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Cerrar</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <source>Statistics</source>
-        <translation type="vanished">Estadísticas</translation>
+        <translation>Estadísticas</translation>
     </message>
     <message>
         <source>User statistics</source>
-        <translation type="vanished">Estadísticas de usuario</translation>
+        <translation>Estadísticas de usuario</translation>
     </message>
     <message>
         <source>&lt;html&gt;
@@ -16806,7 +16806,7 @@ Este archivo PDF estará disponible durante los siguientes 15 días, a partir de
                                                                       %1NOTE: This PDF file will be available for the following 15 days
                                                                 &lt;/body&gt;
                                                             &lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;
+        <translation>&lt;html&gt;
                                                                 &lt;body&gt;
                                                                       %1NOTA: Este archivo PDF estará disponible durante los siguientes 15 días
                                                                 &lt;/body&gt;
@@ -16814,217 +16814,217 @@ Este archivo PDF estará disponible durante los siguientes 15 días, a partir de
     </message>
     <message>
         <source>Link to statistics document copied to clipboard.</source>
-        <translation type="vanished">Enlace al documento de estadísticas copiado al portapapeles.</translation>
+        <translation>Enlace al documento de estadísticas copiado al portapapeles.</translation>
     </message>
     <message>
         <source>    User: </source>
-        <translation type="vanished">    Usuario: </translation>
+        <translation>    Usuario: </translation>
     </message>
     <message>
         <source>NECTO Studio version</source>
-        <translation type="vanished">Versión de NECTO Studio</translation>
+        <translation>Versión de NECTO Studio</translation>
     </message>
     <message>
         <source>License type</source>
-        <translation type="vanished">Tipo de licencia</translation>
+        <translation>Tipo de licencia</translation>
     </message>
     <message>
         <source>Total NECTO Studio usage time</source>
-        <translation type="vanished">Tiempo total de uso de NECTO Studio</translation>
+        <translation>Tiempo total de uso de NECTO Studio</translation>
     </message>
     <message>
         <source>Time spent on Remote Board Farm</source>
-        <translation type="vanished">Tiempo en Remote Board Farm</translation>
+        <translation>Tiempo en Remote Board Farm</translation>
     </message>
     <message>
         <source>Time spent in simulator</source>
-        <translation type="vanished">Tiempo en el simulador</translation>
+        <translation>Tiempo en el simulador</translation>
     </message>
     <message>
         <source>Time spent in debugger</source>
-        <translation type="vanished">Tiempo en el depurador</translation>
+        <translation>Tiempo en el depurador</translation>
     </message>
     <message>
         <source>Successful build attempts</source>
-        <translation type="vanished">Intentos de compilación exitosos</translation>
+        <translation>Intentos de compilación exitosos</translation>
     </message>
     <message>
         <source>Successful MCU flashing attempts</source>
-        <translation type="vanished">Intentos de grabación del MCU exitosos</translation>
+        <translation>Intentos de grabación del MCU exitosos</translation>
     </message>
     <message>
         <source>Actions summary over time</source>
-        <translation type="vanished">Resumen de acciones a lo largo del tiempo</translation>
+        <translation>Resumen de acciones a lo largo del tiempo</translation>
     </message>
     <message>
         <source>NECTO Studio usage over time</source>
-        <translation type="vanished">Uso de NECTO Studio a lo largo del tiempo</translation>
+        <translation>Uso de NECTO Studio a lo largo del tiempo</translation>
     </message>
     <message>
         <source>Actions count</source>
-        <translation type="vanished">Cantidad de acciones</translation>
+        <translation>Cantidad de acciones</translation>
     </message>
     <message>
         <source>Build attempts</source>
-        <translation type="vanished">Intentos de compilación</translation>
+        <translation>Intentos de compilación</translation>
     </message>
     <message>
         <source>MCU flashing attempts</source>
-        <translation type="vanished">Intentos de grabación del MCU</translation>
+        <translation>Intentos de grabación del MCU</translation>
     </message>
     <message>
         <source>Debug sessions</source>
-        <translation type="vanished">Sesiones de depuración</translation>
+        <translation>Sesiones de depuración</translation>
     </message>
     <message>
         <source>Simulator sessions</source>
-        <translation type="vanished">Sesiones de simulador</translation>
+        <translation>Sesiones de simulador</translation>
     </message>
     <message>
         <source>Minutes spent</source>
-        <translation type="vanished">Minutos dedicados</translation>
+        <translation>Minutos dedicados</translation>
     </message>
     <message>
         <source>Hours spent</source>
-        <translation type="vanished">Horas dedicadas</translation>
+        <translation>Horas dedicadas</translation>
     </message>
 </context>
 <context>
     <name>Necto::TabWidget</name>
     <message>
         <source>(Untitled)</source>
-        <translation type="vanished">(Sin título)</translation>
+        <translation>(Sin título)</translation>
     </message>
     <message>
         <source>New &amp;Tab</source>
-        <translation type="vanished">Nueva pe&amp;staña</translation>
+        <translation>Nueva pe&amp;staña</translation>
     </message>
     <message>
         <source>Clone &amp;Tab</source>
-        <translation type="vanished">Clonar pe&amp;staña</translation>
+        <translation>Clonar pe&amp;staña</translation>
     </message>
     <message>
         <source>&amp;Close Tab</source>
-        <translation type="vanished">&amp;Cerrar pestaña</translation>
+        <translation>&amp;Cerrar pestaña</translation>
     </message>
     <message>
         <source>Close &amp;Other Tabs</source>
-        <translation type="vanished">Cerrar &amp;otras pestañas</translation>
+        <translation>Cerrar &amp;otras pestañas</translation>
     </message>
     <message>
         <source>Reload Tab</source>
-        <translation type="vanished">Recargar pestaña</translation>
+        <translation>Recargar pestaña</translation>
     </message>
     <message>
         <source>Reload All Tabs</source>
-        <translation type="vanished">Recargar todas las pestañas</translation>
+        <translation>Recargar todas las pestañas</translation>
     </message>
 </context>
 <context>
     <name>Necto::TerminalView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Disconnected</source>
-        <translation type="vanished">Desconectado</translation>
+        <translation>Desconectado</translation>
     </message>
     <message>
         <source>Set terminal options</source>
-        <translation type="vanished">Establecer opciones del terminal</translation>
+        <translation>Establecer opciones del terminal</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation type="vanished">Opciones</translation>
+        <translation>Opciones</translation>
     </message>
     <message>
         <source>Connect to host</source>
-        <translation type="vanished">Conectar al host</translation>
+        <translation>Conectar al host</translation>
     </message>
     <message>
         <source>Connect</source>
-        <translation type="vanished">Conectar</translation>
+        <translation>Conectar</translation>
     </message>
     <message>
         <source>Show timestamp</source>
-        <translation type="vanished">Mostrar marca de tiempo</translation>
+        <translation>Mostrar marca de tiempo</translation>
     </message>
     <message>
         <source>Append carriage return</source>
-        <translation type="vanished">Añadir retorno de carro</translation>
+        <translation>Añadir retorno de carro</translation>
     </message>
     <message>
         <source>Append line feed</source>
-        <translation type="vanished">Añadir salto de línea</translation>
+        <translation>Añadir salto de línea</translation>
     </message>
     <message>
         <source>Send data as you type</source>
-        <translation type="vanished">Enviar datos a medida que escribe</translation>
+        <translation>Enviar datos a medida que escribe</translation>
     </message>
     <message>
         <source>Instant send</source>
-        <translation type="vanished">Envío instantáneo</translation>
+        <translation>Envío instantáneo</translation>
     </message>
     <message>
         <source>Enable auto send data in loop</source>
-        <translation type="vanished">Habilitar envío automático de datos en bucle</translation>
+        <translation>Habilitar envío automático de datos en bucle</translation>
     </message>
     <message>
         <source>Loop Every</source>
-        <translation type="vanished">Repetir cada</translation>
+        <translation>Repetir cada</translation>
     </message>
     <message>
         <source>Send data from file mode</source>
-        <translation type="vanished">Enviar datos desde archivo</translation>
+        <translation>Enviar datos desde archivo</translation>
     </message>
     <message>
         <source>Send File</source>
-        <translation type="vanished">Enviar archivo</translation>
+        <translation>Enviar archivo</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation type="vanished">Examinar</translation>
+        <translation>Examinar</translation>
     </message>
     <message>
         <source>Send</source>
-        <translation type="vanished">Enviar</translation>
+        <translation>Enviar</translation>
     </message>
     <message>
         <source>Received data:</source>
-        <translation type="vanished">Datos recibidos:</translation>
+        <translation>Datos recibidos:</translation>
     </message>
     <message>
         <source>View received data as ASCII</source>
-        <translation type="vanished">Ver datos recibidos como ASCII</translation>
+        <translation>Ver datos recibidos como ASCII</translation>
     </message>
     <message>
         <source>View received data in decimal mode</source>
-        <translation type="vanished">Ver datos recibidos en modo decimal</translation>
+        <translation>Ver datos recibidos en modo decimal</translation>
     </message>
     <message>
         <source>View received data in hex mode</source>
-        <translation type="vanished">Ver datos recibidos en modo hexadecimal</translation>
+        <translation>Ver datos recibidos en modo hexadecimal</translation>
     </message>
     <message>
         <source>View received data in binary mode</source>
-        <translation type="vanished">Ver datos recibidos en modo binario</translation>
+        <translation>Ver datos recibidos en modo binario</translation>
     </message>
     <message>
         <source>Type your data here</source>
-        <translation type="vanished">Escriba sus datos aquí</translation>
+        <translation>Escriba sus datos aquí</translation>
     </message>
     <message>
         <source>Disconnect</source>
-        <translation type="vanished">Desconectar</translation>
+        <translation>Desconectar</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation type="vanished">Abrir archivo</translation>
+        <translation>Abrir archivo</translation>
     </message>
     <message>
         <source>All files (*)</source>
-        <translation type="vanished">Todos los archivos (*)</translation>
+        <translation>Todos los archivos (*)</translation>
     </message>
 </context>
 <context>
@@ -17039,570 +17039,570 @@ Este archivo PDF estará disponible durante los siguientes 15 días, a partir de
     <name>Necto::TimerPlugin</name>
     <message>
         <source>Timer Calculator</source>
-        <translation type="vanished">Temporizador</translation>
+        <translation>Temporizador</translation>
     </message>
     <message>
         <source>Timer calculator</source>
-        <translation type="vanished">Temporizador</translation>
+        <translation>Calculadora de temporizador</translation>
     </message>
 </context>
 <context>
     <name>Necto::TimerWidget</name>
     <message>
         <source>Timer Calculator</source>
-        <translation type="vanished">Temporizador</translation>
+        <translation>Calculadora de temporizador</translation>
     </message>
     <message>
         <source>Chose timer :</source>
-        <translation type="vanished">Elegir temporizador :</translation>
+        <translation>Elegir temporizador :</translation>
     </message>
     <message>
         <source>Select device :</source>
-        <translation type="vanished">Seleccionar dispositivo :</translation>
+        <translation>Seleccionar dispositivo :</translation>
     </message>
     <message>
         <source>Frequency</source>
-        <translation type="vanished">Frecuencia</translation>
+        <translation>Frecuencia</translation>
     </message>
     <message>
         <source>Interrupt time</source>
-        <translation type="vanished">Tiempo de interrupción</translation>
+        <translation>Tiempo de interrupción</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="vanished">Eliminar</translation>
+        <translation>Eliminar</translation>
     </message>
     <message>
         <source>Load preset :</source>
-        <translation type="vanished">Cargar preajuste :</translation>
+        <translation>Cargar preajuste :</translation>
     </message>
     <message>
         <source>Copy code</source>
-        <translation type="vanished">Copiar código</translation>
+        <translation>Copiar código</translation>
     </message>
     <message>
         <source>Mcu frequency</source>
-        <translation type="vanished">Frecuencia del MCU</translation>
+        <translation>Frecuencia del MCU</translation>
     </message>
     <message>
         <source>Interrput time</source>
-        <translation type="vanished">Tiempo de interrupción</translation>
+        <translation>Tiempo de interrupción</translation>
     </message>
     <message>
         <source>Interrupt must be a number greater than 0!</source>
-        <translation type="vanished">¡La interrupción debe ser un número mayor que 0!</translation>
+        <translation>¡La interrupción debe ser un número mayor que 0!</translation>
     </message>
     <message>
         <source>Frequency must be a number greater than 0!</source>
-        <translation type="vanished">¡La frecuencia debe ser un número mayor que 0!</translation>
+        <translation>¡La frecuencia debe ser un número mayor que 0!</translation>
     </message>
     <message>
         <source>Some mcu device must be selected!</source>
-        <translation type="vanished">¡Debe seleccionarse algún dispositivo MCU!</translation>
+        <translation>¡Debe seleccionarse algún dispositivo MCU!</translation>
     </message>
     <message>
         <source>Some timer must be selected!</source>
-        <translation type="vanished">¡Debe seleccionarse algún temporizador!</translation>
+        <translation>¡Debe seleccionarse algún temporizador!</translation>
     </message>
     <message>
         <source>Code generated successfully</source>
-        <translation type="vanished">Código generado correctamente</translation>
+        <translation>Código generado correctamente</translation>
     </message>
     <message>
         <source>Couldn&apos;t calculate timer for given parameters</source>
-        <translation type="vanished">No se pudo calcular el temporizador con los parámetros dados</translation>
+        <translation>No se pudo calcular el temporizador con los parámetros dados</translation>
     </message>
     <message>
         <source>Error loading setting JSON!</source>
-        <translation type="vanished">¡Error al cargar el JSON de ajustes!</translation>
+        <translation>¡Error al cargar el JSON de ajustes!</translation>
     </message>
     <message>
         <source>Loaded preset</source>
-        <translation type="vanished">Preajuste cargado</translation>
+        <translation>Preajuste cargado</translation>
     </message>
     <message>
         <source>Code copied to Clipboard</source>
-        <translation type="vanished">Código copiado al portapapeles</translation>
+        <translation>Código copiado al portapapeles</translation>
     </message>
     <message>
         <source>Preset successfully saved</source>
-        <translation type="vanished">Preajuste guardado correctamente</translation>
+        <translation>Preajuste guardado correctamente</translation>
     </message>
     <message>
         <source>Save preset</source>
-        <translation type="vanished">Guardar preajuste</translation>
+        <translation>Guardar preajuste</translation>
     </message>
     <message>
         <source>Preset already exists, are you sure you want to overwrite it?</source>
-        <translation type="vanished">El preajuste ya existe, ¿seguro que desea sobrescribirlo?</translation>
+        <translation>El preajuste ya existe, ¿seguro que desea sobrescribirlo?</translation>
     </message>
     <message>
         <source>Preset successfully changed</source>
-        <translation type="vanished">Preajuste cambiado correctamente</translation>
+        <translation>Preajuste cambiado correctamente</translation>
     </message>
     <message>
         <source>Delete preset</source>
-        <translation type="vanished">Eliminar preajuste</translation>
+        <translation>Eliminar preajuste</translation>
     </message>
     <message>
         <source>Are you sure you want to delete selected preset??</source>
-        <translation type="vanished">¿Seguro que desea eliminar el preajuste seleccionado?</translation>
+        <translation>¿Seguro que desea eliminar el preajuste seleccionado?</translation>
     </message>
     <message>
         <source>Deleted preset </source>
-        <translation type="vanished">Preajuste eliminado </translation>
+        <translation>Preajuste eliminado </translation>
     </message>
     <message>
         <source>Select something to delete!</source>
-        <translation type="vanished">¡Seleccione algo para eliminar!</translation>
+        <translation>¡Seleccione algo para eliminar!</translation>
     </message>
 </context>
 <context>
     <name>Necto::ToolListItem</name>
     <message>
         <source>Tool name</source>
-        <translation type="vanished">Nombre de herramienta</translation>
+        <translation>Nombre de herramienta</translation>
     </message>
 </context>
 <context>
     <name>Necto::ToolsManager</name>
     <message>
         <source>Tools</source>
-        <translation type="vanished">Herramientas</translation>
+        <translation>Herramientas</translation>
     </message>
 </context>
 <context>
     <name>Necto::ToolsView</name>
     <message>
         <source>Filter tools</source>
-        <translation type="vanished">Filtrar herramientas</translation>
+        <translation>Filtrar herramientas</translation>
     </message>
     <message>
         <source>You need to have an active configuration to enable this tool.</source>
-        <translation type="vanished">Necesita una configuración activa para habilitar esta herramienta.</translation>
+        <translation>Necesita una configuración activa para habilitar esta herramienta.</translation>
     </message>
     <message>
         <source>Create custom board</source>
-        <translation type="vanished">Crear placa personalizada</translation>
+        <translation>Crear placa personalizada</translation>
     </message>
     <message>
         <source>Plot</source>
-        <translation type="vanished">Gráfico</translation>
+        <translation>Gráfico</translation>
     </message>
 </context>
 <context>
     <name>Necto::TooltipChart</name>
     <message>
         <source>%1 min %2 sec</source>
-        <translation type="vanished">%1 min %2 s</translation>
+        <translation>%1 min %2 s</translation>
     </message>
     <message>
         <source>%1 min</source>
-        <translation type="vanished">%1 min</translation>
+        <translation>%1 min</translation>
     </message>
     <message>
         <source>Time range</source>
-        <translation type="vanished">Intervalo de tiempo</translation>
+        <translation>Intervalo de tiempo</translation>
     </message>
     <message>
         <source>Time</source>
-        <translation type="vanished">Tiempo</translation>
+        <translation>Tiempo</translation>
     </message>
     <message>
         <source>Date</source>
-        <translation type="vanished">Fecha</translation>
+        <translation>Fecha</translation>
     </message>
 </context>
 <context>
     <name>Necto::TourBubble</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Your text goes here</source>
-        <translation type="vanished">Su texto va aquí</translation>
+        <translation>Su texto va aquí</translation>
     </message>
     <message>
         <source>Finish guided tour.</source>
-        <translation type="vanished">Finalizar recorrido guiado.</translation>
+        <translation>Finalizar recorrido guiado.</translation>
     </message>
     <message>
         <source>End tour</source>
-        <translation type="vanished">Finalizar recorrido</translation>
+        <translation>Finalizar recorrido</translation>
     </message>
     <message>
         <source>Goto next step.</source>
-        <translation type="vanished">Ir al paso siguiente.</translation>
+        <translation>Ir al paso siguiente.</translation>
     </message>
     <message>
         <source>Next step</source>
-        <translation type="vanished">Paso siguiente</translation>
+        <translation>Paso siguiente</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">Finalizar</translation>
+        <translation>Finalizar</translation>
     </message>
 </context>
 <context>
     <name>Necto::TourFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
 </context>
 <context>
     <name>Necto::TutorialsItemView</name>
     <message>
         <source>Tutorial Name</source>
-        <translation type="vanished">Nombre del tutorial</translation>
+        <translation>Nombre del tutorial</translation>
     </message>
     <message>
         <source>Description</source>
-        <translation type="vanished">Descripción</translation>
+        <translation>Descripción</translation>
     </message>
     <message>
         <source>Video tutorial</source>
-        <translation type="vanished">Videotutorial</translation>
+        <translation>Videotutorial</translation>
     </message>
     <message>
         <source>Tutorial</source>
-        <translation type="vanished">Tutorial</translation>
+        <translation>Tutorial</translation>
     </message>
     <message>
         <source>NECTO talks</source>
-        <translation type="vanished">NECTO talks</translation>
+        <translation>NECTO talks</translation>
     </message>
 </context>
 <context>
     <name>Necto::TutorialsView</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">Diálogo</translation>
+        <translation>Diálogo</translation>
     </message>
     <message>
         <source>Tutorials</source>
-        <translation type="vanished">Tutoriales</translation>
+        <translation>Tutoriales</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Cerrar</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Search tutorials</source>
-        <translation type="vanished">Buscar tutoriales</translation>
+        <translation>Buscar tutoriales</translation>
     </message>
     <message>
         <source>New to NECTO Studio? Get started with tutorials</source>
-        <translation type="vanished">¿Nuevo en NECTO Studio? Comience con los tutoriales</translation>
+        <translation>¿Nuevo en NECTO Studio? Comience con los tutoriales</translation>
     </message>
     <message>
         <source>Found</source>
-        <translation type="vanished">Encontrados</translation>
+        <translation>Encontrados</translation>
     </message>
     <message>
         <source>Search for</source>
-        <translation type="vanished">Buscar</translation>
+        <translation>Buscar</translation>
     </message>
     <message>
         <source>%1 %2 tutorial(s)</source>
-        <translation type="vanished">%1 %2 tutorial(es)</translation>
+        <translation>%1 %2 tutorial(es)</translation>
     </message>
     <message>
         <source>Error reading login response</source>
-        <translation type="vanished">Error al leer la respuesta de inicio de sesión</translation>
+        <translation>Error al leer la respuesta de inicio de sesión</translation>
     </message>
 </context>
 <context>
     <name>Necto::UartBootloaderPlugin</name>
     <message>
         <source>UART Bootloader</source>
-        <translation type="vanished">Bootloader UART</translation>
+        <translation>Bootloader UART</translation>
     </message>
 </context>
 <context>
     <name>Necto::UartOptions</name>
     <message>
         <source>Options</source>
-        <translation type="vanished">Opciones</translation>
+        <translation>Opciones</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation type="vanished">Puerto</translation>
+        <translation>Puerto</translation>
     </message>
     <message>
         <source>Baud rate</source>
-        <translation type="vanished">Velocidad en baudios</translation>
+        <translation>Velocidad en baudios</translation>
     </message>
     <message>
         <source>Data bits</source>
-        <translation type="vanished">Bits de datos</translation>
+        <translation>Bits de datos</translation>
     </message>
     <message>
         <source>Parity</source>
-        <translation type="vanished">Paridad</translation>
+        <translation>Paridad</translation>
     </message>
     <message>
         <source>Even</source>
-        <translation type="vanished">Par</translation>
+        <translation>Par</translation>
     </message>
     <message>
         <source>Mark</source>
-        <translation type="vanished">Marcar</translation>
+        <translation>Marcar</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="vanished">Ninguno</translation>
+        <translation>Ninguno</translation>
     </message>
     <message>
         <source>Odd</source>
-        <translation type="vanished">Impar</translation>
+        <translation>Impar</translation>
     </message>
     <message>
         <source>Space</source>
-        <translation type="vanished">Espacio</translation>
+        <translation>Espacio</translation>
     </message>
     <message>
         <source>Buffer size</source>
-        <translation type="vanished">Tamaño de búfer</translation>
+        <translation>Tamaño de búfer</translation>
     </message>
     <message>
         <source>Flow control</source>
-        <translation type="vanished">Control de flujo</translation>
+        <translation>Control de flujo</translation>
     </message>
     <message>
         <source>Hardware</source>
-        <translation type="vanished">Hardware</translation>
+        <translation>Hardware</translation>
     </message>
     <message>
         <source>Software</source>
-        <translation type="vanished">Software</translation>
+        <translation>Software</translation>
     </message>
     <message>
         <source>Stop bits</source>
-        <translation type="vanished">Bits de parada</translation>
+        <translation>Bits de parada</translation>
     </message>
 </context>
 <context>
     <name>Necto::UartPlugin</name>
     <message>
         <source>UART Terminal</source>
-        <translation type="vanished">Terminal UART</translation>
+        <translation>Terminal UART</translation>
     </message>
 </context>
 <context>
     <name>Necto::UdpOptions</name>
     <message>
         <source>Destination port</source>
-        <translation type="vanished">Puerto de destino</translation>
+        <translation>Puerto de destino</translation>
     </message>
     <message>
         <source>Destination IP</source>
-        <translation type="vanished">IP de destino</translation>
+        <translation>IP de destino</translation>
     </message>
     <message>
         <source>Source port</source>
-        <translation type="vanished">Puerto de origen</translation>
+        <translation>Puerto de origen</translation>
     </message>
     <message>
         <source>Source IP</source>
-        <translation type="vanished">IP de origen</translation>
+        <translation>IP de origen</translation>
     </message>
     <message>
         <source>Buffer size</source>
-        <translation type="vanished">Tamaño de búfer</translation>
+        <translation>Tamaño de búfer</translation>
     </message>
     <message>
         <source>Destination address</source>
-        <translation type="vanished">Dirección de destino</translation>
+        <translation>Dirección de destino</translation>
     </message>
     <message>
         <source>Source address</source>
-        <translation type="vanished">Dirección de origen</translation>
+        <translation>Dirección de origen</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="vanished">Tamaño</translation>
+        <translation>Tamaño</translation>
     </message>
 </context>
 <context>
     <name>Necto::UdpPlugin</name>
     <message>
         <source>UDP Terminal</source>
-        <translation type="vanished">Terminal UDP</translation>
+        <translation>Terminal UDP</translation>
     </message>
 </context>
 <context>
     <name>Necto::UpdatesView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Show last 7 days</source>
-        <translation type="vanished">Mostrar últimos 7 días</translation>
+        <translation>Mostrar últimos 7 días</translation>
     </message>
     <message>
         <source>Show last 15 days</source>
-        <translation type="vanished">Mostrar últimos 15 días</translation>
+        <translation>Mostrar últimos 15 días</translation>
     </message>
     <message>
         <source>Show last 30 days</source>
-        <translation type="vanished">Mostrar últimos 30 días</translation>
+        <translation>Mostrar últimos 30 días</translation>
     </message>
     <message>
         <source>Show last 3 months</source>
-        <translation type="vanished">Mostrar últimos 3 meses</translation>
+        <translation>Mostrar últimos 3 meses</translation>
     </message>
     <message>
         <source>Show last 6 months</source>
-        <translation type="vanished">Mostrar últimos 6 meses</translation>
+        <translation>Mostrar últimos 6 meses</translation>
     </message>
     <message>
         <source>Update all</source>
-        <translation type="vanished">Actualizar todo</translation>
+        <translation>Actualizar todo</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;An update is currently in progress for all packages.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Please wait for the process to complete.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Actualmente hay una actualización en curso para todos los paquetes.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Espere a que el proceso se complete.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Actualmente hay una actualización en curso para todos los paquetes.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Espere a que el proceso se complete.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
     <name>Necto::UploadPage</name>
     <message>
         <source>Upload Project Wizard</source>
-        <translation type="vanished">Asistente de subida de proyecto</translation>
+        <translation>Asistente de subida de proyecto</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="vanished">Finalizar</translation>
+        <translation>Finalizar</translation>
     </message>
     <message>
         <source>Project upload summary</source>
-        <translation type="vanished">Resumen de subida del proyecto</translation>
+        <translation>Resumen de subida del proyecto</translation>
     </message>
     <message>
         <source>Here’s a summary of the information you’ve provided:</source>
-        <translation type="vanished">Este es un resumen de la información que ha proporcionado:</translation>
+        <translation>Este es un resumen de la información que ha proporcionado:</translation>
     </message>
     <message>
         <source>Project information:</source>
-        <translation type="vanished">Información del proyecto:</translation>
+        <translation>Información del proyecto:</translation>
     </message>
     <message>
         <source>Display name:</source>
-        <translation type="vanished">Nombre visible:</translation>
+        <translation>Nombre visible:</translation>
     </message>
     <message>
         <source>Version:</source>
-        <translation type="vanished">Versión:</translation>
+        <translation>Versión:</translation>
     </message>
     <message>
         <source>Board:</source>
-        <translation type="vanished">Placa:</translation>
+        <translation>Placa:</translation>
     </message>
     <message>
         <source>mikroBUS Count:</source>
-        <translation type="vanished">Cantidad de mikroBUS:</translation>
+        <translation>Cantidad de mikroBUS:</translation>
     </message>
     <message>
         <source>Display:</source>
-        <translation type="vanished">Pantalla:</translation>
+        <translation>Pantalla:</translation>
     </message>
     <message>
         <source>MCU:</source>
-        <translation type="vanished">MCU:</translation>
+        <translation>MCU:</translation>
     </message>
     <message>
         <source>SDK:</source>
-        <translation type="vanished">SDK:</translation>
+        <translation>SDK:</translation>
     </message>
     <message>
         <source>WARNING: No Click libraries are included in your project. To add Click boards, you can:
 
     1. Go Back to the previous page and assign Click libraries to the desired mikroBUS sockets.
     2. Click Cancel to exit the wizard, then open the Library Manager and select the Click board(s) you wish to use in this project.</source>
-        <translation type="vanished">ADVERTENCIA: No se incluyen bibliotecas Click en su proyecto. Para añadir placas Click, puede:
+        <translation>ADVERTENCIA: No se incluyen bibliotecas Click en su proyecto. Para añadir placas Click, puede:
 
     1. Volver a la página anterior y asignar bibliotecas Click a los zócalos mikroBUS deseados.
     2. Hacer clic en Cancelar para salir del asistente, luego abrir el Gestor de bibliotecas y seleccionar las placas Click que desee usar en este proyecto.</translation>
     </message>
     <message>
         <source>Assigned Click boards</source>
-        <translation type="vanished">Placas Click asignadas</translation>
+        <translation>Placas Click asignadas</translation>
     </message>
     <message>
         <source>Bare metal</source>
-        <translation type="vanished">Bare metal</translation>
+        <translation>Bare metal</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="vanished">Ninguno</translation>
+        <translation>Ninguno</translation>
     </message>
 </context>
 <context>
     <name>Necto::UploadProjectDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">Diálogo</translation>
+        <translation>Diálogo</translation>
     </message>
     <message>
         <source>Uploading your project</source>
-        <translation type="vanished">Subiendo su proyecto</translation>
+        <translation>Subiendo su proyecto</translation>
     </message>
     <message>
         <source>icon</source>
-        <translation type="vanished">icono</translation>
+        <translation>icono</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>Packing your project and prepare for upload</source>
-        <translation type="vanished">Empaquetando su proyecto y preparándolo para subir</translation>
+        <translation>Empaquetando su proyecto y preparándolo para subir</translation>
     </message>
     <message>
         <source>Packing your poject was succesfull</source>
-        <translation type="vanished">El empaquetado de su proyecto se realizó correctamente</translation>
+        <translation>El empaquetado de su proyecto se realizó correctamente</translation>
     </message>
     <message>
         <source>Starting upload to server</source>
-        <translation type="vanished">Iniciando subida al servidor</translation>
+        <translation>Iniciando subida al servidor</translation>
     </message>
     <message>
         <source>Error: Project packing failed.</source>
-        <translation type="vanished">Error: Falló el empaquetado del proyecto.</translation>
+        <translation>Error: Falló el empaquetado del proyecto.</translation>
     </message>
     <message>
         <source>Upload to server was succesfull</source>
-        <translation type="vanished">La subida al servidor se realizó correctamente</translation>
+        <translation>La subida al servidor se realizó correctamente</translation>
     </message>
     <message>
         <source>Upload to server failed. Please try again.</source>
-        <translation type="vanished">Error al subir al servidor. Inténtelo de nuevo.</translation>
+        <translation>Error al subir al servidor. Inténtelo de nuevo.</translation>
     </message>
     <message>
         <source>Project upload failed:
 
 %1</source>
-        <translation type="vanished">Error al subir el proyecto:
+        <translation>Error al subir el proyecto:
 
 %1</translation>
     </message>
@@ -17611,88 +17611,88 @@ Este archivo PDF estará disponible durante los siguientes 15 días, a partir de
     <name>Necto::UploadProjectWizard</name>
     <message>
         <source>Wizard</source>
-        <translation type="vanished">Asistente</translation>
+        <translation>Asistente</translation>
     </message>
 </context>
 <context>
     <name>Necto::UploadingPackageDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">Diálogo</translation>
+        <translation>Diálogo</translation>
     </message>
     <message>
         <source>Upload package to Libstock</source>
-        <translation type="vanished">Subir paquete a Libstock</translation>
+        <translation>Subir paquete a Libstock</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation type="vanished">Actualizar</translation>
+        <translation>Actualizar</translation>
     </message>
     <message>
         <source>Create new</source>
-        <translation type="vanished">Crear nuevo</translation>
+        <translation>Crear nuevo</translation>
     </message>
     <message>
         <source>Uploading package to server. Please wait.</source>
-        <translation type="vanished">Subiendo el paquete al servidor. Espere.</translation>
+        <translation>Subiendo el paquete al servidor. Espere.</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="vanished">Aceptar</translation>
+        <translation>Aceptar</translation>
     </message>
     <message>
         <source>Upload</source>
-        <translation type="vanished">Subir</translation>
+        <translation>Subir</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Package path</source>
-        <translation type="vanished">Ruta del paquete</translation>
+        <translation>Ruta del paquete</translation>
     </message>
     <message>
         <source>Waiting for server to process request</source>
-        <translation type="vanished">Esperando a que el servidor procese la solicitud</translation>
+        <translation>Esperando a que el servidor procese la solicitud</translation>
     </message>
     <message>
         <source>Select package to upload</source>
-        <translation type="vanished">Seleccionar paquete para subir</translation>
+        <translation>Seleccionar paquete para subir</translation>
     </message>
     <message>
         <source>Package files (*.zip)</source>
-        <translation type="vanished">Archivos de paquete (*.zip)</translation>
+        <translation>Archivos de paquete (*.zip)</translation>
     </message>
 </context>
 <context>
     <name>Necto::UserComponentsView</name>
     <message>
         <source>Filter user components</source>
-        <translation type="vanished">Filtrar componentes de usuario</translation>
+        <translation>Filtrar componentes de usuario</translation>
     </message>
 </context>
 <context>
     <name>Necto::UserInfoView</name>
     <message>
         <source>Dialog</source>
-        <translation type="vanished">Diálogo</translation>
+        <translation>Diálogo</translation>
     </message>
     <message>
         <source>UserName</source>
-        <translation type="vanished">Usuario</translation>
+        <translation>Usuario</translation>
     </message>
     <message>
         <source>Sign out</source>
-        <translation type="vanished">Cerrar sesión</translation>
+        <translation>Cerrar sesión</translation>
     </message>
     <message>
         <source>Privacy policy  -  Terms of service</source>
-        <translation type="vanished">Política de privacidad  -  Términos del servicio</translation>
+        <translation>Política de privacidad  -  Términos del servicio</translation>
     </message>
     <message>
         <source>&lt;a href=&quot;https://www.mikroe.com/legal/privacy-policy&quot;&gt;Privacy policy - Terms of service&lt;/a&gt;</source>
-        <translation type="vanished">&lt;a href=&quot;https://www.mikroe.com/legal/privacy-policy&quot;&gt;Política de privacidad - Términos del servicio&lt;/a&gt;</translation>
+        <translation>&lt;a href=&quot;https://www.mikroe.com/legal/privacy-policy&quot;&gt;Política de privacidad - Términos del servicio&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
@@ -17722,7 +17722,7 @@ Este archivo PDF estará disponible durante los siguientes 15 días, a partir de
     <name>Necto::VersionControl</name>
     <message>
         <source>Version Control</source>
-        <translation type="vanished">Control de versiones</translation>
+        <translation>Control de versiones</translation>
     </message>
 </context>
 <context>
@@ -17752,141 +17752,141 @@ Este archivo PDF estará disponible durante los siguientes 15 días, a partir de
     <name>Necto::WaitingFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Closing session</source>
-        <translation type="vanished">Cerrando sesión</translation>
+        <translation>Cerrando sesión</translation>
     </message>
 </context>
 <context>
     <name>Necto::WebBrowser</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="vanished">Atrás</translation>
+        <translation>Atrás</translation>
     </message>
     <message>
         <source>back</source>
-        <translation type="vanished">atrás</translation>
+        <translation>atrás</translation>
     </message>
     <message>
         <source>Forward</source>
-        <translation type="vanished">Adelante</translation>
+        <translation>Adelante</translation>
     </message>
     <message>
         <source>forward</source>
-        <translation type="vanished">adelante</translation>
+        <translation>adelante</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="vanished">Recargar</translation>
+        <translation>Recargar</translation>
     </message>
     <message>
         <source>reload</source>
-        <translation type="vanished">recargar</translation>
+        <translation>recargar</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="vanished">Detener</translation>
+        <translation>Detener</translation>
     </message>
     <message>
         <source>stop</source>
-        <translation type="vanished">detener</translation>
+        <translation>detener</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="vanished">Inicio</translation>
+        <translation>Inicio</translation>
     </message>
     <message>
         <source>Enter address</source>
-        <translation type="vanished">Introducir dirección</translation>
+        <translation>Introducir dirección</translation>
     </message>
     <message>
         <source>Web</source>
-        <translation type="vanished">Web</translation>
+        <translation>Web</translation>
     </message>
     <message>
         <source>Web Browser</source>
-        <translation type="vanished">Navegador web</translation>
+        <translation>Navegador web</translation>
     </message>
 </context>
 <context>
     <name>Necto::WebPage</name>
     <message>
         <source>Certificate Error</source>
-        <translation type="vanished">Error de certificado</translation>
+        <translation>Error de certificado</translation>
     </message>
     <message>
         <source>Enter username and password for &quot;%1&quot; at %2</source>
-        <translation type="vanished">Introduzca usuario y contraseña para &quot;%1&quot; en %2</translation>
+        <translation>Introduzca usuario y contraseña para &quot;%1&quot; en %2</translation>
     </message>
     <message>
         <source>Allow %1 to access your location information?</source>
-        <translation type="vanished">¿Permitir que %1 acceda a su información de ubicación?</translation>
+        <translation>¿Permitir que %1 acceda a su información de ubicación?</translation>
     </message>
     <message>
         <source>Allow %1 to access your microphone?</source>
-        <translation type="vanished">¿Permitir que %1 acceda a su micrófono?</translation>
+        <translation>¿Permitir que %1 acceda a su micrófono?</translation>
     </message>
     <message>
         <source>Allow %1 to access your webcam?</source>
-        <translation type="vanished">¿Permitir que %1 acceda a su cámara web?</translation>
+        <translation>¿Permitir que %1 acceda a su cámara web?</translation>
     </message>
     <message>
         <source>Allow %1 to access your microphone and webcam?</source>
-        <translation type="vanished">¿Permitir que %1 acceda a su micrófono y cámara web?</translation>
+        <translation>¿Permitir que %1 acceda a su micrófono y cámara web?</translation>
     </message>
     <message>
         <source>Allow %1 to lock your mouse cursor?</source>
-        <translation type="vanished">¿Permitir que %1 bloquee el cursor del ratón?</translation>
+        <translation>¿Permitir que %1 bloquee el cursor del ratón?</translation>
     </message>
     <message>
         <source>Allow %1 to capture video of your desktop?</source>
-        <translation type="vanished">¿Permitir que %1 capture video de su escritorio?</translation>
+        <translation>¿Permitir que %1 capture video de su escritorio?</translation>
     </message>
     <message>
         <source>Allow %1 to capture audio and video of your desktop?</source>
-        <translation type="vanished">¿Permitir que %1 capture audio y video de su escritorio?</translation>
+        <translation>¿Permitir que %1 capture audio y video de su escritorio?</translation>
     </message>
     <message>
         <source>Permission Request</source>
-        <translation type="vanished">Solicitud de permiso</translation>
+        <translation>Solicitud de permiso</translation>
     </message>
     <message>
         <source>Connect to proxy &quot;%1&quot; using:</source>
-        <translation type="vanished">Conectar al proxy &quot;%1&quot; usando:</translation>
+        <translation>Conectar al proxy &quot;%1&quot; usando:</translation>
     </message>
     <message>
         <source>Allow %1 to open all %2 links?</source>
-        <translation type="vanished">¿Permitir que %1 abra todos los enlaces %2?</translation>
+        <translation>¿Permitir que %1 abra todos los enlaces %2?</translation>
     </message>
 </context>
 <context>
     <name>Necto::WebView</name>
     <message>
         <source>Render process normal exit</source>
-        <translation type="vanished">Salida normal del proceso de renderizado</translation>
+        <translation>Salida normal del proceso de renderizado</translation>
     </message>
     <message>
         <source>Render process abnormal exit</source>
-        <translation type="vanished">Salida anormal del proceso de renderizado</translation>
+        <translation>Salida anormal del proceso de renderizado</translation>
     </message>
     <message>
         <source>Render process crashed</source>
-        <translation type="vanished">El proceso de renderizado falló</translation>
+        <translation>El proceso de renderizado falló</translation>
     </message>
     <message>
         <source>Render process killed</source>
-        <translation type="vanished">Proceso de renderizado terminado</translation>
+        <translation>Proceso de renderizado terminado</translation>
     </message>
     <message>
         <source>Render process exited with code: %1
 Do you want to reload the page ?</source>
-        <translation type="vanished">El proceso de renderizado finalizó con el código: %1
+        <translation>El proceso de renderizado finalizó con el código: %1
 ¿Desea volver a cargar la página?</translation>
     </message>
 </context>
@@ -17894,248 +17894,248 @@ Do you want to reload the page ?</source>
     <name>Necto::WelcomePage</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Click to open the Package Manager - Explore the growing collection of MCUs updated daily.</source>
-        <translation type="vanished">Haga clic para abrir el Gestor de paquetes - Explore la creciente colección de MCU actualizada a diario.</translation>
+        <translation>Haga clic para abrir el Gestor de paquetes - Explore la creciente colección de MCU actualizada a diario.</translation>
     </message>
     <message>
         <source>SUPPORTED MCUs</source>
-        <translation type="vanished">MCU COMPATIBLES</translation>
+        <translation>MCU COMPATIBLES</translation>
     </message>
     <message>
         <source>Click to open the Package Manager - Explore the growing collection of libraries and examples updated daily.</source>
-        <translation type="vanished">Haga clic para abrir el Gestor de paquetes - Explore la creciente colección de bibliotecas y ejemplos actualizada a diario.</translation>
+        <translation>Haga clic para abrir el Gestor de paquetes - Explore la creciente colección de bibliotecas y ejemplos actualizada a diario.</translation>
     </message>
     <message>
         <source>LIBRARIES &amp; EXAMPLES</source>
-        <translation type="vanished">BIBLIOTECAS Y EJEMPLOS</translation>
+        <translation>BIBLIOTECAS Y EJEMPLOS</translation>
     </message>
     <message>
         <source>Click to open the Remote Board Farm- Unique tool for programming and real-time debugging powered by HD live camera stream.
  Program and debug remotely, from any place in the World.
  You are no longer limited by the hardware on your desk.</source>
-        <translation type="vanished">Haga clic para abrir el Remote Board Farm: herramienta única para programación y depuración en tiempo real con transmisión de cámara HD en vivo.
+        <translation>Haga clic para abrir el Remote Board Farm: herramienta única para programación y depuración en tiempo real con transmisión de cámara HD en vivo.
  Programe y depure de forma remota, desde cualquier lugar del mundo.
  Ya no está limitado por el hardware de su escritorio.</translation>
     </message>
     <message>
         <source>REMOTE BOARDS </source>
-        <translation type="vanished">PLACAS REMOTAS </translation>
+        <translation>PLACAS REMOTAS </translation>
     </message>
     <message>
         <source>Get started</source>
-        <translation type="vanished">Comenzar</translation>
+        <translation>Comenzar</translation>
     </message>
     <message>
         <source>Recent projects</source>
-        <translation type="vanished">Proyectos recientes</translation>
+        <translation>Proyectos recientes</translation>
     </message>
     <message>
         <source>Need help?</source>
-        <translation type="vanished">¿Necesitas ayuda?</translation>
+        <translation>¿Necesitas ayuda?</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation type="vanished">Ayuda</translation>
+        <translation>Ayuda</translation>
     </message>
     <message>
         <source>Tutorials</source>
-        <translation type="vanished">Tutoriales</translation>
+        <translation>Tutoriales</translation>
     </message>
     <message>
         <source>Support</source>
-        <translation type="vanished">Soporte</translation>
+        <translation>Soporte</translation>
     </message>
     <message>
         <source>Forum</source>
-        <translation type="vanished">Foro</translation>
+        <translation>Foro</translation>
     </message>
     <message>
         <source>Send feedback</source>
-        <translation type="vanished">Enviar comentarios</translation>
+        <translation>Enviar comentarios</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="vanished">Inicio</translation>
+        <translation>Inicio</translation>
     </message>
     <message>
         <source>New project</source>
-        <translation type="vanished">Nuevo proyecto</translation>
+        <translation>Nuevo proyecto</translation>
     </message>
     <message>
         <source>Create a new project using one of the setups.</source>
-        <translation type="vanished">Crear un nuevo proyecto usando una de las configuraciones.</translation>
+        <translation>Crear un nuevo proyecto usando una de las configuraciones.</translation>
     </message>
     <message>
         <source>Open project</source>
-        <translation type="vanished">Abrir proyecto</translation>
+        <translation>Abrir proyecto</translation>
     </message>
     <message>
         <source>Open an existing project and continue right where you left off.</source>
-        <translation type="vanished">Abra un proyecto existente y continúe justo donde lo dejó.</translation>
+        <translation>Abra un proyecto existente y continúe justo donde lo dejó.</translation>
     </message>
     <message>
         <source>Configurations</source>
-        <translation type="vanished">Configuraciones</translation>
+        <translation>Configuraciones</translation>
     </message>
     <message>
         <source>Configure hardware and software once and reuse it in multiple projects.</source>
-        <translation type="vanished">Configure el hardware y el software una vez y reutilícelo en varios proyectos.</translation>
+        <translation>Configure el hardware y el software una vez y reutilícelo en varios proyectos.</translation>
     </message>
     <message>
         <source>Productivity Hub</source>
-        <translation type="vanished">Centro de productividad</translation>
+        <translation>Centro de productividad</translation>
     </message>
     <message>
         <source>Quick access to most important tools to boost your productivity.</source>
-        <translation type="vanished">Acceso rápido a las herramientas más importantes para aumentar su productividad.</translation>
+        <translation>Acceso rápido a las herramientas más importantes para aumentar su productividad.</translation>
     </message>
     <message>
         <source>Package manager</source>
-        <translation type="vanished">Gestor de paquetes</translation>
+        <translation>Gestor de paquetes</translation>
     </message>
     <message>
         <source>Remote Board Farm</source>
-        <translation type="vanished">Remote Board Farm</translation>
+        <translation>Remote Board Farm</translation>
     </message>
     <message>
         <source>Library Manager</source>
-        <translation type="vanished">Gestor de bibliotecas</translation>
+        <translation>Gestor de bibliotecas</translation>
     </message>
     <message>
         <source>Debug view</source>
-        <translation type="vanished">Vista de depuración</translation>
+        <translation>Vista de depuración</translation>
     </message>
     <message>
         <source>Unavailable in offline mode</source>
-        <translation type="vanished">No disponible en modo sin conexión</translation>
+        <translation>No disponible en modo sin conexión</translation>
     </message>
 </context>
 <context>
     <name>Necto::WelcomePageButton</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
 </context>
 <context>
     <name>Necto::WidgetDetachContainer</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Detach</source>
-        <translation type="vanished">Desacoplar</translation>
+        <translation>Desacoplar</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">Cerrar</translation>
+        <translation>Cerrar</translation>
     </message>
 </context>
 <context>
     <name>Necto::XC16SettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">Ajustes del compilador</translation>
+        <translation>Ajustes del compilador</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
 </context>
 <context>
     <name>Necto::XC32SettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">Ajustes del compilador</translation>
+        <translation>Ajustes del compilador</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
 </context>
 <context>
     <name>Necto::XC8SettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Compiler Settings</source>
-        <translation type="vanished">Ajustes del compilador</translation>
+        <translation>Ajustes del compilador</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
 </context>
 <context>
     <name>Necto::XCFieldView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
 </context>
 <context>
     <name>Necto::XCMcuSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="vanished">Marco</translation>
+        <translation>Marco</translation>
     </message>
     <message>
         <source>Configure MCU</source>
-        <translation type="vanished">Configurar MCU</translation>
+        <translation>Configurar MCU</translation>
     </message>
     <message>
         <source>Config scheme:</source>
-        <translation type="vanished">Esquema de configuración:</translation>
+        <translation>Esquema de configuración:</translation>
     </message>
     <message>
         <source>Clock:</source>
-        <translation type="vanished">Reloj:</translation>
+        <translation>Reloj:</translation>
     </message>
     <message>
         <source>MCU Settings</source>
-        <translation type="vanished">Ajustes de MCU</translation>
+        <translation>Ajustes de MCU</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>Enter MCU clock</source>
-        <translation type="vanished">Introducir reloj del MCU</translation>
+        <translation>Introducir reloj del MCU</translation>
     </message>
     <message>
         <source>Configure %1:</source>
-        <translation type="vanished">Configurar %1:</translation>
+        <translation>Configurar %1:</translation>
     </message>
 </context>
 <context>
