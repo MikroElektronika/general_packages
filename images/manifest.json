@@ -1,0 +1,10 @@
+{
+    "name": "images",
+    "display_name": "NECTO Resources - Images",
+    "author": "MIKROE",
+    "hidden": true,
+    "package_changed": true,
+    "type": "images",
+    "install_location": "%APPLICATION_DATA_DIR%/resources/images",
+    "gh_package_name": "images.7z"
+}
