@@ -1,0 +1,11 @@
+{
+    "name": "unit_test_lib",
+    "display_name": "Unit test library",
+    "author": "MIKROE",
+    "hidden": true,
+    "package_changed": true,
+    "type": "unit_test_lib",
+    "category": "utility",
+    "install_location": "%APPLICATION_DATA_DIR%/packages/unit_test_lib",
+    "gh_package_name": "unit_test_lib.7z"
+}

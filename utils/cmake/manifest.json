@@ -1,0 +1,11 @@
+{
+    "name": "mikroe_utils_common",
+    "display_name": "MikroE common utilities",
+    "author": "MIKROE",
+    "hidden": true,
+    "package_changed": true,
+    "type": "mikroe_utils_common",
+    "category": "utility",
+    "install_location": "%APPLICATION_DATA_DIR%/cmake",
+    "gh_package_name": "mikroe_utils_common.7z"
+}
