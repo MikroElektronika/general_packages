@@ -1,0 +1,10 @@
+{
+    "name": "templates_dev_5_library_sdk",
+    "display_name": "NECTO project templates_dev_5_library_sdk templates - dev",
+    "vendor": "MIKROE",
+    "hidden": true,
+    "package_changed": true,
+    "type": "application",
+    "install_location": "%APPLICATION_DATA_DIR%/templates/project_templates/5_library_sdk",
+    "gh_package_name": "templates_dev_5_library_sdk.7z"
+}

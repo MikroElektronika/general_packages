@@ -1,0 +1,10 @@
+{
+    "name": "templates_dev_designer_generated_code",
+    "display_name": "NECTO project templates_dev_designer_generated_code templates - dev",
+    "vendor": "MIKROE",
+    "hidden": true,
+    "package_changed": true,
+    "type": "application",
+    "install_location": "%APPLICATION_DATA_DIR%/templates/designer_generated_code",
+    "gh_package_name": "templates_dev_designer_generated_code.7z"
+}

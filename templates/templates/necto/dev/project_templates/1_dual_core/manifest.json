@@ -1,0 +1,10 @@
+{
+    "name": "templates_dev_1_dual_core",
+    "display_name": "NECTO project templates_dev_1_dual_core templates - dev",
+    "vendor": "MIKROE",
+    "hidden": true,
+    "package_changed": true,
+    "type": "application",
+    "install_location": "%APPLICATION_DATA_DIR%/templates/project_templates/1_dual_core",
+    "gh_package_name": "templates_dev_1_dual_core.7z"
+}

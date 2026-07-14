@@ -1,0 +1,10 @@
+{
+    "name": "templates_dev_4_application_with_library",
+    "display_name": "NECTO project templates_dev_4_application_with_library templates - dev",
+    "vendor": "MIKROE",
+    "hidden": true,
+    "package_changed": true,
+    "type": "application",
+    "install_location": "%APPLICATION_DATA_DIR%/templates/project_templates/4_application_with_library",
+    "gh_package_name": "templates_dev_4_application_with_library.7z"
+}
