@@ -1,0 +1,11 @@
+{
+    "name": "preinit",
+    "display_name": "Preinit library",
+    "author": "MIKROE",
+    "package_changed": true,
+    "hidden": true,
+    "type": "preinit",
+    "category": "utility",
+    "install_location": "%APPLICATION_DATA_DIR%/packages/preinit",
+    "gh_package_name": "preinit.7z"
+}

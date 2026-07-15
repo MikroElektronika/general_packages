@@ -1,0 +1,10 @@
+{
+    "name": "templates_live_0_mikrosdk2",
+    "display_name": "NECTO project templates_live_0_mikrosdk2 templates - live",
+    "vendor": "MIKROE",
+    "hidden": true,
+    "package_changed": true,
+    "type": "application",
+    "install_location": "%APPLICATION_DATA_DIR%/templates/project_templates/0_mikrosdk2",
+    "gh_package_name": "templates_live_0_mikrosdk2.7z"
+}

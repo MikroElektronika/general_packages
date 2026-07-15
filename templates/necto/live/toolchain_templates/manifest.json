@@ -1,0 +1,10 @@
+{
+    "name": "templates_live_toolchain_templates",
+    "display_name": "NECTO project templates_live_toolchain_templates templates - live",
+    "vendor": "MIKROE",
+    "hidden": true,
+    "package_changed": true,
+    "type": "application",
+    "install_location": "%APPLICATION_DATA_DIR%/templates/toolchain_templates",
+    "gh_package_name": "templates_live_toolchain_templates.7z"
+}

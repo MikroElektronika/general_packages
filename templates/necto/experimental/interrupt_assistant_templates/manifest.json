@@ -1,0 +1,10 @@
+{
+    "name": "templates_experimental_interrupt_assistant_templates",
+    "display_name": "NECTO project templates_experimental_interrupt_assistant_templates templates - experimental",
+    "vendor": "MIKROE",
+    "hidden": true,
+    "package_changed": true,
+    "type": "application",
+    "install_location": "%APPLICATION_DATA_DIR%/templates/interrupt_assistant_templates",
+    "gh_package_name": "templates_experimental_interrupt_assistant_templates.7z"
+}
