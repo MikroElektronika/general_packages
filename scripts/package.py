@@ -1,5 +1,5 @@
 import argparse, hashlib, json, asyncio, zipfile, py7zr
-import os, shutil
+import os, shutil, re
 import support
 
 from pathlib import Path
@@ -108,9 +108,65 @@ def create_7z_from_contents(source_folder: Path, archive_path: Path) -> None:
             archive.write(file_path, file_path.relative_to(source_folder).as_posix())
 
 
-def pack_found_packages(metadata, output_dir):
+def handle_lvgl_package(token, manifest):
+    # Find latest release of requested repo
+    external_repo = manifest['requires_lvgl_processing']['external_package_repo']
+    latest_release = support.get_latest_release(external_repo, token)
+
+    # Find all assets of the latest release of requested repo
+    assets = support.get_release_assets(external_repo, latest_release['id'], token)
+
+    # Get the asset info from all found assets
+    external_asset_name = manifest['requires_lvgl_processing']['external_package_asset']
+    external_asset = support.find_asset(assets, external_asset_name)
+
+    # Handle the asset strucure
+    os.makedirs('tmp/lvgl_processing', exist_ok=True)
+    support.extract_archive_from_url(external_asset['browser_download_url'], os.path.join('tmp/lvgl_processing/lvgl', external_asset_name.replace('.7z', '')))
+    shutil.copytree(manifest['source_folder'], 'tmp/lvgl_processing/lvgl/lvgl/templates/lvgl_designer_generated_code')
+    shutil.copytree(manifest['requires_lvgl_processing']['extra_project_template_path'], 'tmp/lvgl_processing/lvgl/lvgl/templates/2_lvgl_designer')
+
+    # Fetch the LCGL version and rename folder accordingly
+    with open('tmp/lvgl_processing/lvgl/lvgl/lvgl.h', 'r') as file:
+        lvgl_content = file.read()
+    version_major = re.search(r'#define LVGL_VERSION_MAJOR\s+(\d+)', lvgl_content).group(1)
+    version_minor = re.search(r'#define LVGL_VERSION_MINOR\s+(\d+)', lvgl_content).group(1)
+    version_patch = re.search(r'#define LVGL_VERSION_PATCH\s+(\d+)', lvgl_content).group(1)
+    lvgl_version = f'{version_major}.{version_minor}.{version_patch}'
+    lvgl_folder = lvgl_folder = f'lvgl_{lvgl_version.replace('.', '')}'
+    os.rename('tmp/lvgl_processing/lvgl/lvgl', f'tmp/lvgl_processing/lvgl/{lvgl_folder}')
+    lvgl_folder = manifest['gh_package_name'].replace('.7z', '').replace('{VERSION}', lvgl_version)
+    os.rename('tmp/lvgl_processing/lvgl', f'tmp/lvgl_processing/{lvgl_folder}')
+
+    return f'tmp/lvgl_processing/{lvgl_folder}', lvgl_version
+
+
+def pack_found_packages(token, metadata, output_dir):
     release_assets_dir = output_dir / "release_assets"
     release_assets_dir.mkdir(parents=True, exist_ok=True)
+
+    # Pre-processing metadata to handle LVGL packages
+    lvgl_packages = {}
+    delete_lvgl_packages = []
+    for package_name, manifest in metadata.items():
+        if '{VERSION}' not in package_name:
+            continue
+
+        print(f"\033[94mPre-processing: {package_name}\033[0m")
+
+        source_folder, lvgl_version = handle_lvgl_package(token, manifest)
+        for field in manifest:
+            if isinstance(manifest[field], str) and '{VERSION}' in manifest[field]:
+                manifest[field] = manifest[field].replace('{VERSION}', lvgl_version)
+        manifest['source_folder'] = source_folder
+        delete_lvgl_packages.append(package_name)
+        package_name = package_name.replace('{VERSION}', lvgl_version)
+        del manifest['requires_lvgl_processing']
+        lvgl_packages[package_name] = manifest
+
+    for lvgl_package_to_remove in delete_lvgl_packages:
+        del metadata[lvgl_package_to_remove]
+    metadata.update(lvgl_packages)
 
     for package_name, manifest in metadata.items():
         source_folder = Path(manifest["source_folder"]).resolve()
@@ -167,7 +223,7 @@ async def main(token, repo):
 
     metadata = find_all_manifests(repo_root)
 
-    pack_found_packages(metadata, output_dir)
+    pack_found_packages(token, metadata, output_dir)
 
     # Save metadata as a file
     with open(output_dir / "release_assets" / "metadata.json", 'w') as metadata_file:
