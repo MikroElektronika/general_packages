@@ -163,6 +163,15 @@ def index_release_to_elasticsearch(es, token, assets, index_names, dry_run=False
 
         # Get all released assets for this index
         for asset in assets:
+            # Templates have dependency between template name and index:
+            #    'templates_dev_*' - os.environ['ES_INDEX_TEST']
+            #    'templates_live_*' - os.environ['ES_INDEX_LIVE']
+            #    'templates_experimental_*' - os.environ['ES_INDEX_EXPERIMENTAL']
+            # So if it is not related to the index name that is being processed - skip it
+            if 'templates' in asset and not necto_versions[index_name] in asset:
+                continue
+
+            # Ignore metadata.json asset
             if 'metadata.json' == asset['name']:
                 continue
 
