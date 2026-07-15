@@ -168,7 +168,8 @@ def index_release_to_elasticsearch(es, token, assets, index_names, dry_run=False
             #    'templates_live_*' - os.environ['ES_INDEX_LIVE']
             #    'templates_experimental_*' - os.environ['ES_INDEX_EXPERIMENTAL']
             # So if it is not related to the index name that is being processed - skip it
-            if 'templates' in asset and not necto_versions[index_name] in asset:
+            if ('templates' in asset['name'] or
+                'lvgl' in asset['name']) and not necto_versions[index_name] in asset['name']:
                 continue
 
             # Ignore metadata.json asset
