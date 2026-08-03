@@ -1426,22 +1426,22 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <message>
         <location filename="../plugins/mattermost_client/src/chat_bridge_host.cpp" line="+21" />
         <source>The chat stopped responding during the transfer.</source>
-        <translation type="unfinished" />
+        <translation>Der Chat hat während der Übertragung nicht mehr reagiert.</translation>
     </message>
     <message>
         <location line="+18" />
         <source>The chat page reloaded during the transfer.</source>
-        <translation type="unfinished" />
+        <translation>Die Chat-Seite wurde während der Übertragung neu geladen.</translation>
     </message>
     <message>
         <location line="+34" />
         <source>Chat is not available.</source>
-        <translation type="unfinished" />
+        <translation>Chat ist nicht verfügbar.</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Another share is already in progress.</source>
-        <translation type="unfinished" />
+        <translation>Eine andere Freigabe läuft bereits.</translation>
     </message>
 </context>
 <context>
@@ -5375,32 +5375,32 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     <message>
         <location line="-44" />
         <source>Download ZIP</source>
-        <translation type="unfinished" />
+        <translation>ZIP herunterladen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Open in NECTO</source>
-        <translation type="unfinished" />
+        <translation>In NECTO öffnen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>   NECTO project detected</source>
-        <translation type="unfinished" />
+        <translation>   NECTO-Projekt erkannt</translation>
     </message>
     <message>
         <location line="+5" />
         <source>&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Contains a NECTO project.</source>
-        <translation type="unfinished" />
+        <translation>&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Enthält ein NECTO-Projekt.</translation>
     </message>
     <message>
         <location line="+66" />
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Could not save the file to %1.</source>
-        <translation type="unfinished" />
+        <translation>Die Datei konnte nicht unter %1 gespeichert werden.</translation>
     </message>
 </context>
 <context>
@@ -10785,22 +10785,22 @@ Beispiele
     <message>
         <location line="+934" />
         <source>Chat is not available.</source>
-        <translation type="unfinished" />
+        <translation>Chat ist nicht verfügbar.</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Another share is already in progress.</source>
-        <translation type="unfinished" />
+        <translation>Eine andere Freigabe läuft bereits.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>The chat is not ready for sharing — wait for it to finish loading and try again.</source>
-        <translation type="unfinished" />
+        <translation>Der Chat ist noch nicht bereit für die Freigabe — warten Sie, bis er vollständig geladen ist, und versuchen Sie es erneut.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Could not read "%1".</source>
-        <translation type="unfinished" />
+        <translation>"%1" konnte nicht gelesen werden.</translation>
     </message>
 </context>
 <context>
@@ -13608,6 +13608,25 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <message>
         <source>Close</source>
         <translation>Schließen</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::ChatBridgeHost</name>
+    <message>
+        <source>The chat stopped responding during the transfer.</source>
+        <translation>Der Chat hat während der Übertragung nicht mehr reagiert.</translation>
+    </message>
+    <message>
+        <source>The chat page reloaded during the transfer.</source>
+        <translation>Die Chat-Seite wurde während der Übertragung neu geladen.</translation>
+    </message>
+    <message>
+        <source>Chat is not available.</source>
+        <translation>Chat ist nicht verfügbar.</translation>
+    </message>
+    <message>
+        <source>Another share is already in progress.</source>
+        <translation>Eine andere Freigabe läuft bereits.</translation>
     </message>
 </context>
 <context>
@@ -16897,7 +16916,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <source>Save as</source>
         <translation>Speichern unter</translation>
     </message>
-</context>
+<message><source>&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Contains a NECTO project.</source><translation>&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Enthält ein NECTO-Projekt.</translation></message><message><source>   NECTO project detected</source><translation>   NECTO-Projekt erkannt</translation></message><message><source>Could not save the file to %1.</source><translation>Die Datei konnte nicht unter %1 gespeichert werden.</translation></message><message><source>OK</source><translation>OK</translation></message><message><source>Open in NECTO</source><translation>In NECTO öffnen</translation></message><message><source>Download ZIP</source><translation>ZIP herunterladen</translation></message></context>
 <context>
     <name>Necto::DownloadWidget</name>
     <message>
@@ -21340,7 +21359,7 @@ Beispiele
         <source>is: starred</source>
         <translation>is: starred</translation>
     </message>
-</context>
+<message><source>The chat is not ready for sharing — wait for it to finish loading and try again.</source><translation>Der Chat ist noch nicht bereit für die Freigabe — warten Sie, bis er vollständig geladen ist, und versuchen Sie es erneut.</translation></message><message><source>Could not read "%1".</source><translation>"%1" konnte nicht gelesen werden.</translation></message><message><source>Another share is already in progress.</source><translation>Eine andere Freigabe läuft bereits.</translation></message><message><source>Chat is not available.</source><translation>Chat ist nicht verfügbar.</translation></message></context>
 <context>
     <name>Necto::McuConfigStrings</name>
     <message>
@@ -23935,38 +23954,38 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     <message>
         <location filename="../core/src/project_explorer/project_chat_share.cpp" line="+47" />
         <source>A project share is already waiting in NECTO Chat — pick a receiver or cancel it first.</source>
-        <translation type="unfinished" />
+        <translation>Eine Projektfreigabe wartet bereits im NECTO Chat — wählen Sie einen Empfänger aus oder brechen Sie sie zuerst ab.</translation>
     </message>
     <message>
         <location line="+9" />
         <location line="+102" />
         <source>NECTO Chat is not available.</source>
-        <translation type="unfinished" />
+        <translation>NECTO Chat ist nicht verfügbar.</translation>
     </message>
     <message>
         <location line="-74" />
         <source>NECTO Chat did not respond — wait for it to finish loading and try again.</source>
-        <translation type="unfinished" />
+        <translation>NECTO Chat hat nicht reagiert — warten Sie, bis es vollständig geladen ist, und versuchen Sie es erneut.</translation>
     </message>
     <message>
         <location line="+21" />
         <source>NECTO Chat is not ready — wait for it to finish loading and try again.</source>
-        <translation type="unfinished" />
+        <translation>NECTO Chat ist noch nicht bereit — warten Sie, bis es vollständig geladen ist, und versuchen Sie es erneut.</translation>
     </message>
     <message>
         <location line="+63" />
         <source>The packed project is %1 MB; the chat server accepts up to %2 MB.</source>
-        <translation type="unfinished" />
+        <translation>Das gepackte Projekt ist %1 MB groß; der Chat-Server akzeptiert bis zu %2 MB.</translation>
     </message>
     <message>
         <location line="+22" />
         <source>Attaching the project failed.</source>
-        <translation type="unfinished" />
+        <translation>Das Anhängen des Projekts ist fehlgeschlagen.</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Failed to pack the project.</source>
-        <translation type="unfinished" />
+        <translation>Das Packen des Projekts ist fehlgeschlagen.</translation>
     </message>
     <message>
         <location line="+8" />
@@ -24134,7 +24153,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <source>Stop</source>
         <translation>Stopp</translation>
     </message>
-</context>
+<message><source>OK</source><translation>OK</translation></message><message><source>Send to NECTO Chat…</source><translation>An NECTO Chat senden…</translation></message><message><source>No NECTO project was found inside "%1".</source><translation>In "%1" wurde kein NECTO-Projekt gefunden.</translation></message></context>
 <context>
     <name>Necto::ProjectInfoPage</name>
     <message>
@@ -24232,59 +24251,59 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <location line="+374" />
         <location line="+57" />
         <source>Cancel</source>
-        <translation type="unfinished">Abbrechen</translation>
+        <translation>Abbrechen</translation>
     </message>
     <message>
         <location line="-55" />
         <source>"%1" contains a NECTO project. Open it as a NECTO project?</source>
-        <translation type="unfinished" />
+        <translation>"%1" enthält ein NECTO-Projekt. Als NECTO-Projekt öffnen?</translation>
     </message>
     <message>
         <location line="+13" />
         <location line="+91" />
         <location line="+10" />
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location line="-100" />
         <source>Failed to read "%1".</source>
-        <translation type="unfinished" />
+        <translation>"%1" konnte nicht gelesen werden.</translation>
     </message>
     <message>
         <location line="+38" />
         <source>Use "%1"</source>
-        <translation type="unfinished" />
+        <translation>"%1" verwenden</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Folder "%1" already exists in %2.</source>
-        <translation type="unfinished" />
+        <translation>Der Ordner "%1" existiert bereits in %2.</translation>
     </message>
     <message>
         <location line="+17" />
         <source>Could not create a temporary folder in %1.</source>
-        <translation type="unfinished" />
+        <translation>Es konnte kein temporärer Ordner in %1 erstellt werden.</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Failed to extract "%1".</source>
-        <translation type="unfinished" />
+        <translation>"%1" konnte nicht extrahiert werden.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Could not move the extracted project to %1.</source>
-        <translation type="unfinished" />
+        <translation>Das extrahierte Projekt konnte nicht nach %1 verschoben werden.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Importing project %1</source>
-        <translation type="unfinished" />
+        <translation>Projekt %1 wird importiert</translation>
     </message>
     <message>
         <location line="+19" />
         <source>No NECTO project was found inside "%1".</source>
-        <translation type="unfinished" />
+        <translation>In "%1" wurde kein NECTO-Projekt gefunden.</translation>
     </message>
     <message>
         <location line="+199" />
@@ -32093,7 +32112,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <source>OK</source>
         <translation type="obsolete">OK</translation>
     </message>
-</context>
+<message><source>Attaching the project failed.</source><translation>Das Anhängen des Projekts ist fehlgeschlagen.</translation></message><message><source>The packed project is %1 MB; the chat server accepts up to %2 MB.</source><translation>Das gepackte Projekt ist %1 MB groß; der Chat-Server akzeptiert bis zu %2 MB.</translation></message><message><source>NECTO Chat did not respond — wait for it to finish loading and try again.</source><translation>NECTO Chat hat nicht reagiert — warten Sie, bis es vollständig geladen ist, und versuchen Sie es erneut.</translation></message><message><source>NECTO Chat is not ready — wait for it to finish loading and try again.</source><translation>NECTO Chat ist noch nicht bereit — warten Sie, bis es vollständig geladen ist, und versuchen Sie es erneut.</translation></message><message><source>Failed to pack the project.</source><translation>Das Packen des Projekts ist fehlgeschlagen.</translation></message><message><source>A project share is already waiting in NECTO Chat — pick a receiver or cancel it first.</source><translation>Eine Projektfreigabe wartet bereits im NECTO Chat — wählen Sie einen Empfänger aus oder brechen Sie sie zuerst ab.</translation></message><message><source>NECTO Chat is not available.</source><translation>NECTO Chat ist nicht verfügbar.</translation></message></context>
 <context>
     <name>ProjectEditPage</name>
     <message>
@@ -32181,12 +32200,12 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     <message>
         <location line="+71" />
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location line="+1" />
         <source>No NECTO project was found inside "%1".</source>
-        <translation type="unfinished" />
+        <translation>In "%1" wurde kein NECTO-Projekt gefunden.</translation>
     </message>
     <message>
         <location line="+204" />
@@ -32237,7 +32256,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     <message>
         <location line="+7" />
         <source>Send to NECTO Chat…</source>
-        <translation type="unfinished" />
+        <translation>An NECTO Chat senden…</translation>
     </message>
     <message>
         <location line="+10" />
@@ -32478,7 +32497,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <source>Open Recent File</source>
         <translation>Zuletzt verwendete Datei öffnen</translation>
     </message>
-</context>
+<message><source>Failed to extract "%1".</source><translation>"%1" konnte nicht extrahiert werden.</translation></message><message><source>Cancel</source><translation>Abbrechen</translation></message><message><source>OK</source><translation>OK</translation></message><message><source>Use "%1"</source><translation>"%1" verwenden</translation></message><message><source>Failed to read "%1".</source><translation>"%1" konnte nicht gelesen werden.</translation></message><message><source>Could not create a temporary folder in %1.</source><translation>Es konnte kein temporärer Ordner in %1 erstellt werden.</translation></message><message><source>Importing project %1</source><translation>Projekt %1 wird importiert</translation></message><message><source>No NECTO project was found inside "%1".</source><translation>In "%1" wurde kein NECTO-Projekt gefunden.</translation></message><message><source>"%1" contains a NECTO project. Open it as a NECTO project?</source><translation>"%1" enthält ein NECTO-Projekt. Als NECTO-Projekt öffnen?</translation></message><message><source>Could not move the extracted project to %1.</source><translation>Das extrahierte Projekt konnte nicht nach %1 verschoben werden.</translation></message><message><source>Folder "%1" already exists in %2.</source><translation>Der Ordner "%1" existiert bereits in %2.</translation></message></context>
 <context>
     <name>ProjectNamePage</name>
     <message>
@@ -39533,29 +39552,6 @@ Möchten Sie die Seite neu laden?</translation>
         <location line="+6" />
         <source>Configure %1:</source>
         <translation>%1 konfigurieren:</translation>
-    </message>
-</context>
-<context>
-    <name>Necto::ChatBridgeHost</name>
-    <message>
-        <location filename="../plugins/mattermost_client/src/chat_bridge_host.cpp" line="+21" />
-        <source>The chat stopped responding during the transfer.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+18" />
-        <source>The chat page reloaded during the transfer.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+34" />
-        <source>Chat is not available.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Another share is already in progress.</source>
-        <translation type="unfinished" />
     </message>
 </context>
 </TS>
