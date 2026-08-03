@@ -6586,6 +6586,21 @@ These settings will not be saved permanently</source>
     </message>
 </context>
 <context>
+    <name>FiltersPanel</name>
+    <message>
+        <source>Package type:</source>
+        <translation type="obsolete">软件包类型：</translation>
+    </message>
+    <message>
+        <source>Package status:</source>
+        <translation type="obsolete">软件包状态：</translation>
+    </message>
+    <message>
+        <source>Package category:</source>
+        <translation type="obsolete">软件包类别：</translation>
+    </message>
+</context>
+<context>
     <name>FindInFilesView</name>
     <message>
         <location filename="../plugins/editors/monaco_editor/src/find_reference/find_in_files_view.ui" line="+14" />
@@ -17955,17 +17970,17 @@ These settings will not be saved permanently</source>
     <message>
         <location filename="../core/src/package_manager/view/filters_panel.cpp" line="+10" />
         <source>Package type:</source>
-        <translation type="unfinished">软件包类型：</translation>
+        <translation>软件包类型：</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Package status:</source>
-        <translation type="unfinished">软件包状态：</translation>
+        <translation>软件包状态：</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Package category:</source>
-        <translation type="unfinished">软件包类别：</translation>
+        <translation>软件包类别：</translation>
     </message>
 </context>
 <context>
@@ -22714,6 +22729,37 @@ Examples
     <message>
         <source>Edit</source>
         <translation>编辑</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::MonacoEditorManager</name>
+    <message>
+        <source>NECTO Code Assistant</source>
+        <translation>NECTO 代码助手</translation>
+    </message>
+    <message>
+        <source>Analyzing the selected code... Your results will be ready shortly.</source>
+        <translation>正在分析所选代码... 结果即将准备好。</translation>
+    </message>
+    <message>
+        <source>Adding helpful comments to your code... Your results will be ready shortly.</source>
+        <translation>正在为你的代码添加有帮助的注释... 结果即将准备好。</translation>
+    </message>
+    <message>
+        <source>Checking for issues and fixing them... Your results will be ready shortly.</source>
+        <translation>正在检查问题并修复... 结果即将准备好。</translation>
+    </message>
+    <message>
+        <source>Accept</source>
+        <translation>接受</translation>
+    </message>
+    <message>
+        <source>Reject</source>
+        <translation>拒绝</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>刷新</translation>
     </message>
 </context>
 <context>
@@ -39679,55 +39725,6 @@ Do you want to reload the page ?</source>
         <location line="+6" />
         <source>Configure %1:</source>
         <translation>配置 %1：</translation>
-    </message>
-</context>
-<context>
-    <name>Necto::MonacoEditorManager</name>
-    <message>
-        <source>NECTO Code Assistant</source>
-        <translation>NECTO 代码助手</translation>
-    </message>
-    <message>
-        <source>Analyzing the selected code... Your results will be ready shortly.</source>
-        <translation>正在分析所选代码... 结果即将准备好。</translation>
-    </message>
-    <message>
-        <source>Adding helpful comments to your code... Your results will be ready shortly.</source>
-        <translation>正在为你的代码添加有帮助的注释... 结果即将准备好。</translation>
-    </message>
-    <message>
-        <source>Checking for issues and fixing them... Your results will be ready shortly.</source>
-        <translation>正在检查问题并修复... 结果即将准备好。</translation>
-    </message>
-    <message>
-        <source>Accept</source>
-        <translation>接受</translation>
-    </message>
-    <message>
-        <source>Reject</source>
-        <translation>拒绝</translation>
-    </message>
-    <message>
-        <source>Refresh</source>
-        <translation>刷新</translation>
-    </message>
-</context>
-<context>
-    <name>FiltersPanel</name>
-    <message>
-        <location filename="../core/src/package_manager/view/filters_panel.cpp" line="+10" />
-        <source>Package type:</source>
-        <translation type="unfinished">软件包类型：</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Package status:</source>
-        <translation type="unfinished">软件包状态：</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Package category:</source>
-        <translation type="unfinished">软件包类别：</translation>
     </message>
 </context>
 <context>

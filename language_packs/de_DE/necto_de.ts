@@ -6562,6 +6562,21 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     </message>
 </context>
 <context>
+    <name>FiltersPanel</name>
+    <message>
+        <source>Package type:</source>
+        <translation type="obsolete">Pakettyp:</translation>
+    </message>
+    <message>
+        <source>Package status:</source>
+        <translation type="obsolete">Paketstatus:</translation>
+    </message>
+    <message>
+        <source>Package category:</source>
+        <translation type="obsolete">Paketkategorie:</translation>
+    </message>
+</context>
+<context>
     <name>FindInFilesView</name>
     <message>
         <location filename="../plugins/editors/monaco_editor/src/find_reference/find_in_files_view.ui" line="+14" />
@@ -17891,17 +17906,17 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     <message>
         <location filename="../core/src/package_manager/view/filters_panel.cpp" line="+10" />
         <source>Package type:</source>
-        <translation type="unfinished">Pakettyp:</translation>
+        <translation>Pakettyp:</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Package status:</source>
-        <translation type="unfinished">Paketstatus:</translation>
+        <translation>Paketstatus:</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Package category:</source>
-        <translation type="unfinished">Paketkategorie:</translation>
+        <translation>Paketkategorie:</translation>
     </message>
 </context>
 <context>
@@ -22634,6 +22649,37 @@ Beispiele
     <message>
         <source>Edit</source>
         <translation>Bearbeiten</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::MonacoEditorManager</name>
+    <message>
+        <source>NECTO Code Assistant</source>
+        <translation>NECTO-Code-Assistent</translation>
+    </message>
+    <message>
+        <source>Analyzing the selected code... Your results will be ready shortly.</source>
+        <translation>Der ausgewählte Code wird analysiert... Deine Ergebnisse sind in Kürze bereit.</translation>
+    </message>
+    <message>
+        <source>Adding helpful comments to your code... Your results will be ready shortly.</source>
+        <translation>Es werden hilfreiche Kommentare zu deinem Code hinzugefügt... Deine Ergebnisse sind in Kürze bereit.</translation>
+    </message>
+    <message>
+        <source>Checking for issues and fixing them... Your results will be ready shortly.</source>
+        <translation>Es wird nach Problemen gesucht und sie werden behoben... Deine Ergebnisse sind in Kürze bereit.</translation>
+    </message>
+    <message>
+        <source>Accept</source>
+        <translation>Übernehmen</translation>
+    </message>
+    <message>
+        <source>Reject</source>
+        <translation>Ablehnen</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>Aktualisieren</translation>
     </message>
 </context>
 <context>
@@ -39490,24 +39536,6 @@ Möchten Sie die Seite neu laden?</translation>
     </message>
 </context>
 <context>
-    <name>FiltersPanel</name>
-    <message>
-        <location filename="../core/src/package_manager/view/filters_panel.cpp" line="+10" />
-        <source>Package type:</source>
-        <translation type="unfinished">Pakettyp:</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Package status:</source>
-        <translation type="unfinished">Paketstatus:</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Package category:</source>
-        <translation type="unfinished">Paketkategorie:</translation>
-    </message>
-</context>
-<context>
     <name>Necto::ChatBridgeHost</name>
     <message>
         <location filename="../plugins/mattermost_client/src/chat_bridge_host.cpp" line="+21" />
@@ -39528,37 +39556,6 @@ Möchten Sie die Seite neu laden?</translation>
         <location line="+5" />
         <source>Another share is already in progress.</source>
         <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::MonacoEditorManager</name>
-    <message>
-        <source>NECTO Code Assistant</source>
-        <translation>NECTO-Code-Assistent</translation>
-    </message>
-    <message>
-        <source>Analyzing the selected code... Your results will be ready shortly.</source>
-        <translation>Der ausgewählte Code wird analysiert... Deine Ergebnisse sind in Kürze bereit.</translation>
-    </message>
-    <message>
-        <source>Adding helpful comments to your code... Your results will be ready shortly.</source>
-        <translation>Es werden hilfreiche Kommentare zu deinem Code hinzugefügt... Deine Ergebnisse sind in Kürze bereit.</translation>
-    </message>
-    <message>
-        <source>Checking for issues and fixing them... Your results will be ready shortly.</source>
-        <translation>Es wird nach Problemen gesucht und sie werden behoben... Deine Ergebnisse sind in Kürze bereit.</translation>
-    </message>
-    <message>
-        <source>Accept</source>
-        <translation>Übernehmen</translation>
-    </message>
-    <message>
-        <source>Reject</source>
-        <translation>Ablehnen</translation>
-    </message>
-    <message>
-        <source>Refresh</source>
-        <translation>Aktualisieren</translation>
     </message>
 </context>
 </TS>

@@ -1,11 +1,8 @@
 {
-    "name": "localization_de_DE",
-    "display_name": "German Language Pack",
-    "author": "MIKROE",
-    "hidden": false,
-    "package_changed": true,
+    "name": "necto-translations-de",
+    "version": "0.0.0",
     "type": "translations",
-    "short_description": "NECTO Studio interface translation for German language (updatable without a new release).",
-    "install_location": "%APPLICATION_DATA_DIR%/packages/translations/de_DE",
-    "gh_package_name": "localization_de_DE.zip"
+    "display_name": "German Language Pack",
+    "author": "MikroElektronika",
+    "short_description": "NECTO Studio interface translation for 'de' (updatable without a new release)."
 }

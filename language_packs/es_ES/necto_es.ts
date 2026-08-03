@@ -6553,6 +6553,21 @@ Estos ajustes no se guardarán de forma permanente</translation>
     </message>
 </context>
 <context>
+    <name>FiltersPanel</name>
+    <message>
+        <source>Package type:</source>
+        <translation type="obsolete">Tipo de paquete:</translation>
+    </message>
+    <message>
+        <source>Package status:</source>
+        <translation type="obsolete">Estado del paquete:</translation>
+    </message>
+    <message>
+        <source>Package category:</source>
+        <translation type="obsolete">Categoría del paquete:</translation>
+    </message>
+</context>
+<context>
     <name>FindInFilesView</name>
     <message>
         <location filename="../plugins/editors/monaco_editor/src/find_reference/find_in_files_view.ui" line="+14" />
@@ -17856,17 +17871,17 @@ Estos ajustes no se guardarán de forma permanente</translation>
     <message>
         <location filename="../core/src/package_manager/view/filters_panel.cpp" line="+10" />
         <source>Package type:</source>
-        <translation type="unfinished">Tipo de paquete:</translation>
+        <translation>Tipo de paquete:</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Package status:</source>
-        <translation type="unfinished">Estado del paquete:</translation>
+        <translation>Estado del paquete:</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Package category:</source>
-        <translation type="unfinished">Categoría del paquete:</translation>
+        <translation>Categoría del paquete:</translation>
     </message>
 </context>
 <context>
@@ -22582,6 +22597,37 @@ Ejemplos
     <message>
         <source>Edit</source>
         <translation>Editar</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::MonacoEditorManager</name>
+    <message>
+        <source>NECTO Code Assistant</source>
+        <translation>Asistente de código NECTO</translation>
+    </message>
+    <message>
+        <source>Analyzing the selected code... Your results will be ready shortly.</source>
+        <translation>Analizando el código seleccionado... Tus resultados estarán listos en breve.</translation>
+    </message>
+    <message>
+        <source>Adding helpful comments to your code... Your results will be ready shortly.</source>
+        <translation>Agregando comentarios útiles a tu código... Tus resultados estarán listos en breve.</translation>
+    </message>
+    <message>
+        <source>Checking for issues and fixing them... Your results will be ready shortly.</source>
+        <translation>Buscando problemas y corrigiéndolos... Tus resultados estarán listos en breve.</translation>
+    </message>
+    <message>
+        <source>Accept</source>
+        <translation>Aceptar</translation>
+    </message>
+    <message>
+        <source>Reject</source>
+        <translation>Rechazar</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>Actualizar</translation>
     </message>
 </context>
 <context>
@@ -39151,55 +39197,6 @@ Do you want to reload the page ?</source>
         <location line="+6" />
         <source>Configure %1:</source>
         <translation>Configurar %1:</translation>
-    </message>
-</context>
-<context>
-    <name>Necto::MonacoEditorManager</name>
-    <message>
-        <source>NECTO Code Assistant</source>
-        <translation>Asistente de código NECTO</translation>
-    </message>
-    <message>
-        <source>Analyzing the selected code... Your results will be ready shortly.</source>
-        <translation>Analizando el código seleccionado... Tus resultados estarán listos en breve.</translation>
-    </message>
-    <message>
-        <source>Adding helpful comments to your code... Your results will be ready shortly.</source>
-        <translation>Agregando comentarios útiles a tu código... Tus resultados estarán listos en breve.</translation>
-    </message>
-    <message>
-        <source>Checking for issues and fixing them... Your results will be ready shortly.</source>
-        <translation>Buscando problemas y corrigiéndolos... Tus resultados estarán listos en breve.</translation>
-    </message>
-    <message>
-        <source>Accept</source>
-        <translation>Aceptar</translation>
-    </message>
-    <message>
-        <source>Reject</source>
-        <translation>Rechazar</translation>
-    </message>
-    <message>
-        <source>Refresh</source>
-        <translation>Actualizar</translation>
-    </message>
-</context>
-<context>
-    <name>FiltersPanel</name>
-    <message>
-        <location filename="../core/src/package_manager/view/filters_panel.cpp" line="+10" />
-        <source>Package type:</source>
-        <translation type="unfinished">Tipo de paquete:</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Package status:</source>
-        <translation type="unfinished">Estado del paquete:</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Package category:</source>
-        <translation type="unfinished">Categoría del paquete:</translation>
     </message>
 </context>
 <context>
