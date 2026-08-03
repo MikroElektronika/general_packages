@@ -644,7 +644,7 @@ Möchten Sie jetzt aktualisieren?</translation>
     <message>
         <location line="+14" />
         <location filename="../core/src/setup/view/common/base_page.ui" line="+7" />
-        <location filename="../core/src/setup/view/common/base_page.cpp" line="+717" />
+        <location filename="../core/src/setup/view/common/base_page.cpp" line="+696" />
         <source>Next</source>
         <translation>Weiter</translation>
     </message>
@@ -661,8 +661,7 @@ Möchten Sie jetzt aktualisieren?</translation>
     </message>
     <message>
         <location line="+10" />
-        <location filename="../core/src/setup/view/common/base_page.cpp" line="-537" />
-        <location line="+211" />
+        <location filename="../core/src/setup/view/common/base_page.cpp" line="-516" />
         <source>Filters</source>
         <translation>Filter</translation>
     </message>
@@ -672,13 +671,12 @@ Möchten Sie jetzt aktualisieren?</translation>
         <translation>Zurück</translation>
     </message>
     <message>
-        <location filename="../core/src/setup/view/common/base_page.cpp" line="-209" />
-        <location line="+208" />
+        <location filename="../core/src/setup/view/common/base_page.cpp" line="+2" />
         <source>Close Filters</source>
         <translation>Filter schließen</translation>
     </message>
     <message>
-        <location line="-66" />
+        <location line="+142" />
         <source>%1 %2 %3(s)</source>
         <translation>%1 %2 %3</translation>
     </message>
@@ -688,7 +686,7 @@ Möchten Sie jetzt aktualisieren?</translation>
         <translation>Gefunden </translation>
     </message>
     <message>
-        <location line="+396" />
+        <location line="+375" />
         <source>Choose</source>
         <translation>Auswählen</translation>
     </message>
@@ -1015,26 +1013,23 @@ Bitte starten Sie Ihr Gerät neu, um das Programm zu starten...</translation>
     </message>
     <message>
         <location line="+140" />
-        <location filename="../core/src/setup/sdk_builder/build_sdk_dialog.cpp" line="+127" />
-        <location line="+73" />
+        <location filename="../core/src/setup/sdk_builder/build_sdk_dialog.cpp" line="+180" />
         <location line="+17" />
         <source>Show build log</source>
         <translation>Build-Protokoll anzeigen</translation>
     </message>
     <message>
-        <location filename="../core/src/setup/sdk_builder/build_sdk_dialog.cpp" line="-91" />
-        <location line="+91" />
+        <location filename="../core/src/setup/sdk_builder/build_sdk_dialog.cpp" line="+0" />
         <source>Hide build log</source>
         <translation>Build-Protokoll ausblenden</translation>
     </message>
     <message>
         <location filename="../core/src/setup/sdk_builder/build_sdk_dialog.ui" line="+7" />
-        <location filename="../core/src/setup/sdk_builder/build_sdk_dialog.cpp" line="-89" />
         <source>Close</source>
         <translation>Schließen</translation>
     </message>
     <message>
-        <location filename="../core/src/setup/sdk_builder/build_sdk_dialog.cpp" line="+38" />
+        <location filename="../core/src/setup/sdk_builder/build_sdk_dialog.cpp" line="-51" />
         <source>Setting up MCU...</source>
         <translation>MCU wird eingerichtet...</translation>
     </message>
@@ -1054,14 +1049,12 @@ Bitte starten Sie Ihr Gerät neu, um das Programm zu starten...</translation>
         <translation>Platinendefinitionen werden vorbereitet...</translation>
     </message>
     <message>
-        <location line="-37" />
-        <location line="+65" />
+        <location line="+28" />
         <source>The mikroSDK build did not complete successfully. Check the build log for details.</source>
         <translation>Der mikroSDK-Build wurde nicht erfolgreich abgeschlossen. Prüfen Sie das Build-Protokoll für Details.</translation>
     </message>
     <message>
-        <location line="-63" />
-        <location line="+64" />
+        <location line="+1" />
         <source>Build failed</source>
         <translation>Build fehlgeschlagen</translation>
     </message>
@@ -1338,7 +1331,6 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     </message>
     <message>
         <location line="+25" />
-        <location filename="../core/src/output/cloud_chart/chart_options_dialog.cpp" line="+102" />
         <source>Add Chart</source>
         <translation>Diagramm hinzufügen</translation>
     </message>
@@ -1359,85 +1351,72 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     </message>
     <message>
         <location line="+13" />
-        <location filename="../core/src/output/cloud_chart/chart_options_dialog.cpp" line="+5" />
         <source>Create separate charts</source>
         <translation>Separate Diagramme erstellen</translation>
     </message>
     <message>
-        <location filename="../core/src/output/cloud_chart/chart_options_dialog.cpp" line="-80" />
-        <location line="+66" />
+        <location filename="../core/src/output/cloud_chart/chart_options_dialog.cpp" line="+27" />
         <source>Chart options</source>
         <translation>Diagrammoptionen</translation>
     </message>
     <message>
-        <location line="-65" />
-        <location line="+66" />
+        <location line="+1" />
         <source>Line</source>
         <translation>Linie</translation>
     </message>
     <message>
-        <location line="-65" />
-        <location line="+66" />
+        <location line="+1" />
         <source>Spline</source>
         <translation>Spline</translation>
     </message>
     <message>
-        <location line="-65" />
-        <location line="+66" />
+        <location line="+1" />
         <source>Area</source>
         <translation>Fläche</translation>
     </message>
     <message>
-        <location line="-65" />
-        <location line="+66" />
+        <location line="+1" />
         <source>Scatter</source>
         <translation>Streudiagramm</translation>
     </message>
     <message>
-        <location line="-65" />
-        <location line="+66" />
+        <location line="+1" />
         <source>Bar</source>
         <translation>Balken</translation>
     </message>
     <message>
-        <location line="-62" />
-        <location line="+64" />
+        <location line="+4" />
         <source>Pie</source>
         <translation>Kreis</translation>
     </message>
     <message>
-        <location line="-54" />
-        <location line="+59" />
+        <location line="+10" />
         <source>Y-axis:</source>
         <translation>Y-Achse:</translation>
     </message>
     <message>
-        <location line="-53" />
-        <location line="+54" />
+        <location line="+6" />
         <source>Enter chart name</source>
         <translation>Diagrammnamen eingeben</translation>
     </message>
     <message>
-        <location line="-53" />
+        <location line="+1" />
         <source>My Chart:</source>
         <translation>Mein Diagramm:</translation>
     </message>
     <message>
         <location line="+8" />
-        <location line="+43" />
         <source>Done</source>
         <translation>Fertig</translation>
     </message>
     <message>
-        <location line="-64" />
-        <location line="+1" />
-        <location line="+50" />
+        <location line="-21" />
         <location line="+1" />
         <source>Close</source>
         <translation>Schließen</translation>
     </message>
     <message>
-        <location line="+34" />
+        <location line="+58" />
         <source>%1 Options</source>
         <translation>%1 Optionen</translation>
     </message>
@@ -1866,79 +1845,65 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <location line="+21" />
         <location filename="../core/src/setup/view/wizard_pages/choose_prog_page.cpp" line="+33" />
         <location line="+3" />
-        <location line="+73" />
-        <location line="+3" />
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
         <location line="-14" />
-        <location filename="../core/src/setup/view/wizard_pages/choose_prog_page.cpp" line="-78" />
-        <location line="+76" />
+        <location filename="../core/src/setup/view/wizard_pages/choose_prog_page.cpp" line="-2" />
         <source>Back</source>
         <translation>Zurück</translation>
     </message>
     <message>
         <location line="+7" />
-        <location filename="../core/src/setup/view/wizard_pages/choose_prog_page.cpp" line="-75" />
-        <location line="+76" />
+        <location filename="../core/src/setup/view/wizard_pages/choose_prog_page.cpp" line="+1" />
         <source>Finish</source>
         <translation>Fertigstellen</translation>
     </message>
     <message>
         <location line="+14" />
-        <location filename="../core/src/setup/view/wizard_pages/choose_prog_page.cpp" line="-74" />
-        <location line="+76" />
+        <location filename="../core/src/setup/view/wizard_pages/choose_prog_page.cpp" line="+2" />
         <source>Save</source>
         <translation>Speichern</translation>
     </message>
     <message>
-        <location filename="../core/src/setup/view/wizard_pages/choose_prog_page.cpp" line="-50" />
-        <location line="+1" />
-        <location line="+50" />
+        <location filename="../core/src/setup/view/wizard_pages/choose_prog_page.cpp" line="+26" />
         <location line="+1" />
         <source>Search Programmers</source>
         <translation>Programmiergeräte suchen</translation>
     </message>
     <message>
-        <location line="-50" />
-        <location line="+51" />
+        <location line="+1" />
         <source>Can not find programmer you have searched for</source>
         <translation>Das gesuchte Programmiergerät wurde nicht gefunden</translation>
     </message>
     <message>
-        <location line="-29" />
-        <location line="+31" />
+        <location line="+22" />
         <source>Compiler</source>
         <translation>Compiler</translation>
     </message>
     <message>
-        <location line="-30" />
-        <location line="+31" />
+        <location line="+1" />
         <source>SDK</source>
         <translation>SDK</translation>
     </message>
     <message>
-        <location line="-30" />
-        <location line="+31" />
+        <location line="+1" />
         <source>Board</source>
         <translation>Platine</translation>
     </message>
     <message>
-        <location line="-30" />
-        <location line="+31" />
+        <location line="+1" />
         <source>MCU</source>
         <translation>MCU</translation>
     </message>
     <message>
-        <location line="-30" />
-        <location line="+31" />
+        <location line="+1" />
         <source>Display</source>
         <translation>Anzeige</translation>
     </message>
     <message>
-        <location line="-30" />
-        <location line="+31" />
+        <location line="+1" />
         <source>Programmer</source>
         <translation>Programmiergerät</translation>
     </message>
@@ -2097,32 +2062,32 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <message>
         <location filename="../plugins/toolchains/clangRL78/src/view/clangRL78_settings_view.ui" line="+14" />
         <source>Frame</source>
-        <translation type="unfinished">Rahmen</translation>
+        <translation>Rahmen</translation>
     </message>
     <message>
         <location line="+42" />
         <source>Compiler settings </source>
-        <translation type="unfinished">Compiler-Einstellungen </translation>
+        <translation>Compiler-Einstellungen </translation>
     </message>
     <message>
         <location line="+85" />
         <source>Debugger</source>
-        <translation type="unfinished">Debugger</translation>
+        <translation>Debugger</translation>
     </message>
     <message>
         <location line="+14" />
         <source>LLDB</source>
-        <translation type="unfinished">LLDB</translation>
+        <translation>LLDB</translation>
     </message>
     <message>
         <location line="+5" />
         <source>GDB</source>
-        <translation type="unfinished">GDB</translation>
+        <translation>GDB</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Change your program's debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
-        <translation type="unfinished">Ändern Sie den Debugger Ihres Programms je nach Bedarf von LLDB zu GDB oder umgekehrt.</translation>
+        <translation>Ändern Sie den Debugger Ihres Programms je nach Bedarf von LLDB zu GDB oder umgekehrt.</translation>
     </message>
 </context>
 <context>
@@ -3271,30 +3236,27 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     </message>
     <message>
         <location line="+26" />
-        <location filename="../core/src/setup/view/configuration_frame.cpp" line="+490" />
+        <location filename="../core/src/setup/view/configuration_frame.cpp" line="+465" />
         <source>Create New Configuration</source>
         <translation>Neue Konfiguration erstellen</translation>
     </message>
     <message>
         <location line="+20" />
-        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-243" />
-        <location line="+29" />
-        <location line="+6" />
-        <location line="+334" />
+        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-218" />
+        <location line="+344" />
         <location line="+289" />
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
         <location line="+7" />
-        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-657" />
-        <location line="+29" />
+        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-632" />
         <source>Finish</source>
         <translation>Fertigstellen</translation>
     </message>
     <message>
         <location line="+9" />
-        <location filename="../core/src/setup/view/configuration_frame.cpp" line="+492" />
+        <location filename="../core/src/setup/view/configuration_frame.cpp" line="+496" />
         <source>Choose your starting point</source>
         <translation>Wählen Sie Ihren Ausgangspunkt</translation>
     </message>
@@ -3309,7 +3271,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Konfigurationsname</translation>
     </message>
     <message>
-        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-709" />
+        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-684" />
         <source>MCU</source>
         <translation>MCU</translation>
     </message>
@@ -3349,7 +3311,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>SDK</translation>
     </message>
     <message>
-        <location line="+272" />
+        <location line="+247" />
         <location line="+208" />
         <source>%1 Settings</source>
         <translation>%1-Einstellungen</translation>
@@ -3360,8 +3322,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Zieloptionen</translation>
     </message>
     <message>
-        <location line="-164" />
-        <location line="+333" />
+        <location line="+169" />
         <source>Save</source>
         <translation>Speichern</translation>
     </message>
@@ -6596,7 +6557,6 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     </message>
     <message>
         <location line="+7" />
-        <location filename="../core/src/package_manager/view/filter_widget.cpp" line="+530" />
         <source>Search...</source>
         <translation>Suchen...</translation>
     </message>
@@ -7669,7 +7629,6 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     <name>HubFilterWidget</name>
     <message>
         <location filename="../core/src/productivity_hub/common/click_filters/hub_filter_widget.ui" line="+44" />
-        <location filename="../core/src/productivity_hub/common/click_filters/hub_filter_widget.cpp" line="+215" />
         <source>Search...</source>
         <translation>Suchen...</translation>
     </message>
@@ -8035,36 +7994,31 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     </message>
     <message>
         <location line="+69" />
-        <location line="+37" />
         <source>  Explain all</source>
         <translation>  Alle erklären</translation>
     </message>
     <message>
-        <location line="-27" />
-        <location line="+24" />
+        <location line="+10" />
         <source>Toggle errors</source>
         <translation>Fehler ein-/ausblenden</translation>
     </message>
     <message>
-        <location line="-23" />
-        <location line="+24" />
+        <location line="+1" />
         <source>Toggle warnings</source>
         <translation>Warnungen ein-/ausblenden</translation>
     </message>
     <message>
-        <location line="-23" />
-        <location line="+24" />
+        <location line="+1" />
         <source>Toggle hints</source>
         <translation>Hinweise ein-/ausblenden</translation>
     </message>
     <message>
-        <location line="-23" />
-        <location line="+25" />
+        <location line="+1" />
         <source>Ask AI to analyze all issues</source>
         <translation>KI bitten, alle Probleme zu analysieren</translation>
     </message>
     <message>
-        <location line="+88" />
+        <location line="+98" />
         <source>Ask AI to analyze this issue</source>
         <translation>KI bitten, dieses Problem zu analysieren</translation>
     </message>
@@ -10709,7 +10663,7 @@ Beispiele
         <translation>Formular</translation>
     </message>
     <message>
-        <location filename="../plugins/mattermost_client/src/mattermost_view.cpp" line="+902" />
+        <location filename="../plugins/mattermost_client/src/mattermost_view.cpp" line="+900" />
         <source>Initializing NECTO Chat</source>
         <translation>NECTO Chat wird initialisiert</translation>
     </message>
@@ -10734,107 +10688,87 @@ Beispiele
         <translation>Erneut versuchen</translation>
     </message>
     <message>
-        <location line="+343" />
         <source>Start typing to begin the conversation.</source>
         <translation>Gib etwas ein, um die Unterhaltung zu beginnen.</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Direct messages</source>
         <translation>Direktnachrichten</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Messages in a specific channel</source>
         <translation>Nachrichten in einem bestimmten Kanal</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Channel type</source>
         <translation>Kanaltyp</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Messages that mention you</source>
         <translation>Nachrichten, in denen du erwähnt wirst</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Followed topics</source>
         <translation>Verfolgte Themen</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Alerted messages</source>
         <translation>Benachrichtigte Nachrichten</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Unread messages</source>
         <translation>Ungelesene Nachrichten</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Starred messages</source>
         <translation>Markierte Nachrichten</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Muted messages</source>
         <translation>Stummgeschaltete Nachrichten</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>is: dm</source>
         <translation>is: dm</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>is: starred</source>
         <translation>is: starred</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>is: mentioned</source>
         <translation>is: mentioned</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>is: followed</source>
         <translation>is: followed</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>is: alerted</source>
         <translation>is: alerted</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>is: unread</source>
         <translation>is: unread</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>is: muted</source>
         <translation>is: muted</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>channels:</source>
         <translation>channels:</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>dm:</source>
         <translation>dm:</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>channel:</source>
         <translation>channel:</translation>
     </message>
     <message>
-        <location line="+680" />
+        <location line="+934" />
         <source>Chat is not available.</source>
         <translation type="unfinished" />
     </message>
@@ -12388,6 +12322,37 @@ Beispiele
     <message>
         <source>Edit</source>
         <translation>Bearbeiten</translation>
+    </message>
+</context>
+<context>
+    <name>MonacoEditorManager</name>
+    <message>
+        <source>NECTO Code Assistant</source>
+        <translation>NECTO-Code-Assistent</translation>
+    </message>
+    <message>
+        <source>Analyzing the selected code... Your results will be ready shortly.</source>
+        <translation>Der ausgewählte Code wird analysiert... Deine Ergebnisse sind in Kürze bereit.</translation>
+    </message>
+    <message>
+        <source>Adding helpful comments to your code... Your results will be ready shortly.</source>
+        <translation>Es werden hilfreiche Kommentare zu deinem Code hinzugefügt... Deine Ergebnisse sind in Kürze bereit.</translation>
+    </message>
+    <message>
+        <source>Checking for issues and fixing them... Your results will be ready shortly.</source>
+        <translation>Es wird nach Problemen gesucht und sie werden behoben... Deine Ergebnisse sind in Kürze bereit.</translation>
+    </message>
+    <message>
+        <source>Accept</source>
+        <translation>Übernehmen</translation>
+    </message>
+    <message>
+        <source>Reject</source>
+        <translation>Ablehnen</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>Aktualisieren</translation>
     </message>
 </context>
 <context>
@@ -14107,6 +14072,33 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <message>
         <source>Save</source>
         <translation>Speichern</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::ClangRL78SettingsView</name>
+    <message>
+        <source>Frame</source>
+        <translation type="obsolete">Rahmen</translation>
+    </message>
+    <message>
+        <source>Compiler settings </source>
+        <translation type="obsolete">Compiler-Einstellungen </translation>
+    </message>
+    <message>
+        <source>Debugger</source>
+        <translation type="obsolete">Debugger</translation>
+    </message>
+    <message>
+        <source>LLDB</source>
+        <translation type="obsolete">LLDB</translation>
+    </message>
+    <message>
+        <source>GDB</source>
+        <translation type="obsolete">GDB</translation>
+    </message>
+    <message>
+        <source>Change your program's debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
+        <translation type="obsolete">Ändern Sie den Debugger Ihres Programms je nach Bedarf von LLDB zu GDB oder umgekehrt.</translation>
     </message>
 </context>
 <context>
@@ -17895,6 +17887,24 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     </message>
 </context>
 <context>
+    <name>Necto::FiltersPanel</name>
+    <message>
+        <location filename="../core/src/package_manager/view/filters_panel.cpp" line="+10" />
+        <source>Package type:</source>
+        <translation type="unfinished">Pakettyp:</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Package status:</source>
+        <translation type="unfinished">Paketstatus:</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Package category:</source>
+        <translation type="unfinished">Paketkategorie:</translation>
+    </message>
+</context>
+<context>
     <name>Necto::FindInFilesView</name>
     <message>
         <source>Form</source>
@@ -21275,7 +21285,47 @@ Beispiele
         <source>Muted messages</source>
         <translation>Stummgeschaltete Nachrichten</translation>
     </message>
-<message><source>is: muted</source><translation>is: muted</translation></message><message><source>is: alerted</source><translation>is: alerted</translation></message><message><source>channels:</source><translation>channels:</translation></message><message><source>dm:</source><translation>dm:</translation></message><message><source>channel:</source><translation>channel:</translation></message><message><source>is: followed</source><translation>is: followed</translation></message><message><source>is: unread</source><translation>is: unread</translation></message><message><source>is: dm</source><translation>is: dm</translation></message><message><source>is: mentioned</source><translation>is: mentioned</translation></message><message><source>is: starred</source><translation>is: starred</translation></message></context>
+    <message>
+        <source>is: muted</source>
+        <translation>is: muted</translation>
+    </message>
+    <message>
+        <source>is: alerted</source>
+        <translation>is: alerted</translation>
+    </message>
+    <message>
+        <source>channels:</source>
+        <translation>channels:</translation>
+    </message>
+    <message>
+        <source>dm:</source>
+        <translation>dm:</translation>
+    </message>
+    <message>
+        <source>channel:</source>
+        <translation>channel:</translation>
+    </message>
+    <message>
+        <source>is: followed</source>
+        <translation>is: followed</translation>
+    </message>
+    <message>
+        <source>is: unread</source>
+        <translation>is: unread</translation>
+    </message>
+    <message>
+        <source>is: dm</source>
+        <translation>is: dm</translation>
+    </message>
+    <message>
+        <source>is: mentioned</source>
+        <translation>is: mentioned</translation>
+    </message>
+    <message>
+        <source>is: starred</source>
+        <translation>is: starred</translation>
+    </message>
+</context>
 <context>
     <name>Necto::McuConfigStrings</name>
     <message>
@@ -23875,7 +23925,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     <message>
         <location line="+8" />
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -31019,8 +31069,7 @@ Möchten Sie die Seite neu laden?</translation>
 <context>
     <name>PackageFilterCombo</name>
     <message>
-        <location filename="../core/src/package_manager/view/package_filter_combo.cpp" line="+103" />
-        <location line="+132" />
+        <location filename="../core/src/package_manager/view/package_filter_combo.cpp" line="+134" />
         <source>All</source>
         <translation>Alle</translation>
     </message>
@@ -31030,7 +31079,7 @@ Möchten Sie die Seite neu laden?</translation>
         <translation>Mehrere</translation>
     </message>
     <message>
-        <location line="+15" />
+        <location line="+5" />
         <source>Selected filters: 
 
 </source>
@@ -31047,8 +31096,7 @@ Möchten Sie die Seite neu laden?</translation>
 </translation>
     </message>
     <message>
-        <location line="-134" />
-        <location line="+466" />
+        <location line="+323" />
         <source>Search...</source>
         <translation>Suchen...</translation>
     </message>
@@ -31994,6 +32042,13 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     </message>
 </context>
 <context>
+    <name>ProjectChatShareController</name>
+    <message>
+        <source>OK</source>
+        <translation type="obsolete">OK</translation>
+    </message>
+</context>
+<context>
     <name>ProjectEditPage</name>
     <message>
         <location filename="../core/src/project_explorer/view/project_edit_page.ui" line="+14" />
@@ -32860,7 +32915,7 @@ RAM: &gt; 48 kB</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-1053" />
+        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-1028" />
         <source>Disabled</source>
         <translation>Deaktiviert</translation>
     </message>
@@ -35286,7 +35341,6 @@ Dies reverted den Commit %2.</translation>
     </message>
     <message>
         <location line="+28" />
-        <location filename="../core/src/setup/view/filters/setup_filter_panel.cpp" line="+389" />
         <source>Search filters</source>
         <translation>Filter suchen</translation>
     </message>
@@ -35908,7 +35962,6 @@ Dies reverted den Commit %2.</translation>
         <translation> 0</translation>
     </message>
     <message>
-        <location filename="../core/src/setup/view/filters/setup_range_filter_widget.cpp" line="+55" />
         <source>MHz</source>
         <translation>MHz</translation>
     </message>
@@ -36644,19 +36697,17 @@ Diese PDF-Datei ist für die folgenden 15 Tage verfügbar, beginnend mit </trans
     <message>
         <location line="+36" />
         <location filename="../core/src/statistics_page/statistics_page.cpp" line="+31" />
-        <location line="+89" />
         <source>Share</source>
         <translation>Teilen</translation>
     </message>
     <message>
         <location line="+19" />
-        <location filename="../core/src/statistics_page/statistics_page.cpp" line="-90" />
-        <location line="+89" />
+        <location filename="../core/src/statistics_page/statistics_page.cpp" line="-1" />
         <source>Close</source>
         <translation>Schließen</translation>
     </message>
     <message>
-        <location filename="../core/src/statistics_page/statistics_page.cpp" line="-64" />
+        <location filename="../core/src/statistics_page/statistics_page.cpp" line="+25" />
         <source>Statistics</source>
         <translation>Statistiken</translation>
     </message>
@@ -36684,7 +36735,7 @@ Diese PDF-Datei ist für die folgenden 15 Tage verfügbar, beginnend mit </trans
         <translation>Link zum Statistikdokument in die Zwischenablage kopiert.</translation>
     </message>
     <message>
-        <location line="+64" />
+        <location line="+50" />
         <source>    User: </source>
         <translation>    Benutzer: </translation>
     </message>
@@ -39439,80 +39490,21 @@ Möchten Sie die Seite neu laden?</translation>
     </message>
 </context>
 <context>
-    <name>Necto::ClangRL78SettingsView</name>
+    <name>FiltersPanel</name>
     <message>
-        <location filename="../plugins/toolchains/clangRL78/src/view/clangRL78_settings_view.ui" line="+14" />
-        <source>Frame</source>
-        <translation type="unfinished">Rahmen</translation>
+        <location filename="../core/src/package_manager/view/filters_panel.cpp" line="+10" />
+        <source>Package type:</source>
+        <translation type="unfinished">Pakettyp:</translation>
     </message>
     <message>
-        <location line="+42" />
-        <source>Compiler settings </source>
-        <translation type="unfinished">Compiler-Einstellungen </translation>
+        <location line="+1" />
+        <source>Package status:</source>
+        <translation type="unfinished">Paketstatus:</translation>
     </message>
     <message>
-        <location line="+85" />
-        <source>Debugger</source>
-        <translation type="unfinished">Debugger</translation>
-    </message>
-    <message>
-        <location line="+14" />
-        <source>LLDB</source>
-        <translation type="unfinished">LLDB</translation>
-    </message>
-    <message>
-        <location line="+5" />
-        <source>GDB</source>
-        <translation type="unfinished">GDB</translation>
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Change your program's debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
-        <translation type="unfinished">Ändern Sie den Debugger Ihres Programms je nach Bedarf von LLDB zu GDB oder umgekehrt.</translation>
-    </message>
-</context>
-<context>
-    <name>ProjectChatShareController</name>
-    <message>
-        <location filename="../core/src/project_explorer/project_chat_share.cpp" line="+47" />
-        <source>A project share is already waiting in NECTO Chat — pick a receiver or cancel it first.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+9" />
-        <location line="+102" />
-        <source>NECTO Chat is not available.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-74" />
-        <source>NECTO Chat did not respond — wait for it to finish loading and try again.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+21" />
-        <source>NECTO Chat is not ready — wait for it to finish loading and try again.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+63" />
-        <source>The packed project is %1 MB; the chat server accepts up to %2 MB.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+22" />
-        <source>Attaching the project failed.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Failed to pack the project.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <location line="+1" />
+        <source>Package category:</source>
+        <translation type="unfinished">Paketkategorie:</translation>
     </message>
 </context>
 <context>
@@ -39536,6 +39528,37 @@ Möchten Sie die Seite neu laden?</translation>
         <location line="+5" />
         <source>Another share is already in progress.</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::MonacoEditorManager</name>
+    <message>
+        <source>NECTO Code Assistant</source>
+        <translation>NECTO-Code-Assistent</translation>
+    </message>
+    <message>
+        <source>Analyzing the selected code... Your results will be ready shortly.</source>
+        <translation>Der ausgewählte Code wird analysiert... Deine Ergebnisse sind in Kürze bereit.</translation>
+    </message>
+    <message>
+        <source>Adding helpful comments to your code... Your results will be ready shortly.</source>
+        <translation>Es werden hilfreiche Kommentare zu deinem Code hinzugefügt... Deine Ergebnisse sind in Kürze bereit.</translation>
+    </message>
+    <message>
+        <source>Checking for issues and fixing them... Your results will be ready shortly.</source>
+        <translation>Es wird nach Problemen gesucht und sie werden behoben... Deine Ergebnisse sind in Kürze bereit.</translation>
+    </message>
+    <message>
+        <source>Accept</source>
+        <translation>Übernehmen</translation>
+    </message>
+    <message>
+        <source>Reject</source>
+        <translation>Ablehnen</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>Aktualisieren</translation>
     </message>
 </context>
 </TS>
