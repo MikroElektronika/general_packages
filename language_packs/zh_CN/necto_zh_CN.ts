@@ -5419,7 +5419,7 @@ These settings will not be saved permanently</source>
     <message>
         <location line="+66" />
         <source>OK</source>
-        <translation type="unfinished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <location line="+1" />
@@ -6583,6 +6583,21 @@ These settings will not be saved permanently</source>
         <location line="+7" />
         <source>Search...</source>
         <translation>搜索...</translation>
+    </message>
+</context>
+<context>
+    <name>FiltersPanel</name>
+    <message>
+        <source>Package type:</source>
+        <translation type="obsolete">软件包类型：</translation>
+    </message>
+    <message>
+        <source>Package status:</source>
+        <translation type="obsolete">软件包状态：</translation>
+    </message>
+    <message>
+        <source>Package category:</source>
+        <translation type="obsolete">软件包类别：</translation>
     </message>
 </context>
 <context>
@@ -13636,6 +13651,25 @@ Do you wish to override the security check and continue ?   </source>
     </message>
 </context>
 <context>
+    <name>Necto::ChatBridgeHost</name>
+    <message>
+        <source>The chat stopped responding during the transfer.</source>
+        <translation>聊天在传输过程中停止响应。</translation>
+    </message>
+    <message>
+        <source>The chat page reloaded during the transfer.</source>
+        <translation>聊天页面在传输过程中重新加载。</translation>
+    </message>
+    <message>
+        <source>Chat is not available.</source>
+        <translation>聊天不可用。</translation>
+    </message>
+    <message>
+        <source>Another share is already in progress.</source>
+        <translation>已有其他共享正在进行。</translation>
+    </message>
+</context>
+<context>
     <name>Necto::CheckForLicenseFrame</name>
     <message>
         <source>Frame</source>
@@ -16946,7 +16980,7 @@ These settings will not be saved permanently</source>
         <source>Save as</source>
         <translation>另存为</translation>
     </message>
-</context>
+<message><source>OK</source><translation>确定</translation></message><message><source>Open in NECTO</source><translation>在 NECTO 中打开</translation></message><message><source>Download ZIP</source><translation>下载 ZIP</translation></message><message><source>Could not save the file to %1.</source><translation>无法将文件保存到 %1。</translation></message><message><source>   NECTO project detected</source><translation>   检测到 NECTO 项目</translation></message><message><source>&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Contains a NECTO project.</source><translation>&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;包含一个 NECTO 项目。</translation></message></context>
 <context>
     <name>Necto::DownloadWidget</name>
     <message>
@@ -17955,17 +17989,17 @@ These settings will not be saved permanently</source>
     <message>
         <location filename="../core/src/package_manager/view/filters_panel.cpp" line="+10" />
         <source>Package type:</source>
-        <translation type="unfinished">软件包类型：</translation>
+        <translation>软件包类型：</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Package status:</source>
-        <translation type="unfinished">软件包状态：</translation>
+        <translation>软件包状态：</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Package category:</source>
-        <translation type="unfinished">软件包类别：</translation>
+        <translation>软件包类别：</translation>
     </message>
 </context>
 <context>
@@ -21405,7 +21439,7 @@ Examples
         <source>is: followed</source>
         <translation>is: followed</translation>
     </message>
-</context>
+<message><source>Chat is not available.</source><translation>聊天不可用。</translation></message><message><source>Another share is already in progress.</source><translation>已有其他共享正在进行。</translation></message><message><source>The chat is not ready for sharing — wait for it to finish loading and try again.</source><translation>聊天尚未准备好进行共享——请等待其加载完成后重试。</translation></message><message><source>Could not read "%1".</source><translation>无法读取“%1”。</translation></message></context>
 <context>
     <name>Necto::McuConfigStrings</name>
     <message>
@@ -22714,6 +22748,37 @@ Examples
     <message>
         <source>Edit</source>
         <translation>编辑</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::MonacoEditorManager</name>
+    <message>
+        <source>NECTO Code Assistant</source>
+        <translation>NECTO 代码助手</translation>
+    </message>
+    <message>
+        <source>Analyzing the selected code... Your results will be ready shortly.</source>
+        <translation>正在分析所选代码... 结果即将准备好。</translation>
+    </message>
+    <message>
+        <source>Adding helpful comments to your code... Your results will be ready shortly.</source>
+        <translation>正在为你的代码添加有帮助的注释... 结果即将准备好。</translation>
+    </message>
+    <message>
+        <source>Checking for issues and fixing them... Your results will be ready shortly.</source>
+        <translation>正在检查问题并修复... 结果即将准备好。</translation>
+    </message>
+    <message>
+        <source>Accept</source>
+        <translation>接受</translation>
+    </message>
+    <message>
+        <source>Reject</source>
+        <translation>拒绝</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>刷新</translation>
     </message>
 </context>
 <context>
@@ -24168,7 +24233,7 @@ Please, check your spelling.</source>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
-</context>
+<message><source>OK</source><translation>确定</translation></message><message><source>Send to NECTO Chat…</source><translation>发送到 NECTO Chat…</translation></message><message><source>No NECTO project was found inside "%1".</source><translation>在“%1”中未找到 NECTO 项目。</translation></message></context>
 <context>
     <name>Necto::ProjectInfoPage</name>
     <message>
@@ -24266,7 +24331,7 @@ Please, check your spelling.</source>
         <location line="+374" />
         <location line="+57" />
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location line="-55" />
@@ -24278,7 +24343,7 @@ Please, check your spelling.</source>
         <location line="+91" />
         <location line="+10" />
         <source>OK</source>
-        <translation type="unfinished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <location line="-100" />
@@ -32183,7 +32248,7 @@ Please, check your spelling.</source>
         <source>OK</source>
         <translation type="obsolete">确定</translation>
     </message>
-</context>
+<message><source>NECTO Chat is not available.</source><translation>NECTO Chat 不可用。</translation></message><message><source>Failed to pack the project.</source><translation>打包项目失败。</translation></message><message><source>NECTO Chat is not ready — wait for it to finish loading and try again.</source><translation>NECTO Chat 尚未就绪——请等待其加载完成后重试。</translation></message><message><source>Attaching the project failed.</source><translation>附加项目失败。</translation></message><message><source>NECTO Chat did not respond — wait for it to finish loading and try again.</source><translation>NECTO Chat 没有响应——请等待其加载完成后重试。</translation></message><message><source>A project share is already waiting in NECTO Chat — pick a receiver or cancel it first.</source><translation>NECTO Chat 中已有一个项目共享正在等待——请先选择接收者或取消它。</translation></message><message><source>The packed project is %1 MB; the chat server accepts up to %2 MB.</source><translation>打包后的项目为 %1 MB；聊天服务器最多接受 %2 MB。</translation></message></context>
 <context>
     <name>ProjectEditPage</name>
     <message>
@@ -32271,7 +32336,7 @@ Please, check your spelling.</source>
     <message>
         <location line="+71" />
         <source>OK</source>
-        <translation type="unfinished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <location line="+1" />
@@ -32568,7 +32633,7 @@ Please, check your spelling.</source>
         <source>Open Recent File</source>
         <translation>打开最近文件</translation>
     </message>
-</context>
+<message><source>"%1" contains a NECTO project. Open it as a NECTO project?</source><translation>“%1”包含一个 NECTO 项目。是否作为 NECTO 项目打开？</translation></message><message><source>Importing project %1</source><translation>正在导入项目 %1</translation></message><message><source>Cancel</source><translation>取消</translation></message><message><source>Folder "%1" already exists in %2.</source><translation>文件夹“%1”在 %2 中已存在。</translation></message><message><source>OK</source><translation>确定</translation></message><message><source>Could not create a temporary folder in %1.</source><translation>无法在 %1 中创建临时文件夹。</translation></message><message><source>Failed to extract "%1".</source><translation>解压“%1”失败。</translation></message><message><source>Failed to read "%1".</source><translation>读取“%1”失败。</translation></message><message><source>Could not move the extracted project to %1.</source><translation>无法将解压后的项目移动到 %1。</translation></message><message><source>Use "%1"</source><translation>使用“%1”</translation></message><message><source>No NECTO project was found inside "%1".</source><translation>在“%1”中未找到 NECTO 项目。</translation></message></context>
 <context>
     <name>ProjectNamePage</name>
     <message>
@@ -39679,78 +39744,6 @@ Do you want to reload the page ?</source>
         <location line="+6" />
         <source>Configure %1:</source>
         <translation>配置 %1：</translation>
-    </message>
-</context>
-<context>
-    <name>Necto::MonacoEditorManager</name>
-    <message>
-        <source>NECTO Code Assistant</source>
-        <translation>NECTO 代码助手</translation>
-    </message>
-    <message>
-        <source>Analyzing the selected code... Your results will be ready shortly.</source>
-        <translation>正在分析所选代码... 结果即将准备好。</translation>
-    </message>
-    <message>
-        <source>Adding helpful comments to your code... Your results will be ready shortly.</source>
-        <translation>正在为你的代码添加有帮助的注释... 结果即将准备好。</translation>
-    </message>
-    <message>
-        <source>Checking for issues and fixing them... Your results will be ready shortly.</source>
-        <translation>正在检查问题并修复... 结果即将准备好。</translation>
-    </message>
-    <message>
-        <source>Accept</source>
-        <translation>接受</translation>
-    </message>
-    <message>
-        <source>Reject</source>
-        <translation>拒绝</translation>
-    </message>
-    <message>
-        <source>Refresh</source>
-        <translation>刷新</translation>
-    </message>
-</context>
-<context>
-    <name>FiltersPanel</name>
-    <message>
-        <location filename="../core/src/package_manager/view/filters_panel.cpp" line="+10" />
-        <source>Package type:</source>
-        <translation type="unfinished">软件包类型：</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Package status:</source>
-        <translation type="unfinished">软件包状态：</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Package category:</source>
-        <translation type="unfinished">软件包类别：</translation>
-    </message>
-</context>
-<context>
-    <name>Necto::ChatBridgeHost</name>
-    <message>
-        <location filename="../plugins/mattermost_client/src/chat_bridge_host.cpp" line="+21" />
-        <source>The chat stopped responding during the transfer.</source>
-        <translation>聊天在传输过程中停止响应。</translation>
-    </message>
-    <message>
-        <location line="+18" />
-        <source>The chat page reloaded during the transfer.</source>
-        <translation>聊天页面在传输过程中重新加载。</translation>
-    </message>
-    <message>
-        <location line="+34" />
-        <source>Chat is not available.</source>
-        <translation>聊天不可用。</translation>
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Another share is already in progress.</source>
-        <translation>已有其他共享正在进行。</translation>
     </message>
 </context>
 </TS>

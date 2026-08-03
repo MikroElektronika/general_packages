@@ -5395,7 +5395,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     <message>
         <location line="+66" />
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location line="+1" />
@@ -6559,6 +6559,21 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <location line="+7" />
         <source>Search...</source>
         <translation>Suchen...</translation>
+    </message>
+</context>
+<context>
+    <name>FiltersPanel</name>
+    <message>
+        <source>Package type:</source>
+        <translation type="obsolete">Pakettyp:</translation>
+    </message>
+    <message>
+        <source>Package status:</source>
+        <translation type="obsolete">Paketstatus:</translation>
+    </message>
+    <message>
+        <source>Package category:</source>
+        <translation type="obsolete">Paketkategorie:</translation>
     </message>
 </context>
 <context>
@@ -13596,6 +13611,25 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     </message>
 </context>
 <context>
+    <name>Necto::ChatBridgeHost</name>
+    <message>
+        <source>The chat stopped responding during the transfer.</source>
+        <translation>Der Chat hat während der Übertragung nicht mehr reagiert.</translation>
+    </message>
+    <message>
+        <source>The chat page reloaded during the transfer.</source>
+        <translation>Die Chat-Seite wurde während der Übertragung neu geladen.</translation>
+    </message>
+    <message>
+        <source>Chat is not available.</source>
+        <translation>Chat ist nicht verfügbar.</translation>
+    </message>
+    <message>
+        <source>Another share is already in progress.</source>
+        <translation>Eine andere Freigabe läuft bereits.</translation>
+    </message>
+</context>
+<context>
     <name>Necto::CheckForLicenseFrame</name>
     <message>
         <source>Frame</source>
@@ -16882,7 +16916,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <source>Save as</source>
         <translation>Speichern unter</translation>
     </message>
-</context>
+<message><source>&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Contains a NECTO project.</source><translation>&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Enthält ein NECTO-Projekt.</translation></message><message><source>   NECTO project detected</source><translation>   NECTO-Projekt erkannt</translation></message><message><source>Could not save the file to %1.</source><translation>Die Datei konnte nicht unter %1 gespeichert werden.</translation></message><message><source>OK</source><translation>OK</translation></message><message><source>Open in NECTO</source><translation>In NECTO öffnen</translation></message><message><source>Download ZIP</source><translation>ZIP herunterladen</translation></message></context>
 <context>
     <name>Necto::DownloadWidget</name>
     <message>
@@ -17891,17 +17925,17 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     <message>
         <location filename="../core/src/package_manager/view/filters_panel.cpp" line="+10" />
         <source>Package type:</source>
-        <translation type="unfinished">Pakettyp:</translation>
+        <translation>Pakettyp:</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Package status:</source>
-        <translation type="unfinished">Paketstatus:</translation>
+        <translation>Paketstatus:</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Package category:</source>
-        <translation type="unfinished">Paketkategorie:</translation>
+        <translation>Paketkategorie:</translation>
     </message>
 </context>
 <context>
@@ -21325,7 +21359,7 @@ Beispiele
         <source>is: starred</source>
         <translation>is: starred</translation>
     </message>
-</context>
+<message><source>The chat is not ready for sharing — wait for it to finish loading and try again.</source><translation>Der Chat ist noch nicht bereit für die Freigabe — warten Sie, bis er vollständig geladen ist, und versuchen Sie es erneut.</translation></message><message><source>Could not read "%1".</source><translation>"%1" konnte nicht gelesen werden.</translation></message><message><source>Another share is already in progress.</source><translation>Eine andere Freigabe läuft bereits.</translation></message><message><source>Chat is not available.</source><translation>Chat ist nicht verfügbar.</translation></message></context>
 <context>
     <name>Necto::McuConfigStrings</name>
     <message>
@@ -22634,6 +22668,37 @@ Beispiele
     <message>
         <source>Edit</source>
         <translation>Bearbeiten</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::MonacoEditorManager</name>
+    <message>
+        <source>NECTO Code Assistant</source>
+        <translation>NECTO-Code-Assistent</translation>
+    </message>
+    <message>
+        <source>Analyzing the selected code... Your results will be ready shortly.</source>
+        <translation>Der ausgewählte Code wird analysiert... Deine Ergebnisse sind in Kürze bereit.</translation>
+    </message>
+    <message>
+        <source>Adding helpful comments to your code... Your results will be ready shortly.</source>
+        <translation>Es werden hilfreiche Kommentare zu deinem Code hinzugefügt... Deine Ergebnisse sind in Kürze bereit.</translation>
+    </message>
+    <message>
+        <source>Checking for issues and fixing them... Your results will be ready shortly.</source>
+        <translation>Es wird nach Problemen gesucht und sie werden behoben... Deine Ergebnisse sind in Kürze bereit.</translation>
+    </message>
+    <message>
+        <source>Accept</source>
+        <translation>Übernehmen</translation>
+    </message>
+    <message>
+        <source>Reject</source>
+        <translation>Ablehnen</translation>
+    </message>
+    <message>
+        <source>Refresh</source>
+        <translation>Aktualisieren</translation>
     </message>
 </context>
 <context>
@@ -24088,7 +24153,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <source>Stop</source>
         <translation>Stopp</translation>
     </message>
-</context>
+<message><source>OK</source><translation>OK</translation></message><message><source>Send to NECTO Chat…</source><translation>An NECTO Chat senden…</translation></message><message><source>No NECTO project was found inside "%1".</source><translation>In "%1" wurde kein NECTO-Projekt gefunden.</translation></message></context>
 <context>
     <name>Necto::ProjectInfoPage</name>
     <message>
@@ -24186,7 +24251,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <location line="+374" />
         <location line="+57" />
         <source>Cancel</source>
-        <translation type="unfinished">Abbrechen</translation>
+        <translation>Abbrechen</translation>
     </message>
     <message>
         <location line="-55" />
@@ -24198,7 +24263,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <location line="+91" />
         <location line="+10" />
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location line="-100" />
@@ -32047,7 +32112,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <source>OK</source>
         <translation type="obsolete">OK</translation>
     </message>
-</context>
+<message><source>Attaching the project failed.</source><translation>Das Anhängen des Projekts ist fehlgeschlagen.</translation></message><message><source>The packed project is %1 MB; the chat server accepts up to %2 MB.</source><translation>Das gepackte Projekt ist %1 MB groß; der Chat-Server akzeptiert bis zu %2 MB.</translation></message><message><source>NECTO Chat did not respond — wait for it to finish loading and try again.</source><translation>NECTO Chat hat nicht reagiert — warten Sie, bis es vollständig geladen ist, und versuchen Sie es erneut.</translation></message><message><source>NECTO Chat is not ready — wait for it to finish loading and try again.</source><translation>NECTO Chat ist noch nicht bereit — warten Sie, bis es vollständig geladen ist, und versuchen Sie es erneut.</translation></message><message><source>Failed to pack the project.</source><translation>Das Packen des Projekts ist fehlgeschlagen.</translation></message><message><source>A project share is already waiting in NECTO Chat — pick a receiver or cancel it first.</source><translation>Eine Projektfreigabe wartet bereits im NECTO Chat — wählen Sie einen Empfänger aus oder brechen Sie sie zuerst ab.</translation></message><message><source>NECTO Chat is not available.</source><translation>NECTO Chat ist nicht verfügbar.</translation></message></context>
 <context>
     <name>ProjectEditPage</name>
     <message>
@@ -32135,7 +32200,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     <message>
         <location line="+71" />
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location line="+1" />
@@ -32432,7 +32497,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <source>Open Recent File</source>
         <translation>Zuletzt verwendete Datei öffnen</translation>
     </message>
-</context>
+<message><source>Failed to extract "%1".</source><translation>"%1" konnte nicht extrahiert werden.</translation></message><message><source>Cancel</source><translation>Abbrechen</translation></message><message><source>OK</source><translation>OK</translation></message><message><source>Use "%1"</source><translation>"%1" verwenden</translation></message><message><source>Failed to read "%1".</source><translation>"%1" konnte nicht gelesen werden.</translation></message><message><source>Could not create a temporary folder in %1.</source><translation>Es konnte kein temporärer Ordner in %1 erstellt werden.</translation></message><message><source>Importing project %1</source><translation>Projekt %1 wird importiert</translation></message><message><source>No NECTO project was found inside "%1".</source><translation>In "%1" wurde kein NECTO-Projekt gefunden.</translation></message><message><source>"%1" contains a NECTO project. Open it as a NECTO project?</source><translation>"%1" enthält ein NECTO-Projekt. Als NECTO-Projekt öffnen?</translation></message><message><source>Could not move the extracted project to %1.</source><translation>Das extrahierte Projekt konnte nicht nach %1 verschoben werden.</translation></message><message><source>Folder "%1" already exists in %2.</source><translation>Der Ordner "%1" existiert bereits in %2.</translation></message></context>
 <context>
     <name>ProjectNamePage</name>
     <message>
@@ -39487,78 +39552,6 @@ Möchten Sie die Seite neu laden?</translation>
         <location line="+6" />
         <source>Configure %1:</source>
         <translation>%1 konfigurieren:</translation>
-    </message>
-</context>
-<context>
-    <name>FiltersPanel</name>
-    <message>
-        <location filename="../core/src/package_manager/view/filters_panel.cpp" line="+10" />
-        <source>Package type:</source>
-        <translation type="unfinished">Pakettyp:</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Package status:</source>
-        <translation type="unfinished">Paketstatus:</translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Package category:</source>
-        <translation type="unfinished">Paketkategorie:</translation>
-    </message>
-</context>
-<context>
-    <name>Necto::ChatBridgeHost</name>
-    <message>
-        <location filename="../plugins/mattermost_client/src/chat_bridge_host.cpp" line="+21" />
-        <source>The chat stopped responding during the transfer.</source>
-        <translation>Der Chat hat während der Übertragung nicht mehr reagiert.</translation>
-    </message>
-    <message>
-        <location line="+18" />
-        <source>The chat page reloaded during the transfer.</source>
-        <translation>Die Chat-Seite wurde während der Übertragung neu geladen.</translation>
-    </message>
-    <message>
-        <location line="+34" />
-        <source>Chat is not available.</source>
-        <translation>Chat ist nicht verfügbar.</translation>
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Another share is already in progress.</source>
-        <translation>Eine andere Freigabe läuft bereits.</translation>
-    </message>
-</context>
-<context>
-    <name>Necto::MonacoEditorManager</name>
-    <message>
-        <source>NECTO Code Assistant</source>
-        <translation>NECTO-Code-Assistent</translation>
-    </message>
-    <message>
-        <source>Analyzing the selected code... Your results will be ready shortly.</source>
-        <translation>Der ausgewählte Code wird analysiert... Deine Ergebnisse sind in Kürze bereit.</translation>
-    </message>
-    <message>
-        <source>Adding helpful comments to your code... Your results will be ready shortly.</source>
-        <translation>Es werden hilfreiche Kommentare zu deinem Code hinzugefügt... Deine Ergebnisse sind in Kürze bereit.</translation>
-    </message>
-    <message>
-        <source>Checking for issues and fixing them... Your results will be ready shortly.</source>
-        <translation>Es wird nach Problemen gesucht und sie werden behoben... Deine Ergebnisse sind in Kürze bereit.</translation>
-    </message>
-    <message>
-        <source>Accept</source>
-        <translation>Übernehmen</translation>
-    </message>
-    <message>
-        <source>Reject</source>
-        <translation>Ablehnen</translation>
-    </message>
-    <message>
-        <source>Refresh</source>
-        <translation>Aktualisieren</translation>
     </message>
 </context>
 </TS>
