@@ -1,0 +1,148 @@
+name: Database main report
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      base_ref:
+        description: 'Git ref to compare against when testing manually'
+        required: true
+        default: 'origin/main'
+      send_mattermost:
+        description: 'Send the generated report to Mattermost during this manual test'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout selected ref
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Resolve previous commit
+        id: base
+        shell: bash
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = 'workflow_dispatch' ]; then
+            git fetch origin main
+            BASE='${{ inputs.base_ref }}'
+          else
+            BASE='${{ github.event.before }}'
+          fi
+
+          if [ -z "$BASE" ] || [ "$BASE" = '0000000000000000000000000000000000000000' ] || ! git rev-parse --verify "$BASE^{commit}" >/dev/null 2>&1; then
+            BASE="$(git rev-parse HEAD^)"
+          else
+            BASE="$(git rev-parse "$BASE^{commit}")"
+          fi
+
+          echo "sha=$BASE" >> "$GITHUB_OUTPUT"
+          echo "Comparing $BASE -> $GITHUB_SHA"
+
+      - name: Detect database changes in this push
+        id: db-changes
+        shell: bash
+        run: |
+          if git diff --quiet '${{ steps.base.outputs.sha }}' "$GITHUB_SHA" -- \
+            utils/databases/database_live/necto_db.db \
+            utils/databases/database_dev/necto_db.db \
+            utils/databases/database_experimental/necto_db.db; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No NECTO database changes in this push." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Validate SQLite databases
+        if: steps.db-changes.outputs.changed == 'true'
+        run: python3 scripts/database/validate_databases.py .
+
+      - name: Materialize previous databases once
+        if: steps.db-changes.outputs.changed == 'true'
+        run: |
+          rm -rf .db-base
+          python3 scripts/database/snapshot_git_databases.py \
+            --ref '${{ steps.base.outputs.sha }}' \
+            --output .db-base
+
+      - name: Verify channel propagation on main
+        id: sync
+        if: steps.db-changes.outputs.changed == 'true'
+        continue-on-error: true
+        shell: bash
+        run: |
+          rm -rf .db-sync-preview reports
+          mkdir -p reports
+          python3 scripts/database/sync_database_channels.py \
+            --base-root .db-base \
+            --preview-dir .db-sync-preview \
+            --report reports/database-sync.md
+
+      - name: Generate row-level change reports
+        id: diff
+        if: steps.db-changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          mkdir -p reports
+          python3 scripts/database/db_diff.py \
+            --base-root .db-base \
+            --new-root . \
+            --json reports/database-diff.json \
+            --markdown reports/database-diff-mattermost.md \
+            --full-markdown reports/database-diff-full.md \
+            --detail-limit 100 \
+            --title 'Changes applied to NECTO databases on main'
+
+          cat reports/database-diff-mattermost.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Prepare Mattermost message
+        if: steps.db-changes.outputs.changed == 'true' && steps.diff.outputs.has_changes == 'true'
+        shell: bash
+        run: |
+          {
+            if [ '${{ steps.sync.outcome }}' != 'success' ]; then
+              echo '## ⚠️ Database inheritance warning'
+              echo
+              echo 'Main contains a Live/Development change that is not fully propagated downstream, or a propagation conflict exists.'
+              echo
+              if [ -f reports/database-sync.md ]; then cat reports/database-sync.md; fi
+              echo
+            fi
+            cat reports/database-diff-mattermost.md
+          } > reports/mattermost-message.md
+
+      - name: Send DB changes to Mattermost
+        if: steps.db-changes.outputs.changed == 'true' && steps.diff.outputs.has_changes == 'true' && (github.event_name == 'push' || inputs.send_mattermost == true)
+        env:
+          MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_WEBHOOK_URL_GENERAL_PACKAGES }}
+          DB_COMMIT_MESSAGE: ${{ github.event.head_commit.message || 'Manual database report test' }}
+        run: |
+          python3 scripts/database/send_mattermost.py \
+            --report reports/mattermost-message.md \
+            --title 'NECTO database update on main'
+
+      - name: Upload complete uncapped change report
+        if: always() && steps.db-changes.outputs.changed == 'true' 
+        uses: actions/upload-artifact@v4
+        with:
+          name: database-main-report-${{ github.sha }}
+          path: reports/
+          retention-days: 90
+
+      - name: Fail if main DB inheritance is inconsistent
+        if: always() && steps.db-changes.outputs.changed == 'true' 
+        shell: bash
+        run: |
+          if [ '${{ steps.sync.outcome }}' != 'success' ]; then
+            echo 'Live -> Development -> Experimental inheritance is inconsistent.'
+            exit 1
+          fi

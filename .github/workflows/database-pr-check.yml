@@ -1,0 +1,144 @@
+name: Database PR check
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'utils/databases/**'
+      - 'scripts/database/**'
+      - '.github/workflows/database-*.yml'
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  database-diff:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Validate SQLite databases
+        run: python3 scripts/database/validate_databases.py .
+
+      - name: Materialize PR base databases once
+        run: |
+          rm -rf .db-base
+          python3 scripts/database/snapshot_git_databases.py \
+            --ref '${{ github.event.pull_request.base.sha }}' \
+            --output .db-base
+
+      - name: Preview Live -> Development -> Experimental propagation
+        id: sync
+        continue-on-error: true
+        shell: bash
+        run: |
+          rm -rf .db-sync-preview reports
+          mkdir -p reports
+          python3 scripts/database/sync_database_channels.py \
+            --base-root .db-base \
+            --preview-dir .db-sync-preview \
+            --report reports/database-sync.md
+
+      - name: Generate complete DB diff against PR base
+        id: diff
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p reports
+          # The preview contains the PR DBs plus any inherited downstream changes
+          # that the PR still needs to commit.
+          NEW_ROOT='.'
+          if [ -f .db-sync-preview/utils/databases/database_live/necto_db.db ]; then
+            NEW_ROOT='.db-sync-preview'
+          fi
+
+          python3 scripts/database/db_diff.py \
+            --base-root .db-base \
+            --new-root "$NEW_ROOT" \
+            --json reports/database-diff.json \
+            --markdown reports/database-diff-comment.md \
+            --full-markdown reports/database-diff-full.md \
+            --detail-limit 35 \
+            --title 'NECTO database changes in this PR'
+
+      - name: Build PR comment
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo '<!-- necto-db-diff -->'
+            echo '# 🗄️ NECTO database CI'
+            echo
+            if [ -f reports/database-sync.md ]; then
+              cat reports/database-sync.md
+            else
+              echo '## Database channel synchronization'
+              echo
+              echo '**Synchronization failed before a report could be created. Check the workflow log for a merge conflict.**'
+              echo
+            fi
+            if [ -f reports/database-diff-comment.md ]; then
+              cat reports/database-diff-comment.md
+            fi
+          } > reports/pr-comment.md
+
+          # GitHub comments have a size limit. The complete report remains an artifact.
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('reports/pr-comment.md')
+          text = p.read_text(encoding='utf-8')
+          limit = 60000
+          if len(text) > limit:
+              text = text[:limit] + '\n\n… comment truncated; see the `database-pr-report` artifact for the complete row diff.\n'
+              p.write_text(text, encoding='utf-8')
+          PY
+
+          cat reports/pr-comment.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Create or update PR database comment
+        if: always() && github.event.pull_request.head.repo.full_name == github.repository
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const marker = '<!-- necto-db-diff -->';
+            const body = fs.readFileSync('reports/pr-comment.md', 'utf8');
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner, repo, issue_number, per_page: 100
+            });
+            const previous = comments.find(c => c.user.type === 'Bot' && c.body.includes(marker));
+            if (previous) {
+              await github.rest.issues.updateComment({ owner, repo, comment_id: previous.id, body });
+            } else {
+              await github.rest.issues.createComment({ owner, repo, issue_number, body });
+            }
+
+      - name: Upload complete database diff
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: database-pr-report
+          path: reports/
+          retention-days: 30
+
+      - name: Require propagated downstream DBs in the PR
+        if: always()
+        shell: bash
+        run: |
+          if [ '${{ steps.sync.outcome }}' != 'success' ]; then
+            echo 'Database channel synchronization is missing or has a conflict.'
+            echo 'Run:'
+            echo '  git fetch origin main'
+            echo '  python3 scripts/database/sync_database_channels.py --base-ref origin/main --write'
+            echo 'Then commit utils/databases/database_dev/necto_db.db and/or utils/databases/database_experimental/necto_db.db.'
+            exit 1
+          fi
