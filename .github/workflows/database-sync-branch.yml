@@ -1,0 +1,49 @@
+name: Synchronize database channels
+
+on:
+  workflow_dispatch:
+    inputs:
+      base_ref:
+        description: 'Base ref to calculate changes from'
+        required: true
+        default: 'origin/main'
+
+permissions:
+  contents: write
+
+jobs:
+  synchronize:
+    # Run this workflow on the PR/source branch selected in the GitHub UI.
+    if: github.ref_name != 'main'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout selected branch
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Fetch main
+        run: git fetch origin main
+
+      - name: Propagate Live -> Development -> Experimental
+        run: |
+          python3 scripts/database/sync_database_channels.py \
+            --base-ref '${{ inputs.base_ref }}' \
+            --write \
+            --report database-sync-report.md
+
+      - name: Commit propagated DB files
+        shell: bash
+        run: |
+          if git diff --quiet -- utils/databases/database_dev/necto_db.db utils/databases/database_experimental/necto_db.db; then
+            echo 'Nothing to synchronize.'
+            exit 0
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add utils/databases/database_dev/necto_db.db utils/databases/database_experimental/necto_db.db
+          git commit -m 'db: propagate channel changes'
+          git push
