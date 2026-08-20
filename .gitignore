@@ -2,3 +2,7 @@
 tmp
 .vscode
 scripts/__pycache__
+.db-base/
+.db-sync-preview/
+reports/
+database-sync-report.md

@@ -141,32 +141,65 @@ def handle_lvgl_package(token, manifest):
     return f'tmp/lvgl_processing/{lvgl_folder}', lvgl_version
 
 
+def handle_database_package(manifest):
+    # Handle the asset strucure
+    queries_folder = 'utils/databases/queries'
+    database_type = ''
+    dest_folder = 'tmp/database'
+    if '_dev' in manifest['source_folder']:
+        dest_folder = 'tmp/database_dev'
+        database_type = '_dev'
+    elif '_experimental' in manifest['source_folder']:
+        dest_folder = 'tmp/database_experimental'
+        database_type = '_experimental'
+    os.makedirs(dest_folder, exist_ok=True)
+    shutil.copyfile(f'{manifest['source_folder']}/necto_db.db', f'{dest_folder}/necto_db.db')
+    shutil.copytree(queries_folder, f'{dest_folder}/queries')
+
+    return dest_folder, database_type
+
+
 def pack_found_packages(token, metadata, output_dir):
     release_assets_dir = output_dir / "release_assets"
     release_assets_dir.mkdir(parents=True, exist_ok=True)
 
     # Pre-processing metadata to handle LVGL packages
     lvgl_packages = {}
-    delete_lvgl_packages = []
+    database_packages = {}
+    delete_packages = []
     for package_name, manifest in metadata.items():
-        if '{VERSION}' not in package_name:
+        if '{VERSION}' not in package_name and 'database' not in package_name:
             continue
 
         print(f"\033[94mPre-processing: {package_name}\033[0m")
 
-        source_folder, lvgl_version = handle_lvgl_package(token, manifest)
-        for field in manifest:
-            if isinstance(manifest[field], str) and '{VERSION}' in manifest[field]:
-                manifest[field] = manifest[field].replace('{VERSION}', lvgl_version)
-        manifest['source_folder'] = source_folder
-        delete_lvgl_packages.append(package_name)
-        package_name = package_name.replace('{VERSION}', lvgl_version)
-        del manifest['requires_lvgl_processing']
-        lvgl_packages[package_name] = manifest
+        if 'requires_lvgl_processing' in manifest:
+            # LVGL pre-processing to add templates and SDK LCGL into the package
+            source_folder, lvgl_version = handle_lvgl_package(token, manifest)
+            for field in manifest:
+                if isinstance(manifest[field], str) and '{VERSION}' in manifest[field]:
+                    manifest[field] = manifest[field].replace('{VERSION}', lvgl_version)
+            manifest['source_folder'] = source_folder
+            delete_packages.append(package_name)
+            package_name = package_name.replace('{VERSION}', lvgl_version)
+            del manifest['requires_lvgl_processing']
+            lvgl_packages[package_name] = manifest
+        else:
+            # Database pre-processing to add queries to each database package
+            source_folder, database_type = handle_database_package(manifest)
+            for field in manifest:
+                if isinstance(manifest[field], str) and '{VERSION}' in manifest[field]:
+                    manifest[field] = manifest[field].replace('{VERSION}', database_type)
+            manifest['source_folder'] = source_folder
+            delete_packages.append(package_name)
+            package_name = package_name.replace('{VERSION}', database_type)
+            del manifest['requires_database_processing']
+            database_packages[package_name] = manifest
 
-    for lvgl_package_to_remove in delete_lvgl_packages:
+    for lvgl_package_to_remove in delete_packages:
         del metadata[lvgl_package_to_remove]
     metadata.update(lvgl_packages)
+    metadata.update(database_packages)
 
     for package_name, manifest in metadata.items():
         source_folder = Path(manifest["source_folder"]).resolve()
