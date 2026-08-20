@@ -191,7 +191,7 @@ def row_id(row: Mapping[str, Any], pk: Sequence[str]) -> str:
     return ", ".join(f"{c}={compact_json(row.get(c))}" for c in keys)
 
 
-def render_markdown(report: Dict[str, Any], detail_limit: int, title: str) -> str:
+def render_markdown(report: Dict[str, Any], detail_limit: int, title: str, collapsible_tables: bool = False) -> str:
     lines = [f"## {title}", ""]
     if not any(d["changed"] for d in report["databases"]):
         return "\n".join(lines + ["No logical database changes detected.", ""])
@@ -209,7 +209,18 @@ def render_markdown(report: Dict[str, Any], detail_limit: int, title: str) -> st
         lines.append("")
 
         for t in db["tables"]:
-            lines += [f"#### `{t['table']}`", ""]
+            added_count = len(t["added"])
+            removed_count = len(t["removed"])
+            updated_count = len(t["updated"])
+            if collapsible_tables:
+                lines += [
+                    "<details>",
+                    f"<summary><strong>{t['table']}</strong> — +{added_count} / -{removed_count} / ~{updated_count}</summary>",
+                    "",
+                ]
+            else:
+                lines += [f"#### `{t['table']}`", ""]
+
             if t.get("row_diff_skipped"):
                 lines.append(f"- Row-level diff skipped: `{t['row_diff_skipped']}`")
             if t["schema_status"] != "unchanged":
@@ -243,6 +254,8 @@ def render_markdown(report: Dict[str, Any], detail_limit: int, title: str) -> st
                 if more:
                     lines.append(f"  - … {more} more updated row(s) in full artifact")
             lines.append("")
+            if collapsible_tables:
+                lines += ["</details>", ""]
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -266,6 +279,8 @@ def main() -> int:
     p.add_argument("--full-markdown", type=Path)
     p.add_argument("--detail-limit", type=int, default=50)
     p.add_argument("--title", default="NECTO database changes")
+    p.add_argument("--collapsible-tables", action="store_true",
+                   help="wrap each changed table in GitHub <details>/<summary> markup")
     args = p.parse_args()
 
     new_paths = current_database_paths(args.new_root.resolve())
@@ -288,10 +303,10 @@ def main() -> int:
     args.json.parent.mkdir(parents=True, exist_ok=True)
     args.markdown.parent.mkdir(parents=True, exist_ok=True)
     args.json.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
-    args.markdown.write_text(render_markdown(report, args.detail_limit, args.title), encoding="utf-8")
+    args.markdown.write_text(render_markdown(report, args.detail_limit, args.title, args.collapsible_tables), encoding="utf-8")
     if args.full_markdown:
         args.full_markdown.parent.mkdir(parents=True, exist_ok=True)
-        args.full_markdown.write_text(render_markdown(report, 0, args.title), encoding="utf-8")
+        args.full_markdown.write_text(render_markdown(report, 0, args.title, args.collapsible_tables), encoding="utf-8")
     write_github_output(report)
     return 0
 
