@@ -99,26 +99,24 @@ jobs:
             --json reports/database-diff.json \
             --markdown reports/database-diff-mattermost.md \
             --full-markdown reports/database-diff-full.md \
-            --detail-limit 100 \
+            --detail-limit 35 \
+            --collapsible-tables \
             --title 'Changes applied to NECTO databases on main'
 
           cat reports/database-diff-mattermost.md >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Prepare Mattermost message
+      - name: Prepare Mattermost prefix
         if: steps.db-changes.outputs.changed == 'true' && steps.diff.outputs.has_changes == 'true'
         shell: bash
         run: |
-          {
-            if [ '${{ steps.sync.outcome }}' != 'success' ]; then
-              echo '## ⚠️ Database inheritance warning'
+          : > reports/mattermost-prefix.md
+          if [ '${{ steps.sync.outcome }}' != 'success' ]; then
+            {
+              echo '### ⚠️ Database inheritance warning'
               echo
-              echo 'Main contains a Live/Development change that is not fully propagated downstream, or a propagation conflict exists.'
-              echo
-              if [ -f reports/database-sync.md ]; then cat reports/database-sync.md; fi
-              echo
-            fi
-            cat reports/database-diff-mattermost.md
-          } > reports/mattermost-message.md
+              echo 'Main contains a Live/Development change that is not fully propagated downstream, or a propagation conflict exists. See the Actions run for the synchronization report.'
+            } > reports/mattermost-prefix.md
+          fi
 
       - name: Send DB changes to Mattermost
         if: steps.db-changes.outputs.changed == 'true' && steps.diff.outputs.has_changes == 'true' && (github.event_name == 'push' || inputs.send_mattermost == true)
@@ -127,7 +125,8 @@ jobs:
           DB_COMMIT_MESSAGE: ${{ github.event.head_commit.message || 'Manual database report test' }}
         run: |
           python3 scripts/database/send_mattermost.py \
-            --report reports/mattermost-message.md \
+            --json-report reports/database-diff.json \
+            --prefix-report reports/mattermost-prefix.md \
             --title 'NECTO database update on main'
 
       - name: Upload complete uncapped change report

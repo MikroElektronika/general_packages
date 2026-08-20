@@ -65,7 +65,8 @@ jobs:
             --json reports/database-diff.json \
             --markdown reports/database-diff-comment.md \
             --full-markdown reports/database-diff-full.md \
-            --detail-limit 35 \
+            --detail-limit 5 \
+            --collapsible-tables \
             --title 'NECTO database changes in this PR'
 
       - name: Build PR comment
@@ -89,15 +90,51 @@ jobs:
             fi
           } > reports/pr-comment.md
 
-          # GitHub comments have a size limit. The complete report remains an artifact.
+          # Verify that any detailed DB report is actually using GitHub's
+          # <details>/<summary> markup. This prevents an older/plain renderer from
+          # silently flooding the PR comment again.
           python3 - <<'PY'
+          import json
           from pathlib import Path
+
+          diff_json = Path('reports/database-diff.json')
+          diff_md = Path('reports/database-diff-comment.md')
+          if diff_json.exists() and diff_md.exists():
+              report = json.loads(diff_json.read_text(encoding='utf-8'))
+              has_tables = any(db.get('tables') for db in report.get('databases', []))
+              text = diff_md.read_text(encoding='utf-8')
+              if has_tables and '<details>' not in text:
+                  raise SystemExit('Generated PR database report is not collapsible: <details> markup is missing.')
+
+          # GitHub issue comments are limited to about 65k characters. Do not cut
+          # through a <details> block because that breaks folding. With detail-limit=5
+          # the comment should normally remain below the limit; if it does not, post
+          # only the compact table summaries and keep all row details in the artifact.
           p = Path('reports/pr-comment.md')
           text = p.read_text(encoding='utf-8')
           limit = 60000
           if len(text) > limit:
-              text = text[:limit] + '\n\n… comment truncated; see the `database-pr-report` artifact for the complete row diff.\n'
-              p.write_text(text, encoding='utf-8')
+              sync = Path('reports/database-sync.md').read_text(encoding='utf-8') if Path('reports/database-sync.md').exists() else ''
+              report = json.loads(Path('reports/database-diff.json').read_text(encoding='utf-8'))
+              lines = [
+                  '<!-- necto-db-diff -->',
+                  '# 🗄️ NECTO database CI',
+                  '',
+                  sync.rstrip(),
+                  '',
+                  '## NECTO database changes in this PR',
+                  '',
+                  '> Row details were omitted from this PR comment because it exceeded the GitHub comment-size limit. The complete report is in the `database-pr-report` artifact.',
+                  '',
+              ]
+              for db in report.get('databases', []):
+                  if not db.get('changed'):
+                      continue
+                  lines += [f"### {db['channel'].upper()} — `{db['path']}`", '', '| Table | Added | Removed | Updated |', '|---|---:|---:|---:|']
+                  for t in db.get('tables', []):
+                      lines.append(f"| `{t['table']}` | {len(t['added'])} | {len(t['removed'])} | {len(t['updated'])} |")
+                  lines.append('')
+              p.write_text('\n'.join(lines).rstrip() + '\n', encoding='utf-8')
           PY
 
           cat reports/pr-comment.md >> "$GITHUB_STEP_SUMMARY"

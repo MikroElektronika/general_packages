@@ -191,7 +191,7 @@ def row_id(row: Mapping[str, Any], pk: Sequence[str]) -> str:
     return ", ".join(f"{c}={compact_json(row.get(c))}" for c in keys)
 
 
-def render_markdown(report: Dict[str, Any], detail_limit: int, title: str, collapsible_tables: bool = False) -> str:
+def render_markdown(report: Dict[str, Any], detail_limit: int, title: str, collapsible_tables: bool = True) -> str:
     lines = [f"## {title}", ""]
     if not any(d["changed"] for d in report["databases"]):
         return "\n".join(lines + ["No logical database changes detected.", ""])
@@ -279,8 +279,13 @@ def main() -> int:
     p.add_argument("--full-markdown", type=Path)
     p.add_argument("--detail-limit", type=int, default=50)
     p.add_argument("--title", default="NECTO database changes")
-    p.add_argument("--collapsible-tables", action="store_true",
-                   help="wrap each changed table in GitHub <details>/<summary> markup")
+    # GitHub reports are collapsible by default.  Keep --collapsible-tables for
+    # backwards compatibility with existing workflows, and provide --plain-tables
+    # only for callers that explicitly need the old heading-only format.
+    p.add_argument("--collapsible-tables", action="store_true", default=None,
+                   help="wrap each changed table in GitHub <details>/<summary> markup (default)")
+    p.add_argument("--plain-tables", action="store_true",
+                   help="render changed tables as normal Markdown headings instead of <details>")
     args = p.parse_args()
 
     new_paths = current_database_paths(args.new_root.resolve())
@@ -303,10 +308,11 @@ def main() -> int:
     args.json.parent.mkdir(parents=True, exist_ok=True)
     args.markdown.parent.mkdir(parents=True, exist_ok=True)
     args.json.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
-    args.markdown.write_text(render_markdown(report, args.detail_limit, args.title, args.collapsible_tables), encoding="utf-8")
+    collapsible = not args.plain_tables
+    args.markdown.write_text(render_markdown(report, args.detail_limit, args.title, collapsible), encoding="utf-8")
     if args.full_markdown:
         args.full_markdown.parent.mkdir(parents=True, exist_ok=True)
-        args.full_markdown.write_text(render_markdown(report, 0, args.title, args.collapsible_tables), encoding="utf-8")
+        args.full_markdown.write_text(render_markdown(report, 0, args.title, collapsible), encoding="utf-8")
     write_github_output(report)
     return 0
 
