@@ -1,0 +1,12 @@
+{
+    "name": "database",
+    "display_name": "NECTO Database",
+    "author": "MIKROE",
+    "hidden": true,
+    "package_changed": true,
+    "type": "database",
+    "category": "utility",
+    "install_location": "%APPLICATION_DATA_DIR%/databases",
+    "gh_package_name": "database_live.7z",
+    "requires_database_processing": true
+}
