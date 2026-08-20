@@ -7,6 +7,6 @@
     "type": "database",
     "category": "utility",
     "install_location": "%APPLICATION_DATA_DIR%/databases",
-    "gh_package_name": "database.7z",
+    "gh_package_name": "database_live.7z",
     "requires_database_processing": true
 }

@@ -168,8 +168,14 @@ def index_release_to_elasticsearch(es, token, assets, index_names, dry_run=False
             #    'templates_live_*' - os.environ['ES_INDEX_LIVE']
             #    'templates_experimental_*' - os.environ['ES_INDEX_EXPERIMENTAL']
             # So if it is not related to the index name that is being processed - skip it
-            if ('templates' in asset['name'] or
-                'lvgl' in asset['name']) and not necto_versions[index_name] in asset['name']:
+            #
+            # Databases have dependency between gh_package_name name and index:
+            #    'database.7z' - os.environ['ES_INDEX_LIVE']
+            #    'database_dev.7z' - os.environ['ES_INDEX_TEST']
+            #    'database_experimental.7z' - os.environ['ES_INDEX_EXPERIMENTAL']
+            # So if it is not related to the index name that is being processed - skip it
+            if ('templates' in asset['name'] or 'lvgl' in asset['name'] or
+                'database' in asset['name']) and not necto_versions[index_name] in asset['name']:
                 continue
 
             # Ignore metadata.json asset
@@ -189,6 +195,9 @@ def index_release_to_elasticsearch(es, token, assets, index_names, dry_run=False
             doc['download_link_api'] = asset['url']
             doc['_type'] = '_doc'
             indexed_item = support.find_asset(indexed_items, kibana_id)
+            if 'database' in asset['name']:
+                if necto_versions[index_name] != 'live':
+                    kibana_id = f'database_{necto_versions[index_name]}'
             if indexed_item:
                 if doc['hash'] != indexed_item['hash']:
                     doc['version'] = increase_patch_version(indexed_item['version'])
