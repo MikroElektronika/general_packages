@@ -239,6 +239,9 @@ def index_release_to_elasticsearch(es, token, assets, index_names, dry_run=False
         indexed_items = support.fetch_current_indexed_packages(es, index_name)
 
         for kibana_id, doc in indexing_mapping[index_name].items():
+            if 'database' in asset['name']:
+                if necto_versions[index_name] != 'live':
+                    kibana_id = f'database_{necto_versions[index_name]}'
             indexed_item = support.find_asset(indexed_items, kibana_id)
 
             previous_version = None
