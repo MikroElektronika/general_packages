@@ -816,7 +816,7 @@ Do you want to update now?</source>
 <context>
     <name>BoardWizardPage</name>
     <message>
-        <location filename="../core/src/setup/view/wizard_pages/board_wizard_page.cpp" line="+82" />
+        <location filename="../core/src/setup/view/wizard_pages/board_wizard_page.cpp" line="+83" />
         <source>Choose a board</source>
         <translation>Elegir una placa</translation>
     </message>
@@ -1570,13 +1570,12 @@ Do you wish to override the security check and continue ?   </source>
         <translation>Restablecer filtro</translation>
     </message>
     <message>
-        <location line="+7" />
-        <location filename="../core/src/productivity_hub/common/choose_clicks_dialog.cpp" line="+94" />
+        <location filename="../core/src/productivity_hub/common/choose_clicks_dialog.cpp" line="+108" />
         <source>Filters</source>
         <translation>Filtros</translation>
     </message>
     <message>
-        <location filename="../core/src/productivity_hub/common/choose_clicks_dialog.cpp" line="-32" />
+        <location line="-46" />
         <source>Found</source>
         <translation>Encontrados</translation>
     </message>
@@ -1591,32 +1590,34 @@ Do you wish to override the security check and continue ?   </source>
         <translation>%1 %2 click(s)</translation>
     </message>
     <message>
-        <location line="+29" />
+        <location line="+43" />
         <source>Open filters</source>
         <translation>Abrir filtros</translation>
     </message>
     <message>
-        <location line="+5" />
+        <location filename="../core/src/productivity_hub/common/choose_clicks_dialog.ui" line="+10" />
+        <location filename="../core/src/productivity_hub/common/choose_clicks_dialog.cpp" line="+5" />
         <source>Close Filters</source>
         <translation>Cerrar filtros</translation>
     </message>
     <message>
-        <location line="+1" />
+        <location line="-3" />
+        <location filename="../core/src/productivity_hub/common/choose_clicks_dialog.cpp" line="+1" />
         <source>Close filters</source>
         <translation>Cerrar filtros</translation>
     </message>
     <message>
-        <location line="+104" />
+        <location filename="../core/src/productivity_hub/common/choose_clicks_dialog.cpp" line="+103" />
         <source>Search click boards</source>
         <translation>Buscar placas Click</translation>
     </message>
     <message>
-        <location line="+89" />
+        <location line="+88" />
         <source>Reset all filters</source>
         <translation>Restablecer todos los filtros</translation>
     </message>
     <message>
-        <location line="+61" />
+        <location line="+84" />
         <source>mikroBUS Socket %1</source>
         <translation>Zócalo mikroBUS %1</translation>
     </message>
@@ -2208,6 +2209,11 @@ Do you wish to override the security check and continue ?   </source>
         <source>Form</source>
         <translation>Formulario</translation>
     </message>
+    <message>
+        <location filename="../core/src/output/cloud_chart/cloud_chart_graphic_data_view.cpp" line="+348" />
+        <source>Waiting for data...</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>CloudChartManagerView</name>
@@ -2272,7 +2278,7 @@ Do you wish to override the security check and continue ?   </source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-weight:700;"&gt;Guía de la funcionalidad de gráficos&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=" font-weight:700;"&gt;Paso 1: &lt;/span&gt;Llame a la función de gráfico en su código. &lt;/p&gt;&lt;p&gt;Ejemplo: &lt;span style=" font-weight:700;"&gt;plot(&amp;quot;Temperature&amp;quot;, tempVal); &lt;/span&gt;&lt;/p&gt;&lt;p&gt;Primer parámetro: etiqueta del gráfico (cadena)&lt;br/&gt;Segundo parámetro: variable que desea visualizar &lt;/p&gt;&lt;p&gt;&lt;span style=" font-weight:700;"&gt;Paso 2: &lt;/span&gt;Ejecute el depurador &lt;/p&gt;&lt;p&gt;Espere hasta que se capturen al menos dos valores. &lt;br/&gt;El gráfico aparecerá automáticamente. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../core/src/output/cloud_chart/cloud_chart_numeral_data_view.cpp" line="+196" />
+        <location filename="../core/src/output/cloud_chart/cloud_chart_numeral_data_view.cpp" line="+213" />
         <source>Create chart from selected</source>
         <translation>Crear gráfico a partir de lo seleccionado</translation>
     </message>
@@ -2361,18 +2367,18 @@ Do you wish to override the security check and continue ?   </source>
         <translation>X</translation>
     </message>
     <message>
-        <location filename="../core/src/output/cloud_chart/cloud_chart_view.cpp" line="+30" />
+        <location filename="../core/src/output/cloud_chart/cloud_chart_view.cpp" line="+31" />
         <source>Close Chart View</source>
         <translation>Cerrar vista de gráfico</translation>
     </message>
     <message>
         <location line="+5" />
-        <location line="+141" />
+        <location line="+163" />
         <source>Detach Chart View</source>
         <translation>Desacoplar vista de gráfico</translation>
     </message>
     <message>
-        <location line="-137" />
+        <location line="-159" />
         <source>Reset Chart View</source>
         <translation>Restablecer vista de gráfico</translation>
     </message>
@@ -2382,12 +2388,12 @@ Do you wish to override the security check and continue ?   </source>
         <translation>Editar ajustes del gráfico</translation>
     </message>
     <message>
-        <location line="+60" />
+        <location line="+74" />
         <source>Time (s)</source>
         <translation>Tiempo (s)</translation>
     </message>
     <message>
-        <location line="+83" />
+        <location line="+91" />
         <source>Attach Chart View</source>
         <translation>Acoplar vista de gráfico</translation>
     </message>
@@ -5090,7 +5096,7 @@ Estos ajustes no se guardarán de forma permanente</translation>
 <context>
     <name>DeviceWizardPage</name>
     <message>
-        <location filename="../core/src/setup/view/wizard_pages/device_wizard_page.cpp" line="+30" />
+        <location filename="../core/src/setup/view/wizard_pages/device_wizard_page.cpp" line="+31" />
         <source>Create New Configuration</source>
         <translation>Crear nueva configuración</translation>
     </message>
@@ -5145,14 +5151,14 @@ Estos ajustes no se guardarán de forma permanente</translation>
     </message>
     <message>
         <location line="+28" />
-        <location line="+58" />
+        <location line="+77" />
         <location line="+139" />
         <source>Clock:</source>
         <translation>Reloj:</translation>
     </message>
     <message>
-        <location line="-196" />
-        <location line="+58" />
+        <location line="-215" />
+        <location line="+77" />
         <location line="+139" />
         <source>Current MCU clock value</source>
         <translation>Valor actual del reloj de la MCU</translation>
@@ -6566,7 +6572,7 @@ Estos ajustes no se guardarán de forma permanente</translation>
         <source>Package category:</source>
         <translation type="obsolete">Categoría del paquete:</translation>
     </message>
-</context>
+<message><source> Package category:</source><translation> Categoría del paquete:</translation></message><message><source> Package type:</source><translation> Tipo de paquete:</translation></message><message><source> Author:</source><translation> Autor:</translation></message><message><source> Package status:</source><translation> Estado del paquete:</translation></message></context>
 <context>
     <name>FindInFilesView</name>
     <message>
@@ -6780,6 +6786,39 @@ Estos ajustes no se guardarán de forma permanente</translation>
         <location line="+1" />
         <source>Save</source>
         <translation>Guardar</translation>
+    </message>
+</context>
+<context>
+    <name>GCCRXSettingsView</name>
+    <message>
+        <location filename="../plugins/toolchains/gccRX/src/view/gccRX_settings_view.ui" line="+14" />
+        <source>Frame</source>
+        <translation>Marco</translation>
+    </message>
+    <message>
+        <location line="+42" />
+        <source>Compiler settings </source>
+        <translation>Ajustes del compilador </translation>
+    </message>
+    <message>
+        <location line="+85" />
+        <source>Debugger</source>
+        <translation>Depurador</translation>
+    </message>
+    <message>
+        <location line="+14" />
+        <source>LLDB</source>
+        <translation>LLDB</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>GDB</source>
+        <translation>GDB</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Change your program's debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
+        <translation>Cambie el depurador de su programa de LLDB a GDB o viceversa, según sus requisitos específicos.</translation>
     </message>
 </context>
 <context>
@@ -10652,7 +10691,7 @@ Ejemplos
         <translation>Formulario</translation>
     </message>
     <message>
-        <location filename="../plugins/mattermost_client/src/mattermost_view.cpp" line="+900" />
+        <location filename="../plugins/mattermost_client/src/mattermost_view.cpp" line="+901" />
         <source>Initializing NECTO Chat</source>
         <translation>Inicializando NECTO Chat</translation>
     </message>
@@ -12200,10 +12239,20 @@ Ejemplos
     </message>
     <message>
         <location line="+19" />
-        <location filename="../core/src/productivity_hub/upload_project_wizard/mikrobus_selector.cpp" line="+34" />
-        <location line="+2" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/mikrobus_selector.cpp" line="+35" />
+        <location line="+4" />
         <source>None</source>
         <translation>Ninguno</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>mikroBUS 1</source>
+        <translation>mikroBUS 1</translation>
+    </message>
+    <message>
+        <location filename="../core/src/productivity_hub/upload_project_wizard/mikrobus_selector.cpp" line="-2" />
+        <source>mikroBUS %1</source>
+        <translation>mikroBUS %1</translation>
     </message>
 </context>
 <context>
@@ -12343,6 +12392,22 @@ Ejemplos
         <source>Refresh</source>
         <translation>Actualizar</translation>
     </message>
+    <message>
+        <source>Open a project or document</source>
+        <translation>Abra un proyecto o documento</translation>
+    </message>
+    <message>
+        <source>Project &gt; Open project (Ctrl + Shift + P)</source>
+        <translation>Proyecto &gt; Abrir proyecto (Ctrl + Shift + P)</translation>
+    </message>
+    <message>
+        <source>or</source>
+        <translation>o</translation>
+    </message>
+    <message>
+        <source>Choose a file from project manager</source>
+        <translation>Elija un archivo en el gestor de proyectos</translation>
+    </message>
 </context>
 <context>
     <name>MonacoEditorView</name>
@@ -12355,6 +12420,151 @@ Ejemplos
         <location filename="../plugins/editors/monaco_editor/src/monaco_editor_view.cpp" line="+131" />
         <source>Find in files</source>
         <translation>Buscar en archivos</translation>
+    </message>
+</context>
+<context>
+    <name>MyPackageItem</name>
+    <message>
+        <location filename="../core/src/package_manager/view/my_package_item.ui" line="+105" />
+        <location filename="../core/src/package_manager/view/my_package_item.cpp" line="+88" />
+        <source>Published</source>
+        <translation>Publicado</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>v. 2.1.0.11</source>
+        <translation>v. 2.1.0.11</translation>
+    </message>
+    <message>
+        <location line="+89" />
+        <source>Author: </source>
+        <translation>Autor: </translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>author</source>
+        <translation>autor</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Type:</source>
+        <translation>Tipo:</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>category</source>
+        <translation>categoría</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Created on:</source>
+        <translation>Creado el:</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <location line="+20" />
+        <source>TextLabel</source>
+        <translation>Etiqueta de texto</translation>
+    </message>
+    <message>
+        <location line="-13" />
+        <source>Published on:</source>
+        <translation>Publicado el:</translation>
+    </message>
+    <message>
+        <location line="+56" />
+        <source>Publish package</source>
+        <translation>Publicar paquete</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Publish</source>
+        <translation>Publicar</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Unpublish package</source>
+        <translation>Anular la publicación del paquete</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Unpublish</source>
+        <translation>Anular publicación</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Delete package</source>
+        <translation>Eliminar paquete</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Delete</source>
+        <translation>Eliminar</translation>
+    </message>
+    <message>
+        <location filename="../core/src/package_manager/view/my_package_item.cpp" line="-67" />
+        <source>Solution</source>
+        <translation>Solución</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Click Library</source>
+        <translation>Biblioteca Click</translation>
+    </message>
+    <message>
+        <location line="+63" />
+        <source>Not published</source>
+        <translation>No publicado</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Unpublished</source>
+        <translation>Sin publicar</translation>
+    </message>
+</context>
+<context>
+    <name>MyPackagesView</name>
+    <message>
+        <location filename="../core/src/package_manager/view/my_packages_view.ui" line="+14" />
+        <source>Frame</source>
+        <translation>Marco</translation>
+    </message>
+    <message>
+        <location line="+59" />
+        <source>All</source>
+        <translation>Todo</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Published</source>
+        <translation>Publicado</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Unpublished</source>
+        <translation>Sin publicar</translation>
+    </message>
+    <message>
+        <location line="+41" />
+        <location filename="../core/src/package_manager/view/my_packages_view.cpp" line="+86" />
+        <location line="+70" />
+        <source>You have not uploaded any projects yet.</source>
+        <translation>Aún no ha subido ningún proyecto.</translation>
+    </message>
+    <message>
+        <location filename="../core/src/package_manager/view/my_packages_view.cpp" line="+1" />
+        <source>No projects match your search.</source>
+        <translation>Ningún proyecto coincide con su búsqueda.</translation>
+    </message>
+    <message>
+        <location line="+42" />
+        <source>Could not load your projects. Please check your connection and try again.</source>
+        <translation>No se pudieron cargar sus proyectos. Compruebe su conexión e inténtelo de nuevo.</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Loading your projects timed out. Please try again.</source>
+        <translation>Se agotó el tiempo de espera al cargar sus proyectos. Inténtelo de nuevo.</translation>
     </message>
 </context>
 <context>
@@ -16889,7 +17099,31 @@ Estos ajustes no se guardarán de forma permanente</translation>
         <source>Save as</source>
         <translation>Guardar como</translation>
     </message>
-<message><source>Open in NECTO</source><translation>Abrir en NECTO</translation></message><message><source>Could not save the file to %1.</source><translation>No se pudo guardar el archivo en %1.</translation></message><message><source>   NECTO project detected</source><translation>   Proyecto NECTO detectado</translation></message><message><source>&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Contains a NECTO project.</source><translation>&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Contiene un proyecto NECTO.</translation></message><message><source>OK</source><translation>Aceptar</translation></message><message><source>Download ZIP</source><translation>Descargar ZIP</translation></message></context>
+    <message>
+        <source>Open in NECTO</source>
+        <translation>Abrir en NECTO</translation>
+    </message>
+    <message>
+        <source>Could not save the file to %1.</source>
+        <translation>No se pudo guardar el archivo en %1.</translation>
+    </message>
+    <message>
+        <source>   NECTO project detected</source>
+        <translation>   Proyecto NECTO detectado</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Contains a NECTO project.</source>
+        <translation>&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Contiene un proyecto NECTO.</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Aceptar</translation>
+    </message>
+    <message>
+        <source>Download ZIP</source>
+        <translation>Descargar ZIP</translation>
+    </message>
+</context>
 <context>
     <name>Necto::DownloadWidget</name>
     <message>
@@ -17888,19 +18122,36 @@ Estos ajustes no se guardarán de forma permanente</translation>
 <context>
     <name>Necto::FiltersPanel</name>
     <message>
-        <location filename="../core/src/package_manager/view/filters_panel.cpp" line="+10" />
         <source>Package type:</source>
         <translation>Tipo de paquete:</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Package status:</source>
         <translation>Estado del paquete:</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Package category:</source>
         <translation>Categoría del paquete:</translation>
+    </message>
+    <message>
+        <location filename="../core/src/package_manager/view/filters_panel.cpp" line="+16" />
+        <source> Package type:</source>
+        <translation> Tipo de paquete:</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source> Package status:</source>
+        <translation> Estado del paquete:</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source> Package category:</source>
+        <translation> Categoría del paquete:</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source> Author:</source>
+        <translation> Autor:</translation>
     </message>
 </context>
 <context>
@@ -18078,6 +18329,33 @@ Estos ajustes no se guardarán de forma permanente</translation>
     <message>
         <source>GDB</source>
         <translation>GDB</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::GCCRXSettingsView</name>
+    <message>
+        <source>Frame</source>
+        <translation type="obsolete">Marco</translation>
+    </message>
+    <message>
+        <source>Compiler settings </source>
+        <translation type="obsolete">Ajustes del compilador </translation>
+    </message>
+    <message>
+        <source>Debugger</source>
+        <translation type="obsolete">Depurador</translation>
+    </message>
+    <message>
+        <source>LLDB</source>
+        <translation type="obsolete">LLDB</translation>
+    </message>
+    <message>
+        <source>GDB</source>
+        <translation type="obsolete">GDB</translation>
+    </message>
+    <message>
+        <source>Change your program's debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
+        <translation type="obsolete">Cambie el depurador de su programa de LLDB a GDB o viceversa, según sus requisitos específicos.</translation>
     </message>
 </context>
 <context>
@@ -19135,7 +19413,7 @@ Estos ajustes no se guardarán de forma permanente</translation>
         <translation>Clonando SDK...</translation>
     </message>
     <message>
-        <location line="+1755" />
+        <location line="+1758" />
         <location line="+23" />
         <source>Preparing SDK...</source>
         <translation>Preparando SDK...</translation>
@@ -21307,7 +21585,23 @@ Ejemplos
         <source>is: muted</source>
         <translation>is: muted</translation>
     </message>
-<message><source>Another share is already in progress.</source><translation>Ya hay otra recepción en curso.</translation></message><message><source>Chat is not available.</source><translation>El chat no está disponible.</translation></message><message><source>The chat is not ready for sharing — wait for it to finish loading and try again.</source><translation>El chat aún no está listo para compartir; espere a que termine de cargar e inténtelo de nuevo.</translation></message><message><source>Could not read "%1".</source><translation>No se pudo leer "%1".</translation></message></context>
+    <message>
+        <source>Another share is already in progress.</source>
+        <translation>Ya hay otra recepción en curso.</translation>
+    </message>
+    <message>
+        <source>Chat is not available.</source>
+        <translation>El chat no está disponible.</translation>
+    </message>
+    <message>
+        <source>The chat is not ready for sharing — wait for it to finish loading and try again.</source>
+        <translation>El chat aún no está listo para compartir; espere a que termine de cargar e inténtelo de nuevo.</translation>
+    </message>
+    <message>
+        <source>Could not read "%1".</source>
+        <translation>No se pudo leer "%1".</translation>
+    </message>
+</context>
 <context>
     <name>Necto::McuConfigStrings</name>
     <message>
@@ -22512,7 +22806,7 @@ Ejemplos
         <source>1</source>
         <translation>1</translation>
     </message>
-</context>
+<message><source>mikroBUS %1</source><translation>mikroBUS %1</translation></message><message><source>mikroBUS 1</source><translation>mikroBUS 1</translation></message></context>
 <context>
     <name>Necto::MiscPanel</name>
     <message>
@@ -22648,6 +22942,22 @@ Ejemplos
         <source>Refresh</source>
         <translation>Actualizar</translation>
     </message>
+    <message>
+        <source>or</source>
+        <translation>o</translation>
+    </message>
+    <message>
+        <source>Project &gt; Open project (Ctrl + Shift + P)</source>
+        <translation>Proyecto &gt; Abrir proyecto (Ctrl + Shift + P)</translation>
+    </message>
+    <message>
+        <source>Open a project or document</source>
+        <translation>Abra un proyecto o documento</translation>
+    </message>
+    <message>
+        <source>Choose a file from project manager</source>
+        <translation>Elija un archivo en el gestor de proyectos</translation>
+    </message>
 </context>
 <context>
     <name>Necto::MonacoEditorView</name>
@@ -22658,6 +22968,120 @@ Ejemplos
     <message>
         <source>Find in files</source>
         <translation>Buscar en archivos</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::MyPackageItem</name>
+    <message>
+        <source>Published</source>
+        <translation>Publicado</translation>
+    </message>
+    <message>
+        <source>v. 2.1.0.11</source>
+        <translation>v. 2.1.0.11</translation>
+    </message>
+    <message>
+        <source>Author: </source>
+        <translation>Autor: </translation>
+    </message>
+    <message>
+        <source>author</source>
+        <translation>autor</translation>
+    </message>
+    <message>
+        <source>Type:</source>
+        <translation>Tipo:</translation>
+    </message>
+    <message>
+        <source>category</source>
+        <translation>categoría</translation>
+    </message>
+    <message>
+        <source>Created on:</source>
+        <translation>Creado el:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>Etiqueta de texto</translation>
+    </message>
+    <message>
+        <source>Published on:</source>
+        <translation>Publicado el:</translation>
+    </message>
+    <message>
+        <source>Publish package</source>
+        <translation>Publicar paquete</translation>
+    </message>
+    <message>
+        <source>Publish</source>
+        <translation>Publicar</translation>
+    </message>
+    <message>
+        <source>Unpublish package</source>
+        <translation>Anular la publicación del paquete</translation>
+    </message>
+    <message>
+        <source>Unpublish</source>
+        <translation>Anular publicación</translation>
+    </message>
+    <message>
+        <source>Delete package</source>
+        <translation>Eliminar paquete</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Eliminar</translation>
+    </message>
+    <message>
+        <source>Solution</source>
+        <translation>Solución</translation>
+    </message>
+    <message>
+        <source>Click Library</source>
+        <translation>Biblioteca Click</translation>
+    </message>
+    <message>
+        <source>Not published</source>
+        <translation>No publicado</translation>
+    </message>
+    <message>
+        <source>Unpublished</source>
+        <translation>Sin publicar</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::MyPackagesView</name>
+    <message>
+        <source>Frame</source>
+        <translation>Marco</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Todo</translation>
+    </message>
+    <message>
+        <source>Published</source>
+        <translation>Publicado</translation>
+    </message>
+    <message>
+        <source>Unpublished</source>
+        <translation>Sin publicar</translation>
+    </message>
+    <message>
+        <source>You have not uploaded any projects yet.</source>
+        <translation>Aún no ha subido ningún proyecto.</translation>
+    </message>
+    <message>
+        <source>No projects match your search.</source>
+        <translation>Ningún proyecto coincide con su búsqueda.</translation>
+    </message>
+    <message>
+        <source>Could not load your projects. Please check your connection and try again.</source>
+        <translation>No se pudieron cargar sus proyectos. Compruebe su conexión e inténtelo de nuevo.</translation>
+    </message>
+    <message>
+        <source>Loading your projects timed out. Please try again.</source>
+        <translation>Se agotó el tiempo de espera al cargar sus proyectos. Inténtelo de nuevo.</translation>
     </message>
 </context>
 <context>
@@ -22683,7 +23107,7 @@ Ejemplos
         <translation>Cargando configuraciones...</translation>
     </message>
     <message>
-        <location line="+28" />
+        <location line="+31" />
         <source>Logging in to your account...</source>
         <translation>Iniciando sesión en su cuenta...</translation>
     </message>
@@ -23374,7 +23798,7 @@ Ejemplos
         <source>Reset all filters</source>
         <translation>Restablecer todos los filtros</translation>
     </message>
-</context>
+<message><source>Show my uploaded projects</source><translation>Mostrar mis proyectos subidos</translation></message><message><source>My packages</source><translation>Mis paquetes</translation></message><message><source>Author</source><translation>Autor</translation></message><message><source>Back to all packages</source><translation>Volver a todos los paquetes</translation></message><message><source>Show your uploaded packages</source><translation>Mostrar sus paquetes subidos</translation></message><message><source>All packages</source><translation>Todos los paquetes</translation></message></context>
 <context>
     <name>Necto::PackageUpdateCollection</name>
     <message>
@@ -24053,7 +24477,19 @@ Compruebe la ortografía.</translation>
         <source>Form</source>
         <translation>Formulario</translation>
     </message>
-<message><source>Send to NECTO Chat…</source><translation>Enviar a NECTO Chat…</translation></message><message><source>OK</source><translation>Aceptar</translation></message><message><source>No NECTO project was found inside "%1".</source><translation>No se encontró ningún proyecto NECTO dentro de "%1".</translation></message></context>
+    <message>
+        <source>Send to NECTO Chat…</source>
+        <translation>Enviar a NECTO Chat…</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Aceptar</translation>
+    </message>
+    <message>
+        <source>No NECTO project was found inside "%1".</source>
+        <translation>No se encontró ningún proyecto NECTO dentro de "%1".</translation>
+    </message>
+<message><source>Upload Project</source><translation>Subir proyecto</translation></message></context>
 <context>
     <name>Necto::ProjectInfoPage</name>
     <message>
@@ -27325,14 +27761,14 @@ Esto revierte la confirmación %2.</translation>
 <context>
     <name>Necto::SetupManager</name>
     <message>
-        <location filename="../core/src/setup/setup_manager.cpp" line="-1933" />
-        <location line="+380" />
+        <location filename="../core/src/setup/setup_manager.cpp" line="-1936" />
+        <location line="+383" />
         <location line="+1679" />
         <source>Ok</source>
         <translation>Aceptar</translation>
     </message>
     <message>
-        <location line="-2057" />
+        <location line="-2060" />
         <source>The default configuration cannot be deleted. Please choose another default first.</source>
         <translation>La configuración predeterminada no se puede eliminar. Elija primero otra predeterminada.</translation>
     </message>
@@ -27352,7 +27788,7 @@ Esto revierte la confirmación %2.</translation>
         <translation>¿Seguro que desea eliminar: &lt;strong&gt;%1 &lt;/strong&gt;?</translation>
     </message>
     <message>
-        <location line="+367" />
+        <location line="+370" />
         <source>Connection to the Remote Board Farm board was rejected</source>
         <translation>Se rechazó la conexión a la placa de Remote Board Farm</translation>
     </message>
@@ -29557,6 +29993,131 @@ x (número) determina el número máximo de archivos mostrados</translation>
 
 %1</translation>
     </message>
+<message><source>Upload to server failed.
+
+Please try again.</source><translation>Error al subir al servidor.
+
+Inténtelo de nuevo.</translation></message><message><source>Upload successful.
+Your project is now visible in My packages,
+unpublished. Click Publish when you're ready.</source><translation>Subida completada.
+Su proyecto ahora es visible en Mis paquetes,
+sin publicar. Haga clic en Publicar cuando esté listo.</translation></message><message><source>Project packing failed.
+
+Please try again.</source><translation>Error al empaquetar el proyecto.
+
+Inténtelo de nuevo.</translation></message><message><source>Please go back and increase the project version, then try again.</source><translation>Vuelva atrás, aumente la versión del proyecto y vuelva a intentarlo.</translation></message><message><source>Please go back and try again.</source><translation>Vuelva atrás e inténtelo de nuevo.</translation></message><message><source>Project upload failed.
+
+%1</source><translation>Error al subir el proyecto.
+
+%1</translation></message><message><source>Project upload failed:
+
+%1
+
+%2</source><translation>Error al subir el proyecto:
+
+%1
+
+%2</translation></message></context>
+<context>
+    <name>Necto::UploadProjectInfoDialog</name>
+    <message>
+        <source>Upload Project</source>
+        <translation>Subir proyecto</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Cancelar</translation>
+    </message>
+    <message>
+        <source>Upload</source>
+        <translation>Subir</translation>
+    </message>
+    <message>
+        <source>Project details</source>
+        <translation>Detalles del proyecto</translation>
+    </message>
+    <message>
+        <source>Enter project's name and version, then assign Click boards to mikroBUS sockets</source>
+        <translation>Introduzca el nombre y la versión del proyecto y, a continuación, asigne las placas Click a los zócalos mikroBUS</translation>
+    </message>
+    <message>
+        <source>Display name</source>
+        <translation>Nombre para mostrar</translation>
+    </message>
+    <message>
+        <source>Enter the name that will be displayed in the Package Manager.</source>
+        <translation>Introduzca el nombre que se mostrará en el gestor de paquetes.</translation>
+    </message>
+    <message>
+        <source>Your project will appear under this name in Package Manager. For future uploads, use the same name with a new version to update the existing package.</source>
+        <translation>Su proyecto aparecerá con este nombre en el gestor de paquetes. Para futuras subidas, utilice el mismo nombre con una nueva versión para actualizar el paquete existente.</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Versión</translation>
+    </message>
+    <message>
+        <source>Specify the version of your project package. This will be used for managing updates.</source>
+        <translation>Especifique la versión de su paquete de proyecto. Se utilizará para gestionar las actualizaciones.</translation>
+    </message>
+    <message>
+        <source>You must increase the version when updating an existing package.</source>
+        <translation>Debe aumentar la versión al actualizar un paquete existente.</translation>
+    </message>
+    <message>
+        <source>Configuration</source>
+        <translation>Configuración</translation>
+    </message>
+    <message>
+        <source>MCU</source>
+        <translation>MCU</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>Etiqueta de texto</translation>
+    </message>
+    <message>
+        <source>Board</source>
+        <translation>Placa</translation>
+    </message>
+    <message>
+        <source>Display</source>
+        <translation>Pantalla</translation>
+    </message>
+    <message>
+        <source>Compiler</source>
+        <translation>Compilador</translation>
+    </message>
+    <message>
+        <source>Programmer</source>
+        <translation>Programador</translation>
+    </message>
+    <message>
+        <source>SDK</source>
+        <translation>SDK</translation>
+    </message>
+    <message>
+        <source>Assign the Click boards included in your project to mikroBUS sockets.
+NOTE: The displayed positions are suggestions only - verify them before continuing.</source>
+        <translation>Asigne las placas Click incluidas en su proyecto a los zócalos mikroBUS.
+NOTA: las posiciones mostradas son solo sugerencias; verifíquelas antes de continuar.</translation>
+    </message>
+    <message>
+        <source>WARNING: No Click libraries are included in your project. Cancel this dialog, open the Library Manager, and select the Click board(s) you wish to use, then try uploading again.</source>
+        <translation>ADVERTENCIA: su proyecto no incluye ninguna biblioteca Click. Cancele este diálogo, abra el gestor de bibliotecas y seleccione la(s) placa(s) Click que desea utilizar, luego intente subir de nuevo.</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/D</translation>
+    </message>
+    <message>
+        <source>No display</source>
+        <translation>Sin pantalla</translation>
+    </message>
+    <message>
+        <source>Bare metal</source>
+        <translation>Bare metal</translation>
+    </message>
 </context>
 <context>
     <name>Necto::UploadProjectWizard</name>
@@ -30932,7 +31493,7 @@ Do you want to reload the page ?</source>
 <context>
     <name>PackageDownloadManager</name>
     <message>
-        <location filename="../core/src/package_manager/download_manager/package_download_manager.cpp" line="+37" />
+        <location filename="../core/src/package_manager/download_manager/package_download_manager.cpp" line="+38" />
         <source>Server took to long to respond</source>
         <translation>El servidor tardó demasiado en responder</translation>
     </message>
@@ -31241,7 +31802,7 @@ Do you want to reload the page ?</source>
     </message>
     <message>
         <location line="+13" />
-        <location filename="../core/src/package_manager/view/package_manager_view.cpp" line="+108" />
+        <location filename="../core/src/package_manager/view/package_manager_view.cpp" line="+115" />
         <source>Open filters</source>
         <translation>Abrir filtros</translation>
     </message>
@@ -31257,18 +31818,31 @@ Do you want to reload the page ?</source>
         <translation>Actualizar todo</translation>
     </message>
     <message>
-        <location filename="../core/src/package_manager/view/package_manager_view.cpp" line="-53" />
+        <location line="+13" />
+        <source>Show my uploaded projects</source>
+        <translation>Mostrar mis proyectos subidos</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <location filename="../core/src/package_manager/view/package_manager_view.cpp" line="+40" />
+        <source>My packages</source>
+        <translation>Mis paquetes</translation>
+    </message>
+    <message>
+        <location filename="../core/src/package_manager/view/package_manager_view.cpp" line="-99" />
         <source>Filter packages</source>
         <translation>Filtrar paquetes</translation>
     </message>
     <message>
-        <location line="+26" />
-        <location line="+66" />
+        <location line="+28" />
+        <location line="+76" />
+        <location line="+49" />
+        <location line="+474" />
         <source>Found %1 package(s)</source>
         <translation>%1 paquete(s) encontrado(s)</translation>
     </message>
     <message>
-        <location line="-32" />
+        <location line="-561" />
         <source>Apply</source>
         <translation>Aplicar</translation>
     </message>
@@ -31278,15 +31852,35 @@ Do you want to reload the page ?</source>
         <translation>Aplicar filtros seleccionados</translation>
     </message>
     <message>
-        <location line="+342" />
-        <location line="+204" />
+        <location line="+23" />
+        <source>All packages</source>
+        <translation>Todos los paquetes</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Back to all packages</source>
+        <translation>Volver a todos los paquetes</translation>
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Show your uploaded packages</source>
+        <translation>Mostrar sus paquetes subidos</translation>
+    </message>
+    <message>
+        <location line="+372" />
+        <location line="+229" />
         <source>No internet connection</source>
         <translation>Sin conexión a internet</translation>
     </message>
     <message>
-        <location line="-137" />
+        <location line="-162" />
         <source>Reset all filters</source>
         <translation>Restablecer todos los filtros</translation>
+    </message>
+    <message>
+        <location line="+120" />
+        <source>Author</source>
+        <translation>Autor</translation>
     </message>
 </context>
 <context>
@@ -31784,7 +32378,7 @@ Compruebe la ortografía.</translation>
         <translation>%1 en %2</translation>
     </message>
     <message>
-        <location line="+43" />
+        <location line="+41" />
         <source>This feature is available only when a project is open.</source>
         <translation>Esta función solo está disponible cuando hay un proyecto abierto.</translation>
     </message>
@@ -31870,7 +32464,35 @@ Compruebe la ortografía.</translation>
         <source>OK</source>
         <translation type="obsolete">Aceptar</translation>
     </message>
-<message><source>A project share is already waiting in NECTO Chat — pick a receiver or cancel it first.</source><translation>Ya hay una recepción de proyecto esperando en NECTO Chat; elija un destinatario o cancélela primero.</translation></message><message><source>The packed project is %1 MB; the chat server accepts up to %2 MB.</source><translation>El proyecto empaquetado ocupa %1 MB; el servidor de chat acepta hasta %2 MB.</translation></message><message><source>NECTO Chat is not available.</source><translation>NECTO Chat no está disponible.</translation></message><message><source>Attaching the project failed.</source><translation>No se pudo adjuntar el proyecto.</translation></message><message><source>NECTO Chat is not ready — wait for it to finish loading and try again.</source><translation>NECTO Chat aún no está listo; espere a que termine de cargar e inténtelo de nuevo.</translation></message><message><source>Failed to pack the project.</source><translation>No se pudo empaquetar el proyecto.</translation></message><message><source>NECTO Chat did not respond — wait for it to finish loading and try again.</source><translation>NECTO Chat no respondió; espere a que termine de cargar e inténtelo de nuevo.</translation></message></context>
+    <message>
+        <source>A project share is already waiting in NECTO Chat — pick a receiver or cancel it first.</source>
+        <translation>Ya hay una recepción de proyecto esperando en NECTO Chat; elija un destinatario o cancélela primero.</translation>
+    </message>
+    <message>
+        <source>The packed project is %1 MB; the chat server accepts up to %2 MB.</source>
+        <translation>El proyecto empaquetado ocupa %1 MB; el servidor de chat acepta hasta %2 MB.</translation>
+    </message>
+    <message>
+        <source>NECTO Chat is not available.</source>
+        <translation>NECTO Chat no está disponible.</translation>
+    </message>
+    <message>
+        <source>Attaching the project failed.</source>
+        <translation>No se pudo adjuntar el proyecto.</translation>
+    </message>
+    <message>
+        <source>NECTO Chat is not ready — wait for it to finish loading and try again.</source>
+        <translation>NECTO Chat aún no está listo; espere a que termine de cargar e inténtelo de nuevo.</translation>
+    </message>
+    <message>
+        <source>Failed to pack the project.</source>
+        <translation>No se pudo empaquetar el proyecto.</translation>
+    </message>
+    <message>
+        <source>NECTO Chat did not respond — wait for it to finish loading and try again.</source>
+        <translation>NECTO Chat no respondió; espere a que termine de cargar e inténtelo de nuevo.</translation>
+    </message>
+</context>
 <context>
     <name>ProjectEditPage</name>
     <message>
@@ -31951,7 +32573,7 @@ Compruebe la ortografía.</translation>
         <translation>Subir</translation>
     </message>
     <message>
-        <location filename="../core/src/project_explorer/view/project_explorer_view.cpp" line="+158" />
+        <location filename="../core/src/project_explorer/view/project_explorer_view.cpp" line="+160" />
         <source>Filter project files</source>
         <translation>Filtrar archivos del proyecto</translation>
     </message>
@@ -31981,7 +32603,7 @@ Compruebe la ortografía.</translation>
         <translation>Abrir</translation>
     </message>
     <message>
-        <location line="+630" />
+        <location line="+632" />
         <source>Open file</source>
         <translation>Abrir archivo</translation>
     </message>
@@ -32015,6 +32637,11 @@ Compruebe la ortografía.</translation>
         <location line="+7" />
         <source>Send to NECTO Chat…</source>
         <translation>Enviar a NECTO Chat…</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Upload Project</source>
+        <translation>Subir proyecto</translation>
     </message>
     <message>
         <location line="+10" />
@@ -32096,67 +32723,54 @@ Compruebe la ortografía.</translation>
 <context>
     <name>ProjectInfoPage</name>
     <message>
-        <location filename="../core/src/productivity_hub/upload_project_wizard/project_info_page.ui" line="+14" />
         <source>WizardPage</source>
         <translation>Página del asistente</translation>
     </message>
     <message>
-        <location line="+33" />
         <source>Upload Project Wizard</source>
         <translation>Asistente de subida de proyecto</translation>
     </message>
     <message>
-        <location line="+57" />
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location line="+7" />
         <source>Next</source>
         <translation>Siguiente</translation>
     </message>
     <message>
-        <location line="+42" />
         <source>Enter  project's name  and version.</source>
         <translation>Introduzca el nombre y la versión del proyecto.</translation>
     </message>
     <message>
-        <location line="+55" />
         <source>This is a display name for project. It will be used in Package Manger and Info</source>
         <translation>Este es un nombre visible para el proyecto. Se usará en el Gestor de paquetes e Información</translation>
     </message>
     <message>
-        <location line="+3" />
         <source>Name:</source>
         <translation>Nombre:</translation>
     </message>
     <message>
-        <location line="+7" />
         <source>Enter the name that will be displayed in the Package Manager.</source>
         <translation>Introduzca el nombre que se mostrará en el Gestor de paquetes.</translation>
     </message>
     <message>
-        <location line="+7" />
         <source>Project must  have a version for a package. It will be used for install and update</source>
         <translation>El proyecto debe tener una versión para el paquete. Se usará para instalar y actualizar</translation>
     </message>
     <message>
-        <location line="+3" />
         <source>Version:</source>
         <translation>Versión:</translation>
     </message>
     <message>
-        <location line="+7" />
         <source>Specify the version of your project package. This will be used for managing updates.</source>
         <translation>Especifique la versión del paquete de su proyecto. Se usará para gestionar las actualizaciones.</translation>
     </message>
     <message>
-        <location line="+7" />
         <source>Project description:</source>
         <translation>Descripción del proyecto:</translation>
     </message>
     <message>
-        <location line="+7" />
         <source>Enter a short project decription here</source>
         <translation>Introduzca aquí una breve descripción del proyecto</translation>
     </message>
@@ -32255,7 +32869,51 @@ Compruebe la ortografía.</translation>
         <source>Open Recent File</source>
         <translation>Abrir archivo reciente</translation>
     </message>
-<message><source>Importing project %1</source><translation>Importando proyecto %1</translation></message><message><source>Cancel</source><translation>Cancelar</translation></message><message><source>Folder "%1" already exists in %2.</source><translation>La carpeta "%1" ya existe en %2.</translation></message><message><source>Failed to read "%1".</source><translation>No se pudo leer "%1".</translation></message><message><source>Use "%1"</source><translation>Usar "%1"</translation></message><message><source>"%1" contains a NECTO project. Open it as a NECTO project?</source><translation>"%1" contiene un proyecto NECTO. ¿Abrirlo como proyecto NECTO?</translation></message><message><source>OK</source><translation>Aceptar</translation></message><message><source>No NECTO project was found inside "%1".</source><translation>No se encontró ningún proyecto NECTO dentro de "%1".</translation></message><message><source>Could not create a temporary folder in %1.</source><translation>No se pudo crear una carpeta temporal en %1.</translation></message><message><source>Failed to extract "%1".</source><translation>No se pudo extraer "%1".</translation></message><message><source>Could not move the extracted project to %1.</source><translation>No se pudo mover el proyecto extraído a %1.</translation></message></context>
+    <message>
+        <source>Importing project %1</source>
+        <translation>Importando proyecto %1</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Cancelar</translation>
+    </message>
+    <message>
+        <source>Folder "%1" already exists in %2.</source>
+        <translation>La carpeta "%1" ya existe en %2.</translation>
+    </message>
+    <message>
+        <source>Failed to read "%1".</source>
+        <translation>No se pudo leer "%1".</translation>
+    </message>
+    <message>
+        <source>Use "%1"</source>
+        <translation>Usar "%1"</translation>
+    </message>
+    <message>
+        <source>"%1" contains a NECTO project. Open it as a NECTO project?</source>
+        <translation>"%1" contiene un proyecto NECTO. ¿Abrirlo como proyecto NECTO?</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>Aceptar</translation>
+    </message>
+    <message>
+        <source>No NECTO project was found inside "%1".</source>
+        <translation>No se encontró ningún proyecto NECTO dentro de "%1".</translation>
+    </message>
+    <message>
+        <source>Could not create a temporary folder in %1.</source>
+        <translation>No se pudo crear una carpeta temporal en %1.</translation>
+    </message>
+    <message>
+        <source>Failed to extract "%1".</source>
+        <translation>No se pudo extraer "%1".</translation>
+    </message>
+    <message>
+        <source>Could not move the extracted project to %1.</source>
+        <translation>No se pudo mover el proyecto extraído a %1.</translation>
+    </message>
+</context>
 <context>
     <name>ProjectNamePage</name>
     <message>
@@ -34738,32 +35396,26 @@ Esto revierte la confirmación %2.</translation>
 <context>
     <name>SelectMikroBusPage</name>
     <message>
-        <location filename="../core/src/productivity_hub/upload_project_wizard/select_mikrobus_page.ui" line="+14" />
         <source>WizardPage</source>
         <translation>Página del asistente</translation>
     </message>
     <message>
-        <location line="+33" />
         <source>Upload Project Wizard</source>
         <translation>Asistente de subida de proyecto</translation>
     </message>
     <message>
-        <location line="+57" />
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location line="+7" />
         <source>Back</source>
         <translation>Atrás</translation>
     </message>
     <message>
-        <location line="+7" />
         <source>Next</source>
         <translation>Siguiente</translation>
     </message>
     <message>
-        <location line="+42" />
         <source>Assign Click boards to mikroBUS sockets</source>
         <translation>Asignar placas Click a los zócalos mikroBUS</translation>
     </message>
@@ -38008,97 +38660,74 @@ x (número) determina el número máximo de archivos mostrados</translation>
 <context>
     <name>UploadPage</name>
     <message>
-        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_page.ui" line="+14" />
         <source>WizardPage</source>
         <translation>Página del asistente</translation>
     </message>
     <message>
-        <location line="+33" />
         <source>Upload Project Wizard</source>
         <translation>Asistente de subida de proyecto</translation>
     </message>
     <message>
-        <location line="+57" />
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location line="+7" />
         <source>Back</source>
         <translation>Atrás</translation>
     </message>
     <message>
-        <location line="+7" />
         <source>Finish</source>
         <translation>Finalizar</translation>
     </message>
     <message>
-        <location line="+47" />
         <source>Project upload summary</source>
         <translation>Resumen de subida del proyecto</translation>
     </message>
     <message>
-        <location line="+10" />
         <source>Here’s a summary of the information you’ve provided:</source>
         <translation>Este es un resumen de la información que ha proporcionado:</translation>
     </message>
     <message>
-        <location line="+42" />
         <source>Project information:</source>
         <translation>Información del proyecto:</translation>
     </message>
     <message>
-        <location line="+52" />
         <source>Display name:</source>
         <translation>Nombre visible:</translation>
     </message>
     <message>
-        <location line="+7" />
-        <location line="+38" />
-        <location line="+19" />
-        <location line="+19" />
-        <location line="+19" />
-        <location line="+19" />
         <source>TextLabel</source>
         <translation>Etiqueta de texto</translation>
     </message>
     <message>
-        <location line="-102" />
         <source>Version:</source>
         <translation>Versión:</translation>
     </message>
     <message>
-        <location line="+7" />
         <source>projectVersion</source>
         <translation>projectVersion</translation>
     </message>
     <message>
-        <location line="+12" />
         <source>Board:</source>
         <translation>Placa:</translation>
     </message>
     <message>
-        <location line="+19" />
         <source>mikroBUS Count:</source>
         <translation>Cantidad de mikroBUS:</translation>
     </message>
     <message>
-        <location line="+19" />
         <source>Display:</source>
         <translation>Pantalla:</translation>
     </message>
     <message>
-        <location line="+19" />
         <source>MCU:</source>
         <translation>MCU:</translation>
     </message>
     <message>
-        <location line="+19" />
         <source>SDK:</source>
         <translation>SDK:</translation>
     </message>
     <message>
-        <location line="+40" />
         <source>WARNING: No Click libraries are included in your project. To add Click boards, you can:
 
     1. Go Back to the previous page and assign Click libraries to the desired mikroBUS sockets.
@@ -38109,17 +38738,14 @@ x (número) determina el número máximo de archivos mostrados</translation>
     2. Hacer clic en Cancelar para salir del asistente, luego abrir el Gestor de bibliotecas y seleccionar las placas Click que desee usar en este proyecto.</translation>
     </message>
     <message>
-        <location line="+13" />
         <source>Assigned Click boards</source>
         <translation>Placas Click asignadas</translation>
     </message>
     <message>
-        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_page.cpp" line="+78" />
         <source>Bare metal</source>
         <translation>Bare metal</translation>
     </message>
     <message>
-        <location line="+23" />
         <source>None</source>
         <translation>Ninguno</translation>
     </message>
@@ -38147,12 +38773,12 @@ x (número) determina el número máximo de archivos mostrados</translation>
         <translation>Aceptar</translation>
     </message>
     <message>
-        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_dialog.cpp" line="+55" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_dialog.cpp" line="+57" />
         <source>Packing your project and prepare for upload</source>
         <translation>Empaquetando su proyecto y preparándolo para subir</translation>
     </message>
     <message>
-        <location line="+22" />
+        <location line="+27" />
         <source>Packing your poject was succesfull</source>
         <translation>El empaquetado de su proyecto se realizó correctamente</translation>
     </message>
@@ -38162,22 +38788,77 @@ x (número) determina el número máximo de archivos mostrados</translation>
         <translation>Iniciando subida al servidor</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+8" />
+        <source>Project packing failed.
+
+Please try again.</source>
+        <translation>Error al empaquetar el proyecto.
+
+Inténtelo de nuevo.</translation>
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Upload successful.
+Your project is now visible in My packages,
+unpublished. Click Publish when you're ready.</source>
+        <translation>Subida completada.
+Su proyecto ahora es visible en Mis paquetes,
+sin publicar. Haga clic en Publicar cuando esté listo.</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Upload to server failed.
+
+Please try again.</source>
+        <translation>Error al subir al servidor.
+
+Inténtelo de nuevo.</translation>
+    </message>
+    <message>
+        <location line="+19" />
+        <source>Please go back and increase the project version, then try again.</source>
+        <translation>Vuelva atrás, aumente la versión del proyecto y vuelva a intentarlo.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Please go back and try again.</source>
+        <translation>Vuelva atrás e inténtelo de nuevo.</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Project upload failed.
+
+%1</source>
+        <translation>Error al subir el proyecto.
+
+%1</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Project upload failed:
+
+%1
+
+%2</source>
+        <translation>Error al subir el proyecto:
+
+%1
+
+%2</translation>
+    </message>
+    <message>
         <source>Error: Project packing failed.</source>
         <translation>Error: Falló el empaquetado del proyecto.</translation>
     </message>
     <message>
-        <location line="+9" />
         <source>Upload to server was succesfull</source>
         <translation>La subida al servidor se realizó correctamente</translation>
     </message>
     <message>
-        <location line="+4" />
         <source>Upload to server failed. Please try again.</source>
         <translation>Error al subir al servidor. Inténtelo de nuevo.</translation>
     </message>
     <message>
-        <location line="+14" />
         <source>Project upload failed:
 
 %1</source>
@@ -38187,9 +38868,144 @@ x (número) determina el número máximo de archivos mostrados</translation>
     </message>
 </context>
 <context>
+    <name>UploadProjectInfoDialog</name>
+    <message>
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.ui" line="+14" />
+        <location line="+23" />
+        <source>Upload Project</source>
+        <translation>Subir proyecto</translation>
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Cancel</source>
+        <translation>Cancelar</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Upload</source>
+        <translation>Subir</translation>
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Project details</source>
+        <translation>Detalles del proyecto</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Enter project's name and version, then assign Click boards to mikroBUS sockets</source>
+        <translation>Introduzca el nombre y la versión del proyecto y, a continuación, asigne las placas Click a los zócalos mikroBUS</translation>
+    </message>
+    <message>
+        <location line="+71" />
+        <source>Display name</source>
+        <translation>Nombre para mostrar</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Enter the name that will be displayed in the Package Manager.</source>
+        <translation>Introduzca el nombre que se mostrará en el gestor de paquetes.</translation>
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Your project will appear under this name in Package Manager. For future uploads, use the same name with a new version to update the existing package.</source>
+        <translation>Su proyecto aparecerá con este nombre en el gestor de paquetes. Para futuras subidas, utilice el mismo nombre con una nueva versión para actualizar el paquete existente.</translation>
+    </message>
+    <message>
+        <location line="+52" />
+        <source>Version</source>
+        <translation>Versión</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Specify the version of your project package. This will be used for managing updates.</source>
+        <translation>Especifique la versión de su paquete de proyecto. Se utilizará para gestionar las actualizaciones.</translation>
+    </message>
+    <message>
+        <location line="+12" />
+        <source>You must increase the version when updating an existing package.</source>
+        <translation>Debe aumentar la versión al actualizar un paquete existente.</translation>
+    </message>
+    <message>
+        <location line="+52" />
+        <source>Configuration</source>
+        <translation>Configuración</translation>
+    </message>
+    <message>
+        <location line="+28" />
+        <source>MCU</source>
+        <translation>MCU</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <location line="+27" />
+        <location line="+27" />
+        <location line="+27" />
+        <location line="+27" />
+        <location line="+27" />
+        <source>TextLabel</source>
+        <translation>Etiqueta de texto</translation>
+    </message>
+    <message>
+        <location line="-115" />
+        <source>Board</source>
+        <translation>Placa</translation>
+    </message>
+    <message>
+        <location line="+27" />
+        <source>Display</source>
+        <translation>Pantalla</translation>
+    </message>
+    <message>
+        <location line="+27" />
+        <source>Compiler</source>
+        <translation>Compilador</translation>
+    </message>
+    <message>
+        <location line="+27" />
+        <source>Programmer</source>
+        <translation>Programador</translation>
+    </message>
+    <message>
+        <location line="+27" />
+        <source>SDK</source>
+        <translation>SDK</translation>
+    </message>
+    <message>
+        <location line="+63" />
+        <source>Assign the Click boards included in your project to mikroBUS sockets.
+NOTE: The displayed positions are suggestions only - verify them before continuing.</source>
+        <translation>Asigne las placas Click incluidas en su proyecto a los zócalos mikroBUS.
+NOTA: las posiciones mostradas son solo sugerencias; verifíquelas antes de continuar.</translation>
+    </message>
+    <message>
+        <location line="+32" />
+        <source>WARNING: No Click libraries are included in your project. Cancel this dialog, open the Library Manager, and select the Click board(s) you wish to use, then try uploading again.</source>
+        <translation>ADVERTENCIA: su proyecto no incluye ninguna biblioteca Click. Cancele este diálogo, abra el gestor de bibliotecas y seleccione la(s) placa(s) Click que desea utilizar, luego intente subir de nuevo.</translation>
+    </message>
+    <message>
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="+126" />
+        <location line="+4" />
+        <location line="+7" />
+        <location line="+4" />
+        <location line="+12" />
+        <location line="+4" />
+        <source>N/A</source>
+        <translation>N/D</translation>
+    </message>
+    <message>
+        <location line="-23" />
+        <source>No display</source>
+        <translation>Sin pantalla</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Bare metal</source>
+        <translation>Bare metal</translation>
+    </message>
+</context>
+<context>
     <name>UploadProjectWizard</name>
     <message>
-        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_wizard.ui" line="+14" />
         <source>Wizard</source>
         <translation>Asistente</translation>
     </message>
