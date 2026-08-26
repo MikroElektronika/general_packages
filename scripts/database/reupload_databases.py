@@ -1503,7 +1503,8 @@ def log_step(message):
 async def main(
     token, repo, doc_codegrip, doc_mikroprog, doc_jlink,
     release_version="", release_version_sdk="", index="Development", mcus_only=True,
-    skip_mchp_packs=False, repo_root=None, upload_erp=True
+    skip_mchp_packs=False, repo_root=None, upload_erp=True,
+    core_queries_path=None
 ):
     start = time.perf_counter()
     global entranceCheckProg
@@ -1606,7 +1607,11 @@ async def main(
                         )
 
     ## Always add MCU information stored in CORE repo
-    coreQueriesPath = os.path.join(os.getcwd(), 'resources/queries')
+    coreQueriesPath = str(
+        Path(core_queries_path).resolve()
+        if core_queries_path
+        else Path(os.getcwd(), 'resources', 'queries').resolve()
+    )
     if os.path.exists(os.path.join(coreQueriesPath, 'mcus')):
         log_step(f'\033[96mStep 3.2: Adding info for new Devices into {[databaseErp, databaseNecto]}.\033[0m')
         updateDevicesFromCore([databaseErp, databaseNecto], os.path.join(coreQueriesPath, 'mcus'))
@@ -1858,6 +1863,10 @@ if __name__ == "__main__":
         '--upload_erp', type=str2bool, default=True,
         help='For Live runs, keep the legacy erp_db.db release upload. Database .7z assets are always handled by scripts/package.py.'
     )
+    parser.add_argument(
+        '--core_queries_path', type=str, default='',
+        help='Path to the extracted core_packages resources/queries directory.'
+    )
 
     ## Parse the arguments
     args = parser.parse_args()
@@ -1869,6 +1878,6 @@ if __name__ == "__main__":
             args.doc_codegrip, args.doc_mikroprog, args.doc_jlink,
             args.specific_tag, args.specific_tag_mikrosdk,
             args.index, args.mcus_only, args.skip_mchp_packs,
-            args.repo_root, args.upload_erp
+            args.repo_root, args.upload_erp, args.core_queries_path
         )
     )
