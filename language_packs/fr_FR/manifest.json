@@ -1,0 +1,12 @@
+{
+    "name": "localization_fr_FR",
+    "display_name": "French Language Pack",
+    "author": "MIKROE",
+    "hidden": false,
+    "package_changed": true,
+    "type": "translations",
+    "short_description": "NECTO Studio interface translation for French language (updatable without a new release).",
+    "install_location": "%APPLICATION_DATA_DIR%/packages/translations/fr_FR",
+    "gh_package_name": "localization_fr_FR.zip"
+}
+
