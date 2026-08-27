@@ -1,5 +1,7 @@
 name: Index Release Assets
 
+run-name: "${{ inputs.request_id && format('Index databases: {0}', inputs.request_id) || 'Index Release Assets' }}"
+
 on:
   # workflow_run:
   #   workflows:
@@ -25,6 +27,12 @@ on:
         type: boolean
         description: Index to Live
         default: false
+
+      request_id:
+        type: string
+        description: Optional database-update request id used for cross-workflow tracking
+        required: false
+        default: ''
 
       necto_assistant_repo_ref:
         type: string

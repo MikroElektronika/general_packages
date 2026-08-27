@@ -1,0 +1,366 @@
+name: Apply external database update
+
+run-name: "Database update: ${{ github.event.client_payload.request_id || inputs.request_id || github.run_id }}"
+
+on:
+  repository_dispatch:
+    types: [database-update]
+  workflow_dispatch:
+    inputs:
+      request_id:
+        description: Optional request id used for tracking
+        required: false
+        default: manual
+      channel:
+        type: choice
+        description: Database channel to update
+        options: [development, experimental, live]
+        default: development
+      operation:
+        type: choice
+        description: Update operation
+        options: [refresh, sdk, devices]
+        default: refresh
+      core_release:
+        description: core_packages release containing database_update_source.7z
+        required: true
+        default: latest
+      core_version:
+        description: Core release used by package metadata updates
+        required: true
+        default: latest
+      sdk_version:
+        description: mikroSDK release used for SDK/board/card updates
+        required: true
+        default: latest
+      mcus_only:
+        type: boolean
+        description: Run only the MCU-oriented refresh path
+        default: false
+      skip_mchp_packs:
+        type: boolean
+        description: Keep existing Microchip tool mappings
+        default: false
+      device_action:
+        type: choice
+        description: Targeted Devices-table action
+        options: [set-sdk-support, remove-devices]
+        default: set-sdk-support
+      regex:
+        description: Device UID regular expression
+        required: false
+        default: ''
+      delete_device:
+        type: boolean
+        description: Delete matching devices instead of disabling SDK support
+        default: false
+      xc8_specific:
+        type: boolean
+        description: Add XC8_SUPPORTED to matching devices
+        default: false
+      ai_sdk:
+        type: boolean
+        description: Add AI_GENERATED_SDK to matching devices
+        default: false
+      spreadsheet_regex:
+        type: boolean
+        description: Resolve today's regex from the release spreadsheet
+        default: false
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: general-packages-database-main
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Authorize Mikroe Actions App
+        uses: actions/create-github-app-token@v2
+        id: app-token
+        with:
+          app-id: ${{ vars.MIKROE_ACTIONS }}
+          private-key: ${{ secrets.MIKROE_ACTIONS_KEY_AUTHORIZE }}
+          owner: MikroElektronika
+          repositories: |
+            general_packages
+            core_packages
+            mikrosdk_v2
+
+      - name: Checkout main with database history
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+          lfs: true
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Resolve and validate request
+        id: request
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import re
+          from pathlib import Path
+
+          event = json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text(encoding='utf-8'))
+          if os.environ['GITHUB_EVENT_NAME'] == 'repository_dispatch':
+              raw = event.get('client_payload') or {}
+          else:
+              raw = event.get('inputs') or {}
+
+          aliases = {
+              'live': 'live', 'release': 'live', 'official': 'live',
+              'development': 'development', 'dev': 'development', 'test': 'development',
+              'experimental': 'experimental', 'exp': 'experimental',
+          }
+          channel = aliases.get(str(raw.get('channel', '')).strip().lower())
+          operation = str(raw.get('operation', '')).strip().lower()
+          if not channel:
+              raise SystemExit(f"Unsupported channel: {raw.get('channel')!r}")
+          if operation not in {'refresh', 'sdk', 'devices'}:
+              raise SystemExit(f"Unsupported operation: {operation!r}")
+
+          def boolean(name, default=False):
+              value = raw.get(name, default)
+              if isinstance(value, bool):
+                  return value
+              return str(value).strip().lower() in {'1', 'true', 'yes', 'on'}
+
+          request_id = str(raw.get('request_id') or os.environ['GITHUB_RUN_ID'])
+          if not re.fullmatch(r'[A-Za-z0-9._-]{1,100}', request_id):
+              raise SystemExit('request_id contains unsupported characters')
+          core_release = str(raw.get('core_release') or 'latest')
+          if not re.fullmatch(r'[A-Za-z0-9._-]{1,100}', core_release):
+              raise SystemExit('core_release contains unsupported characters')
+
+          request = {
+              'request_id': request_id,
+              'source_repo': str(raw.get('source_repo') or 'manual'),
+              'source_ref': str(raw.get('source_ref') or ''),
+              'channel': channel,
+              'operation': operation,
+              'core_release': core_release,
+              'core_version': str(raw.get('core_version') or 'latest'),
+              'sdk_version': str(raw.get('sdk_version') or 'latest'),
+              'mcus_only': boolean('mcus_only'),
+              'skip_mchp_packs': boolean('skip_mchp_packs'),
+              'device_action': str(raw.get('device_action') or 'set-sdk-support'),
+              'regex': str(raw.get('regex') or ''),
+              'delete_device': boolean('delete_device'),
+              'xc8_specific': boolean('xc8_specific'),
+              'ai_sdk': boolean('ai_sdk'),
+              'spreadsheet_regex': boolean('spreadsheet_regex'),
+          }
+          if request['operation'] == 'devices':
+              if request['device_action'] not in {'set-sdk-support', 'remove-devices'}:
+                  raise SystemExit('Unsupported device_action')
+              if not request['regex'] and not request['spreadsheet_regex']:
+                  raise SystemExit('A device regex or spreadsheet_regex=true is required')
+
+          Path('.db-request.json').write_text(json.dumps(request, indent=2) + '\n', encoding='utf-8')
+          output = Path(os.environ['GITHUB_OUTPUT'])
+          with output.open('a', encoding='utf-8') as stream:
+              stream.write(f"channel={channel}\n")
+              stream.write(f"operation={operation}\n")
+              stream.write(f"request_id={request_id}\n")
+              stream.write(f"core_release={core_release}\n")
+          print(json.dumps(request, indent=2))
+          PY
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+
+      - name: Install database dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements/shared.txt
+          pip install -r scripts/requirements/databases.txt
+          sudo apt-get update
+          sudo apt-get install -y p7zip-full
+
+      - name: Download Core database update source
+        if: steps.request.outputs.operation != 'devices'
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          CORE_RELEASE: ${{ steps.request.outputs.core_release }}
+        run: |
+          set -euo pipefail
+          rm -rf .db-update-source
+          mkdir -p .db-update-source
+          if [ "$CORE_RELEASE" = latest ]; then
+            tag="$(gh release view --repo MikroElektronika/core_packages --json tagName --jq .tagName)"
+          else
+            tag="$CORE_RELEASE"
+          fi
+          gh release download "$tag" \
+            --repo MikroElektronika/core_packages \
+            --pattern database_update_source.7z \
+            --dir .db-update-source
+          7z x -y -o.db-update-source/content .db-update-source/database_update_source.7z
+          test -d .db-update-source/content/resources/queries
+
+      - name: Record propagation base
+        id: base
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Apply requested database update
+        env:
+          DATABASE_TOKEN: ${{ steps.app-token.outputs.token }}
+          PROG_DEBUG_CODEGRIP_LIVE: ${{ secrets.PROG_DEBUG_CODEGRIP_LIVE }}
+          PROG_DEBUG_CODEGRIP_TEST: ${{ secrets.PROG_DEBUG_CODEGRIP_TEST }}
+          PROG_DEBUG_MIKROPROG: ${{ secrets.PROG_DEBUG_MIKROPROG }}
+          PROG_DEBUG_JLINK: ${{ secrets.PROG_DEBUG_JLINK }}
+          RELEASES_SPREADSHEET: ${{ secrets.RELEASES_SPREADSHEET }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import subprocess
+          from pathlib import Path
+
+          request = json.loads(Path('.db-request.json').read_text(encoding='utf-8'))
+          db_paths = {
+              'live': 'utils/databases/database_live/necto_db.db',
+              'development': 'utils/databases/database_dev/necto_db.db',
+              'experimental': 'utils/databases/database_experimental/necto_db.db',
+          }
+          channel = request['channel']
+          if request['operation'] in {'refresh', 'sdk'}:
+              codegrip = (
+                  os.environ['PROG_DEBUG_CODEGRIP_LIVE']
+                  if channel == 'live'
+                  else os.environ['PROG_DEBUG_CODEGRIP_TEST']
+              )
+              command = [
+                  'python3', '-u', 'scripts/database/reupload_databases.py',
+                  os.environ['DATABASE_TOKEN'], 'MikroElektronika/core_packages',
+                  codegrip, os.environ['PROG_DEBUG_MIKROPROG'], os.environ['PROG_DEBUG_JLINK'],
+                  request['core_version'], request['sdk_version'], channel,
+                  '--mcus_only', str(request['mcus_only']),
+                  '--skip_mchp_packs', str(request['skip_mchp_packs']),
+                  '--repo_root', '.',
+                  '--upload_erp', str(channel == 'live'),
+                  '--core_queries_path', '.db-update-source/content/resources/queries',
+              ]
+          else:
+              command = [
+                  'python3', '-u', 'scripts/database/update_devices.py',
+                  '--database', db_paths[channel],
+                  '--action', request['device_action'],
+              ]
+              if request['spreadsheet_regex']:
+                  command += ['--spreadsheet-link', os.environ['RELEASES_SPREADSHEET']]
+              else:
+                  command += ['--regex', request['regex']]
+              if request['delete_device']:
+                  command.append('--delete-device')
+              if request['xc8_specific']:
+                  command.append('--xc8-specific')
+              if request['ai_sdk']:
+                  command.append('--ai-sdk')
+          subprocess.run(command, check=True)
+          PY
+
+      - name: Propagate Live to Development to Experimental
+        run: |
+          python3 scripts/database/sync_database_channels.py \
+            --base-ref '${{ steps.base.outputs.sha }}' \
+            --write \
+            --report database-sync-report.md
+
+      - name: Validate all databases
+        run: python3 scripts/database/validate_databases.py .
+
+      - name: Preserve legacy ERP asset for targeted Live device updates
+        if: steps.request.outputs.operation == 'devices' && steps.request.outputs.channel == 'live'
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          cp utils/databases/database_live/necto_db.db erp_db.db
+          tag="$(gh release view --repo MikroElektronika/core_packages --json tagName --jq .tagName)"
+          gh release upload "$tag" erp_db.db --clobber --repo MikroElektronika/core_packages
+
+      - name: Commit database changes to main
+        id: commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add \
+            utils/databases/database_live/necto_db.db \
+            utils/databases/database_dev/necto_db.db \
+            utils/databases/database_experimental/necto_db.db
+          if git diff --cached --quiet; then
+            echo 'No database changes to commit.'
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "db: apply ${{ steps.request.outputs.channel }} update (${{ steps.request.outputs.request_id }})"
+          git push origin HEAD:main
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Trigger ERP database import
+        if: steps.commit.outputs.changed == 'true' && steps.request.outputs.channel == 'live'
+        run: |
+          curl --fail-with-body --location --request POST '${{ secrets.ERP_DB_IMPORT_API }}' \
+            --header 'Authorization: Basic ${{ secrets.ERP_DB_IMPORT_KEY }}'
+
+      - name: Wait for database assets to be packaged
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          COMMIT_SHA: ${{ steps.commit.outputs.sha }}
+        run: |
+          set -euo pipefail
+          run_id=''
+          for i in {1..60}; do
+            run_id="$(gh run list --repo MikroElektronika/general_packages \
+              --workflow package.yaml --commit "$COMMIT_SHA" --event push \
+              --json databaseId --jq '.[0].databaseId // empty')"
+            [ -n "$run_id" ] && break
+            sleep 10
+          done
+          [ -n "$run_id" ] || { echo 'Package workflow did not appear'; exit 1; }
+          gh run watch "$run_id" --repo MikroElektronika/general_packages --exit-status
+
+      - name: Index updated database channels
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          CHANNEL: ${{ steps.request.outputs.channel }}
+          REQUEST_ID: ${{ steps.request.outputs.request_id }}
+        run: |
+          development=false
+          experimental=false
+          live=false
+          case "$CHANNEL" in
+            live)
+              live=true
+              development=true
+              experimental=true
+              ;;
+            development)
+              development=true
+              experimental=true
+              ;;
+            experimental)
+              experimental=true
+              ;;
+          esac
+          gh workflow run index.yaml \
+            --repo MikroElektronika/general_packages \
+            --ref main \
+            -f index_development="$development" \
+            -f index_experimental="$experimental" \
+            -f index_live="$live" \
+            -f request_id="$REQUEST_ID"
