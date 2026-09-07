@@ -19,10 +19,10 @@ on:
       operation:
         type: choice
         description: Update operation
-        options: [refresh, sdk, devices]
+        options: [refresh, sdk, devices, codegrip]
         default: refresh
       core_release:
-        description: core_packages release containing database_update_source.7z
+        description: core_packages release containing internal core_queries.7z
         required: true
         default: latest
       core_version:
@@ -33,6 +33,14 @@ on:
         description: mikroSDK release used for SDK/board/card updates
         required: true
         default: latest
+      set_sdk_support:
+        type: boolean
+        description: Set Devices.sdk_support=1 for SDK-support regex after SDK refresh
+        default: false
+      sdk_support_regex:
+        description: MCU UID regex used when set_sdk_support is enabled
+        required: false
+        default: ''
       mcus_only:
         type: boolean
         description: Run only the MCU-oriented refresh path
@@ -125,7 +133,7 @@ jobs:
           operation = str(raw.get('operation', '')).strip().lower()
           if not channel:
               raise SystemExit(f"Unsupported channel: {raw.get('channel')!r}")
-          if operation not in {'refresh', 'sdk', 'devices'}:
+          if operation not in {'refresh', 'sdk', 'devices', 'codegrip'}:
               raise SystemExit(f"Unsupported operation: {operation!r}")
 
           def boolean(name, default=False):
@@ -150,6 +158,8 @@ jobs:
               'core_release': core_release,
               'core_version': str(raw.get('core_version') or 'latest'),
               'sdk_version': str(raw.get('sdk_version') or 'latest'),
+              'set_sdk_support': boolean('set_sdk_support'),
+              'sdk_support_regex': str(raw.get('sdk_support_regex') or ''),
               'mcus_only': boolean('mcus_only'),
               'skip_mchp_packs': boolean('skip_mchp_packs'),
               'device_action': str(raw.get('device_action') or 'set-sdk-support'),
@@ -159,6 +169,14 @@ jobs:
               'ai_sdk': boolean('ai_sdk'),
               'spreadsheet_regex': boolean('spreadsheet_regex'),
           }
+          if request['set_sdk_support']:
+              if not request['sdk_support_regex']:
+                  raise SystemExit('sdk_support_regex is required when set_sdk_support=true')
+              try:
+                  re.compile(request['sdk_support_regex'])
+              except re.error as exc:
+                  raise SystemExit(f'Invalid sdk_support_regex: {exc}')
+
           if request['operation'] == 'devices':
               if request['device_action'] not in {'set-sdk-support', 'remove-devices'}:
                   raise SystemExit('Unsupported device_action')
@@ -188,15 +206,15 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y p7zip-full
 
-      - name: Download Core database update source
+      - name: Download internal Core queries
         if: steps.request.outputs.operation != 'devices'
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
           CORE_RELEASE: ${{ steps.request.outputs.core_release }}
         run: |
           set -euo pipefail
-          rm -rf .db-update-source
-          mkdir -p .db-update-source
+          rm -rf .core-queries
+          mkdir -p .core-queries
           if [ "$CORE_RELEASE" = latest ]; then
             tag="$(gh release view --repo MikroElektronika/core_packages --json tagName --jq .tagName)"
           else
@@ -204,10 +222,10 @@ jobs:
           fi
           gh release download "$tag" \
             --repo MikroElektronika/core_packages \
-            --pattern database_update_source.7z \
-            --dir .db-update-source
-          7z x -y -o.db-update-source/content .db-update-source/database_update_source.7z
-          test -d .db-update-source/content/resources/queries
+            --pattern core_queries.7z \
+            --dir .core-queries
+          7z x -y -o.core-queries/content .core-queries/core_queries.7z >/dev/null
+          test -d .core-queries/content/resources/queries
 
       - name: Record propagation base
         id: base
@@ -235,7 +253,7 @@ jobs:
               'experimental': 'utils/databases/database_experimental/necto_db.db',
           }
           channel = request['channel']
-          if request['operation'] in {'refresh', 'sdk'}:
+          if request['operation'] in {'refresh', 'sdk', 'codegrip'}:
               codegrip = (
                   os.environ['PROG_DEBUG_CODEGRIP_LIVE']
                   if channel == 'live'
@@ -243,14 +261,14 @@ jobs:
               )
               command = [
                   'python3', '-u', 'scripts/database/reupload_databases.py',
-                  os.environ['DATABASE_TOKEN'], 'MikroElektronika/core_packages',
+                  os.environ['DATABASE_TOKEN'], 'MikroElektronika/general_packages',
                   codegrip, os.environ['PROG_DEBUG_MIKROPROG'], os.environ['PROG_DEBUG_JLINK'],
                   request['core_version'], request['sdk_version'], channel,
-                  '--mcus_only', str(request['mcus_only']),
+                  '--mcus_only', str(False if request['operation'] in {'sdk', 'codegrip'} else request['mcus_only']),
                   '--skip_mchp_packs', str(request['skip_mchp_packs']),
                   '--repo_root', '.',
                   '--upload_erp', str(channel == 'live'),
-                  '--core_queries_path', '.db-update-source/content/resources/queries',
+                  '--core_queries_path', '.core-queries/content/resources/queries',
               ]
           else:
               command = [
@@ -269,6 +287,14 @@ jobs:
               if request['ai_sdk']:
                   command.append('--ai-sdk')
           subprocess.run(command, check=True)
+
+          if request['set_sdk_support']:
+              subprocess.run([
+                  'python3', '-u', 'scripts/database/update_devices.py',
+                  '--database', db_paths[channel],
+                  '--action', 'set-sdk-support',
+                  '--regex', request['sdk_support_regex'],
+              ], check=True)
           PY
 
       - name: Propagate Live to Development to Experimental
@@ -287,14 +313,14 @@ jobs:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           cp utils/databases/database_live/necto_db.db erp_db.db
-          tag="$(gh release view --repo MikroElektronika/core_packages --json tagName --jq .tagName)"
-          gh release upload "$tag" erp_db.db --clobber --repo MikroElektronika/core_packages
+          tag="$(gh release view --repo MikroElektronika/general_packages --json tagName --jq .tagName)"
+          gh release upload "$tag" erp_db.db --clobber --repo MikroElektronika/general_packages
 
       - name: Commit database changes to main
         id: commit
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.name 'mikroe-actions[bot]'
+          git config user.email 'mikroe-actions[bot]@users.noreply.github.com'
           git add \
             utils/databases/database_live/necto_db.db \
             utils/databases/database_dev/necto_db.db \

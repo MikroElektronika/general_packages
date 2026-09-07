@@ -1492,6 +1492,71 @@ def fix_icon_names(db, tableName):
                     eachElement[0]
                 )
 
+def fetch_release_json_asset(repo, token, release_version, asset_name):
+    release = fetch_release_details(repo, token, release_version)
+    assets = release.get('assets', [])
+    asset = next((item for item in assets if item.get('name') == asset_name), None)
+    if not asset:
+        raise FileNotFoundError(f"{asset_name} is missing from {repo} release {release.get('tag_name', release_version)}")
+    headers = {
+        'Authorization': f'Bearer {token}',
+        'Accept': 'application/octet-stream',
+        'X-GitHub-Api-Version': '2022-11-28',
+    }
+    response = requests.get(asset['url'], headers=headers, timeout=60)
+    response.raise_for_status()
+    return response.json()
+
+
+def update_core_installer_packages(database, token, release_version):
+    """Apply Core MCU package -> Devices.installer_package mappings centrally.
+
+    Core release metadata carries the MCU list for each MCU package. This mirrors
+    the former Core-side mutation, but the SQLite write now happens only here in
+    general_packages.
+    """
+    metadata = fetch_release_json_asset(
+        'MikroElektronika/core_packages', token, release_version, 'metadata.json'
+    )
+    if not column_exists(database, 'Devices', 'installer_package'):
+        addCollumnToTable(database, 'Devices', 'installer_package', 'Text')
+
+    with sqlite3.connect(database) as con:
+        cur = con.cursor()
+        for package in metadata:
+            if package.get('type') != 'mcu':
+                continue
+            package_name = package.get('name', '')
+            mcus = package.get('mcus') or []
+            if not package_name or not mcus:
+                continue
+            for raw_mcu in mcus:
+                uid = re.sub('_', '-', raw_mcu).replace('dsPIC', 'DSPIC').upper()
+                row = cur.execute(
+                    'SELECT installer_package FROM Devices WHERE uid=?', (uid,)
+                ).fetchone()
+                if not row:
+                    raise ValueError(f'{uid} from {package_name} does not exist in Devices')
+                try:
+                    mapping = json.loads(row[0]) if row[0] else {}
+                except (TypeError, json.JSONDecodeError):
+                    mapping = {}
+                compiler_rows = cur.execute(
+                    'SELECT compiler_uid FROM CompilerToDevice WHERE device_uid=?', (uid,)
+                ).fetchall()
+                for (compiler_uid,) in compiler_rows:
+                    if 'mchp_xc' in compiler_uid and '_xc' in package_name:
+                        mapping[compiler_uid] = package_name
+                    elif not re.search(r'xc(8|16|32)', package_name, re.IGNORECASE):
+                        if any(re.search(re.escape(part), compiler_uid, re.IGNORECASE) for part in package_name.split('_')[1:] if part):
+                            mapping[compiler_uid] = package_name
+                cur.execute(
+                    'UPDATE Devices SET installer_package=? WHERE uid=?',
+                    (json.dumps(mapping, separators=(',', ':')), uid),
+                )
+        con.commit()
+
+
 def log_step(message):
     elapsed = time.perf_counter() - START_TIME
     total = int(elapsed)
@@ -1615,6 +1680,10 @@ async def main(
     if os.path.exists(os.path.join(coreQueriesPath, 'mcus')):
         log_step(f'\033[96mStep 3.2: Adding info for new Devices into {[databaseErp, databaseNecto]}.\033[0m')
         updateDevicesFromCore([databaseErp, databaseNecto], os.path.join(coreQueriesPath, 'mcus'))
+        for eachDb in [databaseErp, databaseNecto]:
+            if eachDb:
+                log_step(f'\033[96mStep 3.3: Applying Core installer-package mappings to {eachDb}.\033[0m')
+                update_core_installer_packages(eachDb, token, release_version)
     ## EOF Step 3
 
     ## Step 4 - add missing collumns to tables
