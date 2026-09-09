@@ -187,18 +187,39 @@ jobs:
           CORE_RELEASE: ${{ steps.request.outputs.core_release }}
         run: |
           set -euo pipefail
+
           rm -rf .core-queries
           mkdir -p .core-queries
+
           if [ "$CORE_RELEASE" = latest ]; then
-            tag="$(gh release view --repo MikroElektronika/core_packages --json tagName --jq .tagName)"
+            tag="$(gh release view \
+              --repo MikroElektronika/core_packages \
+              --json tagName \
+              --jq .tagName)"
           else
             tag="$CORE_RELEASE"
           fi
+
+          echo "Core release: $tag"
+
           gh release download "$tag" \
             --repo MikroElektronika/core_packages \
             --pattern core_queries.7z \
             --dir .core-queries
-          7z x -y -o.core-queries/content .core-queries/core_queries.7z >/dev/null
+
+          echo "Downloaded:"
+          ls -lah .core-queries
+
+          7z x -y \
+            -o.core-queries/content \
+            .core-queries/core_queries.7z
+
+          echo "Extracted directories:"
+          find .core-queries/content -maxdepth 5 -type d | sort
+
+          echo "Looking for queries directory:"
+          find .core-queries/content -type d -name queries -print
+
           test -d .core-queries/content/resources/queries
 
       - name: Record propagation base
