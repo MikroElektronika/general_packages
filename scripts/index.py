@@ -178,8 +178,8 @@ def index_release_to_elasticsearch(es, token, assets, index_names, dry_run=False
                 'database' in asset['name']) and not necto_versions[index_name] in asset['name']:
                 continue
 
-            # Ignore metadata.json asset
-            if 'metadata.json' == asset['name']:
+            # Ignore metadata.json and erp DB assets
+            if 'metadata.json' == asset['name'] or 'erp_db.db' == asset['name']:
                 continue
 
             doc = None
