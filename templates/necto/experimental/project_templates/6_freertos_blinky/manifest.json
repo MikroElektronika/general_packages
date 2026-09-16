@@ -1,0 +1,10 @@
+{
+    "name": "templates_experimental_6_freertos_blinky",
+    "display_name": "NECTO project templates_experimental_6_freertos_blinky templates - experimental",
+    "vendor": "MIKROE",
+    "hidden": true,
+    "package_changed": true,
+    "type": "application",
+    "install_location": "%APPLICATION_DATA_DIR%/templates/project_templates/6_freertos_blinky",
+    "gh_package_name": "templates_experimental_6_freertos_blinky.7z"
+}

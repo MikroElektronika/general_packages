@@ -1,0 +1,27 @@
+{
+    "name": "FreeRTOS LVGL designer project",
+    "type": "freertos_lvgl_designer",
+    "language": "C",
+    "description": "Create complex user interfaces for 32-bit microcontrollers with the powerful LVGL library, driven by a FreeRTOS LVGL task.",
+    "project_file": "CMakeLists.txt",
+    "open_in_editor": ["app/app_freertos.c", "main_screen.mscr"],
+    "icon": "fa-nfc-pen",
+    "files": [
+        "CMakeLists.txt",
+        "driver/display_lvgl.h",
+        "driver/lv_port_indev.h",
+        "driver/display_lvgl.c",
+        "driver/lv_port_indev.c",
+        "app/app_freertos.c",
+        "app/app_freertos.h",
+        "config/FreeRTOSConfig.h",
+        "main_screen.mscr",
+        "main_screen.c",
+        "main_screen.h",
+        "resource.mres",
+        "main.c"
+    ],
+    "files_included": "**CMakeLists.txt:** Configuration file for building your project.\n**main.c:** Entry point that starts the FreeRTOS scheduler.\n**app/app_freertos.c:** LVGL task driving lv_tick_inc, touch polling and rendering.\n**app/app_freertos.h:** Task declarations.\n**config/FreeRTOSConfig.h:** FreeRTOS kernel configuration.\n**main_screen.mscr:** A blank main screen.\n**main_screen.c:** Source file with code for screen initialization.",
+    "outputs": "**.hex:** Hexadecimal binary for MCU flashing.\n**.bin:** Raw binary for various deployment options.",
+    "requirements": "mikroSDK\nClock: > 64 MHz\nFlash/ROM: > 200 kB\nRAM: > 48 kB\nRequires the FreeRTOS package to be added via the Library Manager before building."
+}
