@@ -1,0 +1,10 @@
+{
+    "name": "templates_experimental_8_freertos_lvgl_designer",
+    "display_name": "NECTO project templates_experimental_8_freertos_lvgl_designer templates - experimental",
+    "vendor": "MIKROE",
+    "hidden": true,
+    "package_changed": true,
+    "type": "application",
+    "install_location": "%APPLICATION_DATA_DIR%/templates/project_templates/8_freertos_lvgl_designer",
+    "gh_package_name": "templates_experimental_8_freertos_lvgl_designer.7z"
+}
