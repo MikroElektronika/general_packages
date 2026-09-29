@@ -217,6 +217,9 @@ def pack_found_packages(token, metadata, output_dir):
     })
 
     for package_name, manifest in metadata.items():
+        ## TODO - Temporary fix to always include FreeRTOS 11.3.0 in the release assets until it is fully integrated into the SDK
+        if 'freertos' in manifest["source_folder"]:
+            continue
         source_folder = Path(manifest["source_folder"]).resolve()
         archive_path = release_assets_dir / package_name
 
