@@ -33,6 +33,15 @@
 #define LVGL_TASK_STACK_SIZE  ( configMINIMAL_STACK_SIZE * 4 )
 #define LVGL_TASK_PRIORITY    ( tskIDLE_PRIORITY + 2 )
 
+/* Compile-time guard: xTaskCreate() asserts uxPriority < configMAX_PRIORITIES,
+ * and configASSERT hangs, so an out-of-range priority stops the application
+ * before vTaskStartScheduler() with no visible error. Fail the build instead.
+ * Uses the negative-array-size idiom rather than _Static_assert because not
+ * every supported compiler is C11. If this fires, lower LVGL_TASK_PRIORITY or
+ * raise configMAX_PRIORITIES in config/FreeRTOSConfig.h. */
+typedef char lvgl_task_priority_must_be_below_configMAX_PRIORITIES
+    [ ( LVGL_TASK_PRIORITY < configMAX_PRIORITIES ) ? 1 : -1 ];
+
 /* How often the LVGL task wakes to render and poll touch. Matches the 5 ms
  * cadence the bare-metal template used. */
 #define LVGL_TASK_PERIOD_MS   ( 5 )
