@@ -200,26 +200,8 @@ def pack_found_packages(token, metadata, output_dir):
         del metadata[lvgl_package_to_remove]
     metadata.update(lvgl_packages)
     metadata.update(database_packages)
-    ## TODO - Temporary fix to always include FreeRTOS 11.3.0 in the release assets until it is fully integrated into the SDK
-    metadata.update({
-        "freertos_11.3.0_experimental.7z": {
-            "name": "freertos_11.3.0",
-            "display_name": "FreeRTOS 11.3.0",
-            "hidden": True,
-            "vendor": "MIKROE",
-            "type": "library",
-            "package_changed": True,
-            "category": "SDK Library",
-            "install_location": "%APPLICATION_DATA_DIR%/packages/freertos",
-            "gh_package_name": "freertos_11.3.0_experimental.7z",
-            "hash": "64aaab225b29747187aee80e93029726bf341c392d334be5e710de51951547e8"
-        }
-    })
 
     for package_name, manifest in metadata.items():
-        ## TODO - Temporary fix to always include FreeRTOS 11.3.0 in the release assets until it is fully integrated into the SDK
-        if 'freertos' in manifest["source_folder"]:
-            continue
         source_folder = Path(manifest["source_folder"]).resolve()
         archive_path = release_assets_dir / package_name
 
@@ -277,6 +259,21 @@ async def main(token, repo):
     pack_found_packages(token, metadata, output_dir)
 
     # Save metadata as a file
+    ## TODO - Temporary fix to always include FreeRTOS 11.3.0 in the release assets until it is fully integrated into the SDK
+    metadata.update({
+        "freertos_11.3.0_experimental.7z": {
+            "name": "freertos_11.3.0",
+            "display_name": "FreeRTOS 11.3.0",
+            "hidden": True,
+            "vendor": "MIKROE",
+            "type": "library",
+            "package_changed": True,
+            "category": "SDK Library",
+            "install_location": "%APPLICATION_DATA_DIR%/packages/freertos",
+            "gh_package_name": "freertos_11.3.0_experimental.7z",
+            "hash": "64aaab225b29747187aee80e93029726bf341c392d334be5e710de51951547e8"
+        }
+    })
     with open(output_dir / "release_assets" / "metadata.json", 'w') as metadata_file:
         json.dump(metadata, metadata_file, indent=4)
 
