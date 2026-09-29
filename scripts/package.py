@@ -19,6 +19,9 @@ def upload_changed_assets(token, repo, output_dir, metadata):
         print("\033[93mmetadata.json does not exist in latest release. Uploading everything.\033[0m")
 
         for asset_path in sorted(output_dir.iterdir()):
+            if 'freertos' in asset_path.name:
+                print(f"\033[93mSkipping FreeRTOS asset: {asset_path.name}\033[0m")
+                continue
             existing_asset = support.find_asset(assets, asset_path.name)
             if existing_asset:
                 support.delete_release_asset(existing_asset, token)
