@@ -1,6 +1,7 @@
 {
   "name": "Library",
   "type": "library",
+  "order": 7,
   "language": "C",
   "description": "Create a reusable static library project for mikroSDK 2.0 in C language. Ready for integration across multiple applications.",
   "project_file": "CMakeLists.txt",

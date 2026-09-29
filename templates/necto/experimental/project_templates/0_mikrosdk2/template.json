@@ -1,6 +1,7 @@
 {
     "name": "Standard project",
     "type": "standard",
+    "order": 0,
     "language": "C",
     "description": "Create a standard project in C language. Suitable for most common development.",
     "project_file": "CMakeLists.txt",

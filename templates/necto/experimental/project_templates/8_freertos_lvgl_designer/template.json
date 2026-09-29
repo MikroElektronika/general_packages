@@ -1,6 +1,7 @@
 {
     "name": "FreeRTOS LVGL designer project",
     "type": "freertos_lvgl_designer",
+    "order": 5,
     "language": "C",
     "description": "Create complex user interfaces for 32-bit microcontrollers with the powerful LVGL library, driven by a FreeRTOS LVGL task.",
     "project_file": "CMakeLists.txt",

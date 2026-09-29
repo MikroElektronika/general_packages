@@ -1,6 +1,7 @@
 {
   "name": "Dual Core MCU project",
   "type": "dual_core",
+  "order": 1,
   "language": "C",
   "description": "Create a project for dual-core MCUs targeting both cores (e.g., Cortex-M7/M4).",
   "project_file": "CMakeLists.txt",

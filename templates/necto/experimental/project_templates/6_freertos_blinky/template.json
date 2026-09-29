@@ -1,6 +1,7 @@
 {
     "name": "FreeRTOS Blinky",
     "type": "freertos",
+    "order": 4,
     "language": "C",
     "description": "Create a FreeRTOS project with a single blinking-LED task. Suitable as a starting point for RTOS-based development.",
     "project_file": "CMakeLists.txt",

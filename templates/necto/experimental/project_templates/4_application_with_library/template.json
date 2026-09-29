@@ -1,6 +1,7 @@
 {
   "name": "Project with library",
   "type": "application_with_library",
+  "order": 6,
   "language": "C",
   "description": "Create a project in C language with a library and usage example.",
   "project_file": "CMakeLists.txt",

@@ -1,6 +1,7 @@
 {
   "name": "Simple designer project",
   "type": "designer",
+  "order": 3,
   "language": "C",
   "description": "Create basic user interfaces with small memory footprint for 8-bit, 16-bit, and 32-bit microcontrollers.",
   "project_file": "CMakeLists.txt",
