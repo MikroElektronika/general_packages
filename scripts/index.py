@@ -173,9 +173,15 @@ def index_release_to_elasticsearch(es, token, assets, index_names, dry_run=False
             #    'database_live.7z' - os.environ['ES_INDEX_LIVE']
             #    'database_dev.7z' - os.environ['ES_INDEX_TEST']
             #    'database_experimental.7z' - os.environ['ES_INDEX_EXPERIMENTAL']
+            #
+            # FreeRTOS has dependency between gh_package_name name and index:
+            #    'freertos_VERSION_live.7z' - os.environ['ES_INDEX_LIVE']
+            #    'freertos_VERSION_dev.7z' - os.environ['ES_INDEX_TEST']
+            #    'freertos_VERSION_experimental.7z' - os.environ['ES_INDEX_EXPERIMENTAL']
             # So if it is not related to the index name that is being processed - skip it
             if ('templates' in asset['name'] or 'lvgl' in asset['name'] or
-                'database' in asset['name']) and not necto_versions[index_name] in asset['name']:
+                'database' in asset['name'] or 'freertos' in asset['name']) and \
+                not necto_versions[index_name] in asset['name']:
                 continue
 
             # Ignore metadata.json and erp DB assets
