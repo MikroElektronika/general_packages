@@ -1,0 +1,11 @@
+{
+    "name": "freertos_11.3.0",
+    "display_name": "FreeRTOS 11.3.0",
+    "vendor": "MIKROE",
+    "hidden": true,
+    "package_changed": true,
+    "type": "library",
+    "category": "SDK Library",
+    "install_location": "%APPLICATION_DATA_DIR%/packages/freertos/freertos_1130",
+    "gh_package_name": "freertos_11.3.0_experimental.7z"
+}
