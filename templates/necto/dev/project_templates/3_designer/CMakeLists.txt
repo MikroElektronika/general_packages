@@ -33,6 +33,12 @@ target_link_libraries(${PROJECT_NAME}
         MikroSDK.VisualTft
 )
 
+if (${TOOLCHAIN_LANGUAGE} MATCHES "MikroC")
+    target_compile_options(${PROJECT_NAME} PUBLIC
+        "${CMAKE_CURRENT_SOURCE_DIR}/.meproject/setup/Debug/lib/lib_sprint.a"
+    )
+endif()
+
 if(COMPILER_REVISION)
     if(${COMPILER_REVISION} VERSION_GREATER_EQUAL "1.0")
         if(${TOOLCHAIN_LANGUAGE} STREQUAL "GNU")

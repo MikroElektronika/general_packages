@@ -24,6 +24,12 @@ target_link_libraries(${PROJECT_NAME}
         MikroC.Core
 )
 
+if (${TOOLCHAIN_LANGUAGE} MATCHES "MikroC")
+    target_compile_options(${PROJECT_NAME} PUBLIC
+        "${CMAKE_CURRENT_SOURCE_DIR}/.meproject/setup/Debug/lib/lib_sprint.a"
+    )
+endif()
+
 if (${MIKROSDK_TYPE} STREQUAL "legacy")
     find_package(MikroC.System REQUIRED)
     target_link_libraries(${PROJECT_NAME}
