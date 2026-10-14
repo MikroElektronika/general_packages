@@ -30,6 +30,7 @@ import enums as enums
 import reupload_support as utility
 import addSdkVersion as sdk
 import read_microchip_index as MCHP
+from update_renesas_programmers import update_renesas_programmers
 
 entranceCheckProg = True
 entranceCheckDebug = True
@@ -1816,6 +1817,19 @@ async def main(
     elif not mcus_only and skip_mchp_packs:
         log_step('\033[93mStep 12: Skipping MCHP pack download/update; existing MCHP mappings were preserved.\033[0m')
     ## EOF Step 12
+
+    ## Step 12.1 - Restore Renesas programmer/debugger support after all imports.
+    ## Steps 9-11 rebuild mapping tables, so this must run AFTER them and Step 12.
+    if not mcus_only:
+        for eachDb in [databaseErp, databaseNecto]:
+            if eachDb:
+                log_step(f'\033[96mStep 12.1: Updating Renesas programmers/debuggers in {eachDb}.\033[0m')
+                counts = update_renesas_programmers(eachDb)
+                log_step(
+                    f'\033[92mRenesas: {counts["programmer_mappings"]} programmer-to-device '
+                    f'and {counts["debugger_mappings"]} debugger-to-device mappings.\033[0m'
+                )
+    ## EOF Step 12.1
 
     ## Step 13 - add legacy SDK support for Boards and Cards that should have it
     if not mcus_only:
