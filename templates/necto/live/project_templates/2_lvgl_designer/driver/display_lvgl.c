@@ -4,6 +4,27 @@
 #include "display_lvgl.h"
 #include "lvgl_common.h"
 
+/* ST7789 GRAM is 240x320. Panels with height > width are mapped into its
+ * center, so the drawing window needs a column/row offset (52/40 for 135x240). */
+#define DISP_GRAM_WIDTH  240
+#define DISP_GRAM_HEIGHT 320
+
+#ifndef DISP_COL_OFFSET
+#if _TFT_HEIGHT_ > _TFT_WIDTH_
+#define DISP_COL_OFFSET  ((DISP_GRAM_WIDTH  - _TFT_WIDTH_)  / 2)
+#else
+#define DISP_COL_OFFSET  0
+#endif
+#endif
+
+#ifndef DISP_ROW_OFFSET
+#if _TFT_HEIGHT_ > _TFT_WIDTH_
+#define DISP_ROW_OFFSET  ((DISP_GRAM_HEIGHT - _TFT_HEIGHT_) / 2)
+#else
+#define DISP_ROW_OFFSET  0
+#endif
+#endif
+
 static void disp_init(void);
 static void disp_flush(lv_display_t * display, const lv_area_t * area, uint8_t * px_map);
 
@@ -72,6 +93,13 @@ static void disp_flush(lv_display_t * display, const lv_area_t * area, uint8_t *
     /* Orientation dependent. */
     set_column();
     set_page();
+
+    /* Panels taller than wide (e.g. 135x240) sit centered inside the
+     * controller's 240x320 GRAM, so shift the window onto the visible area. */
+    start_column += DISP_COL_OFFSET;
+    end_column   += DISP_COL_OFFSET;
+    start_page   += DISP_ROW_OFFSET;
+    end_page     += DISP_ROW_OFFSET;
 
     /* Start frame. */
     frame_start(start_column, end_column, start_page, end_page);
