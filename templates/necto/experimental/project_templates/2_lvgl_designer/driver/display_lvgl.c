@@ -4,8 +4,9 @@
 #include "display_lvgl.h"
 #include "lvgl_common.h"
 
-/* ST7789 GRAM is 240x320. Panels with height > width are mapped into its
- * center, so the drawing window needs a column/row offset (52/40 for 135x240). */
+/* For displays with a height greater than the width (e.g. IPS Display Click, 135x240),
+ * the visible area is centered within the 240x320 ST7789 frame memory.
+ * Column offset = (240 - width) / 2, row offset = (320 - height) / 2. */
 #define DISP_GRAM_WIDTH  240
 #define DISP_GRAM_HEIGHT 320
 
