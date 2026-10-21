@@ -555,3 +555,6 @@ macro(is_pd_setup var_name)
 endmacro()
 
 is_pd_setup(IS_PD_SETUP)
+
+## Additional include for CMake files in the current directory
+include(${CMAKE_CURRENT_LIST_DIR}/mikroeUtilsFreeRTOS.cmake)
