@@ -117,23 +117,29 @@ else()
     add_subdirectory(${NECTO_FREERTOS_PATH} freertos_build)
 endif()
 
-# Provides drv_digital_out.h / digital_out_init() / digital_out_toggle(), used
-# by the blinky task.
-find_package(MikroSDK.Driver.GPIO.Out REQUIRED)
-
 target_link_libraries(${PROJECT_NAME}
     PUBLIC
         MikroC.Core
-        MikroSDK.Driver.GPIO.Out
         freertos_kernel
 )
 
-# Board LED names (LED1...) for the blinky task, from mikroSDK's board.h. Not
-# every setup ships the board library, so it is optional: without it the task
-# falls back to the PC0-PC7 LED bank.
-find_package(MikroSDK.Board QUIET)
-if (TARGET MikroSDK.Board)
-    target_link_libraries(${PROJECT_NAME} PUBLIC MikroSDK.Board)
+if (IS_BARE_METAL)
+    # Bare-metal setups have no mikroSDK drivers; app_freertos.c drops its GPIO
+    # code when NECTO_BARE_METAL is defined.
+    target_compile_definitions(${PROJECT_NAME} PRIVATE NECTO_BARE_METAL)
+else()
+    # Provides drv_digital_out.h / digital_out_init() / digital_out_toggle(),
+    # used by the blinky task.
+    find_package(MikroSDK.Driver.GPIO.Out REQUIRED)
+    target_link_libraries(${PROJECT_NAME} PUBLIC MikroSDK.Driver.GPIO.Out)
+
+    # Board LED names (LED1...) for the blinky task, from mikroSDK's board.h.
+    # Not every setup ships the board library, so it is optional: without it
+    # the task falls back to the PC0-PC7 LED bank.
+    find_package(MikroSDK.Board QUIET)
+    if (TARGET MikroSDK.Board)
+        target_link_libraries(${PROJECT_NAME} PUBLIC MikroSDK.Board)
+    endif()
 endif()
 
 if (${MIKROSDK_TYPE} STREQUAL "legacy")
