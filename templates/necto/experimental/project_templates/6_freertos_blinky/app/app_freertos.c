@@ -34,10 +34,11 @@ static void blinky_task(void *pvParameters)
 /* Demo LED bank driven by the blinky task. Update the pin list below to match
  * your board's LED wiring (see your board's schematic for the actual pins). */
 /* Board LEDs when mikroSDK's board.h names them (e.g. EK-RA8M1: LED1-LED3 on
- * P600/P414/P107). Otherwise pins 0-7 of one port of the Fusion/UNI-DS LED bank,
- * which has an LED behind every port pin: port C, or port D, or port B when the
- * selected MCU has none of the earlier one's pins 0-7 (e.g. STM32F031C6 only
- * has PC13-PC15). Only the pins the MCU has are listed, since mikroSDK only
+ * P600/P414/P107; Clicker 4 boards: LED_1-LED_6, e.g. P307/P305/P303/P112/
+ * P114/P608 on Clicker 4 for RA4M2). Otherwise pins 0-7 of one port of the
+ * Fusion/UNI-DS LED bank, which has an LED behind every port pin: port C, or
+ * port D, or port B when the selected MCU has none of the earlier one's pins
+ * 0-7 (e.g. STM32F031C6 only has PC13-PC15). Only the pins the MCU has are listed, since mikroSDK only
  * defines a pin name when the pin exists (e.g. PIC32MZ2048EFH144 has PC1-PC4
  * but no PC0 or PC5-PC7). The same template then builds for any MCU. */
 #if defined( __has_include )
@@ -58,6 +59,23 @@ static const pin_name_t blinky_led_pin_names[] =
     #endif
     #ifdef LED4
     LED4,
+    #endif
+#elif defined( LED_1 )
+    LED_1,
+    #ifdef LED_2
+    LED_2,
+    #endif
+    #ifdef LED_3
+    LED_3,
+    #endif
+    #ifdef LED_4
+    LED_4,
+    #endif
+    #ifdef LED_5
+    LED_5,
+    #endif
+    #ifdef LED_6
+    LED_6,
     #endif
 #else
     #if defined( PC0 ) || defined( PC1 ) || defined( PC2 ) || defined( PC3 ) || \
