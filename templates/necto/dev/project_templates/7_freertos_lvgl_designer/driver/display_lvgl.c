@@ -49,10 +49,10 @@ void lv_port_disp_init(void)
     /*-----------------------------
      * Create a buffer for drawing.
      *----------------------------*/
-    /* Your old code used "10 rows" -> PARTIAL render mode is the right match. */
+    /* Partial render mode with a 10-line draw buffer. */
     static lv_color_t buf_1[_TFT_WIDTH_ * 10];
 
-    /* buf_size is in BYTES in v9 */
+    /* Buffer size is given in bytes. */
     lv_display_set_buffers(g_disp,
                            buf_1,
                            NULL,
