@@ -133,6 +133,31 @@ static void lvgl_task(void *pvParameters)
 
 void app_freertos_init(void)
 {
+#if defined( __XC32__ )
+    /* The PIC32 ports' tick (Timer1) and yield (core software interrupt 0)
+     * handlers sit in their own vectors, which the CPU only uses in
+     * multi-vector mode. Neither the XC32 startup code nor mikroSDK (outside
+     * its interrupt API) sets INTCON.MVEC - on PIC32MZ as well as PIC32MX - so
+     * a project that never calls that API would leave the MCU in single-vector
+     * mode and send the first yield to the default handler. */
+    INTCONSET = _INTCON_MVEC_MASK;
+#endif
+
+#if defined( __riscv )
+    /* The RISC-V port does not install its own trap handler: the startup file
+     * points mtvec at a default handler that just spins, so the first yield
+     * (ecall) or tick would never reach the kernel. Install the port's handler
+     * in direct (CLINT) mode - the low mtvec bits are 0, which on the
+     * GD32VF103 also takes the core out of ECLIC mode, so the machine timer
+     * interrupt is delivered through mie.MTIE as the port expects. The handler
+     * is 256-byte aligned (.align 8 in portASM.S), which mtvec needs. */
+    {
+        extern void freertos_risc_v_trap_handler(void);
+
+        __asm volatile ( "csrw mtvec, %0" :: "r" ( freertos_risc_v_trap_handler ) );
+    }
+#endif
+
     xTaskCreate(lvgl_task, "LVGL", LVGL_TASK_STACK_SIZE, NULL, LVGL_TASK_PRIORITY, NULL);
 }
 
@@ -140,8 +165,14 @@ void app_freertos_init(void)
  * handlers (iv IVT_INT_SysTick / IVT_INT_PendSV / IVT_INT_SVCall), so nothing
  * is needed there. The GCC port does not: its handlers are plain functions the
  * vector table never reaches by name, so route the three exceptions into the
- * kernel here. */
-#if defined( __GNUC__ ) && defined( __arm__ )
+ * kernel here.
+ *
+ * ARMv7-M GCC ports only (Cortex-M3/M4/M7: GCC_ARM_CM3, GCC_ARM_CM4F,
+ * GCC_ARM_CM7): the ARMv6-M port (Cortex-M0/M0+) and the ARMv8-M ports
+ * (Cortex-M23/M33/M55/M85) name their handlers SVC_Handler, PendSV_Handler
+ * and SysTick_Handler themselves, so the startup file's weak entries already
+ * reach them and defining them here too would clash at link time. */
+#if defined( __GNUC__ ) && ( defined( __ARM_ARCH_7M__ ) || defined( __ARM_ARCH_7EM__ ) )
 
 /* Provided by the FreeRTOS port (portable/GCC/ARM_CMx/port.c); not exposed via
  * a shared header, so it is forward-declared here. */

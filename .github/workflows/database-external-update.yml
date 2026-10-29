@@ -299,11 +299,11 @@ jobs:
           echo 'changed=true' >> "$GITHUB_OUTPUT"
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
-      - name: Trigger ERP database import
-        if: steps.commit.outputs.changed == 'true' && steps.request.outputs.channel == 'live'
-        run: |
-          curl --fail-with-body --location --request POST '${{ secrets.ERP_DB_IMPORT_API }}' \
-            --header 'Authorization: Basic ${{ secrets.ERP_DB_IMPORT_KEY }}'
+      # - name: Trigger ERP database import
+      #   if: steps.commit.outputs.changed == 'true' && steps.request.outputs.channel == 'live'
+      #   run: |
+      #     curl --fail-with-body --location --request POST '${{ secrets.ERP_DB_IMPORT_API }}' \
+      #       --header 'Authorization: Basic ${{ secrets.ERP_DB_IMPORT_KEY }}'
 
       - name: Wait for database assets to be packaged
         if: steps.commit.outputs.changed == 'true'

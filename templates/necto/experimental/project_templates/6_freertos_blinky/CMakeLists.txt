@@ -19,48 +19,73 @@ target_include_directories(${PROJECT_NAME} PRIVATE app config)
 ############################ ${PROJECT_NAME} GENERATED CODE START ###########################
 ############################ ${PROJECT_NAME} GENERATED CODE END ###########################
 
-# FreeRTOS is installed once and shared across projects (see NECTO_FREERTOS_PATH,
-# set by NECTO); it is not vendored into the project directory.
+# NECTO copies the FreeRTOS kernel into the project's freertos/ directory when
+# the project is created, so the project builds against its own copy. Projects
+# created before that fall back to the shared package (NECTO_FREERTOS_PATH, set
+# by NECTO).
 #
-# FREERTOS_PORT/FREERTOS_HEAP select the kernel's port and heap implementation
-# (see NECTO_FREERTOS_PATH/CMakeLists.txt for the full port list). Override
-# from the command line, e.g. -DFREERTOS_PORT=GCC_RISC_V, for non-Cortex-M
-# targets; the default below only covers the common GCC ARM Cortex-M4F case.
-if (NOT DEFINED FREERTOS_PORT)
-    set(FREERTOS_PORT GCC_ARM_CM4F CACHE STRING "FreeRTOS port name")
+# FREERTOS_HEAP selects the kernel's heap implementation.
+#
+# FREERTOS_PORT selects the kernel's port (see freertos/portable/CMakeLists.txt
+# for the full list). NECTO picks it from the MCU core and passes it in as
+# NECTO_FREERTOS_PORT. Without it, the port is resolved from CORE_NAME and
+# TOOLCHAIN_ID by freeRtos_get_port_name() (mikroeUtils), falling back to
+# GCC_ARM_CM4F for unknown cores. To use a different port, replace this
+# if/else block with your own, e.g.
+#     set(FREERTOS_PORT GCC_ARM_CM7)
+# Keep it a plain set() (no CACHE): a plain variable takes precedence over any
+# cached FREERTOS_PORT, so the edit applies on the next configure.
+if (NECTO_FREERTOS_PORT)
+    set(FREERTOS_PORT ${NECTO_FREERTOS_PORT})
+else()
+    freeRtos_get_port_name("${CORE_NAME}" "${TOOLCHAIN_ID}" FREERTOS_PORT)
+    if (NOT FREERTOS_PORT)
+        set(FREERTOS_PORT GCC_ARM_CM4F)
+    endif()
 endif()
-if (NOT DEFINED FREERTOS_HEAP)
-    set(FREERTOS_HEAP 4 CACHE STRING "FreeRTOS heap implementation")
-endif()
+
+# Heap implementation and port-specific kernel options (see mikroeUtils).
+freeRtos_set_kernel_options("${FREERTOS_PORT}")
 
 # Found before freertos_config below, which reads this target's include
 # directories out of it - so it has to exist before that point.
 find_package(MikroC.Core REQUIRED)
 
-add_library(freertos_config INTERFACE)
-# Anything config/FreeRTOSConfig.h includes from the MikroSDK core (e.g.
-# core_header.h for FOSC_KHZ_VALUE) has to resolve for every target that
-# compiles against it - the FreeRTOS kernel, not just the app - so the core's
-# headers belong here alongside config/. Only the include directories are
-# taken; linking MikroC.Core itself would also put its static library on the
-# kernel's link line, which it has no need of.
-target_include_directories(freertos_config SYSTEM INTERFACE
-    config
-    $<TARGET_PROPERTY:MikroC.Core,INTERFACE_INCLUDE_DIRECTORIES>
-)
+# freertos_config: config/ plus MikroC.Core's headers, the heap size (from
+# MCU_RAM; set FREERTOS_HEAP_SIZE yourself to override) and the small-RAM
+# kernel configuration where needed (see mikroeUtils).
+freeRtos_add_config_library(${CMAKE_CURRENT_SOURCE_DIR}/config)
 
-add_subdirectory(${NECTO_FREERTOS_PATH} freertos_build)
-
-# Provides drv_digital_out.h / digital_out_init() / digital_out_toggle(), used
-# by the blinky task.
-find_package(MikroSDK.Driver.GPIO.Out REQUIRED)
+if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/freertos/CMakeLists.txt)
+    add_subdirectory(freertos freertos_build)
+else()
+    add_subdirectory(${NECTO_FREERTOS_PATH} freertos_build)
+endif()
 
 target_link_libraries(${PROJECT_NAME}
     PUBLIC
         MikroC.Core
-        MikroSDK.Driver.GPIO.Out
         freertos_kernel
 )
+
+if (IS_BARE_METAL)
+    # Bare-metal setups have no mikroSDK drivers; app_freertos.c drops its GPIO
+    # code when NECTO_BARE_METAL is defined.
+    target_compile_definitions(${PROJECT_NAME} PRIVATE NECTO_BARE_METAL)
+else()
+    # Provides drv_digital_out.h / digital_out_init() / digital_out_toggle(),
+    # used by the blinky task.
+    find_package(MikroSDK.Driver.GPIO.Out REQUIRED)
+    target_link_libraries(${PROJECT_NAME} PUBLIC MikroSDK.Driver.GPIO.Out)
+
+    # Board LED names (LED1...) for the blinky task, from mikroSDK's board.h.
+    # Not every setup ships the board library, so it is optional: without it
+    # the task falls back to the PC0-PC7 LED bank.
+    find_package(MikroSDK.Board QUIET)
+    if (TARGET MikroSDK.Board)
+        target_link_libraries(${PROJECT_NAME} PUBLIC MikroSDK.Board)
+    endif()
+endif()
 
 if (${MIKROSDK_TYPE} STREQUAL "legacy")
     find_package(MikroC.System REQUIRED)
