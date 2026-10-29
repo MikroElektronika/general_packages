@@ -18,57 +18,47 @@
 
 static gl_driver_t display_driver; /**< Graphic library display driver. */
 
-/* For displays with a height greater than the width (e.g. IPS Display Click, 135x240),
- * the visible area is centered within the 240x320 ST7789 frame memory.
- * Column offset = (240 - width) / 2, row offset = (320 - height) / 2. */
-#define DISP_GRAM_WIDTH  240
-#define DISP_GRAM_HEIGHT 320
+#if defined(tp_st7789) && (_TFT_HEIGHT_ > _TFT_WIDTH_)
+/* Panels taller than wide (e.g. IPS Display Click, 135x240) sit centered in the
+ * ST7789's 240x320 GRAM, so the frame window is shifted onto the visible area.
+ * The driver's functions aren't wrapped, as mikroC for PIC18 reports that as recursion. */
+#include "st7789_cmd.h"
 
-#ifndef DISP_COL_OFFSET
-#if _TFT_HEIGHT_ > _TFT_WIDTH_
-#define DISP_COL_OFFSET  ((DISP_GRAM_WIDTH  - _TFT_WIDTH_)  / 2)
-#else
-#define DISP_COL_OFFSET  0
-#endif
-#endif
+#define DISP_COL_OFFSET ((240 - _TFT_WIDTH_) / 2)
+#define DISP_ROW_OFFSET ((320 - _TFT_HEIGHT_) / 2)
 
-#ifndef DISP_ROW_OFFSET
-#if _TFT_HEIGHT_ > _TFT_WIDTH_
-#define DISP_ROW_OFFSET  ((DISP_GRAM_HEIGHT - _TFT_HEIGHT_) / 2)
-#else
-#define DISP_ROW_OFFSET  0
-#endif
-#endif
+static digital_out_t disp_pin_cs; /**< Same CS pin the driver uses. */
+static digital_out_t disp_pin_dc; /**< Same D/C pin the driver uses. */
 
-#if (DISP_COL_OFFSET != 0) || (DISP_ROW_OFFSET != 0)
-static gl_fill_t        display_fill;        /**< Original driver fill function. */
-static gl_begin_frame_t display_begin_frame; /**< Original driver begin frame function. */
-
-/**
- * @brief Shifts the drawing window onto the visible area of the panel.
- */
-static void display_offset_rect(gl_rectangle_t *dst, gl_rectangle_t *src)
+static void display_begin_frame_offset(gl_rectangle_t *rect)
 {
-    dst->top_left.x = src->top_left.x + DISP_COL_OFFSET;
-    dst->top_left.y = src->top_left.y + DISP_ROW_OFFSET;
-    dst->width = src->width;
-    dst->height = src->height;
+    uint16_t x1 = rect->top_left.x + DISP_COL_OFFSET, x2 = x1 + rect->width - 1;
+    uint16_t y1 = rect->top_left.y + DISP_ROW_OFFSET, y2 = y1 + rect->height - 1;
+
+    st7789_write_command(ST7789_CMD_CASET);
+    st7789_write_param(x1 >> 8); st7789_write_param(x1);
+    st7789_write_param(x2 >> 8); st7789_write_param(x2);
+
+    st7789_write_command(ST7789_CMD_RASET);
+    st7789_write_param(y1 >> 8); st7789_write_param(y1);
+    st7789_write_param(y2 >> 8); st7789_write_param(y2);
+
+    st7789_write_command(ST7789_CMD_RAMWR);
+    digital_out_low(&disp_pin_cs);
+    digital_out_high(&disp_pin_dc);
 }
 
 static void display_fill_offset(gl_rectangle_t *rect, gl_color_t color)
 {
-    gl_rectangle_t shifted;
+    uint32_t length = (uint32_t)rect->width * rect->height;
 
-    display_offset_rect(&shifted, rect);
-    display_fill(&shifted, color);
-}
+    if (!length)
+        return;
 
-static void display_begin_frame_offset(gl_rectangle_t *rect)
-{
-    gl_rectangle_t shifted;
-
-    display_offset_rect(&shifted, rect);
-    display_begin_frame(&shifted);
+    display_begin_frame_offset(rect);
+    while (length--)
+        display_driver.frame_data_f(color);
+    display_driver.end_frame_f();
 }
 #endif
 static tp_t tp;                    /**< Touch panel driver instance. */
@@ -82,16 +72,12 @@ void board_init()
 {
     touch_controller_init(&display_driver, TFT_MAX_BACKLIGHT);
 
-#if (DISP_COL_OFFSET != 0) || (DISP_ROW_OFFSET != 0)
-    // Panels taller than wide sit centered inside the controller's GRAM,
-    // so wrap the driver's drawing functions to apply the offset.
-    display_fill = display_driver.fill_f;
-    display_begin_frame = display_driver.begin_frame_f;
-    if (display_fill)
-        display_driver.fill_f = display_fill_offset;
-    if (display_begin_frame)
-        display_driver.begin_frame_f = display_begin_frame_offset;
-#endif
+    #if defined(tp_st7789) && (_TFT_HEIGHT_ > _TFT_WIDTH_)
+    digital_out_init(&disp_pin_cs, MIKROBUS(DISPLAY_SPI_MIKROBUS, MIKROBUS_CS));
+    digital_out_init(&disp_pin_dc, MIKROBUS(DISPLAY_SPI_MIKROBUS, MIKROBUS_INT));
+    display_driver.fill_f = display_fill_offset;
+    display_driver.begin_frame_f = display_begin_frame_offset;
+    #endif
 
     // Initialize the Graphic Library and register the display driver.
     gl_set_driver(&display_driver);
