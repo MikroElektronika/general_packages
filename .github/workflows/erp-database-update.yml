@@ -1,0 +1,86 @@
+name: Update ERP database
+
+on:
+  # Daily at 08:15 Europe/Belgrade. GitHub cron runs in UTC, so both the CEST
+  # (06:15 UTC) and CET (07:15 UTC) slots are scheduled and the gate step lets
+  # through only the one matching the current Belgrade offset.
+  schedule:
+    - cron: '15 6 * * *'
+    - cron: '15 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: general-packages-database-main
+  cancel-in-progress: false
+
+jobs:
+  erp:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Belgrade local time for scheduled runs
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          python3 - <<'PY'
+          import os
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          run = True
+          if os.environ['EVENT_NAME'] == 'schedule':
+              offset_hours = int(datetime.now(ZoneInfo('Europe/Belgrade')).utcoffset().total_seconds() // 3600)
+              expected = {2: '15 6 * * *', 1: '15 7 * * *'}[offset_hours]
+              run = os.environ['EVENT_SCHEDULE'] == expected
+              print(f"Belgrade UTC offset: +{offset_hours}h, expected cron {expected!r}, got {os.environ['EVENT_SCHEDULE']!r}")
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as stream:
+              stream.write(f"run={str(run).lower()}\n")
+          PY
+
+      - name: Checkout main
+        if: steps.gate.outputs.run == 'true'
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          lfs: true
+
+      - name: Set up Python
+        if: steps.gate.outputs.run == 'true'
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install database dependencies
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements/shared.txt
+          pip install -r scripts/requirements/databases.txt
+
+      - name: Build ERP database from Live
+        if: steps.gate.outputs.run == 'true'
+        env:
+          ES_HOST: ${{ secrets.ES_HOST }}
+          ES_USER: ${{ secrets.ES_USER }}
+          ES_PASSWORD: ${{ secrets.ES_PASSWORD }}
+          ES_INDEX_LIVE: ${{ secrets.ES_INDEX_LIVE }}
+        run: python3 -u scripts/database/build_erp_database.py --output erp_db.db
+
+      - name: Upload ERP database to latest release
+        if: steps.gate.outputs.run == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="$(gh release view --repo "$GITHUB_REPOSITORY" --json tagName --jq .tagName)"
+          gh release upload "$tag" erp_db.db --clobber --repo "$GITHUB_REPOSITORY"
+
+      # - name: Trigger ERP database import
+      #   if: steps.gate.outputs.run == 'true'
+      #   run: |
+      #     curl --fail-with-body --location --request POST '${{ secrets.ERP_DB_IMPORT_API }}' \
+      #       --header 'Authorization: Basic ${{ secrets.ERP_DB_IMPORT_KEY }}'

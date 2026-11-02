@@ -212,6 +212,10 @@ jobs:
           PROG_DEBUG_CODEGRIP_TEST: ${{ secrets.PROG_DEBUG_CODEGRIP_TEST }}
           PROG_DEBUG_MIKROPROG: ${{ secrets.PROG_DEBUG_MIKROPROG }}
           PROG_DEBUG_JLINK: ${{ secrets.PROG_DEBUG_JLINK }}
+          ES_HOST: ${{ secrets.ES_HOST }}
+          ES_USER: ${{ secrets.ES_USER }}
+          ES_PASSWORD: ${{ secrets.ES_PASSWORD }}
+          ES_INDEX_LIVE: ${{ secrets.ES_INDEX_LIVE }}
         run: |
           python3 - <<'PY'
           import json
@@ -275,8 +279,12 @@ jobs:
         if: steps.request.outputs.operation == 'devices' && steps.request.outputs.channel == 'live'
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          ES_HOST: ${{ secrets.ES_HOST }}
+          ES_USER: ${{ secrets.ES_USER }}
+          ES_PASSWORD: ${{ secrets.ES_PASSWORD }}
+          ES_INDEX_LIVE: ${{ secrets.ES_INDEX_LIVE }}
         run: |
-          cp utils/databases/database_live/necto_db.db erp_db.db
+          python3 -u scripts/database/build_erp_database.py --output erp_db.db
           tag="$(gh release view --repo MikroElektronika/general_packages --json tagName --jq .tagName)"
           gh release upload "$tag" erp_db.db --clobber --repo MikroElektronika/general_packages
 
