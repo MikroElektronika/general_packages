@@ -31,6 +31,7 @@ import reupload_support as utility
 import addSdkVersion as sdk
 import read_microchip_index as MCHP
 from update_renesas_programmers import update_renesas_programmers
+from filter_erp_devices import filter_erp_database
 
 entranceCheckProg = True
 entranceCheckDebug = True
@@ -1893,6 +1894,12 @@ async def main(
         createErpDbpSyncInfo(db=databaseErp, table='DeviceFamilies')
         createErpDbpSyncInfo(db=databaseErp, table='DeviceArchitectures')
     ## EOF Step 18
+
+    ## Step 18.1 - keep only MCUs from visible (hidden == false) ES MCU packages in ERP db
+    if databaseErp:
+        log_step(f'\033[96mStep 18.1: Removing MCUs not present in visible ES MCU packages from {databaseErp}.\033[0m')
+        filter_erp_database(databaseErp)
+    ## EOF Step 18.1
 
     ## Step 19 - DB release archives are now created by scripts/package.py.
     ## Preserve the historical ERP upload for Live unless explicitly disabled.

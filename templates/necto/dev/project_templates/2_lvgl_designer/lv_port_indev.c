@@ -1,7 +1,6 @@
 #include "lv_port_indev.h"
 #include "lvgl_common.h"
 
-/* LVGL v9: read_cb signature changed, and lv_indev_drv_t is removed */
 static void touchpad_init(void);
 static void touchpad_read(lv_indev_t * indev, lv_indev_data_t * data);
 static bool touchpad_is_pressed(void);
@@ -18,7 +17,7 @@ void lv_port_indev_init(void)
 {
     touchpad_init();
 
-    /* LVGL v9+: create indev and configure it (no lv_indev_drv_t anymore) */
+    /* Create the pointer input device and register its read callback. */
     indev_touchpad = lv_indev_create();
     lv_indev_set_type(indev_touchpad, LV_INDEV_TYPE_POINTER);
     lv_indev_set_read_cb(indev_touchpad, touchpad_read);
@@ -59,7 +58,6 @@ static void touchpad_read(lv_indev_t * indev, lv_indev_data_t * data)
 /* Return true if the touchpad is pressed. */
 static bool touchpad_is_pressed(void)
 {
-    /* Your original code missed the return statement. */
     check_touchpad();
 }
 

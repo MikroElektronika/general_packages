@@ -170,7 +170,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version: '3.x'
+          python-version: '3.12'
 
       - name: Install database dependencies
         run: |
@@ -212,6 +212,10 @@ jobs:
           PROG_DEBUG_CODEGRIP_TEST: ${{ secrets.PROG_DEBUG_CODEGRIP_TEST }}
           PROG_DEBUG_MIKROPROG: ${{ secrets.PROG_DEBUG_MIKROPROG }}
           PROG_DEBUG_JLINK: ${{ secrets.PROG_DEBUG_JLINK }}
+          ES_HOST: ${{ secrets.ES_HOST }}
+          ES_USER: ${{ secrets.ES_USER }}
+          ES_PASSWORD: ${{ secrets.ES_PASSWORD }}
+          ES_INDEX_LIVE: ${{ secrets.ES_INDEX_LIVE }}
         run: |
           python3 - <<'PY'
           import json
@@ -275,8 +279,12 @@ jobs:
         if: steps.request.outputs.operation == 'devices' && steps.request.outputs.channel == 'live'
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          ES_HOST: ${{ secrets.ES_HOST }}
+          ES_USER: ${{ secrets.ES_USER }}
+          ES_PASSWORD: ${{ secrets.ES_PASSWORD }}
+          ES_INDEX_LIVE: ${{ secrets.ES_INDEX_LIVE }}
         run: |
-          cp utils/databases/database_live/necto_db.db erp_db.db
+          python3 -u scripts/database/build_erp_database.py --output erp_db.db
           tag="$(gh release view --repo MikroElektronika/general_packages --json tagName --jq .tagName)"
           gh release upload "$tag" erp_db.db --clobber --repo MikroElektronika/general_packages
 
@@ -299,11 +307,11 @@ jobs:
           echo 'changed=true' >> "$GITHUB_OUTPUT"
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
-      # - name: Trigger ERP database import
-      #   if: steps.commit.outputs.changed == 'true' && steps.request.outputs.channel == 'live'
-      #   run: |
-      #     curl --fail-with-body --location --request POST '${{ secrets.ERP_DB_IMPORT_API }}' \
-      #       --header 'Authorization: Basic ${{ secrets.ERP_DB_IMPORT_KEY }}'
+      - name: Trigger ERP database import
+        if: steps.request.outputs.channel == 'live'
+        run: |
+          curl --fail-with-body --location --request POST '${{ secrets.ERP_DB_IMPORT_API }}' \
+            --header 'Authorization: Basic ${{ secrets.ERP_DB_IMPORT_KEY }}'
 
       - name: Wait for database assets to be packaged
         if: steps.commit.outputs.changed == 'true'
