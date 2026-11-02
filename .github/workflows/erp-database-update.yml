@@ -1,11 +1,7 @@
 name: Update ERP database
 
 on:
-  # Daily at 08:15 Europe/Belgrade. GitHub cron runs in UTC, so both the CEST
-  # (06:15 UTC) and CET (07:15 UTC) slots are scheduled and the gate step lets
-  # through only the one matching the current Belgrade offset.
   schedule:
-    - cron: '15 6 * * *'
     - cron: '15 7 * * *'
   workflow_dispatch:
 
@@ -79,8 +75,8 @@ jobs:
           tag="$(gh release view --repo "$GITHUB_REPOSITORY" --json tagName --jq .tagName)"
           gh release upload "$tag" erp_db.db --clobber --repo "$GITHUB_REPOSITORY"
 
-      # - name: Trigger ERP database import
-      #   if: steps.gate.outputs.run == 'true'
-      #   run: |
-      #     curl --fail-with-body --location --request POST '${{ secrets.ERP_DB_IMPORT_API }}' \
-      #       --header 'Authorization: Basic ${{ secrets.ERP_DB_IMPORT_KEY }}'
+      - name: Trigger ERP database import
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          curl --fail-with-body --location --request POST '${{ secrets.ERP_DB_IMPORT_API }}' \
+            --header 'Authorization: Basic ${{ secrets.ERP_DB_IMPORT_KEY }}'
