@@ -11,6 +11,7 @@ clock_graphs/
   manifest.json        packaging manifest: scripts/package.py releases this folder as clock_graphs.7z
   index.json           generated: which graph serves which MCU (scripts/clock_graphs/build_index.py)
   stm32/*.json         written by scripts/clock_graphs/stm32_graphs.py
+  microchip_sam/*.json written by scripts/clock_graphs/microchip_sam_graphs.py
   renesas_ra/*.json    converted from Renesas FSP packs by scripts/clock_graphs/convert_fsp_ra.py
 ```
 
@@ -24,6 +25,8 @@ do not validate.
 * **STM32** graphs are written by hand from the STM32 reference manuals and datasheets. No
   STM32CubeMX database content is used (its SLA0048 license forbids open-source
   redistribution).
+* **Microchip SAM** graphs (SAM E70/S70/V70/V71, SAM G53/G54/G55) are written by hand from the
+  datasheets' PMC chapters.
 * **Renesas RA** graphs are converted from the `<clock>` section of the FSP MCU packs
   (`.module_descriptions/Renesas##BSP##<family>##fsp####<version>.xml`), part of the RA MCU BSP
   released by Renesas under BSD-3-Clause (see https://github.com/renesas/fsp/blob/master/LICENSE.md).
@@ -80,6 +83,9 @@ with `"mul": 16000000`). `"mul": 0` turns the clock off.
 { "id": "hse", "label": "HSE", "from": "hse", "mul": 1, "div": 1,
   "set": { "RCC_PLLCFGR.PLLSRC": "00400000" } }
 ```
+
+`keeps` (optional) lists nodes the option needs running although it does not take its frequency
+from them, e.g. a 480 MHz USB PLL that needs the main crystal: `"keeps": ["main_xtal"]`.
 
 `set` lists the register field values the option writes. **Values are absolute register bit
 values in hex**, exactly like `config_registers[].fields[].settings[].value` in the NECTO

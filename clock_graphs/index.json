@@ -2,6 +2,24 @@
   "schema": 1,
   "graphs": [
     {
+      "id": "sam_e70_s70_v70_v71",
+      "file": "microchip_sam/sam_e70_s70_v70_v71.json",
+      "vendor": "Microchip",
+      "title": "SAM E70/S70/V70/V71 clock tree",
+      "devices": [
+        "^ATSAM[ESV]7[01]"
+      ]
+    },
+    {
+      "id": "sam_g5x",
+      "file": "microchip_sam/sam_g5x.json",
+      "vendor": "Microchip",
+      "title": "SAM G53/G54/G55 clock tree",
+      "devices": [
+        "^ATSAMG5[345]"
+      ]
+    },
+    {
       "id": "ra0e1",
       "file": "renesas_ra/ra0e1.json",
       "vendor": "Renesas",

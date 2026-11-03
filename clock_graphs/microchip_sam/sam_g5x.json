@@ -1,0 +1,163 @@
+{
+  "schema": 1,
+  "id": "sam_g5x",
+  "title": "SAM G53/G54/G55 clock tree",
+  "vendor": "Microchip",
+  "source": "SAM G53/G54/G55 datasheets, PMC",
+  "devices": ["^ATSAMG5[345]"],
+  "fosc": "hclk",
+  "inputs": {
+    "main_xtal": {"label": "Main crystal frequency", "default": 12000000, "min": 3000000, "max": 20000000}
+  },
+  "settings": ["EEFC_FMR.FWS", "CKGR_MOR.MOSCXTBY", "CKGR_MOR.CFDEN"],
+  "nodes": [
+    {
+      "id": "main_rc",
+      "label": "Main RC",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "enable": {"field": "CKGR_MOR.MOSCRCEN", "on": "00000008", "off": "00000000", "auto": "on"},
+      "options": [
+        {"id": "8", "label": "RC 8 MHz", "mul": 8000000, "set": {"CKGR_MOR.MOSCRCF": "00000000"}},
+        {"id": "16", "label": "RC 16 MHz", "mul": 16000000, "set": {"CKGR_MOR.MOSCRCF": "00000010"}},
+        {"id": "24", "label": "RC 24 MHz", "mul": 24000000, "set": {"CKGR_MOR.MOSCRCF": "00000020"}}
+      ]
+    },
+    {
+      "id": "main_xtal",
+      "label": "Main crystal",
+      "kind": "source",
+      "x": 0,
+      "y": 2,
+      "input": "main_xtal",
+      "enable": {"field": "CKGR_MOR.MOSCXTEN", "on": "00000001", "off": "00000000", "auto": "both"},
+      "tooltip": "3-20 MHz crystal (CKGR_MOR.MOSCXTEN)."
+    },
+    {
+      "id": "mainck",
+      "label": "MAINCK",
+      "kind": "mux",
+      "x": 1,
+      "y": 1,
+      "options": [
+        {"id": "rc", "label": "Main RC", "from": "main_rc", "set": {"CKGR_MOR.MOSCSEL": "00000000"}},
+        {"id": "xtal", "label": "Main crystal", "from": "main_xtal", "set": {"CKGR_MOR.MOSCSEL": "01000000"}}
+      ]
+    },
+    {
+      "id": "slck",
+      "label": "Slow clock (SLCK)",
+      "kind": "source",
+      "x": 0,
+      "y": 4,
+      "tooltip": "SUPC_CR.XTALSEL switches SLCK to the 32.768 kHz crystal.",
+      "options": [
+        {"id": "rc", "label": "RC 32 kHz", "mul": 32000, "set": {"SUPC_CR.XTALSEL": "00000000"}},
+        {"id": "xtal", "label": "Crystal 32.768 kHz", "mul": 32768, "set": {"SUPC_CR.XTALSEL": "00000008"}}
+      ]
+    },
+    {
+      "id": "plla",
+      "label": "PLLA xMULA",
+      "kind": "multiplier",
+      "x": 2,
+      "y": 4,
+      "range": {"from": "slck", "op": "mul", "min": 9, "max": 7501, "field": "CKGR_PLLAR.MULA", "lsb": 16, "scale": 1, "offset": -1},
+      "max": 120000000,
+      "enable": {"field": "CKGR_PLLAR.PLLAEN", "on": "00000001", "off": "00000000", "auto": "both"},
+      "tooltip": "PLLA multiplies the slow clock: (MULA + 1) x SLCK."
+    },
+    {
+      "id": "pllaclk",
+      "label": "PLLADIV2",
+      "kind": "divider",
+      "x": 3,
+      "y": 4,
+      "options": [
+        {"id": "1", "label": "/1", "from": "plla", "set": {"PMC_MCKR.PLLADIV2": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "plla", "set": {"PMC_MCKR.PLLADIV2": "00001000"}, "div": 2}
+      ]
+    },
+    {
+      "id": "pllb",
+      "label": "PLLB xMULB",
+      "kind": "multiplier",
+      "x": 2,
+      "y": 6,
+      "range": {"from": "slck", "op": "mul", "min": 9, "max": 2401, "field": "CKGR_PLLBR.MULB", "lsb": 16, "scale": 1, "offset": -1},
+      "max": 120000000,
+      "enable": {"field": "CKGR_PLLBR.PLLBEN", "on": "00000001", "off": "00000000", "auto": "both"},
+      "tooltip": "PLLB (SAM G55) multiplies the slow clock: (MULB + 1) x SLCK."
+    },
+    {
+      "id": "pllbclk",
+      "label": "PLLBDIV2",
+      "kind": "divider",
+      "x": 3,
+      "y": 6,
+      "options": [
+        {"id": "1", "label": "/1", "from": "pllb", "set": {"PMC_MCKR.PLLBDIV2": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "pllb", "set": {"PMC_MCKR.PLLBDIV2": "00002000"}, "div": 2}
+      ]
+    },
+    {
+      "id": "css",
+      "label": "Master clock source",
+      "kind": "mux",
+      "x": 4,
+      "y": 1,
+      "options": [
+        {"id": "slck", "label": "SLCK", "from": "slck", "set": {"PMC_MCKR.CSS": "00000000"}},
+        {"id": "mainck", "label": "MAINCK", "from": "mainck", "set": {"PMC_MCKR.CSS": "00000001"}},
+        {"id": "plla", "label": "PLLA", "from": "pllaclk", "set": {"PMC_MCKR.CSS": "00000002"}},
+        {"id": "pllb", "label": "PLLB", "from": "pllbclk", "set": {"PMC_MCKR.CSS": "00000003"}}
+      ]
+    },
+    {
+      "id": "hclk",
+      "label": "MCK (PRES)",
+      "kind": "divider",
+      "x": 5,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "css", "set": {"PMC_MCKR.PRES": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "css", "set": {"PMC_MCKR.PRES": "00000010"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "css", "set": {"PMC_MCKR.PRES": "00000020"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "css", "set": {"PMC_MCKR.PRES": "00000030"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "css", "set": {"PMC_MCKR.PRES": "00000040"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "css", "set": {"PMC_MCKR.PRES": "00000050"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "css", "set": {"PMC_MCKR.PRES": "00000060"}, "div": 64},
+        {"id": "3", "label": "/3", "from": "css", "set": {"PMC_MCKR.PRES": "00000070"}, "div": 3}
+      ],
+      "max": 120000000,
+      "consumer": true,
+      "tooltip": "Master/processor clock. Set EEFC_FMR.FWS for this frequency (see the datasheet flash wait states)."
+    },
+    {
+      "id": "usbsrc",
+      "label": "USB source",
+      "kind": "mux",
+      "x": 4,
+      "y": 6,
+      "options": [
+        {"id": "plla", "label": "PLLA", "from": "pllaclk", "set": {"PMC_USB.USBS": "00000000"}},
+        {"id": "pllb", "label": "PLLB", "from": "pllbclk", "set": {"PMC_USB.USBS": "00000001"}}
+      ]
+    },
+    {
+      "id": "usbclk",
+      "label": "USB /USBDIV",
+      "kind": "divider",
+      "x": 5,
+      "y": 6,
+      "range": {"from": "usbsrc", "op": "div", "min": 1, "max": 16, "field": "PMC_USB.USBDIV", "lsb": 8, "scale": 1, "offset": -1},
+      "max": 48000000,
+      "tooltip": "USB (SAM G55) needs 48 MHz."
+    }
+  ],
+  "variants": [
+    {"devices": ["^ATSAMG53"], "limits": {"plla": {"max": 48000000}, "hclk": {"max": 48000000}}},
+    {"devices": ["^ATSAMG54"], "limits": {"plla": {"max": 96000000}, "hclk": {"max": 96000000}}}
+  ]
+}

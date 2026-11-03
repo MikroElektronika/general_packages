@@ -31,12 +31,17 @@ jobs:
         with:
           python-version: "3.12"
 
-      # The STM32 graphs are generated: the committed JSON must match the generator.
-      - name: Check generated STM32 graphs
+      # The STM32 and Microchip SAM graphs are generated: the committed JSON must match the generators.
+      - name: Check generated graphs
         run: |
           python scripts/clock_graphs/stm32_graphs.py
-          git diff --exit-code -- clock_graphs/stm32 || {
-            echo "::error::clock_graphs/stm32 is out of date: run python scripts/clock_graphs/stm32_graphs.py and commit the result."
+          python scripts/clock_graphs/microchip_sam_graphs.py
+          git diff --exit-code -- clock_graphs/stm32 clock_graphs/microchip_sam || {
+            echo "::error::Generated clock graphs are out of date: run the generators in scripts/clock_graphs and commit the result."
+            exit 1
+          }
+          test -z "$(git status --porcelain -- clock_graphs/stm32 clock_graphs/microchip_sam)" || {
+            echo "::error::A generator wrote a graph that is not committed."
             exit 1
           }
 

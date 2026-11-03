@@ -217,6 +217,9 @@ def check_graph(graph):
             option_ids.add(option.get('id'))
             if option.get('from') is not None and option['from'] not in nodes:
                 problems.append(f'{where}: option {option.get("id")} reads unknown node {option["from"]!r}')
+            for kept in option.get('keeps', []):
+                if kept not in nodes:
+                    problems.append(f'{where}: option {option.get("id")} keeps unknown node {kept!r}')
             for field, value in (option.get('set') or {}).items():
                 if not re.match(r'^[0-9A-F]{8}$', str(value)):
                     problems.append(f'{where}: {field} value {value!r} must be 8 hex digits')
