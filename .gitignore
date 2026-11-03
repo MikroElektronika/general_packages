@@ -2,6 +2,7 @@
 tmp
 .vscode
 scripts/__pycache__
+scripts/clock_graphs/__pycache__
 .db-base/
 .db-sync-preview/
 reports/

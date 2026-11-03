@@ -1,0 +1,491 @@
+{
+  "schema": 1,
+  "graphs": [
+    {
+      "id": "ra0e1",
+      "file": "renesas_ra/ra0e1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA0E1 clock tree",
+      "devices": [
+        "^R7[FK]A0E1"
+      ]
+    },
+    {
+      "id": "ra0e2",
+      "file": "renesas_ra/ra0e2.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA0E2 clock tree",
+      "devices": [
+        "^R7[FK]A0E2"
+      ]
+    },
+    {
+      "id": "ra0e3",
+      "file": "renesas_ra/ra0e3.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA0E3 clock tree",
+      "devices": [
+        "^R7[FK]A0E3"
+      ]
+    },
+    {
+      "id": "ra0l1",
+      "file": "renesas_ra/ra0l1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA0L1 clock tree",
+      "devices": [
+        "^R7[FK]A0L1"
+      ]
+    },
+    {
+      "id": "ra2a1",
+      "file": "renesas_ra/ra2a1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA2A1 clock tree",
+      "devices": [
+        "^R7[FK]A2A1"
+      ]
+    },
+    {
+      "id": "ra2a2",
+      "file": "renesas_ra/ra2a2.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA2A2 clock tree",
+      "devices": [
+        "^R7[FK]A2A2"
+      ]
+    },
+    {
+      "id": "ra2e1",
+      "file": "renesas_ra/ra2e1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA2E1 clock tree",
+      "devices": [
+        "^R7[FK]A2E1"
+      ]
+    },
+    {
+      "id": "ra2e2",
+      "file": "renesas_ra/ra2e2.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA2E2 clock tree",
+      "devices": [
+        "^R7[FK]A2E2"
+      ]
+    },
+    {
+      "id": "ra2e3",
+      "file": "renesas_ra/ra2e3.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA2E3 clock tree",
+      "devices": [
+        "^R7[FK]A2E3"
+      ]
+    },
+    {
+      "id": "ra2l1",
+      "file": "renesas_ra/ra2l1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA2L1 clock tree",
+      "devices": [
+        "^R7[FK]A2L1"
+      ]
+    },
+    {
+      "id": "ra2l2",
+      "file": "renesas_ra/ra2l2.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA2L2 clock tree",
+      "devices": [
+        "^R7[FK]A2L2"
+      ]
+    },
+    {
+      "id": "ra2t1",
+      "file": "renesas_ra/ra2t1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA2T1 clock tree",
+      "devices": [
+        "^R7[FK]A2T1"
+      ]
+    },
+    {
+      "id": "ra4c1",
+      "file": "renesas_ra/ra4c1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA4C1 clock tree",
+      "devices": [
+        "^R7[FK]A4C1"
+      ]
+    },
+    {
+      "id": "ra4e1",
+      "file": "renesas_ra/ra4e1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA4E1 clock tree",
+      "devices": [
+        "^R7[FK]A4E1"
+      ]
+    },
+    {
+      "id": "ra4e2",
+      "file": "renesas_ra/ra4e2.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA4E2 clock tree",
+      "devices": [
+        "^R7[FK]A4E2"
+      ]
+    },
+    {
+      "id": "ra4l1",
+      "file": "renesas_ra/ra4l1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA4L1 clock tree",
+      "devices": [
+        "^R7[FK]A4L1"
+      ]
+    },
+    {
+      "id": "ra4m1",
+      "file": "renesas_ra/ra4m1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA4M1 clock tree",
+      "devices": [
+        "^R7[FK]A4M1"
+      ]
+    },
+    {
+      "id": "ra4m2",
+      "file": "renesas_ra/ra4m2.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA4M2 clock tree",
+      "devices": [
+        "^R7[FK]A4M2"
+      ]
+    },
+    {
+      "id": "ra4m3",
+      "file": "renesas_ra/ra4m3.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA4M3 clock tree",
+      "devices": [
+        "^R7[FK]A4M3"
+      ]
+    },
+    {
+      "id": "ra4t1",
+      "file": "renesas_ra/ra4t1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA4T1 clock tree",
+      "devices": [
+        "^R7[FK]A4T1"
+      ]
+    },
+    {
+      "id": "ra4w1",
+      "file": "renesas_ra/ra4w1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA4W1 clock tree",
+      "devices": [
+        "^R7[FK]A4W1"
+      ]
+    },
+    {
+      "id": "ra6e1",
+      "file": "renesas_ra/ra6e1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA6E1 clock tree",
+      "devices": [
+        "^R7[FK]A6E1"
+      ]
+    },
+    {
+      "id": "ra6e2",
+      "file": "renesas_ra/ra6e2.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA6E2 clock tree",
+      "devices": [
+        "^R7[FK]A6E2"
+      ]
+    },
+    {
+      "id": "ra6m1",
+      "file": "renesas_ra/ra6m1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA6M1 clock tree",
+      "devices": [
+        "^R7[FK]A6M1"
+      ]
+    },
+    {
+      "id": "ra6m2",
+      "file": "renesas_ra/ra6m2.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA6M2 clock tree",
+      "devices": [
+        "^R7[FK]A6M2"
+      ]
+    },
+    {
+      "id": "ra6m3",
+      "file": "renesas_ra/ra6m3.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA6M3 clock tree",
+      "devices": [
+        "^R7[FK]A6M3"
+      ]
+    },
+    {
+      "id": "ra6m4",
+      "file": "renesas_ra/ra6m4.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA6M4 clock tree",
+      "devices": [
+        "^R7[FK]A6M4"
+      ]
+    },
+    {
+      "id": "ra6m5",
+      "file": "renesas_ra/ra6m5.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA6M5 clock tree",
+      "devices": [
+        "^R7[FK]A6M5"
+      ]
+    },
+    {
+      "id": "ra6t1",
+      "file": "renesas_ra/ra6t1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA6T1 clock tree",
+      "devices": [
+        "^R7[FK]A6T1"
+      ]
+    },
+    {
+      "id": "ra6t2",
+      "file": "renesas_ra/ra6t2.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA6T2 clock tree",
+      "devices": [
+        "^R7[FK]A6T2"
+      ]
+    },
+    {
+      "id": "ra6t3",
+      "file": "renesas_ra/ra6t3.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA6T3 clock tree",
+      "devices": [
+        "^R7[FK]A6T3"
+      ]
+    },
+    {
+      "id": "ra8d1",
+      "file": "renesas_ra/ra8d1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA8D1 clock tree",
+      "devices": [
+        "^R7[FK]A8D1"
+      ]
+    },
+    {
+      "id": "ra8d2",
+      "file": "renesas_ra/ra8d2.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA8D2 clock tree",
+      "devices": [
+        "^R7[FK]A8D2"
+      ]
+    },
+    {
+      "id": "ra8e1",
+      "file": "renesas_ra/ra8e1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA8E1 clock tree",
+      "devices": [
+        "^R7[FK]A8E1"
+      ]
+    },
+    {
+      "id": "ra8e2",
+      "file": "renesas_ra/ra8e2.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA8E2 clock tree",
+      "devices": [
+        "^R7[FK]A8E2"
+      ]
+    },
+    {
+      "id": "ra8m1",
+      "file": "renesas_ra/ra8m1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA8M1 clock tree",
+      "devices": [
+        "^R7[FK]A8M1"
+      ]
+    },
+    {
+      "id": "ra8m2",
+      "file": "renesas_ra/ra8m2.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA8M2 clock tree",
+      "devices": [
+        "^R7[FK]A8M2"
+      ]
+    },
+    {
+      "id": "ra8t1",
+      "file": "renesas_ra/ra8t1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA8T1 clock tree",
+      "devices": [
+        "^R7[FK]A8T1"
+      ]
+    },
+    {
+      "id": "ra8t2",
+      "file": "renesas_ra/ra8t2.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA8T2 clock tree",
+      "devices": [
+        "^R7[FK]A8T2"
+      ]
+    },
+    {
+      "id": "stm32c0",
+      "file": "stm32/stm32c0.json",
+      "vendor": "STMicroelectronics",
+      "title": "STM32C0 system clock tree",
+      "devices": [
+        "^STM32C0"
+      ]
+    },
+    {
+      "id": "stm32f0",
+      "file": "stm32/stm32f0.json",
+      "vendor": "STMicroelectronics",
+      "title": "STM32F0 system clock tree",
+      "devices": [
+        "^STM32F0"
+      ]
+    },
+    {
+      "id": "stm32f1",
+      "file": "stm32/stm32f1.json",
+      "vendor": "STMicroelectronics",
+      "title": "STM32F101/F102/F103 system clock tree",
+      "devices": [
+        "^STM32F10[123]"
+      ]
+    },
+    {
+      "id": "stm32f100",
+      "file": "stm32/stm32f100.json",
+      "vendor": "STMicroelectronics",
+      "title": "STM32F100 value line system clock tree",
+      "devices": [
+        "^STM32F100"
+      ]
+    },
+    {
+      "id": "stm32f105_107",
+      "file": "stm32/stm32f105_107.json",
+      "vendor": "STMicroelectronics",
+      "title": "STM32F105/F107 connectivity line system clock tree",
+      "devices": [
+        "^STM32F10[57]"
+      ]
+    },
+    {
+      "id": "stm32f2",
+      "file": "stm32/stm32f2.json",
+      "vendor": "STMicroelectronics",
+      "title": "STM32F2 system clock tree",
+      "devices": [
+        "^STM32F2"
+      ]
+    },
+    {
+      "id": "stm32f3",
+      "file": "stm32/stm32f3.json",
+      "vendor": "STMicroelectronics",
+      "title": "STM32F3 system clock tree",
+      "devices": [
+        "^STM32F3"
+      ]
+    },
+    {
+      "id": "stm32f4",
+      "file": "stm32/stm32f4.json",
+      "vendor": "STMicroelectronics",
+      "title": "STM32F4 system clock tree",
+      "devices": [
+        "^STM32F4"
+      ]
+    },
+    {
+      "id": "stm32f7",
+      "file": "stm32/stm32f7.json",
+      "vendor": "STMicroelectronics",
+      "title": "STM32F7 system clock tree",
+      "devices": [
+        "^STM32F7"
+      ]
+    },
+    {
+      "id": "stm32g0",
+      "file": "stm32/stm32g0.json",
+      "vendor": "STMicroelectronics",
+      "title": "STM32G0 system clock tree",
+      "devices": [
+        "^STM32G0"
+      ]
+    },
+    {
+      "id": "stm32g4",
+      "file": "stm32/stm32g4.json",
+      "vendor": "STMicroelectronics",
+      "title": "STM32G4 system clock tree",
+      "devices": [
+        "^STM32G4"
+      ]
+    },
+    {
+      "id": "stm32h7",
+      "file": "stm32/stm32h7.json",
+      "vendor": "STMicroelectronics",
+      "title": "STM32H742/H743/H750/H753 system clock tree",
+      "devices": [
+        "^STM32H7(4[23]|5[03])"
+      ]
+    },
+    {
+      "id": "stm32l0",
+      "file": "stm32/stm32l0.json",
+      "vendor": "STMicroelectronics",
+      "title": "STM32L0 system clock tree",
+      "devices": [
+        "^STM32L0"
+      ]
+    },
+    {
+      "id": "stm32l1",
+      "file": "stm32/stm32l1.json",
+      "vendor": "STMicroelectronics",
+      "title": "STM32L1 system clock tree",
+      "devices": [
+        "^STM32L1"
+      ]
+    },
+    {
+      "id": "stm32l4",
+      "file": "stm32/stm32l4.json",
+      "vendor": "STMicroelectronics",
+      "title": "STM32L4/L4+ system clock tree",
+      "devices": [
+        "^STM32L4"
+      ]
+    }
+  ]
+}

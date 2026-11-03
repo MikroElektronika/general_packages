@@ -1,0 +1,46 @@
+name: Clock graphs
+
+on:
+  pull_request:
+    paths:
+      - "clock_graphs/**"
+      - "scripts/clock_graphs/**"
+      - ".github/workflows/clock-graphs-check.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "clock_graphs/**"
+      - "scripts/clock_graphs/**"
+      - ".github/workflows/clock-graphs-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      # The STM32 graphs are generated: the committed JSON must match the generator.
+      - name: Check generated STM32 graphs
+        run: |
+          python scripts/clock_graphs/stm32_graphs.py
+          git diff --exit-code -- clock_graphs/stm32 || {
+            echo "::error::clock_graphs/stm32 is out of date: run python scripts/clock_graphs/stm32_graphs.py and commit the result."
+            exit 1
+          }
+
+      # Structure, expressions and index.json freshness. Packaging into clock_graphs.7z is done by
+      # the Package Release Assets workflow (scripts/package.py picks up clock_graphs/manifest.json).
+      - name: Validate clock graphs
+        run: python scripts/clock_graphs/validate.py

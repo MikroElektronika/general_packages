@@ -1,0 +1,221 @@
+{
+  "schema": 1,
+  "id": "stm32f105_107",
+  "title": "STM32F105/F107 connectivity line system clock tree",
+  "vendor": "STMicroelectronics",
+  "source": "RM0008, DS6014",
+  "devices": ["^STM32F10[57]"],
+  "fosc": "hclk",
+  "inputs": {
+    "hse": {"label": "HSE frequency", "default": 25000000, "min": 3000000, "max": 25000000}
+  },
+  "settings": ["RCC_CR.HSEBYP"],
+  "nodes": [
+    {
+      "id": "hsi",
+      "label": "HSI 8 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "HSI 8 MHz", "mul": 8000000}
+      ],
+      "enable": {"field": "RCC_CR.HSION", "on": "00000001", "off": "00000000", "auto": "on"}
+    },
+    {
+      "id": "hsi_div2",
+      "label": "HSI/2",
+      "kind": "divider",
+      "x": 2,
+      "y": 0,
+      "options": [
+        {"id": "2", "label": "/2", "from": "hsi", "div": 2}
+      ]
+    },
+    {
+      "id": "hse",
+      "label": "HSE",
+      "kind": "source",
+      "x": 0,
+      "y": 2,
+      "input": "hse",
+      "enable": {"field": "RCC_CR.HSEON", "on": "00010000", "off": "00000000", "auto": "both"}
+    },
+    {
+      "id": "prediv2",
+      "label": "PREDIV2",
+      "kind": "divider",
+      "x": 1,
+      "y": 4,
+      "range": {"from": "hse", "op": "div", "min": 1, "max": 16, "field": "RCC_CFGR2.PREDIV2", "lsb": 4, "scale": 1, "offset": -1},
+      "min": 3000000,
+      "max": 5000000,
+      "tooltip": "PLL2 input: 3-5 MHz."
+    },
+    {
+      "id": "pll2mul",
+      "label": "PLL2MUL",
+      "kind": "multiplier",
+      "x": 2,
+      "y": 4,
+      "options": [
+        {"id": "8", "label": "x8", "from": "prediv2", "set": {"RCC_CFGR2.PLL2MUL": "00000600"}, "mul": 8},
+        {"id": "9", "label": "x9", "from": "prediv2", "set": {"RCC_CFGR2.PLL2MUL": "00000700"}, "mul": 9},
+        {"id": "10", "label": "x10", "from": "prediv2", "set": {"RCC_CFGR2.PLL2MUL": "00000800"}, "mul": 10},
+        {"id": "11", "label": "x11", "from": "prediv2", "set": {"RCC_CFGR2.PLL2MUL": "00000900"}, "mul": 11},
+        {"id": "12", "label": "x12", "from": "prediv2", "set": {"RCC_CFGR2.PLL2MUL": "00000A00"}, "mul": 12},
+        {"id": "13", "label": "x13", "from": "prediv2", "set": {"RCC_CFGR2.PLL2MUL": "00000B00"}, "mul": 13},
+        {"id": "14", "label": "x14", "from": "prediv2", "set": {"RCC_CFGR2.PLL2MUL": "00000C00"}, "mul": 14},
+        {"id": "16", "label": "x16", "from": "prediv2", "set": {"RCC_CFGR2.PLL2MUL": "00000E00"}, "mul": 16},
+        {"id": "20", "label": "x20", "from": "prediv2", "set": {"RCC_CFGR2.PLL2MUL": "00000F00"}, "mul": 20}
+      ],
+      "min": 40000000,
+      "max": 74000000,
+      "enable": {"field": "RCC_CR.PLL2ON", "on": "04000000", "off": "00000000", "auto": "both"}
+    },
+    {
+      "id": "prediv1src",
+      "label": "PREDIV1 source",
+      "kind": "mux",
+      "x": 1,
+      "y": 2,
+      "options": [
+        {"id": "hse", "label": "HSE", "from": "hse", "set": {"RCC_CFGR2.PREDIV1SRC": "00000000"}},
+        {"id": "pll2", "label": "PLL2", "from": "pll2mul", "set": {"RCC_CFGR2.PREDIV1SRC": "00010000"}}
+      ]
+    },
+    {
+      "id": "prediv1",
+      "label": "PREDIV1",
+      "kind": "divider",
+      "x": 2,
+      "y": 2,
+      "range": {"from": "prediv1src", "op": "div", "min": 1, "max": 16, "field": "RCC_CFGR2.PREDIV1", "lsb": 0, "scale": 1, "offset": -1}
+    },
+    {
+      "id": "pllsrc",
+      "label": "PLL source",
+      "kind": "mux",
+      "x": 3,
+      "y": 1,
+      "options": [
+        {"id": "hsi2", "label": "HSI/2", "from": "hsi_div2", "set": {"RCC_CFGR.PLLSRC": "00000000"}},
+        {"id": "prediv1", "label": "PREDIV1", "from": "prediv1", "set": {"RCC_CFGR.PLLSRC": "00010000"}}
+      ],
+      "min": 3000000,
+      "max": 12000000,
+      "tooltip": "PLL input: 3-12 MHz."
+    },
+    {
+      "id": "pllmul",
+      "label": "PLLMUL",
+      "kind": "multiplier",
+      "x": 4,
+      "y": 1,
+      "options": [
+        {"id": "4", "label": "x4", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00080000"}, "mul": 4},
+        {"id": "5", "label": "x5", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "000C0000"}, "mul": 5},
+        {"id": "6", "label": "x6", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00100000"}, "mul": 6},
+        {"id": "6_5", "label": "x6.5", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00340000"}, "mul": 13, "div": 2},
+        {"id": "7", "label": "x7", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00140000"}, "mul": 7},
+        {"id": "8", "label": "x8", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00180000"}, "mul": 8},
+        {"id": "9", "label": "x9", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "001C0000"}, "mul": 9}
+      ],
+      "min": 18000000,
+      "max": 72000000,
+      "enable": {"field": "RCC_CR.PLLON", "on": "01000000", "off": "00000000", "auto": "both"}
+    },
+    {
+      "id": "otgfsclk",
+      "label": "USB OTG prescaler",
+      "kind": "divider",
+      "x": 5,
+      "y": 3,
+      "options": [
+        {"id": "1_5", "label": "/1.5", "from": "pllmul", "set": {"RCC_CFGR.OTGFSPRE": "00000000"}, "mul": 2, "div": 3},
+        {"id": "1", "label": "/1", "from": "pllmul", "set": {"RCC_CFGR.OTGFSPRE": "00400000"}, "div": 1}
+      ],
+      "max": 48000000,
+      "tooltip": "USB OTG FS needs exactly 48 MHz."
+    },
+    {
+      "id": "sysclk",
+      "label": "SYSCLK",
+      "kind": "mux",
+      "x": 5,
+      "y": 0,
+      "options": [
+        {"id": "hsi", "label": "HSI", "from": "hsi", "set": {"RCC_CFGR.SW": "00000000"}},
+        {"id": "hse", "label": "HSE", "from": "hse", "set": {"RCC_CFGR.SW": "00000001"}},
+        {"id": "pll", "label": "PLL", "from": "pllmul", "set": {"RCC_CFGR.SW": "00000002"}}
+      ],
+      "max": 72000000
+    },
+    {
+      "id": "hclk",
+      "label": "HCLK (AHB)",
+      "kind": "divider",
+      "x": 6,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000080"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000090"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000A0"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000B0"}, "div": 16},
+        {"id": "64", "label": "/64", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000C0"}, "div": 64},
+        {"id": "128", "label": "/128", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000D0"}, "div": 128},
+        {"id": "256", "label": "/256", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000E0"}, "div": 256},
+        {"id": "512", "label": "/512", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000F0"}, "div": 512}
+      ],
+      "max": 72000000,
+      "consumer": true
+    },
+    {
+      "id": "pclk1",
+      "label": "PCLK1 (APB1)",
+      "kind": "divider",
+      "x": 7,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000400"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000500"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000600"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000700"}, "div": 16}
+      ],
+      "max": 36000000,
+      "consumer": true
+    },
+    {
+      "id": "pclk2",
+      "label": "PCLK2 (APB2)",
+      "kind": "divider",
+      "x": 7,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00002000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00002800"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00003000"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00003800"}, "div": 16}
+      ],
+      "max": 72000000,
+      "consumer": true
+    },
+    {
+      "id": "adcclk",
+      "label": "ADC prescaler",
+      "kind": "divider",
+      "x": 8,
+      "y": 1,
+      "options": [
+        {"id": "2", "label": "/2", "from": "pclk2", "set": {"RCC_CFGR.ADCPRE": "00000000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "pclk2", "set": {"RCC_CFGR.ADCPRE": "00004000"}, "div": 4},
+        {"id": "6", "label": "/6", "from": "pclk2", "set": {"RCC_CFGR.ADCPRE": "00008000"}, "div": 6},
+        {"id": "8", "label": "/8", "from": "pclk2", "set": {"RCC_CFGR.ADCPRE": "0000C000"}, "div": 8}
+      ],
+      "max": 14000000
+    }
+  ]
+}

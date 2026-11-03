@@ -1,0 +1,158 @@
+{
+  "schema": 1,
+  "id": "stm32f2",
+  "title": "STM32F2 system clock tree",
+  "vendor": "STMicroelectronics",
+  "source": "RM0033, DS6329",
+  "devices": ["^STM32F2"],
+  "fosc": "hclk",
+  "inputs": {
+    "hse": {"label": "HSE frequency", "default": 8000000, "min": 4000000, "max": 26000000}
+  },
+  "settings": ["RCC_CR.HSEBYP", "SVRANGE.VRANGE"],
+  "nodes": [
+    {
+      "id": "hsi",
+      "label": "HSI 16 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "HSI 16 MHz", "mul": 16000000}
+      ],
+      "enable": {"field": "RCC_CR.HSION", "on": "00000001", "off": "00000000", "auto": "on"}
+    },
+    {
+      "id": "hse",
+      "label": "HSE",
+      "kind": "source",
+      "x": 0,
+      "y": 2,
+      "input": "hse",
+      "enable": {"field": "RCC_CR.HSEON", "on": "00010000", "off": "00000000", "auto": "both"}
+    },
+    {
+      "id": "pllsrc",
+      "label": "PLL source",
+      "kind": "mux",
+      "x": 1,
+      "y": 1,
+      "options": [
+        {"id": "hsi", "label": "HSI", "from": "hsi", "set": {"RCC_PLLCFGR.PLLSRC": "00000000"}},
+        {"id": "hse", "label": "HSE", "from": "hse", "set": {"RCC_PLLCFGR.PLLSRC": "00400000"}}
+      ]
+    },
+    {
+      "id": "pllm",
+      "label": "/M",
+      "kind": "divider",
+      "x": 2,
+      "y": 1,
+      "range": {"from": "pllsrc", "op": "div", "min": 2, "max": 63, "field": "RCC_PLLCFGR.PLLM", "lsb": 0, "scale": 1, "offset": 0},
+      "min": 950000,
+      "max": 2100000,
+      "tooltip": "VCO input: 0.95-2.1 MHz (2 MHz limits PLL jitter)."
+    },
+    {
+      "id": "plln",
+      "label": "xN",
+      "kind": "multiplier",
+      "x": 3,
+      "y": 1,
+      "range": {"from": "pllm", "op": "mul", "min": 50, "max": 432, "field": "RCC_PLLCFGR.PLLN", "lsb": 6, "scale": 1, "offset": 0},
+      "min": 192000000,
+      "max": 432000000,
+      "enable": {"field": "RCC_CR.PLLON", "on": "01000000", "off": "00000000", "auto": "both"},
+      "tooltip": "VCO output frequency."
+    },
+    {
+      "id": "pllp",
+      "label": "/P",
+      "kind": "divider",
+      "x": 4,
+      "y": 1,
+      "options": [
+        {"id": "2", "label": "/2", "from": "plln", "set": {"RCC_PLLCFGR.PLLP": "00000000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "plln", "set": {"RCC_PLLCFGR.PLLP": "00010000"}, "div": 4},
+        {"id": "6", "label": "/6", "from": "plln", "set": {"RCC_PLLCFGR.PLLP": "00020000"}, "div": 6},
+        {"id": "8", "label": "/8", "from": "plln", "set": {"RCC_PLLCFGR.PLLP": "00030000"}, "div": 8}
+      ],
+      "max": 120000000
+    },
+    {
+      "id": "pllq",
+      "label": "/Q",
+      "kind": "divider",
+      "x": 4,
+      "y": 3,
+      "range": {"from": "plln", "op": "div", "min": 2, "max": 15, "field": "RCC_PLLCFGR.PLLQ", "lsb": 24, "scale": 1, "offset": 0},
+      "max": 48000000,
+      "tooltip": "PLL48CK: USB OTG FS, SDIO and RNG need 48 MHz."
+    },
+    {
+      "id": "sysclk",
+      "label": "SYSCLK",
+      "kind": "mux",
+      "x": 5,
+      "y": 0,
+      "options": [
+        {"id": "hsi", "label": "HSI", "from": "hsi", "set": {"RCC_CFGR.SW": "00000000"}},
+        {"id": "hse", "label": "HSE", "from": "hse", "set": {"RCC_CFGR.SW": "00000001"}},
+        {"id": "pll", "label": "PLL", "from": "pllp", "set": {"RCC_CFGR.SW": "00000002"}}
+      ],
+      "max": 120000000
+    },
+    {
+      "id": "hclk",
+      "label": "HCLK (AHB)",
+      "kind": "divider",
+      "x": 6,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000080"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000090"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000A0"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000B0"}, "div": 16},
+        {"id": "64", "label": "/64", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000C0"}, "div": 64},
+        {"id": "128", "label": "/128", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000D0"}, "div": 128},
+        {"id": "256", "label": "/256", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000E0"}, "div": 256},
+        {"id": "512", "label": "/512", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000F0"}, "div": 512}
+      ],
+      "max": 120000000,
+      "consumer": true
+    },
+    {
+      "id": "pclk1",
+      "label": "PCLK1 (APB1)",
+      "kind": "divider",
+      "x": 7,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00001000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00001400"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00001800"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00001C00"}, "div": 16}
+      ],
+      "max": 30000000,
+      "consumer": true
+    },
+    {
+      "id": "pclk2",
+      "label": "PCLK2 (APB2)",
+      "kind": "divider",
+      "x": 7,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00008000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "0000A000"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "0000C000"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "0000E000"}, "div": 16}
+      ],
+      "max": 60000000,
+      "consumer": true
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "schema": 1,
+  "id": "ra4m1",
+  "title": "Renesas RA4M1 clock tree",
+  "vendor": "Renesas",
+  "source": "Renesas FSP 6.5.0 (BSD-3-Clause), Renesas##BSP##ra4m1##fsp####6.5.0.xml",
+  "devices": ["^R7[FK]A4M1"],
+  "fosc": "iclk_display",
+  "inputs": {
+    "xtal_freq": {"label": "XTAL frequency", "default": 12000000, "max": 20000000, "min": 1}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "xtal_freq",
+      "label": "XTAL",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "tooltip": "Click to edit the XTAL frequency.",
+      "input": "xtal_freq",
+      "enable": {"field": "SYSTEM_MOSCCR.MOSTP", "on": "00000000", "off": "00000001", "auto": "both"}
+    },
+    {
+      "id": "pll_source",
+      "label": "PLL source",
+      "kind": "mux",
+      "x": 1,
+      "y": 1,
+      "options": [
+        {"id": "disabled", "label": "Disabled", "mul": 0, "set": {"SYSTEM_PLLCR.PLLSTP": "00000001"}},
+        {"id": "xtal", "label": "XTAL", "from": "xtal_freq", "set": {"SYSTEM_PLLCR.PLLSTP": "00000000"}}
+      ],
+      "default": "xtal"
+    },
+    {
+      "id": "hoco_freq",
+      "label": "HOCO",
+      "kind": "source",
+      "x": 0,
+      "y": 6,
+      "options": [
+        {"id": "24m", "label": "HOCO 24MHz", "mul": 24000000, "set": {"SYSTEM_HOCOCR2.HCFRQ1": "00000000"}},
+        {"id": "32m", "label": "HOCO 32MHz", "mul": 32000000, "set": {"SYSTEM_HOCOCR2.HCFRQ1": "00000010"}},
+        {"id": "48m", "label": "HOCO 48MHz", "mul": 48000000, "set": {"SYSTEM_HOCOCR2.HCFRQ1": "00000020"}},
+        {"id": "64m", "label": "HOCO 64MHz", "mul": 64000000, "set": {"SYSTEM_HOCOCR2.HCFRQ1": "00000028"}}
+      ],
+      "default": "24m",
+      "enable": {"field": "SYSTEM_HOCOCR.HCSTP", "on": "00000000", "off": "00000001", "auto": "on"}
+    },
+    {
+      "id": "loco_freq",
+      "label": "LOCO 32768Hz",
+      "kind": "source",
+      "x": 0,
+      "y": 7,
+      "options": [
+        {"id": "32768", "label": "LOCO 32768Hz", "mul": 32768}
+      ],
+      "default": "32768",
+      "enable": {"field": "SYSTEM_LOCOCR.LCSTP", "on": "00000000", "off": "00000001", "auto": "on"}
+    },
+    {
+      "id": "moco_freq",
+      "label": "MOCO 8MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 8,
+      "options": [
+        {"id": "8m", "label": "MOCO 8MHz", "mul": 8000000}
+      ],
+      "default": "8m",
+      "enable": {"field": "SYSTEM_MOCOCR.MCSTP", "on": "00000000", "off": "00000001", "auto": "on"}
+    },
+    {
+      "id": "subclk_freq",
+      "label": "SUBCLK 32768Hz",
+      "kind": "source",
+      "x": 0,
+      "y": 9,
+      "options": [
+        {"id": "32768", "label": "SUBCLK 32768Hz", "mul": 32768}
+      ],
+      "default": "32768",
+      "enable": {"field": "SYSTEM_SOSCCR.SOSTP", "on": "00000000", "off": "00000001", "auto": "both"}
+    },
+    {
+      "id": "pll_div",
+      "label": "PLL divider",
+      "kind": "divider",
+      "x": 1,
+      "y": 2,
+      "options": [
+        {"id": "2", "label": "/2", "from": "pll_source", "div": 2, "set": {"SYSTEM_PLLCCR2.PLODIV": "00000004"}},
+        {"id": "4", "label": "/4", "from": "pll_source", "div": 4, "set": {"SYSTEM_PLLCCR2.PLODIV": "00000008"}}
+      ],
+      "default": "2"
+    },
+    {
+      "id": "pll_mul",
+      "label": "PLL multiplier",
+      "kind": "multiplier",
+      "x": 1,
+      "y": 3,
+      "options": [
+        {"id": "8", "label": "x8", "from": "pll_div", "mul": 8, "set": {"SYSTEM_PLLCCR2.PLLMUL": "00000007"}},
+        {"id": "9", "label": "x9", "from": "pll_div", "mul": 9, "set": {"SYSTEM_PLLCCR2.PLLMUL": "00000008"}},
+        {"id": "10", "label": "x10", "from": "pll_div", "mul": 10, "set": {"SYSTEM_PLLCCR2.PLLMUL": "00000009"}},
+        {"id": "11", "label": "x11", "from": "pll_div", "mul": 11, "set": {"SYSTEM_PLLCCR2.PLLMUL": "0000000A"}},
+        {"id": "12", "label": "x12", "from": "pll_div", "mul": 12, "set": {"SYSTEM_PLLCCR2.PLLMUL": "0000000B"}},
+        {"id": "13", "label": "x13", "from": "pll_div", "mul": 13, "set": {"SYSTEM_PLLCCR2.PLLMUL": "0000000C"}},
+        {"id": "14", "label": "x14", "from": "pll_div", "mul": 14, "set": {"SYSTEM_PLLCCR2.PLLMUL": "0000000D"}},
+        {"id": "15", "label": "x15", "from": "pll_div", "mul": 15, "set": {"SYSTEM_PLLCCR2.PLLMUL": "0000000E"}},
+        {"id": "16", "label": "x16", "from": "pll_div", "mul": 16, "set": {"SYSTEM_PLLCCR2.PLLMUL": "0000000F"}},
+        {"id": "17", "label": "x17", "from": "pll_div", "mul": 17, "set": {"SYSTEM_PLLCCR2.PLLMUL": "00000010"}},
+        {"id": "18", "label": "x18", "from": "pll_div", "mul": 18, "set": {"SYSTEM_PLLCCR2.PLLMUL": "00000011"}},
+        {"id": "19", "label": "x19", "from": "pll_div", "mul": 19, "set": {"SYSTEM_PLLCCR2.PLLMUL": "00000012"}},
+        {"id": "20", "label": "x20", "from": "pll_div", "mul": 20, "set": {"SYSTEM_PLLCCR2.PLLMUL": "00000013"}},
+        {"id": "21", "label": "x21", "from": "pll_div", "mul": 21, "set": {"SYSTEM_PLLCCR2.PLLMUL": "00000014"}},
+        {"id": "22", "label": "x22", "from": "pll_div", "mul": 22, "set": {"SYSTEM_PLLCCR2.PLLMUL": "00000015"}},
+        {"id": "23", "label": "x23", "from": "pll_div", "mul": 23, "set": {"SYSTEM_PLLCCR2.PLLMUL": "00000016"}},
+        {"id": "24", "label": "x24", "from": "pll_div", "mul": 24, "set": {"SYSTEM_PLLCCR2.PLLMUL": "00000017"}},
+        {"id": "25", "label": "x25", "from": "pll_div", "mul": 25, "set": {"SYSTEM_PLLCCR2.PLLMUL": "00000018"}},
+        {"id": "26", "label": "x26", "from": "pll_div", "mul": 26, "set": {"SYSTEM_PLLCCR2.PLLMUL": "00000019"}},
+        {"id": "27", "label": "x27", "from": "pll_div", "mul": 27, "set": {"SYSTEM_PLLCCR2.PLLMUL": "0000001A"}},
+        {"id": "28", "label": "x28", "from": "pll_div", "mul": 28, "set": {"SYSTEM_PLLCCR2.PLLMUL": "0000001B"}},
+        {"id": "29", "label": "x29", "from": "pll_div", "mul": 29, "set": {"SYSTEM_PLLCCR2.PLLMUL": "0000001C"}},
+        {"id": "30", "label": "x30", "from": "pll_div", "mul": 30, "set": {"SYSTEM_PLLCCR2.PLLMUL": "0000001D"}},
+        {"id": "31", "label": "x31", "from": "pll_div", "mul": 31, "set": {"SYSTEM_PLLCCR2.PLLMUL": "0000001E"}}
+      ],
+      "default": "8"
+    },
+    {
+      "id": "pll_display",
+      "label": "PLL",
+      "kind": "output",
+      "x": 1,
+      "y": 4,
+      "tooltip": "PLL output frequency must be between 24MHz and 32MHz, if the division factor is 4. \nElse PLL output frequency must be between 24MHz and 64MHz.",
+      "min": 24000000,
+      "max": 64000000,
+      "options": [
+        {"id": "value", "label": "PLL ${value}Hz", "from": "pll_mul"}
+      ],
+      "enable": {"field": "SYSTEM_PLLCR.PLLSTP", "on": "00000000", "off": "00000001", "auto": "both"}
+    },
+    {
+      "id": "clock_source",
+      "label": "Clock source",
+      "kind": "mux",
+      "x": 2,
+      "y": 4,
+      "options": [
+        {"id": "hoco", "label": "HOCO", "from": "hoco_freq", "set": {"SYSTEM_SCKSCR.CKSEL": "00000000"}},
+        {"id": "moco", "label": "MOCO", "from": "moco_freq", "set": {"SYSTEM_SCKSCR.CKSEL": "00000001"}},
+        {"id": "loco", "label": "LOCO", "from": "loco_freq", "set": {"SYSTEM_SCKSCR.CKSEL": "00000002"}},
+        {"id": "xtal", "label": "XTAL", "from": "xtal_freq", "set": {"SYSTEM_SCKSCR.CKSEL": "00000003"}},
+        {"id": "subclk", "label": "SUBCLK", "from": "subclk_freq", "set": {"SYSTEM_SCKSCR.CKSEL": "00000004"}},
+        {"id": "pll", "label": "PLL", "from": "pll_display", "set": {"SYSTEM_SCKSCR.CKSEL": "00000005"}}
+      ],
+      "default": "pll"
+    },
+    {
+      "id": "iclk_div",
+      "label": "ICLK divider",
+      "kind": "divider",
+      "x": 3,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "clock_source", "div": 1, "set": {"SYSTEM_SCKDIVCR.ICK": "00000000"}},
+        {"id": "2", "label": "/2", "from": "clock_source", "div": 2, "set": {"SYSTEM_SCKDIVCR.ICK": "01000000"}},
+        {"id": "4", "label": "/4", "from": "clock_source", "div": 4, "set": {"SYSTEM_SCKDIVCR.ICK": "02000000"}},
+        {"id": "8", "label": "/8", "from": "clock_source", "div": 8, "set": {"SYSTEM_SCKDIVCR.ICK": "03000000"}},
+        {"id": "16", "label": "/16", "from": "clock_source", "div": 16, "set": {"SYSTEM_SCKDIVCR.ICK": "04000000"}},
+        {"id": "32", "label": "/32", "from": "clock_source", "div": 32, "set": {"SYSTEM_SCKDIVCR.ICK": "05000000"}},
+        {"id": "64", "label": "/64", "from": "clock_source", "div": 64, "set": {"SYSTEM_SCKDIVCR.ICK": "06000000"}}
+      ],
+      "default": "1"
+    },
+    {
+      "id": "iclk_display",
+      "label": "ICLK",
+      "kind": "output",
+      "x": 4,
+      "y": 0,
+      "tooltip": "The system clock (ICLK) is used as the operating clock of the CPU, DMAC, DTC, ROM and RAM. \nMaximum frequency is 48 MHz.",
+      "max": 48000000,
+      "options": [
+        {"id": "value", "label": "ICLK ${value}Hz", "from": "iclk_div"}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "pclka_div",
+      "label": "PCLKA divider",
+      "kind": "divider",
+      "x": 3,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "clock_source", "div": 1, "set": {"SYSTEM_SCKDIVCR.PCKA": "00000000"}},
+        {"id": "2", "label": "/2", "from": "clock_source", "div": 2, "set": {"SYSTEM_SCKDIVCR.PCKA": "00001000"}},
+        {"id": "4", "label": "/4", "from": "clock_source", "div": 4, "set": {"SYSTEM_SCKDIVCR.PCKA": "00002000"}},
+        {"id": "8", "label": "/8", "from": "clock_source", "div": 8, "set": {"SYSTEM_SCKDIVCR.PCKA": "00003000"}},
+        {"id": "16", "label": "/16", "from": "clock_source", "div": 16, "set": {"SYSTEM_SCKDIVCR.PCKA": "00004000"}},
+        {"id": "32", "label": "/32", "from": "clock_source", "div": 32, "set": {"SYSTEM_SCKDIVCR.PCKA": "00005000"}},
+        {"id": "64", "label": "/64", "from": "clock_source", "div": 64, "set": {"SYSTEM_SCKDIVCR.PCKA": "00006000"}}
+      ],
+      "default": "1"
+    },
+    {
+      "id": "pclka_display",
+      "label": "PCLKA",
+      "kind": "output",
+      "x": 4,
+      "y": 1,
+      "tooltip": "The Peripheral clock A (PCLKA) is used as the operating clock for the SPI, SCI, SCE5, CRC and GPT (bus clock) modules. \nMaximum frequency is 48 MHz.",
+      "max": 48000000,
+      "options": [
+        {"id": "value", "label": "PCLKA ${value}Hz", "from": "pclka_div"}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "pclkb_div",
+      "label": "PCLKB divider",
+      "kind": "divider",
+      "x": 3,
+      "y": 2,
+      "options": [
+        {"id": "1", "label": "/1", "from": "clock_source", "div": 1, "set": {"SYSTEM_SCKDIVCR.PCKB": "00000000"}},
+        {"id": "2", "label": "/2", "from": "clock_source", "div": 2, "set": {"SYSTEM_SCKDIVCR.PCKB": "00000100"}},
+        {"id": "4", "label": "/4", "from": "clock_source", "div": 4, "set": {"SYSTEM_SCKDIVCR.PCKB": "00000200"}},
+        {"id": "8", "label": "/8", "from": "clock_source", "div": 8, "set": {"SYSTEM_SCKDIVCR.PCKB": "00000300"}},
+        {"id": "16", "label": "/16", "from": "clock_source", "div": 16, "set": {"SYSTEM_SCKDIVCR.PCKB": "00000400"}},
+        {"id": "32", "label": "/32", "from": "clock_source", "div": 32, "set": {"SYSTEM_SCKDIVCR.PCKB": "00000500"}},
+        {"id": "64", "label": "/64", "from": "clock_source", "div": 64, "set": {"SYSTEM_SCKDIVCR.PCKB": "00000600"}}
+      ],
+      "default": "2"
+    },
+    {
+      "id": "pclkb_display",
+      "label": "PCLKB",
+      "kind": "output",
+      "x": 4,
+      "y": 2,
+      "tooltip": "The Peripheral clock B (PCLKB) is used as the operating clock for DAC12, IIC, SSIE, DOC, CAC, CAN, AGT, POEG, CTSU, ELC, I/O Ports, RTC, WDT, IWDT, ADC14, KINT, USBFS, ACMPLP and SLCDC. \nMaximum frequency is 32 MHz.",
+      "max": 32000000,
+      "options": [
+        {"id": "value", "label": "PCLKB ${value}Hz", "from": "pclkb_div"}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "pclkc_div",
+      "label": "PCLKC divider",
+      "kind": "divider",
+      "x": 3,
+      "y": 3,
+      "options": [
+        {"id": "1", "label": "/1", "from": "clock_source", "div": 1, "set": {"SYSTEM_SCKDIVCR.PCKC": "00000000"}},
+        {"id": "2", "label": "/2", "from": "clock_source", "div": 2, "set": {"SYSTEM_SCKDIVCR.PCKC": "00000010"}},
+        {"id": "4", "label": "/4", "from": "clock_source", "div": 4, "set": {"SYSTEM_SCKDIVCR.PCKC": "00000020"}},
+        {"id": "8", "label": "/8", "from": "clock_source", "div": 8, "set": {"SYSTEM_SCKDIVCR.PCKC": "00000030"}},
+        {"id": "16", "label": "/16", "from": "clock_source", "div": 16, "set": {"SYSTEM_SCKDIVCR.PCKC": "00000040"}},
+        {"id": "32", "label": "/32", "from": "clock_source", "div": 32, "set": {"SYSTEM_SCKDIVCR.PCKC": "00000050"}},
+        {"id": "64", "label": "/64", "from": "clock_source", "div": 64, "set": {"SYSTEM_SCKDIVCR.PCKC": "00000060"}}
+      ],
+      "default": "1"
+    },
+    {
+      "id": "pclkc_display",
+      "label": "PCLKC",
+      "kind": "output",
+      "x": 4,
+      "y": 3,
+      "tooltip": "The Peripheral clock C (PCLKC) is used as the operating clock for the ADC module. \nMaximum frequency is 64 MHz.",
+      "max": 64000000,
+      "options": [
+        {"id": "value", "label": "PCLKC ${value}Hz", "from": "pclkc_div"}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "pclkd_div",
+      "label": "PCLKD divider",
+      "kind": "divider",
+      "x": 3,
+      "y": 4,
+      "options": [
+        {"id": "1", "label": "/1", "from": "clock_source", "div": 1, "set": {"SYSTEM_SCKDIVCR.PCKD": "00000000"}},
+        {"id": "2", "label": "/2", "from": "clock_source", "div": 2, "set": {"SYSTEM_SCKDIVCR.PCKD": "00000001"}},
+        {"id": "4", "label": "/4", "from": "clock_source", "div": 4, "set": {"SYSTEM_SCKDIVCR.PCKD": "00000002"}},
+        {"id": "8", "label": "/8", "from": "clock_source", "div": 8, "set": {"SYSTEM_SCKDIVCR.PCKD": "00000003"}},
+        {"id": "16", "label": "/16", "from": "clock_source", "div": 16, "set": {"SYSTEM_SCKDIVCR.PCKD": "00000004"}},
+        {"id": "32", "label": "/32", "from": "clock_source", "div": 32, "set": {"SYSTEM_SCKDIVCR.PCKD": "00000005"}},
+        {"id": "64", "label": "/64", "from": "clock_source", "div": 64, "set": {"SYSTEM_SCKDIVCR.PCKD": "00000006"}}
+      ],
+      "default": "1"
+    },
+    {
+      "id": "pclkd_display",
+      "label": "PCLKD",
+      "kind": "output",
+      "x": 4,
+      "y": 4,
+      "tooltip": "The Peripheral clock D (PCLKD) is used as the operating clock for the GPT (count clock) module. \nMaximum frequency is 64 MHz.",
+      "max": 64000000,
+      "options": [
+        {"id": "value", "label": "PCLKD ${value}Hz", "from": "pclkd_div"}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "fclk_div",
+      "label": "FCLK divider",
+      "kind": "divider",
+      "x": 3,
+      "y": 5,
+      "options": [
+        {"id": "1", "label": "/1", "from": "clock_source", "div": 1, "set": {"SYSTEM_SCKDIVCR.FCK": "00000000"}},
+        {"id": "2", "label": "/2", "from": "clock_source", "div": 2, "set": {"SYSTEM_SCKDIVCR.FCK": "10000000"}},
+        {"id": "4", "label": "/4", "from": "clock_source", "div": 4, "set": {"SYSTEM_SCKDIVCR.FCK": "20000000"}},
+        {"id": "8", "label": "/8", "from": "clock_source", "div": 8, "set": {"SYSTEM_SCKDIVCR.FCK": "30000000"}},
+        {"id": "16", "label": "/16", "from": "clock_source", "div": 16, "set": {"SYSTEM_SCKDIVCR.FCK": "40000000"}},
+        {"id": "32", "label": "/32", "from": "clock_source", "div": 32, "set": {"SYSTEM_SCKDIVCR.FCK": "50000000"}},
+        {"id": "64", "label": "/64", "from": "clock_source", "div": 64, "set": {"SYSTEM_SCKDIVCR.FCK": "60000000"}}
+      ],
+      "default": "2"
+    },
+    {
+      "id": "fclk_display",
+      "label": "FCLK",
+      "kind": "output",
+      "x": 4,
+      "y": 5,
+      "tooltip": "The flash-interface clock (FCLK) is used as the operating clock for the flash-memory interfaces.\nThat is, FCLK is used for programming and erasure of the ROM and E2 DataFlash, and reading from the E2 DataFlash. \nFrequency must be between 1 Hz and 32 MHz when any of these operations are used.",
+      "min": 1000000,
+      "max": 32000000,
+      "options": [
+        {"id": "value", "label": "FCLK ${value}Hz", "from": "fclk_div"}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "clkout_source",
+      "label": "CLKOUT source",
+      "kind": "mux",
+      "x": 2,
+      "y": 6,
+      "options": [
+        {"id": "disabled", "label": "Disabled", "mul": 0, "set": {"SYSTEM_CKOCR.CKOEN": "00000000"}},
+        {"id": "hoco", "label": "HOCO", "from": "hoco_freq", "set": {"SYSTEM_CKOCR.CKOSEL": "00000000", "SYSTEM_CKOCR.CKOEN": "00000080"}},
+        {"id": "moco", "label": "MOCO", "from": "moco_freq", "set": {"SYSTEM_CKOCR.CKOSEL": "00000001", "SYSTEM_CKOCR.CKOEN": "00000080"}},
+        {"id": "loco", "label": "LOCO", "from": "loco_freq", "set": {"SYSTEM_CKOCR.CKOSEL": "00000002", "SYSTEM_CKOCR.CKOEN": "00000080"}},
+        {"id": "xtal", "label": "XTAL", "from": "xtal_freq", "set": {"SYSTEM_CKOCR.CKOSEL": "00000003", "SYSTEM_CKOCR.CKOEN": "00000080"}},
+        {"id": "subclk", "label": "SUBCLK", "from": "subclk_freq", "set": {"SYSTEM_CKOCR.CKOSEL": "00000004", "SYSTEM_CKOCR.CKOEN": "00000080"}}
+      ],
+      "default": "disabled"
+    },
+    {
+      "id": "clkout_div",
+      "label": "CLKOUT divider",
+      "kind": "divider",
+      "x": 3,
+      "y": 6,
+      "options": [
+        {"id": "1", "label": "/1", "from": "clkout_source", "div": 1, "set": {"SYSTEM_CKOCR.CKODIV": "00000000"}},
+        {"id": "2", "label": "/2", "from": "clkout_source", "div": 2, "set": {"SYSTEM_CKOCR.CKODIV": "00000010"}},
+        {"id": "4", "label": "/4", "from": "clkout_source", "div": 4, "set": {"SYSTEM_CKOCR.CKODIV": "00000020"}},
+        {"id": "8", "label": "/8", "from": "clkout_source", "div": 8, "set": {"SYSTEM_CKOCR.CKODIV": "00000030"}},
+        {"id": "16", "label": "/16", "from": "clkout_source", "div": 16, "set": {"SYSTEM_CKOCR.CKODIV": "00000040"}},
+        {"id": "32", "label": "/32", "from": "clkout_source", "div": 32, "set": {"SYSTEM_CKOCR.CKODIV": "00000050"}},
+        {"id": "64", "label": "/64", "from": "clkout_source", "div": 64, "set": {"SYSTEM_CKOCR.CKODIV": "00000060"}},
+        {"id": "128", "label": "/128", "from": "clkout_source", "div": 128, "set": {"SYSTEM_CKOCR.CKODIV": "00000070"}}
+      ],
+      "default": "1"
+    },
+    {
+      "id": "clkout_display",
+      "label": "CLKOUT",
+      "kind": "output",
+      "x": 4,
+      "y": 6,
+      "tooltip": "Frequency output on the CLKOUT pin if CLKOUT is enabled. \nMaximum frequency is 16 MHz.",
+      "max": 16000000,
+      "options": [
+        {"id": "value", "label": "CLKOUT ${value}Hz", "from": "clkout_div"}
+      ],
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "f.iclk_display > 0", "message": "The system clock source must be greater than 0."},
+    {"expr": "(f.iclk_display >= f.pclka_display) && (f.iclk_display >= f.pclkb_display)", "message": "ICLK must not be less than PCLKA or PCLKB"},
+    {"expr": "(f.iclk_display >= f.fclk_display)", "message": "ICLK must not be less than FCLK"},
+    {"expr": "(f.pclka_display >= f.pclkb_display)", "message": "PCKLA must not be less than PCLKB"},
+    {"expr": "(f.pclkd_display >= f.pclka_display) && (f.pclkd_display >= f.pclkb_display)", "message": "PCLKD must not be less than PCLKA or PCLKB"},
+    {"expr": "((f.pclkc_display / f.pclkb_display) <= 4) && ((f.pclkb_display / f.pclkc_display) <= 8)", "message": "PCLKB:PCLKC ratio must equal 1:1, 1:2, 1:4, 2:1, 4:1, or 8:1"},
+    {"expr": "(f.clkout_display == 4000000) || (f.clkout_source != 8000000)", "message": "CLKOUT divider must be 2 if MOCO is selected as the CLKOUT source"},
+    {"expr": "(f.xtal_freq <= 20000000)", "message": "Maximum allowed XTAL frequency for RA4M1 is 20MHz"},
+    {"expr": "('disabled' == sel.pll_source) || ((f.pll_display > 0) && ((f.pll_div >= 4000000) && (f.pll_div <= 12500000)))", "message": "PLL Reference Clock after divider must be between 4 and 12.5 MHz"},
+    {"expr": "(f.pll_display <= 32000000) || (sel.pll_div != '4')", "message": "PLL frequency should be between 24MHz and 32MHz, when the PLL division factor is '/4'"}
+  ]
+}

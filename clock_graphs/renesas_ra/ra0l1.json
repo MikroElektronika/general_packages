@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "id": "ra0l1",
+  "title": "Renesas RA0L1 clock tree",
+  "vendor": "Renesas",
+  "source": "Renesas FSP 6.5.0 (BSD-3-Clause), Renesas##BSP##ra0l1##fsp####6.5.0.xml",
+  "devices": ["^R7[FK]A0L1"],
+  "fosc": "iclk_display",
+  "inputs": {
+    "xtal_freq": {"label": "XTAL frequency", "default": 20000000, "max": 20000000, "min": 1}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "xtal_freq",
+      "label": "XTAL",
+      "kind": "source",
+      "x": 0,
+      "y": 2,
+      "tooltip": "Click to edit the XTAL frequency.",
+      "input": "xtal_freq",
+      "enable": {"field": "SYSTEM_MOSCCR.MOSTP", "on": "00000000", "off": "00000001", "auto": "both"}
+    },
+    {
+      "id": "xtal_div",
+      "label": "XTAL divider",
+      "kind": "divider",
+      "x": 1,
+      "y": 2,
+      "options": [
+        {"id": "1", "label": "/1", "from": "xtal_freq", "div": 1, "set": {"SYSTEM_MOSCDIV.DIV": "00000000"}},
+        {"id": "2", "label": "/2", "from": "xtal_freq", "div": 2, "set": {"SYSTEM_MOSCDIV.DIV": "00000001"}},
+        {"id": "4", "label": "/4", "from": "xtal_freq", "div": 4, "set": {"SYSTEM_MOSCDIV.DIV": "00000002"}},
+        {"id": "8", "label": "/8", "from": "xtal_freq", "div": 8, "set": {"SYSTEM_MOSCDIV.DIV": "00000003"}},
+        {"id": "16", "label": "/16", "from": "xtal_freq", "div": 16, "set": {"SYSTEM_MOSCDIV.DIV": "00000004"}}
+      ],
+      "default": "1"
+    },
+    {
+      "id": "hoco_freq",
+      "label": "HOCO",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "24m", "label": "HOCO 24MHz", "mul": 24000000, "set": {"SYSTEM_HOCOCR2.HCFRQ1": "00000000"}},
+        {"id": "32m", "label": "HOCO 32MHz", "mul": 32000000, "set": {"SYSTEM_HOCOCR2.HCFRQ1": "00000002"}}
+      ],
+      "default": "32m",
+      "enable": {"field": "SYSTEM_HOCOCR.HCSTP", "on": "00000000", "off": "00000001", "auto": "on"}
+    },
+    {
+      "id": "hoco_div",
+      "label": "HOCO divider",
+      "kind": "divider",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hoco_freq", "div": 1, "set": {"SYSTEM_HOCODIV.DIV": "00000000"}},
+        {"id": "2", "label": "/2", "from": "hoco_freq", "div": 2, "set": {"SYSTEM_HOCODIV.DIV": "00000001"}},
+        {"id": "4", "label": "/4", "from": "hoco_freq", "div": 4, "set": {"SYSTEM_HOCODIV.DIV": "00000002"}},
+        {"id": "8", "label": "/8", "from": "hoco_freq", "div": 8, "set": {"SYSTEM_HOCODIV.DIV": "00000003"}},
+        {"id": "16", "label": "/16", "from": "hoco_freq", "div": 16, "set": {"SYSTEM_HOCODIV.DIV": "00000004"}},
+        {"id": "32", "label": "/32", "from": "hoco_freq", "div": 32, "set": {"SYSTEM_HOCODIV.DIV": "00000005"}}
+      ],
+      "default": "1"
+    },
+    {
+      "id": "moco_freq",
+      "label": "MOCO 4MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "options": [
+        {"id": "4m", "label": "MOCO 4MHz", "mul": 4000000}
+      ],
+      "default": "4m",
+      "enable": {"field": "SYSTEM_MOCOCR.MCSTP", "on": "00000000", "off": "00000001", "auto": "on"}
+    },
+    {
+      "id": "moco_div",
+      "label": "MOCO divider",
+      "kind": "divider",
+      "x": 1,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "moco_freq", "div": 1, "set": {"SYSTEM_MOCODIV.DIV": "00000000"}},
+        {"id": "2", "label": "/2", "from": "moco_freq", "div": 2, "set": {"SYSTEM_MOCODIV.DIV": "00000001"}},
+        {"id": "4", "label": "/4", "from": "moco_freq", "div": 4, "set": {"SYSTEM_MOCODIV.DIV": "00000002"}}
+      ],
+      "default": "1"
+    },
+    {
+      "id": "subclk_freq",
+      "label": "SUBCLK 32768Hz",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "options": [
+        {"id": "32768", "label": "SUBCLK 32768Hz", "mul": 32768}
+      ],
+      "default": "32768",
+      "enable": {"field": "SYSTEM_SOSCCR.SOSTP", "on": "00000000", "off": "00000001", "auto": "both"}
+    },
+    {
+      "id": "loco_freq",
+      "label": "LOCO 32768Hz",
+      "kind": "source",
+      "x": 0,
+      "y": 4,
+      "options": [
+        {"id": "32768", "label": "LOCO 32768Hz", "mul": 32768}
+      ],
+      "default": "32768",
+      "enable": {"field": "SYSTEM_LOCOCR.LCSTP", "on": "00000000", "off": "00000001", "auto": "on"}
+    },
+    {
+      "id": "iclk_source",
+      "label": "ICLK source",
+      "kind": "mux",
+      "x": 2,
+      "y": 0,
+      "options": [
+        {"id": "hoco", "label": "HOCO", "from": "hoco_div", "set": {"SYSTEM_FOCOSCR.CKSEL": "00000000", "SYSTEM_FMAINSCR.CKSEL": "00000000", "SYSTEM_ICLKSCR.CKSEL": "00000000"}},
+        {"id": "moco", "label": "MOCO", "from": "moco_div", "set": {"SYSTEM_FOCOSCR.CKSEL": "00000001", "SYSTEM_FMAINSCR.CKSEL": "00000000", "SYSTEM_ICLKSCR.CKSEL": "00000000"}},
+        {"id": "xtal", "label": "XTAL", "from": "xtal_div", "set": {"SYSTEM_FMAINSCR.CKSEL": "00000001", "SYSTEM_ICLKSCR.CKSEL": "00000000"}},
+        {"id": "subclk", "label": "SUBCLK", "from": "subclk_freq", "set": {"SYSTEM_FSUBSCR.CKSEL": "00000000", "SYSTEM_ICLKSCR.CKSEL": "00000001"}},
+        {"id": "loco", "label": "LOCO", "from": "loco_freq", "set": {"SYSTEM_FSUBSCR.CKSEL": "00000001", "SYSTEM_ICLKSCR.CKSEL": "00000001"}}
+      ],
+      "default": "hoco"
+    },
+    {
+      "id": "iclk_display",
+      "label": "ICLK/PCLKB",
+      "kind": "output",
+      "x": 4,
+      "y": 0,
+      "tooltip": "The system clock (ICLK) is used as the operating clock of the CPU, DTC, ROM and RAM.\nThe Peripheral clock B (PCLKB) is used as the operating clock for peripheral modules.\nMaximum frequency is 32 MHz.",
+      "max": 32000000,
+      "options": [
+        {"id": "value", "label": "ICLK/PCLKB ${value}Hz", "from": "iclk_source"}
+      ],
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "f.iclk_display > 0", "message": "The system clock source must be greater than 0."},
+    {"expr": "(f.xtal_freq <= 20000000)", "message": "Maximum allowed XTAL frequency for RA0L1 is 20MHz."},
+    {"expr": "!( ((sel.hoco_freq == '24m')) && (((sel.hoco_div == '16')) || ((sel.hoco_div == '32'))) && (f.iclk_display > 0) && ((sel.iclk_source == 'hoco')) )", "message": "HOCO divider must be /1, /2, /4, /8 if ICLK clock source is HOCO and HOCO frequency is 24 MHz."}
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "stm32c0",
+  "title": "STM32C0 system clock tree",
+  "vendor": "STMicroelectronics",
+  "source": "RM0490, DS13866",
+  "devices": ["^STM32C0"],
+  "fosc": "hclk",
+  "inputs": {
+    "hse": {"label": "HSE frequency", "default": 8000000, "min": 4000000, "max": 48000000}
+  },
+  "settings": ["RCC_CR.HSEBYP"],
+  "nodes": [
+    {
+      "id": "hsi48",
+      "label": "HSI48 48 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "HSI48 48 MHz", "mul": 48000000}
+      ],
+      "enable": {"field": "RCC_CR.HSION", "on": "00000100", "off": "00000000", "auto": "on"}
+    },
+    {
+      "id": "hsisys",
+      "label": "HSIDIV",
+      "kind": "divider",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hsi48", "set": {"RCC_CR.HSIDIV": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hsi48", "set": {"RCC_CR.HSIDIV": "00000800"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hsi48", "set": {"RCC_CR.HSIDIV": "00001000"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hsi48", "set": {"RCC_CR.HSIDIV": "00001800"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hsi48", "set": {"RCC_CR.HSIDIV": "00002000"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "hsi48", "set": {"RCC_CR.HSIDIV": "00002800"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "hsi48", "set": {"RCC_CR.HSIDIV": "00003000"}, "div": 64},
+        {"id": "128", "label": "/128", "from": "hsi48", "set": {"RCC_CR.HSIDIV": "00003800"}, "div": 128}
+      ]
+    },
+    {
+      "id": "hse",
+      "label": "HSE",
+      "kind": "source",
+      "x": 0,
+      "y": 2,
+      "input": "hse",
+      "enable": {"field": "RCC_CR.HSEON", "on": "00010000", "off": "00000000", "auto": "both"}
+    },
+    {
+      "id": "lsi",
+      "label": "LSI 32 kHz",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "options": [
+        {"id": "on", "label": "LSI 32 kHz", "mul": 32000}
+      ],
+      "enable": {"field": "RCC_CSR2.LSION", "on": "00000001", "off": "00000000", "auto": "both"}
+    },
+    {
+      "id": "lse",
+      "label": "LSE 32.768 kHz",
+      "kind": "source",
+      "x": 0,
+      "y": 4,
+      "options": [
+        {"id": "on", "label": "LSE 32.768 kHz", "mul": 32768}
+      ],
+      "enable": {"field": "RCC_CSR1.LSEON", "on": "00000001", "off": "00000000", "auto": "both"}
+    },
+    {
+      "id": "sysclk",
+      "label": "SYSCLK",
+      "kind": "mux",
+      "x": 2,
+      "y": 0,
+      "options": [
+        {"id": "hsisys", "label": "HSISYS", "from": "hsisys", "set": {"RCC_CFGR.SW": "00000000"}},
+        {"id": "hse", "label": "HSE", "from": "hse", "set": {"RCC_CFGR.SW": "00000001"}},
+        {"id": "lsi", "label": "LSI", "from": "lsi", "set": {"RCC_CFGR.SW": "00000003"}},
+        {"id": "lse", "label": "LSE", "from": "lse", "set": {"RCC_CFGR.SW": "00000004"}}
+      ],
+      "max": 48000000
+    },
+    {
+      "id": "hclk",
+      "label": "HCLK (AHB)",
+      "kind": "divider",
+      "x": 3,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000800"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000900"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000A00"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000B00"}, "div": 16},
+        {"id": "64", "label": "/64", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000C00"}, "div": 64},
+        {"id": "128", "label": "/128", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000D00"}, "div": 128},
+        {"id": "256", "label": "/256", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000E00"}, "div": 256},
+        {"id": "512", "label": "/512", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000F00"}, "div": 512}
+      ],
+      "max": 48000000,
+      "consumer": true
+    },
+    {
+      "id": "pclk",
+      "label": "PCLK (APB)",
+      "kind": "divider",
+      "x": 4,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hclk", "set": {"RCC_CFGR.PPRE": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hclk", "set": {"RCC_CFGR.PPRE": "00004000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hclk", "set": {"RCC_CFGR.PPRE": "00005000"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hclk", "set": {"RCC_CFGR.PPRE": "00006000"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hclk", "set": {"RCC_CFGR.PPRE": "00007000"}, "div": 16}
+      ],
+      "max": 48000000,
+      "consumer": true
+    }
+  ]
+}
