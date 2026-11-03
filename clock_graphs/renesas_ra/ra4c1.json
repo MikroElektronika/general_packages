@@ -146,7 +146,7 @@
       "options": [
         {"id": "value", "label": "PLL ${value}Hz", "from": "pll_mul"}
       ],
-      "enable": {"field": "SYSTEM_PLLCR.PLLSTP", "on": "00000000", "off": "00000001", "auto": "both"}
+      "enable": {"field": "SYSTEM_PLLCR.PLLSTP", "on": "00000000", "off": "00000001", "auto": "on"}
     },
     {
       "id": "clock_source",

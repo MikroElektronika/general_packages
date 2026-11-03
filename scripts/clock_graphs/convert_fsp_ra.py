@@ -94,8 +94,10 @@ RA0_ICLK = {
 ENABLES = {
     'xtal_freq': ('MOSCCR.MOSTP', 'both'), 'subclk_freq': ('SOSCCR.SOSTP', 'both'),
     'hoco_freq': ('HOCOCR.HCSTP', 'on'), 'moco_freq': ('MOCOCR.MCSTP', 'on'), 'loco_freq': ('LOCOCR.LCSTP', 'on'),
-    'pll_display': ('PLLCR.PLLSTP', 'both'), 'pll1_display': ('PLLCR.PLLSTP', 'both'),
-    'pll2_display': ('PLL2CR.PLL2STP', 'both'),
+    # PLLs are stopped by their source's "Disabled" option, never automatically: an unused PLL the
+    # user set up (PLL2 for peripheral clocks) keeps running.
+    'pll_display': ('PLLCR.PLLSTP', 'on'), 'pll1_display': ('PLLCR.PLLSTP', 'on'),
+    'pll2_display': ('PLL2CR.PLL2STP', 'on'),
 }
 
 
