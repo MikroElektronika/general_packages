@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "pic_pic12f1822",
+  "title": "PIC oscillator fuses (PIC12F1822, PIC12F1840, PIC12LF1822, PIC12LF1840 and 46 more)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC12F1822$", "^PIC12F1840$", "^PIC12LF1822$", "^PIC12LF1840$", "^PIC16F1782$", "^PIC16F1783$", "^PIC16F1784$", "^PIC16F1786$", "^PIC16F1787$", "^PIC16F1788$", "^PIC16F1789$", "^PIC16F1823$", "^PIC16F1824$", "^PIC16F1825$", "^PIC16F1826$", "^PIC16F1827$", "^PIC16F1828$", "^PIC16F1829$", "^PIC16F1847$", "^PIC16F1933$", "^PIC16F1934$", "^PIC16F1936$", "^PIC16F1937$", "^PIC16F1938$", "^PIC16F1939$", "^PIC16F1946$", "^PIC16F1947$", "^PIC16LF1782$", "^PIC16LF1783$", "^PIC16LF1784$", "^PIC16LF1786$", "^PIC16LF1787$", "^PIC16LF1788$", "^PIC16LF1789$", "^PIC16LF1823$", "^PIC16LF1824$", "^PIC16LF1825$", "^PIC16LF1826$", "^PIC16LF1827$", "^PIC16LF1828$", "^PIC16LF1829$", "^PIC16LF1847$", "^PIC16LF1933$", "^PIC16LF1934$", "^PIC16LF1936$", "^PIC16LF1937$", "^PIC16LF1938$", "^PIC16LF1939$", "^PIC16LF1946$", "^PIC16LF1947$"],
+  "fosc": "pll",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 32000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 32000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (FOSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "ech_external_clock_high_power_mo", "label": "ECH, External Clock, High Power Mode (4-32 MHz): device cloc", "set": {"CONFIG1.FOSC": "00000007"}, "from": "ext", "mul": 1},
+        {"id": "ecm_external_clock_medium_power_", "label": "ECM, External Clock, Medium Power Mode (0.5-4 MHz): device c", "set": {"CONFIG1.FOSC": "00000006"}, "from": "ext", "mul": 1},
+        {"id": "ecl_external_clock_low_power_mod", "label": "ECL, External Clock, Low Power Mode (0-0.5 MHz): device cloc", "set": {"CONFIG1.FOSC": "00000005"}, "from": "ext", "mul": 1},
+        {"id": "intosc_oscillator_i_o_function_o", "label": "INTOSC oscillator: I/O function on CLKIN pin", "set": {"CONFIG1.FOSC": "00000004"}, "from": "intosc", "mul": 1},
+        {"id": "extrc_oscillator_external_rc_cir", "label": "EXTRC oscillator: External RC circuit connected to CLKIN pin", "set": {"CONFIG1.FOSC": "00000003"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator_high_speed_crystal", "label": "HS Oscillator, High-speed crystal/resonator connected betwee", "set": {"CONFIG1.FOSC": "00000002"}, "from": "ext", "mul": 1},
+        {"id": "xt_oscillator_crystal_resonator_", "label": "XT Oscillator, Crystal/resonator connected between OSC1 and ", "set": {"CONFIG1.FOSC": "00000001"}, "from": "ext", "mul": 1},
+        {"id": "lp_oscillator_low_power_crystal_", "label": "LP Oscillator, Low-power crystal connected between OSC1 and ", "set": {"CONFIG1.FOSC": "00000000"}, "mul": 32768}
+      ]
+    },
+    {
+      "id": "pll",
+      "label": "4x PLL (PLLEN)",
+      "kind": "multiplier",
+      "x": 3,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "x1 (PLL off)", "from": "source", "set": {"CONFIG2.PLLEN": "00000000"}},
+        {"id": "4", "label": "x4 (PLL on)", "from": "source", "mul": 4, "set": {"CONFIG2.PLLEN": "00000100"}}
+      ],
+      "max": 32000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'ech_external_clock_high_power_mo' || (in.ext >= 4000000 && in.ext <= 32000000)", "message": "ECH: the external frequency must be 4-32 MHz."},
+    {"expr": "sel.source != 'ecm_external_clock_medium_power_' || (in.ext >= 500000 && in.ext <= 4000000)", "message": "ECM: the external frequency must be 0.5-4 MHz."},
+    {"expr": "sel.source != 'ecl_external_clock_low_power_mod' || (in.ext <= 500000)", "message": "ECL: the external frequency must be 0-0.5 MHz."},
+    {"expr": "sel.source != 'hs_oscillator_high_speed_crystal' || (in.ext >= 4000000)", "message": "HS Oscillator: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.source != 'xt_oscillator_crystal_resonator_' || (in.ext >= 100000 && in.ext <= 4000000)", "message": "XT Oscillator: the external frequency must be 0.1-4 MHz."}
+  ],
+  "symbols": {
+    "CONFIG1.FOSC": {"ECH": "00000007", "ECM": "00000006", "ECL": "00000005", "INTOSC": "00000004", "EXTRC": "00000003", "HS": "00000002", "XT": "00000001", "LP": "00000000"},
+    "CONFIG2.PLLEN": {"ON": "00000100", "OFF": "00000000"}
+  }
+}

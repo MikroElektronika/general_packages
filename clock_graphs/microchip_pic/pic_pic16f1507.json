@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "pic_pic16f1507",
+  "title": "PIC oscillator fuses (PIC16F1507, PIC16LF1507)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC16F1507$", "^PIC16LF1507$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 20000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 20000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (FOSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "external_clock_high_power_mode", "label": "External Clock, High Power Mode", "set": {"CONFIG1.FOSC": "00000003"}, "from": "ext", "mul": 1},
+        {"id": "external_clock_medium_power_mode", "label": "External Clock, Medium Power Mode", "set": {"CONFIG1.FOSC": "00000002"}, "from": "ext", "mul": 1},
+        {"id": "external_clock_low_power_mode", "label": "External Clock, Low Power Mode", "set": {"CONFIG1.FOSC": "00000001"}, "from": "ext", "mul": 1},
+        {"id": "internal_oscillator_i_o_function", "label": "Internal Oscillator, I/O Function on OSC1", "set": {"CONFIG1.FOSC": "00000000"}, "from": "intosc", "mul": 1}
+      ],
+      "max": 20000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [],
+  "symbols": {
+    "CONFIG1.FOSC": {"ECH": "00000003", "ECM": "00000002", "ECL": "00000001", "INTOSC": "00000000"}
+  }
+}

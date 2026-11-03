@@ -1,0 +1,194 @@
+{
+  "schema": 1,
+  "id": "pic32mx",
+  "title": "PIC32MX clock tree (configuration fuses)",
+  "vendor": "Microchip",
+  "source": "PIC32 family reference manual, section 6 Oscillator (DS61112)",
+  "devices": ["^PIC32MX"],
+  "fosc": "sysclk",
+  "inputs": {
+    "posc": {"label": "POSC frequency", "default": 8000000, "min": 3000000, "max": 25000000}
+  },
+  "settings": ["DEVCFG2.UPLLEN", "DEVCFG2.UPLLIDIV"],
+  "nodes": [
+    {
+      "id": "frc",
+      "label": "FRC 8 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "FRC 8 MHz", "mul": 8000000}
+      ]
+    },
+    {
+      "id": "posc",
+      "label": "Primary oscillator (POSC)",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "posc",
+      "tooltip": "Crystal (XT up to 10 MHz, HS above) or external clock (EC); POSCMOD follows."
+    },
+    {
+      "id": "poscmode",
+      "label": "POSC type",
+      "kind": "mux",
+      "x": 0,
+      "y": 2,
+      "default": "crystal",
+      "options": [
+        {"id": "crystal", "label": "Crystal (XT/HS)", "mul": 1},
+        {"id": "ec", "label": "External clock (EC)", "mul": 1}
+      ]
+    },
+    {
+      "id": "sosc",
+      "label": "SOSC 32.768 kHz",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "options": [
+        {"id": "on", "label": "SOSC 32.768 kHz", "mul": 32768}
+      ],
+      "enable": {"field": "DEVCFG1.FSOSCEN", "on": "00000020", "off": "00000000", "auto": "both"}
+    },
+    {
+      "id": "lprc",
+      "label": "LPRC 31.25 kHz",
+      "kind": "source",
+      "x": 0,
+      "y": 4,
+      "options": [
+        {"id": "on", "label": "LPRC 31.25 kHz", "mul": 31250}
+      ]
+    },
+    {
+      "id": "frcdiv16",
+      "label": "FRC/16",
+      "kind": "divider",
+      "x": 1,
+      "y": 5,
+      "options": [
+        {"id": "16", "label": "/16", "from": "frc", "div": 16}
+      ]
+    },
+    {
+      "id": "pllin",
+      "label": "PLL input (FNOSC)",
+      "kind": "mux",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "frc", "label": "FRC (FRCPLL)", "from": "frc", "set": {"DEVCFG1.FNOSC": "00000001"}},
+        {"id": "posc", "label": "POSC (PRIPLL)", "from": "posc", "set": {"DEVCFG1.FNOSC": "00000003"}}
+      ]
+    },
+    {
+      "id": "pllidiv",
+      "label": "PLL /FPLLIDIV",
+      "kind": "divider",
+      "x": 2,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "pllin", "set": {"DEVCFG2.FPLLIDIV": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "pllin", "set": {"DEVCFG2.FPLLIDIV": "00000001"}, "div": 2},
+        {"id": "3", "label": "/3", "from": "pllin", "set": {"DEVCFG2.FPLLIDIV": "00000002"}, "div": 3},
+        {"id": "4", "label": "/4", "from": "pllin", "set": {"DEVCFG2.FPLLIDIV": "00000003"}, "div": 4},
+        {"id": "5", "label": "/5", "from": "pllin", "set": {"DEVCFG2.FPLLIDIV": "00000004"}, "div": 5},
+        {"id": "6", "label": "/6", "from": "pllin", "set": {"DEVCFG2.FPLLIDIV": "00000005"}, "div": 6},
+        {"id": "10", "label": "/10", "from": "pllin", "set": {"DEVCFG2.FPLLIDIV": "00000006"}, "div": 10},
+        {"id": "12", "label": "/12", "from": "pllin", "set": {"DEVCFG2.FPLLIDIV": "00000007"}, "div": 12}
+      ],
+      "min": 4000000,
+      "max": 5000000,
+      "tooltip": "PLL input: 4-5 MHz."
+    },
+    {
+      "id": "pllmul",
+      "label": "PLL xFPLLMUL",
+      "kind": "multiplier",
+      "x": 3,
+      "y": 0,
+      "options": [
+        {"id": "15", "label": "x15", "from": "pllidiv", "set": {"DEVCFG2.FPLLMUL": "00000000"}, "mul": 15},
+        {"id": "16", "label": "x16", "from": "pllidiv", "set": {"DEVCFG2.FPLLMUL": "00000010"}, "mul": 16},
+        {"id": "17", "label": "x17", "from": "pllidiv", "set": {"DEVCFG2.FPLLMUL": "00000020"}, "mul": 17},
+        {"id": "18", "label": "x18", "from": "pllidiv", "set": {"DEVCFG2.FPLLMUL": "00000030"}, "mul": 18},
+        {"id": "19", "label": "x19", "from": "pllidiv", "set": {"DEVCFG2.FPLLMUL": "00000040"}, "mul": 19},
+        {"id": "20", "label": "x20", "from": "pllidiv", "set": {"DEVCFG2.FPLLMUL": "00000050"}, "mul": 20},
+        {"id": "21", "label": "x21", "from": "pllidiv", "set": {"DEVCFG2.FPLLMUL": "00000060"}, "mul": 21},
+        {"id": "24", "label": "x24", "from": "pllidiv", "set": {"DEVCFG2.FPLLMUL": "00000070"}, "mul": 24}
+      ],
+      "min": 60000000,
+      "max": 120000000
+    },
+    {
+      "id": "pll",
+      "label": "PLL /FPLLODIV",
+      "kind": "divider",
+      "x": 4,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "pllmul", "set": {"DEVCFG2.FPLLODIV": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "pllmul", "set": {"DEVCFG2.FPLLODIV": "00010000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "pllmul", "set": {"DEVCFG2.FPLLODIV": "00020000"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "pllmul", "set": {"DEVCFG2.FPLLODIV": "00030000"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "pllmul", "set": {"DEVCFG2.FPLLODIV": "00040000"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "pllmul", "set": {"DEVCFG2.FPLLODIV": "00050000"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "pllmul", "set": {"DEVCFG2.FPLLODIV": "00060000"}, "div": 64},
+        {"id": "256", "label": "/256", "from": "pllmul", "set": {"DEVCFG2.FPLLODIV": "00070000"}, "div": 256}
+      ]
+    },
+    {
+      "id": "sysclk",
+      "label": "SYSCLK (FNOSC)",
+      "kind": "mux",
+      "x": 5,
+      "y": 1,
+      "max": 120000000,
+      "consumer": true,
+      "options": [
+        {"id": "pll", "label": "PLL (FRCPLL/PRIPLL)", "from": "pll", "set": {"DEVCFG1.FNOSC": "00000001/00000005"}},
+        {"id": "frc", "label": "FRC", "from": "frc", "set": {"DEVCFG1.FNOSC": "00000000"}},
+        {"id": "pri", "label": "POSC", "from": "posc", "set": {"DEVCFG1.FNOSC": "00000002"}},
+        {"id": "sosc", "label": "SOSC", "from": "sosc", "set": {"DEVCFG1.FNOSC": "00000004"}},
+        {"id": "lprc", "label": "LPRC", "from": "lprc", "set": {"DEVCFG1.FNOSC": "00000005"}},
+        {"id": "frcdiv16", "label": "FRC/16", "from": "frcdiv16", "set": {"DEVCFG1.FNOSC": "00000006"}},
+        {"id": "frcdiv", "label": "FRC/FRCDIV (reset 1:1)", "from": "frc", "set": {"DEVCFG1.FNOSC": "00000007"}}
+      ]
+    },
+    {
+      "id": "pbclk",
+      "label": "PBCLK (FPBDIV)",
+      "kind": "divider",
+      "x": 6,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "sysclk", "set": {"DEVCFG1.FPBDIV": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "sysclk", "set": {"DEVCFG1.FPBDIV": "00001000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "sysclk", "set": {"DEVCFG1.FPBDIV": "00002000"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "sysclk", "set": {"DEVCFG1.FPBDIV": "00003000"}, "div": 8}
+      ],
+      "consumer": true
+    }
+  ],
+  "derive": [
+    {"field": "DEVCFG1.POSCMOD", "cases": [{"when": "!(sel.sysclk == 'pri' || (sel.sysclk == 'pll' && sel.pllin == 'posc'))", "value": "00000300"}, {"when": "sel.poscmode == 'ec'", "value": "00000000"}, {"when": "in.posc <= 10000000", "value": "00000100"}], "default": "00000200"}
+  ],
+  "variants": [
+    {"devices": ["^PIC32MX110F016B$", "^PIC32MX110F016C$", "^PIC32MX110F016D$", "^PIC32MX120F032B$", "^PIC32MX120F032C$", "^PIC32MX120F032D$", "^PIC32MX130F064B$", "^PIC32MX130F064C$", "^PIC32MX130F064D$", "^PIC32MX150F128B$", "^PIC32MX150F128C$", "^PIC32MX150F128D$", "^PIC32MX210F016B$", "^PIC32MX210F016C$", "^PIC32MX210F016D$", "^PIC32MX220F032B$", "^PIC32MX220F032C$", "^PIC32MX220F032D$", "^PIC32MX230F064B$", "^PIC32MX230F064C$", "^PIC32MX230F064D$", "^PIC32MX250F128B$", "^PIC32MX250F128C$", "^PIC32MX250F128D$", "^PIC32MX320F032H$", "^PIC32MX420F032H$"], "limits": {"sysclk": {"max": 40000000}}},
+    {"devices": ["^PIC32MX120F064H$", "^PIC32MX130F128H$", "^PIC32MX130F128L$", "^PIC32MX130F256B$", "^PIC32MX130F256D$", "^PIC32MX150F256H$", "^PIC32MX150F256L$", "^PIC32MX170F256B$", "^PIC32MX170F256D$", "^PIC32MX170F512H$", "^PIC32MX170F512L$", "^PIC32MX230F128H$", "^PIC32MX230F128L$", "^PIC32MX230F256B$", "^PIC32MX230F256D$", "^PIC32MX250F256H$", "^PIC32MX250F256L$", "^PIC32MX270F256B$", "^PIC32MX270F256D$", "^PIC32MX270F256DB$", "^PIC32MX270F512H$", "^PIC32MX270F512L$", "^PIC32MX530F128H$", "^PIC32MX530F128L$", "^PIC32MX550F256H$", "^PIC32MX550F256L$", "^PIC32MX570F512H$", "^PIC32MX570F512L$"], "limits": {"sysclk": {"max": 50000000}}},
+    {"devices": ["^PIC32MX320F064H$", "^PIC32MX320F128H$", "^PIC32MX320F128L$", "^PIC32MX340F128H$", "^PIC32MX340F128L$", "^PIC32MX340F256H$", "^PIC32MX340F512H$", "^PIC32MX360F256L$", "^PIC32MX360F512L$", "^PIC32MX440F128H$", "^PIC32MX440F128L$", "^PIC32MX440F256H$", "^PIC32MX440F512H$", "^PIC32MX460F256L$", "^PIC32MX460F512L$", "^PIC32MX534F064H$", "^PIC32MX534F064L$", "^PIC32MX564F064H$", "^PIC32MX564F064L$", "^PIC32MX564F128H$", "^PIC32MX564F128L$", "^PIC32MX575F256H$", "^PIC32MX575F256L$", "^PIC32MX575F512H$", "^PIC32MX575F512L$", "^PIC32MX664F064H$", "^PIC32MX664F064L$", "^PIC32MX664F128H$", "^PIC32MX664F128L$", "^PIC32MX675F256H$", "^PIC32MX675F256L$", "^PIC32MX675F512H$", "^PIC32MX675F512L$", "^PIC32MX695F512H$", "^PIC32MX695F512L$", "^PIC32MX764F128H$", "^PIC32MX764F128L$", "^PIC32MX775F256H$", "^PIC32MX775F256L$", "^PIC32MX775F512H$", "^PIC32MX775F512L$", "^PIC32MX795F512H$", "^PIC32MX795F512L$"], "limits": {"sysclk": {"max": 80000000}}},
+    {"devices": ["^PIC32MX330F064H$", "^PIC32MX330F064L$", "^PIC32MX350F128H$", "^PIC32MX350F128L$", "^PIC32MX350F256H$", "^PIC32MX350F256L$", "^PIC32MX370F512H$", "^PIC32MX370F512L$", "^PIC32MX430F064H$", "^PIC32MX430F064L$", "^PIC32MX450F128H$", "^PIC32MX450F128L$", "^PIC32MX450F256H$", "^PIC32MX450F256L$", "^PIC32MX470F512H$", "^PIC32MX470F512L$"], "limits": {"sysclk": {"max": 100000000}}}
+  ],
+  "symbols": {
+    "DEVCFG1.FNOSC": {"FRC": "00000000", "FRCPLL": "00000001", "PRI": "00000002", "PRIPLL": "00000003", "SOSC": "00000004", "LPRC": "00000005", "FRCDIV16": "00000006", "FRCDIV": "00000007"},
+    "DEVCFG1.POSCMOD": {"EC": "00000000", "XT": "00000100", "HS": "00000200", "OFF": "00000300"},
+    "DEVCFG1.FSOSCEN": {"OFF": "00000000", "ON": "00000020"},
+    "DEVCFG1.FPBDIV": {"DIV_1": "00000000", "DIV_2": "00001000", "DIV_4": "00002000", "DIV_8": "00003000"},
+    "DEVCFG2.FPLLIDIV": {"DIV_1": "00000000", "DIV_2": "00000001", "DIV_3": "00000002", "DIV_4": "00000003", "DIV_5": "00000004", "DIV_6": "00000005", "DIV_10": "00000006", "DIV_12": "00000007"},
+    "DEVCFG2.FPLLMUL": {"MUL_15": "00000000", "MUL_16": "00000010", "MUL_17": "00000020", "MUL_18": "00000030", "MUL_19": "00000040", "MUL_20": "00000050", "MUL_21": "00000060", "MUL_24": "00000070"},
+    "DEVCFG2.FPLLODIV": {"DIV_1": "00000000", "DIV_2": "00010000", "DIV_4": "00020000", "DIV_8": "00030000", "DIV_16": "00040000", "DIV_32": "00050000", "DIV_64": "00060000", "DIV_256": "00070000"}
+  }
+}

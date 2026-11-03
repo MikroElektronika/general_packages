@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "avr_attiny13",
+  "title": "AVR clock fuses (ATTINY13, ATTINY13A)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC AVR definitions (LOW.SUT_CKSEL, CKDIV8), AVR datasheets",
+  "devices": ["^ATTINY13$", "^ATTINY13A$"],
+  "fosc": "cpu",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 20000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External clock / crystal",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext",
+      "tooltip": "Frequency of the external clock, crystal, resonator or RC network."
+    },
+    {
+      "id": "source",
+      "label": "Clock source (SUT_CKSEL)",
+      "kind": "mux",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "ext_clock", "label": "Ext. Clock", "set": {"LOW.SUT_CKSEL": "00000000/00000003"}, "from": "ext"},
+        {"id": "int_rc_osc_4_8_mhz", "label": "Int. RC Osc. 4.8 MHz", "set": {"LOW.SUT_CKSEL": "00000001/00000003"}, "mul": 4800000},
+        {"id": "int_rc_osc_9_6_mhz", "label": "Int. RC Osc. 9.6 MHz", "set": {"LOW.SUT_CKSEL": "00000002/00000003"}, "mul": 9600000},
+        {"id": "int_rc_osc_128_khz", "label": "Int. RC Osc. 128 kHz", "set": {"LOW.SUT_CKSEL": "00000003/00000003"}, "mul": 128000}
+      ]
+    },
+    {
+      "id": "cpu",
+      "label": "CPU clock (CKDIV8)",
+      "kind": "divider",
+      "x": 2,
+      "y": 0,
+      "max": 20000000,
+      "consumer": true,
+      "options": [
+        {"id": "1", "label": "/1", "from": "source", "set": {"LOW.CKDIV8": "00000010"}},
+        {"id": "8", "label": "/8", "from": "source", "div": 8, "set": {"LOW.CKDIV8": "00000000"}}
+      ]
+    }
+  ],
+  "constraints": []
+}

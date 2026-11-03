@@ -38,6 +38,11 @@ def load_definitions(root):
                     shift = (mask & -mask).bit_length() - 1
                     values |= {(number << shift) & mask for number in range(int(span['min_value']), int(span['max_value']) + 1)}
                 fields[f'{register["key"]}.{field["key"]}'] = values
+        # XC fuses: config_words named <label_group>.<key> with symbolic values (graph.symbols maps them).
+        for word in data.get('config_words') or []:
+            if word.get('hidden') or not word.get('key'):
+                continue
+            fields[f'{word.get("label_group") or "Configuration"}.{word["key"]}'] = {str(item['value']) for item in word.get('settings') or []}
         if fields:
             definitions[str(data.get('mcu') or path.stem).upper()] = fields
     return definitions
@@ -45,6 +50,18 @@ def load_definitions(root):
 
 def resolve(field, fields):
     return next((name for name in field.lstrip('?').split('|') if name in fields), None)
+
+
+def symbolic_offered(graph, field, value, offered):
+    """For a symbolic (XC) field: does a symbol of graph.symbols carry this numeric value or (bits, mask)?"""
+    table = (graph.get('symbols') or {}).get(field) or {}
+    for symbol, number in table.items():
+        if symbol not in offered:
+            continue
+        number = int(number, 16)
+        if (isinstance(value, tuple) and number & value[1] == value[0]) or number == value:
+            return True
+    return False
 
 
 def check_against_definitions(graph, definitions):
@@ -60,7 +77,8 @@ def check_against_definitions(graph, definitions):
             writes = []
             for option in node.get('options', []):
                 for field, value in (option.get('set') or {}).items():
-                    writes.append((node['id'], option['id'], field, int(value, 16)))
+                    bits, _, mask = str(value).partition('/')
+                    writes.append((node['id'], option['id'], field, (int(bits, 16), int(mask, 16)) if mask else int(bits, 16)))
             spec = node.get('range')
             if spec:
                 for factor in range(spec['min'], spec['max'] + 1):
@@ -71,6 +89,12 @@ def check_against_definitions(graph, definitions):
                 if actual is None:
                     if not field.startswith('?'):
                         missing[field].add(name)
+                elif any(isinstance(item, str) for item in fields[actual]):
+                    if not symbolic_offered(graph, actual, value, fields[actual]):
+                        unavailable[(node_id, option_id, field)].add(name)
+                elif isinstance(value, tuple):
+                    if not any(offered & value[1] == value[0] for offered in fields[actual]):
+                        unavailable[(node_id, option_id, field)].add(name)
                 elif value not in fields[actual]:
                     unavailable[(node_id, option_id, field)].add(name)
             if node.get('enable'):
@@ -79,7 +103,9 @@ def check_against_definitions(graph, definitions):
                     missing[node['enable']['field']].add(name)
                 else:
                     for key in ('on', 'off'):
-                        if int(node['enable'][key], 16) not in fields[actual]:
+                        number = int(node['enable'][key], 16)
+                        symbolic = any(isinstance(item, str) for item in fields[actual])
+                        if (symbolic and not symbolic_offered(graph, actual, number, fields[actual])) or (not symbolic and number not in fields[actual]):
                             unavailable[(node['id'], f'enable.{key}', actual)].add(name)
         for setting in graph.get('settings', []):
             if resolve(setting, fields) is None:

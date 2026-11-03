@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "pic_pic18lf6520",
+  "title": "PIC oscillator fuses (PIC18LF6520, PIC18LF8520, PIC18LF8720)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC18LF6520$", "^PIC18LF8520$", "^PIC18LF8720$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 40000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 40000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (OSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "rc_oscillator_w_osc2_configured_", "label": "RC oscillator w/ OSC2 configured as RA6", "set": {"CONFIG1H.OSC": "00000007"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator_with_pll_enabled", "label": "HS oscillator with PLL enabled", "set": {"CONFIG1H.OSC": "00000006"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_w_osc2_configured_", "label": "EC oscillator w/ OSC2 configured as RA6", "set": {"CONFIG1H.OSC": "00000005"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_w_osc2_configured__", "label": "EC oscillator w/ OSC2 configured as divide-by-4 clock output", "set": {"CONFIG1H.OSC": "00000004"}, "from": "ext", "mul": 1},
+        {"id": "rc_oscillator_w_osc2_configured__", "label": "RC oscillator w/ OSC2 configured as divide-by-4 clock output", "set": {"CONFIG1H.OSC": "00000003"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator", "label": "HS oscillator", "set": {"CONFIG1H.OSC": "00000002"}, "from": "ext", "mul": 1},
+        {"id": "xt_oscillator", "label": "XT oscillator", "set": {"CONFIG1H.OSC": "00000001"}, "from": "ext", "mul": 1},
+        {"id": "lp_oscillator", "label": "LP oscillator", "set": {"CONFIG1H.OSC": "00000000"}, "mul": 32768}
+      ],
+      "max": 40000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'hs_oscillator_with_pll_enabled' || (in.ext >= 4000000)", "message": "HS oscillator with PLL enabled: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.source != 'hs_oscillator' || (in.ext >= 4000000)", "message": "HS oscillator: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.source != 'xt_oscillator' || (in.ext >= 100000 && in.ext <= 4000000)", "message": "XT oscillator: the external frequency must be 0.1-4 MHz."}
+  ],
+  "symbols": {
+    "CONFIG1H.OSC": {"RCIO,_RCIO_OSC,_OSC_RCIO_1H": "00000007", "ECIO,_ECIO_OSC,_OSC_ECIO_1H": "00000005", "EC,_EC_OSC,_OSC_EC_1H": "00000004", "RC,_RC_OSC,_OSC_RC_1H": "00000003", "HS,_HS_OSC,_OSC_HS_1H": "00000002", "XT,_XT_OSC,_OSC_XT_1H": "00000001", "LP,_LP_OSC,_OSC_LP_1H": "00000000", "RCIO,_RCIO_OSC,_RCIO_OSC_1H": "00000007", "ECIO,_ECIO_OSC,_ECIO_OSC_1H": "00000005", "EC,_EC_OSC,_EC_OSC_1H": "00000004", "RC,_RC_OSC,_RC_OSC_1H": "00000003", "HS,_HS_OSC,_HS_OSC_1H": "00000002", "XT,_XT_OSC,_XT_OSC_1H": "00000001", "LP,_LP_OSC,_LP_OSC_1H": "00000000"}
+  }
+}

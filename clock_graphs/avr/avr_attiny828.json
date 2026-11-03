@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "avr_attiny828",
+  "title": "AVR clock fuses (ATTINY828)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC AVR definitions (LOW.SUT_CKSEL, CKDIV8), AVR datasheets",
+  "devices": ["^ATTINY828$"],
+  "fosc": "cpu",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 20000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External clock / crystal",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext",
+      "tooltip": "Frequency of the external clock, crystal, resonator or RC network."
+    },
+    {
+      "id": "source",
+      "label": "Clock source (SUT_CKSEL)",
+      "kind": "mux",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "ext_clock", "label": "Ext. Clock", "set": {"LOW.SUT_CKSEL": "00000000/0000000E"}, "from": "ext"},
+        {"id": "int_rc_osc_8_mhz", "label": "Int. RC Osc. 8 MHz", "set": {"LOW.SUT_CKSEL": "00000002/0000000F"}, "mul": 8000000},
+        {"id": "int_ulp_osc_32khz", "label": "Int. ULP Osc. 32kHz", "set": {"LOW.SUT_CKSEL": "00000003/0000000F"}, "mul": 32768}
+      ]
+    },
+    {
+      "id": "cpu",
+      "label": "CPU clock (CKDIV8)",
+      "kind": "divider",
+      "x": 2,
+      "y": 0,
+      "max": 20000000,
+      "consumer": true,
+      "options": [
+        {"id": "1", "label": "/1", "from": "source", "set": {"LOW.CKDIV8": "00000080"}},
+        {"id": "8", "label": "/8", "from": "source", "div": 8, "set": {"LOW.CKDIV8": "00000000"}}
+      ]
+    }
+  ],
+  "constraints": []
+}

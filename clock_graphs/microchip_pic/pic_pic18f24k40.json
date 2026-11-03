@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "pic_pic18f24k40",
+  "title": "PIC oscillator fuses (PIC18F24K40, PIC18F24K42, PIC18F25K40, PIC18F25K42 and 39 more)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC18F24K40$", "^PIC18F24K42$", "^PIC18F25K40$", "^PIC18F25K42$", "^PIC18F25K83$", "^PIC18F26K40$", "^PIC18F26K42$", "^PIC18F26K83$", "^PIC18F27K40$", "^PIC18F27K42$", "^PIC18F45K40$", "^PIC18F45K42$", "^PIC18F46K40$", "^PIC18F46K42$", "^PIC18F47K40$", "^PIC18F47K42$", "^PIC18F47Q10$", "^PIC18F55K42$", "^PIC18F56K42$", "^PIC18F57K42$", "^PIC18F65K40$", "^PIC18F66K40$", "^PIC18F67K40$", "^PIC18LF24K40$", "^PIC18LF24K42$", "^PIC18LF25K40$", "^PIC18LF25K42$", "^PIC18LF26K40$", "^PIC18LF26K42$", "^PIC18LF27K40$", "^PIC18LF27K42$", "^PIC18LF45K40$", "^PIC18LF45K42$", "^PIC18LF46K40$", "^PIC18LF46K42$", "^PIC18LF47K40$", "^PIC18LF47K42$", "^PIC18LF55K42$", "^PIC18LF56K42$", "^PIC18LF57K42$", "^PIC18LF65K40$", "^PIC18LF66K40$", "^PIC18LF67K40$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 64000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 64000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "fextosc",
+      "label": "External oscillator (FEXTOSC)",
+      "kind": "mux",
+      "x": 1,
+      "y": 1,
+      "options": [
+        {"id": "lp_crystal_oscillator_optimized_", "label": "LP (crystal oscillator) optimized for 32.768 kHz", "set": {"CONFIG1L.FEXTOSC": "00000000"}, "mul": 32768},
+        {"id": "xt_crystal_oscillator_above_100_", "label": "XT (crystal oscillator) above 100 kHz", "set": {"CONFIG1L.FEXTOSC": "00000001"}, "from": "ext"},
+        {"id": "hs_crystal_oscillator_above_8_mh", "label": "HS (crystal oscillator) above 8 MHz", "set": {"CONFIG1L.FEXTOSC": "00000002"}, "from": "ext"},
+        {"id": "ec_external_clock_below_100_khz_", "label": "EC (external clock) below 100 kHz: PFM set to low power", "set": {"CONFIG1L.FEXTOSC": "00000005"}, "from": "ext"},
+        {"id": "ec_external_clock_for_500_khz_to", "label": "EC (external clock) for 500 kHz to 8 MHz", "set": {"CONFIG1L.FEXTOSC": "00000006"}, "from": "ext"},
+        {"id": "ec_external_clock_above_8_mhz_pf", "label": "EC (external clock) above 8 MHz: PFM set to high power", "set": {"CONFIG1L.FEXTOSC": "00000007"}, "from": "ext"}
+      ]
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (RSTOSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "hfintosc_with_hffrq_64_mhz_and_c", "label": "HFINTOSC with HFFRQ = 64 MHz and CDIV = 1:1", "set": {"CONFIG1L.RSTOSC": "00000000"}, "mul": 64000000},
+        {"id": "extosc_with_4x_pll_with_extosc_o", "label": "EXTOSC with 4x PLL, with EXTOSC operating per FEXTOSC bits", "set": {"CONFIG1L.RSTOSC": "00000020"}, "from": "fextosc", "mul": 4},
+        {"id": "secondary_oscillator", "label": "Secondary Oscillator", "set": {"CONFIG1L.RSTOSC": "00000040"}, "mul": 32768},
+        {"id": "hfintosc_with_hffrq_4_mhz_and_cd", "label": "HFINTOSC with HFFRQ = 4 MHz and CDIV = 4:1", "set": {"CONFIG1L.RSTOSC": "00000060"}, "mul": 4000000},
+        {"id": "extosc_operating_per_fextosc_bit", "label": "EXTOSC operating per FEXTOSC bits (device manufacturing defa", "set": {"CONFIG1L.RSTOSC": "00000070"}, "from": "fextosc", "mul": 1}
+      ],
+      "max": 64000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.fextosc != 'xt_crystal_oscillator_above_100_' || (in.ext <= 8000000)", "message": "XT (crystal oscillator) above 100 kHz: the external frequency must be 0-8 MHz."},
+    {"expr": "sel.fextosc != 'hs_crystal_oscillator_above_8_mh' || (in.ext >= 8000000)", "message": "HS (crystal oscillator) above 8 MHz: the external frequency must be 8 MHz or more."},
+    {"expr": "sel.fextosc != 'ec_external_clock_below_100_khz_' || (in.ext <= 100000)", "message": "EC (external clock) below 100 kHz: PFM set to low power: the external frequency must be 0-0.1 MHz."},
+    {"expr": "sel.fextosc != 'ec_external_clock_for_500_khz_to' || (in.ext >= 500000 && in.ext <= 8000000)", "message": "EC (external clock) for 500 kHz to 8 MHz: the external frequency must be 0.5-8 MHz."},
+    {"expr": "sel.fextosc != 'ec_external_clock_above_8_mhz_pf' || (in.ext >= 8000000)", "message": "EC (external clock) above 8 MHz: PFM set to high power: the external frequency must be 8 MHz or more."}
+  ],
+  "symbols": {
+    "CONFIG1L.FEXTOSC": {"OFF": "00000004"},
+    "CONFIG1L.RSTOSC": {"HFINTOSC_64MHZ": "00000000", "EXTOSC_4PLL": "00000020", "SOSC": "00000040", "LFINTOSC": "00000050", "HFINTOSC_1MHZ": "00000060", "EXTOSC": "00000070", "RESERVED_1": "00000010"}
+  }
+}

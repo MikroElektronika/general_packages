@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "pic_pic16f720",
+  "title": "PIC oscillator fuses (PIC16F720, PIC16F721, PIC16LF720, PIC16LF721)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC16F720$", "^PIC16F721$", "^PIC16LF720$", "^PIC16LF721$"],
+  "fosc": "pll",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 16000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 16000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (FOSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "ec_oscillator_clko_function_on_r", "label": "EC oscillator: CLKO function on RA4/CLKO pin, CLKI on RA5/CL", "set": {"CONFIG1.FOSC": "00000003"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_i_o_function_on_ra", "label": "EC oscillator: I/O function on RA4/CLKO pin, CLKI on RA5/CLK", "set": {"CONFIG1.FOSC": "00000002"}, "from": "ext", "mul": 1},
+        {"id": "intosc_oscillator_clko_function_", "label": "INTOSC oscillator: CLKO function on RA4/CLKO pin, I/O functi", "set": {"CONFIG1.FOSC": "00000001"}, "from": "intosc", "mul": 1},
+        {"id": "intoscio_oscillator_i_o_function", "label": "INTOSCIO oscillator: I/O function on RA4/CLKO pin, I/O funct", "set": {"CONFIG1.FOSC": "00000000"}, "from": "intosc", "mul": 1}
+      ]
+    },
+    {
+      "id": "pll",
+      "label": "4x PLL (PLLEN)",
+      "kind": "multiplier",
+      "x": 3,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "x1 (PLL off)", "from": "source", "set": {"CONFIG1.PLLEN": "00000000"}},
+        {"id": "4", "label": "x4 (PLL on)", "from": "source", "mul": 4, "set": {"CONFIG1.PLLEN": "00001000"}}
+      ],
+      "max": 16000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [],
+  "symbols": {
+    "CONFIG1.FOSC": {"ECCLK,_EC_OSC_CLKOUT": "00000003", "ECIO,_EC_OSC_NOCLKOUT": "00000002", "INTOSCCLK,_INTOSC_CLKOUT": "00000001", "INTOSCIO,_INTOSC_NOCLKOUT": "00000000"},
+    "CONFIG1.PLLEN": {"OFF": "00001000", "ON": "00001000"}
+  }
+}

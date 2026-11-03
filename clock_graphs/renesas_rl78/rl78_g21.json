@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "id": "rl78_g21",
+  "title": "RL78/G21 clock tree",
+  "vendor": "Renesas",
+  "source": "RL78/G21 user's manual, Clock Generator",
+  "devices": ["^R7F103G"],
+  "fosc": "fclk",
+  "inputs": {
+    "x1": {"label": "X1 frequency", "default": 8000000, "min": 1000000, "max": 20000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "hoco",
+      "label": "HOCO 32 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "HOCO 32 MHz", "mul": 32000000}
+      ],
+      "enable": {"field": "SYSTEM_CSC.HIOSTOP", "on": "00000000", "off": "00000001", "auto": "on"},
+      "tooltip": "32 MHz HOCO base, selected by the option bytes the core links."
+    },
+    {
+      "id": "fih",
+      "label": "fIH (HOCODIV)",
+      "kind": "divider",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hoco", "set": {"SYSTEM_HOCODIV.HOCODIV": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hoco", "set": {"SYSTEM_HOCODIV.HOCODIV": "00000001"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hoco", "set": {"SYSTEM_HOCODIV.HOCODIV": "00000002"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hoco", "set": {"SYSTEM_HOCODIV.HOCODIV": "00000003"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hoco", "set": {"SYSTEM_HOCODIV.HOCODIV": "00000004"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "hoco", "set": {"SYSTEM_HOCODIV.HOCODIV": "00000005"}, "div": 32}
+      ]
+    },
+    {
+      "id": "x1",
+      "label": "X1 / EXCLK",
+      "kind": "source",
+      "x": 0,
+      "y": 2,
+      "input": "x1",
+      "enable": {"field": "SYSTEM_CSC.MSTOP", "on": "00000000", "off": "00000080", "auto": "both"},
+      "tooltip": "X1 resonator or external clock, 1-20 MHz."
+    },
+    {
+      "id": "x1kind",
+      "label": "X1 pin use",
+      "kind": "mux",
+      "x": 0,
+      "y": 3,
+      "default": "resonator",
+      "options": [
+        {"id": "resonator", "label": "Resonator", "mul": 1},
+        {"id": "external", "label": "External clock", "mul": 1}
+      ]
+    },
+    {
+      "id": "fmx",
+      "label": "fMX (MOSCDIV)",
+      "kind": "divider",
+      "x": 1,
+      "y": 2,
+      "options": [
+        {"id": "1", "label": "/1", "from": "x1", "set": {"SYSTEM_MOSCDIV.MOSCDIV": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "x1", "set": {"SYSTEM_MOSCDIV.MOSCDIV": "00000001"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "x1", "set": {"SYSTEM_MOSCDIV.MOSCDIV": "00000002"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "x1", "set": {"SYSTEM_MOSCDIV.MOSCDIV": "00000003"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "x1", "set": {"SYSTEM_MOSCDIV.MOSCDIV": "00000004"}, "div": 16}
+      ]
+    },
+    {
+      "id": "fmain",
+      "label": "fMAIN (MCM0)",
+      "kind": "mux",
+      "x": 3,
+      "y": 0,
+      "options": [
+        {"id": "oco", "label": "On-chip oscillator", "from": "fih", "set": {"SYSTEM_CKC.MCM0": "00000000"}},
+        {"id": "fmx", "label": "fMX", "from": "fmx", "set": {"SYSTEM_CKC.MCM0": "00000010"}}
+      ]
+    },
+    {
+      "id": "loco",
+      "label": "LOCO 32.768 kHz",
+      "kind": "source",
+      "x": 0,
+      "y": 4,
+      "options": [
+        {"id": "on", "label": "LOCO 32.768 kHz", "mul": 32768}
+      ]
+    },
+    {
+      "id": "fsub",
+      "label": "fSUB (SELLOSC)",
+      "kind": "mux",
+      "x": 1,
+      "y": 4,
+      "options": [
+        {"id": "loco", "label": "LOCO", "from": "loco", "set": {"SYSTEM_CKSEL.SELLOSC": "00000001"}}
+      ]
+    },
+    {
+      "id": "fclk",
+      "label": "fCLK (CSS)",
+      "kind": "mux",
+      "x": 4,
+      "y": 0,
+      "options": [
+        {"id": "fmain", "label": "fMAIN", "from": "fmain", "set": {"SYSTEM_CKC.CSS": "00000000"}},
+        {"id": "fsub", "label": "fSUB", "from": "fsub", "set": {"SYSTEM_CKC.CSS": "00000040"}}
+      ],
+      "max": 32000000,
+      "consumer": true
+    }
+  ],
+  "derive": [
+    {"field": "SYSTEM_CMC.X1_MODE", "cases": [{"when": "sel.fmain != 'fmx'", "value": "00000000"}, {"when": "sel.x1kind == 'external'", "value": "000000C0"}, {"when": "in.x1 > 10000000", "value": "00000041"}], "default": "00000040"}
+  ]
+}

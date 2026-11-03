@@ -223,8 +223,8 @@ def check_graph(graph):
                 if kept not in nodes:
                     problems.append(f'{where}: option {option.get("id")} keeps unknown node {kept!r}')
             for field, value in (option.get('set') or {}).items():
-                if not re.match(r'^[0-9A-F]{8}$', str(value)):
-                    problems.append(f'{where}: {field} value {value!r} must be 8 hex digits')
+                if not re.match(r'^[0-9A-F]{8}(/[0-9A-F]{8})?$', str(value)):
+                    problems.append(f'{where}: {field} value {value!r} must be 8 hex digits, optionally /8-digit mask')
         if 'range' in node:
             spec = node['range']
             if spec.get('from') not in nodes:

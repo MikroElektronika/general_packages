@@ -17,6 +17,12 @@ clock_graphs/
   toshiba/*.json       written by scripts/clock_graphs/toshiba_graphs.py
   nuvoton/*.json       written by scripts/clock_graphs/nuvoton_graphs.py
   adi/*.json           written by scripts/clock_graphs/adi_graphs.py
+  gigadevice/*.json    written by scripts/clock_graphs/gigadevice_graphs.py (GD32VF103, RISC-V)
+  renesas_rx/*.json    written by scripts/clock_graphs/renesas_rx_graphs.py
+  renesas_rl78/*.json  written by scripts/clock_graphs/renesas_rl78_graphs.py
+  microchip_pic32/*.json written by scripts/clock_graphs/microchip_pic32_graphs.py (mikroC and XC32)
+  avr/*.json           converted from the mikroC AVR definitions by scripts/clock_graphs/convert_avr.py
+  microchip_pic/*.json converted from the mikroC/XC8 PIC definitions by scripts/clock_graphs/convert_pic.py
   renesas_ra/*.json    converted from Renesas FSP packs by scripts/clock_graphs/convert_fsp_ra.py
 ```
 
@@ -36,6 +42,12 @@ do not validate.
   Devices** (MAX32690) graphs are written by hand from the datasheets / reference manuals.
 * **Microchip SAM** graphs (SAM E70/S70/V70/V71, G53/G54/G55, D21/DA1, C20/C21) are written by hand from the
   datasheets' clock chapters (PMC, SYSCTRL/GCLK, OSCCTRL/MCLK).
+* **Renesas RX/RL78**, **GigaDevice GD32VF103** and **Microchip PIC32** graphs are written by hand from
+  the hardware manuals / family reference manuals (Renesas Smart Configurator data was used only to
+  cross-check limits, never copied).
+* **AVR** and **PIC10/12/16/18** graphs are converted from the oscillator fuses of MikroE's own NECTO
+  definitions (`convert_avr.py`, `convert_pic.py`, run locally against core_packages); their
+  internal-oscillator frequency, when chosen at runtime, is entered by the user.
 * **Renesas RA** graphs are converted from the `<clock>` section of the FSP MCU packs
   (`.module_descriptions/Renesas##BSP##<family>##fsp####<version>.xml`), part of the RA MCU BSP
   released by Renesas under BSD-3-Clause (see https://github.com/renesas/fsp/blob/master/LICENSE.md).
@@ -105,7 +117,9 @@ values in hex**, exactly like `config_registers[].fields[].settings[].value` in 
 definitions (already shifted into position), so one value fits every MCU of a family even when
 a field is wider on some parts. A field written `A|B` means "field A, or field B on MCUs that
 name it so"; a leading `?` (`?MCLKCFG.USEHSCLK`) means "write it when the MCU has it" (a missing
-optional field does not make the option unavailable).
+optional field does not make the option unavailable). A value written `VALUE/MASK`
+(`00000008/0000000E`) sets only the masked bits and keeps the rest of the field, e.g. an AVR clock
+source inside `SUT_CKSEL` that keeps the chosen start-up time.
 
 The selected option is the one whose `set` matches the current register values; an option
 whose values the MCU definition does not offer is unavailable on that MCU.
@@ -123,6 +137,16 @@ Factor `n` writes `(n * scale + offset) << lsb` to `field`.
 `consumer` node reaches it through the selected options and its frequency is not 0. An active
 node writes `enable.on`; an inactive one writes `enable.off` when `auto` is `both` (`on` never
 switches the clock off, for clocks the reset code runs from).
+
+### Symbolic fuses
+
+XC compilers name configuration fuses (`config_words`, field `<label_group>.<key>`) with symbols
+instead of numbers (`DEVCFG1.FNOSC = PRIPLL`). A graph lists them once, mapped to the numeric
+values it is written in, so the same graph drives mikroC (numeric `config_registers`) and XC:
+
+```jsonc
+"symbols": { "DEVCFG1.FNOSC": { "FRC": "00000000", "FRCPLL": "00000001", "PRI": "00000002", "PRIPLL": "00000003" } }
+```
 
 ### Derived fields
 
@@ -155,6 +179,13 @@ Per-part limits inside a family; every variant whose `devices` match applies, in
 { "devices": ["^STM32F401"], "limits": { "hclk": { "max": 84000000 } },
   "constraints": [ ... ], "inputs": { "hse": { "max": 26000000 } } }
 ```
+
+## Compilers
+
+A graph only drives definition fields, so it serves every compiler whose definition has them:
+GCC/Clang/LLVM cores apply the values in their system code, mikroC writes `config_registers`
+itself (from the generated `.jcfg`), and XC8/XC32 turn `config_words` into fuse pragmas (through
+`symbols`).
 
 ## index.json
 

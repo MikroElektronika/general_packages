@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "rl78_g23",
+  "title": "RL78/G23 clock tree",
+  "vendor": "Renesas",
+  "source": "RL78/G23 user's manual, Clock Generator",
+  "devices": ["^R7F100G"],
+  "fosc": "fclk",
+  "inputs": {},
+  "settings": [],
+  "nodes": [
+    {
+      "id": "hoco",
+      "label": "HOCO 32 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "HOCO 32 MHz", "mul": 32000000}
+      ],
+      "tooltip": "32 MHz HOCO base, selected by the option bytes the core links."
+    },
+    {
+      "id": "fclk",
+      "label": "fCLK (HOCODIV)",
+      "kind": "divider",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hoco", "set": {"SYSTEM_HOCODIV.HOCODIV": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hoco", "set": {"SYSTEM_HOCODIV.HOCODIV": "00000001"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hoco", "set": {"SYSTEM_HOCODIV.HOCODIV": "00000002"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hoco", "set": {"SYSTEM_HOCODIV.HOCODIV": "00000003"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hoco", "set": {"SYSTEM_HOCODIV.HOCODIV": "00000004"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "hoco", "set": {"SYSTEM_HOCODIV.HOCODIV": "00000005"}, "div": 32}
+      ],
+      "consumer": true,
+      "tooltip": "The G23 core runs from HOCO and requires FOSC_KHZ_VALUE = 32 MHz / HOCODIV."
+    }
+  ]
+}

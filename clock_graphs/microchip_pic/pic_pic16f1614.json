@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "pic_pic16f1614",
+  "title": "PIC oscillator fuses (PIC16F1614, PIC16F1618, PIC16LF1554, PIC16LF1559 and 4 more)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC16F1614$", "^PIC16F1618$", "^PIC16LF1554$", "^PIC16LF1559$", "^PIC16LF1566$", "^PIC16LF1567$", "^PIC16LF1614$", "^PIC16LF1618$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 32000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 32000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (FOSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "ech_external_clock_high_power_mo", "label": "ECH, External Clock, High Power Mode (4-20 MHz)", "set": {"CONFIG1.FOSC": "00000003"}, "from": "ext", "mul": 1},
+        {"id": "ecm_external_clock_medium_power_", "label": "ECM, External Clock, Medium Power Mode (0.5-4 MHz)", "set": {"CONFIG1.FOSC": "00000002"}, "from": "ext", "mul": 1},
+        {"id": "ecl_external_clock_low_power_mod", "label": "ECL, External Clock, Low Power Mode (0-0.5 MHz)", "set": {"CONFIG1.FOSC": "00000001"}, "from": "ext", "mul": 1},
+        {"id": "intosc_oscillator_i_o_function_o", "label": "INTOSC oscillator: I/O function on CLKIN pin", "set": {"CONFIG1.FOSC": "00000000"}, "from": "intosc", "mul": 1}
+      ],
+      "max": 32000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'ech_external_clock_high_power_mo' || (in.ext >= 4000000 && in.ext <= 20000000)", "message": "ECH: the external frequency must be 4-20 MHz."},
+    {"expr": "sel.source != 'ecm_external_clock_medium_power_' || (in.ext >= 500000 && in.ext <= 4000000)", "message": "ECM: the external frequency must be 0.5-4 MHz."},
+    {"expr": "sel.source != 'ecl_external_clock_low_power_mod' || (in.ext <= 500000)", "message": "ECL: the external frequency must be 0-0.5 MHz."}
+  ],
+  "symbols": {
+    "CONFIG1.FOSC": {"INTOSC": "00000000"},
+    "CONFIG2.PLLEN": {"ON": "00000100", "OFF": "00000100"}
+  }
+}

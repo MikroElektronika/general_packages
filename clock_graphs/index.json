@@ -11,6 +11,1647 @@
       ]
     },
     {
+      "id": "avr_at90can128",
+      "file": "avr/avr_at90can128.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (AT90CAN128, AT90USB1286, AT90USB1287, AT90USB162 and 9 more)",
+      "devices": [
+        "^AT90CAN128$",
+        "^AT90USB1286$",
+        "^AT90USB1287$",
+        "^AT90USB162$",
+        "^AT90USB646$",
+        "^AT90USB647$",
+        "^AT90USB82$",
+        "^ATMEGA162$",
+        "^ATMEGA16U2$",
+        "^ATMEGA16U4$",
+        "^ATMEGA32U2$",
+        "^ATMEGA32U4$",
+        "^ATMEGA8U2$"
+      ]
+    },
+    {
+      "id": "avr_at90can32",
+      "file": "avr/avr_at90can32.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (AT90CAN32, AT90CAN64)",
+      "devices": [
+        "^AT90CAN32$",
+        "^AT90CAN64$"
+      ]
+    },
+    {
+      "id": "avr_at90pwm1",
+      "file": "avr/avr_at90pwm1.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (AT90PWM1, AT90PWM216)",
+      "devices": [
+        "^AT90PWM1$",
+        "^AT90PWM216$"
+      ]
+    },
+    {
+      "id": "avr_at90pwm2b",
+      "file": "avr/avr_at90pwm2b.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (AT90PWM2B, AT90PWM316, AT90PWM3B, ATMEGA16M1 and 4 more)",
+      "devices": [
+        "^AT90PWM2B$",
+        "^AT90PWM316$",
+        "^AT90PWM3B$",
+        "^ATMEGA16M1$",
+        "^ATMEGA32C1$",
+        "^ATMEGA32M1$",
+        "^ATMEGA64C1$",
+        "^ATMEGA64M1$"
+      ]
+    },
+    {
+      "id": "avr_atmega128",
+      "file": "avr/avr_atmega128.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (ATMEGA128, ATMEGA128A, ATMEGA16, ATMEGA16A and 8 more)",
+      "devices": [
+        "^ATMEGA128$",
+        "^ATMEGA128A$",
+        "^ATMEGA16$",
+        "^ATMEGA16A$",
+        "^ATMEGA32$",
+        "^ATMEGA32A$",
+        "^ATMEGA64$",
+        "^ATMEGA64A$",
+        "^ATMEGA8$",
+        "^ATMEGA8515$",
+        "^ATMEGA8535$",
+        "^ATMEGA8A$"
+      ]
+    },
+    {
+      "id": "avr_atmega1280",
+      "file": "avr/avr_atmega1280.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (ATMEGA1280, ATMEGA1281, ATMEGA1284, ATMEGA1284P and 13 more)",
+      "devices": [
+        "^ATMEGA1280$",
+        "^ATMEGA1281$",
+        "^ATMEGA1284$",
+        "^ATMEGA1284P$",
+        "^ATMEGA164A$",
+        "^ATMEGA164P$",
+        "^ATMEGA164PA$",
+        "^ATMEGA2560$",
+        "^ATMEGA2561$",
+        "^ATMEGA324A$",
+        "^ATMEGA324P$",
+        "^ATMEGA324PA$",
+        "^ATMEGA640$",
+        "^ATMEGA644$",
+        "^ATMEGA644A$",
+        "^ATMEGA644P$",
+        "^ATMEGA644PA$"
+      ]
+    },
+    {
+      "id": "avr_atmega165a",
+      "file": "avr/avr_atmega165a.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (ATMEGA165A, ATMEGA165P, ATMEGA165PA, ATMEGA169A and 29 more)",
+      "devices": [
+        "^ATMEGA165A$",
+        "^ATMEGA165P$",
+        "^ATMEGA165PA$",
+        "^ATMEGA169A$",
+        "^ATMEGA169P$",
+        "^ATMEGA169PA$",
+        "^ATMEGA325$",
+        "^ATMEGA3250$",
+        "^ATMEGA3250A$",
+        "^ATMEGA3250P$",
+        "^ATMEGA3250PA$",
+        "^ATMEGA325A$",
+        "^ATMEGA325P$",
+        "^ATMEGA325PA$",
+        "^ATMEGA329$",
+        "^ATMEGA3290$",
+        "^ATMEGA3290A$",
+        "^ATMEGA3290P$",
+        "^ATMEGA329A$",
+        "^ATMEGA329P$",
+        "^ATMEGA329PA$",
+        "^ATMEGA645$",
+        "^ATMEGA6450$",
+        "^ATMEGA6450A$",
+        "^ATMEGA6450P$",
+        "^ATMEGA645A$",
+        "^ATMEGA645P$",
+        "^ATMEGA649$",
+        "^ATMEGA6490$",
+        "^ATMEGA6490A$",
+        "^ATMEGA6490P$",
+        "^ATMEGA649A$",
+        "^ATMEGA649P$"
+      ]
+    },
+    {
+      "id": "avr_atmega168",
+      "file": "avr/avr_atmega168.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (ATMEGA168, ATMEGA168A, ATMEGA168P, ATMEGA168PA and 10 more)",
+      "devices": [
+        "^ATMEGA168$",
+        "^ATMEGA168A$",
+        "^ATMEGA168P$",
+        "^ATMEGA168PA$",
+        "^ATMEGA328$",
+        "^ATMEGA328P$",
+        "^ATMEGA48$",
+        "^ATMEGA48A$",
+        "^ATMEGA48P$",
+        "^ATMEGA48PA$",
+        "^ATMEGA88$",
+        "^ATMEGA88A$",
+        "^ATMEGA88P$",
+        "^ATMEGA88PA$"
+      ]
+    },
+    {
+      "id": "avr_atmega168pb",
+      "file": "avr/avr_atmega168pb.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (ATMEGA168PB, ATMEGA324PB, ATMEGA328PB, ATMEGA48PB and 1 more)",
+      "devices": [
+        "^ATMEGA168PB$",
+        "^ATMEGA324PB$",
+        "^ATMEGA328PB$",
+        "^ATMEGA48PB$",
+        "^ATMEGA88PB$"
+      ]
+    },
+    {
+      "id": "avr_atmega406",
+      "file": "avr/avr_atmega406.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (ATMEGA406)",
+      "devices": [
+        "^ATMEGA406$"
+      ]
+    },
+    {
+      "id": "avr_attiny13",
+      "file": "avr/avr_attiny13.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (ATTINY13, ATTINY13A)",
+      "devices": [
+        "^ATTINY13$",
+        "^ATTINY13A$"
+      ]
+    },
+    {
+      "id": "avr_attiny1634",
+      "file": "avr/avr_attiny1634.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (ATTINY1634)",
+      "devices": [
+        "^ATTINY1634$"
+      ]
+    },
+    {
+      "id": "avr_attiny2313",
+      "file": "avr/avr_attiny2313.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (ATTINY2313, ATTINY2313A, ATTINY4313)",
+      "devices": [
+        "^ATTINY2313$",
+        "^ATTINY2313A$",
+        "^ATTINY4313$"
+      ]
+    },
+    {
+      "id": "avr_attiny24",
+      "file": "avr/avr_attiny24.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (ATTINY24, ATTINY24A, ATTINY44, ATTINY44A and 2 more)",
+      "devices": [
+        "^ATTINY24$",
+        "^ATTINY24A$",
+        "^ATTINY44$",
+        "^ATTINY44A$",
+        "^ATTINY84$",
+        "^ATTINY84A$"
+      ]
+    },
+    {
+      "id": "avr_attiny25",
+      "file": "avr/avr_attiny25.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (ATTINY25, ATTINY45, ATTINY85)",
+      "devices": [
+        "^ATTINY25$",
+        "^ATTINY45$",
+        "^ATTINY85$"
+      ]
+    },
+    {
+      "id": "avr_attiny441",
+      "file": "avr/avr_attiny441.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (ATTINY441, ATTINY841)",
+      "devices": [
+        "^ATTINY441$",
+        "^ATTINY841$"
+      ]
+    },
+    {
+      "id": "avr_attiny48",
+      "file": "avr/avr_attiny48.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (ATTINY48, ATTINY88)",
+      "devices": [
+        "^ATTINY48$",
+        "^ATTINY88$"
+      ]
+    },
+    {
+      "id": "avr_attiny828",
+      "file": "avr/avr_attiny828.json",
+      "vendor": "Microchip",
+      "title": "AVR clock fuses (ATTINY828)",
+      "devices": [
+        "^ATTINY828$"
+      ]
+    },
+    {
+      "id": "gd32vf103",
+      "file": "gigadevice/gd32vf103.json",
+      "vendor": "GigaDevice",
+      "title": "GD32VF103 clock tree",
+      "devices": [
+        "^GD32VF103"
+      ]
+    },
+    {
+      "id": "pic_pic10f320",
+      "file": "microchip_pic/pic_pic10f320.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC10F320, PIC10F322, PIC10LF320, PIC10LF322)",
+      "devices": [
+        "^PIC10F320$",
+        "^PIC10F322$",
+        "^PIC10LF320$",
+        "^PIC10LF322$"
+      ]
+    },
+    {
+      "id": "pic_pic12c671",
+      "file": "microchip_pic/pic_pic12c671.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC12C671, PIC12C672, PIC12CE673, PIC12CE674)",
+      "devices": [
+        "^PIC12C671$",
+        "^PIC12C672$",
+        "^PIC12CE673$",
+        "^PIC12CE674$"
+      ]
+    },
+    {
+      "id": "pic_pic12f1501",
+      "file": "microchip_pic/pic_pic12f1501.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC12F1501, PIC12LF1501, PIC12LF1552, PIC16F1503 and 1 more)",
+      "devices": [
+        "^PIC12F1501$",
+        "^PIC12LF1501$",
+        "^PIC12LF1552$",
+        "^PIC16F1503$",
+        "^PIC16LF1503$"
+      ]
+    },
+    {
+      "id": "pic_pic12f1571",
+      "file": "microchip_pic/pic_pic12f1571.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC12F1571, PIC12F1572, PIC12LF1571, PIC12LF1572 and 8 more)",
+      "devices": [
+        "^PIC12F1571$",
+        "^PIC12F1572$",
+        "^PIC12LF1571$",
+        "^PIC12LF1572$",
+        "^PIC16F1574$",
+        "^PIC16F1575$",
+        "^PIC16F1578$",
+        "^PIC16F1579$",
+        "^PIC16LF1574$",
+        "^PIC16LF1575$",
+        "^PIC16LF1578$",
+        "^PIC16LF1579$"
+      ]
+    },
+    {
+      "id": "pic_pic12f1612",
+      "file": "microchip_pic/pic_pic12f1612.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC12F1612, PIC12LF1612, PIC16F1613, PIC16LF1613)",
+      "devices": [
+        "^PIC12F1612$",
+        "^PIC12LF1612$",
+        "^PIC16F1613$",
+        "^PIC16LF1613$"
+      ]
+    },
+    {
+      "id": "pic_pic12f1822",
+      "file": "microchip_pic/pic_pic12f1822.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC12F1822, PIC12F1840, PIC12LF1822, PIC12LF1840 and 46 more)",
+      "devices": [
+        "^PIC12F1822$",
+        "^PIC12F1840$",
+        "^PIC12LF1822$",
+        "^PIC12LF1840$",
+        "^PIC16F1782$",
+        "^PIC16F1783$",
+        "^PIC16F1784$",
+        "^PIC16F1786$",
+        "^PIC16F1787$",
+        "^PIC16F1788$",
+        "^PIC16F1789$",
+        "^PIC16F1823$",
+        "^PIC16F1824$",
+        "^PIC16F1825$",
+        "^PIC16F1826$",
+        "^PIC16F1827$",
+        "^PIC16F1828$",
+        "^PIC16F1829$",
+        "^PIC16F1847$",
+        "^PIC16F1933$",
+        "^PIC16F1934$",
+        "^PIC16F1936$",
+        "^PIC16F1937$",
+        "^PIC16F1938$",
+        "^PIC16F1939$",
+        "^PIC16F1946$",
+        "^PIC16F1947$",
+        "^PIC16LF1782$",
+        "^PIC16LF1783$",
+        "^PIC16LF1784$",
+        "^PIC16LF1786$",
+        "^PIC16LF1787$",
+        "^PIC16LF1788$",
+        "^PIC16LF1789$",
+        "^PIC16LF1823$",
+        "^PIC16LF1824$",
+        "^PIC16LF1825$",
+        "^PIC16LF1826$",
+        "^PIC16LF1827$",
+        "^PIC16LF1828$",
+        "^PIC16LF1829$",
+        "^PIC16LF1847$",
+        "^PIC16LF1933$",
+        "^PIC16LF1934$",
+        "^PIC16LF1936$",
+        "^PIC16LF1937$",
+        "^PIC16LF1938$",
+        "^PIC16LF1939$",
+        "^PIC16LF1946$",
+        "^PIC16LF1947$"
+      ]
+    },
+    {
+      "id": "pic_pic12f609",
+      "file": "microchip_pic/pic_pic12f609.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC12F609, PIC12F615, PIC12HV609, PIC12HV615)",
+      "devices": [
+        "^PIC12F609$",
+        "^PIC12F615$",
+        "^PIC12HV609$",
+        "^PIC12HV615$"
+      ]
+    },
+    {
+      "id": "pic_pic12f617",
+      "file": "microchip_pic/pic_pic12f617.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC12F617)",
+      "devices": [
+        "^PIC12F617$"
+      ]
+    },
+    {
+      "id": "pic_pic12f629",
+      "file": "microchip_pic/pic_pic12f629.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC12F629, PIC12F675)",
+      "devices": [
+        "^PIC12F629$",
+        "^PIC12F675$"
+      ]
+    },
+    {
+      "id": "pic_pic12f635",
+      "file": "microchip_pic/pic_pic12f635.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC12F635, PIC16F636, PIC16F639)",
+      "devices": [
+        "^PIC12F635$",
+        "^PIC16F636$",
+        "^PIC16F639$"
+      ]
+    },
+    {
+      "id": "pic_pic12f683",
+      "file": "microchip_pic/pic_pic12f683.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC12F683, PIC16F684, PIC16F688, PIC16F785 and 1 more)",
+      "devices": [
+        "^PIC12F683$",
+        "^PIC16F684$",
+        "^PIC16F688$",
+        "^PIC16F785$",
+        "^PIC16HV785$"
+      ]
+    },
+    {
+      "id": "pic_pic12f752",
+      "file": "microchip_pic/pic_pic12f752.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC12F752, PIC12HV752, PIC16F753, PIC16HV753)",
+      "devices": [
+        "^PIC12F752$",
+        "^PIC12HV752$",
+        "^PIC16F753$",
+        "^PIC16HV753$"
+      ]
+    },
+    {
+      "id": "pic_pic16c432",
+      "file": "microchip_pic/pic_pic16c432.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16C432, PIC16C620A, PIC16C621, PIC16C622 and 39 more)",
+      "devices": [
+        "^PIC16C432$",
+        "^PIC16C620A$",
+        "^PIC16C621$",
+        "^PIC16C622$",
+        "^PIC16C622A$",
+        "^PIC16C62A$",
+        "^PIC16C62B$",
+        "^PIC16C63$",
+        "^PIC16C63A$",
+        "^PIC16C64A$",
+        "^PIC16C65A$",
+        "^PIC16C65B$",
+        "^PIC16C66$",
+        "^PIC16C662$",
+        "^PIC16C67$",
+        "^PIC16C710$",
+        "^PIC16C711$",
+        "^PIC16C715$",
+        "^PIC16C716$",
+        "^PIC16C72$",
+        "^PIC16C72A$",
+        "^PIC16C73A$",
+        "^PIC16C73B$",
+        "^PIC16C74A$",
+        "^PIC16C74B$",
+        "^PIC16C76$",
+        "^PIC16C77$",
+        "^PIC16C923$",
+        "^PIC16C924$",
+        "^PIC16C925$",
+        "^PIC16C926$",
+        "^PIC16CE623$",
+        "^PIC16CE624$",
+        "^PIC16CE625$",
+        "^PIC16CR62$",
+        "^PIC16CR620A$",
+        "^PIC16CR63$",
+        "^PIC16CR64$",
+        "^PIC16CR65$",
+        "^PIC16CR72$",
+        "^PIC16CR83$",
+        "^PIC16CR84$",
+        "^PIC16CR926$"
+      ]
+    },
+    {
+      "id": "pic_pic16c433",
+      "file": "microchip_pic/pic_pic16c433.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16C433)",
+      "devices": [
+        "^PIC16C433$"
+      ]
+    },
+    {
+      "id": "pic_pic16c620",
+      "file": "microchip_pic/pic_pic16c620.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16C620, PIC16C621A, PIC16C642, PIC16C773 and 20 more)",
+      "devices": [
+        "^PIC16C620$",
+        "^PIC16C621A$",
+        "^PIC16C642$",
+        "^PIC16C773$",
+        "^PIC16C774$",
+        "^PIC16F72$",
+        "^PIC16F73$",
+        "^PIC16F74$",
+        "^PIC16F76$",
+        "^PIC16F77$",
+        "^PIC16F83$",
+        "^PIC16F84$",
+        "^PIC16F84A$",
+        "^PIC16F870$",
+        "^PIC16F871$",
+        "^PIC16F872$",
+        "^PIC16F873$",
+        "^PIC16F873A$",
+        "^PIC16F874$",
+        "^PIC16F874A$",
+        "^PIC16F876$",
+        "^PIC16F876A$",
+        "^PIC16F877$",
+        "^PIC16F877A$"
+      ]
+    },
+    {
+      "id": "pic_pic16c71",
+      "file": "microchip_pic/pic_pic16c71.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16C71, PIC16C712)",
+      "devices": [
+        "^PIC16C71$",
+        "^PIC16C712$"
+      ]
+    },
+    {
+      "id": "pic_pic16c717",
+      "file": "microchip_pic/pic_pic16c717.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16C717, PIC16C770, PIC16C771)",
+      "devices": [
+        "^PIC16C717$",
+        "^PIC16C770$",
+        "^PIC16C771$"
+      ]
+    },
+    {
+      "id": "pic_pic16c745",
+      "file": "microchip_pic/pic_pic16c745.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16C745, PIC16C765)",
+      "devices": [
+        "^PIC16C745$",
+        "^PIC16C765$"
+      ]
+    },
+    {
+      "id": "pic_pic16c781",
+      "file": "microchip_pic/pic_pic16c781.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16C781, PIC16C782)",
+      "devices": [
+        "^PIC16C781$",
+        "^PIC16C782$"
+      ]
+    },
+    {
+      "id": "pic_pic16f1507",
+      "file": "microchip_pic/pic_pic16f1507.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F1507, PIC16LF1507)",
+      "devices": [
+        "^PIC16F1507$",
+        "^PIC16LF1507$"
+      ]
+    },
+    {
+      "id": "pic_pic16f1508",
+      "file": "microchip_pic/pic_pic16f1508.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F1508, PIC16F1509, PIC16F1512, PIC16F1513 and 16 more)",
+      "devices": [
+        "^PIC16F1508$",
+        "^PIC16F1509$",
+        "^PIC16F1512$",
+        "^PIC16F1513$",
+        "^PIC16F1516$",
+        "^PIC16F1517$",
+        "^PIC16F1518$",
+        "^PIC16F1519$",
+        "^PIC16F1526$",
+        "^PIC16F1527$",
+        "^PIC16LF1508$",
+        "^PIC16LF1509$",
+        "^PIC16LF1512$",
+        "^PIC16LF1513$",
+        "^PIC16LF1516$",
+        "^PIC16LF1517$",
+        "^PIC16LF1518$",
+        "^PIC16LF1519$",
+        "^PIC16LF1526$",
+        "^PIC16LF1527$"
+      ]
+    },
+    {
+      "id": "pic_pic16f15313",
+      "file": "microchip_pic/pic_pic16f15313.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F15313, PIC16F15323, PIC16F15324, PIC16F15344 and 4 more)",
+      "devices": [
+        "^PIC16F15313$",
+        "^PIC16F15323$",
+        "^PIC16F15324$",
+        "^PIC16F15344$",
+        "^PIC16LF15313$",
+        "^PIC16LF15323$",
+        "^PIC16LF15324$",
+        "^PIC16LF15344$"
+      ]
+    },
+    {
+      "id": "pic_pic16f15325",
+      "file": "microchip_pic/pic_pic16f15325.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F15325, PIC16F15345, PIC16F15354, PIC16F15355 and 26 more)",
+      "devices": [
+        "^PIC16F15325$",
+        "^PIC16F15345$",
+        "^PIC16F15354$",
+        "^PIC16F15355$",
+        "^PIC16F15356$",
+        "^PIC16F15375$",
+        "^PIC16F15376$",
+        "^PIC16F15385$",
+        "^PIC16F15386$",
+        "^PIC16F18854$",
+        "^PIC16F18855$",
+        "^PIC16F18856$",
+        "^PIC16F18857$",
+        "^PIC16F18875$",
+        "^PIC16F18876$",
+        "^PIC16F18877$",
+        "^PIC16LF15325$",
+        "^PIC16LF15345$",
+        "^PIC16LF15354$",
+        "^PIC16LF15355$",
+        "^PIC16LF15356$",
+        "^PIC16LF15375$",
+        "^PIC16LF15376$",
+        "^PIC16LF15385$",
+        "^PIC16LF15386$",
+        "^PIC16LF18854$",
+        "^PIC16LF18855$",
+        "^PIC16LF18857$",
+        "^PIC16LF18875$",
+        "^PIC16LF18877$"
+      ]
+    },
+    {
+      "id": "pic_pic16f1614",
+      "file": "microchip_pic/pic_pic16f1614.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F1614, PIC16F1618, PIC16LF1554, PIC16LF1559 and 4 more)",
+      "devices": [
+        "^PIC16F1614$",
+        "^PIC16F1618$",
+        "^PIC16LF1554$",
+        "^PIC16LF1559$",
+        "^PIC16LF1566$",
+        "^PIC16LF1567$",
+        "^PIC16LF1614$",
+        "^PIC16LF1618$"
+      ]
+    },
+    {
+      "id": "pic_pic16f1615",
+      "file": "microchip_pic/pic_pic16f1615.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F1615, PIC16F1619, PIC16LF1615, PIC16LF1619)",
+      "devices": [
+        "^PIC16F1615$",
+        "^PIC16F1619$",
+        "^PIC16LF1615$",
+        "^PIC16LF1619$"
+      ]
+    },
+    {
+      "id": "pic_pic16f1703",
+      "file": "microchip_pic/pic_pic16f1703.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F1703, PIC16F1707, PIC16LF1703, PIC16LF1707)",
+      "devices": [
+        "^PIC16F1703$",
+        "^PIC16F1707$",
+        "^PIC16LF1703$",
+        "^PIC16LF1707$"
+      ]
+    },
+    {
+      "id": "pic_pic16f1704",
+      "file": "microchip_pic/pic_pic16f1704.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F1704, PIC16F1708, PIC16LF1704, PIC16LF1708)",
+      "devices": [
+        "^PIC16F1704$",
+        "^PIC16F1708$",
+        "^PIC16LF1704$",
+        "^PIC16LF1708$"
+      ]
+    },
+    {
+      "id": "pic_pic16f1705",
+      "file": "microchip_pic/pic_pic16f1705.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F1705, PIC16F1709, PIC16F1713, PIC16F1716 and 28 more)",
+      "devices": [
+        "^PIC16F1705$",
+        "^PIC16F1709$",
+        "^PIC16F1713$",
+        "^PIC16F1716$",
+        "^PIC16F1717$",
+        "^PIC16F1718$",
+        "^PIC16F1719$",
+        "^PIC16F1764$",
+        "^PIC16F1765$",
+        "^PIC16F1768$",
+        "^PIC16F1769$",
+        "^PIC16F1773$",
+        "^PIC16F1776$",
+        "^PIC16F1777$",
+        "^PIC16F1778$",
+        "^PIC16F1779$",
+        "^PIC16LF1705$",
+        "^PIC16LF1709$",
+        "^PIC16LF1713$",
+        "^PIC16LF1716$",
+        "^PIC16LF1717$",
+        "^PIC16LF1718$",
+        "^PIC16LF1719$",
+        "^PIC16LF1764$",
+        "^PIC16LF1765$",
+        "^PIC16LF1768$",
+        "^PIC16LF1769$",
+        "^PIC16LF1773$",
+        "^PIC16LF1776$",
+        "^PIC16LF1777$",
+        "^PIC16LF1778$",
+        "^PIC16LF1779$"
+      ]
+    },
+    {
+      "id": "pic_pic16f1829lin",
+      "file": "microchip_pic/pic_pic16f1829lin.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F1829LIN)",
+      "devices": [
+        "^PIC16F1829LIN$"
+      ]
+    },
+    {
+      "id": "pic_pic16f18313",
+      "file": "microchip_pic/pic_pic16f18313.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F18313, PIC16F18323, PIC16F18324, PIC16F18325 and 12 more)",
+      "devices": [
+        "^PIC16F18313$",
+        "^PIC16F18323$",
+        "^PIC16F18324$",
+        "^PIC16F18325$",
+        "^PIC16F18326$",
+        "^PIC16F18344$",
+        "^PIC16F18345$",
+        "^PIC16F18346$",
+        "^PIC16LF18313$",
+        "^PIC16LF18323$",
+        "^PIC16LF18324$",
+        "^PIC16LF18325$",
+        "^PIC16LF18326$",
+        "^PIC16LF18344$",
+        "^PIC16LF18345$",
+        "^PIC16LF18346$"
+      ]
+    },
+    {
+      "id": "pic_pic16f19155",
+      "file": "microchip_pic/pic_pic16f19155.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F19155, PIC16F19156, PIC16F19175, PIC16F19176 and 14 more)",
+      "devices": [
+        "^PIC16F19155$",
+        "^PIC16F19156$",
+        "^PIC16F19175$",
+        "^PIC16F19176$",
+        "^PIC16F19185$",
+        "^PIC16F19186$",
+        "^PIC16F19195$",
+        "^PIC16F19196$",
+        "^PIC16F19197$",
+        "^PIC16LF19155$",
+        "^PIC16LF19156$",
+        "^PIC16LF19175$",
+        "^PIC16LF19176$",
+        "^PIC16LF19185$",
+        "^PIC16LF19186$",
+        "^PIC16LF19195$",
+        "^PIC16LF19196$",
+        "^PIC16LF19197$"
+      ]
+    },
+    {
+      "id": "pic_pic16f610",
+      "file": "microchip_pic/pic_pic16f610.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F610, PIC16F616, PIC16F631, PIC16F677 and 6 more)",
+      "devices": [
+        "^PIC16F610$",
+        "^PIC16F616$",
+        "^PIC16F631$",
+        "^PIC16F677$",
+        "^PIC16F685$",
+        "^PIC16F687$",
+        "^PIC16F689$",
+        "^PIC16F690$",
+        "^PIC16HV610$",
+        "^PIC16HV616$"
+      ]
+    },
+    {
+      "id": "pic_pic16f627",
+      "file": "microchip_pic/pic_pic16f627.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F627, PIC16F628)",
+      "devices": [
+        "^PIC16F627$",
+        "^PIC16F628$"
+      ]
+    },
+    {
+      "id": "pic_pic16f627a",
+      "file": "microchip_pic/pic_pic16f627a.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F627A, PIC16F628A, PIC16F648A)",
+      "devices": [
+        "^PIC16F627A$",
+        "^PIC16F628A$",
+        "^PIC16F648A$"
+      ]
+    },
+    {
+      "id": "pic_pic16f630",
+      "file": "microchip_pic/pic_pic16f630.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F630, PIC16F676)",
+      "devices": [
+        "^PIC16F630$",
+        "^PIC16F676$"
+      ]
+    },
+    {
+      "id": "pic_pic16f707",
+      "file": "microchip_pic/pic_pic16f707.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F707, PIC16LF707)",
+      "devices": [
+        "^PIC16F707$",
+        "^PIC16LF707$"
+      ]
+    },
+    {
+      "id": "pic_pic16f716",
+      "file": "microchip_pic/pic_pic16f716.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F716)",
+      "devices": [
+        "^PIC16F716$"
+      ]
+    },
+    {
+      "id": "pic_pic16f720",
+      "file": "microchip_pic/pic_pic16f720.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F720, PIC16F721, PIC16LF720, PIC16LF721)",
+      "devices": [
+        "^PIC16F720$",
+        "^PIC16F721$",
+        "^PIC16LF720$",
+        "^PIC16LF721$"
+      ]
+    },
+    {
+      "id": "pic_pic16f722",
+      "file": "microchip_pic/pic_pic16f722.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F722, PIC16F722A, PIC16F723, PIC16F723A and 8 more)",
+      "devices": [
+        "^PIC16F722$",
+        "^PIC16F722A$",
+        "^PIC16F723$",
+        "^PIC16F723A$",
+        "^PIC16F724$",
+        "^PIC16F727$",
+        "^PIC16LF722$",
+        "^PIC16LF722A$",
+        "^PIC16LF723$",
+        "^PIC16LF723A$",
+        "^PIC16LF724$",
+        "^PIC16LF727$"
+      ]
+    },
+    {
+      "id": "pic_pic16f726",
+      "file": "microchip_pic/pic_pic16f726.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F726, PIC16LF726)",
+      "devices": [
+        "^PIC16F726$",
+        "^PIC16LF726$"
+      ]
+    },
+    {
+      "id": "pic_pic16f737",
+      "file": "microchip_pic/pic_pic16f737.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F737, PIC16F747, PIC16F767, PIC16F777)",
+      "devices": [
+        "^PIC16F737$",
+        "^PIC16F747$",
+        "^PIC16F767$",
+        "^PIC16F777$"
+      ]
+    },
+    {
+      "id": "pic_pic16f818",
+      "file": "microchip_pic/pic_pic16f818.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F818, PIC16F819)",
+      "devices": [
+        "^PIC16F818$",
+        "^PIC16F819$"
+      ]
+    },
+    {
+      "id": "pic_pic16f87",
+      "file": "microchip_pic/pic_pic16f87.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F87, PIC16F88)",
+      "devices": [
+        "^PIC16F87$",
+        "^PIC16F88$"
+      ]
+    },
+    {
+      "id": "pic_pic16f882",
+      "file": "microchip_pic/pic_pic16f882.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F882, PIC16F883, PIC16F884, PIC16F886 and 1 more)",
+      "devices": [
+        "^PIC16F882$",
+        "^PIC16F883$",
+        "^PIC16F884$",
+        "^PIC16F886$",
+        "^PIC16F887$"
+      ]
+    },
+    {
+      "id": "pic_pic16f913",
+      "file": "microchip_pic/pic_pic16f913.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16F913, PIC16F914, PIC16F916, PIC16F917 and 1 more)",
+      "devices": [
+        "^PIC16F913$",
+        "^PIC16F914$",
+        "^PIC16F916$",
+        "^PIC16F917$",
+        "^PIC16F946$"
+      ]
+    },
+    {
+      "id": "pic_pic16lf18856",
+      "file": "microchip_pic/pic_pic16lf18856.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16LF18856)",
+      "devices": [
+        "^PIC16LF18856$"
+      ]
+    },
+    {
+      "id": "pic_pic16lf18876",
+      "file": "microchip_pic/pic_pic16lf18876.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16LF18876)",
+      "devices": [
+        "^PIC16LF18876$"
+      ]
+    },
+    {
+      "id": "pic_pic16lf1902",
+      "file": "microchip_pic/pic_pic16lf1902.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC16LF1902, PIC16LF1903, PIC16LF1904, PIC16LF1906 and 1 more)",
+      "devices": [
+        "^PIC16LF1902$",
+        "^PIC16LF1903$",
+        "^PIC16LF1904$",
+        "^PIC16LF1906$",
+        "^PIC16LF1907$"
+      ]
+    },
+    {
+      "id": "pic_pic18c242",
+      "file": "microchip_pic/pic_pic18c242.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18C242, PIC18C252, PIC18C442, PIC18C452)",
+      "devices": [
+        "^PIC18C242$",
+        "^PIC18C252$",
+        "^PIC18C442$",
+        "^PIC18C452$"
+      ]
+    },
+    {
+      "id": "pic_pic18c601",
+      "file": "microchip_pic/pic_pic18c601.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18C601, PIC18C801)",
+      "devices": [
+        "^PIC18C601$",
+        "^PIC18C801$"
+      ]
+    },
+    {
+      "id": "pic_pic18c658",
+      "file": "microchip_pic/pic_pic18c658.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18C658, PIC18C858)",
+      "devices": [
+        "^PIC18C658$",
+        "^PIC18C858$"
+      ]
+    },
+    {
+      "id": "pic_pic18f1220",
+      "file": "microchip_pic/pic_pic18f1220.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F1220, PIC18F1320, PIC18F2220, PIC18F2320 and 8 more)",
+      "devices": [
+        "^PIC18F1220$",
+        "^PIC18F1320$",
+        "^PIC18F2220$",
+        "^PIC18F2320$",
+        "^PIC18F4220$",
+        "^PIC18F4320$",
+        "^PIC18LF1220$",
+        "^PIC18LF1320$",
+        "^PIC18LF2220$",
+        "^PIC18LF2320$",
+        "^PIC18LF4220$",
+        "^PIC18LF4320$"
+      ]
+    },
+    {
+      "id": "pic_pic18f1230",
+      "file": "microchip_pic/pic_pic18f1230.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F1230, PIC18F1330, PIC18LF1230, PIC18LF1330)",
+      "devices": [
+        "^PIC18F1230$",
+        "^PIC18F1330$",
+        "^PIC18LF1230$",
+        "^PIC18LF1330$"
+      ]
+    },
+    {
+      "id": "pic_pic18f13k22",
+      "file": "microchip_pic/pic_pic18f13k22.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F13K22, PIC18F14K22, PIC18LF13K22, PIC18LF14K22)",
+      "devices": [
+        "^PIC18F13K22$",
+        "^PIC18F14K22$",
+        "^PIC18LF13K22$",
+        "^PIC18LF14K22$"
+      ]
+    },
+    {
+      "id": "pic_pic18f2221",
+      "file": "microchip_pic/pic_pic18f2221.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F2221, PIC18F2321, PIC18F4221, PIC18F4321 and 4 more)",
+      "devices": [
+        "^PIC18F2221$",
+        "^PIC18F2321$",
+        "^PIC18F4221$",
+        "^PIC18F4321$",
+        "^PIC18LF2221$",
+        "^PIC18LF2321$",
+        "^PIC18LF4221$",
+        "^PIC18LF4321$"
+      ]
+    },
+    {
+      "id": "pic_pic18f2331",
+      "file": "microchip_pic/pic_pic18f2331.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F2331, PIC18F2431, PIC18F4331, PIC18F4431 and 4 more)",
+      "devices": [
+        "^PIC18F2331$",
+        "^PIC18F2431$",
+        "^PIC18F4331$",
+        "^PIC18F4431$",
+        "^PIC18LF2331$",
+        "^PIC18LF2431$",
+        "^PIC18LF4331$",
+        "^PIC18LF4431$"
+      ]
+    },
+    {
+      "id": "pic_pic18f23k20",
+      "file": "microchip_pic/pic_pic18f23k20.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F23K20, PIC18F24K20, PIC18F25K20, PIC18F26K20 and 4 more)",
+      "devices": [
+        "^PIC18F23K20$",
+        "^PIC18F24K20$",
+        "^PIC18F25K20$",
+        "^PIC18F26K20$",
+        "^PIC18F43K20$",
+        "^PIC18F44K20$",
+        "^PIC18F45K20$",
+        "^PIC18F46K20$"
+      ]
+    },
+    {
+      "id": "pic_pic18f23k22",
+      "file": "microchip_pic/pic_pic18f23k22.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F23K22, PIC18F24K22, PIC18F25K22, PIC18F26K22 and 12 more)",
+      "devices": [
+        "^PIC18F23K22$",
+        "^PIC18F24K22$",
+        "^PIC18F25K22$",
+        "^PIC18F26K22$",
+        "^PIC18F43K22$",
+        "^PIC18F44K22$",
+        "^PIC18F45K22$",
+        "^PIC18F46K22$",
+        "^PIC18LF23K22$",
+        "^PIC18LF24K22$",
+        "^PIC18LF25K22$",
+        "^PIC18LF26K22$",
+        "^PIC18LF43K22$",
+        "^PIC18LF44K22$",
+        "^PIC18LF45K22$",
+        "^PIC18LF46K22$"
+      ]
+    },
+    {
+      "id": "pic_pic18f2410",
+      "file": "microchip_pic/pic_pic18f2410.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F2410, PIC18F2420, PIC18F2423, PIC18F2480 and 64 more)",
+      "devices": [
+        "^PIC18F2410$",
+        "^PIC18F2420$",
+        "^PIC18F2423$",
+        "^PIC18F2480$",
+        "^PIC18F2510$",
+        "^PIC18F2515$",
+        "^PIC18F2520$",
+        "^PIC18F2523$",
+        "^PIC18F2580$",
+        "^PIC18F2585$",
+        "^PIC18F2610$",
+        "^PIC18F2680$",
+        "^PIC18F2682$",
+        "^PIC18F2685$",
+        "^PIC18F4410$",
+        "^PIC18F4420$",
+        "^PIC18F4423$",
+        "^PIC18F4480$",
+        "^PIC18F4510$",
+        "^PIC18F4515$",
+        "^PIC18F4520$",
+        "^PIC18F4523$",
+        "^PIC18F4580$",
+        "^PIC18F4585$",
+        "^PIC18F4610$",
+        "^PIC18F4680$",
+        "^PIC18F4682$",
+        "^PIC18F4685$",
+        "^PIC18LF2410$",
+        "^PIC18LF2420$",
+        "^PIC18LF2423$",
+        "^PIC18LF2480$",
+        "^PIC18LF2510$",
+        "^PIC18LF2515$",
+        "^PIC18LF2520$",
+        "^PIC18LF2523$",
+        "^PIC18LF2580$",
+        "^PIC18LF2585$",
+        "^PIC18LF2610$",
+        "^PIC18LF2680$",
+        "^PIC18LF2682$",
+        "^PIC18LF2685$",
+        "^PIC18LF4410$",
+        "^PIC18LF4420$",
+        "^PIC18LF4423$",
+        "^PIC18LF4480$",
+        "^PIC18LF4510$",
+        "^PIC18LF4515$",
+        "^PIC18LF4520$",
+        "^PIC18LF4523$",
+        "^PIC18LF4580$",
+        "^PIC18LF4585$",
+        "^PIC18LF4610$",
+        "^PIC18LF4680$",
+        "^PIC18LF4682$",
+        "^PIC18LF4685$",
+        "^PIC18LF6527$",
+        "^PIC18LF6622$",
+        "^PIC18LF6627$",
+        "^PIC18LF6628$",
+        "^PIC18LF6722$",
+        "^PIC18LF6723$",
+        "^PIC18LF8527$",
+        "^PIC18LF8622$",
+        "^PIC18LF8627$",
+        "^PIC18LF8628$",
+        "^PIC18LF8722$",
+        "^PIC18LF8723$"
+      ]
+    },
+    {
+      "id": "pic_pic18f242",
+      "file": "microchip_pic/pic_pic18f242.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F242, PIC18F248, PIC18F252, PIC18F258 and 4 more)",
+      "devices": [
+        "^PIC18F242$",
+        "^PIC18F248$",
+        "^PIC18F252$",
+        "^PIC18F258$",
+        "^PIC18F442$",
+        "^PIC18F448$",
+        "^PIC18F452$",
+        "^PIC18F458$"
+      ]
+    },
+    {
+      "id": "pic_pic18f2439",
+      "file": "microchip_pic/pic_pic18f2439.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F2439, PIC18F2539, PIC18F4439, PIC18F4539)",
+      "devices": [
+        "^PIC18F2439$",
+        "^PIC18F2539$",
+        "^PIC18F4439$",
+        "^PIC18F4539$"
+      ]
+    },
+    {
+      "id": "pic_pic18f24j10",
+      "file": "microchip_pic/pic_pic18f24j10.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F24J10, PIC18F25J10, PIC18F44J10, PIC18F45J10 and 13 more)",
+      "devices": [
+        "^PIC18F24J10$",
+        "^PIC18F25J10$",
+        "^PIC18F44J10$",
+        "^PIC18F45J10$",
+        "^PIC18F66J60$",
+        "^PIC18F66J65$",
+        "^PIC18F67J60$",
+        "^PIC18F86J60$",
+        "^PIC18F86J65$",
+        "^PIC18F87J60$",
+        "^PIC18F96J60$",
+        "^PIC18F96J65$",
+        "^PIC18F97J60$",
+        "^PIC18LF24J10$",
+        "^PIC18LF25J10$",
+        "^PIC18LF44J10$",
+        "^PIC18LF45J10$"
+      ]
+    },
+    {
+      "id": "pic_pic18f24j11",
+      "file": "microchip_pic/pic_pic18f24j11.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F24J11, PIC18F25J11, PIC18F26J11, PIC18F44J11 and 8 more)",
+      "devices": [
+        "^PIC18F24J11$",
+        "^PIC18F25J11$",
+        "^PIC18F26J11$",
+        "^PIC18F44J11$",
+        "^PIC18F45J11$",
+        "^PIC18F46J11$",
+        "^PIC18LF24J11$",
+        "^PIC18LF25J11$",
+        "^PIC18LF26J11$",
+        "^PIC18LF44J11$",
+        "^PIC18LF45J11$",
+        "^PIC18LF46J11$"
+      ]
+    },
+    {
+      "id": "pic_pic18f24k40",
+      "file": "microchip_pic/pic_pic18f24k40.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F24K40, PIC18F24K42, PIC18F25K40, PIC18F25K42 and 39 more)",
+      "devices": [
+        "^PIC18F24K40$",
+        "^PIC18F24K42$",
+        "^PIC18F25K40$",
+        "^PIC18F25K42$",
+        "^PIC18F25K83$",
+        "^PIC18F26K40$",
+        "^PIC18F26K42$",
+        "^PIC18F26K83$",
+        "^PIC18F27K40$",
+        "^PIC18F27K42$",
+        "^PIC18F45K40$",
+        "^PIC18F45K42$",
+        "^PIC18F46K40$",
+        "^PIC18F46K42$",
+        "^PIC18F47K40$",
+        "^PIC18F47K42$",
+        "^PIC18F47Q10$",
+        "^PIC18F55K42$",
+        "^PIC18F56K42$",
+        "^PIC18F57K42$",
+        "^PIC18F65K40$",
+        "^PIC18F66K40$",
+        "^PIC18F67K40$",
+        "^PIC18LF24K40$",
+        "^PIC18LF24K42$",
+        "^PIC18LF25K40$",
+        "^PIC18LF25K42$",
+        "^PIC18LF26K40$",
+        "^PIC18LF26K42$",
+        "^PIC18LF27K40$",
+        "^PIC18LF27K42$",
+        "^PIC18LF45K40$",
+        "^PIC18LF45K42$",
+        "^PIC18LF46K40$",
+        "^PIC18LF46K42$",
+        "^PIC18LF47K40$",
+        "^PIC18LF47K42$",
+        "^PIC18LF55K42$",
+        "^PIC18LF56K42$",
+        "^PIC18LF57K42$",
+        "^PIC18LF65K40$",
+        "^PIC18LF66K40$",
+        "^PIC18LF67K40$"
+      ]
+    },
+    {
+      "id": "pic_pic18f2525",
+      "file": "microchip_pic/pic_pic18f2525.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F2525, PIC18F2620, PIC18F4525, PIC18F4620 and 4 more)",
+      "devices": [
+        "^PIC18F2525$",
+        "^PIC18F2620$",
+        "^PIC18F4525$",
+        "^PIC18F4620$",
+        "^PIC18LF2525$",
+        "^PIC18LF2620$",
+        "^PIC18LF4525$",
+        "^PIC18LF4620$"
+      ]
+    },
+    {
+      "id": "pic_pic18f25k80",
+      "file": "microchip_pic/pic_pic18f25k80.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F25K80, PIC18F26K80, PIC18F45K80, PIC18F46K80 and 19 more)",
+      "devices": [
+        "^PIC18F25K80$",
+        "^PIC18F26K80$",
+        "^PIC18F45K80$",
+        "^PIC18F46K80$",
+        "^PIC18F65K22$",
+        "^PIC18F65K80$",
+        "^PIC18F65K90$",
+        "^PIC18F66K22$",
+        "^PIC18F66K80$",
+        "^PIC18F66K90$",
+        "^PIC18F67K22$",
+        "^PIC18F85K22$",
+        "^PIC18F85K90$",
+        "^PIC18F86K22$",
+        "^PIC18F86K90$",
+        "^PIC18F87K22$",
+        "^PIC18F87K90$",
+        "^PIC18LF25K80$",
+        "^PIC18LF26K80$",
+        "^PIC18LF45K80$",
+        "^PIC18LF46K80$",
+        "^PIC18LF65K80$",
+        "^PIC18LF66K80$"
+      ]
+    },
+    {
+      "id": "pic_pic18f27q83",
+      "file": "microchip_pic/pic_pic18f27q83.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F27Q83, PIC18F27Q84, PIC18F47Q83, PIC18F47Q84 and 3 more)",
+      "devices": [
+        "^PIC18F27Q83$",
+        "^PIC18F27Q84$",
+        "^PIC18F47Q83$",
+        "^PIC18F47Q84$",
+        "^PIC18F57Q43$",
+        "^PIC18F57Q83$",
+        "^PIC18F57Q84$"
+      ]
+    },
+    {
+      "id": "pic_pic18f6310",
+      "file": "microchip_pic/pic_pic18f6310.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F6310, PIC18F6390, PIC18F6393, PIC18F6410 and 20 more)",
+      "devices": [
+        "^PIC18F6310$",
+        "^PIC18F6390$",
+        "^PIC18F6393$",
+        "^PIC18F6410$",
+        "^PIC18F6490$",
+        "^PIC18F6493$",
+        "^PIC18F8310$",
+        "^PIC18F8390$",
+        "^PIC18F8393$",
+        "^PIC18F8410$",
+        "^PIC18F8490$",
+        "^PIC18F8493$",
+        "^PIC18LF6310$",
+        "^PIC18LF6390$",
+        "^PIC18LF6393$",
+        "^PIC18LF6410$",
+        "^PIC18LF6490$",
+        "^PIC18LF6493$",
+        "^PIC18LF8310$",
+        "^PIC18LF8390$",
+        "^PIC18LF8393$",
+        "^PIC18LF8410$",
+        "^PIC18LF8490$",
+        "^PIC18LF8493$"
+      ]
+    },
+    {
+      "id": "pic_pic18f63j11",
+      "file": "microchip_pic/pic_pic18f63j11.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F63J11, PIC18F63J90, PIC18F64J11, PIC18F64J90 and 18 more)",
+      "devices": [
+        "^PIC18F63J11$",
+        "^PIC18F63J90$",
+        "^PIC18F64J11$",
+        "^PIC18F64J90$",
+        "^PIC18F65J10$",
+        "^PIC18F65J11$",
+        "^PIC18F65J15$",
+        "^PIC18F65J90$",
+        "^PIC18F66J10$",
+        "^PIC18F66J15$",
+        "^PIC18F67J10$",
+        "^PIC18F83J11$",
+        "^PIC18F83J90$",
+        "^PIC18F84J11$",
+        "^PIC18F84J90$",
+        "^PIC18F85J10$",
+        "^PIC18F85J11$",
+        "^PIC18F85J15$",
+        "^PIC18F85J90$",
+        "^PIC18F86J10$",
+        "^PIC18F86J15$",
+        "^PIC18F87J10$"
+      ]
+    },
+    {
+      "id": "pic_pic18f6520",
+      "file": "microchip_pic/pic_pic18f6520.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F6520, PIC18F6620, PIC18F6720, PIC18F8520 and 2 more)",
+      "devices": [
+        "^PIC18F6520$",
+        "^PIC18F6620$",
+        "^PIC18F6720$",
+        "^PIC18F8520$",
+        "^PIC18F8620$",
+        "^PIC18F8720$"
+      ]
+    },
+    {
+      "id": "pic_pic18f6525",
+      "file": "microchip_pic/pic_pic18f6525.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F6525, PIC18F6585, PIC18F6621, PIC18F6680 and 4 more)",
+      "devices": [
+        "^PIC18F6525$",
+        "^PIC18F6585$",
+        "^PIC18F6621$",
+        "^PIC18F6680$",
+        "^PIC18F8525$",
+        "^PIC18F8585$",
+        "^PIC18F8621$",
+        "^PIC18F8680$"
+      ]
+    },
+    {
+      "id": "pic_pic18f6527",
+      "file": "microchip_pic/pic_pic18f6527.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F6527, PIC18F6622, PIC18F6627, PIC18F6628 and 8 more)",
+      "devices": [
+        "^PIC18F6527$",
+        "^PIC18F6622$",
+        "^PIC18F6627$",
+        "^PIC18F6628$",
+        "^PIC18F6722$",
+        "^PIC18F6723$",
+        "^PIC18F8527$",
+        "^PIC18F8622$",
+        "^PIC18F8627$",
+        "^PIC18F8628$",
+        "^PIC18F8722$",
+        "^PIC18F8723$"
+      ]
+    },
+    {
+      "id": "pic_pic18f66j11",
+      "file": "microchip_pic/pic_pic18f66j11.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F66J11, PIC18F66J16, PIC18F67J11, PIC18F86J11 and 2 more)",
+      "devices": [
+        "^PIC18F66J11$",
+        "^PIC18F66J16$",
+        "^PIC18F67J11$",
+        "^PIC18F86J11$",
+        "^PIC18F86J16$",
+        "^PIC18F87J11$"
+      ]
+    },
+    {
+      "id": "pic_pic18f66j90",
+      "file": "microchip_pic/pic_pic18f66j90.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F66J90, PIC18F66J93, PIC18F67J90, PIC18F67J93 and 6 more)",
+      "devices": [
+        "^PIC18F66J90$",
+        "^PIC18F66J93$",
+        "^PIC18F67J90$",
+        "^PIC18F67J93$",
+        "^PIC18F86J72$",
+        "^PIC18F86J90$",
+        "^PIC18F86J93$",
+        "^PIC18F87J72$",
+        "^PIC18F87J90$",
+        "^PIC18F87J93$"
+      ]
+    },
+    {
+      "id": "pic_pic18f67k90",
+      "file": "microchip_pic/pic_pic18f67k90.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18F67K90)",
+      "devices": [
+        "^PIC18F67K90$"
+      ]
+    },
+    {
+      "id": "pic_pic18lf6520",
+      "file": "microchip_pic/pic_pic18lf6520.json",
+      "vendor": "Microchip",
+      "title": "PIC oscillator fuses (PIC18LF6520, PIC18LF8520, PIC18LF8720)",
+      "devices": [
+        "^PIC18LF6520$",
+        "^PIC18LF8520$",
+        "^PIC18LF8720$"
+      ]
+    },
+    {
+      "id": "pic32mx",
+      "file": "microchip_pic32/pic32mx.json",
+      "vendor": "Microchip",
+      "title": "PIC32MX clock tree (configuration fuses)",
+      "devices": [
+        "^PIC32MX"
+      ]
+    },
+    {
+      "id": "pic32mz",
+      "file": "microchip_pic32/pic32mz.json",
+      "vendor": "Microchip",
+      "title": "PIC32MZ clock tree (configuration fuses)",
+      "devices": [
+        "^PIC32MZ"
+      ]
+    },
+    {
       "id": "sam_c20_c21",
       "file": "microchip_sam/sam_c20_c21.json",
       "vendor": "Microchip",
@@ -461,6 +2102,78 @@
       "title": "Renesas RA8T2 clock tree",
       "devices": [
         "^R7[FK]A8T2"
+      ]
+    },
+    {
+      "id": "rl78_g21",
+      "file": "renesas_rl78/rl78_g21.json",
+      "vendor": "Renesas",
+      "title": "RL78/G21 clock tree",
+      "devices": [
+        "^R7F103G"
+      ]
+    },
+    {
+      "id": "rl78_g23",
+      "file": "renesas_rl78/rl78_g23.json",
+      "vendor": "Renesas",
+      "title": "RL78/G23 clock tree",
+      "devices": [
+        "^R7F100G"
+      ]
+    },
+    {
+      "id": "rl78_g24",
+      "file": "renesas_rl78/rl78_g24.json",
+      "vendor": "Renesas",
+      "title": "RL78/G24 clock tree",
+      "devices": [
+        "^R7F101G"
+      ]
+    },
+    {
+      "id": "rl78_l23",
+      "file": "renesas_rl78/rl78_l23.json",
+      "vendor": "Renesas",
+      "title": "RL78/L23 clock tree",
+      "devices": [
+        "^R7F100L"
+      ]
+    },
+    {
+      "id": "rx26t",
+      "file": "renesas_rx/rx26t.json",
+      "vendor": "Renesas",
+      "title": "RX26T clock tree",
+      "devices": [
+        "^R5F526T"
+      ]
+    },
+    {
+      "id": "rx66t",
+      "file": "renesas_rx/rx66t.json",
+      "vendor": "Renesas",
+      "title": "RX66T clock tree",
+      "devices": [
+        "^R5F566T"
+      ]
+    },
+    {
+      "id": "rx72m",
+      "file": "renesas_rx/rx72m.json",
+      "vendor": "Renesas",
+      "title": "RX72M clock tree",
+      "devices": [
+        "^R5F572M"
+      ]
+    },
+    {
+      "id": "rx74m_rx74n",
+      "file": "renesas_rx/rx74m_rx74n.json",
+      "vendor": "Renesas",
+      "title": "RX74M/RX74N clock tree",
+      "devices": [
+        "^R5K574"
       ]
     },
     {

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "pic_pic10f320",
+  "title": "PIC oscillator fuses (PIC10F320, PIC10F322, PIC10LF320, PIC10LF322)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC10F320$", "^PIC10F322$", "^PIC10LF320$", "^PIC10LF322$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 16000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 16000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (FOSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "intosc_oscillator_clkin_function", "label": "INTOSC oscillator: CLKIN function disabled", "set": {"CONFIG.FOSC": "00000000"}, "from": "intosc", "mul": 1},
+        {"id": "ec_clkin_function_enabled", "label": "EC: CLKIN function enabled", "set": {"CONFIG.FOSC": "00000001"}, "from": "ext", "mul": 1}
+      ],
+      "max": 16000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [],
+  "symbols": {
+    "CONFIG.FOSC": {"INTOSC": "00000000", "EC": "00000001"}
+  }
+}

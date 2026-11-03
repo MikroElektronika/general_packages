@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "pic_pic18f63j11",
+  "title": "PIC oscillator fuses (PIC18F63J11, PIC18F63J90, PIC18F64J11, PIC18F64J90 and 18 more)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC18F63J11$", "^PIC18F63J90$", "^PIC18F64J11$", "^PIC18F64J90$", "^PIC18F65J10$", "^PIC18F65J11$", "^PIC18F65J15$", "^PIC18F65J90$", "^PIC18F66J10$", "^PIC18F66J15$", "^PIC18F67J10$", "^PIC18F83J11$", "^PIC18F83J90$", "^PIC18F84J11$", "^PIC18F84J90$", "^PIC18F85J10$", "^PIC18F85J11$", "^PIC18F85J15$", "^PIC18F85J90$", "^PIC18F86J10$", "^PIC18F86J15$", "^PIC18F87J10$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 40000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 40000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (FOSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "ec_oscillator_pll_enabled_and_un", "label": "EC oscillator, PLL enabled and under software control, CLK f", "set": {"CONFIG2L.FOSC": "00000003"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_clko_function_on_o", "label": "EC oscillator, CLKO function on OSC2", "set": {"CONFIG2L.FOSC": "00000002"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator_pll_enabled_and_un", "label": "HS oscillator, PLL enabled and under software control", "set": {"CONFIG2L.FOSC": "00000001"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator", "label": "HS oscillator", "set": {"CONFIG2L.FOSC": "00000000"}, "from": "ext", "mul": 1}
+      ],
+      "max": 40000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'hs_oscillator_pll_enabled_and_un' || (in.ext >= 4000000)", "message": "HS oscillator: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.source != 'hs_oscillator' || (in.ext >= 4000000)", "message": "HS oscillator: the external frequency must be 4 MHz or more."}
+  ],
+  "symbols": {
+    "CONFIG2L.FOSC": {"ECPLL": "00000003", "EC": "00000002", "HSPLL": "00000001", "HS": "00000000"}
+  }
+}

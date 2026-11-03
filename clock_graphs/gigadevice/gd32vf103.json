@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "id": "gd32vf103",
+  "title": "GD32VF103 clock tree",
+  "vendor": "GigaDevice",
+  "source": "GD32VF103 user manual, Reset and clock unit (RCU)",
+  "devices": ["^GD32VF103"],
+  "fosc": "sysclk",
+  "inputs": {
+    "hxtal": {"label": "HXTAL frequency", "default": 8000000, "min": 4000000, "max": 32000000}
+  },
+  "settings": ["RCU_CTL.HXTALBPS", "RCU_CTL.CKMEN"],
+  "nodes": [
+    {
+      "id": "irc8m",
+      "label": "IRC8M 8 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "IRC8M 8 MHz", "mul": 8000000}
+      ],
+      "enable": {"field": "RCU_CTL.IRC8MEN", "on": "00000001", "off": "00000000", "auto": "on"}
+    },
+    {
+      "id": "irc8m_div2",
+      "label": "IRC8M/2",
+      "kind": "divider",
+      "x": 3,
+      "y": 0,
+      "options": [
+        {"id": "2", "label": "/2", "from": "irc8m", "div": 2}
+      ]
+    },
+    {
+      "id": "hxtal",
+      "label": "HXTAL",
+      "kind": "source",
+      "x": 0,
+      "y": 2,
+      "input": "hxtal",
+      "enable": {"field": "RCU_CTL.HXTALEN", "on": "00010000", "off": "00000000", "auto": "both"}
+    },
+    {
+      "id": "predv1",
+      "label": "PREDV1",
+      "kind": "divider",
+      "x": 1,
+      "y": 4,
+      "range": {"from": "hxtal", "op": "div", "min": 1, "max": 16, "field": "RCU_CFG1.PREDV1", "lsb": 4, "scale": 1, "offset": -1}
+    },
+    {
+      "id": "pll1",
+      "label": "PLL1MF",
+      "kind": "multiplier",
+      "x": 2,
+      "y": 4,
+      "options": [
+        {"id": "8", "label": "x8", "from": "predv1", "set": {"RCU_CFG1.PLL1MF": "00000600"}, "mul": 8},
+        {"id": "9", "label": "x9", "from": "predv1", "set": {"RCU_CFG1.PLL1MF": "00000700"}, "mul": 9},
+        {"id": "10", "label": "x10", "from": "predv1", "set": {"RCU_CFG1.PLL1MF": "00000800"}, "mul": 10},
+        {"id": "11", "label": "x11", "from": "predv1", "set": {"RCU_CFG1.PLL1MF": "00000900"}, "mul": 11},
+        {"id": "12", "label": "x12", "from": "predv1", "set": {"RCU_CFG1.PLL1MF": "00000A00"}, "mul": 12},
+        {"id": "13", "label": "x13", "from": "predv1", "set": {"RCU_CFG1.PLL1MF": "00000B00"}, "mul": 13},
+        {"id": "14", "label": "x14", "from": "predv1", "set": {"RCU_CFG1.PLL1MF": "00000C00"}, "mul": 14},
+        {"id": "15", "label": "x15", "from": "predv1", "set": {"RCU_CFG1.PLL1MF": "00000D00"}, "mul": 15},
+        {"id": "16", "label": "x16", "from": "predv1", "set": {"RCU_CFG1.PLL1MF": "00000E00"}, "mul": 16},
+        {"id": "20", "label": "x20", "from": "predv1", "set": {"RCU_CFG1.PLL1MF": "00000F00"}, "mul": 20}
+      ],
+      "enable": {"field": "RCU_CTL.PLL1EN", "on": "04000000", "off": "00000000", "auto": "both"}
+    },
+    {
+      "id": "predv0sel",
+      "label": "PREDV0 source",
+      "kind": "mux",
+      "x": 2,
+      "y": 2,
+      "options": [
+        {"id": "hxtal", "label": "HXTAL", "from": "hxtal", "set": {"RCU_CFG1.PREDV0SEL": "00000000"}},
+        {"id": "pll1", "label": "PLL1", "from": "pll1", "set": {"RCU_CFG1.PREDV0SEL": "00010000"}}
+      ]
+    },
+    {
+      "id": "predv0",
+      "label": "PREDV0",
+      "kind": "divider",
+      "x": 3,
+      "y": 2,
+      "range": {"from": "predv0sel", "op": "div", "min": 1, "max": 16, "field": "RCU_CFG1.PREDV0", "lsb": 0, "scale": 1, "offset": -1}
+    },
+    {
+      "id": "pllsel",
+      "label": "PLL source",
+      "kind": "mux",
+      "x": 4,
+      "y": 1,
+      "options": [
+        {"id": "irc8m", "label": "IRC8M/2", "from": "irc8m_div2", "set": {"RCU_CFG0.PLLSEL": "00000000"}},
+        {"id": "predv0", "label": "PREDV0", "from": "predv0", "set": {"RCU_CFG0.PLLSEL": "00010000"}}
+      ]
+    },
+    {
+      "id": "pll",
+      "label": "PLLMF",
+      "kind": "multiplier",
+      "x": 5,
+      "y": 1,
+      "max": 108000000,
+      "enable": {"field": "RCU_CTL.PLLEN", "on": "01000000", "off": "00000000", "auto": "both"},
+      "options": [
+        {"id": "2", "label": "x2", "from": "pllsel", "mul": 2, "set": {"RCU_CFG0.PLLMF": "00000000"}},
+        {"id": "3", "label": "x3", "from": "pllsel", "mul": 3, "set": {"RCU_CFG0.PLLMF": "00040000"}},
+        {"id": "4", "label": "x4", "from": "pllsel", "mul": 4, "set": {"RCU_CFG0.PLLMF": "00080000"}},
+        {"id": "5", "label": "x5", "from": "pllsel", "mul": 5, "set": {"RCU_CFG0.PLLMF": "000C0000"}},
+        {"id": "6", "label": "x6", "from": "pllsel", "mul": 6, "set": {"RCU_CFG0.PLLMF": "00100000"}},
+        {"id": "6_5", "label": "x6.5", "from": "pllsel", "mul": 13, "div": 2, "set": {"RCU_CFG0.PLLMF": "00340000"}},
+        {"id": "7", "label": "x7", "from": "pllsel", "mul": 7, "set": {"RCU_CFG0.PLLMF": "00140000"}},
+        {"id": "8", "label": "x8", "from": "pllsel", "mul": 8, "set": {"RCU_CFG0.PLLMF": "00180000"}},
+        {"id": "9", "label": "x9", "from": "pllsel", "mul": 9, "set": {"RCU_CFG0.PLLMF": "001C0000"}},
+        {"id": "10", "label": "x10", "from": "pllsel", "mul": 10, "set": {"RCU_CFG0.PLLMF": "00200000"}},
+        {"id": "11", "label": "x11", "from": "pllsel", "mul": 11, "set": {"RCU_CFG0.PLLMF": "00240000"}},
+        {"id": "12", "label": "x12", "from": "pllsel", "mul": 12, "set": {"RCU_CFG0.PLLMF": "00280000"}},
+        {"id": "13", "label": "x13", "from": "pllsel", "mul": 13, "set": {"RCU_CFG0.PLLMF": "002C0000"}},
+        {"id": "14", "label": "x14", "from": "pllsel", "mul": 14, "set": {"RCU_CFG0.PLLMF": "00300000"}},
+        {"id": "16", "label": "x16", "from": "pllsel", "mul": 16, "set": {"RCU_CFG0.PLLMF": "00380000"}},
+        {"id": "17", "label": "x17", "from": "pllsel", "mul": 17, "set": {"RCU_CFG0.PLLMF": "20000000"}},
+        {"id": "18", "label": "x18", "from": "pllsel", "mul": 18, "set": {"RCU_CFG0.PLLMF": "20040000"}},
+        {"id": "19", "label": "x19", "from": "pllsel", "mul": 19, "set": {"RCU_CFG0.PLLMF": "20080000"}},
+        {"id": "20", "label": "x20", "from": "pllsel", "mul": 20, "set": {"RCU_CFG0.PLLMF": "200C0000"}},
+        {"id": "21", "label": "x21", "from": "pllsel", "mul": 21, "set": {"RCU_CFG0.PLLMF": "20100000"}},
+        {"id": "22", "label": "x22", "from": "pllsel", "mul": 22, "set": {"RCU_CFG0.PLLMF": "20140000"}},
+        {"id": "23", "label": "x23", "from": "pllsel", "mul": 23, "set": {"RCU_CFG0.PLLMF": "20180000"}},
+        {"id": "24", "label": "x24", "from": "pllsel", "mul": 24, "set": {"RCU_CFG0.PLLMF": "201C0000"}},
+        {"id": "25", "label": "x25", "from": "pllsel", "mul": 25, "set": {"RCU_CFG0.PLLMF": "20200000"}},
+        {"id": "26", "label": "x26", "from": "pllsel", "mul": 26, "set": {"RCU_CFG0.PLLMF": "20240000"}},
+        {"id": "27", "label": "x27", "from": "pllsel", "mul": 27, "set": {"RCU_CFG0.PLLMF": "20280000"}},
+        {"id": "28", "label": "x28", "from": "pllsel", "mul": 28, "set": {"RCU_CFG0.PLLMF": "202C0000"}},
+        {"id": "29", "label": "x29", "from": "pllsel", "mul": 29, "set": {"RCU_CFG0.PLLMF": "20300000"}},
+        {"id": "30", "label": "x30", "from": "pllsel", "mul": 30, "set": {"RCU_CFG0.PLLMF": "20340000"}},
+        {"id": "31", "label": "x31", "from": "pllsel", "mul": 31, "set": {"RCU_CFG0.PLLMF": "20380000"}},
+        {"id": "32", "label": "x32", "from": "pllsel", "mul": 32, "set": {"RCU_CFG0.PLLMF": "203C0000"}}
+      ]
+    },
+    {
+      "id": "usbfs",
+      "label": "USBFS prescaler",
+      "kind": "divider",
+      "x": 6,
+      "y": 3,
+      "options": [
+        {"id": "1_5", "label": "/1.5", "from": "pll", "set": {"RCU_CFG0.USBFSPSC": "00000000"}, "mul": 2, "div": 3},
+        {"id": "1", "label": "/1", "from": "pll", "set": {"RCU_CFG0.USBFSPSC": "00400000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "pll", "set": {"RCU_CFG0.USBFSPSC": "00C00000"}, "div": 2}
+      ],
+      "max": 48000000,
+      "tooltip": "USBFS needs 48 MHz."
+    },
+    {
+      "id": "sysclk",
+      "label": "System clock (SCS)",
+      "kind": "mux",
+      "x": 6,
+      "y": 0,
+      "options": [
+        {"id": "irc8m", "label": "IRC8M", "from": "irc8m", "set": {"RCU_CFG0.SCS": "00000000"}},
+        {"id": "hxtal", "label": "HXTAL", "from": "hxtal", "set": {"RCU_CFG0.SCS": "00000001"}},
+        {"id": "pll", "label": "PLL", "from": "pll", "set": {"RCU_CFG0.SCS": "00000002"}}
+      ],
+      "max": 108000000
+    },
+    {
+      "id": "ahb",
+      "label": "AHB (AHBPSC)",
+      "kind": "divider",
+      "x": 7,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "sysclk", "set": {"RCU_CFG0.AHBPSC": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "sysclk", "set": {"RCU_CFG0.AHBPSC": "00000080"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "sysclk", "set": {"RCU_CFG0.AHBPSC": "00000090"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "sysclk", "set": {"RCU_CFG0.AHBPSC": "000000A0"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "sysclk", "set": {"RCU_CFG0.AHBPSC": "000000B0"}, "div": 16},
+        {"id": "64", "label": "/64", "from": "sysclk", "set": {"RCU_CFG0.AHBPSC": "000000C0"}, "div": 64},
+        {"id": "128", "label": "/128", "from": "sysclk", "set": {"RCU_CFG0.AHBPSC": "000000D0"}, "div": 128},
+        {"id": "256", "label": "/256", "from": "sysclk", "set": {"RCU_CFG0.AHBPSC": "000000E0"}, "div": 256},
+        {"id": "512", "label": "/512", "from": "sysclk", "set": {"RCU_CFG0.AHBPSC": "000000F0"}, "div": 512}
+      ],
+      "max": 108000000,
+      "consumer": true
+    },
+    {
+      "id": "apb1",
+      "label": "APB1 (APB1PSC)",
+      "kind": "divider",
+      "x": 8,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "ahb", "set": {"RCU_CFG0.APB1PSC": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "ahb", "set": {"RCU_CFG0.APB1PSC": "00000400"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "ahb", "set": {"RCU_CFG0.APB1PSC": "00000500"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "ahb", "set": {"RCU_CFG0.APB1PSC": "00000600"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "ahb", "set": {"RCU_CFG0.APB1PSC": "00000700"}, "div": 16}
+      ],
+      "max": 54000000,
+      "consumer": true
+    },
+    {
+      "id": "apb2",
+      "label": "APB2 (APB2PSC)",
+      "kind": "divider",
+      "x": 8,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "ahb", "set": {"RCU_CFG0.APB2PSC": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "ahb", "set": {"RCU_CFG0.APB2PSC": "00002000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "ahb", "set": {"RCU_CFG0.APB2PSC": "00002800"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "ahb", "set": {"RCU_CFG0.APB2PSC": "00003000"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "ahb", "set": {"RCU_CFG0.APB2PSC": "00003800"}, "div": 16}
+      ],
+      "max": 108000000,
+      "consumer": true
+    }
+  ]
+}

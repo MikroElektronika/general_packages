@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "pic_pic18f2439",
+  "title": "PIC oscillator fuses (PIC18F2439, PIC18F2539, PIC18F4439, PIC18F4539)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC18F2439$", "^PIC18F2539$", "^PIC18F4439$", "^PIC18F4539$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 40000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 40000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (OSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "hs_oscillator_with_pll_enabled_c", "label": "HS oscillator with PLL enabled; clock frequency = (4 x FOSC)", "set": {"CONFIG1H.OSC": "00000006"}, "from": "ext", "mul": 4},
+        {"id": "ec_oscillator_w_osc2_configured_", "label": "EC oscillator w/ OSC2 configured as RA6", "set": {"CONFIG1H.OSC": "00000005"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_w_osc2_configured__", "label": "EC oscillator w/ OSC2 configured as divide-by-4 clock output", "set": {"CONFIG1H.OSC": "00000004"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator", "label": "HS oscillator", "set": {"CONFIG1H.OSC": "00000002"}, "from": "ext", "mul": 1}
+      ],
+      "max": 40000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'hs_oscillator_with_pll_enabled_c' || (in.ext >= 4000000)", "message": "HS oscillator with PLL enabled; clock frequency = (4 x FOSC): the external frequency must be 4 MHz or more."},
+    {"expr": "sel.source != 'hs_oscillator' || (in.ext >= 4000000)", "message": "HS oscillator: the external frequency must be 4 MHz or more."}
+  ],
+  "symbols": {
+    "CONFIG1H.OSC": {"HSPLL": "00000006", "ECIO": "00000005", "EC": "00000004", "HS": "00000002"}
+  }
+}
