@@ -217,6 +217,8 @@ def check_graph(graph):
             option_ids.add(option.get('id'))
             if option.get('from') is not None and option['from'] not in nodes:
                 problems.append(f'{where}: option {option.get("id")} reads unknown node {option["from"]!r}')
+            if option.get('when'):
+                check_names(option['when'], f'{where} option {option.get("id")} when')
             for kept in option.get('keeps', []):
                 if kept not in nodes:
                     problems.append(f'{where}: option {option.get("id")} keeps unknown node {kept!r}')
@@ -286,4 +288,4 @@ def bound_fields(graph):
         if node.get('enable'):
             fields.add(node['enable']['field'])
     fields.update(rule['field'] for rule in graph.get('derive', []))
-    return {alternative for field in fields for alternative in field.split('|')}
+    return {alternative for field in fields for alternative in field.lstrip('?').split('|')}

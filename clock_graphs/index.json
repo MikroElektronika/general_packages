@@ -2,6 +2,33 @@
   "schema": 1,
   "graphs": [
     {
+      "id": "max32690",
+      "file": "adi/max32690.json",
+      "vendor": "Analog Devices",
+      "title": "MAX32690 clock tree",
+      "devices": [
+        "^MAX32690"
+      ]
+    },
+    {
+      "id": "sam_c20_c21",
+      "file": "microchip_sam/sam_c20_c21.json",
+      "vendor": "Microchip",
+      "title": "SAM C20/C21 clock tree",
+      "devices": [
+        "^ATSAMC2[01]"
+      ]
+    },
+    {
+      "id": "sam_d21_da1",
+      "file": "microchip_sam/sam_d21_da1.json",
+      "vendor": "Microchip",
+      "title": "SAM D21/DA1 clock tree",
+      "devices": [
+        "^ATSAM(D21|DA1)"
+      ]
+    },
+    {
       "id": "sam_e70_s70_v70_v71",
       "file": "microchip_sam/sam_e70_s70_v70_v71.json",
       "vendor": "Microchip",
@@ -17,6 +44,72 @@
       "title": "SAM G53/G54/G55 clock tree",
       "devices": [
         "^ATSAMG5[345]"
+      ]
+    },
+    {
+      "id": "m2354",
+      "file": "nuvoton/m2354.json",
+      "vendor": "Nuvoton",
+      "title": "M2354 clock tree",
+      "devices": [
+        "^M2354"
+      ]
+    },
+    {
+      "id": "kinetis_k20_k5x_k60",
+      "file": "nxp_kinetis/kinetis_k20_k5x_k60.json",
+      "vendor": "NXP",
+      "title": "Kinetis K20/K51/K53/K60 MCG clock tree",
+      "devices": [
+        "^MK20D[NX](32|64|128)V",
+        "^MK5[13]D",
+        "^MK60D"
+      ]
+    },
+    {
+      "id": "kinetis_k22f_k64f",
+      "file": "nxp_kinetis/kinetis_k22f_k64f.json",
+      "vendor": "NXP",
+      "title": "Kinetis K22F/K64F MCG clock tree",
+      "devices": [
+        "^MK22F",
+        "^MK64F"
+      ]
+    },
+    {
+      "id": "kinetis_k65_k66",
+      "file": "nxp_kinetis/kinetis_k65_k66.json",
+      "vendor": "NXP",
+      "title": "Kinetis K65/K66 MCG clock tree",
+      "devices": [
+        "^MK6[56]F"
+      ]
+    },
+    {
+      "id": "kinetis_k80_k82",
+      "file": "nxp_kinetis/kinetis_k80_k82.json",
+      "vendor": "NXP",
+      "title": "Kinetis K80/K82 MCG clock tree",
+      "devices": [
+        "^MK8[02]F"
+      ]
+    },
+    {
+      "id": "kinetis_kv4x",
+      "file": "nxp_kinetis/kinetis_kv4x.json",
+      "vendor": "NXP",
+      "title": "Kinetis KV4x MCG clock tree",
+      "devices": [
+        "^MKV4[246]F"
+      ]
+    },
+    {
+      "id": "kinetis_kv5x",
+      "file": "nxp_kinetis/kinetis_kv5x.json",
+      "vendor": "NXP",
+      "title": "Kinetis KV5x MCG clock tree",
+      "devices": [
+        "^MKV5[68]F"
       ]
     },
     {
@@ -503,6 +596,60 @@
       "title": "STM32L4/L4+ system clock tree",
       "devices": [
         "^STM32L4"
+      ]
+    },
+    {
+      "id": "mspm0",
+      "file": "ti/mspm0.json",
+      "vendor": "Texas Instruments",
+      "title": "MSPM0 clock tree",
+      "devices": [
+        "^MSPM0"
+      ]
+    },
+    {
+      "id": "tm4c123",
+      "file": "ti/tm4c123.json",
+      "vendor": "Texas Instruments",
+      "title": "TM4C123 system clock tree",
+      "devices": [
+        "^TM4C123"
+      ]
+    },
+    {
+      "id": "tm4c129",
+      "file": "ti/tm4c129.json",
+      "vendor": "Texas Instruments",
+      "title": "TM4C129 system clock tree",
+      "devices": [
+        "^TM4C129"
+      ]
+    },
+    {
+      "id": "tmpm3h",
+      "file": "toshiba/tmpm3h.json",
+      "vendor": "Toshiba",
+      "title": "TMPM3H clock tree",
+      "devices": [
+        "^TMPM3H"
+      ]
+    },
+    {
+      "id": "tmpm4k",
+      "file": "toshiba/tmpm4k.json",
+      "vendor": "Toshiba",
+      "title": "TMPM4K clock tree",
+      "devices": [
+        "^TMPM4K"
+      ]
+    },
+    {
+      "id": "tmpm4l",
+      "file": "toshiba/tmpm4l.json",
+      "vendor": "Toshiba",
+      "title": "TMPM4L clock tree",
+      "devices": [
+        "^TMPM4L"
       ]
     }
   ]

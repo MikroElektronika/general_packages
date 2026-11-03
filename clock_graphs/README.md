@@ -12,6 +12,11 @@ clock_graphs/
   index.json           generated: which graph serves which MCU (scripts/clock_graphs/build_index.py)
   stm32/*.json         written by scripts/clock_graphs/stm32_graphs.py
   microchip_sam/*.json written by scripts/clock_graphs/microchip_sam_graphs.py
+  ti/*.json            written by scripts/clock_graphs/ti_graphs.py
+  nxp_kinetis/*.json   written by scripts/clock_graphs/nxp_kinetis_graphs.py
+  toshiba/*.json       written by scripts/clock_graphs/toshiba_graphs.py
+  nuvoton/*.json       written by scripts/clock_graphs/nuvoton_graphs.py
+  adi/*.json           written by scripts/clock_graphs/adi_graphs.py
   renesas_ra/*.json    converted from Renesas FSP packs by scripts/clock_graphs/convert_fsp_ra.py
 ```
 
@@ -25,8 +30,12 @@ do not validate.
 * **STM32** graphs are written by hand from the STM32 reference manuals and datasheets. No
   STM32CubeMX database content is used (its SLA0048 license forbids open-source
   redistribution).
-* **Microchip SAM** graphs (SAM E70/S70/V70/V71, SAM G53/G54/G55) are written by hand from the
-  datasheets' PMC chapters.
+* **Toshiba** graphs (TMPM3H, TMPM4K, TMPM4L) and **NXP Kinetis** MCG graphs (K20/K5x/K60, K22F/K64F,
+  K65/K66, K80/K82, KV4x, KV5x) are written by hand from the reference manuals.
+* **Texas Instruments** graphs (TM4C123, TM4C129, MSPM0), **Nuvoton** (M2354) and **Analog
+  Devices** (MAX32690) graphs are written by hand from the datasheets / reference manuals.
+* **Microchip SAM** graphs (SAM E70/S70/V70/V71, G53/G54/G55, D21/DA1, C20/C21) are written by hand from the
+  datasheets' clock chapters (PMC, SYSCTRL/GCLK, OSCCTRL/MCLK).
 * **Renesas RA** graphs are converted from the `<clock>` section of the FSP MCU packs
   (`.module_descriptions/Renesas##BSP##<family>##fsp####<version>.xml`), part of the RA MCU BSP
   released by Renesas under BSD-3-Clause (see https://github.com/renesas/fsp/blob/master/LICENSE.md).
@@ -84,6 +93,10 @@ with `"mul": 16000000`). `"mul": 0` turns the clock off.
   "set": { "RCC_PLLCFGR.PLLSRC": "00400000" } }
 ```
 
+`when` (optional) is an expression: the option is offered only while it holds. Use it when one
+field value means different factors depending on another choice, e.g. the Kinetis FLL divider
+`MCG_C1.FRDIV` (/1-128 from the 32 kHz oscillator, /32-1536 from a MHz oscillator).
+
 `keeps` (optional) lists nodes the option needs running although it does not take its frequency
 from them, e.g. a 480 MHz USB PLL that needs the main crystal: `"keeps": ["main_xtal"]`.
 
@@ -91,7 +104,8 @@ from them, e.g. a 480 MHz USB PLL that needs the main crystal: `"keeps": ["main_
 values in hex**, exactly like `config_registers[].fields[].settings[].value` in the NECTO
 definitions (already shifted into position), so one value fits every MCU of a family even when
 a field is wider on some parts. A field written `A|B` means "field A, or field B on MCUs that
-name it so".
+name it so"; a leading `?` (`?MCLKCFG.USEHSCLK`) means "write it when the MCU has it" (a missing
+optional field does not make the option unavailable).
 
 The selected option is the one whose `set` matches the current register values; an option
 whose values the MCU definition does not offer is unavailable on that MCU.

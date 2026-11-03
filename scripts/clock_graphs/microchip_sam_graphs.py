@@ -9,7 +9,7 @@ Run:  python scripts/clock_graphs/microchip_sam_graphs.py
 """
 
 from graphlib import REPO_ROOT, check_graph, hexv, write_graph
-from stm32_graphs import MHZ, en, external, factors, graph, mux, rule, span
+from stm32_graphs import MHZ, en, external, factors, fixed, graph, mux, rule, span
 
 # PMC_MCKR.PRES: /1 .. /64 are codes 0..6, /3 is code 7.
 PRES = [(1, 0), (2, 1), (4, 2), (8, 3), (16, 4), (32, 5), (64, 6), (3, 7)]
@@ -107,7 +107,64 @@ SAM_G5 = sam(
         {'devices': ['^ATSAMG54'], 'limits': {'plla': {'max': 96 * MHZ}, 'hclk': {'max': 96 * MHZ}}},
     ])
 
-GRAPHS = [SAM_X7, SAM_G5]
+LOG2 = [(1 << n, n) for n in range(8)]
+
+# SAM D21/DA1 (Atmel START system code): oscillators and DFLL48M (open loop on the factory
+# calibration) feed generic clock generator 0, which clocks the CPU (CPUDIV) and the APB buses.
+# FDPLL96M is left out: the definitions' DPLLRATIO.LDR and DPLLCTRLB.DIV masks do not match the
+# hardware. Flash wait states follow the CPU clock (1 above 24 MHz).
+SAM_D21 = sam(
+    'sam_d21_da1', 'SAM D21/DA1 clock tree', 'SAM D21/DA1 datasheet DS40001882, SYSCTRL/GCLK/PM', ['^ATSAM(D21|DA1)'], 'cpu',
+    {'xosc': {'label': 'XOSC frequency', 'default': 16 * MHZ, 'min': 400000, 'max': 32 * MHZ}},
+    [
+        fixed('osc8m', 'OSC8M 8 MHz', 0, 0, 8 * MHZ, en('OSC8M.ENABLE', 1 << 1, auto='on')),
+        factors('osc8m_presc', 'OSC8M prescaler', 1, 0, 'osc8m', 'OSC8M.PRESC', 8, [(1, 0), (2, 1), (4, 2), (8, 3)]),
+        external('xosc', 'XOSC', 0, 1, en('XOSC.ENABLE', 1 << 1), tooltip='External crystal or clock, 0.4-32 MHz.'),
+        fixed('xosc32k', 'XOSC32K 32.768 kHz', 0, 2, 32768, en('XOSC32K.ENABLE', 1 << 1)),
+        fixed('osc32k', 'OSC32K 32.768 kHz', 0, 3, 32768, en('OSC32K.ENABLE', 1 << 1)),
+        fixed('osculp32k', 'OSCULP32K 32.768 kHz', 0, 4, 32768),
+        fixed('dfll48m', 'DFLL48M 48 MHz', 1, 5, 48 * MHZ, en('DFLLCTRL.ENABLE', 1 << 1),
+              tooltip='Open loop on the factory calibration (DFLLVAL 0). Closed-loop operation is set in the register view.'),
+        mux('gclk0', 'GCLK0 source', 2, 2, 'GENCTRL0.SRC', [('osc8m', 'OSC8M', 'osc8m_presc', 6 << 8), ('xosc', 'XOSC', 'xosc', 0),
+                                                         ('xosc32k', 'XOSC32K', 'xosc32k', 5 << 8), ('osc32k', 'OSC32K', 'osc32k', 4 << 8),
+                                                         ('osculp32k', 'OSCULP32K', 'osculp32k', 3 << 8), ('dfll48m', 'DFLL48M', 'dfll48m', 7 << 8)]),
+        factors('cpu', 'CPU (CPUDIV)', 3, 1, 'gclk0', 'CPUSEL.CPUDIV', 0, LOG2, max=48 * MHZ, consumer=True),
+        factors('apba', 'APBA (APBADIV)', 4, 1, 'cpu', 'APBASEL.APBADIV', 0, LOG2, max=48 * MHZ, consumer=True),
+        factors('apbb', 'APBB (APBBDIV)', 4, 2, 'cpu', 'APBBSEL.APBBDIV', 0, LOG2, max=48 * MHZ, consumer=True),
+        factors('apbc', 'APBC (APBCDIV)', 4, 3, 'cpu', 'APBCSEL.APBCDIV', 0, LOG2, max=48 * MHZ, consumer=True),
+    ],
+    settings=['XOSC.XTALEN', 'XOSC32K.XTALEN', 'DFLLCTRL.MODE'],
+    derive=[
+        {'field': 'NVMCTRL_CTRLB.RWS', 'cases': [{'when': 'f.cpu <= 24000000', 'value': hexv(0)}], 'default': hexv(1 << 1)},
+        {'field': 'XOSC.GAIN', 'cases': [{'when': f'in.xosc <= {limit}', 'value': hexv(code << 8)}
+                                         for code, limit in enumerate([2 * MHZ, 4 * MHZ, 8 * MHZ, 16 * MHZ])],
+         'default': hexv(4 << 8)},
+    ])
+
+# SAM C20/C21: OSC48M / OSC48MDIV (or the 32 kHz oscillators) -> generator 0 / DIV -> CPUDIV.
+# XOSC/XOSC32K are left out (their ENABLE bits are hidden in the definitions), and with them the
+# FDPLL96M references. Flash wait states follow the CPU clock (19/38/48 MHz bounds).
+SAM_C2X = sam(
+    'sam_c20_c21', 'SAM C20/C21 clock tree', 'SAM C20/C21 datasheet DS60001479, OSCCTRL/GCLK/MCLK', ['^ATSAMC2[01]'], 'cpu', {},
+    [
+        fixed('osc48m', 'OSC48M 48 MHz', 0, 0, 48 * MHZ, en('OSC48MCTRL.ENABLE', 1 << 1, auto='on')),
+        factors('osc48mdiv', 'OSC48MDIV', 1, 0, 'osc48m', 'OSC48MDIV.DIV', 0, [(n, n - 1) for n in range(1, 17)]),
+        fixed('osc32k', 'OSC32K 32.768 kHz', 0, 1, 32768, en('OSC32K.ENABLE', 1 << 1)),
+        fixed('osculp32k', 'OSCULP32K 32.768 kHz', 0, 2, 32768),
+        mux('gclk0src', 'GCLK0 source', 2, 1, 'GENCTRL0.SRC', [('osc48m', 'OSC48M', 'osc48mdiv', 6), ('osc32k', 'OSC32K', 'osc32k', 4),
+                                                             ('osculp32k', 'OSCULP32K', 'osculp32k', 3)]),
+        # DIV 0 and 1 both divide by 1.
+        {'id': 'gclk0', 'label': 'GCLK0 /DIV', 'kind': 'divider', 'x': 3, 'y': 1,
+         'options': [{'id': '1', 'label': '/1', 'from': 'gclk0src', 'div': 1, 'set': {'GENCTRL0.DIV': hexv(0)}},
+                     {'id': '1_div1', 'label': '/1 (DIV = 1)', 'from': 'gclk0src', 'div': 1, 'set': {'GENCTRL0.DIV': hexv(1 << 16)}}] +
+                    [{'id': str(n), 'label': f'/{n}', 'from': 'gclk0src', 'div': n, 'set': {'GENCTRL0.DIV': hexv(n << 16)}} for n in range(2, 256)]},
+        factors('cpu', 'CPU (CPUDIV)', 4, 1, 'gclk0', 'CPUDIV.CPUDIV', 0, [(1 << n, 1 << n) for n in range(8)], max=48 * MHZ, consumer=True),
+    ],
+    derive=[{'field': 'NVMCTRL_CTRLB.RWS', 'cases': [{'when': 'f.cpu <= 19000000', 'value': hexv(0)},
+                                                     {'when': 'f.cpu <= 38000000', 'value': hexv(1 << 1)}],
+             'default': hexv(2 << 1)}])
+
+GRAPHS = [SAM_X7, SAM_G5, SAM_D21, SAM_C2X]
 
 
 def main():

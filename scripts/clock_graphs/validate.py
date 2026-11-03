@@ -44,7 +44,7 @@ def load_definitions(root):
 
 
 def resolve(field, fields):
-    return next((name for name in field.split('|') if name in fields), None)
+    return next((name for name in field.lstrip('?').split('|') if name in fields), None)
 
 
 def check_against_definitions(graph, definitions):
@@ -69,7 +69,8 @@ def check_against_definitions(graph, definitions):
             for node_id, option_id, field, value in writes:
                 actual = resolve(field, fields)
                 if actual is None:
-                    missing[field].add(name)
+                    if not field.startswith('?'):
+                        missing[field].add(name)
                 elif value not in fields[actual]:
                     unavailable[(node_id, option_id, field)].add(name)
             if node.get('enable'):
