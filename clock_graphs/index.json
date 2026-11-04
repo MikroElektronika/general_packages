@@ -1682,10 +1682,9 @@
       "id": "sam_d1x_d21_r21_ha",
       "file": "microchip_sam/sam_d1x_d21_r21_ha.json",
       "vendor": "Microchip",
-      "title": "SAM D09/D10/D11/D21/R21/HA0/HA1 clock tree",
+      "title": "SAM D09/D10/D11/D21/DA1/R21/HA0/HA1 clock tree",
       "devices": [
-        "^ATSAM(D09|D10|D11|R21|HA0|HA1)",
-        "^ATSAMD21(E15BU|E15CU|E16BU|E16CU|E17DU|G15L|G17AU|G18AU)$"
+        "^ATSAM(D09|D10|D11|D21|DA1|R21|HA0|HA1)"
       ]
     },
     {
@@ -1695,15 +1694,6 @@
       "title": "SAM D20 clock tree",
       "devices": [
         "^ATSAMD20"
-      ]
-    },
-    {
-      "id": "sam_d21_da1",
-      "file": "microchip_sam/sam_d21_da1.json",
-      "vendor": "Microchip",
-      "title": "SAM D21/DA1 clock tree",
-      "devices": [
-        "^ATSAM(DA1|D21(?!(E15BU|E15CU|E16BU|E16CU|E17DU|G15L|G17AU|G18AU)$))"
       ]
     },
     {

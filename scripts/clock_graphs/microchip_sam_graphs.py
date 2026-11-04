@@ -13,9 +13,6 @@ Run:  python scripts/clock_graphs/microchip_sam_graphs.py
 from graphlib import REPO_ROOT, check_graph, hexv, write_graph
 from stm32_graphs import MHZ, en, external, factors, fixed, fixed_div, graph, mux, rule, span
 
-# D21 parts served by the atsamd21e/atsamd21g init_clock.c libraries (graph sam_d1x_d21_r21_ha);
-# the other D21/DA1 parts keep the Atmel START system code and graph sam_d21_da1.
-D21_INIT_CLOCK = ['E15BU', 'E15CU', 'E16BU', 'E16CU', 'E17DU', 'G15L', 'G17AU', 'G18AU']
 
 # PMC_MCKR.PRES: /1 .. /64 are codes 0..6, /3 is code 7.
 PRES = [(1, 0), (2, 1), (4, 2), (8, 3), (16, 4), (32, 5), (64, 6), (3, 7)]
@@ -113,42 +110,6 @@ SAM_G5 = sam(
         {'devices': ['^ATSAMG51'], 'limits': {'plla': {'max': 48 * MHZ}, 'hclk': {'max': 48 * MHZ}}},
         {'devices': ['^ATSAMG53'], 'limits': {'plla': {'max': 48 * MHZ}, 'hclk': {'max': 48 * MHZ}}},
         {'devices': ['^ATSAMG54'], 'limits': {'plla': {'max': 96 * MHZ}, 'hclk': {'max': 96 * MHZ}}},
-    ])
-
-LOG2 = [(1 << n, n) for n in range(8)]
-
-# SAM D21/DA1 (Atmel START system code): oscillators and DFLL48M (open loop on the factory
-# calibration) feed generic clock generator 0, which clocks the CPU (CPUDIV) and the APB buses.
-# FDPLL96M is left out: the definitions' DPLLRATIO.LDR and DPLLCTRLB.DIV masks do not match the
-# hardware. Flash wait states follow the CPU clock (1 above 24 MHz).
-SAM_D21 = sam(
-    'sam_d21_da1', 'SAM D21/DA1 clock tree', 'SAM D21/DA1 datasheet DS40001882, SYSCTRL/GCLK/PM',
-    # The D21 parts with their own init_clock.c libraries (atsamd21e/atsamd21g) use sam_d1x_d21_r21_ha.
-    [f'^ATSAM(DA1|D21(?!({"|".join(D21_INIT_CLOCK)})$))'], 'cpu',
-    {'xosc': {'label': 'XOSC frequency', 'default': 16 * MHZ, 'min': 400000, 'max': 32 * MHZ}},
-    [
-        fixed('osc8m', 'OSC8M 8 MHz', 0, 0, 8 * MHZ, en('OSC8M.ENABLE', 1 << 1, auto='on')),
-        factors('osc8m_presc', 'OSC8M prescaler', 1, 0, 'osc8m', 'OSC8M.PRESC', 8, [(1, 0), (2, 1), (4, 2), (8, 3)]),
-        external('xosc', 'XOSC', 0, 1, en('XOSC.ENABLE', 1 << 1), tooltip='External crystal or clock, 0.4-32 MHz.'),
-        fixed('xosc32k', 'XOSC32K 32.768 kHz', 0, 2, 32768, en('XOSC32K.ENABLE', 1 << 1)),
-        fixed('osc32k', 'OSC32K 32.768 kHz', 0, 3, 32768, en('OSC32K.ENABLE', 1 << 1)),
-        fixed('osculp32k', 'OSCULP32K 32.768 kHz', 0, 4, 32768),
-        fixed('dfll48m', 'DFLL48M 48 MHz', 1, 5, 48 * MHZ, en('DFLLCTRL.ENABLE', 1 << 1),
-              tooltip='Open loop on the factory calibration (DFLLVAL 0). Closed-loop operation is set in the register view.'),
-        mux('gclk0', 'GCLK0 source', 2, 2, 'GENCTRL0.SRC', [('osc8m', 'OSC8M', 'osc8m_presc', 6 << 8), ('xosc', 'XOSC', 'xosc', 0),
-                                                         ('xosc32k', 'XOSC32K', 'xosc32k', 5 << 8), ('osc32k', 'OSC32K', 'osc32k', 4 << 8),
-                                                         ('osculp32k', 'OSCULP32K', 'osculp32k', 3 << 8), ('dfll48m', 'DFLL48M', 'dfll48m', 7 << 8)]),
-        factors('cpu', 'CPU (CPUDIV)', 3, 1, 'gclk0', 'CPUSEL.CPUDIV', 0, LOG2, max=48 * MHZ, consumer=True),
-        factors('apba', 'APBA (APBADIV)', 4, 1, 'cpu', 'APBASEL.APBADIV', 0, LOG2, max=48 * MHZ, consumer=True),
-        factors('apbb', 'APBB (APBBDIV)', 4, 2, 'cpu', 'APBBSEL.APBBDIV', 0, LOG2, max=48 * MHZ, consumer=True),
-        factors('apbc', 'APBC (APBCDIV)', 4, 3, 'cpu', 'APBCSEL.APBCDIV', 0, LOG2, max=48 * MHZ, consumer=True),
-    ],
-    settings=['XOSC.XTALEN', 'XOSC32K.XTALEN', 'DFLLCTRL.MODE'],
-    derive=[
-        {'field': 'NVMCTRL_CTRLB.RWS', 'cases': [{'when': 'f.cpu <= 24000000', 'value': hexv(0)}], 'default': hexv(1 << 1)},
-        {'field': 'XOSC.GAIN', 'cases': [{'when': f'in.xosc <= {limit}', 'value': hexv(code << 8)}
-                                         for code, limit in enumerate([2 * MHZ, 4 * MHZ, 8 * MHZ, 16 * MHZ])],
-         'default': hexv(4 << 8)},
     ])
 
 # SAM C20/C21: OSC48M / OSC48MDIV (or the 32 kHz oscillators) -> generator 0 / DIV -> CPUDIV.
@@ -345,9 +306,9 @@ def sysctrl_graph(graph_id, title, source, devices, dpll):
 
 
 SAM_D1X = sysctrl_graph(
-    'sam_d1x_d21_r21_ha', 'SAM D09/D10/D11/D21/R21/HA0/HA1 clock tree',
-    'SAM D09/D10/D11/D21/R21/HA1 datasheets, SYSCTRL/GCLK/PM',
-    ['^ATSAM(D09|D10|D11|R21|HA0|HA1)', f'^ATSAMD21({"|".join(D21_INIT_CLOCK)})$'], dpll=True)
+    'sam_d1x_d21_r21_ha', 'SAM D09/D10/D11/D21/DA1/R21/HA0/HA1 clock tree',
+    'SAM D09/D10/D11/D21 DS40001882/DA1/R21/HA1 datasheets, SYSCTRL/GCLK/PM',
+    ['^ATSAM(D09|D10|D11|D21|DA1|R21|HA0|HA1)'], dpll=True)
 SAM_D20 = sysctrl_graph('sam_d20', 'SAM D20 clock tree', 'SAM D20 datasheet DS60001504, SYSCTRL/GCLK/PM', ['^ATSAMD20'], dpll=False)
 
 # ---------------------------------------------------------------------------------------------
@@ -503,7 +464,7 @@ SAM_RH = sam(
     # RH707: 50 MHz processor clock; its MCK limit is not stated, MDIV /2 (25 MHz) is kept as the bound.
     variants=[{'devices': ['^ATSAMRH707'], 'limits': {'hclk': {'max': 50 * MHZ}, 'mck': {'max': 25 * MHZ}}}])
 
-GRAPHS = [SAM_X7, SAM_G5, SAM_D21, SAM_C2X, SAM4_PMC, SAM4L, SAM_D1X, SAM_D20, SAM_L21, SAM_L22, SAM_D5X, SAM_RH]
+GRAPHS = [SAM_X7, SAM_G5, SAM_C2X, SAM4_PMC, SAM4L, SAM_D1X, SAM_D20, SAM_L21, SAM_L22, SAM_D5X, SAM_RH]
 
 
 def main():

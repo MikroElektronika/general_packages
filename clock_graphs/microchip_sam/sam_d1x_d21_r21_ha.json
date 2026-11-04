@@ -1,10 +1,10 @@
 {
   "schema": 1,
   "id": "sam_d1x_d21_r21_ha",
-  "title": "SAM D09/D10/D11/D21/R21/HA0/HA1 clock tree",
+  "title": "SAM D09/D10/D11/D21/DA1/R21/HA0/HA1 clock tree",
   "vendor": "Microchip",
-  "source": "SAM D09/D10/D11/D21/R21/HA1 datasheets, SYSCTRL/GCLK/PM",
-  "devices": ["^ATSAM(D09|D10|D11|R21|HA0|HA1)", "^ATSAMD21(E15BU|E15CU|E16BU|E16CU|E17DU|G15L|G17AU|G18AU)$"],
+  "source": "SAM D09/D10/D11/D21 DS40001882/DA1/R21/HA1 datasheets, SYSCTRL/GCLK/PM",
+  "devices": ["^ATSAM(D09|D10|D11|D21|DA1|R21|HA0|HA1)"],
   "fosc": "cpu",
   "inputs": {
     "xosc": {"label": "XOSC frequency", "default": 16000000, "min": 400000, "max": 32000000}
