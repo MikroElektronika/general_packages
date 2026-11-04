@@ -2087,6 +2087,15 @@
       ]
     },
     {
+      "id": "ra8p1",
+      "file": "renesas_ra/ra8p1.json",
+      "vendor": "Renesas",
+      "title": "Renesas RA8P1 clock tree",
+      "devices": [
+        "^R7[FK]A8P1"
+      ]
+    },
+    {
       "id": "ra8t1",
       "file": "renesas_ra/ra8t1.json",
       "vendor": "Renesas",
@@ -2317,7 +2326,17 @@
       "vendor": "Texas Instruments",
       "title": "MSPM0 clock tree",
       "devices": [
-        "^MSPM0"
+        "^MSPM0[GL]",
+        "^MSPM0C110[56]"
+      ]
+    },
+    {
+      "id": "mspm0c",
+      "file": "ti/mspm0c.json",
+      "vendor": "Texas Instruments",
+      "title": "MSPM0C clock tree",
+      "devices": [
+        "^MSPM0C110[34]"
       ]
     },
     {

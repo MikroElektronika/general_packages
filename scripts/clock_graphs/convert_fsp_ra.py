@@ -113,12 +113,20 @@ class Definition:
         data = json.loads(Path(path).read_text(encoding='utf-8'))
         self.mcu = data.get('mcu') or Path(path).stem
         self.fields = {}
+        self.divisors = {}  # name -> {N: raw} from settings labelled '/N' or '1/N'
         for register in data.get('config_registers') or []:
             for field in register.get('fields') or []:
                 if field.get('hidden'):
                     continue
                 values = {int(str(item['value']), 16) for item in field.get('settings') or [] if str(item.get('value', '')).strip()}
-                self.fields[f'{register["key"].removeprefix("SYSTEM_")}.{field["key"]}'] = (int(str(field['mask']), 16), values)
+                name = f'{register["key"].removeprefix("SYSTEM_")}.{field["key"]}'
+                mask = int(str(field['mask']), 16)
+                self.fields[name] = (mask, values)
+                shift = (mask & -mask).bit_length() - 1
+                for item in field.get('settings') or []:
+                    label = re.fullmatch(r'\s*(?:1)?/(\d+)\s*', str(item.get('label', '')))
+                    if label and str(item.get('value', '')).strip():
+                        self.divisors.setdefault(name, {})[int(label.group(1))] = (int(str(item['value']), 16) & mask) >> shift
 
     def pick(self, candidates):
         return next((name for name in candidates if name in self.fields), None)
@@ -163,6 +171,8 @@ def encode(kind, option, macro_value, definition, field):
         value = int(divisor.group(1)) if divisor else None
         if value is None:
             return None
+        if value in definition.divisors.get(field, {}):  # the PLL input divider codes differ by family (RA4L1: /1 /4 /6 = 0 1 2)
+            return definition.divisors[field][value]
         return value - 1 if field.endswith('IDIV') else int(math.log2(value))
     return None
 

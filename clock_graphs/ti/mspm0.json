@@ -3,8 +3,8 @@
   "id": "mspm0",
   "title": "MSPM0 clock tree",
   "vendor": "Texas Instruments",
-  "source": "MSPM0 G/L/C technical reference manuals SLAU846/SLAU847/SLAU893, SYSCTL",
-  "devices": ["^MSPM0"],
+  "source": "MSPM0 G/L technical reference manuals SLAU846/SLAU847, SYSCTL",
+  "devices": ["^MSPM0[GL]", "^MSPM0C110[56]"],
   "fosc": "mclk",
   "inputs": {
     "hfxt": {"label": "HFXT frequency", "default": 40000000, "min": 4000000, "max": 48000000}
@@ -241,7 +241,6 @@
     {"field": "HFCLKCLKCFG.HFXTRSEL", "cases": [{"when": "in.hfxt <= 8000000", "value": "00000000"}, {"when": "in.hfxt <= 16000000", "value": "00001000"}, {"when": "in.hfxt <= 32000000", "value": "00002000"}], "default": "00003000"}
   ],
   "variants": [
-    {"devices": ["^MSPM0L"], "limits": {"mclk": {"max": 32000000}, "ulpclk": {"max": 32000000}}},
-    {"devices": ["^MSPM0C"], "limits": {"mclk": {"max": 24000000}, "ulpclk": {"max": 24000000}}}
+    {"devices": ["^MSPM0L", "^MSPM0C110[56]"], "limits": {"mclk": {"max": 32000000}, "ulpclk": {"max": 32000000}}}
   ]
 }

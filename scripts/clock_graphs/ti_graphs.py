@@ -7,6 +7,8 @@ Register values are absolute bit values (see clock_graphs/README.md).
 Run:  python scripts/clock_graphs/ti_graphs.py
 """
 
+import copy
+
 from graphlib import REPO_ROOT, check_graph, hexv, write_graph
 from stm32_graphs import MHZ, en, external, factors, fixed, graph, mux, rule, span
 
@@ -103,7 +105,7 @@ TM4C129 = ti(
 # HSCLK (SYSPLL or HFCLK) or LFCLK, ULPCLK = MCLK / UDIV. SYSPLL: VCO = ref / PDIV x (QDIV + 1),
 # CLK0/CLK1 = VCO / (2 (RDIV + 1)), CLK2X = 2 VCO / (RDIV + 1). Flash wait states follow MCLK.
 MSPM0 = ti(
-    'mspm0', 'MSPM0 clock tree', 'MSPM0 G/L/C technical reference manuals SLAU846/SLAU847/SLAU893, SYSCTL', ['^MSPM0'], 'mclk',
+    'mspm0', 'MSPM0 clock tree', 'MSPM0 G/L technical reference manuals SLAU846/SLAU847, SYSCTL', ['^MSPM0[GL]', '^MSPM0C110[56]'], 'mclk',
     {'hfxt': {'label': 'HFXT frequency', 'default': 40 * MHZ, 'min': 4 * MHZ, 'max': 48 * MHZ}},
     [
         {'id': 'sysosc', 'label': 'SYSOSC', 'kind': 'source', 'x': 0, 'y': 0,
@@ -148,11 +150,22 @@ MSPM0 = ti(
                                                     for code, limit in enumerate([8, 16, 32])], 'default': hexv(3 << 12)},
     ],
     variants=[
-        {'devices': ['^MSPM0L'], 'limits': {'mclk': {'max': 32 * MHZ}, 'ulpclk': {'max': 32 * MHZ}}},
-        {'devices': ['^MSPM0C'], 'limits': {'mclk': {'max': 24 * MHZ}, 'ulpclk': {'max': 24 * MHZ}}},
+        {'devices': ['^MSPM0L', '^MSPM0C110[56]'], 'limits': {'mclk': {'max': 32 * MHZ}, 'ulpclk': {'max': 32 * MHZ}}},
     ])
 
-GRAPHS = [TM4C123, TM4C129, MSPM0]
+# MSPM0C1103/C1104: the same SYSCTL, but SYSOSC runs at 24 MHz (base) or 4 MHz and MCLK tops out at 24 MHz (SLAU893).
+# MSPM0C1105/C1106 have the 32 MHz SYSOSC and use the MSPM0 graph.
+MSPM0C = copy.deepcopy(MSPM0)
+MSPM0C.update(id='mspm0c', title='MSPM0C clock tree', source='MSPM0C technical reference manual SLAU893, SYSCTL', devices=['^MSPM0C110[34]'])
+MSPM0C.pop('variants', None)
+for node in MSPM0C['nodes']:
+    if node['id'] == 'sysosc':
+        node['options'] = [{'id': '24m', 'label': 'SYSOSC 24 MHz', 'mul': 24 * MHZ, 'set': {'SYSOSCCFG.FREQ': hexv(0)}},
+                           {'id': '4m', 'label': 'SYSOSC 4 MHz', 'mul': 4 * MHZ, 'set': {'SYSOSCCFG.FREQ': hexv(1)}}]
+    if node['id'] in ('mclk', 'ulpclk'):
+        node['max'] = 24 * MHZ
+
+GRAPHS = [TM4C123, TM4C129, MSPM0, MSPM0C]
 
 
 def main():

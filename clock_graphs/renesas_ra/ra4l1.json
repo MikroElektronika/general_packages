@@ -95,8 +95,8 @@
       "y": 7,
       "options": [
         {"id": "1", "label": "/1", "from": "pll_source", "div": 1, "set": {"SYSTEM_PLLCCR.PLIDIV": "00000000"}},
-        {"id": "4", "label": "/4", "from": "pll_source", "div": 4, "set": {"SYSTEM_PLLCCR.PLIDIV": "00000003"}},
-        {"id": "6", "label": "/6", "from": "pll_source", "div": 6, "set": {"SYSTEM_PLLCCR.PLIDIV": "00000001"}}
+        {"id": "4", "label": "/4", "from": "pll_source", "div": 4, "set": {"SYSTEM_PLLCCR.PLIDIV": "00000001"}},
+        {"id": "6", "label": "/6", "from": "pll_source", "div": 6, "set": {"SYSTEM_PLLCCR.PLIDIV": "00000002"}}
       ],
       "default": "1"
     },

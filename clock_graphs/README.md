@@ -38,7 +38,7 @@ do not validate.
   redistribution).
 * **Toshiba** graphs (TMPM3H, TMPM4K, TMPM4L) and **NXP Kinetis** MCG graphs (K20/K5x/K60, K22F/K64F,
   K65/K66, K80/K82, KV4x, KV5x) are written by hand from the reference manuals.
-* **Texas Instruments** graphs (TM4C123, TM4C129, MSPM0), **Nuvoton** (M2354) and **Analog
+* **Texas Instruments** graphs (TM4C123, TM4C129, MSPM0, MSPM0C1103/C1104), **Nuvoton** (M2354) and **Analog
   Devices** (MAX32690) graphs are written by hand from the datasheets / reference manuals.
 * **Microchip SAM** graphs (SAM E70/S70/V70/V71, G53/G54/G55, D21/DA1, C20/C21) are written by hand from the
   datasheets' clock chapters (PMC, SYSCTRL/GCLK, OSCCTRL/MCLK).
