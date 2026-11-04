@@ -1,10 +1,10 @@
 {
   "schema": 1,
   "id": "sam_g5x",
-  "title": "SAM G53/G54/G55 clock tree",
+  "title": "SAM G51/G53/G54/G55 clock tree",
   "vendor": "Microchip",
-  "source": "SAM G53/G54/G55 datasheets, PMC",
-  "devices": ["^ATSAMG5[345]"],
+  "source": "SAM G51/G53/G54/G55 datasheets, PMC",
+  "devices": ["^ATSAMG5[1345]"],
   "fosc": "hclk",
   "inputs": {
     "main_xtal": {"label": "Main crystal frequency", "default": 12000000, "min": 3000000, "max": 20000000}
@@ -157,6 +157,7 @@
     }
   ],
   "variants": [
+    {"devices": ["^ATSAMG51"], "limits": {"plla": {"max": 48000000}, "hclk": {"max": 48000000}}},
     {"devices": ["^ATSAMG53"], "limits": {"plla": {"max": 48000000}, "hclk": {"max": 48000000}}},
     {"devices": ["^ATSAMG54"], "limits": {"plla": {"max": 96000000}, "hclk": {"max": 96000000}}}
   ]

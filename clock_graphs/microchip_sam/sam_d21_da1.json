@@ -4,7 +4,7 @@
   "title": "SAM D21/DA1 clock tree",
   "vendor": "Microchip",
   "source": "SAM D21/DA1 datasheet DS40001882, SYSCTRL/GCLK/PM",
-  "devices": ["^ATSAM(D21|DA1)"],
+  "devices": ["^ATSAM(DA1|D21(?!(E15BU|E15CU|E16BU|E16CU|E17DU|G15L|G17AU|G18AU)$))"],
   "fosc": "cpu",
   "inputs": {
     "xosc": {"label": "XOSC frequency", "default": 16000000, "min": 400000, "max": 32000000}

@@ -1652,6 +1652,24 @@
       ]
     },
     {
+      "id": "sam4_pmc",
+      "file": "microchip_sam/sam4_pmc.json",
+      "vendor": "Microchip",
+      "title": "SAM4E/4N/4S clock tree",
+      "devices": [
+        "^ATSAM4(E|N|S)"
+      ]
+    },
+    {
+      "id": "sam4l",
+      "file": "microchip_sam/sam4l.json",
+      "vendor": "Microchip",
+      "title": "SAM4L clock tree",
+      "devices": [
+        "^ATSAM4L"
+      ]
+    },
+    {
       "id": "sam_c20_c21",
       "file": "microchip_sam/sam_c20_c21.json",
       "vendor": "Microchip",
@@ -1661,12 +1679,40 @@
       ]
     },
     {
+      "id": "sam_d1x_d21_r21_ha",
+      "file": "microchip_sam/sam_d1x_d21_r21_ha.json",
+      "vendor": "Microchip",
+      "title": "SAM D09/D10/D11/D21/R21/HA0/HA1 clock tree",
+      "devices": [
+        "^ATSAM(D09|D10|D11|R21|HA0|HA1)",
+        "^ATSAMD21(E15BU|E15CU|E16BU|E16CU|E17DU|G15L|G17AU|G18AU)$"
+      ]
+    },
+    {
+      "id": "sam_d20",
+      "file": "microchip_sam/sam_d20.json",
+      "vendor": "Microchip",
+      "title": "SAM D20 clock tree",
+      "devices": [
+        "^ATSAMD20"
+      ]
+    },
+    {
       "id": "sam_d21_da1",
       "file": "microchip_sam/sam_d21_da1.json",
       "vendor": "Microchip",
       "title": "SAM D21/DA1 clock tree",
       "devices": [
-        "^ATSAM(D21|DA1)"
+        "^ATSAM(DA1|D21(?!(E15BU|E15CU|E16BU|E16CU|E17DU|G15L|G17AU|G18AU)$))"
+      ]
+    },
+    {
+      "id": "sam_d5x_e5x",
+      "file": "microchip_sam/sam_d5x_e5x.json",
+      "vendor": "Microchip",
+      "title": "SAM D51/E51/E53/E54 clock tree",
+      "devices": [
+        "^ATSAM(D51|E51|E53|E54)"
       ]
     },
     {
@@ -1682,9 +1728,36 @@
       "id": "sam_g5x",
       "file": "microchip_sam/sam_g5x.json",
       "vendor": "Microchip",
-      "title": "SAM G53/G54/G55 clock tree",
+      "title": "SAM G51/G53/G54/G55 clock tree",
       "devices": [
-        "^ATSAMG5[345]"
+        "^ATSAMG5[1345]"
+      ]
+    },
+    {
+      "id": "sam_l21_r3x",
+      "file": "microchip_sam/sam_l21_r3x.json",
+      "vendor": "Microchip",
+      "title": "SAM L21/R30/R34/R35 clock tree",
+      "devices": [
+        "^ATSAM(L21|R30|R34|R35)"
+      ]
+    },
+    {
+      "id": "sam_l22",
+      "file": "microchip_sam/sam_l22.json",
+      "vendor": "Microchip",
+      "title": "SAM L22 clock tree",
+      "devices": [
+        "^ATSAML22"
+      ]
+    },
+    {
+      "id": "sam_rh71_rh707",
+      "file": "microchip_sam/sam_rh71_rh707.json",
+      "vendor": "Microchip",
+      "title": "SAM RH71/RH707 clock tree",
+      "devices": [
+        "^ATSAMRH7(1|07)"
       ]
     },
     {

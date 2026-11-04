@@ -40,8 +40,9 @@ do not validate.
   K65/K66, K80/K82, KV4x, KV5x) are written by hand from the reference manuals.
 * **Texas Instruments** graphs (TM4C123, TM4C129, MSPM0, MSPM0C1103/C1104), **Nuvoton** (M2354) and **Analog
   Devices** (MAX32690) graphs are written by hand from the datasheets / reference manuals.
-* **Microchip SAM** graphs (SAM E70/S70/V70/V71, G53/G54/G55, D21/DA1, C20/C21) are written by hand from the
-  datasheets' clock chapters (PMC, SYSCTRL/GCLK, OSCCTRL/MCLK).
+* **Microchip SAM** graphs (SAM E70/S70/V70/V71/V71RT, G51/G53/G54/G55, SAM4E/4N/4S/4SA/4SD, SAM4L,
+  D09/D10/D11/D20/D21/DA1/R21/HA0/HA1, C20/C21, L21/L22/R30/R34/R35, D51/E51/E53/E54, RH71/RH707) are
+  written by hand from the datasheets' clock chapters (PMC, SYSCTRL/GCLK/PM, OSCCTRL/GCLK/MCLK, SCIF/PM/BPM).
 * **Renesas RX/RL78**, **GigaDevice GD32VF103** and **Microchip PIC32** graphs are written by hand from
   the hardware manuals / family reference manuals (Renesas Smart Configurator data was used only to
   cross-check limits, never copied).
