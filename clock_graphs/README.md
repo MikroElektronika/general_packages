@@ -21,6 +21,7 @@ clock_graphs/
   renesas_rx/*.json    written by scripts/clock_graphs/renesas_rx_graphs.py
   renesas_rl78/*.json  written by scripts/clock_graphs/renesas_rl78_graphs.py
   microchip_pic32/*.json written by scripts/clock_graphs/microchip_pic32_graphs.py (mikroC and XC32)
+  microchip_pic32c/*.json written by scripts/clock_graphs/microchip_pic32c_graphs.py (ARM PIC32C)
   avr/*.json           converted from the mikroC AVR definitions by scripts/clock_graphs/convert_avr.py
   microchip_pic/*.json converted from the mikroC/XC8 PIC definitions by scripts/clock_graphs/convert_pic.py
   renesas_ra/*.json    converted from Renesas FSP packs by scripts/clock_graphs/convert_fsp_ra.py
@@ -43,6 +44,10 @@ do not validate.
 * **Microchip SAM** graphs (SAM E70/S70/V70/V71/V71RT, G51/G53/G54/G55, SAM4E/4N/4S/4SA/4SD, SAM4L,
   D09/D10/D11/D20/D21/DA1/R21/HA0/HA1, C20/C21, L21/L22/R30/R34/R35, D51/E51/E53/E54, RH71/RH707) are
   written by hand from the datasheets' clock chapters (PMC, SYSCTRL/GCLK/PM, OSCCTRL/GCLK/MCLK, SCIF/PM/BPM).
+* **Microchip PIC32C** (ARM) graphs (PIC32CX SG41/SG60/SG61, PIC32CZ CA70/MC70, PIC32CX MTC/MTG/MTSH,
+  PIC32CX SG12, PIC32CX BZ2/BZ3/BZ6, PIC32CZ CA80/CA90/CA91) are written by hand from the datasheets'
+  clock chapters; SG41/SG6x and CA70/MC70 reuse the SAM D5x/E5x and SAM E70 clock trees they share.
+  MPLAB Harmony csp clock plibs were used only to cross-check defaults and limits.
 * **Renesas RX/RL78**, **GigaDevice GD32VF103** and **Microchip PIC32** graphs are written by hand from
   the hardware manuals / family reference manuals (Renesas Smart Configurator data was used only to
   cross-check limits, never copied).

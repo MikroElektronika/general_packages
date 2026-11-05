@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "id": "pic32cx_bz6",
+  "title": "PIC32CX-BZ6 clock tree",
+  "vendor": "Microchip",
+  "source": "PIC32CX-BZ6 family datasheet, CRU and PCHE chapters; MPLAB Harmony csp clk_pic32cx_bz",
+  "devices": ["^PIC32CX2051BZ6"],
+  "fosc": "sysclk",
+  "inputs": {},
+  "settings": ["OSCCON.WAKE2SPD", "CHECON.PREFEN", "PB2DIV.PBDIVON", "PB3DIV.PBDIVON", "PB4DIV.PBDIVON", "PB5DIV.PBDIVON"],
+  "nodes": [
+    {
+      "id": "frc",
+      "label": "FRC 8 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "FRC 8 MHz", "mul": 8000000}
+      ],
+      "tooltip": "Internal fast RC oscillator."
+    },
+    {
+      "id": "frcdiv",
+      "label": "FRCDIV",
+      "kind": "divider",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "frc", "set": {"OSCCON.FRCDIV": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "frc", "set": {"OSCCON.FRCDIV": "01000000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "frc", "set": {"OSCCON.FRCDIV": "02000000"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "frc", "set": {"OSCCON.FRCDIV": "03000000"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "frc", "set": {"OSCCON.FRCDIV": "04000000"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "frc", "set": {"OSCCON.FRCDIV": "05000000"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "frc", "set": {"OSCCON.FRCDIV": "06000000"}, "div": 64},
+        {"id": "256", "label": "/256", "from": "frc", "set": {"OSCCON.FRCDIV": "07000000"}, "div": 256}
+      ]
+    },
+    {
+      "id": "posc",
+      "label": "POSC 16 MHz crystal",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "options": [
+        {"id": "on", "label": "POSC 16 MHz crystal", "mul": 16000000}
+      ],
+      "tooltip": "16 MHz crystal of the RF subsystem (required by the RF PLL and the radio)."
+    },
+    {
+      "id": "rfpll",
+      "label": "RF PLL (SPLL3) x8",
+      "kind": "multiplier",
+      "x": 1,
+      "y": 2,
+      "tooltip": "RF PLL: 16 MHz crystal x 8 = 128 MHz. It can not run from the FRC.",
+      "options": [
+        {"id": "on", "label": "x8", "from": "posc", "mul": 8}
+      ]
+    },
+    {
+      "id": "spll1",
+      "label": "SPLL1 /SPLLPOSTDIV1",
+      "kind": "divider",
+      "x": 2,
+      "y": 2,
+      "range": {"from": "rfpll", "op": "div", "min": 1, "max": 255, "field": "SPLLCON.SPLLPOSTDIV1", "lsb": 8, "scale": 1, "offset": 0},
+      "tooltip": "SPLL1 = RF PLL / SPLLPOSTDIV1."
+    },
+    {
+      "id": "sysclk",
+      "label": "SYSCLK (NOSC)",
+      "kind": "mux",
+      "x": 3,
+      "y": 1,
+      "options": [
+        {"id": "frc", "label": "FRC / FRCDIV", "from": "frcdiv", "set": {"OSCCON.NOSC": "00000000"}},
+        {"id": "spll", "label": "SPLL1", "from": "spll1", "set": {"OSCCON.NOSC": "00000100"}},
+        {"id": "posc", "label": "POSC", "from": "posc", "set": {"OSCCON.NOSC": "00000200"}}
+      ],
+      "max": 128000000,
+      "consumer": true,
+      "tooltip": "System (CPU) clock: at most 128 MHz."
+    },
+    {
+      "id": "pb1",
+      "label": "PBCLK1 /PBDIV",
+      "kind": "divider",
+      "x": 4,
+      "y": 0,
+      "range": {"from": "sysclk", "op": "div", "min": 1, "max": 128, "field": "PB1DIV.PBDIV", "lsb": 0, "scale": 1, "offset": -1},
+      "consumer": true,
+      "max": 128000000
+    },
+    {
+      "id": "pb2",
+      "label": "PBCLK2 /PBDIV",
+      "kind": "divider",
+      "x": 4,
+      "y": 1,
+      "range": {"from": "sysclk", "op": "div", "min": 1, "max": 128, "field": "PB2DIV.PBDIV", "lsb": 0, "scale": 1, "offset": -1},
+      "consumer": true,
+      "max": 128000000
+    },
+    {
+      "id": "pb3",
+      "label": "PBCLK3 /PBDIV",
+      "kind": "divider",
+      "x": 4,
+      "y": 2,
+      "range": {"from": "sysclk", "op": "div", "min": 1, "max": 128, "field": "PB3DIV.PBDIV", "lsb": 0, "scale": 1, "offset": -1},
+      "consumer": true,
+      "max": 6400000,
+      "tooltip": "PBCLK3 (analog peripherals): at most 6.4 MHz."
+    },
+    {
+      "id": "pb4",
+      "label": "PBCLK4 /PBDIV",
+      "kind": "divider",
+      "x": 4,
+      "y": 3,
+      "range": {"from": "sysclk", "op": "div", "min": 1, "max": 128, "field": "PB4DIV.PBDIV", "lsb": 0, "scale": 1, "offset": -1},
+      "consumer": true,
+      "max": 128000000
+    },
+    {
+      "id": "pb5",
+      "label": "PBCLK5 /PBDIV",
+      "kind": "divider",
+      "x": 4,
+      "y": 4,
+      "range": {"from": "sysclk", "op": "div", "min": 1, "max": 128, "field": "PB5DIV.PBDIV", "lsb": 0, "scale": 1, "offset": -1},
+      "consumer": true,
+      "max": 128000000
+    },
+    {
+      "id": "spll2src",
+      "label": "SPLL2 source (SPLL_BYP)",
+      "kind": "mux",
+      "x": 2,
+      "y": 4,
+      "options": [
+        {"id": "spll3", "label": "RF PLL (SPLL3)", "from": "rfpll", "set": {"SPLLCON.SPLL_BYP": "00000000"}},
+        {"id": "posc", "label": "POSC", "from": "posc", "set": {"SPLLCON.SPLL_BYP": "80000000"}},
+        {"id": "frc", "label": "FRC", "from": "frc", "set": {"SPLLCON.SPLL_BYP": "C0000000"}}
+      ]
+    },
+    {
+      "id": "spll2",
+      "label": "SPLL2 /SPLLPOSTDIV2",
+      "kind": "divider",
+      "x": 3,
+      "y": 4,
+      "consumer": true,
+      "tooltip": "ADC charge pump clock: 8-24 MHz, 0 = off.",
+      "options": [
+        {"id": "off", "label": "Off", "mul": 0, "set": {"SPLLCON.SPLLPOSTDIV2": "00000000"}},
+        {"id": "1", "label": "/1", "from": "spll2src", "div": 1, "set": {"SPLLCON.SPLLPOSTDIV2": "00010000"}},
+        {"id": "2", "label": "/2", "from": "spll2src", "div": 2, "set": {"SPLLCON.SPLLPOSTDIV2": "00020000"}},
+        {"id": "3", "label": "/3", "from": "spll2src", "div": 3, "set": {"SPLLCON.SPLLPOSTDIV2": "00030000"}},
+        {"id": "4", "label": "/4", "from": "spll2src", "div": 4, "set": {"SPLLCON.SPLLPOSTDIV2": "00040000"}},
+        {"id": "5", "label": "/5", "from": "spll2src", "div": 5, "set": {"SPLLCON.SPLLPOSTDIV2": "00050000"}},
+        {"id": "6", "label": "/6", "from": "spll2src", "div": 6, "set": {"SPLLCON.SPLLPOSTDIV2": "00060000"}},
+        {"id": "7", "label": "/7", "from": "spll2src", "div": 7, "set": {"SPLLCON.SPLLPOSTDIV2": "00070000"}},
+        {"id": "8", "label": "/8", "from": "spll2src", "div": 8, "set": {"SPLLCON.SPLLPOSTDIV2": "00080000"}},
+        {"id": "9", "label": "/9", "from": "spll2src", "div": 9, "set": {"SPLLCON.SPLLPOSTDIV2": "00090000"}},
+        {"id": "10", "label": "/10", "from": "spll2src", "div": 10, "set": {"SPLLCON.SPLLPOSTDIV2": "000A0000"}},
+        {"id": "11", "label": "/11", "from": "spll2src", "div": 11, "set": {"SPLLCON.SPLLPOSTDIV2": "000B0000"}},
+        {"id": "12", "label": "/12", "from": "spll2src", "div": 12, "set": {"SPLLCON.SPLLPOSTDIV2": "000C0000"}},
+        {"id": "13", "label": "/13", "from": "spll2src", "div": 13, "set": {"SPLLCON.SPLLPOSTDIV2": "000D0000"}},
+        {"id": "14", "label": "/14", "from": "spll2src", "div": 14, "set": {"SPLLCON.SPLLPOSTDIV2": "000E0000"}},
+        {"id": "15", "label": "/15", "from": "spll2src", "div": 15, "set": {"SPLLCON.SPLLPOSTDIV2": "000F0000"}}
+      ]
+    }
+  ],
+  "derive": [
+    {"field": "CHECON.PFMWS", "cases": [{"when": "f.sysclk < 51200000", "value": "00000000"}, {"when": "f.sysclk < 76800000", "value": "00000001"}, {"when": "f.sysclk < 102400000", "value": "00000003"}], "default": "00000004"},
+    {"field": "CHECON.ADRWS", "cases": [{"when": "f.sysclk < 64000000", "value": "00000000"}], "default": "00000100"}
+  ],
+  "constraints": [
+    {"expr": "f.spll2 == 0 || (f.spll2 >= 8000000 && f.spll2 <= 24000000)", "message": "SPLL2 (ADC charge pump clock) must be 8-24 MHz or off."}
+  ]
+}

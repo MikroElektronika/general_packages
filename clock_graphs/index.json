@@ -1652,6 +1652,78 @@
       ]
     },
     {
+      "id": "pic32cx_bz2",
+      "file": "microchip_pic32c/pic32cx_bz2.json",
+      "vendor": "Microchip",
+      "title": "PIC32CX-BZ2 clock tree",
+      "devices": [
+        "^PIC32CX1012BZ2[45]"
+      ]
+    },
+    {
+      "id": "pic32cx_bz3",
+      "file": "microchip_pic32c/pic32cx_bz3.json",
+      "vendor": "Microchip",
+      "title": "PIC32CX-BZ3 clock tree",
+      "devices": [
+        "^PIC32CX5109BZ31"
+      ]
+    },
+    {
+      "id": "pic32cx_bz6",
+      "file": "microchip_pic32c/pic32cx_bz6.json",
+      "vendor": "Microchip",
+      "title": "PIC32CX-BZ6 clock tree",
+      "devices": [
+        "^PIC32CX2051BZ6"
+      ]
+    },
+    {
+      "id": "pic32cx_mt",
+      "file": "microchip_pic32c/pic32cx_mt.json",
+      "vendor": "Microchip",
+      "title": "PIC32CX MTC/MTG/MTSH clock tree",
+      "devices": [
+        "^PIC32CX(1025|2051|5112)MT(C|G|SH)(64|128)$"
+      ]
+    },
+    {
+      "id": "pic32cx_sg1",
+      "file": "microchip_pic32c/pic32cx_sg1.json",
+      "vendor": "Microchip",
+      "title": "PIC32CX SG12 clock tree",
+      "devices": [
+        "^PIC32CX0525SG12"
+      ]
+    },
+    {
+      "id": "pic32cx_sg41_sg6x",
+      "file": "microchip_pic32c/pic32cx_sg41_sg6x.json",
+      "vendor": "Microchip",
+      "title": "PIC32CX SG41/SG60/SG61 clock tree",
+      "devices": [
+        "^PIC32CX1025SG(41|60|61)"
+      ]
+    },
+    {
+      "id": "pic32cz_ca70_mc70",
+      "file": "microchip_pic32c/pic32cz_ca70_mc70.json",
+      "vendor": "Microchip",
+      "title": "PIC32CZ CA70/MC70 clock tree",
+      "devices": [
+        "^PIC32CZ2051(CA|MC)70"
+      ]
+    },
+    {
+      "id": "pic32cz_ca80_ca9x",
+      "file": "microchip_pic32c/pic32cz_ca80_ca9x.json",
+      "vendor": "Microchip",
+      "title": "PIC32CZ CA80/CA90/CA91 clock tree",
+      "devices": [
+        "^PIC32CZ(2051|4010|8110)CA(80|90|91)"
+      ]
+    },
+    {
       "id": "sam4_pmc",
       "file": "microchip_sam/sam4_pmc.json",
       "vendor": "Microchip",
