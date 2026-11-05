@@ -1218,6 +1218,10 @@ def updateMCHPProgrammers(eachDb, converted_data, json_data_list):
         )
         ## Add MCU to Programmer mapping found in microchip index file
         missingMcuDfp = []
+        missingMcuDevice = []
+        # Every device name Microchip knows (DFPs and this tool) - an alias that is
+        # a Microchip device of its own must not be mapped from another entry.
+        mchpDeviceNames = set(dfpsMap) | set(prog_item['mcus'])
         for mcu in prog_item['mcus']:
 
             ## DebuggerToDevice Section
@@ -1239,9 +1243,18 @@ def updateMCHPProgrammers(eachDb, converted_data, json_data_list):
             # TODO: uncomment for testing purposes
             # print(f"Inserting {mcu.upper()}:{prog_item['uid']} into ProgrammerToDevice table")
             if mcu in dfpsMap:
-                exists, uid_list = read_data_from_db(eachDb, f"SELECT uid FROM Devices WHERE def_file = \"{mcu.upper()}.json\"")
+                # Microchip drops the first silicon revision from the name
+                # (ATSAMD20J18 / ATSAMG51G18) while the core keeps it
+                # (ATSAMD20J18A / SAMG51G18A); try the exact name, then the aliases.
+                exists, uid_list = False, []
+                for candidate in MCHP.core_device_name_candidates(mcu, mchpDeviceNames):
+                    exists, uid_list = read_data_from_db(eachDb, f"SELECT uid FROM Devices WHERE def_file = \"{candidate}.json\" COLLATE NOCASE")
+                    if exists:
+                        if candidate != mcu.upper():
+                            print("%sMapped Microchip device %s to core device %s" % (utility.Colors.OKCYAN, mcu, candidate))
+                        break
                 if not exists:
-                    exists, uid_list = read_data_from_db(eachDb, f"SELECT uid FROM Devices WHERE def_file = \"{mcu}.json\"")
+                    missingMcuDevice.append(mcu)
                 if exists:
                     for mcu_uid in uid_list:
                         insertIntoTable(
@@ -1269,6 +1282,7 @@ def updateMCHPProgrammers(eachDb, converted_data, json_data_list):
             else:
                 missingMcuDfp.append(mcu)
         print("%sFollowing MCUs do not have DFP: %s" % (utility.Colors.WARNING, missingMcuDfp))
+        print("%sFollowing MCUs have no matching device in the database: %s" % (utility.Colors.WARNING, missingMcuDevice))
 
 def update_erp_info(erpDb, nectoDb):
     def normalize_uid(value):
