@@ -1548,13 +1548,15 @@ def update_core_installer_packages(database, token, release_version):
                 continue
             for raw_mcu in mcus:
                 uid = re.sub('_', '-', raw_mcu).replace('dsPIC', 'DSPIC').upper()
+                # Match case-insensitively: some uids are mixed case (e.g. MM32P021MNSim)
                 row = cur.execute(
-                    'SELECT installer_package FROM Devices WHERE uid=?', (uid,)
+                    'SELECT uid, installer_package FROM Devices WHERE uid=? COLLATE NOCASE', (uid,)
                 ).fetchone()
                 if not row:
                     raise ValueError(f'{uid} from {package_name} does not exist in Devices')
+                uid = row[0]
                 try:
-                    mapping = json.loads(row[0]) if row[0] else {}
+                    mapping = json.loads(row[1]) if row[1] else {}
                 except (TypeError, json.JSONDecodeError):
                     mapping = {}
                 compiler_rows = cur.execute(
