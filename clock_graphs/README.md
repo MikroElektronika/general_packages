@@ -18,6 +18,7 @@ clock_graphs/
   nuvoton/*.json       written by scripts/clock_graphs/nuvoton_graphs.py
   adi/*.json           written by scripts/clock_graphs/adi_graphs.py
   gigadevice/*.json    written by scripts/clock_graphs/gigadevice_graphs.py (GD32VF103, RISC-V)
+  hpmicro/*.json       written by scripts/clock_graphs/hpmicro_graphs.py (HPM5301, RISC-V)
   renesas_rx/*.json    written by scripts/clock_graphs/renesas_rx_graphs.py
   renesas_rl78/*.json  written by scripts/clock_graphs/renesas_rl78_graphs.py
   microchip_pic32/*.json written by scripts/clock_graphs/microchip_pic32_graphs.py (mikroC and XC32)
@@ -48,6 +49,8 @@ do not validate.
   PIC32CX SG12, PIC32CX BZ2/BZ3/BZ6, PIC32CZ CA80/CA90/CA91) are written by hand from the datasheets'
   clock chapters; SG41/SG6x and CA70/MC70 reuse the SAM D5x/E5x and SAM E70 clock trees they share.
   MPLAB Harmony csp clock plibs were used only to cross-check defaults and limits.
+* **HPMicro** graphs (HPM5301) are written by hand from the register definitions and clock drivers of the
+  HPM SDK (https://github.com/hpmicro/hpm_sdk, BSD-3-Clause): PLLCTLV2, SYSCTL clock nodes and PCFG DCDC.
 * **Renesas RX/RL78**, **GigaDevice GD32VF103** and **Microchip PIC32** graphs are written by hand from
   the hardware manuals / family reference manuals (Renesas Smart Configurator data was used only to
   cross-check limits, never copied).

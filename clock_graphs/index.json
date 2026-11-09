@@ -291,6 +291,15 @@
       ]
     },
     {
+      "id": "hpm5301",
+      "file": "hpmicro/hpm5301.json",
+      "vendor": "HPMicro",
+      "title": "HPM5301 clock tree",
+      "devices": [
+        "^HPM5301"
+      ]
+    },
+    {
       "id": "pic_pic10f320",
       "file": "microchip_pic/pic_pic10f320.json",
       "vendor": "Microchip",
