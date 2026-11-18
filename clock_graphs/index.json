@@ -1832,6 +1832,51 @@
       ]
     },
     {
+      "id": "nrf51",
+      "file": "nordic/nrf51.json",
+      "vendor": "Nordic Semiconductor",
+      "title": "nRF51 clock tree",
+      "devices": [
+        "^NRF51"
+      ]
+    },
+    {
+      "id": "nrf52",
+      "file": "nordic/nrf52.json",
+      "vendor": "Nordic Semiconductor",
+      "title": "nRF52 clock tree",
+      "devices": [
+        "^NRF528"
+      ]
+    },
+    {
+      "id": "nrf53",
+      "file": "nordic/nrf53.json",
+      "vendor": "Nordic Semiconductor",
+      "title": "nRF5340 application core clock tree",
+      "devices": [
+        "^NRF5340"
+      ]
+    },
+    {
+      "id": "nrf54l",
+      "file": "nordic/nrf54l.json",
+      "vendor": "Nordic Semiconductor",
+      "title": "nRF54L clock tree",
+      "devices": [
+        "^NRF54L"
+      ]
+    },
+    {
+      "id": "nrf91",
+      "file": "nordic/nrf91.json",
+      "vendor": "Nordic Semiconductor",
+      "title": "nRF91 application core clock tree",
+      "devices": [
+        "^NRF91"
+      ]
+    },
+    {
       "id": "m2354",
       "file": "nuvoton/m2354.json",
       "vendor": "Nuvoton",

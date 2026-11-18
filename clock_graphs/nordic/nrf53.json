@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "nrf53",
+  "title": "nRF5340 application core clock tree",
+  "vendor": "Nordic Semiconductor",
+  "source": "nRF5340 product specification, CLOCK (application core)",
+  "devices": ["^NRF5340"],
+  "fosc": "hclk",
+  "inputs": {},
+  "settings": ["CLOCK_TASKS_LFCLKSTART.TASKS_LFCLKSTART"],
+  "nodes": [
+    {
+      "id": "hfint",
+      "label": "HFINT 128 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "HFINT 128 MHz", "mul": 128000000}
+      ]
+    },
+    {
+      "id": "hfxo",
+      "label": "HFXO 32 MHz crystal",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "options": [
+        {"id": "on", "label": "HFXO 32 MHz crystal", "mul": 32000000}
+      ]
+    },
+    {
+      "id": "hfclk128m",
+      "label": "HFCLK128M (HFCLKSRC)",
+      "kind": "mux",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "hfint", "label": "HFINT RC oscillator", "from": "hfint", "set": {"CLOCK_TASKS_HFCLKSTART.TASKS_HFCLKSTART": "00000000", "CLOCK_HFCLKSRC.SRC": "00000000"}},
+        {"id": "hfxo", "label": "HFXO crystal (x4)", "from": "hfxo", "set": {"CLOCK_TASKS_HFCLKSTART.TASKS_HFCLKSTART": "00000001", "CLOCK_HFCLKSRC.SRC": "00000001"}, "mul": 4}
+      ]
+    },
+    {
+      "id": "hclk",
+      "label": "HCLK (HFCLKCTRL)",
+      "kind": "divider",
+      "x": 2,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hfclk128m", "set": {"CLOCK_HFCLKCTRL.HCLK": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hfclk128m", "set": {"CLOCK_HFCLKCTRL.HCLK": "00000001"}, "div": 2}
+      ],
+      "consumer": true,
+      "max": 128000000
+    },
+    {
+      "id": "lfrc",
+      "label": "LFRC 32.768 kHz RC",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "options": [
+        {"id": "on", "label": "LFRC 32.768 kHz RC", "mul": 32768}
+      ]
+    },
+    {
+      "id": "lfxo",
+      "label": "LFXO 32.768 kHz crystal",
+      "kind": "source",
+      "x": 0,
+      "y": 4,
+      "options": [
+        {"id": "on", "label": "LFXO 32.768 kHz crystal", "mul": 32768}
+      ],
+      "tooltip": "External 32.768 kHz crystal on XL1/XL2."
+    },
+    {
+      "id": "lfclk",
+      "label": "LFCLK (32.768 kHz)",
+      "kind": "mux",
+      "x": 2,
+      "y": 3,
+      "options": [
+        {"id": "lfrc", "label": "LFRC", "from": "lfrc", "set": {"CLOCK_LFCLKSRC.SRC": "00000001"}},
+        {"id": "lfxo", "label": "LFXO (P0.00/P0.01)", "from": "lfxo", "set": {"CLOCK_LFCLKSRC.SRC": "00000002"}},
+        {"id": "synth", "label": "Synthesized from HFCLK", "from": "hfclk128m", "mul": 4, "div": 15625, "set": {"CLOCK_LFCLKSRC.SRC": "00000003"}}
+      ],
+      "tooltip": "Low frequency clock for RTC, WDT and timers. It runs only when \"Start LFCLK in SystemInit\" is chosen; the synthesized source is only as accurate as HFCLK, so start the HFXO with it."
+    }
+  ]
+}
