@@ -282,6 +282,79 @@
       ]
     },
     {
+      "id": "esp32c2",
+      "file": "espressif/esp32c2.json",
+      "vendor": "Espressif",
+      "title": "ESP32-C2 clock tree",
+      "devices": [
+        "^ESP8684"
+      ]
+    },
+    {
+      "id": "esp32c3",
+      "file": "espressif/esp32c3.json",
+      "vendor": "Espressif",
+      "title": "ESP32-C3 clock tree",
+      "devices": [
+        "^ESP32-C3",
+        "^ESP8685"
+      ]
+    },
+    {
+      "id": "esp32c5",
+      "file": "espressif/esp32c5.json",
+      "vendor": "Espressif",
+      "title": "ESP32-C5 clock tree",
+      "devices": [
+        "^ESP32-C5"
+      ]
+    },
+    {
+      "id": "esp32c6",
+      "file": "espressif/esp32c6.json",
+      "vendor": "Espressif",
+      "title": "ESP32-C6 clock tree",
+      "devices": [
+        "^ESP32-C6(?!1)"
+      ]
+    },
+    {
+      "id": "esp32c61",
+      "file": "espressif/esp32c61.json",
+      "vendor": "Espressif",
+      "title": "ESP32-C61 clock tree",
+      "devices": [
+        "^ESP32-C61"
+      ]
+    },
+    {
+      "id": "esp32h2",
+      "file": "espressif/esp32h2.json",
+      "vendor": "Espressif",
+      "title": "ESP32-H2 clock tree",
+      "devices": [
+        "^ESP32-H2"
+      ]
+    },
+    {
+      "id": "esp32p4",
+      "file": "espressif/esp32p4.json",
+      "vendor": "Espressif",
+      "title": "ESP32-P4 clock tree",
+      "devices": [
+        "^ESP32-P4"
+      ]
+    },
+    {
+      "id": "esp32s31",
+      "file": "espressif/esp32s31.json",
+      "vendor": "Espressif",
+      "title": "ESP32-S31 clock tree",
+      "devices": [
+        "^ESP32-S31"
+      ]
+    },
+    {
       "id": "gd32vf103",
       "file": "gigadevice/gd32vf103.json",
       "vendor": "GigaDevice",

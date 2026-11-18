@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "esp32c5",
+  "title": "ESP32-C5 clock tree",
+  "vendor": "Espressif",
+  "source": "ESP32-C5 Technical Reference Manual (Reset and Clock); ESP-IDF rtc_clk.c",
+  "devices": ["^ESP32-C5"],
+  "fosc": "cpu",
+  "inputs": {
+    "xtal": {"label": "XTAL frequency", "default": 40000000, "min": 40000000, "max": 48000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "xtal",
+      "label": "XTAL",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "input": "xtal",
+      "tooltip": "ESP32-C5 runs from a 40 MHz or 48 MHz crystal."
+    },
+    {
+      "id": "pll_f160m",
+      "label": "PLL_F160M",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "options": [
+        {"id": "on", "label": "PLL_F160M", "mul": 160000000}
+      ],
+      "tooltip": "Powered up and calibrated by SystemInit when the CPU clock uses it."
+    },
+    {
+      "id": "pll_f240m",
+      "label": "PLL_F240M",
+      "kind": "source",
+      "x": 0,
+      "y": 2,
+      "options": [
+        {"id": "on", "label": "PLL_F240M", "mul": 240000000}
+      ],
+      "tooltip": "Powered up and calibrated by SystemInit when the CPU clock uses it."
+    },
+    {
+      "id": "cpu",
+      "label": "CPU clock",
+      "kind": "mux",
+      "x": 2,
+      "y": 0,
+      "options": [
+        {"id": "xtal", "label": "XTAL (40/48 MHz)", "from": "xtal", "set": {"PCR_SYSCLK_CONF.SOC_CLK_SEL": "00000000", "PCR_CPU_FREQ_CONF.CPU_DIV_NUM": "00000000"}},
+        {"id": "pll_f160m_80", "label": "PLL_F160M / 2 = 80 MHz", "from": "pll_f160m", "set": {"PCR_SYSCLK_CONF.SOC_CLK_SEL": "00020000", "PCR_CPU_FREQ_CONF.CPU_DIV_NUM": "00000001"}, "div": 2},
+        {"id": "pll_f160m_160", "label": "PLL_F160M = 160 MHz", "from": "pll_f160m", "set": {"PCR_SYSCLK_CONF.SOC_CLK_SEL": "00020000", "PCR_CPU_FREQ_CONF.CPU_DIV_NUM": "00000000"}},
+        {"id": "pll_f240m_240", "label": "PLL_F240M = 240 MHz", "from": "pll_f240m", "set": {"PCR_SYSCLK_CONF.SOC_CLK_SEL": "00030000", "PCR_CPU_FREQ_CONF.CPU_DIV_NUM": "00000000"}}
+      ],
+      "consumer": true,
+      "max": 240000000,
+      "tooltip": "CPU frequencies supported by the ESP-IDF clock driver; FOSC_KHZ_VALUE follows this node."
+    }
+  ],
+  "constraints": [
+    {"expr": "in.xtal == 40e6 || in.xtal == 48e6", "message": "The ESP32-C5 crystal must be 40 MHz or 48 MHz."}
+  ]
+}

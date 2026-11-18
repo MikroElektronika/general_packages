@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "esp32c61",
+  "title": "ESP32-C61 clock tree",
+  "vendor": "Espressif",
+  "source": "ESP32-C61 Technical Reference Manual (Reset and Clock); ESP-IDF rtc_clk.c",
+  "devices": ["^ESP32-C61"],
+  "fosc": "cpu",
+  "inputs": {},
+  "settings": [],
+  "nodes": [
+    {
+      "id": "xtal",
+      "label": "XTAL 40 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "XTAL 40 MHz", "mul": 40000000}
+      ]
+    },
+    {
+      "id": "pll_f160m",
+      "label": "PLL_F160M",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "options": [
+        {"id": "on", "label": "PLL_F160M", "mul": 160000000}
+      ],
+      "tooltip": "Powered up and calibrated by SystemInit when the CPU clock uses it."
+    },
+    {
+      "id": "cpu",
+      "label": "CPU clock",
+      "kind": "mux",
+      "x": 2,
+      "y": 0,
+      "options": [
+        {"id": "xtal", "label": "XTAL 40 MHz", "from": "xtal", "set": {"PCR_SYSCLK_CONF.SOC_CLK_SEL": "00000000", "PCR_CPU_FREQ_CONF.CPU_DIV_NUM": "00000000"}},
+        {"id": "pll_f160m_80", "label": "PLL_F160M / 2 = 80 MHz", "from": "pll_f160m", "set": {"PCR_SYSCLK_CONF.SOC_CLK_SEL": "00020000", "PCR_CPU_FREQ_CONF.CPU_DIV_NUM": "00000001"}, "div": 2},
+        {"id": "pll_f160m_160", "label": "PLL_F160M = 160 MHz", "from": "pll_f160m", "set": {"PCR_SYSCLK_CONF.SOC_CLK_SEL": "00020000", "PCR_CPU_FREQ_CONF.CPU_DIV_NUM": "00000000"}}
+      ],
+      "consumer": true,
+      "max": 160000000,
+      "tooltip": "CPU frequencies supported by the ESP-IDF clock driver; FOSC_KHZ_VALUE follows this node."
+    }
+  ]
+}

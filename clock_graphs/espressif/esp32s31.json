@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "esp32s31",
+  "title": "ESP32-S31 clock tree",
+  "vendor": "Espressif",
+  "source": "ESP32-S31 Technical Reference Manual (Reset and Clock); ESP-IDF rtc_clk.c",
+  "devices": ["^ESP32-S31"],
+  "fosc": "cpu",
+  "inputs": {},
+  "settings": [],
+  "nodes": [
+    {
+      "id": "xtal",
+      "label": "XTAL 40 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "XTAL 40 MHz", "mul": 40000000}
+      ]
+    },
+    {
+      "id": "cpll",
+      "label": "CPLL 320 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "options": [
+        {"id": "on", "label": "CPLL 320 MHz", "mul": 320000000}
+      ],
+      "tooltip": "Powered up and calibrated by SystemInit when the CPU clock uses it."
+    },
+    {
+      "id": "pll_f240m",
+      "label": "PLL_F240M",
+      "kind": "source",
+      "x": 0,
+      "y": 2,
+      "options": [
+        {"id": "on", "label": "PLL_F240M", "mul": 240000000}
+      ],
+      "tooltip": "Powered up and calibrated by SystemInit when the CPU clock uses it."
+    },
+    {
+      "id": "cpu",
+      "label": "CPU clock",
+      "kind": "mux",
+      "x": 2,
+      "y": 0,
+      "options": [
+        {"id": "xtal", "label": "XTAL 40 MHz", "from": "xtal", "set": {"HP_SYS_CLKRST_SOC_CLK_SEL.SOC_CLK_SEL": "00000000"}},
+        {"id": "cpll_80", "label": "CPLL 320 MHz / 4 = 80 MHz", "from": "cpll", "set": {"HP_SYS_CLKRST_SOC_CLK_SEL.SOC_CLK_SEL": "00000001", "HP_SYS_CLKRST_CPU_FREQ_CTRL0.CPU_CLK_DIV_NUM": "00000003"}, "div": 4},
+        {"id": "cpll_160", "label": "CPLL 320 MHz / 2 = 160 MHz", "from": "cpll", "set": {"HP_SYS_CLKRST_SOC_CLK_SEL.SOC_CLK_SEL": "00000001", "HP_SYS_CLKRST_CPU_FREQ_CTRL0.CPU_CLK_DIV_NUM": "00000001"}, "div": 2},
+        {"id": "pll_f240m_240", "label": "PLL_F240M = 240 MHz", "from": "pll_f240m", "set": {"HP_SYS_CLKRST_SOC_CLK_SEL.SOC_CLK_SEL": "00000003", "HP_SYS_CLKRST_CPU_FREQ_CTRL0.CPU_CLK_DIV_NUM": "00000000"}},
+        {"id": "cpll_320", "label": "CPLL 320 MHz", "from": "cpll", "set": {"HP_SYS_CLKRST_SOC_CLK_SEL.SOC_CLK_SEL": "00000001", "HP_SYS_CLKRST_CPU_FREQ_CTRL0.CPU_CLK_DIV_NUM": "00000000"}}
+      ],
+      "consumer": true,
+      "max": 320000000,
+      "tooltip": "CPU frequencies supported by the ESP-IDF clock driver; FOSC_KHZ_VALUE follows this node."
+    }
+  ]
+}

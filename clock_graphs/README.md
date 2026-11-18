@@ -18,6 +18,7 @@ clock_graphs/
   nuvoton/*.json       written by scripts/clock_graphs/nuvoton_graphs.py
   adi/*.json           written by scripts/clock_graphs/adi_graphs.py
   nordic/*.json        written by scripts/clock_graphs/nordic_graphs.py
+  espressif/*.json     written by scripts/clock_graphs/espressif_graphs.py (RISC-V ESP32-C/H/P/S31)
   gigadevice/*.json    written by scripts/clock_graphs/gigadevice_graphs.py (GD32VF103, RISC-V)
   hpmicro/*.json       written by scripts/clock_graphs/hpmicro_graphs.py (HPM5301, RISC-V)
   renesas_rx/*.json    written by scripts/clock_graphs/renesas_rx_graphs.py
@@ -53,6 +54,9 @@ do not validate.
 * **Nordic Semiconductor** graphs (nRF51, nRF52, nRF5340 application core, nRF91, nRF54L) are written by hand
   from the product specifications' CLOCK/OSCILLATORS chapters; register addresses and reset values were
   checked against the Nordic MDK (https://github.com/NordicSemiconductor/nrfx, bsp/stable/mdk).
+* **Espressif** graphs (ESP32-C2, C3, C5, C6, C61, H2, P4, S31) are written by hand from the technical reference
+  manuals' Reset and Clock chapters and cross-checked against ESP-IDF (https://github.com/espressif/esp-idf,
+  Apache-2.0): rtc_clk_cpu_freq_mhz_to_config() and clk_tree_ll.h of each chip.
 * **HPMicro** graphs (HPM5301) are written by hand from the register definitions and clock drivers of the
   HPM SDK (https://github.com/hpmicro/hpm_sdk, BSD-3-Clause): PLLCTLV2, SYSCTL clock nodes and PCFG DCDC.
 * **Renesas RX/RL78**, **GigaDevice GD32VF103** and **Microchip PIC32** graphs are written by hand from

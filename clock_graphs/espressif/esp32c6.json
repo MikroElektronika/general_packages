@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "esp32c6",
+  "title": "ESP32-C6 clock tree",
+  "vendor": "Espressif",
+  "source": "ESP32-C6 Technical Reference Manual (Reset and Clock); ESP-IDF rtc_clk.c",
+  "devices": ["^ESP32-C6(?!1)"],
+  "fosc": "cpu",
+  "inputs": {},
+  "settings": [],
+  "nodes": [
+    {
+      "id": "xtal",
+      "label": "XTAL 40 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "XTAL 40 MHz", "mul": 40000000}
+      ]
+    },
+    {
+      "id": "pll",
+      "label": "PLL 480 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "options": [
+        {"id": "on", "label": "PLL 480 MHz", "mul": 480000000}
+      ],
+      "tooltip": "Powered up and calibrated by SystemInit when the CPU clock uses it."
+    },
+    {
+      "id": "cpu",
+      "label": "CPU clock",
+      "kind": "mux",
+      "x": 2,
+      "y": 0,
+      "options": [
+        {"id": "xtal", "label": "XTAL 40 MHz", "from": "xtal", "set": {"PCR_SYSCLK_CONF.SOC_CLK_SEL": "00000000"}},
+        {"id": "pll_80", "label": "PLL 480 MHz / 6 = 80 MHz", "from": "pll", "set": {"PCR_SYSCLK_CONF.SOC_CLK_SEL": "00010000", "PCR_CPU_FREQ_CONF.CPU_HS_DIV_NUM": "00000100", "PCR_CPU_FREQ_CONF.CPU_HS_120M_FORCE": "00000000"}, "div": 6},
+        {"id": "pll_120", "label": "PLL 480 MHz / 4 = 120 MHz", "from": "pll", "set": {"PCR_SYSCLK_CONF.SOC_CLK_SEL": "00010000", "PCR_CPU_FREQ_CONF.CPU_HS_DIV_NUM": "00000000", "PCR_CPU_FREQ_CONF.CPU_HS_120M_FORCE": "00010000"}, "div": 4},
+        {"id": "pll_160", "label": "PLL 480 MHz / 3 = 160 MHz", "from": "pll", "set": {"PCR_SYSCLK_CONF.SOC_CLK_SEL": "00010000", "PCR_CPU_FREQ_CONF.CPU_HS_DIV_NUM": "00000000", "PCR_CPU_FREQ_CONF.CPU_HS_120M_FORCE": "00000000"}, "div": 3}
+      ],
+      "consumer": true,
+      "max": 160000000,
+      "tooltip": "CPU frequencies supported by the ESP-IDF clock driver; FOSC_KHZ_VALUE follows this node."
+    }
+  ]
+}

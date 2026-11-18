@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "esp32p4",
+  "title": "ESP32-P4 clock tree",
+  "vendor": "Espressif",
+  "source": "ESP32-P4 Technical Reference Manual (Reset and Clock); ESP-IDF rtc_clk.c",
+  "devices": ["^ESP32-P4"],
+  "fosc": "cpu",
+  "inputs": {},
+  "settings": [],
+  "nodes": [
+    {
+      "id": "xtal",
+      "label": "XTAL 40 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "XTAL 40 MHz", "mul": 40000000}
+      ]
+    },
+    {
+      "id": "cpll",
+      "label": "CPLL 400 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "options": [
+        {"id": "on", "label": "CPLL 400 MHz", "mul": 400000000}
+      ],
+      "tooltip": "Powered up and calibrated by SystemInit when the CPU clock uses it."
+    },
+    {
+      "id": "cpu",
+      "label": "CPU clock",
+      "kind": "mux",
+      "x": 2,
+      "y": 0,
+      "options": [
+        {"id": "xtal", "label": "XTAL 40 MHz", "from": "xtal", "set": {"LP_CLKRST_HP_CLK_CTRL.HP_ROOT_CLK_SRC_SEL": "00000000"}},
+        {"id": "cpll_100", "label": "CPLL 400 MHz / 4 = 100 MHz", "from": "cpll", "set": {"LP_CLKRST_HP_CLK_CTRL.HP_ROOT_CLK_SRC_SEL": "00000001", "HP_SYS_CLKRST_ROOT_CLK_CTRL0.CPU_CLK_DIV_NUM": "00000060"}, "div": 4},
+        {"id": "cpll_200", "label": "CPLL 400 MHz / 2 = 200 MHz", "from": "cpll", "set": {"LP_CLKRST_HP_CLK_CTRL.HP_ROOT_CLK_SRC_SEL": "00000001", "HP_SYS_CLKRST_ROOT_CLK_CTRL0.CPU_CLK_DIV_NUM": "00000020"}, "div": 2},
+        {"id": "cpll_400", "label": "CPLL 400 MHz / 1 = 400 MHz", "from": "cpll", "set": {"LP_CLKRST_HP_CLK_CTRL.HP_ROOT_CLK_SRC_SEL": "00000001", "HP_SYS_CLKRST_ROOT_CLK_CTRL0.CPU_CLK_DIV_NUM": "00000000"}}
+      ],
+      "consumer": true,
+      "max": 400000000,
+      "tooltip": "CPU frequencies supported by the ESP-IDF clock driver; FOSC_KHZ_VALUE follows this node."
+    }
+  ]
+}
