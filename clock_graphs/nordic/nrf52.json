@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "nrf52",
+  "title": "nRF52 clock tree",
+  "vendor": "Nordic Semiconductor",
+  "source": "nRF52805/810/811/820/832/833/840 product specifications, CLOCK",
+  "devices": ["^NRF528"],
+  "fosc": "hfclk",
+  "inputs": {},
+  "settings": ["CLOCK_TASKS_LFCLKSTART.TASKS_LFCLKSTART", "CLOCK_LFCLKSRC.BYPASS", "CLOCK_LFCLKSRC.EXTERNAL"],
+  "nodes": [
+    {
+      "id": "hfint",
+      "label": "HFINT 64 MHz RC",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "HFINT 64 MHz RC", "mul": 64000000}
+      ]
+    },
+    {
+      "id": "hfxo",
+      "label": "HFXO 32 MHz crystal",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "options": [
+        {"id": "on", "label": "HFXO 32 MHz crystal", "mul": 32000000}
+      ]
+    },
+    {
+      "id": "hfclk",
+      "label": "HFCLK (CPU 64 MHz)",
+      "kind": "mux",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "hfint", "label": "HFINT RC oscillator", "from": "hfint", "set": {"CLOCK_TASKS_HFCLKSTART.TASKS_HFCLKSTART": "00000000"}},
+        {"id": "hfxo", "label": "HFXO crystal (x2)", "from": "hfxo", "set": {"CLOCK_TASKS_HFCLKSTART.TASKS_HFCLKSTART": "00000001"}, "mul": 2}
+      ],
+      "consumer": true,
+      "max": 64000000,
+      "tooltip": "The CPU always runs at 64 MHz; the crystal makes HFCLK accurate (needed by the radio and USB)."
+    },
+    {
+      "id": "lfrc",
+      "label": "LFRC 32.768 kHz RC",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "options": [
+        {"id": "on", "label": "LFRC 32.768 kHz RC", "mul": 32768}
+      ]
+    },
+    {
+      "id": "lfxo",
+      "label": "LFXO 32.768 kHz crystal",
+      "kind": "source",
+      "x": 0,
+      "y": 4,
+      "options": [
+        {"id": "on", "label": "LFXO 32.768 kHz crystal", "mul": 32768}
+      ],
+      "tooltip": "External 32.768 kHz crystal on XL1/XL2."
+    },
+    {
+      "id": "lfclk",
+      "label": "LFCLK (32.768 kHz)",
+      "kind": "mux",
+      "x": 2,
+      "y": 3,
+      "options": [
+        {"id": "lfrc", "label": "LFRC", "from": "lfrc", "set": {"CLOCK_LFCLKSRC.SRC": "00000000"}},
+        {"id": "lfxo", "label": "LFXO", "from": "lfxo", "set": {"CLOCK_LFCLKSRC.SRC": "00000001"}},
+        {"id": "synth", "label": "Synthesized from HFCLK", "from": "hfclk", "mul": 8, "div": 15625, "set": {"CLOCK_LFCLKSRC.SRC": "00000002"}}
+      ],
+      "tooltip": "Low frequency clock for RTC, WDT and timers. It runs only when \"Start LFCLK in SystemInit\" is chosen; the synthesized source is only as accurate as HFCLK, so start the HFXO with it."
+    }
+  ]
+}
