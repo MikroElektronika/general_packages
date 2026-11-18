@@ -1,0 +1,208 @@
+{
+  "schema": 1,
+  "id": "pic32cx_mt",
+  "title": "PIC32CX MTC/MTG/MTSH clock tree",
+  "vendor": "Microchip",
+  "source": "PIC32CXMTSH/MTC/MTG datasheet DS60001765, PMC / SUPC / SEFC",
+  "devices": ["^PIC32CX(1025|2051|5112)MT(C|G|SH)(64|128)$"],
+  "fosc": "cpu",
+  "inputs": {
+    "main_xtal": {"label": "Main crystal frequency", "default": 12000000, "min": 12000000, "max": 48000000}
+  },
+  "settings": ["CKGR_MOR.MOSCXTBY", "CKGR_MOR.CFDEN", "SUPC_MR.OSCBYPASS", "SEFC_EEFC_FMR.CLOE"],
+  "nodes": [
+    {
+      "id": "main_rc",
+      "label": "Main RC 12 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "Main RC 12 MHz", "mul": 12000000}
+      ],
+      "enable": {"field": "CKGR_MOR.MOSCRCEN", "on": "00000008", "off": "00000000", "auto": "on"}
+    },
+    {
+      "id": "main_xtal",
+      "label": "Main crystal",
+      "kind": "source",
+      "x": 0,
+      "y": 2,
+      "input": "main_xtal",
+      "enable": {"field": "CKGR_MOR.MOSCXTEN", "on": "00000001", "off": "00000000", "auto": "both"},
+      "tooltip": "12-48 MHz crystal (CKGR_MOR.MOSCXTEN) or external clock on XIN (MOSCXTBY)."
+    },
+    {
+      "id": "mainck",
+      "label": "MAINCK",
+      "kind": "mux",
+      "x": 1,
+      "y": 1,
+      "options": [
+        {"id": "rc", "label": "Main RC", "from": "main_rc", "set": {"CKGR_MOR.MOSCSEL": "00000000"}},
+        {"id": "xtal", "label": "Main crystal", "from": "main_xtal", "set": {"CKGR_MOR.MOSCSEL": "01000000"}}
+      ]
+    },
+    {
+      "id": "td_slck",
+      "label": "Timing domain slow clock (TD_SLCK)",
+      "kind": "source",
+      "x": 0,
+      "y": 4,
+      "tooltip": "SUPC_CR.TDXTALSEL switches TD_SLCK to the 32.768 kHz crystal (only a VDDBU power-on switches it back).",
+      "options": [
+        {"id": "rc", "label": "RC 32 kHz", "mul": 32000, "set": {"SUPC_CR.TDXTALSEL": "00000000"}},
+        {"id": "xtal", "label": "Crystal 32.768 kHz", "mul": 32768, "set": {"SUPC_CR.TDXTALSEL": "00000008"}}
+      ]
+    },
+    {
+      "id": "md_slck",
+      "label": "MD_SLCK (RC 32 kHz)",
+      "kind": "source",
+      "x": 0,
+      "y": 6,
+      "options": [
+        {"id": "on", "label": "MD_SLCK (RC 32 kHz)", "mul": 32000}
+      ],
+      "tooltip": "Monitoring domain slow clock: always the 32 kHz RC."
+    },
+    {
+      "id": "pllasrc",
+      "label": "PLLA reference",
+      "kind": "mux",
+      "x": 1,
+      "y": 4,
+      "options": [
+        {"id": "td_slck", "label": "TD_SLCK", "from": "td_slck", "set": {"PMC_PLLA_CTRL0.PLLMS": "00000000"}},
+        {"id": "mainck", "label": "MAINCK", "from": "mainck", "set": {"PMC_PLLA_CTRL0.PLLMS": "08000000"}}
+      ]
+    },
+    {
+      "id": "plla",
+      "label": "PLLA xMUL",
+      "kind": "multiplier",
+      "x": 2,
+      "y": 4,
+      "range": {"from": "pllasrc", "op": "mul", "min": 1, "max": 32768, "field": "PMC_PLLA_CTRL1.MUL", "lsb": 0, "scale": 1, "offset": -1},
+      "min": 380000000,
+      "max": 600000000,
+      "enable": {"field": "PMC_PLLA_CTRL0.ENPLL", "on": "10000000", "off": "00000000", "auto": "both"},
+      "tooltip": "PLLA VCO = reference x (MUL + 1): 380-600 MHz."
+    },
+    {
+      "id": "pllack1",
+      "label": "PLLACK1 /DIVPMC1",
+      "kind": "divider",
+      "x": 3,
+      "y": 4,
+      "range": {"from": "plla", "op": "div", "min": 1, "max": 256, "field": "PMC_PLLA_CTRL0.DIVPMC1", "lsb": 12, "scale": 1, "offset": -1},
+      "enable": {"field": "PMC_PLLA_CTRL0.ENPLLO1", "on": "40000000", "off": "00000000", "auto": "both"},
+      "tooltip": "PLLA output 1: processor clock source."
+    },
+    {
+      "id": "pllack0",
+      "label": "PLLACK0 /DIVPMC0",
+      "kind": "divider",
+      "x": 3,
+      "y": 5,
+      "range": {"from": "plla", "op": "div", "min": 1, "max": 256, "field": "PMC_PLLA_CTRL0.DIVPMC0", "lsb": 0, "scale": 1, "offset": -1},
+      "enable": {"field": "PMC_PLLA_CTRL0.ENPLLO0", "on": "20000000", "off": "00000000", "auto": "both"},
+      "tooltip": "PLLA output 0: PLLB/PLLC reference."
+    },
+    {
+      "id": "pllbsrc",
+      "label": "PLLB reference",
+      "kind": "mux",
+      "x": 2,
+      "y": 2,
+      "options": [
+        {"id": "pllack0", "label": "PLLACK0", "from": "pllack0", "set": {"PMC_PLLB_CTRL0.PLLMS": "00000000"}},
+        {"id": "mainck", "label": "MAINCK", "from": "mainck", "set": {"PMC_PLLB_CTRL0.PLLMS": "08000000"}}
+      ]
+    },
+    {
+      "id": "pllb",
+      "label": "PLLB xMUL",
+      "kind": "multiplier",
+      "x": 3,
+      "y": 2,
+      "range": {"from": "pllbsrc", "op": "mul", "min": 1, "max": 256, "field": "PMC_PLLB_CTRL1.MUL", "lsb": 0, "scale": 1, "offset": -1},
+      "min": 300000000,
+      "max": 600000000,
+      "enable": {"field": "PMC_PLLB_CTRL0.ENPLL", "on": "10000000", "off": "00000000", "auto": "both"},
+      "tooltip": "PLLB VCO = reference x (MUL + 1): 300-600 MHz."
+    },
+    {
+      "id": "pllbck",
+      "label": "PLLBCK /DIVPMC0",
+      "kind": "divider",
+      "x": 4,
+      "y": 2,
+      "range": {"from": "pllb", "op": "div", "min": 1, "max": 256, "field": "PMC_PLLB_CTRL0.DIVPMC0", "lsb": 0, "scale": 1, "offset": -1},
+      "enable": {"field": "PMC_PLLB_CTRL0.ENPLLO0", "on": "20000000", "off": "00000000", "auto": "both"},
+      "tooltip": "PLLB output."
+    },
+    {
+      "id": "css",
+      "label": "CPU_CLK0 / MCK0 source",
+      "kind": "mux",
+      "x": 5,
+      "y": 1,
+      "options": [
+        {"id": "md_slck", "label": "MD_SLCK", "from": "md_slck", "set": {"PMC_CPU_CKR.CSS": "00000000"}},
+        {"id": "mainck", "label": "MAINCK", "from": "mainck", "set": {"PMC_CPU_CKR.CSS": "00000001"}},
+        {"id": "pllack1", "label": "PLLACK1", "from": "pllack1", "set": {"PMC_CPU_CKR.CSS": "00000002"}},
+        {"id": "pllbck", "label": "PLLBCK", "from": "pllbck", "set": {"PMC_CPU_CKR.CSS": "00000003"}}
+      ]
+    },
+    {
+      "id": "cpu",
+      "label": "CPU_CLK0 / MCK0 (PRES)",
+      "kind": "divider",
+      "x": 6,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "css", "set": {"PMC_CPU_CKR.PRES": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "css", "set": {"PMC_CPU_CKR.PRES": "00000010"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "css", "set": {"PMC_CPU_CKR.PRES": "00000020"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "css", "set": {"PMC_CPU_CKR.PRES": "00000030"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "css", "set": {"PMC_CPU_CKR.PRES": "00000040"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "css", "set": {"PMC_CPU_CKR.PRES": "00000050"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "css", "set": {"PMC_CPU_CKR.PRES": "00000060"}, "div": 64},
+        {"id": "3", "label": "/3", "from": "css", "set": {"PMC_CPU_CKR.PRES": "00000070"}, "div": 3}
+      ],
+      "max": 200000000,
+      "consumer": true,
+      "tooltip": "Core 0 processor clock and master clock MCK0: at most 200 MHz."
+    },
+    {
+      "id": "mck0div",
+      "label": "MCK0DIV",
+      "kind": "divider",
+      "x": 7,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "cpu", "set": {"PMC_CPU_CKR.RATIO_MCK0DIV": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "cpu", "set": {"PMC_CPU_CKR.RATIO_MCK0DIV": "01000000"}, "div": 2}
+      ],
+      "consumer": true,
+      "tooltip": "Peripheral bus clock (FLEXCOM, TC, ...); Microchip configures MCK0 / 2 at 200 MHz."
+    },
+    {
+      "id": "mck0div2",
+      "label": "MCK0DIV2",
+      "kind": "divider",
+      "x": 7,
+      "y": 2,
+      "options": [
+        {"id": "1", "label": "/1", "from": "cpu", "set": {"PMC_CPU_CKR.RATIO_MCK0DIV2": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "cpu", "set": {"PMC_CPU_CKR.RATIO_MCK0DIV2": "04000000"}, "div": 2}
+      ],
+      "consumer": true
+    }
+  ],
+  "derive": [
+    {"field": "SEFC_EEFC_FMR.FWS", "cases": [{"when": "f.cpu <= 31250000", "value": "00000100"}, {"when": "f.cpu <= 62500000", "value": "00000200"}, {"when": "f.cpu <= 93750000", "value": "00000300"}, {"when": "f.cpu <= 125000000", "value": "00000400"}, {"when": "f.cpu <= 156250000", "value": "00000500"}, {"when": "f.cpu <= 187500000", "value": "00000600"}], "default": "00000700"},
+    {"field": "SFR_FLASH.PATCH_BYPASS", "cases": [{"when": "f.cpu >= 160000000", "value": "00000000"}], "default": "00000001"}
+  ]
+}

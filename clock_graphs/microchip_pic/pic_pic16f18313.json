@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "pic_pic16f18313",
+  "title": "PIC oscillator fuses (PIC16F18313, PIC16F18323, PIC16F18324, PIC16F18325 and 12 more)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC16F18313$", "^PIC16F18323$", "^PIC16F18324$", "^PIC16F18325$", "^PIC16F18326$", "^PIC16F18344$", "^PIC16F18345$", "^PIC16F18346$", "^PIC16LF18313$", "^PIC16LF18323$", "^PIC16LF18324$", "^PIC16LF18325$", "^PIC16LF18326$", "^PIC16LF18344$", "^PIC16LF18345$", "^PIC16LF18346$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 32000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 32000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "fextosc",
+      "label": "External oscillator (FEXTOSC)",
+      "kind": "mux",
+      "x": 1,
+      "y": 1,
+      "options": [
+        {"id": "ec_external_clock_above_8_mhz", "label": "EC (external clock) above 8 MHz", "set": {"CONFIG1.FEXTOSC": "00000007"}, "from": "ext"},
+        {"id": "ec_external_clock_for_100_khz_to", "label": "EC (external clock) for 100 kHz to 8 MHz", "set": {"CONFIG1.FEXTOSC": "00000006"}, "from": "ext"},
+        {"id": "ec_external_clock_below_100_khz", "label": "EC (external clock) below 100 kHz", "set": {"CONFIG1.FEXTOSC": "00000005"}, "from": "ext"},
+        {"id": "hs_crystal_oscillator_above_4_mh", "label": "HS (crystal oscillator) above 4 MHz", "set": {"CONFIG1.FEXTOSC": "00000002"}, "from": "ext"},
+        {"id": "xt_crystal_oscillator_from_100_k", "label": "XT (crystal oscillator) from 100 kHz to 4 MHz", "set": {"CONFIG1.FEXTOSC": "00000001"}, "from": "ext"},
+        {"id": "lp_crystal_oscillator_optimized_", "label": "LP (crystal oscillator) optimized for 32.768 kHz", "set": {"CONFIG1.FEXTOSC": "00000000"}, "mul": 32768}
+      ]
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (RSTOSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "extosc_operating_per_fextosc_bit", "label": "EXTOSC operating per FEXTOSC bits", "set": {"CONFIG1.RSTOSC": "00000070"}, "from": "fextosc", "mul": 1},
+        {"id": "hfintosc_1mhz", "label": "HFINTOSC (1MHz)", "set": {"CONFIG1.RSTOSC": "00000060"}, "mul": 1000000},
+        {"id": "lfintosc_31khz", "label": "LFINTOSC (31kHz)", "set": {"CONFIG1.RSTOSC": "00000040"}, "mul": 31000},
+        {"id": "sosc_31khz", "label": "SOSC (31kHz)", "set": {"CONFIG1.RSTOSC": "00000030"}, "mul": 31000},
+        {"id": "extosc_with_4x_pll_with_extosc_o", "label": "EXTOSC with 4x PLL, with EXTOSC operating per FEXTOSC bits", "set": {"CONFIG1.RSTOSC": "00000010"}, "from": "fextosc", "mul": 4},
+        {"id": "hfintosc_with_2x_pll_32mhz", "label": "HFINTOSC with 2x PLL (32MHz)", "set": {"CONFIG1.RSTOSC": "00000000"}, "from": "intosc", "mul": 2}
+      ],
+      "max": 32000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.fextosc != 'ec_external_clock_above_8_mhz' || (in.ext >= 8000000)", "message": "EC (external clock) above 8 MHz: the external frequency must be 8 MHz or more."},
+    {"expr": "sel.fextosc != 'ec_external_clock_for_100_khz_to' || (in.ext >= 100000 && in.ext <= 8000000)", "message": "EC (external clock) for 100 kHz to 8 MHz: the external frequency must be 0.1-8 MHz."},
+    {"expr": "sel.fextosc != 'ec_external_clock_below_100_khz' || (in.ext <= 100000)", "message": "EC (external clock) below 100 kHz: the external frequency must be 0-0.1 MHz."},
+    {"expr": "sel.fextosc != 'hs_crystal_oscillator_above_4_mh' || (in.ext >= 4000000)", "message": "HS (crystal oscillator) above 4 MHz: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.fextosc != 'xt_crystal_oscillator_from_100_k' || (in.ext >= 100000 && in.ext <= 4000000)", "message": "XT (crystal oscillator) from 100 kHz to 4 MHz: the external frequency must be 0.1-4 MHz."}
+  ],
+  "symbols": {
+    "CONFIG1.FEXTOSC": {"ECH": "00000007", "ECM": "00000006", "ECL": "00000005", "OFF": "00000004", "HS": "00000002", "XT": "00000001", "LP": "00000000"},
+    "CONFIG1.RSTOSC": {"EXT1X": "00000070", "HFINT1": "00000060", "LFINT": "00000040", "SOSC": "00000030", "EXT4X": "00000010", "HFINT32": "00000000"}
+  }
+}

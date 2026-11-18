@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "id": "max32690",
+  "title": "MAX32690 clock tree",
+  "vendor": "Analog Devices",
+  "source": "MAX32690 user guide UG7618, GCR clock control",
+  "devices": ["^MAX32690"],
+  "fosc": "sysclk",
+  "inputs": {},
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ipo",
+      "label": "IPO 120 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "IPO 120 MHz", "mul": 120000000}
+      ],
+      "enable": {"field": "GCR_CLKCTRL.IPO_EN", "on": "00080000", "off": "00000000", "auto": "both"}
+    },
+    {
+      "id": "iso",
+      "label": "ISO 60 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "options": [
+        {"id": "on", "label": "ISO 60 MHz", "mul": 60000000}
+      ],
+      "enable": {"field": "GCR_CLKCTRL.ISO_EN", "on": "00040000", "off": "00000000", "auto": "on"},
+      "tooltip": "Internal secondary oscillator: the clock after reset."
+    },
+    {
+      "id": "erfo",
+      "label": "ERFO 32 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 2,
+      "options": [
+        {"id": "on", "label": "ERFO 32 MHz", "mul": 32000000}
+      ],
+      "enable": {"field": "GCR_CLKCTRL.ERFO_EN", "on": "00010000", "off": "00000000", "auto": "both"},
+      "tooltip": "External 32 MHz crystal."
+    },
+    {
+      "id": "ibro",
+      "label": "IBRO 7.3728 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "options": [
+        {"id": "on", "label": "IBRO 7.3728 MHz", "mul": 7372800}
+      ]
+    },
+    {
+      "id": "ertco",
+      "label": "ERTCO 32.768 kHz",
+      "kind": "source",
+      "x": 0,
+      "y": 4,
+      "options": [
+        {"id": "on", "label": "ERTCO 32.768 kHz", "mul": 32768}
+      ],
+      "enable": {"field": "GCR_CLKCTRL.ERTCO_EN", "on": "00020000", "off": "00000000", "auto": "both"},
+      "tooltip": "External 32.768 kHz crystal."
+    },
+    {
+      "id": "inro",
+      "label": "INRO 8 kHz",
+      "kind": "source",
+      "x": 0,
+      "y": 5,
+      "options": [
+        {"id": "on", "label": "INRO 8 kHz", "mul": 8000}
+      ]
+    },
+    {
+      "id": "sysosc",
+      "label": "SYS_OSC (SYSCLK_SEL)",
+      "kind": "mux",
+      "x": 1,
+      "y": 2,
+      "options": [
+        {"id": "ipo", "label": "IPO", "from": "ipo", "set": {"GCR_CLKCTRL.SYSCLK_SEL": "00000800"}},
+        {"id": "iso", "label": "ISO", "from": "iso", "set": {"GCR_CLKCTRL.SYSCLK_SEL": "00000000"}},
+        {"id": "erfo", "label": "ERFO", "from": "erfo", "set": {"GCR_CLKCTRL.SYSCLK_SEL": "00000400"}},
+        {"id": "ibro", "label": "IBRO", "from": "ibro", "set": {"GCR_CLKCTRL.SYSCLK_SEL": "00000A00"}},
+        {"id": "ertco", "label": "ERTCO", "from": "ertco", "set": {"GCR_CLKCTRL.SYSCLK_SEL": "00000C00"}},
+        {"id": "inro", "label": "INRO", "from": "inro", "set": {"GCR_CLKCTRL.SYSCLK_SEL": "00000600"}}
+      ]
+    },
+    {
+      "id": "sysclk",
+      "label": "SYSCLK (SYSCLK_DIV)",
+      "kind": "divider",
+      "x": 2,
+      "y": 2,
+      "options": [
+        {"id": "1", "label": "/1", "from": "sysosc", "set": {"GCR_CLKCTRL.SYSCLK_DIV": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "sysosc", "set": {"GCR_CLKCTRL.SYSCLK_DIV": "00000040"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "sysosc", "set": {"GCR_CLKCTRL.SYSCLK_DIV": "00000080"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "sysosc", "set": {"GCR_CLKCTRL.SYSCLK_DIV": "000000C0"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "sysosc", "set": {"GCR_CLKCTRL.SYSCLK_DIV": "00000100"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "sysosc", "set": {"GCR_CLKCTRL.SYSCLK_DIV": "00000140"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "sysosc", "set": {"GCR_CLKCTRL.SYSCLK_DIV": "00000180"}, "div": 64},
+        {"id": "128", "label": "/128", "from": "sysosc", "set": {"GCR_CLKCTRL.SYSCLK_DIV": "000001C0"}, "div": 128}
+      ],
+      "max": 120000000,
+      "consumer": true
+    }
+  ]
+}

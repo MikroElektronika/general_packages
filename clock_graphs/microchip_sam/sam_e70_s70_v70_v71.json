@@ -1,0 +1,182 @@
+{
+  "schema": 1,
+  "id": "sam_e70_s70_v70_v71",
+  "title": "SAM E70/S70/V70/V71 clock tree",
+  "vendor": "Microchip",
+  "source": "SAM E70/S70/V70/V71 datasheet DS60001527, PMC",
+  "devices": ["^ATSAM[ESV]7[01]"],
+  "fosc": "hclk",
+  "inputs": {
+    "main_xtal": {"label": "Main crystal frequency", "default": 12000000, "min": 3000000, "max": 20000000}
+  },
+  "settings": ["CKGR_MOR.MOSCXTBY", "CKGR_MOR.CFDEN"],
+  "nodes": [
+    {
+      "id": "main_rc",
+      "label": "Main RC",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "enable": {"field": "CKGR_MOR.MOSCRCEN", "on": "00000008", "off": "00000000", "auto": "on"},
+      "options": [
+        {"id": "4", "label": "RC 4 MHz", "mul": 4000000, "set": {"CKGR_MOR.MOSCRCF": "00000000"}},
+        {"id": "8", "label": "RC 8 MHz", "mul": 8000000, "set": {"CKGR_MOR.MOSCRCF": "00000010"}},
+        {"id": "12", "label": "RC 12 MHz", "mul": 12000000, "set": {"CKGR_MOR.MOSCRCF": "00000020"}}
+      ]
+    },
+    {
+      "id": "main_xtal",
+      "label": "Main crystal",
+      "kind": "source",
+      "x": 0,
+      "y": 2,
+      "input": "main_xtal",
+      "enable": {"field": "CKGR_MOR.MOSCXTEN", "on": "00000001", "off": "00000000", "auto": "both"},
+      "tooltip": "3-20 MHz crystal (CKGR_MOR.MOSCXTEN)."
+    },
+    {
+      "id": "mainck",
+      "label": "MAINCK",
+      "kind": "mux",
+      "x": 1,
+      "y": 1,
+      "options": [
+        {"id": "rc", "label": "Main RC", "from": "main_rc", "set": {"CKGR_MOR.MOSCSEL": "00000000"}},
+        {"id": "xtal", "label": "Main crystal", "from": "main_xtal", "set": {"CKGR_MOR.MOSCSEL": "01000000"}}
+      ]
+    },
+    {
+      "id": "slck",
+      "label": "Slow clock (SLCK)",
+      "kind": "source",
+      "x": 0,
+      "y": 4,
+      "tooltip": "SUPC_CR.XTALSEL switches SLCK to the 32.768 kHz crystal.",
+      "options": [
+        {"id": "rc", "label": "RC 32 kHz", "mul": 32000, "set": {"SUPC_CR.XTALSEL": "00000000"}},
+        {"id": "xtal", "label": "Crystal 32.768 kHz", "mul": 32768, "set": {"SUPC_CR.XTALSEL": "00000008"}}
+      ]
+    },
+    {
+      "id": "diva",
+      "label": "PLLA /DIVA",
+      "kind": "divider",
+      "x": 2,
+      "y": 1,
+      "range": {"from": "mainck", "op": "div", "min": 1, "max": 255, "field": "CKGR_PLLAR.DIVA", "lsb": 0, "scale": 1, "offset": 0},
+      "min": 8000000,
+      "max": 32000000,
+      "tooltip": "PLLA input: 8-32 MHz."
+    },
+    {
+      "id": "mula",
+      "label": "PLLA xMULA",
+      "kind": "multiplier",
+      "x": 3,
+      "y": 1,
+      "range": {"from": "diva", "op": "mul", "min": 2, "max": 62, "field": "CKGR_PLLAR.MULA", "lsb": 16, "scale": 1, "offset": -1},
+      "min": 160000000,
+      "max": 500000000,
+      "tooltip": "PLLACK: 160-500 MHz."
+    },
+    {
+      "id": "upll",
+      "label": "UPLL 480 MHz",
+      "kind": "source",
+      "x": 2,
+      "y": 3,
+      "enable": {"field": "CKGR_UCKR.UPLLEN", "on": "00010000", "off": "00000000", "auto": "both"},
+      "tooltip": "UTMI PLL: 480 MHz from a 12 or 16 MHz main crystal.",
+      "options": [
+        {"id": "on", "label": "UPLL 480 MHz", "mul": 480000000, "keeps": ["main_xtal"]}
+      ]
+    },
+    {
+      "id": "upllckdiv",
+      "label": "UPLLDIV2",
+      "kind": "divider",
+      "x": 3,
+      "y": 3,
+      "options": [
+        {"id": "1", "label": "/1", "from": "upll", "set": {"PMC_MCKR.UPLLDIV2": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "upll", "set": {"PMC_MCKR.UPLLDIV2": "00002000"}, "div": 2}
+      ]
+    },
+    {
+      "id": "css",
+      "label": "Master clock source",
+      "kind": "mux",
+      "x": 4,
+      "y": 1,
+      "options": [
+        {"id": "slck", "label": "SLCK", "from": "slck", "set": {"PMC_MCKR.CSS": "00000000"}},
+        {"id": "mainck", "label": "MAINCK", "from": "mainck", "set": {"PMC_MCKR.CSS": "00000001"}},
+        {"id": "plla", "label": "PLLA", "from": "mula", "set": {"PMC_MCKR.CSS": "00000002"}},
+        {"id": "upll", "label": "UPLLCKDIV", "from": "upllckdiv", "set": {"PMC_MCKR.CSS": "00000003"}}
+      ]
+    },
+    {
+      "id": "hclk",
+      "label": "HCLK (PRES)",
+      "kind": "divider",
+      "x": 5,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "css", "set": {"PMC_MCKR.PRES": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "css", "set": {"PMC_MCKR.PRES": "00000010"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "css", "set": {"PMC_MCKR.PRES": "00000020"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "css", "set": {"PMC_MCKR.PRES": "00000030"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "css", "set": {"PMC_MCKR.PRES": "00000040"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "css", "set": {"PMC_MCKR.PRES": "00000050"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "css", "set": {"PMC_MCKR.PRES": "00000060"}, "div": 64},
+        {"id": "3", "label": "/3", "from": "css", "set": {"PMC_MCKR.PRES": "00000070"}, "div": 3}
+      ],
+      "max": 300000000,
+      "consumer": true,
+      "tooltip": "Processor clock (HCLK/FCLK): at most 300 MHz."
+    },
+    {
+      "id": "mck",
+      "label": "MCK (MDIV)",
+      "kind": "divider",
+      "x": 6,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hclk", "set": {"PMC_MCKR.MDIV": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hclk", "set": {"PMC_MCKR.MDIV": "00000100"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hclk", "set": {"PMC_MCKR.MDIV": "00000200"}, "div": 4},
+        {"id": "3", "label": "/3", "from": "hclk", "set": {"PMC_MCKR.MDIV": "00000300"}, "div": 3}
+      ],
+      "max": 150000000,
+      "consumer": true,
+      "tooltip": "Master clock for the buses and peripherals: at most 150 MHz."
+    },
+    {
+      "id": "usbsrc",
+      "label": "USB source",
+      "kind": "mux",
+      "x": 4,
+      "y": 3,
+      "options": [
+        {"id": "plla", "label": "PLLA", "from": "mula", "set": {"PMC_USB.USBS": "00000000"}},
+        {"id": "upll", "label": "UPLL", "from": "upll", "set": {"PMC_USB.USBS": "00000001"}}
+      ]
+    },
+    {
+      "id": "usbclk",
+      "label": "USB_48M /USBDIV",
+      "kind": "divider",
+      "x": 5,
+      "y": 3,
+      "range": {"from": "usbsrc", "op": "div", "min": 1, "max": 16, "field": "PMC_USB.USBDIV", "lsb": 8, "scale": 1, "offset": -1},
+      "max": 48000000,
+      "tooltip": "USB full speed needs 48 MHz."
+    }
+  ],
+  "derive": [
+    {"field": "EEFC_FMR.FWS", "cases": [{"when": "f.hclk <= 23000000", "value": "00000000"}, {"when": "f.hclk <= 46000000", "value": "00000100"}, {"when": "f.hclk <= 69000000", "value": "00000200"}, {"when": "f.hclk <= 92000000", "value": "00000300"}, {"when": "f.hclk <= 115000000", "value": "00000400"}, {"when": "f.hclk <= 138000000", "value": "00000500"}], "default": "00000600"}
+  ],
+  "constraints": [
+    {"expr": "(sel.css != 'upll' && sel.usbsrc != 'upll') || in.main_xtal == 12000000 || in.main_xtal == 16000000", "message": "UPLL needs a 12 or 16 MHz main crystal."}
+  ]
+}

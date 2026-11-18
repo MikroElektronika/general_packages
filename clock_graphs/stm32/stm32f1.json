@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "id": "stm32f1",
+  "title": "STM32F101/F102/F103 system clock tree",
+  "vendor": "STMicroelectronics",
+  "source": "RM0008, DS5319",
+  "devices": ["^STM32F10[123]"],
+  "fosc": "hclk",
+  "inputs": {
+    "hse": {"label": "HSE frequency", "default": 8000000, "min": 4000000, "max": 16000000}
+  },
+  "settings": ["RCC_CR.HSEBYP"],
+  "nodes": [
+    {
+      "id": "hsi",
+      "label": "HSI 8 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "HSI 8 MHz", "mul": 8000000}
+      ],
+      "enable": {"field": "RCC_CR.HSION", "on": "00000001", "off": "00000000", "auto": "on"}
+    },
+    {
+      "id": "hsi_div2",
+      "label": "HSI/2",
+      "kind": "divider",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "2", "label": "/2", "from": "hsi", "div": 2}
+      ]
+    },
+    {
+      "id": "hse",
+      "label": "HSE",
+      "kind": "source",
+      "x": 0,
+      "y": 2,
+      "input": "hse",
+      "enable": {"field": "RCC_CR.HSEON", "on": "00010000", "off": "00000000", "auto": "both"}
+    },
+    {
+      "id": "pllxtpre",
+      "label": "HSE prescaler",
+      "kind": "divider",
+      "x": 1,
+      "y": 2,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hse", "set": {"RCC_CFGR.PLLXTPRE": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hse", "set": {"RCC_CFGR.PLLXTPRE": "00020000"}, "div": 2}
+      ]
+    },
+    {
+      "id": "pllsrc",
+      "label": "PLL source",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "hsi2", "label": "HSI/2", "from": "hsi_div2", "set": {"RCC_CFGR.PLLSRC": "00000000"}},
+        {"id": "hse", "label": "HSE", "from": "pllxtpre", "set": {"RCC_CFGR.PLLSRC": "00010000"}}
+      ]
+    },
+    {
+      "id": "pllmul",
+      "label": "PLLMUL",
+      "kind": "multiplier",
+      "x": 3,
+      "y": 1,
+      "options": [
+        {"id": "2", "label": "x2", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00000000"}, "mul": 2},
+        {"id": "3", "label": "x3", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00040000"}, "mul": 3},
+        {"id": "4", "label": "x4", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00080000"}, "mul": 4},
+        {"id": "5", "label": "x5", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "000C0000"}, "mul": 5},
+        {"id": "6", "label": "x6", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00100000"}, "mul": 6},
+        {"id": "7", "label": "x7", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00140000"}, "mul": 7},
+        {"id": "8", "label": "x8", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00180000"}, "mul": 8},
+        {"id": "9", "label": "x9", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "001C0000"}, "mul": 9},
+        {"id": "10", "label": "x10", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00200000"}, "mul": 10},
+        {"id": "11", "label": "x11", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00240000"}, "mul": 11},
+        {"id": "12", "label": "x12", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00280000"}, "mul": 12},
+        {"id": "13", "label": "x13", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "002C0000"}, "mul": 13},
+        {"id": "14", "label": "x14", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00300000"}, "mul": 14},
+        {"id": "15", "label": "x15", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00340000"}, "mul": 15},
+        {"id": "16", "label": "x16", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00380000"}, "mul": 16}
+      ],
+      "max": 72000000,
+      "enable": {"field": "RCC_CR.PLLON", "on": "01000000", "off": "00000000", "auto": "both"}
+    },
+    {
+      "id": "usbclk",
+      "label": "USB prescaler",
+      "kind": "divider",
+      "x": 4,
+      "y": 3,
+      "options": [
+        {"id": "1_5", "label": "/1.5", "from": "pllmul", "set": {"RCC_CFGR.USBPRE": "00000000"}, "mul": 2, "div": 3},
+        {"id": "1", "label": "/1", "from": "pllmul", "set": {"RCC_CFGR.USBPRE": "00400000"}, "div": 1}
+      ],
+      "max": 48000000,
+      "tooltip": "USB needs exactly 48 MHz."
+    },
+    {
+      "id": "sysclk",
+      "label": "SYSCLK",
+      "kind": "mux",
+      "x": 5,
+      "y": 0,
+      "options": [
+        {"id": "hsi", "label": "HSI", "from": "hsi", "set": {"RCC_CFGR.SW": "00000000"}},
+        {"id": "hse", "label": "HSE", "from": "hse", "set": {"RCC_CFGR.SW": "00000001"}},
+        {"id": "pll", "label": "PLL", "from": "pllmul", "set": {"RCC_CFGR.SW": "00000002"}}
+      ],
+      "max": 72000000
+    },
+    {
+      "id": "hclk",
+      "label": "HCLK (AHB)",
+      "kind": "divider",
+      "x": 6,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000080"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000090"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000A0"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000B0"}, "div": 16},
+        {"id": "64", "label": "/64", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000C0"}, "div": 64},
+        {"id": "128", "label": "/128", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000D0"}, "div": 128},
+        {"id": "256", "label": "/256", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000E0"}, "div": 256},
+        {"id": "512", "label": "/512", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000F0"}, "div": 512}
+      ],
+      "max": 72000000,
+      "consumer": true
+    },
+    {
+      "id": "pclk1",
+      "label": "PCLK1 (APB1)",
+      "kind": "divider",
+      "x": 7,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000400"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000500"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000600"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000700"}, "div": 16}
+      ],
+      "max": 36000000,
+      "consumer": true
+    },
+    {
+      "id": "pclk2",
+      "label": "PCLK2 (APB2)",
+      "kind": "divider",
+      "x": 7,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00002000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00002800"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00003000"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00003800"}, "div": 16}
+      ],
+      "max": 72000000,
+      "consumer": true
+    },
+    {
+      "id": "adcclk",
+      "label": "ADC prescaler",
+      "kind": "divider",
+      "x": 8,
+      "y": 1,
+      "options": [
+        {"id": "2", "label": "/2", "from": "pclk2", "set": {"RCC_CFGR.ADCPRE": "00000000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "pclk2", "set": {"RCC_CFGR.ADCPRE": "00004000"}, "div": 4},
+        {"id": "6", "label": "/6", "from": "pclk2", "set": {"RCC_CFGR.ADCPRE": "00008000"}, "div": 6},
+        {"id": "8", "label": "/8", "from": "pclk2", "set": {"RCC_CFGR.ADCPRE": "0000C000"}, "div": 8}
+      ],
+      "max": 14000000
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.sysclk != 'pll' || f.pllmul >= 16000000", "message": "PLL output must be at least 16 MHz."}
+  ],
+  "variants": [
+    {"devices": ["^STM32F101"], "limits": {"sysclk": {"max": 36000000}, "pllmul": {"max": 36000000}, "hclk": {"max": 36000000}, "pclk2": {"max": 36000000}}},
+    {"devices": ["^STM32F102"], "limits": {"sysclk": {"max": 48000000}, "pllmul": {"max": 48000000}, "hclk": {"max": 48000000}, "pclk2": {"max": 48000000}, "pclk1": {"max": 24000000}}}
+  ]
+}

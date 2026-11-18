@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "pic_pic16f882",
+  "title": "PIC oscillator fuses (PIC16F882, PIC16F883, PIC16F884, PIC16F886 and 1 more)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC16F882$", "^PIC16F883$", "^PIC16F884$", "^PIC16F886$", "^PIC16F887$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 20000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 20000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (OSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "rc_oscillator_clkout_function_on", "label": "RC oscillator: CLKOUT function on RA6/OSC2/CLKOUT pin, RC on", "set": {"CONFIG1.OSC": "00000007"}, "from": "ext", "mul": 1},
+        {"id": "intosc_oscillator_clkout_functio", "label": "INTOSC oscillator: CLKOUT function on RA6/OSC2/CLKOUT pin, I", "set": {"CONFIG1.OSC": "00000005"}, "from": "intosc", "mul": 1},
+        {"id": "intoscio_oscillator_i_o_function", "label": "INTOSCIO oscillator: I/O function on RA6/OSC2/CLKOUT pin, I/", "set": {"CONFIG1.OSC": "00000004"}, "from": "intosc", "mul": 1},
+        {"id": "ec_i_o_function_on_ra6_osc2_clko", "label": "EC: I/O function on RA6/OSC2/CLKOUT pin, CLKIN on RA7/OSC1/C", "set": {"CONFIG1.OSC": "00000003"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator_high_speed_crystal", "label": "HS oscillator: High-speed crystal/resonator on RA6/OSC2/CLKO", "set": {"CONFIG1.OSC": "00000002"}, "from": "ext", "mul": 1},
+        {"id": "xt_oscillator_crystal_resonator_", "label": "XT oscillator: Crystal/resonator on RA6/OSC2/CLKOUT and RA7/", "set": {"CONFIG1.OSC": "00000001"}, "from": "ext", "mul": 1},
+        {"id": "lp_oscillator_low_power_crystal_", "label": "LP oscillator: Low-power crystal on RA6/OSC2/CLKOUT and RA7/", "set": {"CONFIG1.OSC": "00000000"}, "mul": 32768}
+      ],
+      "max": 20000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'hs_oscillator_high_speed_crystal' || (in.ext >= 4000000)", "message": "HS oscillator: High-speed crystal/resonator on RA6/OSC2/CLKOUT and RA7/OSC1/CLKIN: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.source != 'xt_oscillator_crystal_resonator_' || (in.ext >= 100000 && in.ext <= 4000000)", "message": "XT oscillator: Crystal/resonator on RA6/OSC2/CLKOUT and RA7/OSC1/CLKIN: the external frequency must be 0.1-4 MHz."}
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pic_pic18f24j11",
+  "title": "PIC oscillator fuses (PIC18F24J11, PIC18F25J11, PIC18F26J11, PIC18F44J11 and 8 more)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC18F24J11$", "^PIC18F25J11$", "^PIC18F26J11$", "^PIC18F44J11$", "^PIC18F45J11$", "^PIC18F46J11$", "^PIC18LF24J11$", "^PIC18LF25J11$", "^PIC18LF26J11$", "^PIC18LF44J11$", "^PIC18LF45J11$", "^PIC18LF46J11$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 48000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 48000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (OSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "ec_pll_clko_ra6", "label": "EC+PLL (CLKO-RA6)", "set": {"CONFIG2L.OSC": "00000007"}, "from": "ext", "mul": 1},
+        {"id": "ec_clko_ra6", "label": "EC (CLKO-RA6)", "set": {"CONFIG2L.OSC": "00000006"}, "from": "ext", "mul": 1},
+        {"id": "hs_pll", "label": "HS+PLL", "set": {"CONFIG2L.OSC": "00000005"}, "from": "ext", "mul": 1},
+        {"id": "hs", "label": "HS", "set": {"CONFIG2L.OSC": "00000004"}, "from": "ext", "mul": 1},
+        {"id": "intoscpllo_clko_ra6", "label": "INTOSCPLLO (CLKO-RA6)", "set": {"CONFIG2L.OSC": "00000003"}, "from": "intosc", "mul": 1},
+        {"id": "intoscpll", "label": "INTOSCPLL", "set": {"CONFIG2L.OSC": "00000002"}, "from": "intosc", "mul": 1},
+        {"id": "intosco_clko_ra6", "label": "INTOSCO (CLKO-RA6)", "set": {"CONFIG2L.OSC": "00000001"}, "from": "intosc", "mul": 1},
+        {"id": "intosc", "label": "INTOSC", "set": {"CONFIG2L.OSC": "00000000"}, "from": "intosc", "mul": 1}
+      ],
+      "max": 48000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'hs_pll' || (in.ext >= 4000000)", "message": "HS+PLL: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.source != 'hs' || (in.ext >= 4000000)", "message": "HS: the external frequency must be 4 MHz or more."}
+  ],
+  "symbols": {
+    "CONFIG2L.OSC": {"ECPLL": "00000007", "EC": "00000006", "HSPLL": "00000005", "HS": "00000004", "INTOSCPLLO": "00000003", "INTOSCPLL": "00000002", "INTOSCO": "00000001", "INTOSC": "00000000"}
+  }
+}

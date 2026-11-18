@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "pic_pic16c432",
+  "title": "PIC oscillator fuses (PIC16C432, PIC16C620A, PIC16C621, PIC16C622 and 39 more)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC16C432$", "^PIC16C620A$", "^PIC16C621$", "^PIC16C622$", "^PIC16C622A$", "^PIC16C62A$", "^PIC16C62B$", "^PIC16C63$", "^PIC16C63A$", "^PIC16C64A$", "^PIC16C65A$", "^PIC16C65B$", "^PIC16C66$", "^PIC16C662$", "^PIC16C67$", "^PIC16C710$", "^PIC16C711$", "^PIC16C715$", "^PIC16C716$", "^PIC16C72$", "^PIC16C72A$", "^PIC16C73A$", "^PIC16C73B$", "^PIC16C74A$", "^PIC16C74B$", "^PIC16C76$", "^PIC16C77$", "^PIC16C923$", "^PIC16C924$", "^PIC16C925$", "^PIC16C926$", "^PIC16CE623$", "^PIC16CE624$", "^PIC16CE625$", "^PIC16CR62$", "^PIC16CR620A$", "^PIC16CR63$", "^PIC16CR64$", "^PIC16CR65$", "^PIC16CR72$", "^PIC16CR83$", "^PIC16CR84$", "^PIC16CR926$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 40000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 40000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (FOSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "rc_oscillator", "label": "RC oscillator", "set": {"CONFIG1.FOSC": "00000003"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator", "label": "HS oscillator", "set": {"CONFIG1.FOSC": "00000002"}, "from": "ext", "mul": 1},
+        {"id": "xt_oscillator", "label": "XT oscillator", "set": {"CONFIG1.FOSC": "00000001"}, "from": "ext", "mul": 1},
+        {"id": "lp_oscillator", "label": "LP oscillator", "set": {"CONFIG1.FOSC": "00000000"}, "mul": 32768}
+      ],
+      "max": 40000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'hs_oscillator' || (in.ext >= 4000000)", "message": "HS oscillator: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.source != 'xt_oscillator' || (in.ext >= 100000 && in.ext <= 4000000)", "message": "XT oscillator: the external frequency must be 0.1-4 MHz."}
+  ],
+  "symbols": {
+    "CONFIG1.FOSC": {"RC,_RC_OSC": "00000003", "HS,_HS_OSC": "00000002", "XT,_XT_OSC": "00000001", "LP,_LP_OSC": "00000000"}
+  }
+}

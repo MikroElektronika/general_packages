@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "avr_atmega406",
+  "title": "AVR clock fuses (ATMEGA406)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC AVR definitions (LOW.SUT_CKSEL, CKDIV8), AVR datasheets",
+  "devices": ["^ATMEGA406$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 1000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External clock / crystal",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext",
+      "tooltip": "Frequency of the external clock, crystal, resonator or RC network."
+    },
+    {
+      "id": "source",
+      "label": "Clock source (SUT_CKSEL)",
+      "kind": "mux",
+      "x": 1,
+      "y": 0,
+      "options": [
+      ],
+      "max": 1000000,
+      "consumer": true
+    }
+  ],
+  "constraints": []
+}

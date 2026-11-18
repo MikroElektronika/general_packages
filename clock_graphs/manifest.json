@@ -1,0 +1,11 @@
+{
+    "name": "clock_graphs",
+    "display_name": "MikroE Clock Graphs",
+    "author": "MIKROE",
+    "hidden": true,
+    "package_changed": true,
+    "type": "clock_graphs",
+    "category": "utility",
+    "install_location": "%APPLICATION_DATA_DIR%/resources/clock_graphs",
+    "gh_package_name": "clock_graphs.7z"
+}

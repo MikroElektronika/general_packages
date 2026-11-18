@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "avr_at90can128",
+  "title": "AVR clock fuses (AT90CAN128, AT90USB1286, AT90USB1287, AT90USB162 and 9 more)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC AVR definitions (LOW.SUT_CKSEL, CKDIV8), AVR datasheets",
+  "devices": ["^AT90CAN128$", "^AT90USB1286$", "^AT90USB1287$", "^AT90USB162$", "^AT90USB646$", "^AT90USB647$", "^AT90USB82$", "^ATMEGA162$", "^ATMEGA16U2$", "^ATMEGA16U4$", "^ATMEGA32U2$", "^ATMEGA32U4$", "^ATMEGA8U2$"],
+  "fosc": "cpu",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 16000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External clock / crystal",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext",
+      "tooltip": "Frequency of the external clock, crystal, resonator or RC network."
+    },
+    {
+      "id": "source",
+      "label": "Clock source (SUT_CKSEL)",
+      "kind": "mux",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "ext_clock", "label": "Ext. Clock", "set": {"LOW.SUT_CKSEL": "00000000/0000000F"}, "from": "ext"},
+        {"id": "int_rc_osc", "label": "Int. RC Osc.", "set": {"LOW.SUT_CKSEL": "00000002/0000000F"}, "mul": 8000000},
+        {"id": "ext_low_freq_crystal", "label": "Ext. Low-Freq. Crystal", "set": {"LOW.SUT_CKSEL": "00000004/0000000C"}, "mul": 32768},
+        {"id": "ext_crystal_osc_0_4_0_9_mhz", "label": "Ext. Crystal Osc. 0.4-0.9 MHz", "set": {"LOW.SUT_CKSEL": "00000008/0000000E"}, "from": "ext"},
+        {"id": "ext_crystal_osc_0_9_3_0_mhz", "label": "Ext. Crystal Osc. 0.9-3.0 MHz", "set": {"LOW.SUT_CKSEL": "0000000A/0000000E"}, "from": "ext"},
+        {"id": "ext_crystal_osc_3_0_8_0_mhz", "label": "Ext. Crystal Osc. 3.0-8.0 MHz", "set": {"LOW.SUT_CKSEL": "0000000C/0000000E"}, "from": "ext"},
+        {"id": "ext_crystal_osc_8_0_mhz", "label": "Ext. Crystal Osc. 8.0-    MHz", "set": {"LOW.SUT_CKSEL": "0000000E/0000000E"}, "from": "ext"}
+      ]
+    },
+    {
+      "id": "cpu",
+      "label": "CPU clock (CKDIV8)",
+      "kind": "divider",
+      "x": 2,
+      "y": 0,
+      "max": 16000000,
+      "consumer": true,
+      "options": [
+        {"id": "1", "label": "/1", "from": "source", "set": {"LOW.CKDIV8": "00000080"}},
+        {"id": "8", "label": "/8", "from": "source", "div": 8, "set": {"LOW.CKDIV8": "00000000"}}
+      ]
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'ext_crystal_osc_0_4_0_9_mhz' || (in.ext >= 400000 && in.ext <= 900000)", "message": "Ext. Crystal Osc. 0.4-0.9 MHz: the external frequency must be 0.4-0.9 MHz."},
+    {"expr": "sel.source != 'ext_crystal_osc_0_9_3_0_mhz' || (in.ext >= 900000 && in.ext <= 3000000)", "message": "Ext. Crystal Osc. 0.9-3.0 MHz: the external frequency must be 0.9-3 MHz."},
+    {"expr": "sel.source != 'ext_crystal_osc_3_0_8_0_mhz' || (in.ext >= 3000000 && in.ext <= 8000000)", "message": "Ext. Crystal Osc. 3.0-8.0 MHz: the external frequency must be 3-8 MHz."},
+    {"expr": "sel.source != 'ext_crystal_osc_8_0_mhz' || (in.ext >= 8000000)", "message": "Ext. Crystal Osc. 8.0-    MHz: the external frequency must be 8-16 MHz."}
+  ]
+}

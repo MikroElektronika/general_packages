@@ -1,0 +1,50 @@
+name: Clock graphs
+
+on:
+  pull_request:
+    paths:
+      - "clock_graphs/**"
+      - "scripts/clock_graphs/**"
+      - ".github/workflows/clock-graphs-check.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "clock_graphs/**"
+      - "scripts/clock_graphs/**"
+      - ".github/workflows/clock-graphs-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      # Hand-written graphs come from scripts/clock_graphs/*_graphs.py: the committed JSON must match.
+      # (renesas_ra/ is converted from the FSP packs locally and is only validated.)
+      - name: Check generated graphs
+        run: |
+          for generator in scripts/clock_graphs/*_graphs.py; do
+            python "$generator"
+          done
+          test -z "$(git status --porcelain -- clock_graphs ':!clock_graphs/renesas_ra')" || {
+            git status --short -- clock_graphs
+            echo "::error::Generated clock graphs are out of date: run the generators in scripts/clock_graphs and commit the result."
+            exit 1
+          }
+
+      # Structure, expressions and index.json freshness. Packaging into clock_graphs.7z is done by
+      # the Package Release Assets workflow (scripts/package.py picks up clock_graphs/manifest.json).
+      - name: Validate clock graphs
+        run: python scripts/clock_graphs/validate.py

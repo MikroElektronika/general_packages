@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "pic_pic18f23k22",
+  "title": "PIC oscillator fuses (PIC18F23K22, PIC18F24K22, PIC18F25K22, PIC18F26K22 and 12 more)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC18F23K22$", "^PIC18F24K22$", "^PIC18F25K22$", "^PIC18F26K22$", "^PIC18F43K22$", "^PIC18F44K22$", "^PIC18F45K22$", "^PIC18F46K22$", "^PIC18LF23K22$", "^PIC18LF24K22$", "^PIC18LF25K22$", "^PIC18LF26K22$", "^PIC18LF43K22$", "^PIC18LF44K22$", "^PIC18LF45K22$", "^PIC18LF46K22$"],
+  "fosc": "pll",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 64000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 64000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (FOSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "ec_oscillator_low_power_500_khz", "label": "EC oscillator (low power, <500 kHz)", "set": {"CONFIG1H.FOSC": "0000000D"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_clkout_function_on", "label": "EC oscillator, CLKOUT function on OSC2 (low power, <500 kHz)", "set": {"CONFIG1H.FOSC": "0000000C"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_medium_power_500_k", "label": "EC oscillator (medium power, 500 kHz-16 MHz)", "set": {"CONFIG1H.FOSC": "0000000B"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_clkout_function_on_", "label": "EC oscillator, CLKOUT function on OSC2 (medium power, 500 kH", "set": {"CONFIG1H.FOSC": "0000000A"}, "from": "ext", "mul": 1},
+        {"id": "internal_oscillator_block_clkout", "label": "Internal oscillator block, CLKOUT function on OSC2", "set": {"CONFIG1H.FOSC": "00000009"}, "from": "intosc", "mul": 1},
+        {"id": "internal_oscillator_block", "label": "Internal oscillator block", "set": {"CONFIG1H.FOSC": "00000008"}, "from": "intosc", "mul": 1},
+        {"id": "external_rc_oscillator", "label": "External RC oscillator", "set": {"CONFIG1H.FOSC": "00000007"}, "from": "ext", "mul": 1},
+        {"id": "external_rc_oscillator_clkout_fu", "label": "External RC oscillator, CLKOUT function on OSC2", "set": {"CONFIG1H.FOSC": "00000006"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_high_power_16_mhz", "label": "EC oscillator (high power, >16 MHz)", "set": {"CONFIG1H.FOSC": "00000005"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_clkout_function_on__", "label": "EC oscillator, CLKOUT function on OSC2 (high power, >16 MHz)", "set": {"CONFIG1H.FOSC": "00000004"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator_medium_power_4_16_", "label": "HS oscillator (medium power 4-16 MHz)", "set": {"CONFIG1H.FOSC": "00000003"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator_high_power_16_mhz", "label": "HS oscillator (high power > 16 MHz)", "set": {"CONFIG1H.FOSC": "00000002"}, "from": "ext", "mul": 1},
+        {"id": "xt_oscillator", "label": "XT oscillator", "set": {"CONFIG1H.FOSC": "00000001"}, "from": "ext", "mul": 1},
+        {"id": "lp_oscillator", "label": "LP oscillator", "set": {"CONFIG1H.FOSC": "00000000"}, "mul": 32768}
+      ]
+    },
+    {
+      "id": "pll",
+      "label": "4x PLL (PLLCFG)",
+      "kind": "multiplier",
+      "x": 3,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "x1 (PLL off)", "from": "source", "set": {"CONFIG1H.PLLCFG": "00000000"}},
+        {"id": "4", "label": "x4 (PLL on)", "from": "source", "mul": 4, "set": {"CONFIG1H.PLLCFG": "00000010"}}
+      ],
+      "max": 64000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'ec_oscillator_low_power_500_khz' || (in.ext <= 500000)", "message": "EC oscillator (low power: the external frequency must be 0-0.5 MHz."},
+    {"expr": "sel.source != 'ec_oscillator_clkout_function_on' || (in.ext <= 500000)", "message": "EC oscillator: the external frequency must be 0-0.5 MHz."},
+    {"expr": "sel.source != 'ec_oscillator_medium_power_500_k' || (in.ext >= 500000 && in.ext <= 16000000)", "message": "EC oscillator (medium power: the external frequency must be 0.5-16 MHz."},
+    {"expr": "sel.source != 'ec_oscillator_clkout_function_on_' || (in.ext >= 500000 && in.ext <= 16000000)", "message": "EC oscillator: the external frequency must be 0.5-16 MHz."},
+    {"expr": "sel.source != 'ec_oscillator_high_power_16_mhz' || (in.ext >= 16000000)", "message": "EC oscillator (high power: the external frequency must be 16 MHz or more."},
+    {"expr": "sel.source != 'ec_oscillator_clkout_function_on__' || (in.ext >= 16000000)", "message": "EC oscillator: the external frequency must be 16 MHz or more."},
+    {"expr": "sel.source != 'hs_oscillator_medium_power_4_16_' || (in.ext >= 4000000 && in.ext <= 16000000)", "message": "HS oscillator (medium power 4-16 MHz): the external frequency must be 4-16 MHz."},
+    {"expr": "sel.source != 'hs_oscillator_high_power_16_mhz' || (in.ext >= 16000000)", "message": "HS oscillator (high power > 16 MHz): the external frequency must be 16 MHz or more."},
+    {"expr": "sel.source != 'xt_oscillator' || (in.ext >= 100000 && in.ext <= 4000000)", "message": "XT oscillator: the external frequency must be 0.1-4 MHz."}
+  ],
+  "symbols": {
+    "CONFIG1H.FOSC": {"ECLPIO6": "0000000D", "ECLP": "0000000C", "ECMPIO6": "0000000B", "ECMP": "0000000A", "INTIO7": "00000009", "INTIO67": "00000008", "RCIO6": "00000007", "RC": "00000006", "ECHPIO6": "00000005", "ECHP": "00000004", "HSMP": "00000003", "HSHP": "00000002", "XT": "00000001", "LP": "00000000"},
+    "CONFIG1H.PLLCFG": {"OFF": "00000000", "ON": "00000010"}
+  }
+}

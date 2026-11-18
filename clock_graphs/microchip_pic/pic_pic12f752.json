@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "pic_pic12f752",
+  "title": "PIC oscillator fuses (PIC12F752, PIC12HV752, PIC16F753, PIC16HV753)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC12F752$", "^PIC12HV752$", "^PIC16F753$", "^PIC16HV753$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 20000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 20000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (FOSC0)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "ec_oscillator_mode_clkin_functio", "label": "EC oscillator mode.  CLKIN function on RA5/CLKIN", "set": {"CONFIG.FOSC0": "00000001"}, "from": "ext", "mul": 1},
+        {"id": "internal_oscillator_mode_i_o_fun", "label": "Internal oscillator mode.  I/O function on RA5/CLKIN", "set": {"CONFIG.FOSC0": "00000000"}, "from": "intosc", "mul": 1}
+      ],
+      "max": 20000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [],
+  "symbols": {
+    "CONFIG.FOSC0": {"EC": "00000001", "INT": "00000000"}
+  }
+}

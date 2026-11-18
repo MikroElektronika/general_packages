@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "pic_pic18f25k80",
+  "title": "PIC oscillator fuses (PIC18F25K80, PIC18F26K80, PIC18F45K80, PIC18F46K80 and 19 more)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC18F25K80$", "^PIC18F26K80$", "^PIC18F45K80$", "^PIC18F46K80$", "^PIC18F65K22$", "^PIC18F65K80$", "^PIC18F65K90$", "^PIC18F66K22$", "^PIC18F66K80$", "^PIC18F66K90$", "^PIC18F67K22$", "^PIC18F85K22$", "^PIC18F85K90$", "^PIC18F86K22$", "^PIC18F86K90$", "^PIC18F87K22$", "^PIC18F87K90$", "^PIC18LF25K80$", "^PIC18LF26K80$", "^PIC18LF45K80$", "^PIC18LF46K80$", "^PIC18LF65K80$", "^PIC18LF66K80$"],
+  "fosc": "pll",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 64000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 64000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (FOSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "external_rc_oscillator", "label": "External RC oscillator", "set": {"CONFIG1H.FOSC": "00000007"}, "from": "ext", "mul": 1},
+        {"id": "external_rc_oscillator_clkout_fu", "label": "External RC oscillator, CLKOUT function on OSC2", "set": {"CONFIG1H.FOSC": "00000006"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_low_power_dc_160_k", "label": "EC oscillator (Low power, DC - 160 kHz)", "set": {"CONFIG1H.FOSC": "0000000D"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_clkout_function_on", "label": "EC oscillator, CLKOUT function on OSC2 (Low power, DC - 160 ", "set": {"CONFIG1H.FOSC": "0000000C"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_medium_power_160_k", "label": "EC oscillator (Medium power, 160 kHz - 16 MHz)", "set": {"CONFIG1H.FOSC": "0000000B"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_clkout_function_on_", "label": "EC oscillator, CLKOUT function on OSC2 (Medium power, 160 kH", "set": {"CONFIG1H.FOSC": "0000000A"}, "from": "ext", "mul": 1},
+        {"id": "internal_rc_oscillator_clkout_fu", "label": "Internal RC oscillator, CLKOUT function on OSC2", "set": {"CONFIG1H.FOSC": "00000009"}, "from": "intosc", "mul": 1},
+        {"id": "internal_rc_oscillator", "label": "Internal RC oscillator", "set": {"CONFIG1H.FOSC": "00000008"}, "from": "intosc", "mul": 1},
+        {"id": "ec_oscillator_high_power_16_mhz_", "label": "EC oscillator (High power, 16 MHz - 64 MHz)", "set": {"CONFIG1H.FOSC": "00000005"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_clkout_function_on__", "label": "EC oscillator, CLKOUT function on OSC2 (High power, 16 MHz -", "set": {"CONFIG1H.FOSC": "00000004"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator_medium_power_4_mhz", "label": "HS oscillator (Medium power, 4 MHz - 16 MHz)", "set": {"CONFIG1H.FOSC": "00000003"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator_high_power_16_mhz_", "label": "HS oscillator (High power, 16 MHz - 25 MHz)", "set": {"CONFIG1H.FOSC": "00000002"}, "from": "ext", "mul": 1},
+        {"id": "xt_oscillator", "label": "XT oscillator", "set": {"CONFIG1H.FOSC": "00000001"}, "from": "ext", "mul": 1},
+        {"id": "lp_oscillator", "label": "LP oscillator", "set": {"CONFIG1H.FOSC": "00000000"}, "mul": 32768}
+      ]
+    },
+    {
+      "id": "pll",
+      "label": "4x PLL (PLLCFG)",
+      "kind": "multiplier",
+      "x": 3,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "x1 (PLL off)", "from": "source", "set": {"CONFIG1H.PLLCFG": "00000000"}},
+        {"id": "4", "label": "x4 (PLL on)", "from": "source", "mul": 4, "set": {"CONFIG1H.PLLCFG": "00000010"}}
+      ],
+      "max": 64000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'ec_oscillator_medium_power_160_k' || (in.ext >= 160000 && in.ext <= 16000000)", "message": "EC oscillator (Medium power: the external frequency must be 0.16-16 MHz."},
+    {"expr": "sel.source != 'ec_oscillator_clkout_function_on_' || (in.ext >= 160000 && in.ext <= 16000000)", "message": "EC oscillator: the external frequency must be 0.16-16 MHz."},
+    {"expr": "sel.source != 'ec_oscillator_high_power_16_mhz_' || (in.ext >= 16000000 && in.ext <= 64000000)", "message": "EC oscillator (High power: the external frequency must be 16-64 MHz."},
+    {"expr": "sel.source != 'ec_oscillator_clkout_function_on__' || (in.ext >= 16000000 && in.ext <= 64000000)", "message": "EC oscillator: the external frequency must be 16-64 MHz."},
+    {"expr": "sel.source != 'hs_oscillator_medium_power_4_mhz' || (in.ext >= 4000000 && in.ext <= 16000000)", "message": "HS oscillator (Medium power: the external frequency must be 4-16 MHz."},
+    {"expr": "sel.source != 'hs_oscillator_high_power_16_mhz_' || (in.ext >= 16000000 && in.ext <= 25000000)", "message": "HS oscillator (High power: the external frequency must be 16-25 MHz."},
+    {"expr": "sel.source != 'xt_oscillator' || (in.ext >= 100000 && in.ext <= 4000000)", "message": "XT oscillator: the external frequency must be 0.1-4 MHz."}
+  ],
+  "symbols": {
+    "CONFIG1H.FOSC": {"RCIO": "00000007", "RC": "00000006", "EC1": "0000000D", "EC1IO": "0000000C", "EC2": "0000000B", "EC2IO": "0000000A", "INTIO1": "00000009", "INTIO2": "00000008", "EC3": "00000005", "EC3IO": "00000004", "HS1": "00000003", "HS2": "00000002", "XT": "00000001", "LP": "00000000"},
+    "CONFIG1H.PLLCFG": {"ON": "00000010", "OFF": "00000000"}
+  }
+}

@@ -46,6 +46,33 @@ def filter_releases_by_version(json_data):
 
     return json_data
 
+def core_device_name_candidates(mchp_name, mchp_names=()):
+    """Return the MikroE core device names that may correspond to a Microchip name.
+
+    Microchip's packs (tool pack and DFP device lists) name the first silicon
+    revision without a suffix, while the MikroE core spells the revision out:
+        ATSAMD20J18 -> ATSAMD20J18A, ATSAMG53G19 -> ATSAMG53G19B,
+        ATSAMG51G18 -> SAMG51G18A (also without the 'AT' prefix).
+    The exact name always comes first. An alias that Microchip itself lists as a
+    separate device (e.g. ATSAMD20E15B next to ATSAMD20E15) is skipped, so it is
+    only ever mapped from its own entry.
+    """
+    name = str(mchp_name or '').strip().upper()
+    if not name:
+        return []
+    known = {str(n).strip().upper() for n in mchp_names if n}
+    bases = [name]
+    if name.startswith('AT'):
+        bases.append(name[2:])
+    candidates = [name]
+    for base in bases:
+        for suffix in ('', 'A', 'B'):
+            alias = base + suffix
+            if alias in candidates or alias in known:
+                continue
+            candidates.append(alias)
+    return candidates
+
 def generate_list(item_list, tool_to_mcu_list):
     mcu_to_dfp = {}
     for item in item_list:

@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "id": "stm32l1",
+  "title": "STM32L1 system clock tree",
+  "vendor": "STMicroelectronics",
+  "source": "RM0038",
+  "devices": ["^STM32L1"],
+  "fosc": "hclk",
+  "inputs": {
+    "hse": {"label": "HSE frequency", "default": 8000000, "min": 1000000, "max": 24000000}
+  },
+  "settings": ["RCC_CR.HSEBYP", "SVCORE.VCORE"],
+  "nodes": [
+    {
+      "id": "msi",
+      "label": "MSI 2.097 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "MSI 2.097 MHz", "mul": 2097000}
+      ],
+      "enable": {"field": "RCC_CR.MSION", "on": "00000100", "off": "00000000", "auto": "on"},
+      "tooltip": "MSI range 5 (reset value); other MSI ranges are set in RCC_ICSCR."
+    },
+    {
+      "id": "hsi16",
+      "label": "HSI16 16 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "options": [
+        {"id": "on", "label": "HSI16 16 MHz", "mul": 16000000}
+      ],
+      "enable": {"field": "RCC_CR.HSION", "on": "00000001", "off": "00000000", "auto": "both"}
+    },
+    {
+      "id": "hse",
+      "label": "HSE",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "hse",
+      "enable": {"field": "RCC_CR.HSEON", "on": "00010000", "off": "00000000", "auto": "both"}
+    },
+    {
+      "id": "pllsrc",
+      "label": "PLL source",
+      "kind": "mux",
+      "x": 2,
+      "y": 2,
+      "options": [
+        {"id": "hsi16", "label": "HSI16", "from": "hsi16", "set": {"RCC_CFGR.PLLSRC": "00000000"}},
+        {"id": "hse", "label": "HSE", "from": "hse", "set": {"RCC_CFGR.PLLSRC": "00010000"}}
+      ],
+      "min": 2000000,
+      "max": 24000000,
+      "tooltip": "PLL input: 2-24 MHz."
+    },
+    {
+      "id": "pllmul",
+      "label": "PLLMUL",
+      "kind": "multiplier",
+      "x": 3,
+      "y": 2,
+      "options": [
+        {"id": "3", "label": "x3", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00000000"}, "mul": 3},
+        {"id": "4", "label": "x4", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00040000"}, "mul": 4},
+        {"id": "6", "label": "x6", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00080000"}, "mul": 6},
+        {"id": "8", "label": "x8", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "000C0000"}, "mul": 8},
+        {"id": "12", "label": "x12", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00100000"}, "mul": 12},
+        {"id": "16", "label": "x16", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00140000"}, "mul": 16},
+        {"id": "24", "label": "x24", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00180000"}, "mul": 24},
+        {"id": "32", "label": "x32", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "001C0000"}, "mul": 32},
+        {"id": "48", "label": "x48", "from": "pllsrc", "set": {"RCC_CFGR.PLLMUL": "00200000"}, "mul": 48}
+      ],
+      "max": 96000000,
+      "enable": {"field": "RCC_CR.PLLON", "on": "01000000", "off": "00000000", "auto": "both"},
+      "tooltip": "PLLVCO: at most 96 MHz (48 MHz in range 2, 24 MHz in range 3)."
+    },
+    {
+      "id": "plldiv",
+      "label": "PLLDIV",
+      "kind": "divider",
+      "x": 4,
+      "y": 2,
+      "options": [
+        {"id": "2", "label": "/2", "from": "pllmul", "set": {"RCC_CFGR.PLLDIV": "00400000"}, "div": 2},
+        {"id": "3", "label": "/3", "from": "pllmul", "set": {"RCC_CFGR.PLLDIV": "00800000"}, "div": 3},
+        {"id": "4", "label": "/4", "from": "pllmul", "set": {"RCC_CFGR.PLLDIV": "00C00000"}, "div": 4}
+      ],
+      "max": 32000000
+    },
+    {
+      "id": "sysclk",
+      "label": "SYSCLK",
+      "kind": "mux",
+      "x": 5,
+      "y": 0,
+      "options": [
+        {"id": "msi", "label": "MSI", "from": "msi", "set": {"RCC_CFGR.SW": "00000000"}},
+        {"id": "hsi16", "label": "HSI16", "from": "hsi16", "set": {"RCC_CFGR.SW": "00000001"}},
+        {"id": "hse", "label": "HSE", "from": "hse", "set": {"RCC_CFGR.SW": "00000002"}},
+        {"id": "pll", "label": "PLL", "from": "plldiv", "set": {"RCC_CFGR.SW": "00000003"}}
+      ],
+      "max": 32000000
+    },
+    {
+      "id": "hclk",
+      "label": "HCLK (AHB)",
+      "kind": "divider",
+      "x": 6,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000080"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "00000090"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000A0"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000B0"}, "div": 16},
+        {"id": "64", "label": "/64", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000C0"}, "div": 64},
+        {"id": "128", "label": "/128", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000D0"}, "div": 128},
+        {"id": "256", "label": "/256", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000E0"}, "div": 256},
+        {"id": "512", "label": "/512", "from": "sysclk", "set": {"RCC_CFGR.HPRE": "000000F0"}, "div": 512}
+      ],
+      "max": 32000000,
+      "consumer": true
+    },
+    {
+      "id": "pclk1",
+      "label": "PCLK1 (APB1)",
+      "kind": "divider",
+      "x": 7,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000400"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000500"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000600"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hclk", "set": {"RCC_CFGR.PPRE1": "00000700"}, "div": 16}
+      ],
+      "max": 32000000,
+      "consumer": true
+    },
+    {
+      "id": "pclk2",
+      "label": "PCLK2 (APB2)",
+      "kind": "divider",
+      "x": 7,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00002000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00002800"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00003000"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hclk", "set": {"RCC_CFGR.PPRE2": "00003800"}, "div": 16}
+      ],
+      "max": 32000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "reg(\"SVCORE.VCORE\") != 1 || (f.sysclk <= 16000000 && (sel.sysclk != 'pll' || f.pllmul <= 48000000))", "message": "Range 2 (1.5 V) limits SYSCLK to 16 MHz and PLLVCO to 48 MHz."},
+    {"expr": "reg(\"SVCORE.VCORE\") != 0 || (f.sysclk <= 4200000 && (sel.sysclk != 'pll' || f.pllmul <= 24000000))", "message": "Range 3 (1.2 V) limits SYSCLK to 4.2 MHz and PLLVCO to 24 MHz."}
+  ]
+}

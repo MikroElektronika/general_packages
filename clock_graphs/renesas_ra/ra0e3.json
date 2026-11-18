@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "id": "ra0e3",
+  "title": "Renesas RA0E3 clock tree",
+  "vendor": "Renesas",
+  "source": "Renesas FSP 6.5.0 (BSD-3-Clause), Renesas##BSP##ra0e3##fsp####6.5.0.xml",
+  "devices": ["^R7[FK]A0E3"],
+  "fosc": "iclk_display",
+  "inputs": {},
+  "settings": [],
+  "nodes": [
+    {
+      "id": "hoco_freq",
+      "label": "HOCO 32MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "32m", "label": "HOCO 32MHz", "mul": 32000000, "set": {"SYSTEM_HOCOCR2.HCFRQ1": "00000002"}}
+      ],
+      "default": "32m",
+      "enable": {"field": "SYSTEM_HOCOCR.HCSTP", "on": "00000000", "off": "00000001", "auto": "on"}
+    },
+    {
+      "id": "hoco_div",
+      "label": "HOCO divider",
+      "kind": "divider",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hoco_freq", "div": 1, "set": {"SYSTEM_HOCODIV.DIV": "00000000"}},
+        {"id": "2", "label": "/2", "from": "hoco_freq", "div": 2, "set": {"SYSTEM_HOCODIV.DIV": "00000001"}},
+        {"id": "4", "label": "/4", "from": "hoco_freq", "div": 4, "set": {"SYSTEM_HOCODIV.DIV": "00000002"}},
+        {"id": "8", "label": "/8", "from": "hoco_freq", "div": 8, "set": {"SYSTEM_HOCODIV.DIV": "00000003"}},
+        {"id": "16", "label": "/16", "from": "hoco_freq", "div": 16, "set": {"SYSTEM_HOCODIV.DIV": "00000004"}},
+        {"id": "32", "label": "/32", "from": "hoco_freq", "div": 32, "set": {"SYSTEM_HOCODIV.DIV": "00000005"}}
+      ],
+      "default": "1"
+    },
+    {
+      "id": "loco_freq",
+      "label": "LOCO 32768Hz",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "options": [
+        {"id": "32768", "label": "LOCO 32768Hz", "mul": 32768}
+      ],
+      "default": "32768",
+      "enable": {"field": "SYSTEM_LOCOCR.LCSTP", "on": "00000000", "off": "00000001", "auto": "on"}
+    },
+    {
+      "id": "iclk_source",
+      "label": "ICLK source",
+      "kind": "mux",
+      "x": 2,
+      "y": 0,
+      "options": [
+        {"id": "hoco", "label": "HOCO", "from": "hoco_div", "set": {"SYSTEM_ICLKSCR.CKSEL": "00000000"}},
+        {"id": "loco", "label": "LOCO", "from": "loco_freq", "set": {"SYSTEM_FSUBSCR.CKSEL": "00000001", "SYSTEM_ICLKSCR.CKSEL": "00000001"}}
+      ],
+      "default": "hoco"
+    },
+    {
+      "id": "iclk_display",
+      "label": "ICLK/PCLKB",
+      "kind": "output",
+      "x": 4,
+      "y": 0,
+      "tooltip": "The system clock (ICLK) is used as the operating clock of the CPU, DTC, ROM and RAM.\nThe Peripheral clock B (PCLKB) is used as the operating clock for peripheral modules.\nMaximum frequency is 32 MHz.",
+      "max": 32000000,
+      "options": [
+        {"id": "value", "label": "ICLK/PCLKB ${value}Hz", "from": "iclk_source"}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "fsxp_source",
+      "label": "FSXP source",
+      "kind": "output",
+      "x": 1,
+      "y": 11,
+      "options": [
+        {"id": "loco", "label": "LOCO", "from": "loco_freq"}
+      ]
+    },
+    {
+      "id": "tml_fitl2_source",
+      "label": "TML FITL2 source",
+      "kind": "output",
+      "x": 2,
+      "y": 10,
+      "options": [
+        {"id": "fsxp", "label": "FSXP", "from": "fsxp_source"}
+      ]
+    },
+    {
+      "id": "tml_fitl2_display",
+      "label": "TML FITL2",
+      "kind": "output",
+      "x": 4,
+      "y": 10,
+      "tooltip": "Frequency of TML module Capture Trigger.\nMaximum frequency is 32.768 kHz.",
+      "options": [
+        {"id": "value", "label": "TML FITL2 ${value}Hz", "from": "tml_fitl2_source"}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "fsxp_display",
+      "label": "FSXP",
+      "kind": "output",
+      "x": 4,
+      "y": 11,
+      "tooltip": "Subsytem Clock (FSXP).\nMaximum frequency is 32.768 kHz",
+      "max": 32768,
+      "options": [
+        {"id": "value", "label": "FSXP ${value}Hz", "from": "fsxp_source"}
+      ],
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "f.iclk_display > 0", "message": "The system clock source must be greater than 0."}
+  ]
+}

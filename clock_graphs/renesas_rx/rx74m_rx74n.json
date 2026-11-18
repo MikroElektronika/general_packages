@@ -1,0 +1,199 @@
+{
+  "schema": 1,
+  "id": "rx74m_rx74n",
+  "title": "RX74M/RX74N clock tree",
+  "vendor": "Renesas",
+  "source": "RX74M/RX74N hardware manual, Clock Generation Circuit",
+  "devices": ["^R5K574"],
+  "fosc": "cpuclk",
+  "inputs": {},
+  "settings": [],
+  "nodes": [
+    {
+      "id": "hoco",
+      "label": "HOCO",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "16", "label": "HOCO 16 MHz", "mul": 16000000, "set": {"SYSTEM_HOCOCR2.HCFRQ": "00000000"}},
+        {"id": "18", "label": "HOCO 18 MHz", "mul": 18000000, "set": {"SYSTEM_HOCOCR2.HCFRQ": "00000001"}},
+        {"id": "20", "label": "HOCO 20 MHz", "mul": 20000000, "set": {"SYSTEM_HOCOCR2.HCFRQ": "00000002"}},
+        {"id": "32", "label": "HOCO 32 MHz", "mul": 32000000, "set": {"SYSTEM_HOCOCR2.HCFRQ": "00000004"}},
+        {"id": "48", "label": "HOCO 48 MHz", "mul": 48000000, "set": {"SYSTEM_HOCOCR2.HCFRQ": "00000007"}}
+      ]
+    },
+    {
+      "id": "cpuclk",
+      "label": "CPUCLK (CPUCK)",
+      "kind": "divider",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hoco", "set": {"SYSTEM_SCKDIVCR2.CPUCK": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hoco", "set": {"SYSTEM_SCKDIVCR2.CPUCK": "00000001"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hoco", "set": {"SYSTEM_SCKDIVCR2.CPUCK": "00000002"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hoco", "set": {"SYSTEM_SCKDIVCR2.CPUCK": "00000003"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hoco", "set": {"SYSTEM_SCKDIVCR2.CPUCK": "00000004"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "hoco", "set": {"SYSTEM_SCKDIVCR2.CPUCK": "00000005"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "hoco", "set": {"SYSTEM_SCKDIVCR2.CPUCK": "00000006"}, "div": 64}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "iclk",
+      "label": "ICLK (ICK)",
+      "kind": "divider",
+      "x": 1,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.ICK": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.ICK": "01000000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.ICK": "02000000"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.ICK": "03000000"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.ICK": "04000000"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.ICK": "05000000"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.ICK": "06000000"}, "div": 64}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "mriclk",
+      "label": "MRICLK (MRICK)",
+      "kind": "divider",
+      "x": 1,
+      "y": 2,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hoco", "set": {"SYSTEM_SCKDIVCR2.MRICK": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hoco", "set": {"SYSTEM_SCKDIVCR2.MRICK": "00001000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hoco", "set": {"SYSTEM_SCKDIVCR2.MRICK": "00002000"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hoco", "set": {"SYSTEM_SCKDIVCR2.MRICK": "00003000"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hoco", "set": {"SYSTEM_SCKDIVCR2.MRICK": "00004000"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "hoco", "set": {"SYSTEM_SCKDIVCR2.MRICK": "00005000"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "hoco", "set": {"SYSTEM_SCKDIVCR2.MRICK": "00006000"}, "div": 64}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "mrpclk",
+      "label": "MRPCLK (MRPCK)",
+      "kind": "divider",
+      "x": 1,
+      "y": 3,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.MRPCK": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.MRPCK": "10000000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.MRPCK": "20000000"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.MRPCK": "30000000"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.MRPCK": "40000000"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.MRPCK": "50000000"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.MRPCK": "60000000"}, "div": 64}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "pclka",
+      "label": "PCLKA (PCKA)",
+      "kind": "divider",
+      "x": 2,
+      "y": 0,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKA": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKA": "00001000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKA": "00002000"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKA": "00003000"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKA": "00004000"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKA": "00005000"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKA": "00006000"}, "div": 64}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "pclkb",
+      "label": "PCLKB (PCKB)",
+      "kind": "divider",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKB": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKB": "00000100"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKB": "00000200"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKB": "00000300"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKB": "00000400"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKB": "00000500"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKB": "00000600"}, "div": 64}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "pclkc",
+      "label": "PCLKC (PCKC)",
+      "kind": "divider",
+      "x": 2,
+      "y": 2,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKC": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKC": "00000010"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKC": "00000020"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKC": "00000030"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKC": "00000040"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKC": "00000050"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKC": "00000060"}, "div": 64}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "pclkd",
+      "label": "PCLKD (PCKD)",
+      "kind": "divider",
+      "x": 2,
+      "y": 3,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKD": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKD": "00000001"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKD": "00000002"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKD": "00000003"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKD": "00000004"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKD": "00000005"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKD": "00000006"}, "div": 64}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "pclke",
+      "label": "PCLKE (PCKE)",
+      "kind": "divider",
+      "x": 2,
+      "y": 4,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKE": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKE": "00100000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKE": "00200000"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKE": "00300000"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKE": "00400000"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKE": "00500000"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.PCKE": "00600000"}, "div": 64}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "bclk",
+      "label": "BCLK (BCK)",
+      "kind": "divider",
+      "x": 2,
+      "y": 5,
+      "options": [
+        {"id": "1", "label": "/1", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.BCK": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.BCK": "00010000"}, "div": 2},
+        {"id": "4", "label": "/4", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.BCK": "00020000"}, "div": 4},
+        {"id": "8", "label": "/8", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.BCK": "00030000"}, "div": 8},
+        {"id": "16", "label": "/16", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.BCK": "00040000"}, "div": 16},
+        {"id": "32", "label": "/32", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.BCK": "00050000"}, "div": 32},
+        {"id": "64", "label": "/64", "from": "hoco", "set": {"SYSTEM_SCKDIVCR.BCK": "00060000"}, "div": 64}
+      ]
+    }
+  ],
+  "constraints": [
+    {"expr": "f.iclk <= f.cpuclk", "message": "ICLK must not be faster than CPUCLK."}
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "avr_atmega128",
+  "title": "AVR clock fuses (ATMEGA128, ATMEGA128A, ATMEGA16, ATMEGA16A and 8 more)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC AVR definitions (LOW.SUT_CKSEL, CKDIV8), AVR datasheets",
+  "devices": ["^ATMEGA128$", "^ATMEGA128A$", "^ATMEGA16$", "^ATMEGA16A$", "^ATMEGA32$", "^ATMEGA32A$", "^ATMEGA64$", "^ATMEGA64A$", "^ATMEGA8$", "^ATMEGA8515$", "^ATMEGA8535$", "^ATMEGA8A$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 16000000}
+  },
+  "settings": ["HIGH.CKOPT"],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External clock / crystal",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext",
+      "tooltip": "Frequency of the external clock, crystal, resonator or RC network."
+    },
+    {
+      "id": "source",
+      "label": "Clock source (SUT_CKSEL)",
+      "kind": "mux",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "ext_clock", "label": "Ext. Clock", "set": {"LOW.SUT_CKSEL": "00000000/0000000F"}, "from": "ext"},
+        {"id": "int_rc_osc_1_mhz", "label": "Int. RC Osc. 1 MHz", "set": {"LOW.SUT_CKSEL": "00000001/0000000F"}, "mul": 1000000},
+        {"id": "int_rc_osc_2_mhz", "label": "Int. RC Osc. 2 MHz", "set": {"LOW.SUT_CKSEL": "00000002/0000000F"}, "mul": 2000000},
+        {"id": "int_rc_osc_4_mhz", "label": "Int. RC Osc. 4 MHz", "set": {"LOW.SUT_CKSEL": "00000003/0000000F"}, "mul": 4000000},
+        {"id": "int_rc_osc_8_mhz", "label": "Int. RC Osc. 8 MHz", "set": {"LOW.SUT_CKSEL": "00000004/0000000F"}, "mul": 8000000},
+        {"id": "ext_rc_osc_0_9_mhz", "label": "Ext. RC Osc.         -  0.9 MHz", "set": {"LOW.SUT_CKSEL": "00000005/0000000F"}, "from": "ext"},
+        {"id": "ext_rc_osc_0_9_mhz_3_0_mhz", "label": "Ext. RC Osc. 0.9 MHz -  3.0 MHz", "set": {"LOW.SUT_CKSEL": "00000006/0000000F"}, "from": "ext"},
+        {"id": "ext_rc_osc_3_0_mhz_8_0_mhz", "label": "Ext. RC Osc. 3.0 MHz -  8.0 MHz", "set": {"LOW.SUT_CKSEL": "00000007/0000000F"}, "from": "ext"},
+        {"id": "ext_rc_osc_8_0_mhz_12_0_mhz", "label": "Ext. RC Osc. 8.0 MHz - 12.0 MHz", "set": {"LOW.SUT_CKSEL": "00000008/0000000F"}, "from": "ext"},
+        {"id": "ext_low_freq_crystal", "label": "Ext. Low-Freq. Crystal", "set": {"LOW.SUT_CKSEL": "00000009/0000000F"}, "mul": 32768},
+        {"id": "ext_crystal_resonator_low_freq", "label": "Ext. Crystal/Resonator Low Freq.", "set": {"LOW.SUT_CKSEL": "0000000A/0000000E"}, "from": "ext"},
+        {"id": "ext_crystal_resonator_medium_freq", "label": "Ext. Crystal/Resonator Medium Freq.", "set": {"LOW.SUT_CKSEL": "0000000C/0000000E"}, "from": "ext"},
+        {"id": "ext_crystal_resonator_high_freq", "label": "Ext. Crystal/Resonator High Freq.", "set": {"LOW.SUT_CKSEL": "0000000E/0000000E"}, "from": "ext"}
+      ],
+      "max": 16000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'ext_rc_osc_0_9_mhz' || (in.ext <= 900000)", "message": "Ext. RC Osc.         -  0.9 MHz: the external frequency must be 0-0.9 MHz."},
+    {"expr": "sel.source != 'ext_rc_osc_0_9_mhz_3_0_mhz' || (in.ext >= 900000 && in.ext <= 3000000)", "message": "Ext. RC Osc. 0.9 MHz -  3.0 MHz: the external frequency must be 0.9-3 MHz."},
+    {"expr": "sel.source != 'ext_rc_osc_3_0_mhz_8_0_mhz' || (in.ext >= 3000000 && in.ext <= 8000000)", "message": "Ext. RC Osc. 3.0 MHz -  8.0 MHz: the external frequency must be 3-8 MHz."},
+    {"expr": "sel.source != 'ext_rc_osc_8_0_mhz_12_0_mhz' || (in.ext >= 8000000 && in.ext <= 12000000)", "message": "Ext. RC Osc. 8.0 MHz - 12.0 MHz: the external frequency must be 8-12 MHz."},
+    {"expr": "sel.source != 'ext_crystal_resonator_low_freq' || (in.ext >= 400000 && in.ext <= 900000)", "message": "Ext. Crystal/Resonator Low Freq.: the external frequency must be 0.4-0.9 MHz."},
+    {"expr": "sel.source != 'ext_crystal_resonator_medium_freq' || (in.ext >= 900000 && in.ext <= 3000000)", "message": "Ext. Crystal/Resonator Medium Freq.: the external frequency must be 0.9-3 MHz."},
+    {"expr": "sel.source != 'ext_crystal_resonator_high_freq' || (in.ext >= 3000000)", "message": "Ext. Crystal/Resonator High Freq.: the external frequency must be 3-16 MHz."}
+  ]
+}

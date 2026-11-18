@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "pic_pic16c717",
+  "title": "PIC oscillator fuses (PIC16C717, PIC16C770, PIC16C771)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC16C717$", "^PIC16C770$", "^PIC16C771$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 20000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 20000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (FOSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "intrc_clockout_on_osc2", "label": "INTRC, clockout on OSC2", "set": {"CONFIG1.FOSC": "00000005"}, "from": "intosc", "mul": 1},
+        {"id": "intrc_osc2_is_i_o", "label": "INTRC, OSC2 is I/O", "set": {"CONFIG1.FOSC": "00000004"}, "from": "intosc", "mul": 1},
+        {"id": "ec_i_o", "label": "EC I/O", "set": {"CONFIG1.FOSC": "00000003"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator", "label": "HS oscillator", "set": {"CONFIG1.FOSC": "00000002"}, "from": "ext", "mul": 1},
+        {"id": "xt_oscillator", "label": "XT oscillator", "set": {"CONFIG1.FOSC": "00000001"}, "from": "ext", "mul": 1},
+        {"id": "lp_oscillator", "label": "LP oscillator", "set": {"CONFIG1.FOSC": "00000000"}, "mul": 32768}
+      ],
+      "max": 20000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'hs_oscillator' || (in.ext >= 4000000)", "message": "HS oscillator: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.source != 'xt_oscillator' || (in.ext >= 100000 && in.ext <= 4000000)", "message": "XT oscillator: the external frequency must be 0.1-4 MHz."}
+  ],
+  "symbols": {
+    "CONFIG1.FOSC": {"ER_CLKOUT,_ER_OSC_CLKOUT": "00000007", "ER_NOCLKOUT,_ER_OSC_NOCLKOUT": "00000006", "INTRCCLK,_INTRC_OSC_CLKOUT": "00000005", "INTRCIO,_INTRC_OSC_NOCLKOUT": "00000004", "EXTCLK,_EXTCLK_OSC": "00000003", "HS,_HS_OSC": "00000002", "XT,_XT_OSC": "00000001", "LP,_LP_OSC": "00000000"}
+  }
+}

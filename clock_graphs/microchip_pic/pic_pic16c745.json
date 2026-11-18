@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "pic_pic16c745",
+  "title": "PIC oscillator fuses (PIC16C745, PIC16C765)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC16C745$", "^PIC16C765$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 24000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 24000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (FOSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "external_clock_with_4x_pll_enabl", "label": "External clock with 4x PLL enabled. CLKOUT on OSC2 pin", "set": {"CONFIG1.FOSC": "00000003"}, "from": "ext", "mul": 4},
+        {"id": "hs_oscillator", "label": "HS oscillator", "set": {"CONFIG1.FOSC": "00000000"}, "from": "ext", "mul": 1},
+        {"id": "external_clock_clkout_on_osc2_pi", "label": "External clock. CLKOUT on OSC2 pin", "set": {"CONFIG1.FOSC": "00000001"}, "from": "ext", "mul": 1},
+        {"id": "hs_osc_with_4x_pll_enabled", "label": "HS osc with 4x PLL enabled", "set": {"CONFIG1.FOSC": "00000002"}, "from": "ext", "mul": 4}
+      ],
+      "max": 24000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'hs_oscillator' || (in.ext >= 4000000)", "message": "HS oscillator: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.source != 'hs_osc_with_4x_pll_enabled' || (in.ext >= 4000000)", "message": "HS osc with 4x PLL enabled: the external frequency must be 4 MHz or more."}
+  ],
+  "symbols": {
+    "CONFIG1.FOSC": {"E4,_E4_OSC": "00000003", "HS,_HS_OSC": "00000000", "EC,_EC_OSC": "00000001", "H4,_H4_OSC": "00000002"}
+  }
+}

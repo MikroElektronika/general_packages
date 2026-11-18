@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "pic_pic18f1230",
+  "title": "PIC oscillator fuses (PIC18F1230, PIC18F1330, PIC18LF1230, PIC18LF1330)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC18F1230$", "^PIC18F1330$", "^PIC18LF1230$", "^PIC18LF1330$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 40000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 40000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (OSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "internal_oscillator_clko_functio", "label": "Internal oscillator, CLKO function on RA6, port function on ", "set": {"CONFIG1H.OSC": "00000009"}, "from": "intosc", "mul": 1},
+        {"id": "internal_oscillator_port_functio", "label": "Internal oscillator, port function on RA6 and RA7", "set": {"CONFIG1H.OSC": "00000008"}, "from": "intosc", "mul": 1},
+        {"id": "external_rc_oscillator_port_func", "label": "External RC oscillator, port function on RA6", "set": {"CONFIG1H.OSC": "00000007"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator_pll_enabled_clock_", "label": "HS oscillator, PLL enabled (Clock Frequency = 4 x FOSC1)", "set": {"CONFIG1H.OSC": "00000006"}, "from": "ext", "mul": 4},
+        {"id": "ec_oscillator_port_function_on_r", "label": "EC oscillator, port function on RA6", "set": {"CONFIG1H.OSC": "00000005"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_clko_function_on_r", "label": "EC oscillator, CLKO function on RA6", "set": {"CONFIG1H.OSC": "00000004"}, "from": "ext", "mul": 1},
+        {"id": "external_rc_oscillator_clko_func", "label": "External RC oscillator, CLKO function on RA6", "set": {"CONFIG1H.OSC": "00000003"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator", "label": "HS Oscillator", "set": {"CONFIG1H.OSC": "00000002"}, "from": "ext", "mul": 1},
+        {"id": "xt_oscillator", "label": "XT Oscillator", "set": {"CONFIG1H.OSC": "00000001"}, "from": "ext", "mul": 1},
+        {"id": "lp_oscillator", "label": "LP Oscillator", "set": {"CONFIG1H.OSC": "00000000"}, "mul": 32768}
+      ],
+      "max": 40000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'hs_oscillator_pll_enabled_clock_' || (in.ext >= 4000000)", "message": "HS oscillator: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.source != 'hs_oscillator' || (in.ext >= 4000000)", "message": "HS Oscillator: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.source != 'xt_oscillator' || (in.ext >= 100000 && in.ext <= 4000000)", "message": "XT Oscillator: the external frequency must be 0.1-4 MHz."}
+  ],
+  "symbols": {
+    "CONFIG1H.OSC": {"INTIO1": "00000009", "INTIO2": "00000008", "RCIO": "00000007", "HSPLL": "00000006", "ECIO": "00000005", "EC": "00000004", "HS": "00000002", "XT": "00000001", "LP": "00000000"}
+  }
+}

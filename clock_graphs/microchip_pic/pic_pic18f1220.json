@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "pic_pic18f1220",
+  "title": "PIC oscillator fuses (PIC18F1220, PIC18F1320, PIC18F2220, PIC18F2320 and 8 more)",
+  "vendor": "Microchip",
+  "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
+  "devices": ["^PIC18F1220$", "^PIC18F1320$", "^PIC18F2220$", "^PIC18F2320$", "^PIC18F4220$", "^PIC18F4320$", "^PIC18LF1220$", "^PIC18LF1320$", "^PIC18LF2220$", "^PIC18LF2320$", "^PIC18LF4220$", "^PIC18LF4320$"],
+  "fosc": "source",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 40000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 40000000}
+  },
+  "settings": [],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON/OSCFRQ): enter the frequency your code sets."
+    },
+    {
+      "id": "source",
+      "label": "Oscillator (OSC)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "external_rc_oscillator_clko_func", "label": "External RC oscillator, CLKO function on RA6", "set": {"CONFIG1H.OSC": "0000000C"}, "from": "ext", "mul": 1},
+        {"id": "internal_rc_oscillator_clko_func", "label": "Internal RC oscillator, CLKO function on RA6 and port functi", "set": {"CONFIG1H.OSC": "00000009"}, "from": "intosc", "mul": 1},
+        {"id": "internal_rc_oscillator_port_func", "label": "Internal RC oscillator, port function on RA6 and port functi", "set": {"CONFIG1H.OSC": "00000008"}, "from": "intosc", "mul": 1},
+        {"id": "external_rc_oscillator_port_func", "label": "External RC oscillator, port function on RA6", "set": {"CONFIG1H.OSC": "00000007"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator_pll_enabled_clock_", "label": "HS oscillator, PLL enabled (clock frequency = 4 x FOSC1)", "set": {"CONFIG1H.OSC": "00000006"}, "from": "ext", "mul": 4},
+        {"id": "ec_oscillator_port_function_on_r", "label": "EC oscillator, port function on RA6", "set": {"CONFIG1H.OSC": "00000005"}, "from": "ext", "mul": 1},
+        {"id": "ec_oscillator_clko_function_on_r", "label": "EC oscillator, CLKO function on RA6", "set": {"CONFIG1H.OSC": "00000004"}, "from": "ext", "mul": 1},
+        {"id": "hs_oscillator", "label": "HS Oscillator", "set": {"CONFIG1H.OSC": "00000002"}, "from": "ext", "mul": 1},
+        {"id": "xt_oscillator", "label": "XT Oscillator", "set": {"CONFIG1H.OSC": "00000001"}, "from": "ext", "mul": 1},
+        {"id": "lp_oscillator", "label": "LP Oscillator", "set": {"CONFIG1H.OSC": "00000000"}, "mul": 32768}
+      ],
+      "max": 40000000,
+      "consumer": true
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.source != 'hs_oscillator_pll_enabled_clock_' || (in.ext >= 4000000)", "message": "HS oscillator: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.source != 'hs_oscillator' || (in.ext >= 4000000)", "message": "HS Oscillator: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.source != 'xt_oscillator' || (in.ext >= 100000 && in.ext <= 4000000)", "message": "XT Oscillator: the external frequency must be 0.1-4 MHz."}
+  ],
+  "symbols": {
+    "CONFIG1H.OSC": {"RC,_RC_OSC_1H": "0000000C", "INTIO1,_INTIO1_OSC_1H": "00000009", "INTIO2,_INTIO2_OSC_1H": "00000008", "RCIO,_RCIO_OSC_1H": "00000007", "HSPLL,_HSPLL_OSC_1H": "00000006", "ECIO,_ECIO_OSC_1H": "00000005", "EC,_EC_OSC_1H": "00000004", "HS,_HS_OSC_1H": "00000002", "XT,_XT_OSC_1H": "00000001", "LP,_LP_OSC_1H": "00000000", "ECIO,_ECIOP_OSC_1H": "00000005", "RC,_RC_OSC,_RC_OSC_1H": "0000000C", "INTIO1,_INTIO1_OSC,_INTIO1_OSC_1H": "00000009", "INTIO2,_INTIO2_OSC,_INTIO2_OSC_1H": "00000008", "RCIO,_RCIO_OSC,_RCIO_OSC_1H": "00000007", "HSPLL,_HSPLL_OSC,_HSPLL_OSC_1H": "00000006", "ECIO,_ECIOP_OSC,_ECIOP_OSC_1H,_ECIO_OSC_1H": "00000005", "EC,_EC_OSC,_EC_OSC_1H": "00000004", "HS,_HS_OSC,_HS_OSC_1H": "00000002", "XT,_XT_OSC,_XT_OSC_1H": "00000001", "LP,_LP_OSC,_LP_OSC_1H": "00000000", "ECIO,_ECIOP_OSC,_ECIO_OSC_1H,_ECIOP_OSC_1H": "00000005"}
+  }
+}
