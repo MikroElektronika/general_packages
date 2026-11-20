@@ -388,7 +388,7 @@ Nikola Lukic,  Marko Lukic,  Filip Jankovic</translation>
 <context>
     <name>AiQa</name>
     <message>
-        <location filename="../plugins/ai_qa/src/ai_qa.cpp" line="+21" />
+        <location filename="../plugins/ai_qa/src/ai_qa.cpp" line="+22" />
         <source>NECTO Assistant</source>
         <translation>NECTO Assistant</translation>
     </message>
@@ -428,13 +428,38 @@ Nikola Lukic,  Marko Lukic,  Filip Jankovic</translation>
         <translation>In separatem Fenster abkoppeln</translation>
     </message>
     <message>
-        <location filename="../plugins/ai_qa/src/ai_qa_view.cpp" line="+232" />
-        <location line="+236" />
+        <location filename="../plugins/ai_qa/src/ai_qa_view.cpp" line="+308" />
+        <location line="+465" />
         <source>NECTO Assistant</source>
         <translation>NECTO Assistant</translation>
     </message>
     <message>
-        <location line="-2" />
+        <location line="-278" />
+        <source>NECTO Assistant is unavailable</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>NECTO Assistant could not be loaded. Check your internet connection and try again.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Reload</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Connecting to NECTO Assistant</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>This will only take a moment…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+267" />
         <source>Attach</source>
         <translation>Andocken</translation>
     </message>
@@ -481,7 +506,7 @@ Nikola Lukic,  Marko Lukic,  Filip Jankovic</translation>
 <context>
     <name>ApplicationUpdater</name>
     <message>
-        <location filename="../app/src/application_updater.cpp" line="+47" />
+        <location filename="../app/src/application_updater.cpp" line="+48" />
         <source>Close</source>
         <translation>Schließen</translation>
     </message>
@@ -492,25 +517,25 @@ Nikola Lukic,  Marko Lukic,  Filip Jankovic</translation>
     </message>
     <message>
         <location line="+27" />
-        <location line="+26" />
+        <location line="+37" />
         <source>Yes</source>
         <translation>Ja</translation>
     </message>
     <message>
-        <location line="-25" />
-        <location line="+26" />
+        <location line="-36" />
+        <location line="+37" />
         <source>No</source>
         <translation>Nein</translation>
     </message>
     <message>
-        <location line="-25" />
+        <location line="-36" />
         <source>New NECTO Studio update is available.
 Do you want to update now?</source>
         <translation>Ein neues NECTO Studio-Update ist verfügbar.
 Möchten Sie jetzt aktualisieren?</translation>
     </message>
     <message>
-        <location line="+27" />
+        <location line="+38" />
         <source>New mikroSDK update is available.
 Do you want to update now?</source>
         <translation>Ein neues mikroSDK-Update ist verfügbar.
@@ -745,22 +770,22 @@ Möchten Sie jetzt aktualisieren?</translation>
     <message>
         <location line="+7" />
         <location line="+10" />
-        <location line="+77" />
+        <location line="+84" />
         <source>TextLabel</source>
         <translation>Textbeschriftung</translation>
     </message>
     <message>
-        <location line="-57" />
+        <location line="-64" />
         <source>Free</source>
         <translation>Frei</translation>
     </message>
     <message>
-        <location line="+77" />
+        <location line="+84" />
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location line="+199" />
+        <location line="+211" />
         <source>Go</source>
         <translation>Los</translation>
     </message>
@@ -775,29 +800,44 @@ Möchten Sie jetzt aktualisieren?</translation>
         <translation>Reservierung entfernen</translation>
     </message>
     <message>
-        <location filename="../core/src/planet_debug/view/board_item_view.cpp" line="+79" />
+        <location filename="../core/src/planet_debug/view/board_item_view.cpp" line="+119" />
         <source>Remote board info</source>
         <translation>Informationen zur Remote-Platine</translation>
     </message>
     <message>
-        <location line="+115" />
+        <location line="+103" />
         <source>&lt;html&gt;&lt;p&gt;Loading...&lt;/p&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;p&gt;Wird geladen...&lt;/p&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+211" />
+        <location line="+200" />
         <source>S/N: %1</source>
         <translation>S/N: %1</translation>
     </message>
     <message>
-        <location line="+149" />
+        <location line="+219" />
         <source>Busy</source>
         <translation>Belegt</translation>
     </message>
     <message>
-        <location line="+13" />
+        <location line="+17" />
         <source>Connect</source>
         <translation>Verbinden</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Incompatible</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+29" />
+        <source>Compatible with the active project</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>No active project</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -832,7 +872,7 @@ Möchten Sie jetzt aktualisieren?</translation>
 <context>
     <name>BoardWizardPage</name>
     <message>
-        <location filename="../core/src/setup/view/wizard_pages/board_wizard_page.cpp" line="+83" />
+        <location filename="../core/src/setup/view/wizard_pages/board_wizard_page.cpp" line="+84" />
         <source>Choose a board</source>
         <translation>Platine wählen</translation>
     </message>
@@ -1094,6 +1134,11 @@ Einstellungen</translation>
         <translation>Cache-Einträge:</translation>
     </message>
     <message>
+        <location line="+13" />
+        <source>Search cache entries</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <location line="+82" />
         <source>Add</source>
         <translation>Hinzufügen</translation>
@@ -1129,7 +1174,7 @@ Einstellungen</translation>
         <translation>Pfad</translation>
     </message>
     <message>
-        <location line="+99" />
+        <location line="+117" />
         <source>Key</source>
         <translation>Schlüssel</translation>
     </message>
@@ -1139,7 +1184,7 @@ Einstellungen</translation>
         <translation>Wert</translation>
     </message>
     <message>
-        <location line="+41" />
+        <location line="+59" />
         <source>Build step</source>
         <translation>Build-Schritt</translation>
     </message>
@@ -1170,7 +1215,7 @@ Einstellungen</translation>
         <translation>Bereinigen</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+9" />
         <source>&lt;KEY&gt;</source>
         <translation>&lt;SCHLÜSSEL&gt;</translation>
     </message>
@@ -1381,6 +1426,11 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     </message>
     <message>
         <location line="+1" />
+        <source>Step</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
         <source>Bar</source>
         <translation>Balken</translation>
     </message>
@@ -1519,6 +1569,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     </message>
     <message>
         <location line="+57" />
+        <location filename="../core/src/productivity_hub/common/choose_click_page.cpp" line="+625" />
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
@@ -1541,6 +1592,80 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <location line="+13" />
         <source>Based on Click board selection, the NECTO Assistant generates code</source>
         <translation>Basierend auf der Click-Board-Auswahl generiert der NECTO Assistant Code</translation>
+    </message>
+    <message>
+        <location line="+106" />
+        <source>Save current combination</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Saved combinations</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/productivity_hub/common/choose_click_page.cpp" line="-45" />
+        <source>MIKROBUS %1 - %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+35" />
+        <location line="+30" />
+        <source>OK</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-28" />
+        <source>This combination is already saved as "%1".</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Save</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Save Click combination</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Enter combination name</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+2" />
+        <source>MyCombination%1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+15" />
+        <source>You can save up to %1 combinations. Delete one, or save under an existing name to overwrite it.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <location line="+16" />
+        <source>Yes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-15" />
+        <location line="+16" />
+        <source>No</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-14" />
+        <source>Combination "%1" already exists. Do you want to overwrite it?</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+15" />
+        <source>Are you sure you want to delete combination "%1"?</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -1586,7 +1711,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Filter zurücksetzen</translation>
     </message>
     <message>
-        <location filename="../core/src/productivity_hub/common/choose_clicks_dialog.cpp" line="+108" />
+        <location filename="../core/src/productivity_hub/common/choose_clicks_dialog.cpp" line="+149" />
         <source>Filters</source>
         <translation>Filter</translation>
     </message>
@@ -1596,7 +1721,12 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Gefunden</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="-37" />
+        <source>No internet connection. Waiting to reconnect...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+39" />
         <source>Search for</source>
         <translation>Suchen nach</translation>
     </message>
@@ -1623,17 +1753,17 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Filter schließen</translation>
     </message>
     <message>
-        <location filename="../core/src/productivity_hub/common/choose_clicks_dialog.cpp" line="+103" />
+        <location filename="../core/src/productivity_hub/common/choose_clicks_dialog.cpp" line="+107" />
         <source>Search click boards</source>
         <translation>Click-Boards suchen</translation>
     </message>
     <message>
-        <location line="+88" />
+        <location line="+114" />
         <source>Reset all filters</source>
         <translation>Alle Filter zurücksetzen</translation>
     </message>
     <message>
-        <location line="+84" />
+        <location line="+91" />
         <source>mikroBUS Socket %1</source>
         <translation>mikroBUS-Sockel %1</translation>
     </message>
@@ -1947,22 +2077,54 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Wählen Sie, wie der NECTO Assistant Ihr Ergebnis liefern soll</translation>
     </message>
     <message>
-        <location filename="../core/src/productivity_hub/visual_code_prompt/choose_prompt_page.cpp" line="+54" />
         <source>Create and Configure Project</source>
         <translation>Projekt erstellen und konfigurieren</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Automatically create a new project, install necessary packages, and include necessary libraries</source>
         <translation>Automatisch ein neues Projekt erstellen, notwendige Pakete installieren und notwendige Bibliotheken einbinden</translation>
     </message>
     <message>
-        <location line="+13" />
+        <location filename="../core/src/productivity_hub/visual_code_prompt/choose_prompt_page.cpp" line="+59" />
         <source>Code Only</source>
         <translation>Nur Code</translation>
     </message>
     <message>
         <location line="+1" />
+        <source>Generate the code only, without creating a project or installing packages</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Code Only (FreeRTOS)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Generate the code only, without creating a project or installing packages, structured as FreeRTOS tasks with the scheduler started</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Create Project</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Generate the code and create a new project, installing the required packages and libraries</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Create Project (FreeRTOS)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Generate the code and create a new project, installing the required packages and libraries, structured as FreeRTOS tasks with the scheduler started</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <source>Just generate the code and skip the project creation and package setup</source>
         <translation>Nur den Code generieren und Projekterstellung sowie Paketeinrichtung überspringen</translation>
     </message>
@@ -2005,7 +2167,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Der visuelle Codegenerator verwendet die ausgewählte Konfiguration, um den Ausgangspunkt für die Codegenerierung festzulegen.</translation>
     </message>
     <message>
-        <location filename="../core/src/productivity_hub/common/choose_setup_page.cpp" line="+225" />
+        <location filename="../core/src/productivity_hub/common/choose_setup_page.cpp" line="+233" />
         <source>Generate code only</source>
         <translation>Nur Code generieren</translation>
     </message>
@@ -2090,6 +2252,11 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <source>Change your program's debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
         <translation>Ändern Sie den Debugger Ihres Programms je nach Bedarf von LLDB zu GDB oder umgekehrt.</translation>
     </message>
+    <message>
+        <location filename="../plugins/toolchains/clangRL78/src/view/clangRL78_settings_view.cpp" line="+32" />
+        <source>LLDB does not support RL78.</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>ClangSettingsView</name>
@@ -2124,7 +2291,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Ändern Sie den Debugger Ihres Programms je nach Bedarf von LLDB zu GDB oder umgekehrt.</translation>
     </message>
     <message>
-        <location filename="../plugins/toolchains/clang/src/view/clang_settings_view.cpp" line="+12" />
+        <location filename="../plugins/toolchains/clang/src/view/clang_settings_view.cpp" line="+15" />
         <source>Compiler Settings</source>
         <translation>Compiler-Einstellungen</translation>
     </message>
@@ -2137,6 +2304,11 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <location line="+1" />
         <source>Save</source>
         <translation>Speichern</translation>
+    </message>
+    <message>
+        <location line="+27" />
+        <source>LLDB is not supported for the selected MCU.</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2162,6 +2334,19 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <location line="+14" />
         <source>Desc</source>
         <translation>Beschreibung</translation>
+    </message>
+</context>
+<context>
+    <name>ClickPresetChip</name>
+    <message>
+        <location filename="../core/src/productivity_hub/common/click_preset_chip.ui" line="+23" />
+        <source>Frame</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/productivity_hub/common/click_preset_chip.cpp" line="+37" />
+        <source>Delete combination</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2226,7 +2411,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Formular</translation>
     </message>
     <message>
-        <location filename="../core/src/output/cloud_chart/cloud_chart_graphic_data_view.cpp" line="+348" />
+        <location filename="../core/src/output/cloud_chart/cloud_chart_graphic_data_view.cpp" line="+355" />
         <source>Waiting for data...</source>
         <translation type="unfinished" />
     </message>
@@ -2244,7 +2429,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Nach Werten suchen</translation>
     </message>
     <message>
-        <location line="+23" />
+        <location line="+20" />
         <source>Search table</source>
         <translation>Tabelle durchsuchen</translation>
     </message>
@@ -2255,28 +2440,28 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     </message>
     <message>
         <location line="+8" />
-        <location line="+136" />
+        <location line="+149" />
         <source>Switch to chart view</source>
         <translation>Zur Diagrammansicht wechseln</translation>
     </message>
     <message>
-        <location line="-128" />
+        <location line="-141" />
         <source>Add new chart</source>
         <translation>Neues Diagramm hinzufügen</translation>
     </message>
     <message>
-        <location line="+112" />
+        <location line="+125" />
         <source>Switch to table view</source>
         <translation>Zur Tabellenansicht wechseln</translation>
     </message>
     <message>
-        <location line="-142" />
-        <location line="+96" />
+        <location line="-155" />
+        <location line="+108" />
         <source>Show all plot sources in one chart</source>
         <translation>Alle Plotquellen in einem Diagramm anzeigen</translation>
     </message>
     <message>
-        <location line="-3" />
+        <location line="-10" />
         <source>Show each plot source in a separate chart</source>
         <translation>Jede Plotquelle in einem separaten Diagramm anzeigen</translation>
     </message>
@@ -2345,6 +2530,11 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     </message>
     <message>
         <location line="+4" />
+        <source>Step Chart</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
         <source>Bar Chart</source>
         <translation>Balkendiagramm</translation>
     </message>
@@ -2389,12 +2579,12 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     </message>
     <message>
         <location line="+5" />
-        <location line="+163" />
+        <location line="+164" />
         <source>Detach Chart View</source>
         <translation>Diagrammansicht abkoppeln</translation>
     </message>
     <message>
-        <location line="-159" />
+        <location line="-160" />
         <source>Reset Chart View</source>
         <translation>Diagrammansicht zurücksetzen</translation>
     </message>
@@ -2404,7 +2594,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Diagrammeinstellungen bearbeiten</translation>
     </message>
     <message>
-        <location line="+74" />
+        <location line="+75" />
         <source>Time (s)</source>
         <translation>Zeit (s)</translation>
     </message>
@@ -2422,12 +2612,12 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Wird erstellt...</translation>
     </message>
     <message>
-        <location line="+126" />
+        <location line="+130" />
         <source>Cleaning...</source>
         <translation>Wird bereinigt...</translation>
     </message>
     <message>
-        <location line="+33" />
+        <location line="+38" />
         <source>No target</source>
         <translation>Kein Ziel</translation>
     </message>
@@ -2740,7 +2930,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>2-Draht-EJTAG</translation>
     </message>
     <message>
-        <location line="+164" />
+        <location line="+176" />
         <source>Failed to get target options</source>
         <translation>Zieloptionen konnten nicht abgerufen werden</translation>
     </message>
@@ -3242,27 +3432,26 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     </message>
     <message>
         <location line="+26" />
-        <location filename="../core/src/setup/view/configuration_frame.cpp" line="+465" />
+        <location filename="../core/src/setup/view/configuration_frame.cpp" line="+489" />
         <source>Create New Configuration</source>
         <translation>Neue Konfiguration erstellen</translation>
     </message>
     <message>
         <location line="+20" />
-        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-218" />
-        <location line="+344" />
-        <location line="+289" />
+        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-242" />
+        <location line="+368" />
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
         <location line="+7" />
-        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-632" />
+        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-367" />
         <source>Finish</source>
         <translation>Fertigstellen</translation>
     </message>
     <message>
         <location line="+9" />
-        <location filename="../core/src/setup/view/configuration_frame.cpp" line="+496" />
+        <location filename="../core/src/setup/view/configuration_frame.cpp" line="+520" />
         <source>Choose your starting point</source>
         <translation>Wählen Sie Ihren Ausgangspunkt</translation>
     </message>
@@ -3277,7 +3466,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Konfigurationsname</translation>
     </message>
     <message>
-        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-684" />
+        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-708" />
         <source>MCU</source>
         <translation>MCU</translation>
     </message>
@@ -3317,8 +3506,8 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>SDK</translation>
     </message>
     <message>
-        <location line="+247" />
-        <location line="+208" />
+        <location line="+257" />
+        <location line="+222" />
         <source>%1 Settings</source>
         <translation>%1-Einstellungen</translation>
     </message>
@@ -3358,17 +3547,15 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Einstellungen</translation>
     </message>
     <message>
-        <location line="+104" />
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location line="+4" />
         <source>Changing the MCU will reset all other selected components. Continue?</source>
         <translation>Durch Ändern der MCU werden alle anderen ausgewählten Komponenten zurückgesetzt. Fortfahren?</translation>
     </message>
     <message>
-        <location line="+55" />
+        <location line="+163" />
         <source>Choose a MCU to begin</source>
         <translation>Wählen Sie eine MCU aus, um zu beginnen</translation>
     </message>
@@ -3403,7 +3590,12 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Bare Metal</translation>
     </message>
     <message>
-        <location line="+112" />
+        <location line="+94" />
+        <source>mikroBUS %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+35" />
         <source>LLDB debugger</source>
         <translation>LLDB-Debugger</translation>
     </message>
@@ -3555,7 +3747,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     </message>
     <message>
         <location line="+15" />
-        <location filename="../plugins/tools/converter/src/converter_widget.cpp" line="+89" />
+        <location filename="../plugins/tools/converter/src/converter_widget.cpp" line="+91" />
         <source>Float 32bit (IEEE)</source>
         <translation>Float 32 Bit (IEEE)</translation>
     </message>
@@ -3588,7 +3780,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
 <context>
     <name>CustomBoard</name>
     <message>
-        <location filename="../core/src/setup/view/custom_board_tool/custom_board.cpp" line="+221" />
+        <location filename="../core/src/setup/view/custom_board_tool/custom_board.cpp" line="+225" />
         <source>Delete</source>
         <translation>Löschen</translation>
     </message>
@@ -3603,7 +3795,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Möchten Sie wirklich löschen: &lt;strong&gt;%1 &lt;/strong&gt;?</translation>
     </message>
     <message>
-        <location line="+253" />
+        <location line="+258" />
         <source>Yes</source>
         <translation>Ja</translation>
     </message>
@@ -3618,17 +3810,17 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Platine ist bereits vorhanden. Überschreiben?</translation>
     </message>
     <message>
-        <location line="+263" />
+        <location line="+287" />
         <source>NectoShare is currently unavailable. Please try again later.</source>
         <translation>NectoShare ist derzeit nicht verfügbar. Bitte versuchen Sie es später erneut.</translation>
     </message>
     <message>
-        <location line="+73" />
+        <location line="+102" />
         <source>Failed publish</source>
         <translation>Veröffentlichen fehlgeschlagen</translation>
     </message>
     <message>
-        <location line="+12" />
+        <location line="+20" />
         <source>Board files are uploaded successfully</source>
         <translation>Platinendateien wurden erfolgreich hochgeladen</translation>
     </message>
@@ -3950,7 +4142,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Platine ist bereits vorhanden. Überschreiben?</translation>
     </message>
     <message>
-        <location line="+43" />
+        <location line="+44" />
         <source>File name exceeds 128 characters</source>
         <translation>Dateiname überschreitet 128 Zeichen</translation>
     </message>
@@ -4003,18 +4195,18 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <name>CustomBoardSelectFileWidget</name>
     <message>
         <location filename="../core/src/setup/view/custom_board_tool/custom_board_select_file_widget.cpp" line="+22" />
-        <location line="+52" />
+        <location line="+57" />
         <source>Please select or drag image</source>
         <translation>Bitte Bild auswählen oder hineinziehen</translation>
     </message>
     <message>
-        <location line="-35" />
-        <location line="+62" />
+        <location line="-37" />
+        <location line="+65" />
         <source>Maximum file size is 2MB!</source>
         <translation>Maximale Dateigröße beträgt 2 MB!</translation>
     </message>
     <message>
-        <location line="+71" />
+        <location line="+73" />
         <source>Open image file</source>
         <translation>Bilddatei öffnen</translation>
     </message>
@@ -4091,7 +4283,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
 <context>
     <name>DatabaseManager</name>
     <message>
-        <location filename="../interfaces/src/database_manager/database_manager.cpp" line="+668" />
+        <location filename="../interfaces/src/database_manager/database_manager.cpp" line="+710" />
         <source>Database Error</source>
         <translation>Datenbankfehler</translation>
     </message>
@@ -4141,19 +4333,19 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
 <context>
     <name>DebugSessionManager</name>
     <message>
-        <location filename="../core/src/debugger/debug_session_manager.cpp" line="+234" />
+        <location filename="../core/src/debugger/debug_session_manager.cpp" line="+288" />
         <location line="+30" />
-        <location line="+175" />
+        <location line="+221" />
         <source>Debugger cannot be started. There is no active project</source>
         <translation>Debugger kann nicht gestartet werden. Es gibt kein aktives Projekt</translation>
     </message>
     <message>
-        <location line="-158" />
+        <location line="-204" />
         <source>Simulator is only supported for mikroC AI compilers.</source>
         <translation>Der Simulator wird nur für mikroC-AI-Compiler unterstützt.</translation>
     </message>
     <message>
-        <location line="+639" />
+        <location line="+755" />
         <source>Error occured: %1</source>
         <translation>Fehler aufgetreten: %1</translation>
     </message>
@@ -4161,6 +4353,11 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <location line="+12" />
         <source>Debugger: %1</source>
         <translation>Debugger: %1</translation>
+    </message>
+    <message>
+        <location line="+511" />
+        <source>No active debug session</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -4171,7 +4368,22 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Formular</translation>
     </message>
     <message>
-        <location filename="../core/src/debugger/debug_view/src/debug_view.cpp" line="+75" />
+        <location line="+229" />
+        <source>Address or expression to read from, e.g. 0x20000000 or &amp;buffer. Press Enter to read.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Address or expression (0x20000000, &amp;buffer)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Number of bytes to read</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/debugger/debug_view/src/debug_view.cpp" line="+105" />
         <source>  Locals</source>
         <translation>  Lokale Variablen</translation>
     </message>
@@ -4192,11 +4404,16 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     </message>
     <message>
         <location line="+1" />
+        <source>  Memory</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
         <source>  Call stack</source>
         <translation>  Aufrufliste</translation>
     </message>
     <message>
-        <location line="+140" />
+        <location line="+146" />
         <source>Remove breakpoint</source>
         <translation>Breakpoint entfernen</translation>
     </message>
@@ -4206,7 +4423,58 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Alle Breakpoints entfernen</translation>
     </message>
     <message>
-        <location line="+289" />
+        <location line="+290" />
+        <source>%1 bytes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+42" />
+        <source>Refresh memory</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Copy address</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+63" />
+        <location line="+71" />
+        <source>Start a debug session to read memory.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-65" />
+        <source>The active debugger does not support reading memory.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Pause the target to read memory.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+31" />
+        <source>Cannot evaluate %1.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+49" />
+        <source>Cannot read memory at %1.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>No readable memory at %1.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Memory view is not supported with the mikroC compiler.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+46" />
         <source>Add new expression</source>
         <translation>Neuen Ausdruck hinzufügen</translation>
     </message>
@@ -4264,9 +4532,32 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     </message>
 </context>
 <context>
+    <name>Debugger</name>
+    <message>
+        <location filename="../core/src/debugger/debugger.cpp" line="+318" />
+        <source>No debug port is available for the secondary core; only the primary core is debugged.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+290" />
+        <source>Opening %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Open trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not open %1: %2</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
     <name>DebuggerUIController</name>
     <message>
-        <location filename="../core/src/debugger/debugger_ui_controller.cpp" line="+53" />
+        <location filename="../core/src/debugger/debugger_ui_controller.cpp" line="+121" />
         <source>Debugger</source>
         <translation>Debugger</translation>
     </message>
@@ -4286,18 +4577,22 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Debugger stoppen</translation>
     </message>
     <message>
-        <location line="+4" />
         <source>Stop debugging active project.</source>
         <translation>Debuggen des aktiven Projekts stoppen.</translation>
     </message>
     <message>
-        <location line="+7" />
-        <location line="+145" />
+        <location line="+6" />
+        <source>Stop Debug (Ctrl+F2)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <location line="+144" />
         <source>Continue Debug</source>
         <translation>Debuggen fortsetzen</translation>
     </message>
     <message>
-        <location line="-128" />
+        <location line="-126" />
         <source>Restart Debug</source>
         <translation>Debuggen neu starten</translation>
     </message>
@@ -4337,7 +4632,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Disassemblierungsmodus</translation>
     </message>
     <message>
-        <location line="+44" />
+        <location line="+42" />
         <source>Pause Debug</source>
         <translation>Debuggen anhalten</translation>
     </message>
@@ -4350,6 +4645,151 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <location line="+6" />
         <source>Continue Debug (F6)</source>
         <translation>Debuggen fortsetzen (F6)</translation>
+    </message>
+    <message>
+        <location line="+262" />
+        <location line="+16" />
+        <source>Core %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+57" />
+        <source>Core %1: Task execution has not started yet. Resume debugging and pause again to view active tasks.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Tasks are ready but not running yet. Resume debugging and pause again to view their status.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>No active tasks yet. Resume debugging and pause again to check for tasks.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+21" />
+        <source>No tasks found - the scheduler has probably not started yet. Continue, then pause, to see the tasks.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+31" />
+        <source>Not started</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Running</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Suspended</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Unknown</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+105" />
+        <source>Tasks</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+19" />
+        <source>Queues</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+32" />
+        <source>The FreeRTOS view needs a debugger that can read target memory.
+Select GDB or LLDB in the project's toolchain settings to inspect tasks and queues.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Start a debug session and halt the target to inspect tasks, queues and heap.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+70" />
+        <source>Scheduler: running, suspended or not started yet.
+Tick: kernel ticks counted since the scheduler started.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Tick:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Scheduler:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+42" />
+        <source>The FreeRTOS view is open in a separate window.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <location line="+89" />
+        <source>Reattach</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-76" />
+        <location line="+18" />
+        <source>FreeRTOS</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-17" />
+        <source>FreeRTOS tasks and queues</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+75" />
+        <source>Detach</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Reattach to the bottom panel</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Detach into a separate window</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+191" />
+        <source>Core %1: %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+21" />
+        <source>Queue monitoring is not enabled. Enable it in your project settings and rebuild.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Queue details are not available for this build. The required debugging information is missing.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>No queues, semaphores or mutexes found. Register them in your application to view them here.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>No queues, semaphores or mutexes are registered. FreeRTOS can only list objects passed to vQueueAddToRegistry() - add a call after each one you create to inspect it here.</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -4460,7 +4900,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
 <context>
     <name>DesignerEditorPlugin</name>
     <message>
-        <location filename="../plugins/editors/designer_editor/src/designer_editor_plugin.cpp" line="+31" />
+        <location filename="../plugins/editors/designer_editor/src/designer_editor_plugin.cpp" line="+37" />
         <source>Design</source>
         <translation>Design</translation>
     </message>
@@ -4911,7 +5351,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <translation>Formular</translation>
     </message>
     <message>
-        <location filename="../plugins/editors/designer_editor/src/view/designer_view.cpp" line="+410" />
+        <location filename="../plugins/editors/designer_editor/src/view/designer_view.cpp" line="+427" />
         <source>Cut</source>
         <translation>Ausschneiden</translation>
     </message>
@@ -5153,14 +5593,14 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     <message>
         <location line="+28" />
         <location line="+77" />
-        <location line="+139" />
+        <location line="+140" />
         <source>Clock:</source>
         <translation>Takt:</translation>
     </message>
     <message>
-        <location line="-215" />
+        <location line="-216" />
         <location line="+77" />
-        <location line="+139" />
+        <location line="+140" />
         <source>Current MCU clock value</source>
         <translation>Aktueller MCU-Taktwert</translation>
     </message>
@@ -5274,7 +5714,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Eingebautes Display</translation>
     </message>
     <message>
-        <location filename="../core/src/setup/view/delegates/display_page_delegate.cpp" line="+32" />
+        <location filename="../core/src/setup/view/delegates/display_page_delegate.cpp" line="+81" />
         <source>Resolution:</source>
         <translation>Auflösung:</translation>
     </message>
@@ -5367,19 +5807,24 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Keine Downloads</translation>
     </message>
     <message>
-        <location filename="../core/src/web_browser/downloadmanagerwidget.cpp" line="+77" />
-        <location line="+135" />
+        <location filename="../core/src/web_browser/downloadmanagerwidget.cpp" line="+153" />
+        <location line="+153" />
         <source>All Files (*)</source>
         <translation>Alle Dateien (*)</translation>
     </message>
     <message>
-        <location line="-130" />
-        <location line="+136" />
+        <location line="-148" />
+        <location line="+154" />
         <source>Save as</source>
         <translation>Speichern unter</translation>
     </message>
     <message>
-        <location line="-44" />
+        <location line="-87" />
+        <source>Downloading %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+42" />
         <source>Download ZIP</source>
         <translation>ZIP herunterladen</translation>
     </message>
@@ -5399,7 +5844,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;Enthält ein NECTO-Projekt.</translation>
     </message>
     <message>
-        <location line="+66" />
+        <location line="+67" />
         <source>OK</source>
         <translation>OK</translation>
     </message>
@@ -5511,7 +5956,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
 <context>
     <name>EditorManager</name>
     <message>
-        <location filename="../core/src/editor_manager/editor_manager.cpp" line="+61" />
+        <location filename="../core/src/editor_manager/editor_manager.cpp" line="+94" />
         <source>Open file</source>
         <translation>Datei öffnen</translation>
     </message>
@@ -5689,7 +6134,17 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Minimap</translation>
     </message>
     <message>
-        <location filename="../core/src/settings_manager/editor_page.cpp" line="+40" />
+        <location line="+14" />
+        <source>Inline Debug Values</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Breadcrumbs</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/settings_manager/editor_page.cpp" line="+39" />
         <source>Controls whether the editor should automatically close quotes after the user adds an opening quote.</source>
         <translation>Legt fest, ob der Editor Anführungszeichen automatisch schließen soll, nachdem der Benutzer ein öffnendes Anführungszeichen eingegeben hat.</translation>
     </message>
@@ -5744,6 +6199,16 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Zeigt seitlich im Editor eine Codeübersicht als Minimap für schnelle Navigation an.</translation>
     </message>
     <message>
+        <location line="+3" />
+        <source>While debugging, show the values of local variables at the end of the lines that use them.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Show a bar above the editor with the file's path and the symbols around the cursor, each opening a picker to navigate.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <location line="+4" />
         <source>Defines the maximum length of a line the editor will tokenize. Lines above this length will not be tokenized for performance.</source>
         <translation>Definiert die maximale Länge einer Zeile, die der Editor tokenisiert. Längere Zeilen werden aus Leistungsgründen nicht tokenisiert.</translation>
@@ -5774,17 +6239,14 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Texteditor-Einstellungen</translation>
     </message>
     <message>
-        <location line="+185" />
         <source>Restart now</source>
         <translation>Jetzt neu starten</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Restart later</source>
         <translation>Später neu starten</translation>
     </message>
     <message>
-        <location line="+2" />
         <source>Changes will be visible after you restart NECTO Studio.</source>
         <translation>Änderungen werden nach einem Neustart von NECTO Studio sichtbar.</translation>
     </message>
@@ -5892,7 +6354,12 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
 <context>
     <name>EnterKeyFrame</name>
     <message>
-        <location filename="../core/src/planet_debug/view/enter_key_frame.ui" line="+64" />
+        <location filename="../core/src/planet_debug/view/enter_key_frame.ui" line="+33" />
+        <source>This board is currently reserved. Enter your reservation key to access it.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+44" />
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
@@ -5940,7 +6407,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Schatten aktivieren</translation>
     </message>
     <message>
-        <location filename="../core/src/settings_manager/environment_page.cpp" line="+30" />
+        <location filename="../core/src/settings_manager/environment_page.cpp" line="+29" />
         <source>Dark</source>
         <translation>Dunkel</translation>
     </message>
@@ -5955,22 +6422,19 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Systemstandard</translation>
     </message>
     <message>
-        <location line="+60" />
         <source>Restart now</source>
         <translation>Jetzt neu starten</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Restart later</source>
         <translation>Später neu starten</translation>
     </message>
     <message>
-        <location line="+2" />
         <source>Changes will be visible after you restart NECTO Studio.</source>
         <translation>Änderungen werden nach einem Neustart von NECTO Studio sichtbar.</translation>
     </message>
     <message>
-        <location line="+48" />
+        <location line="+90" />
         <source>Appearance settings</source>
         <translation>Darstellungseinstellungen</translation>
     </message>
@@ -6571,17 +7035,33 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     <name>FiltersPanel</name>
     <message>
         <source>Package type:</source>
-        <translation type="obsolete">Pakettyp:</translation>
+        <translation>Pakettyp:</translation>
     </message>
     <message>
         <source>Package status:</source>
-        <translation type="obsolete">Paketstatus:</translation>
+        <translation>Paketstatus:</translation>
     </message>
     <message>
         <source>Package category:</source>
-        <translation type="obsolete">Paketkategorie:</translation>
+        <translation>Paketkategorie:</translation>
     </message>
-<message><source> Package type:</source><translation> Pakettyp:</translation></message><message><source> Author:</source><translation> Autor:</translation></message><message><source> Package status:</source><translation> Paketstatus:</translation></message><message><source> Package category:</source><translation> Paketkategorie:</translation></message></context>
+    <message>
+        <source> Package type:</source>
+        <translation> Pakettyp:</translation>
+    </message>
+    <message>
+        <source> Author:</source>
+        <translation> Autor:</translation>
+    </message>
+    <message>
+        <source> Package status:</source>
+        <translation> Paketstatus:</translation>
+    </message>
+    <message>
+        <source> Package category:</source>
+        <translation> Paketkategorie:</translation>
+    </message>
+</context>
 <context>
     <name>FindInFilesView</name>
     <message>
@@ -6703,24 +7183,79 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
 <context>
     <name>FloatingMessageFrame</name>
     <message>
-        <location filename="../core/src/output/floating_message_frame.ui" line="+20" />
+        <location filename="../core/src/output/floating_message_frame.ui" line="+26" />
         <source>Frame</source>
         <translation>Rahmen</translation>
     </message>
     <message>
-        <location line="+98" />
+        <location line="+39" />
+        <location filename="../core/src/output/floating_message_frame.cpp" line="+451" />
+        <source>NECTO Assistant</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location line="+61" />
+        <location line="+72" />
+        <source>Copy Code</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Add to source</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <source>Insert at Cursor</source>
         <translation>Am Cursor einfügen</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="-7" />
         <source>Copy code</source>
         <translation>Code kopieren</translation>
+    </message>
+    <message>
+        <location filename="../core/src/output/floating_message_frame.cpp" line="-172" />
+        <source>No file is open to replace. Use Copy Code instead.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>&lt;b&gt;%1&lt;/b&gt; is no longer available. Use Copy Code instead.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+72" />
+        <source>Add to %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>No source file with main() found in the project. Use Copy code instead.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 is no longer available. Use Copy code instead.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>%1 has unsaved changes. Save it first, or use Copy code instead.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+32" />
+        <source>Could not write %1.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+46" />
+        <source>NECTO Studio</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -6782,7 +7317,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Ändern Sie den Debugger Ihres Programms je nach Bedarf von LLDB zu GDB oder umgekehrt.</translation>
     </message>
     <message>
-        <location filename="../plugins/toolchains/gccARM/src/view/gcc_arm_settings_view.cpp" line="+12" />
+        <location filename="../plugins/toolchains/gccARM/src/view/gcc_arm_settings_view.cpp" line="+15" />
         <source>Compiler Settings</source>
         <translation>Compiler-Einstellungen</translation>
     </message>
@@ -6795,6 +7330,11 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <location line="+1" />
         <source>Save</source>
         <translation>Speichern</translation>
+    </message>
+    <message>
+        <location line="+27" />
+        <source>LLDB is not supported for the selected MCU.</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -6828,6 +7368,11 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <location line="+10" />
         <source>Change your program's debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
         <translation>Ändern Sie den Debugger Ihres Programms je nach Bedarf von LLDB zu GDB oder umgekehrt.</translation>
+    </message>
+    <message>
+        <location filename="../plugins/toolchains/gccRX/src/view/gccRX_settings_view.cpp" line="+32" />
+        <source>LLDB does not support RX.</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -6994,17 +7539,15 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Wählen Sie die Sprache der NECTO-Studio-Oberfläche. Wird nach einem Neustart wirksam.</translation>
     </message>
     <message>
-        <location line="+34" />
         <source>Mongoose port:</source>
         <translation>Mongoose-Port:</translation>
     </message>
     <message>
-        <location line="+7" />
         <source>Enter the TCP port number for the Mongoose web server. Default: 8000.</source>
         <translation>Geben Sie die TCP-Portnummer für den Mongoose-Webserver ein. Standard: 8000.</translation>
     </message>
     <message>
-        <location line="+30" />
+        <location line="+31" />
         <source>Remote Debugging Timeout (seconds):</source>
         <translation>Zeitüberschreitung für Remote-Debugging (Sekunden):</translation>
     </message>
@@ -7024,12 +7567,11 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Cache leeren</translation>
     </message>
     <message>
-        <location filename="../core/src/settings_manager/general_page.cpp" line="+22" />
+        <location filename="../core/src/settings_manager/general_page.cpp" line="+23" />
         <source>Default projects path</source>
         <translation>Standardpfad für Projekte</translation>
     </message>
     <message>
-        <location line="+3" />
         <source>Mongoose port</source>
         <translation>Mongoose-Port</translation>
     </message>
@@ -7038,7 +7580,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Systemstandard</translation>
     </message>
     <message>
-        <location line="+23" />
+        <location line="+19" />
         <source>Yes</source>
         <translation>Ja</translation>
     </message>
@@ -7053,27 +7595,24 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>NECTO-Studio-Cachedateien löschen? &lt;br&gt;&lt;br&gt; NECTO Studio wird neu gestartet</translation>
     </message>
     <message>
-        <location line="+27" />
+        <location line="+26" />
         <source>Miscellaneous settings</source>
         <translation>Sonstige Einstellungen</translation>
     </message>
     <message>
-        <location line="+118" />
+        <location line="+117" />
         <source>Browse folder</source>
         <translation>Ordner durchsuchen</translation>
     </message>
     <message>
-        <location line="+10" />
         <source>Restart now</source>
         <translation>Jetzt neu starten</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Restart later</source>
         <translation>Später neu starten</translation>
     </message>
     <message>
-        <location line="+2" />
         <source>Changes will be visible after you restart NECTO Studio.</source>
         <translation>Änderungen werden nach einem Neustart von NECTO Studio sichtbar.</translation>
     </message>
@@ -7603,7 +8142,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
 <context>
     <name>HIDTerminal</name>
     <message>
-        <location filename="../plugins/tools/hid_terminal/src/hid_terminal.cpp" line="+139" />
+        <location filename="../plugins/tools/hid_terminal/src/hid_terminal.cpp" line="+148" />
         <source>HID Terminal</source>
         <translation>HID-Terminal</translation>
     </message>
@@ -7982,7 +8521,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Interrupt initialisieren</translation>
     </message>
     <message>
-        <location filename="../plugins/tools/interrupt_assistant/src/interrupt_assistant_view.cpp" line="+59" />
+        <location filename="../plugins/tools/interrupt_assistant/src/interrupt_assistant_view.cpp" line="+61" />
         <source>Code generated succefully</source>
         <translation>Code erfolgreich generiert</translation>
     </message>
@@ -8139,7 +8678,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
 <context>
     <name>KDevMI::MIDebugger</name>
     <message>
-        <location filename="../servers/dap_servers/mikroDAP/src/gdb_common/midebugger.cpp" line="+380" />
+        <location filename="../servers/dap_servers/mikroDAP/src/gdb_common/midebugger.cpp" line="+393" />
         <source>Process exited</source>
         <translation>Prozess beendet</translation>
     </message>
@@ -8154,12 +8693,12 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
 <context>
     <name>LSPClient</name>
     <message>
-        <location filename="../core/src/lsp/lsp_client.cpp" line="+84" />
+        <location filename="../core/src/lsp/lsp_client.cpp" line="+86" />
         <source>Initializing code model. Please wait.</source>
         <translation>Codemodell wird initialisiert. Bitte warten.</translation>
     </message>
     <message>
-        <location line="+61" />
+        <location line="+59" />
         <source>Code model initialized.</source>
         <translation>Codemodell initialisiert.</translation>
     </message>
@@ -8169,7 +8708,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Projekt wird indiziert...</translation>
     </message>
     <message>
-        <location line="+308" />
+        <location line="+315" />
         <source>Indexing project failed. Check your configuration.</source>
         <translation>Projektindizierung fehlgeschlagen. Überprüfen Sie Ihre Konfiguration.</translation>
     </message>
@@ -8215,7 +8754,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
 <context>
     <name>LVGLDesignerEditorPluginV9</name>
     <message>
-        <location filename="../plugins/editors/lvgl_designer_editor_v9/src/lvgl_designer_editor_plugin_v9.cpp" line="+31" />
+        <location filename="../plugins/editors/lvgl_designer_editor_v9/src/lvgl_designer_editor_plugin_v9.cpp" line="+37" />
         <source>Design</source>
         <translation>Design</translation>
     </message>
@@ -8229,15 +8768,15 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Formular</translation>
     </message>
     <message>
-        <location filename="../plugins/editors/lvgl_designer_editor_v9/src/view/lvgl_designer_view.cpp" line="+219" />
+        <location filename="../plugins/editors/lvgl_designer_editor_v9/src/view/lvgl_designer_view.cpp" line="+230" />
         <location line="+48" />
-        <location filename="../plugins/editors/lvgl_designer_editor_v8/src/view/lvgl_designer_view.cpp" line="+210" />
+        <location filename="../plugins/editors/lvgl_designer_editor_v8/src/view/lvgl_designer_view.cpp" line="+221" />
         <location line="+48" />
         <source>Align and distrubute</source>
         <translation>Ausrichten und verteilen</translation>
     </message>
     <message>
-        <location line="+52" />
+        <location line="+59" />
         <source> Object inspector</source>
         <translation> Objektinspektor</translation>
     </message>
@@ -8268,7 +8807,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     </message>
     <message>
         <location line="+11" />
-        <location filename="../plugins/editors/lvgl_designer_editor_v8/src/view/lvgl_designer_view.cpp" line="+73" />
+        <location filename="../plugins/editors/lvgl_designer_editor_v8/src/view/lvgl_designer_view.cpp" line="+80" />
         <source>Align left</source>
         <translation>Links ausrichten</translation>
     </message>
@@ -8797,8 +9336,8 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
 <context>
     <name>LVGLIScreen</name>
     <message>
-        <location filename="../plugins/editors/lvgl_designer_editor_v9/src/interfaces/lvgl_i_screen.cpp" line="+242" />
-        <location filename="../plugins/editors/lvgl_designer_editor_v8/src/interfaces/lvgl_i_screen.cpp" line="+208" />
+        <location filename="../plugins/editors/lvgl_designer_editor_v9/src/interfaces/lvgl_i_screen.cpp" line="+247" />
+        <location filename="../plugins/editors/lvgl_designer_editor_v8/src/interfaces/lvgl_i_screen.cpp" line="+213" />
         <source>Add</source>
         <translation>Hinzufügen</translation>
     </message>
@@ -8859,7 +9398,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Klicken Sie auf das Zahnrad, um eine Aktion hinzuzufügen</translation>
     </message>
     <message>
-        <location line="+215" />
+        <location line="+222" />
         <source>Skip this point</source>
         <translation>Diesen Punkt überspringen</translation>
     </message>
@@ -8886,7 +9425,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
 <context>
     <name>LVGLSeriesInlinePopup</name>
     <message>
-        <location filename="../plugins/editors/lvgl_designer_editor_v9/src/model/properties/lvgl_series_inline_popup.cpp" line="+39" />
+        <location filename="../plugins/editors/lvgl_designer_editor_v9/src/model/properties/lvgl_series_inline_popup.cpp" line="+40" />
         <source>Series settings</source>
         <translation>Serieneinstellungen</translation>
     </message>
@@ -9958,7 +10497,7 @@ li.checked::marker { content: "\2612"; }
 &lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu';"&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../plugins/tools/lcd_custom_character/src/lcd_char.cpp" line="+26" />
+        <location filename="../plugins/tools/lcd_custom_character/src/lcd_char.cpp" line="+28" />
         <source>Search for custom char</source>
         <translation>Nach benutzerdefiniertem Zeichen suchen</translation>
     </message>
@@ -9976,6 +10515,11 @@ li.checked::marker { content: "\2612"; }
         <location line="+98" />
         <source>Code generated succefully</source>
         <translation>Code erfolgreich generiert</translation>
+    </message>
+    <message>
+        <location line="+68" />
+        <source>Could not save character library.</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -10240,7 +10784,7 @@ Beispiele
         <translation>Projektbibliotheken verwalten</translation>
     </message>
     <message>
-        <location filename="../core/src/library_manager/library_manager_view.cpp" line="+64" />
+        <location filename="../core/src/library_manager/library_manager_view.cpp" line="+65" />
         <source>Filter libraries</source>
         <translation>Bibliotheken filtern</translation>
     </message>
@@ -10280,7 +10824,12 @@ Beispiele
         <translation>Include-Direktive in die Zwischenablage kopiert.</translation>
     </message>
     <message>
-        <location line="+100" />
+        <location line="+1" />
+        <source>Library Manager</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+101" />
         <source>Collapse</source>
         <translation>Einklappen</translation>
     </message>
@@ -10321,6 +10870,11 @@ Beispiele
         <location line="+2" />
         <source>Components</source>
         <translation>Komponenten</translation>
+    </message>
+    <message>
+        <location filename="../interfaces/src/library_manager/library_tree_model.cpp" line="+356" />
+        <source>Library Manager</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -10389,7 +10943,7 @@ Beispiele
         <translation>Bitte starten Sie NECTO Studio neu, nachdem Sie den Kaufvorgang abgeschlossen haben.</translation>
     </message>
     <message>
-        <location line="+41" />
+        <location line="+52" />
         <source>No internet connection.</source>
         <translation>Keine Internetverbindung.</translation>
     </message>
@@ -10617,12 +11171,12 @@ Beispiele
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../core/src/main_window/main_window.cpp" line="+101" />
+        <location filename="../core/src/main_window/main_window.cpp" line="+103" />
         <source>Code</source>
         <translation>Code</translation>
     </message>
     <message>
-        <location line="+152" />
+        <location line="+155" />
         <source>Show Remote Board</source>
         <translation>Remote-Platine anzeigen</translation>
     </message>
@@ -10632,7 +11186,7 @@ Beispiele
         <translation>Programmiergerät-Einstellungen öffnen</translation>
     </message>
     <message>
-        <location line="+604" />
+        <location line="+618" />
         <source>File</source>
         <translation>Datei</translation>
     </message>
@@ -10677,7 +11231,7 @@ Beispiele
         <translation>&amp;Hilfe</translation>
     </message>
     <message>
-        <location line="+137" />
+        <location line="+155" />
         <source>A background operation is running. Please wait until it finishes before closing the application.</source>
         <translation>Ein Hintergrundvorgang läuft. Bitte warten Sie, bis er beendet ist, bevor Sie die Anwendung schließen.</translation>
     </message>
@@ -10685,6 +11239,207 @@ Beispiele
         <location line="+4" />
         <source>OK</source>
         <translation>OK</translation>
+    </message>
+</context>
+<context>
+    <name>MarkdownEditor</name>
+    <message>
+        <location filename="../core/src/productivity_hub/upload_project_wizard/markdown_editor.ui" line="+33" />
+        <source>Edit</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+240" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/markdown_editor.cpp" line="+359" />
+        <source>Text</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>URL</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>https://</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Insert</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Cancel</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+18" />
+        <source>Preview</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/productivity_hub/upload_project_wizard/markdown_editor.cpp" line="-261" />
+        <source>Heading</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Bold (Ctrl+B)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Italic (Ctrl+I)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Strikethrough</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Bulleted list</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Numbered list</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Quote</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Inline code</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Code block</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Table</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Horizontal line</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Link (Ctrl+K)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Image</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Heading %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Image from URL...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Image from file...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <location line="+29" />
+        <source>bold</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-27" />
+        <location line="+29" />
+        <source>italic</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-27" />
+        <source>strikethrough</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>code</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+212" />
+        <source>Column 1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Column 2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Value</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Description</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Insert image</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Insert link</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+28" />
+        <source>image</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Select image</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Images (*.png *.jpg *.jpeg *.gif *.webp)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Only PNG, JPEG, GIF and WebP images are supported.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Image is larger than 1 MB, use an image URL instead.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Cannot read %1.</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -10704,7 +11459,7 @@ Beispiele
 <context>
     <name>Mattermost</name>
     <message>
-        <location filename="../plugins/mattermost_client/src/mattermost.cpp" line="+25" />
+        <location filename="../plugins/mattermost_client/src/mattermost.cpp" line="+26" />
         <source>NECTO Chat</source>
         <translation>NECTO Chat</translation>
     </message>
@@ -10717,7 +11472,7 @@ Beispiele
         <translation>Formular</translation>
     </message>
     <message>
-        <location filename="../plugins/mattermost_client/src/mattermost_view.cpp" line="+901" />
+        <location filename="../plugins/mattermost_client/src/mattermost_view.cpp" line="+913" />
         <source>Initializing NECTO Chat</source>
         <translation>NECTO Chat wird initialisiert</translation>
     </message>
@@ -10737,7 +11492,7 @@ Beispiele
         <translation>Der Chatdienst konnte nicht erreicht werden. Möglicherweise ist er vorübergehend nicht verfügbar oder wird gewartet. Bitte versuchen Sie es in einigen Minuten erneut.</translation>
     </message>
     <message>
-        <location line="+41" />
+        <location line="+15" />
         <source>Retry</source>
         <translation>Erneut versuchen</translation>
     </message>
@@ -10822,7 +11577,7 @@ Beispiele
         <translation>channel:</translation>
     </message>
     <message>
-        <location line="+934" />
+        <location line="+1117" />
         <source>Chat is not available.</source>
         <translation>Chat ist nicht verfügbar.</translation>
     </message>
@@ -12265,8 +13020,8 @@ Beispiele
     </message>
     <message>
         <location line="+19" />
-        <location filename="../core/src/productivity_hub/upload_project_wizard/mikrobus_selector.cpp" line="+35" />
-        <location line="+4" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/mikrobus_selector.cpp" line="+37" />
+        <location line="+3" />
         <source>None</source>
         <translation>Keine</translation>
     </message>
@@ -12276,7 +13031,7 @@ Beispiele
         <translation>mikroBUS 1</translation>
     </message>
     <message>
-        <location filename="../core/src/productivity_hub/upload_project_wizard/mikrobus_selector.cpp" line="-2" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/mikrobus_selector.cpp" line="+48" />
         <source>mikroBUS %1</source>
         <translation>mikroBUS %1</translation>
     </message>
@@ -12443,7 +13198,7 @@ Beispiele
         <translation>Rahmen</translation>
     </message>
     <message>
-        <location filename="../plugins/editors/monaco_editor/src/monaco_editor_view.cpp" line="+131" />
+        <location filename="../plugins/editors/monaco_editor/src/monaco_editor_view.cpp" line="+130" />
         <source>Find in files</source>
         <translation>In Dateien suchen</translation>
     </message>
@@ -12556,12 +13311,11 @@ Beispiele
         <translation>Rahmen</translation>
     </message>
     <message>
-        <location line="+59" />
         <source>All</source>
         <translation>Alle</translation>
     </message>
     <message>
-        <location line="+13" />
+        <location line="+49" />
         <source>Published</source>
         <translation>Veröffentlicht</translation>
     </message>
@@ -12571,9 +13325,9 @@ Beispiele
         <translation>Unveröffentlicht</translation>
     </message>
     <message>
-        <location line="+41" />
-        <location filename="../core/src/package_manager/view/my_packages_view.cpp" line="+86" />
-        <location line="+70" />
+        <location line="+28" />
+        <location filename="../core/src/package_manager/view/my_packages_view.cpp" line="+67" />
+        <location line="+78" />
         <source>You have not uploaded any projects yet.</source>
         <translation>Sie haben noch keine Projekte hochgeladen.</translation>
     </message>
@@ -13216,11 +13970,11 @@ Möchten Sie jetzt aktualisieren?</translation>
     </message>
     <message>
         <source>Choose</source>
-        <translation type="obsolete">Auswählen</translation>
+        <translation>Auswählen</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="obsolete">Fertigstellen</translation>
+        <translation>Fertigstellen</translation>
     </message>
     <message>
         <source>Search for %1</source>
@@ -14322,27 +15076,27 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <name>Necto::ClangRL78SettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="obsolete">Rahmen</translation>
+        <translation>Rahmen</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="obsolete">Compiler-Einstellungen </translation>
+        <translation>Compiler-Einstellungen </translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation type="obsolete">Debugger</translation>
+        <translation>Debugger</translation>
     </message>
     <message>
         <source>LLDB</source>
-        <translation type="obsolete">LLDB</translation>
+        <translation>LLDB</translation>
     </message>
     <message>
         <source>GDB</source>
-        <translation type="obsolete">GDB</translation>
+        <translation>GDB</translation>
     </message>
     <message>
         <source>Change your program's debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
-        <translation type="obsolete">Ändern Sie den Debugger Ihres Programms je nach Bedarf von LLDB zu GDB oder umgekehrt.</translation>
+        <translation>Ändern Sie den Debugger Ihres Programms je nach Bedarf von LLDB zu GDB oder umgekehrt.</translation>
     </message>
 </context>
 <context>
@@ -14950,15 +15704,15 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <name>Necto::ColorDialog</name>
     <message>
         <source>Form</source>
-        <translation type="obsolete">Formular</translation>
+        <translation>Formular</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="obsolete">Abbrechen</translation>
+        <translation>Abbrechen</translation>
     </message>
     <message>
         <source>Choose</source>
-        <translation type="obsolete">Auswählen</translation>
+        <translation>Auswählen</translation>
     </message>
     <message>
         <source>Choose color</source>
@@ -15298,11 +16052,11 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <name>Necto::CompilerItemFrame</name>
     <message>
         <source>Frame</source>
-        <translation type="obsolete">Rahmen</translation>
+        <translation>Rahmen</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="obsolete">Textbeschriftung</translation>
+        <translation>Textbeschriftung</translation>
     </message>
 </context>
 <context>
@@ -16006,11 +16760,11 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <name>Necto::CustomNamePage</name>
     <message>
         <source>Next</source>
-        <translation type="obsolete">Weiter</translation>
+        <translation>Weiter</translation>
     </message>
     <message>
         <source>Finish</source>
-        <translation type="obsolete">Fertigstellen</translation>
+        <translation>Fertigstellen</translation>
     </message>
     <message>
         <source>Search for %1</source>
@@ -16030,6 +16784,14 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <message>
         <source>&lt;a href="%1"&gt;Product page&lt;/a&gt;</source>
         <translation>&lt;a href="%1"&gt;Produktseite&lt;/a&gt;</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::DapStdoutReader</name>
+    <message>
+        <location filename="../core/src/debugger/dap_stdout_reader.cpp" line="+94" />
+        <source>Standard output: no breakpoint on stdBuffFullBreak (%1): %2</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -16358,147 +17120,147 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <name>Necto::DesignerUiStrings</name>
     <message>
         <source>Align and distrubute</source>
-        <translation type="obsolete">Ausrichten und verteilen</translation>
+        <translation>Ausrichten und verteilen</translation>
     </message>
     <message>
         <source>Active</source>
-        <translation type="obsolete">Aktiv</translation>
+        <translation>Aktiv</translation>
     </message>
     <message>
         <source>Background</source>
-        <translation type="obsolete">Hintergrund</translation>
+        <translation>Hintergrund</translation>
     </message>
     <message>
         <source>Box</source>
-        <translation type="obsolete">Box</translation>
+        <translation>Box</translation>
     </message>
     <message>
         <source>Button</source>
-        <translation type="obsolete">Schaltfläche</translation>
+        <translation>Schaltfläche</translation>
     </message>
     <message>
         <source>Caption</source>
-        <translation type="obsolete">Beschriftung</translation>
+        <translation>Beschriftung</translation>
     </message>
     <message>
         <source>Checkbox</source>
-        <translation type="obsolete">Kontrollkästchen</translation>
+        <translation>Kontrollkästchen</translation>
     </message>
     <message>
         <source>Click on icon to change color</source>
-        <translation type="obsolete">Klicken Sie auf das Symbol, um die Farbe zu ändern</translation>
+        <translation>Klicken Sie auf das Symbol, um die Farbe zu ändern</translation>
     </message>
     <message>
         <source>Click on icon to change font</source>
-        <translation type="obsolete">Klicken Sie auf das Symbol, um die Schriftart zu ändern</translation>
+        <translation>Klicken Sie auf das Symbol, um die Schriftart zu ändern</translation>
     </message>
     <message>
         <source>Click on icon to change image</source>
-        <translation type="obsolete">Klicken Sie auf das Symbol, um das Bild zu ändern</translation>
+        <translation>Klicken Sie auf das Symbol, um das Bild zu ändern</translation>
     </message>
     <message>
         <source>Components</source>
-        <translation type="obsolete">Komponenten</translation>
+        <translation>Komponenten</translation>
     </message>
     <message>
         <source>Color</source>
-        <translation type="obsolete">Farbe</translation>
+        <translation>Farbe</translation>
     </message>
     <message>
         <source>Enabled</source>
-        <translation type="obsolete">Aktiviert</translation>
+        <translation>Aktiviert</translation>
     </message>
     <message>
         <source>Events inspector</source>
-        <translation type="obsolete">Ereignisinspektor</translation>
+        <translation>Ereignisinspektor</translation>
     </message>
     <message>
         <source>Font</source>
-        <translation type="obsolete">Schriftart</translation>
+        <translation>Schriftart</translation>
     </message>
     <message>
         <source>Geometry</source>
-        <translation type="obsolete">Geometrie</translation>
+        <translation>Geometrie</translation>
     </message>
     <message>
         <source>Height</source>
-        <translation type="obsolete">Höhe</translation>
+        <translation>Höhe</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation type="obsolete">Bild</translation>
+        <translation>Bild</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation type="obsolete">Beschriftung</translation>
+        <translation>Beschriftung</translation>
     </message>
     <message>
         <source>Left</source>
-        <translation type="obsolete">Links</translation>
+        <translation>Links</translation>
     </message>
     <message>
         <source>Line</source>
-        <translation type="obsolete">Linie</translation>
+        <translation>Linie</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="obsolete">Name</translation>
+        <translation>Name</translation>
     </message>
     <message>
         <source>Object inspector</source>
-        <translation type="obsolete">Objektinspektor</translation>
+        <translation>Objektinspektor</translation>
     </message>
     <message>
         <source>Position</source>
-        <translation type="obsolete">Position</translation>
+        <translation>Position</translation>
     </message>
     <message>
         <source>Property</source>
-        <translation type="obsolete">Eigenschaft</translation>
+        <translation>Eigenschaft</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="obsolete">Entfernen</translation>
+        <translation>Entfernen</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="obsolete">Größe</translation>
+        <translation>Größe</translation>
     </message>
     <message>
         <source>Stack order</source>
-        <translation type="obsolete">Stapelreihenfolge</translation>
+        <translation>Stapelreihenfolge</translation>
     </message>
     <message>
         <source>Static</source>
-        <translation type="obsolete">Statisch</translation>
+        <translation>Statisch</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation type="obsolete">Text</translation>
+        <translation>Text</translation>
     </message>
     <message>
         <source>Top</source>
-        <translation type="obsolete">Oben</translation>
+        <translation>Oben</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="obsolete">Typ</translation>
+        <translation>Typ</translation>
     </message>
     <message>
         <source>User components</source>
-        <translation type="obsolete">Benutzerkomponenten</translation>
+        <translation>Benutzerkomponenten</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="obsolete">Wert</translation>
+        <translation>Wert</translation>
     </message>
     <message>
         <source>Visible</source>
-        <translation type="obsolete">Sichtbar</translation>
+        <translation>Sichtbar</translation>
     </message>
     <message>
         <source>Width</source>
-        <translation type="obsolete">Breite</translation>
+        <translation>Breite</translation>
     </message>
     <message>
         <source>Gradient</source>
@@ -16867,7 +17629,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     <name>Necto::DeviceWizardPage</name>
     <message>
         <source>Create New Configuration</source>
-        <translation type="obsolete">Neue Konfiguration erstellen</translation>
+        <translation>Neue Konfiguration erstellen</translation>
     </message>
     <message>
         <source>Choose a MCU</source>
@@ -18370,27 +19132,27 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     <name>Necto::GCCRXSettingsView</name>
     <message>
         <source>Frame</source>
-        <translation type="obsolete">Rahmen</translation>
+        <translation>Rahmen</translation>
     </message>
     <message>
         <source>Compiler settings </source>
-        <translation type="obsolete">Compiler-Einstellungen </translation>
+        <translation>Compiler-Einstellungen </translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation type="obsolete">Debugger</translation>
+        <translation>Debugger</translation>
     </message>
     <message>
         <source>LLDB</source>
-        <translation type="obsolete">LLDB</translation>
+        <translation>LLDB</translation>
     </message>
     <message>
         <source>GDB</source>
-        <translation type="obsolete">GDB</translation>
+        <translation>GDB</translation>
     </message>
     <message>
         <source>Change your program's debugger from LLDB to GDB or vice versa, depending on your specific requirements.</source>
-        <translation type="obsolete">Ändern Sie den Debugger Ihres Programms je nach Bedarf von LLDB zu GDB oder umgekehrt.</translation>
+        <translation>Ändern Sie den Debugger Ihres Programms je nach Bedarf von LLDB zu GDB oder umgekehrt.</translation>
     </message>
 </context>
 <context>
@@ -18665,39 +19427,39 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     <name>Necto::GuidedTourStrings</name>
     <message>
         <source>Package Manager</source>
-        <translation type="obsolete">Paketmanager</translation>
+        <translation>Paketmanager</translation>
     </message>
     <message>
         <source>Simulator</source>
-        <translation type="obsolete">Simulator</translation>
+        <translation>Simulator</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation type="obsolete">Debuggen</translation>
+        <translation>Debuggen</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation type="obsolete">Debugger</translation>
+        <translation>Debugger</translation>
     </message>
     <message>
         <source>Find in Files</source>
-        <translation type="obsolete">In Dateien suchen</translation>
+        <translation>In Dateien suchen</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation type="obsolete">Werkzeuge</translation>
+        <translation>Werkzeuge</translation>
     </message>
     <message>
         <source>Plot</source>
-        <translation type="obsolete">Plot</translation>
+        <translation>Plot</translation>
     </message>
     <message>
         <source>Compile output</source>
-        <translation type="obsolete">Kompilierungsausgabe</translation>
+        <translation>Kompilierungsausgabe</translation>
     </message>
     <message>
         <source>Application output</source>
-        <translation type="obsolete">Anwendungsausgabe</translation>
+        <translation>Anwendungsausgabe</translation>
     </message>
     <message>
         <source>&lt;p&gt;Select the type of project you want to create.&lt;/p&gt;&lt;p&gt;We'll choose the standard type for now.&lt;/p&gt;</source>
@@ -19027,7 +19789,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     <name>Necto::HIDTerminal</name>
     <message>
         <source>HID Terminal</source>
-        <translation type="obsolete">HID-Terminal</translation>
+        <translation>HID-Terminal</translation>
     </message>
 </context>
 <context>
@@ -19035,6 +19797,59 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     <message>
         <source>Filter %1</source>
         <translation>Filtere %1</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::HeapUsageBar</name>
+    <message>
+        <location filename="../core/src/debugger/debug_view/src/heap_usage_bar.cpp" line="+64" />
+        <source>Total Heap: start a debug session and halt to read</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Total Heap: not available for this allocator</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Total Heap: 0 / %1 (nothing allocated yet)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Total Heap: nothing allocated yet</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Total Heap: %1 / %2 (%3%)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Total Heap: %1 free</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Total Heap: </source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Free: %1 (low: %2)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>The least free heap this run. A big gap means bursts of allocation.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Free: %1</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -19462,18 +20277,22 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Hex wird in Bin konvertiert...</translation>
     </message>
     <message>
-        <location filename="../core/src/setup/setup_manager.cpp" line="+327" />
+        <location filename="../core/src/setup/setup_manager.cpp" line="+371" />
         <source>Cloning SDK...</source>
         <translation>SDK wird geklont...</translation>
     </message>
     <message>
-        <location line="+1758" />
-        <location line="+23" />
+        <location line="+1975" />
+        <location line="+26" />
         <source>Preparing SDK...</source>
         <translation>SDK wird vorbereitet...</translation>
     </message>
     <message>
-        <location filename="../core/src/project_manager/project_manager.cpp" line="+1380" />
+        <location line="+101" />
+        <source>Installing configuration...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <source>Installing setup...</source>
         <translation>Konfiguration wird installiert...</translation>
     </message>
@@ -19483,7 +20302,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Aktuelle Konfiguration wird gesichert...</translation>
     </message>
     <message>
-        <location filename="../plugins/programers/segger_jlink/src/segger_jlink_job.cpp" line="+133" />
+        <location filename="../plugins/programers/segger_jlink/src/segger_jlink_job.cpp" line="+135" />
         <source>SEGGER J-Link: Programming</source>
         <translation>SEGGER J-Link: Programmierung</translation>
     </message>
@@ -19493,7 +20312,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>SEGGER J-Link: Löschen</translation>
     </message>
     <message>
-        <location filename="../interfaces/src/database_manager/database_manager.cpp" line="-599" />
+        <location filename="../interfaces/src/database_manager/database_manager.cpp" line="-614" />
         <source>Getting things ready...</source>
         <translation>Alles wird vorbereitet...</translation>
     </message>
@@ -19503,7 +20322,7 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
         <translation>Wird abgeschlossen...</translation>
     </message>
     <message>
-        <location line="+581" />
+        <location line="+596" />
         <source>Initializing database...</source>
         <translation>Datenbank wird initialisiert...</translation>
     </message>
@@ -20165,43 +20984,43 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     <name>Necto::LVGLUiStrings</name>
     <message>
         <source>Property</source>
-        <translation type="obsolete">Eigenschaft</translation>
+        <translation>Eigenschaft</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="obsolete">Wert</translation>
+        <translation>Wert</translation>
     </message>
     <message>
         <source>Bar</source>
-        <translation type="obsolete">Balken</translation>
+        <translation>Balken</translation>
     </message>
     <message>
         <source>Line</source>
-        <translation type="obsolete">Linie</translation>
+        <translation>Linie</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation type="obsolete">Bild</translation>
+        <translation>Bild</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="obsolete">Name</translation>
+        <translation>Name</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation type="obsolete">Typ</translation>
+        <translation>Typ</translation>
     </message>
     <message>
         <source>Width</source>
-        <translation type="obsolete">Breite</translation>
+        <translation>Breite</translation>
     </message>
     <message>
         <source>Height</source>
-        <translation type="obsolete">Höhe</translation>
+        <translation>Höhe</translation>
     </message>
     <message>
         <source>X</source>
-        <translation type="obsolete">X</translation>
+        <translation>X</translation>
     </message>
     <message>
         <source>Drop Down</source>
@@ -20783,11 +21602,11 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     <name>Necto::LargeButton</name>
     <message>
         <source>Form</source>
-        <translation type="obsolete">Formular</translation>
+        <translation>Formular</translation>
     </message>
     <message>
         <source>New project</source>
-        <translation type="obsolete">Neues Projekt</translation>
+        <translation>Neues Projekt</translation>
     </message>
     <message>
         <source>Get started with best template for your project</source>
@@ -21517,11 +22336,11 @@ Beispiele
     <name>Necto::MaterialLineEdit</name>
     <message>
         <source>Frame</source>
-        <translation type="obsolete">Rahmen</translation>
+        <translation>Rahmen</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="obsolete">Textbeschriftung</translation>
+        <translation>Textbeschriftung</translation>
     </message>
 </context>
 <context>
@@ -21535,7 +22354,7 @@ Beispiele
     <name>Necto::MattermostView</name>
     <message>
         <source>Form</source>
-        <translation type="obsolete">Formular</translation>
+        <translation>Formular</translation>
     </message>
     <message>
         <source>Initializing NECTO Chat</source>
@@ -21976,17 +22795,17 @@ Beispiele
     <name>Necto::MemoryStatusButton</name>
     <message>
         <location filename="../core/src/memory_view/memory_status_button.cpp" line="+15" />
-        <location line="+30" />
+        <location line="+29" />
         <source />
         <translation />
     </message>
     <message>
-        <location line="-29" />
+        <location line="-28" />
         <source>Click to view memory usage details</source>
         <translation>Klicken, um Details zur Speichernutzung anzuzeigen</translation>
     </message>
     <message>
-        <location line="+14" />
+        <location line="+13" />
         <source>FLASH %1% • RAM %2%</source>
         <translation>FLASH %1% • RAM %2%</translation>
     </message>
@@ -21999,6 +22818,24 @@ Beispiele
         <location line="+2" />
         <source>RAM %1%</source>
         <translation>RAM %1%</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::MemoryViewModel</name>
+    <message>
+        <location filename="../core/src/debugger/debug_view/src/memory_view_model.cpp" line="+124" />
+        <source>%1: 0x%2 (%3)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Address</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>ASCII</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -22858,7 +23695,15 @@ Beispiele
         <source>None</source>
         <translation>Keine</translation>
     </message>
-<message><source>mikroBUS 1</source><translation>mikroBUS 1</translation></message><message><source>mikroBUS %1</source><translation>mikroBUS %1</translation></message></context>
+    <message>
+        <source>mikroBUS 1</source>
+        <translation>mikroBUS 1</translation>
+    </message>
+    <message>
+        <source>mikroBUS %1</source>
+        <translation>mikroBUS %1</translation>
+    </message>
+</context>
 <context>
     <name>Necto::MiscPanel</name>
     <message>
@@ -23140,11 +23985,11 @@ Beispiele
     <name>Necto::NECTOTextBrowser</name>
     <message>
         <source>Copy</source>
-        <translation type="obsolete">Kopieren</translation>
+        <translation>Kopieren</translation>
     </message>
     <message>
         <source>Select All</source>
-        <translation type="obsolete">Alles auswählen</translation>
+        <translation>Alles auswählen</translation>
     </message>
     <message>
         <source>Link</source>
@@ -23154,17 +23999,17 @@ Beispiele
 <context>
     <name>Necto::NectoStudioApp</name>
     <message>
-        <location filename="../app/src/mikroe_studio_app.cpp" line="+68" />
+        <location filename="../app/src/mikroe_studio_app.cpp" line="+84" />
         <source>Loading setups...</source>
         <translation>Setups werden geladen...</translation>
     </message>
     <message>
-        <location line="+31" />
+        <location line="+33" />
         <source>Logging in to your account...</source>
         <translation>Anmeldung bei Ihrem Konto...</translation>
     </message>
     <message>
-        <location line="+44" />
+        <location line="+46" />
         <source>Loading packages...</source>
         <translation>Pakete werden geladen...</translation>
     </message>
@@ -23214,7 +24059,7 @@ Beispiele
         <translation>Über NECTO Studio</translation>
     </message>
     <message>
-        <location line="+192" />
+        <location line="+207" />
         <source>Loading modules...</source>
         <translation>Module werden geladen...</translation>
     </message>
@@ -23898,7 +24743,43 @@ Beispiele
         <source>Reset all filters</source>
         <translation>Alle Filter zurücksetzen</translation>
     </message>
-<message><source>Show my uploaded projects</source><translation>Meine hochgeladenen Projekte anzeigen</translation></message><message><source>My packages</source><translation>Meine Pakete</translation></message><message><source>Back to all packages</source><translation>Zurück zu allen Paketen</translation></message><message><source>Author</source><translation>Autor</translation></message><message><source>Show your uploaded packages</source><translation>Ihre hochgeladenen Pakete anzeigen</translation></message><message><source>All packages</source><translation>Alle Pakete</translation></message></context>
+    <message>
+        <source>Show my uploaded projects</source>
+        <translation>Meine hochgeladenen Projekte anzeigen</translation>
+    </message>
+    <message>
+        <source>My packages</source>
+        <translation>Meine Pakete</translation>
+    </message>
+    <message>
+        <source>Back to all packages</source>
+        <translation>Zurück zu allen Paketen</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation>Autor</translation>
+    </message>
+    <message>
+        <source>Show your uploaded packages</source>
+        <translation>Ihre hochgeladenen Pakete anzeigen</translation>
+    </message>
+    <message>
+        <source>All packages</source>
+        <translation>Alle Pakete</translation>
+    </message>
+    <message>
+        <source>Close filters</source>
+        <translation>Filter schließen</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Schließen</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation>Filter</translation>
+    </message>
+</context>
 <context>
     <name>Necto::PackageUpdateCollection</name>
     <message>
@@ -24382,12 +25263,12 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     </message>
     <message>
         <location line="+9" />
-        <location line="+102" />
+        <location line="+104" />
         <source>NECTO Chat is not available.</source>
         <translation>NECTO Chat ist nicht verfügbar.</translation>
     </message>
     <message>
-        <location line="-74" />
+        <location line="-76" />
         <source>NECTO Chat did not respond — wait for it to finish loading and try again.</source>
         <translation>NECTO Chat hat nicht reagiert — warten Sie, bis es vollständig geladen ist, und versuchen Sie es erneut.</translation>
     </message>
@@ -24397,7 +25278,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>NECTO Chat ist noch nicht bereit — warten Sie, bis es vollständig geladen ist, und versuchen Sie es erneut.</translation>
     </message>
     <message>
-        <location line="+63" />
+        <location line="+65" />
         <source>The packed project is %1 MB; the chat server accepts up to %2 MB.</source>
         <translation>Das gepackte Projekt ist %1 MB groß; der Chat-Server akzeptiert bis zu %2 MB.</translation>
     </message>
@@ -24589,7 +25470,11 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <source>No NECTO project was found inside "%1".</source>
         <translation>In "%1" wurde kein NECTO-Projekt gefunden.</translation>
     </message>
-<message><source>Upload Project</source><translation>Projekt hochladen</translation></message></context>
+    <message>
+        <source>Upload Project</source>
+        <translation>Projekt hochladen</translation>
+    </message>
+</context>
 <context>
     <name>Necto::ProjectInfoPage</name>
     <message>
@@ -24648,7 +25533,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
 <context>
     <name>Necto::ProjectManager</name>
     <message>
-        <location filename="../core/src/project_manager/project_manager.cpp" line="-1229" />
+        <location filename="../core/src/project_manager/project_manager.cpp" line="+174" />
         <source>  Projects</source>
         <translation>  Projekte</translation>
     </message>
@@ -24664,17 +25549,16 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     </message>
     <message>
         <location line="+7" />
-        <location line="+556" />
+        <location line="+699" />
         <source>  No configuration</source>
         <translation>  Keine Konfiguration</translation>
     </message>
     <message>
-        <location line="-546" />
         <source>Click here to save current configuration.</source>
         <translation>Hier klicken, um die aktuelle Konfiguration zu speichern.</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="-682" />
         <source>Open MCU settings</source>
         <translation>MCU-Einstellungen öffnen</translation>
     </message>
@@ -24684,7 +25568,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>MCU-Namen kopieren</translation>
     </message>
     <message>
-        <location line="+374" />
+        <location line="+516" />
         <location line="+57" />
         <source>Cancel</source>
         <translation>Abbrechen</translation>
@@ -24695,14 +25579,50 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>"%1" enthält ein NECTO-Projekt. Als NECTO-Projekt öffnen?</translation>
     </message>
     <message>
-        <location line="+13" />
-        <location line="+91" />
+        <location line="-184" />
+        <location line="+197" />
+        <location line="+93" />
         <location line="+10" />
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location line="-100" />
+        <location line="-313" />
+        <source>Disconnect from the board or connect to a compatible one to make this project active.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Disconnect from the board or connect to a compatible one to open this project.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>&lt;b&gt;%1&lt;/b&gt; can't run on the connected board.&lt;br/&gt;&lt;br/&gt;%2&lt;br/&gt;• %3&lt;br/&gt;&lt;br/&gt;%4</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Requirements not met:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Remote Board Farm</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Project not activated</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Project not opened</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+194" />
         <source>Failed to read "%1".</source>
         <translation>"%1" konnte nicht gelesen werden.</translation>
     </message>
@@ -24727,7 +25647,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>"%1" konnte nicht extrahiert werden.</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+7" />
         <source>Could not move the extracted project to %1.</source>
         <translation>Das extrahierte Projekt konnte nicht nach %1 verschoben werden.</translation>
     </message>
@@ -24737,12 +25657,12 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>Projekt %1 wird importiert</translation>
     </message>
     <message>
-        <location line="+19" />
+        <location line="+22" />
         <source>No NECTO project was found inside "%1".</source>
         <translation>In "%1" wurde kein NECTO-Projekt gefunden.</translation>
     </message>
     <message>
-        <location line="+199" />
+        <location line="+214" />
         <source>Open project</source>
         <translation>Projekt öffnen</translation>
     </message>
@@ -24758,28 +25678,30 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     </message>
     <message>
         <location line="+16" />
-        <location line="+394" />
         <source>Yes</source>
         <translation>Ja</translation>
     </message>
     <message>
-        <location line="-390" />
-        <location line="+394" />
+        <location line="+4" />
         <source>No</source>
         <translation>Nein</translation>
     </message>
     <message>
-        <location line="-393" />
+        <location line="+1" />
         <source>The CMake project already exists. Overwrite?</source>
         <translation>Das CMake-Projekt ist bereits vorhanden. Überschreiben?</translation>
     </message>
     <message>
-        <location line="+395" />
+        <location line="+2138" />
+        <source>Copying FreeRTOS kernel</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <source>Project contains setup that is not installed. Install now?</source>
         <translation>Das Projekt enthält ein Setup, das nicht installiert ist. Jetzt installieren?</translation>
     </message>
     <message>
-        <location line="+82" />
+        <location line="-1467" />
         <source>&lt;div style='margin-top:6px; text-align:center; color:%1;'&gt;🔒 Configuration locked&lt;br&gt;Disconnect from Remote Board Farm to modify.&lt;/div&gt;</source>
         <translation>&lt;div style='margin-top:6px; text-align:center; color:%1;'&gt;🔒 Konfiguration gesperrt&lt;br&gt;Zum Ändern von Remote Board Farm trennen.&lt;/div&gt;</translation>
     </message>
@@ -24789,28 +25711,88 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>&lt;html&gt;&lt;p&gt;&lt;strong&gt;%1&lt;/strong&gt;&lt;/p&gt;Compiler: &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;SDK: &lt;strong&gt;%3&lt;/strong&gt;&lt;br&gt;Platine: &lt;strong&gt;%4&lt;/strong&gt;&lt;br&gt;MCU: &lt;strong&gt;%5 - %6 MHz&lt;/strong&gt;&lt;br&gt;Display: &lt;strong&gt;%7&lt;/strong&gt;&lt;br&gt;Prog: &lt;strong&gt;%8&lt;/strong&gt;&lt;br&gt;Standardausgabe: &lt;strong&gt;%9&lt;/strong&gt;&lt;br&gt;%10&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+190" />
+        <location line="+227" />
         <source> Error parsing project</source>
         <translation> Fehler beim Parsen des Projekts</translation>
     </message>
     <message>
-        <location line="+166" />
+        <location line="+199" />
         <source>New</source>
         <translation>Neu</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+3" />
         <source>Create a new project</source>
         <translation>Neues Projekt erstellen</translation>
     </message>
     <message>
-        <location line="-1194" />
-        <location line="+1198" />
+        <location line="-1476" />
+        <location line="+1480" />
         <source>Open</source>
         <translation>Öffnen</translation>
     </message>
     <message>
+        <location line="-662" />
+        <source>This project uses an outdated version of the configuration &lt;b&gt;%1&lt;/b&gt;. Click to review.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Configuration &lt;b&gt;%1&lt;/b&gt; is not installed. Click for options.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+42" />
+        <source>Configuration changed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Configuration &lt;b&gt;%1&lt;/b&gt; was modified. This project still uses its original copy.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Use changes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Switch to the modified configuration.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Keep current</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Save the project's copy as a separate configuration.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <location line="+4" />
+        <source>Configuration not installed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>This project uses &lt;b&gt;%1&lt;/b&gt;, which is not installed.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Install</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Install this configuration.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+604" />
         <source>Open an exisitng project</source>
         <translation>Vorhandenes Projekt öffnen</translation>
     </message>
@@ -24974,7 +25956,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     <name>Necto::ProjectSetupsModel</name>
     <message>
         <source>Add new</source>
-        <translation type="obsolete">Neu hinzufügen</translation>
+        <translation>Neu hinzufügen</translation>
     </message>
 </context>
 <context>
@@ -25507,15 +26489,15 @@ Stellen Sie sicher, dass die Variable CMAKE_BUILD_TYPE dem Feld "Build type" ent
     <name>Necto::QuestionDialog</name>
     <message>
         <source>Frame</source>
-        <translation type="obsolete">Rahmen</translation>
+        <translation>Rahmen</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="obsolete">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation type="obsolete">Info</translation>
+        <translation>Info</translation>
     </message>
     <message>
         <source>CheckBox</source>
@@ -25997,6 +26979,265 @@ Stellen Sie sicher, dass die Variable CMAKE_BUILD_TYPE dem Feld "Build type" ent
     <message>
         <source>Rename Branch</source>
         <translation>Branch umbenennen</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::RenesasE2</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2.cpp" line="+258" />
+        <source>Renesas E2: the selected MCU does not support a %1 V supply from the emulator; target power is switched off for this operation.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+24" />
+        <source>Renesas E2: Renesas Flash Programmer CLI not found (%1); using the GDB server. The application starts after a target reset or power cycle.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Renesas E2: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Device %1 is not supported by the installed Renesas E2 support files (%2).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>The selected MCU does not support a %1 V supply from the emulator. Choose another target power setting.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>COM port debugging is only available for RL78 devices.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>No COM port is selected in the programmer settings.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Invalid debugger port %1.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+51" />
+        <source>Renesas E2: the GDB server did not open a port for the secondary core; only the primary core can be debugged.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+21" />
+        <source>Renesas E2: cannot listen on port %1 for the secondary core; only the primary core can be debugged.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::RenesasE2EraseJob</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_job.cpp" line="+220" />
+        <source>Renesas E2: Erasing</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::RenesasE2Job</name>
+    <message>
+        <location line="-176" />
+        <source>No free TCP port for the Renesas E2 GDB server.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+19" />
+        <source>Connection to the Renesas E2 GDB server failed: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Renesas E2: cannot select the target thread (%1).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+22" />
+        <source>Renesas E2: %1 failed (%2).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+66" />
+        <source>Renesas E2 GDB server exited unexpectedly (exit code %1).</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::RenesasE2ProgramJob</name>
+    <message>
+        <location line="+32" />
+        <source>Renesas E2: Programming</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Renesas E2: %1</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::RenesasE2Proxy</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_proxy.cpp" line="+68" />
+        <source>Renesas E2: the GDB server did not complete the launch sequence.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+102" />
+        <source>Renesas E2 proxy cannot listen on port %1: %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+131" />
+        <source>Renesas E2 proxy cannot reach the GDB server on port %1.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::RenesasE2RfpJob</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_rfp_job.cpp" line="+35" />
+        <source>Renesas E2: Programming</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Renesas E2: Erasing</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+72" />
+        <source>Renesas Flash Programmer CLI not found: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Device is not supported by the installed Renesas E2 support files.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>No COM port is selected in the programmer settings.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Cannot open %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+48" />
+        <source>Renesas Flash Programmer CLI failed to start: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+35" />
+        <source>Waiting for the E2 to reconnect (attempt %1 of %2)...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Renesas E2: this device has no erase operation (MRAM); programming overwrites the memory in place.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Renesas E2: the device rejected the write address. Check that the device's TrustZone boundaries match the project (read them with "rfp-cli -device RA -tool e2 -rfo"; a project without TrustZone needs all code and SRAM secure).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Renesas E2: no %1 found on USB. Check that it is connected and that the programmer selected in the setup matches it (Renesas E2 or Renesas E2 Lite; boards with an on-board emulator use E2 Lite).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Renesas Flash Programmer CLI failed (exit code %1).</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::RenesasE2Server</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_server.cpp" line="+181" />
+        <source>Renesas E2 GDB server is already running.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Renesas E2 GDB server not found: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Device is not supported by the installed Renesas E2 support files.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+25" />
+        <source>Renesas E2 GDB server failed to start: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Timed out waiting for the Renesas E2 GDB server to connect to the target.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+86" />
+        <source>Renesas E2 GDB server exited before connecting (exit code %1).</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::RenesasE2View</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_view.cpp" line="+23" />
+        <source>Programmer Settings</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Port the debugger connects to</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Additional e2-server-gdb options</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Cancel</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Save</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+19" />
+        <source>%1 options</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+29" />
+        <source>Required: board crystal in MHz (default %1)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Empty: internal oscillator (HOCO)</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -26739,19 +27980,19 @@ Dies reverted den Commit %2.</translation>
     <name>Necto::ResourceFontDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="obsolete">Dialog</translation>
+        <translation>Dialog</translation>
     </message>
     <message>
         <source>Add font to resource file</source>
-        <translation type="obsolete">Schriftart zur Ressourcendatei hinzufügen</translation>
+        <translation>Schriftart zur Ressourcendatei hinzufügen</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="obsolete">Abbrechen</translation>
+        <translation>Abbrechen</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation type="obsolete">Hinzufügen</translation>
+        <translation>Hinzufügen</translation>
     </message>
     <message>
         <source>End char</source>
@@ -26770,11 +28011,11 @@ Dies reverted den Commit %2.</translation>
     <name>Necto::ResourceImageDialog</name>
     <message>
         <source>Dialog</source>
-        <translation type="obsolete">Dialog</translation>
+        <translation>Dialog</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation type="obsolete">Pfad</translation>
+        <translation>Pfad</translation>
     </message>
     <message>
         <source>Add image to resource file</source>
@@ -26851,23 +28092,23 @@ Dies reverted den Commit %2.</translation>
     <name>Necto::SDKConfigPage</name>
     <message>
         <source>Frame</source>
-        <translation type="obsolete">Rahmen</translation>
+        <translation>Rahmen</translation>
     </message>
     <message>
         <source>Disabled</source>
-        <translation type="obsolete">Deaktiviert</translation>
+        <translation>Deaktiviert</translation>
     </message>
     <message>
         <source>Low</source>
-        <translation type="obsolete">Niedrig</translation>
+        <translation>Niedrig</translation>
     </message>
     <message>
         <source>Medium</source>
-        <translation type="obsolete">Mittel</translation>
+        <translation>Mittel</translation>
     </message>
     <message>
         <source>High</source>
-        <translation type="obsolete">Hoch</translation>
+        <translation>Hoch</translation>
     </message>
     <message>
         <source>Please note that using NECTO Studio as redirected channel will use one breakpoint, since NECTO utilizes GDB to read MCU memory. Also, when building project for release, standard output will be automaticaly redirected to UART.</source>
@@ -27190,7 +28431,22 @@ Dies reverted den Commit %2.</translation>
 <context>
     <name>Necto::SettingsManager</name>
     <message>
-        <location filename="../core/src/settings_manager/settings_manager.cpp" line="+205" />
+        <location filename="../core/src/settings_manager/settings_manager.cpp" line="+117" />
+        <source>Restart now</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Restart later</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Changes will be visible after you restart NECTO Studio.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+114" />
         <source>&amp;NECTO Preferences</source>
         <translation>&amp;NECTO-Einstellungen</translation>
     </message>
@@ -27435,7 +28691,6 @@ Dies reverted den Commit %2.</translation>
 <context>
     <name>Necto::SetupListItem</name>
     <message>
-        <location filename="../core/src/setup/view/setup_list_item.cpp" line="+99" />
         <source>&lt;html&gt;
     &lt;p&gt;&lt;strong&gt;This configuration cannot be used with the Visual Code Generator.&lt;/strong&gt;&lt;/p&gt;
     &lt;p&gt;To proceed, your configuration must meet the following requirements:&lt;/p&gt;
@@ -27468,7 +28723,6 @@ Dies reverted den Commit %2.</translation>
 </translation>
     </message>
     <message>
-        <location line="+20" />
         <source>&lt;html&gt;
     &lt;p&gt;&lt;strong&gt;This configuration is not compatible with the selected project type.&lt;/strong&gt;&lt;/p&gt;
     &lt;p&gt;To proceed, your configuration must meet the following requirements:&lt;/p&gt;
@@ -27513,7 +28767,6 @@ Dies reverted den Commit %2.</translation>
 </translation>
     </message>
     <message>
-        <location line="+24" />
         <source>&lt;html&gt;
     &lt;p&gt;&lt;strong&gt;This configuration is not compatible with the selected project type.&lt;/strong&gt;&lt;/p&gt;
     &lt;p&gt;To proceed, your configuration must meet the following requirements:&lt;/p&gt;
@@ -27554,7 +28807,6 @@ Dies reverted den Commit %2.</translation>
 </translation>
     </message>
     <message>
-        <location line="+22" />
         <source>&lt;html&gt;
     &lt;p&gt;&lt;strong&gt;This configuration is not compatible with the selected project type.&lt;/strong&gt;&lt;/p&gt;
     &lt;p&gt;To proceed, your configuration must meet the following requirements:&lt;/p&gt;
@@ -27591,7 +28843,6 @@ Dies reverted den Commit %2.</translation>
 </translation>
     </message>
     <message>
-        <location line="+20" />
         <source>&lt;html&gt;
     &lt;p&gt;&lt;strong&gt;This configuration is not compatible with the selected project type.&lt;/strong&gt;&lt;/p&gt;
     &lt;p&gt;To proceed, your configuration must meet the following requirements:&lt;/p&gt;
@@ -27624,7 +28875,6 @@ Dies reverted den Commit %2.</translation>
 </translation>
     </message>
     <message>
-        <location line="+18" />
         <source>&lt;html&gt;
     &lt;p&gt;&lt;strong&gt;This configuration is not compatible with the selected project type.&lt;/strong&gt;&lt;/p&gt;
     &lt;p&gt;To proceed, your configuration must meet the following requirements:&lt;/p&gt;
@@ -27655,7 +28905,6 @@ Dies reverted den Commit %2.</translation>
 </translation>
     </message>
     <message>
-        <location line="+17" />
         <source>&lt;html&gt;
     &lt;p&gt;&lt;strong&gt;This configuration is not compatible with the selected project type.&lt;/strong&gt;&lt;/p&gt;
     &lt;p&gt;You can:&lt;/p&gt;
@@ -27678,7 +28927,6 @@ Dies reverted den Commit %2.</translation>
 </translation>
     </message>
     <message>
-        <location line="+14" />
         <source>&lt;html&gt;
     &lt;p&gt;&lt;strong&gt;The configuration is not valid because some required packages are missing.&lt;/strong&gt;&lt;/p&gt;
     &lt;p&gt;Click &lt;strong&gt;'Repair'&lt;/strong&gt; to automatically fix the configuration by installing the missing packages.&lt;/p&gt;
@@ -27691,32 +28939,100 @@ Dies reverted den Commit %2.</translation>
 </translation>
     </message>
     <message>
-        <location line="+55" />
         <source>Incompatible configuration</source>
         <translation>Inkompatible Konfiguration</translation>
     </message>
     <message>
-        <location line="+7" />
         <source>Repair configuration</source>
         <translation>Konfiguration reparieren</translation>
     </message>
     <message>
-        <location line="+274" />
+        <location filename="../core/src/setup/view/setup_list_item.cpp" line="+104" />
+        <source>&lt;html&gt;
+    &lt;p&gt;&lt;strong&gt;NECTO Assistant requires mikroSDK and a board with a mikroBUS socket.&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;Edit this configuration or choose a compatible one.&lt;/p&gt;
+&lt;/html&gt;</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Requirements not met:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>&lt;html&gt;
+    &lt;p&gt;&lt;strong&gt;This configuration is incompatible with the active project.&lt;/strong&gt;&lt;/p&gt;
+    %1
+    &lt;p&gt;Edit this configuration, or choose a compatible one.&lt;/p&gt;
+&lt;/html&gt;
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>&lt;html&gt;
+    &lt;p&gt;&lt;strong&gt;This configuration is missing required packages.&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;Click &lt;strong&gt;'Repair'&lt;/strong&gt; to install them.&lt;/p&gt;
+&lt;/html&gt;
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+131" />
+        <source>Incompatible</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+39" />
+        <source>Not installed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>&lt;html&gt;
+    &lt;p&gt;&lt;strong&gt;This project's configuration is not installed.&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;The project will continue using its own copy.&lt;/p&gt;
+    &lt;p&gt;• &lt;strong&gt;Choose:&lt;/strong&gt; Keep the project's configuration.&lt;br/&gt;
+    • &lt;strong&gt;Install:&lt;/strong&gt; Make it available for editing and reuse.&lt;/p&gt;
+&lt;/html&gt;
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+311" />
         <source>None</source>
         <translation>Keine</translation>
     </message>
     <message>
-        <location line="+35" />
+        <location line="+7" />
+        <location line="+11" />
+        <location line="+17" />
+        <source>Selected programmer</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-16" />
+        <source>Click to change programmer settings</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
         <source>Open target programmer options</source>
         <translation>Ziel-Programmiergerät-Optionen öffnen</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+6" />
+        <source>Click to change target options</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
         <source>Scan for boards connected via USB or Wi-Fi</source>
         <translation>Nach über USB oder WLAN verbundenen Platinen suchen</translation>
     </message>
     <message>
-        <location line="+24" />
+        <location line="+18" />
         <source>Default configuration</source>
         <translation>Standardkonfiguration</translation>
     </message>
@@ -27731,14 +29047,167 @@ Dies reverted den Commit %2.</translation>
         <translation>Standardkonfiguration kann nicht gelöscht werden</translation>
     </message>
     <message>
-        <location line="+60" />
+        <location line="+61" />
         <source>UART</source>
         <translation>UART</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Selected standard output</source>
+        <translation type="unfinished" />
     </message>
     <message>
         <location line="+29" />
         <source>Bare metal</source>
         <translation>Bare Metal</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Click to change the display</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Selected MCU clock</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Selected MCU</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Click to change compiler settings</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+34" />
+        <source>No settings available</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+33" />
+        <source>LLDB</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>GDB</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+15" />
+        <source>MCU</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Clock</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>%1 MHz</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <location line="+4" />
+        <source>MCU card</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-4" />
+        <source>Yes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>No</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Flash</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>RAM</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Package</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 (%2 pins)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>mikroBUS sockets</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Resolution</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>mikroBUS</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>mikroBUS %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Panel type</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Touch controller</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <location line="+7" />
+        <source>Version</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-6" />
+        <location line="+31" />
+        <source>Debugger</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-23" />
+        <source>Flatten GPIO</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Standard output</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Device</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Serial number</source>
+        <translation type="unfinished" />
     </message>
     <message>
         <source>compilerIcon</source>
@@ -27757,6 +29226,7 @@ Dies reverted den Commit %2.</translation>
         <translation>NECTO Assistant starten</translation>
     </message>
     <message>
+        <location line="-186" />
         <source>Click to change the MCU clock</source>
         <translation>Klicken, um den MCU-Takt zu ändern</translation>
     </message>
@@ -27769,6 +29239,7 @@ Dies reverted den Commit %2.</translation>
         <translation>displayIcon</translation>
     </message>
     <message>
+        <location line="+13" />
         <source>Selected compiler</source>
         <translation>Ausgewählter Compiler</translation>
     </message>
@@ -27777,10 +29248,12 @@ Dies reverted den Commit %2.</translation>
         <translation>clockIcon</translation>
     </message>
     <message>
+        <location line="-16" />
         <source>Selected display</source>
         <translation>Ausgewähltes Display</translation>
     </message>
     <message>
+        <location line="-30" />
         <source>Click to redirect the standard application output</source>
         <translation>Klicken, um die Standardausgabe der Anwendung umzuleiten</translation>
     </message>
@@ -27805,6 +29278,7 @@ Dies reverted den Commit %2.</translation>
         <translation>Klonen</translation>
     </message>
     <message>
+        <location line="+34" />
         <source>Click to change MCU settings</source>
         <translation>Klicken, um MCU-Einstellungen zu ändern</translation>
     </message>
@@ -27813,6 +29287,7 @@ Dies reverted den Commit %2.</translation>
         <translation>Reparatur für Konfiguration erforderlich</translation>
     </message>
     <message>
+        <location line="-516" />
         <source>Repair</source>
         <translation>Reparieren</translation>
     </message>
@@ -27833,6 +29308,7 @@ Dies reverted den Commit %2.</translation>
         <translation>Löschen</translation>
     </message>
     <message>
+        <location line="+508" />
         <source>Selected board</source>
         <translation>Ausgewählte Platine</translation>
     </message>
@@ -27853,6 +29329,7 @@ Dies reverted den Commit %2.</translation>
         <translation>Ziel-Programmieroptionen öffnen</translation>
     </message>
     <message>
+        <location line="+3" />
         <source>Selected SDK</source>
         <translation>Ausgewähltes SDK</translation>
     </message>
@@ -27876,14 +29353,13 @@ Dies reverted den Commit %2.</translation>
 <context>
     <name>Necto::SetupManager</name>
     <message>
-        <location filename="../core/src/setup/setup_manager.cpp" line="-1936" />
-        <location line="+383" />
-        <location line="+1679" />
+        <location filename="../core/src/setup/setup_manager.cpp" line="-2258" />
+        <location line="+2337" />
         <source>Ok</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location line="-2060" />
+        <location line="-2335" />
         <source>The default configuration cannot be deleted. Please choose another default first.</source>
         <translation>Die Standardkonfiguration kann nicht gelöscht werden. Bitte wählen Sie zuerst eine andere Standardkonfiguration.</translation>
     </message>
@@ -27903,62 +29379,107 @@ Dies reverted den Commit %2.</translation>
         <translation>Möchten Sie wirklich löschen: &lt;strong&gt;%1 &lt;/strong&gt;?</translation>
     </message>
     <message>
-        <location line="+370" />
         <source>Connection to the Remote Board Farm board was rejected</source>
         <translation>Verbindung zur Remote-Board-Farm-Platine wurde abgelehnt</translation>
     </message>
     <message>
-        <location line="+6" />
+        <location line="+419" />
         <source>Initializing Remote Board Farm configuration...</source>
         <translation>Remote-Board-Farm-Konfiguration wird initialisiert...</translation>
     </message>
     <message>
-        <location line="+364" />
+        <location line="+506" />
         <source>Scheme provided from Remote Board Farm was not found. Default scheme used.</source>
         <translation>Das von Remote Board Farm bereitgestellte Schema wurde nicht gefunden. Standardschema wird verwendet.</translation>
     </message>
     <message>
-        <location line="+143" />
+        <location line="-516" />
+        <location line="+629" />
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
+        <location line="-627" />
+        <source>Remote Board Farm</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Connection rejected</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+73" />
+        <source>Configuration %1 '%2' was not found in the local database. Install the matching package, or check that the identifier matches an entry in the database.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <location line="+2" />
+        <source>&lt;empty&gt;</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <location line="+156" />
+        <location line="+83" />
+        <source>board</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-222" />
+        <location line="+154" />
+        <location line="+77" />
+        <source>MCU</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+282" />
         <source>NECTO is preparing your first configuration. This may take a few minutes.</source>
         <translation>NECTO bereitet Ihre erste Konfiguration vor. Dies kann einige Minuten dauern.</translation>
     </message>
     <message>
-        <location line="+163" />
+        <location line="+236" />
+        <location line="+8" />
+        <source>This board is incompatible with the active project.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-7" />
+        <location line="+7" />
+        <source>Requirements not met:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1474" />
+        <source>display</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <source>The connected Remote Board Farm board does not have a TFT display. This project type requires a display to work.</source>
         <translation>Die verbundene Remote-Board-Farm-Platine hat kein TFT-Display. Dieser Projekttyp benötigt ein Display.</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>&lt;br/&gt;The active project requires a TFT display, but the remote board does not provide one.&lt;br/&gt;</source>
         <translation>&lt;br/&gt;Das aktive Projekt benötigt ein TFT-Display, aber die Remote-Platine stellt keines bereit.&lt;br/&gt;</translation>
     </message>
     <message>
-        <location line="+11" />
         <source>The connected Remote Board Farm board uses a compiler that is not supported by the LVGL project type. GCC or Clang is required.</source>
         <translation>Die verbundene Remote-Board-Farm-Platine verwendet einen Compiler, der vom LVGL-Projekttyp nicht unterstützt wird. GCC oder Clang ist erforderlich.</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>&lt;br/&gt;The active LVGL project requires a GCC or Clang toolchain,&lt;br/&gt;but the remote board uses an unsupported compiler.&lt;br/&gt;</source>
         <translation>&lt;br/&gt;Das aktive LVGL-Projekt benötigt eine GCC- oder Clang-Toolchain,&lt;br/&gt;aber die Remote-Platine verwendet einen nicht unterstützten Compiler.&lt;br/&gt;</translation>
     </message>
     <message>
-        <location line="+10" />
         <source>The connected Remote Board Farm board uses a single-core MCU. This project type requires a dual-core MCU.</source>
         <translation>Die verbundene Remote-Board-Farm-Platine verwendet eine Single-Core-MCU. Dieser Projekttyp benötigt eine Dual-Core-MCU.</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>&lt;br/&gt;The active project targets a dual-core MCU, but the remote board is single-core.&lt;br/&gt;</source>
         <translation>&lt;br/&gt;Das aktive Projekt zielt auf eine Dual-Core-MCU ab, aber die Remote-Platine ist Single-Core.&lt;br/&gt;</translation>
     </message>
     <message>
-        <location line="+668" />
+        <location line="-809" />
         <source>My Configurations</source>
         <translation>Meine Konfigurationen</translation>
     </message>
@@ -27968,17 +29489,16 @@ Dies reverted den Commit %2.</translation>
         <translation>Konfigurationen verwalten</translation>
     </message>
     <message>
-        <location line="+235" />
         <source>Configuration already exists</source>
         <translation>Konfiguration ist bereits vorhanden</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+299" />
         <source>Cannot copy configuration dir</source>
         <translation>Konfigurationsverzeichnis kann nicht kopiert werden</translation>
     </message>
     <message>
-        <location line="+67" />
+        <location line="+77" />
         <source>I can not clone a &lt;strong&gt;%1 &lt;/strong&gt;. Configuration folder does not exists on a disk</source>
         <translation>&lt;strong&gt;%1 &lt;/strong&gt; kann nicht geklont werden. Der Konfigurationsordner existiert nicht auf dem Datenträger</translation>
     </message>
@@ -28011,13 +29531,13 @@ Dies reverted den Commit %2.</translation>
     </message>
     <message>
         <location line="+97" />
-        <location line="+158" />
+        <location line="+206" />
         <source>%1 %2 configuration(s)</source>
         <translation>%1 %2 Konfiguration(en)</translation>
     </message>
     <message>
-        <location line="-157" />
-        <location line="+156" />
+        <location line="-205" />
+        <location line="+204" />
         <source>Found</source>
         <translation>Gefunden</translation>
     </message>
@@ -28225,7 +29745,7 @@ Dies reverted den Commit %2.</translation>
     <name>Necto::SimpleFloatingFrame</name>
     <message>
         <source>TextLabel</source>
-        <translation type="obsolete">Textbeschriftung</translation>
+        <translation>Textbeschriftung</translation>
     </message>
     <message>
         <source>Click here to reset zoom</source>
@@ -28253,7 +29773,7 @@ Dies reverted den Commit %2.</translation>
 <context>
     <name>Necto::SingleCameraView</name>
     <message>
-        <location filename="../core/src/planet_debug/view/single_camera_view.cpp" line="+47" />
+        <location filename="../core/src/planet_debug/view/single_camera_view.cpp" line="+50" />
         <source>Loading...</source>
         <translation>Wird geladen...</translation>
     </message>
@@ -28334,6 +29854,11 @@ Dies reverted den Commit %2.</translation>
     </message>
     <message>
         <location line="+1" />
+        <source>Firmware trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
         <source>Start RedPitaya</source>
         <translation>RedPitaya starten</translation>
     </message>
@@ -28373,6 +29898,16 @@ Dies reverted den Commit %2.</translation>
         <translation>Stoppen</translation>
     </message>
     <message>
+        <location line="+2" />
+        <source>Real-time video feed of the remote board</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Secure connection to the remote board using SSL/TLS encryption</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <source>Frame</source>
         <translation>Rahmen</translation>
     </message>
@@ -28389,7 +29924,7 @@ Dies reverted den Commit %2.</translation>
         <translation>Verbunden mit:</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+3" />
         <source>Simulate TFT touch</source>
         <translation>TFT-Touch simulieren</translation>
     </message>
@@ -29515,6 +31050,2388 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     </message>
 </context>
 <context>
+    <name>Necto::Trace</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_recording.cpp" line="+298" />
+        <source>No such file.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+40" />
+        <source>Not a NECTO trace recording.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Recorded by a newer NECTO (file version %1).</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location filename="../core/src/debugger/trace/trace_signals.cpp" line="+124" />
+        <source>%n bytes not kept</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Data</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+526" />
+        <source>%1 baud</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_faults.cpp" line="+138" />
+        <source>Not answering</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>MISO stuck at 0x%1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Held High</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Held Low</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Forced to %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Forced to %1 V</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No device answering</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>pin %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>I2C 0x%1 on %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>SPI on %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Input %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>ADC %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>1-Wire on %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_compare.cpp" line="+235" />
+        <location line="+46" />
+        <location line="+2" />
+        <source>%1: %2 vs %3 bytes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-21" />
+        <source>Kind</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Failed vs OK</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>OK vs failed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Operation</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Address: %1 vs %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>TX</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Write</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>RX</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Read</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>%1 vs %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Duration: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Transfers: %1 vs %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Failed: %1 vs %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Bytes: %1 vs %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Level</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_project.cpp" line="+140" />
+        <source>ARM Cortex-M, RISC-V and PIC32</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_trigger.cpp" line="+27" />
+        <source>once</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>twice</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 times</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+193" />
+        <source>Rose %1 so far</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+36" />
+        <source>%1 failed so far</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Register %1 of %2, written %3</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>%1 transfers start with it</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Received %1 so far</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>%1 changed by a fault so far</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_format.cpp" line="+163" />
+        <location line="+330" />
+        <source>%1 bytes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-301" />
+        <source>Other</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+40" />
+        <location line="+69" />
+        <source>Output</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-67" />
+        <location line="+67" />
+        <source>Input</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-62" />
+        <location line="+89" />
+        <source>I2C</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-84" />
+        <location line="+77" />
+        <source>SPI</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-75" />
+        <location line="+77" />
+        <source>UART</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-75" />
+        <location line="+74" />
+        <source>1-Wire</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-71" />
+        <location line="+44" />
+        <source>Value</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+198" />
+        <source>1 byte</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Write %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Read %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Write %1 · Read %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <location line="+19" />
+        <location line="+192" />
+        <source>error</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-192" />
+        <source>no presence</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+119" />
+        <source>Burst</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Reset</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Read ROM</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Skip ROM</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Match ROM</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Search ROM</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+26" />
+        <source>%1 transfers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>%1 failed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_measure.cpp" line="+76" />
+        <source>No transfers</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+1" />
+        <source>%n transfers</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>%1 busy</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+2" />
+        <source>%n failed</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location line="+48" />
+        <source>%n changes</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>%1 high</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+21" />
+        <source>No values</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+4" />
+        <source>%n values</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 to %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>avg %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+162" />
+        <source>%1: min %2 · avg %3 · max %4 · σ %5 (%6)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+69" />
+        <source>Values</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+42" />
+        <source>High</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Low</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Period</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+32" />
+        <source>Duration</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Interval</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Throughput: %1/s</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+65" />
+        <source>%n records</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+24" />
+        <source>Project</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Board</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>MCU</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Firmware</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>NECTO</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Traced</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>From a recording</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::BusRenderer</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="+204" />
+        <source>No timer in the firmware: the signals need the transfers' times</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+808" />
+        <source>Not in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Not in this run</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::DapTraceReader</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_dap_reader.cpp" line="+32" />
+        <source>Firmware trace: no breakpoint on traceBuffFullBreak: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+65" />
+        <source>Firmware trace: the trace buffer was not found in the image.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::FaultPanel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_fault_panel.cpp" line="+30" />
+        <source>I2C device not answering</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>SPI MISO stuck</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Input held</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>ADC value forced</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>1-Wire devices gone</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+105" />
+        <source>injected while it was recorded</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>None was injected while it was recorded.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Faults go on the lanes that take them: I2C, SPI, inputs, ADC and 1-Wire. None has shown up yet.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+53" />
+        <source> V</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+63" />
+        <source>Type the byte: two hex digits.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Choose the lane to break.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Injected already.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>%1 faults at most: remove one first.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Inject it into the firmware: at once while it is stopped, otherwise within half a second while it records</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+55" />
+        <source>Remove this fault</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+41" />
+        <source>Events this fault changed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>no reads</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this bus.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>waiting</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Not hit yet. The firmware gets the fault when it next hands over its trace (within half a second while it records, or at a stop); it hits at the next call it applies to.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::HoverCard</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_hover_card.cpp" line="+69" />
+        <source>High</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Low</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Level</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>High for</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Low for</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Width⁻¹</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Period</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Frequency</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Duty</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Transfers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Written</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+45" />
+        <source>Read</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-43" />
+        <location line="+68" />
+        <source>Failed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-66" />
+        <location line="+7" />
+        <source>Span</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-5" />
+        <source>Too fast to record each transfer: counted, with their bytes.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Changes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Ends</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Too fast to record each change.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Value</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Operation</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No device answered the reset.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Address</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Command</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Register</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Sent</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Received</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Write</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>failed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Duration</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+18" />
+        <source>Injected</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>OK</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Pin</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Fault</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Compared</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+66" />
+        <source>NECTO made the device not answer.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO held MISO: these bytes were not read.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO took the devices off the bus.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO forced this value.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO held the pin at this level.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::LaneModel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_lane_model.cpp" line="+78" />
+        <source>Only in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Not in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Recorded on other pins: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+31" />
+        <source>%1 · other pins</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::LaneNameDelegate</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_view.cpp" line="+187" />
+        <source>Not in this run</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+27" />
+        <source>%1 differ</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 extra</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>✓ Same</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+17" />
+        <source>Not in the recording</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::RecordingNameDialog</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_recording_name_dialog.cpp" line="+33" />
+        <source>Saved in %1</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::TimelineRuler</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_timeline_ruler.cpp" line="+66" />
+        <source>≠ Runs part</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+219" />
+        <source>%1
+
+%2 · drag to move, double-click to edit</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Where the runs first differ: click to go there</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Drag to move the marker; double-click to remove it</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Click to place marker B</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Click to place marker A</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::TimelineViewport</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_timeline_viewport.cpp" line="+67" />
+        <source>New data ▸</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Follow the newest events</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+311" />
+        <source>No firmware trace yet. Link MikroSDK.Trace to the project, call trace_init() and start debugging.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+505" />
+        <source>Not in this run</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Not in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>%1 differ</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 extra</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <location line="+585" />
+        <source>✓ Same</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-429" />
+        <source>Empty recording: nothing came from the firmware while it ran</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>End of recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+127" />
+        <source>Duty: %1 %</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Freq: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>width⁻¹: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+214" />
+        <source>Next edge (Ctrl+→)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Previous edge (Ctrl+←)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Next value (Ctrl+→)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Previous value (Ctrl+←)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Next transfer (Ctrl+→)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Previous transfer (Ctrl+←)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+72" />
+        <source>+ Only in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>+ Only in this run</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Time</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::TraceTabs</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_tabs.cpp" line="+22" />
+        <source>The trace of the session you debug</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+65" />
+        <source>● Live</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Live</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::TraceView</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_view.cpp" line="+558" />
+        <source>Hide the transfers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Show the transfers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Collapse the lane list</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Expand the lane list</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+158" />
+        <source>Project</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>MCU</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Board</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Configuration</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Firmware</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>NECTO</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+64" />
+        <source>Nothing was recorded</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>This recording is empty: the session ended before any trace data arrived.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>No project open</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Open a project to see its I2C, SPI, UART and pin activity on a timeline.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Reading the project's libraries…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Trace is on for %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Restarting: rebuilding with trace and programming the board…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>This firmware was built without trace. Restart debugging to rebuild it.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>The firmware is paused. Continue (F6) to run it and capture its activity.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Waiting for the first trace data from the firmware…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Starting: building and programming the board…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Start debugging to capture your firmware's bus and pin activity.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Restart Debugging</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Continue</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Start Debugging</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Visualize Your Firmware Activity</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Monitor I²C, SPI, UART, and GPIO signals on an interactive timeline.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Trace isn't available for %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Trace works with %1 MCUs.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Trace isn't available with %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Trace needs GCC, Clang or XC32. Choose one in the project's configuration.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Trace isn't in this configuration yet</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Its libraries were built without the trace. Rebuild the configuration (Configure project, Edit), or update mikroSDK.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Turn it off so the project builds.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Turn Off Trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Enable Trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Removes the trace library from your project</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Adds the trace library to your project</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+183" />
+        <source>%n records</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+44" />
+        <source>Open trace…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Compare with recording…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Compare with recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <location line="+1349" />
+        <location line="+79" />
+        <source>NECTO trace (*.nectotrace)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-1424" />
+        <source>Show a recording under this run's lanes, with what differs marked</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Recent recordings</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Export transfers as CSV…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Every bus transfer, with all its bytes: for a spreadsheet or a script.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Export as VCD…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>The checked lanes as signals, for GTKWave or PulseView: pins, values, and when each bus was busy.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+563" />
+        <source>Export A–B transfers as CSV…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-561" />
+        <source>The bus transfers that start between markers A and B.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+561" />
+        <source>Export A–B as VCD…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-560" />
+        <source>The checked lanes from marker A to marker B, A at time 0.</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+426" />
+        <source>%n found</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>No match</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+47" />
+        <source>%1 records lost</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No timer: order only</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>The trace buffer filled up between reads; the timeline has gaps there.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>%1 lanes, %2 events</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+36" />
+        <source>%n failed</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+17" />
+        <source>Go to marker A</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Go to marker B</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Zoom to A–B</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Copy measurement</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>A, B, the time between them and what each lane did then, as text</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Clear markers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Edit note…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Remove note</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Add note here…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Go to note</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <location line="+47" />
+        <source>Place marker A here</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-45" />
+        <location line="+47" />
+        <source>Place marker B here</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-42" />
+        <source>Remove marker A</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Remove marker B</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+46" />
+        <source>Place markers at its start and end</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>A where the frame starts, B where it ends</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>A where the transfer starts, B where it ends</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Add note</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Note at %1:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Edit note</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Note at %1 (empty removes it):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+30" />
+        <source>Save notes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not save the notes to %1: %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+178" />
+        <source>Signals rebuilt from the recorded transfers, not captured; each spread over its transfer's time.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Signals rebuilt from the recorded transfers at the bus's rate, not captured.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>CS is as recorded on its pin.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Only in the recording.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Not in the recording.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Recorded on other pins: %1.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+19" />
+        <source>The same as the recording's lane.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 difference from the recording.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 differences from the recording.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 transfer only one run has (extra).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 transfers only one run has (extra).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Hide lane</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Show all lanes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Default order</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+32" />
+        <source>Fit lanes to height</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Every lane taller or shorter by the same amount, so that they fill the timeline's height</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Reset lane heights</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+25" />
+        <location line="+78" />
+        <source>between markers A and B</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-77" />
+        <location line="+78" />
+        <source>over the whole trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-76" />
+        <source>Find longest gap</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>The longest time the lane did nothing, %1: marked A to B</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Measure delay to</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>From each event of this lane to the next of another, %1: how long the firmware took to react</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>From each rise</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>From each fall</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>From each change</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Longest gap</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Fewer than two events of the lane to find a gap between.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
+        <source>each change of %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>each rise of %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>each fall of %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>From %1 to the next event of %2, %3.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>each event of %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Delay</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>No event of %1 came after one of %2 before the next.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+24" />
+        <source>Close</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-10" />
+        <source>min %1 · avg %2 · max %3 · σ %4 (%5 delays)</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+7" />
+        <source>%n with no event of %1 before the next one.</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Copy</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Show longest</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Markers A and B on the longest delay, zoomed to</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+21" />
+        <source>Show signals</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>The wires drawn under the transfers, rebuilt from their bytes: not a capture of the pins</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Wires</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Inject a fault: needs a newer MikroSDK.Trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+31" />
+        <source>Make 0x%1 not answer</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Stick MISO at 0xFF</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Stick MISO at 0x00</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Hold High</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Hold Low</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Take the devices off the bus</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Force a value…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Force a value</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Volts the input reads:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Count the input reads:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+18" />
+        <source>Remove fault: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Faults</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>1 Fault</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>%1 Faults</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+41" />
+        <source>Open trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+28" />
+        <source>Export A–B as VCD</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Export A–B transfers as CSV</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Export as VCD</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Export transfers as CSV</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Value Change Dump (*.vcd)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>CSV (*.csv)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Exporting the trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Export trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not write %1: %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
+        <location line="+8" />
+        <source>Record trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not record to %1: %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+61" />
+        <source>Nothing came from the firmware while recording: this recording has no trace. Record while the target runs, until the transfers show.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Type a name, or Cancel to keep %1.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>A name only, without folders.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>There is a recording named %1 already.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Could not rename the recording: check the name, or Cancel to keep %1.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+37" />
+        <source>Armed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Trigger</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+18" />
+        <source>marker A placed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>already recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>not recorded: Record needs a debug session of a project</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>not recorded: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>paused</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Fired at %1 on %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+22" />
+        <source>Recording to %1. Press to stop.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Record</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>This is a recording: Record records the live trace, in the Trace tool while debugging.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Record starts with a debug session of a project with trace on.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder; you name it when it stops.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>The last recording stopped: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+33" />
+        <source>Recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>cut short</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>NECTO %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+38" />
+        <source>Comparing with %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Each lane has the recording's lane under it (REC), on the same times from each run's start. What differs is outlined; Align at markers lines the runs up.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+88" />
+        <source> (all failed)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source> (%1 failed)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Nothing compared: the recording is empty</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Nothing compared: no lane is in both runs</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Nothing compared: no transfer is in both runs</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>%1 failed here, OK in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 OK here, failed in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No differences</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>1 difference</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 differences</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 transfer only in this run</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 transfers only in this run</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>1 transfer only in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 transfers only in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>1 lane in one run only</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 lanes in one run only</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>The recording has no trace: Record was stopped before the firmware handed a buffer over. Record while the target runs, until the transfers show.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Lanes pair by their kind, pins and I2C device, transfers by their order in each lane. This run and the recording have none alike: another firmware, a recording of another project, or one made later in its session.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Transfers and pin changes compared by their order in each lane. Differences are banded on the timeline and said in the table's Compared column; transfers only one run has are outlined dashed. The arrows go through all of them.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+44" />
+        <source>on %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>to %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>%1 transfers %2 failed here that worked in the recording, the first at %3.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>From %1 on, all %2 transfers %3 failed; the recording's worked.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>mikroBUS %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>The device at %1 stopped answering: is %2 fitted%3?</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source> on %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>The device at %1 stopped answering: is it fitted and connected%2?</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source> (%1)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Is the device still connected?</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::TransactionModel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_transaction_model.cpp" line="+225" />
+        <source>Recording: </source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Command %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Register %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+43" />
+        <source>Failed ⚡</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Injected</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 failed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Failed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>OK</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Time from the start of the transfer before it; on a frame, from the frame before it</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Time</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Interval</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Lane</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Op</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Address</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Data</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Duration</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Result</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Compared</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+27" />
+        <source>+ Only in this run</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>The recording has no transfer to compare with</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>✓ Same</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Same as the recording's</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Differs from the recording's, this run's first: %1</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::TriggerPanel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_trigger_panel.cpp" line="+98" />
+        <source>Watch for this</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+35" />
+        <source>Type what to watch for: a transfer, as in "0x18 failed", or a pin's change, as in "LED_1 rise".</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Armed: waiting for the first match.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+17" />
+        <source>Disarm</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Arm</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::ValueRenderer</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="-230" />
+        <source>Fit</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::i2c</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_signals.cpp" line="-498" />
+        <source>Start</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+21" />
+        <source>Stop</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+65" />
+        <source>Not known</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+28" />
+        <source>Address</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Write [%1]</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>W %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Write</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Read [%1]</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>R %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Read</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Trace::oneWire</name>
+    <message>
+        <location line="+130" />
+        <location line="+1" />
+        <source>Reset</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <location line="+1" />
+        <source>Presence</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-1" />
+        <source>No presence</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>None</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+40" />
+        <source>Command</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+43" />
+        <location line="+1" />
+        <source>Search</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
     <name>Necto::TreeModel</name>
     <message>
         <source>Submodule</source>
@@ -29861,7 +33778,7 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <name>Necto::UartTerminal</name>
     <message>
         <source>UART Terminal</source>
-        <translation type="obsolete">UART-Terminal</translation>
+        <translation>UART-Terminal</translation>
     </message>
 </context>
 <context>
@@ -29914,7 +33831,7 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <name>Necto::UdpTerminal</name>
     <message>
         <source>UDP Terminal</source>
-        <translation type="obsolete">UDP-Terminal</translation>
+        <translation>UDP-Terminal</translation>
     </message>
 </context>
 <context>
@@ -30187,31 +34104,91 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
 
 %1</translation>
     </message>
-<message><source>Please go back and try again.</source><translation>Bitte gehen Sie zurück und versuchen Sie es erneut.</translation></message><message><source>Project upload failed.
+    <message>
+        <source>Please go back and try again.</source>
+        <translation>Bitte gehen Sie zurück und versuchen Sie es erneut.</translation>
+    </message>
+    <message>
+        <source>Project upload failed.
 
-%1</source><translation>Projekt-Upload fehlgeschlagen.
+%1</source>
+        <translation>Projekt-Upload fehlgeschlagen.
 
-%1</translation></message><message><source>Project packing failed.
+%1</translation>
+    </message>
+    <message>
+        <source>Project packing failed.
 
-Please try again.</source><translation>Projektpacken fehlgeschlagen.
+Please try again.</source>
+        <translation>Projektpacken fehlgeschlagen.
 
-Bitte versuchen Sie es erneut.</translation></message><message><source>Upload to server failed.
+Bitte versuchen Sie es erneut.</translation>
+    </message>
+    <message>
+        <source>Upload to server failed.
 
-Please try again.</source><translation>Upload zum Server fehlgeschlagen.
+Please try again.</source>
+        <translation>Upload zum Server fehlgeschlagen.
 
-Bitte versuchen Sie es erneut.</translation></message><message><source>Upload successful.
+Bitte versuchen Sie es erneut.</translation>
+    </message>
+    <message>
+        <source>Upload successful.
 Your project is now visible in My packages,
-unpublished. Click Publish when you're ready.</source><translation>Upload erfolgreich.
+unpublished. Click Publish when you're ready.</source>
+        <translation>Upload erfolgreich.
 Ihr Projekt ist jetzt in Meine Pakete sichtbar,
-unveröffentlicht. Klicken Sie auf Veröffentlichen, wenn Sie bereit sind.</translation></message><message><source>Please go back and increase the project version, then try again.</source><translation>Bitte gehen Sie zurück, erhöhen Sie die Projektversion und versuchen Sie es erneut.</translation></message><message><source>Project upload failed:
+unveröffentlicht. Klicken Sie auf Veröffentlichen, wenn Sie bereit sind.</translation>
+    </message>
+    <message>
+        <source>Please go back and increase the project version, then try again.</source>
+        <translation>Bitte gehen Sie zurück, erhöhen Sie die Projektversion und versuchen Sie es erneut.</translation>
+    </message>
+    <message>
+        <source>Project upload failed:
 
 %1
 
-%2</source><translation>Projekt-Upload fehlgeschlagen:
+%2</source>
+        <translation>Projekt-Upload fehlgeschlagen:
 
 %1
 
-%2</translation></message></context>
+%2</translation>
+    </message>
+    <message>
+        <source>Upload successful</source>
+        <translation>Upload erfolgreich</translation>
+    </message>
+    <message>
+        <source>Upload to server failed.</source>
+        <translation>Upload zum Server fehlgeschlagen.</translation>
+    </message>
+    <message>
+        <source>%1
+%2</source>
+        <translation>%1
+%2</translation>
+    </message>
+    <message>
+        <source>Project packing failed</source>
+        <translation>Projektpacken fehlgeschlagen</translation>
+    </message>
+    <message>
+        <source>Please try again.</source>
+        <translation>Bitte versuchen Sie es erneut.</translation>
+    </message>
+    <message>
+        <source>Project upload failed</source>
+        <translation>Projekt-Upload fehlgeschlagen</translation>
+    </message>
+    <message>
+        <source>Your project is ready in My Packages and waiting to be published.
+Click Publish when you're ready to make it available to the community.</source>
+        <translation>Ihr Projekt ist in Meine Pakete bereit und wartet auf die Veröffentlichung.
+Klicken Sie auf Veröffentlichen, wenn Sie es der Community zur Verfügung stellen möchten.</translation>
+    </message>
+<message><source>A package with this version already exists.</source><translation>Ein Paket mit dieser Version existiert bereits.</translation></message></context>
 <context>
     <name>Necto::UploadProjectInfoDialog</name>
     <message>
@@ -30663,7 +34640,7 @@ HINWEIS: Die angezeigten Positionen sind nur Vorschläge - überprüfen Sie dies
 <context>
     <name>Necto::VariablesModel</name>
     <message>
-        <location filename="../core/src/debugger/variables_model.cpp" line="+107" />
+        <location filename="../core/src/debugger/variables_model.cpp" line="+122" />
         <source>Name</source>
         <translation>Name</translation>
     </message>
@@ -30701,7 +34678,7 @@ HINWEIS: Die angezeigten Positionen sind nur Vorschläge - überprüfen Sie dies
 <context>
     <name>Necto::VisualCodePrompt</name>
     <message>
-        <location filename="../core/include/productivity_hub/visual_code_prompt/visual_code_prompt.h" line="+63" />
+        <location filename="../core/include/productivity_hub/visual_code_prompt/visual_code_prompt.h" line="+65" />
         <source>Setup</source>
         <translation>Setup</translation>
     </message>
@@ -31013,11 +34990,11 @@ Möchten Sie die Seite neu laden?</translation>
     <name>Necto::WidgetDetachContainer</name>
     <message>
         <source>Frame</source>
-        <translation type="obsolete">Rahmen</translation>
+        <translation>Rahmen</translation>
     </message>
     <message>
         <source>TextLabel</source>
-        <translation type="obsolete">Textbeschriftung</translation>
+        <translation>Textbeschriftung</translation>
     </message>
     <message>
         <source>Detach</source>
@@ -31025,11 +35002,11 @@ Möchten Sie die Seite neu laden?</translation>
     </message>
     <message>
         <source>...</source>
-        <translation type="obsolete">...</translation>
+        <translation>...</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="obsolete">Schließen</translation>
+        <translation>Schließen</translation>
     </message>
 </context>
 <context>
@@ -31471,7 +35448,7 @@ Möchten Sie die Seite neu laden?</translation>
 <context>
     <name>Output</name>
     <message>
-        <location filename="../core/src/output/output.cpp" line="+289" />
+        <location filename="../core/src/output/output.cpp" line="+319" />
         <source>Issues</source>
         <translation>Probleme</translation>
     </message>
@@ -31497,7 +35474,7 @@ Möchten Sie die Seite neu laden?</translation>
         <translation>Kompilierungsausgabe</translation>
     </message>
     <message>
-        <location line="+17" />
+        <location line="+19" />
         <source>Application Output</source>
         <translation>Anwendungsausgabe</translation>
     </message>
@@ -31507,7 +35484,7 @@ Möchten Sie die Seite neu laden?</translation>
         <translation>Anwendungsausgabe</translation>
     </message>
     <message>
-        <location line="+84" />
+        <location line="+88" />
         <source>No build errors captured yet.</source>
         <translation>Noch keine Build-Fehler erfasst.</translation>
     </message>
@@ -31695,7 +35672,7 @@ Möchten Sie die Seite neu laden?</translation>
 <context>
     <name>PackageFilterCombo</name>
     <message>
-        <location filename="../core/src/package_manager/view/package_filter_combo.cpp" line="+134" />
+        <location filename="../core/src/package_manager/view/package_filter_combo.cpp" line="+137" />
         <source>All</source>
         <translation>Alle</translation>
     </message>
@@ -31736,10 +35713,16 @@ Möchten Sie die Seite neu laden?</translation>
     </message>
     <message>
         <location line="+16" />
-        <location filename="../core/src/package_manager/view/package_item.cpp" line="+115" />
-        <location line="+339" />
+        <location filename="../core/src/package_manager/view/package_item.cpp" line="+124" />
+        <location line="+436" />
         <source>Goto product page</source>
         <translation>Zur Produktseite gehen</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <location filename="../core/src/package_manager/view/package_item.cpp" line="+11" />
+        <source>Open package description</source>
+        <translation type="unfinished" />
     </message>
     <message>
         <location line="+19" />
@@ -31804,7 +35787,7 @@ Möchten Sie die Seite neu laden?</translation>
     </message>
     <message>
         <location line="+41" />
-        <location filename="../core/src/package_manager/view/package_item.cpp" line="-153" />
+        <location filename="../core/src/package_manager/view/package_item.cpp" line="-180" />
         <source>Installing...</source>
         <translation>Wird installiert...</translation>
     </message>
@@ -31854,22 +35837,22 @@ Möchten Sie die Seite neu laden?</translation>
         <translation>Immer installiert</translation>
     </message>
     <message>
-        <location filename="../core/src/package_manager/view/package_item.cpp" line="-193" />
+        <location filename="../core/src/package_manager/view/package_item.cpp" line="-275" />
         <source>Open GitHub page</source>
         <translation>GitHub-Seite öffnen</translation>
     </message>
     <message>
-        <location line="+129" />
+        <location line="+213" />
         <source>&lt;html&gt;&lt;p&gt;&lt;strong&gt;%1&lt;/strong&gt;&lt;/p&gt;Author: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;Version: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%3&lt;/strong&gt;&lt;br&gt;Category: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%4&lt;/strong&gt;</source>
         <translation>&lt;html&gt;&lt;p&gt;&lt;strong&gt;%1&lt;/strong&gt;&lt;/p&gt;Autor: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;Version: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%3&lt;/strong&gt;&lt;br&gt;Kategorie: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%4&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location line="+23" />
+        <location line="+22" />
         <source>&lt;br&gt;Compiler: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;Architecture: &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</source>
         <translation>&lt;br&gt;Compiler: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;Architektur: &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location line="+17" />
+        <location line="+16" />
         <source>&lt;br&gt;MCU Count: &lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;MCUs: &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</source>
         <translation>&lt;br&gt;MCU-Anzahl: &lt;strong&gt;%1&lt;/strong&gt;&lt;br&gt;MCUs: &lt;strong&gt;%2&lt;/strong&gt;&lt;br&gt;</translation>
     </message>
@@ -31894,18 +35877,19 @@ Möchten Sie die Seite neu laden?</translation>
         <translation>Ausstehend...</translation>
     </message>
     <message>
-        <location line="+107" />
+        <location line="+110" />
+        <location line="+11" />
         <location line="+11" />
         <source>Open in external browser</source>
         <translation>In externem Browser öffnen</translation>
     </message>
     <message>
-        <location line="+36" />
+        <location line="+59" />
         <source>Goto EmbeddedWiki page</source>
         <translation>Zur EmbeddedWiki-Seite gehen</translation>
     </message>
     <message>
-        <location line="+145" />
+        <location line="+194" />
         <source>Error updating package</source>
         <translation>Fehler beim Aktualisieren des Pakets</translation>
     </message>
@@ -32044,13 +36028,17 @@ Möchten Sie die Seite neu laden?</translation>
     </message>
     <message>
         <location line="+13" />
-        <location filename="../core/src/package_manager/view/package_manager_view.cpp" line="+115" />
+        <location filename="../core/src/package_manager/view/package_manager_view.cpp" line="+109" />
+        <location line="+13" />
+        <location line="+53" />
+        <location line="+11" />
         <source>Open filters</source>
         <translation>Filter öffnen</translation>
     </message>
     <message>
         <location line="+3" />
-        <location filename="../core/src/package_manager/view/package_manager_view.cpp" line="-1" />
+        <location filename="../core/src/package_manager/view/package_manager_view.cpp" line="-65" />
+        <location line="+64" />
         <source>Filters</source>
         <translation>Filter</translation>
     </message>
@@ -32066,25 +36054,41 @@ Möchten Sie die Seite neu laden?</translation>
     </message>
     <message>
         <location line="+3" />
-        <location filename="../core/src/package_manager/view/package_manager_view.cpp" line="+40" />
+        <location filename="../core/src/package_manager/view/package_manager_view.cpp" line="-2" />
         <source>My packages</source>
         <translation>Meine Pakete</translation>
     </message>
     <message>
-        <location filename="../core/src/package_manager/view/package_manager_view.cpp" line="-99" />
+        <location filename="../core/src/package_manager/view/package_manager_view.cpp" line="-128" />
         <source>Filter packages</source>
         <translation>Pakete filtern</translation>
     </message>
     <message>
         <location line="+28" />
-        <location line="+76" />
-        <location line="+49" />
-        <location line="+474" />
+        <location line="+107" />
+        <location line="+61" />
+        <location line="+489" />
         <source>Found %1 package(s)</source>
         <translation>%1 Paket(e) gefunden</translation>
     </message>
     <message>
-        <location line="-561" />
+        <location line="-633" />
+        <source>Close</source>
+        <translation>Schließen</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <location line="+67" />
+        <source>Filter</source>
+        <translation>Filter</translation>
+    </message>
+    <message>
+        <location line="-66" />
+        <source>Close filters</source>
+        <translation>Filter schließen</translation>
+    </message>
+    <message>
+        <location line="+20" />
         <source>Apply</source>
         <translation>Anwenden</translation>
     </message>
@@ -32094,7 +36098,7 @@ Möchten Sie die Seite neu laden?</translation>
         <translation>Ausgewählte Filter anwenden</translation>
     </message>
     <message>
-        <location line="+23" />
+        <location line="+43" />
         <source>All packages</source>
         <translation>Alle Pakete</translation>
     </message>
@@ -32104,25 +36108,42 @@ Möchten Sie die Seite neu laden?</translation>
         <translation>Zurück zu allen Paketen</translation>
     </message>
     <message>
-        <location line="+9" />
+        <location line="+11" />
         <source>Show your uploaded packages</source>
         <translation>Ihre hochgeladenen Pakete anzeigen</translation>
     </message>
     <message>
-        <location line="+372" />
-        <location line="+229" />
+        <location line="+394" />
+        <location line="+238" />
         <source>No internet connection</source>
         <translation>Keine Internetverbindung</translation>
     </message>
     <message>
-        <location line="-162" />
+        <location line="-171" />
         <source>Reset all filters</source>
         <translation>Alle Filter zurücksetzen</translation>
     </message>
     <message>
-        <location line="+120" />
+        <location line="+129" />
         <source>Author</source>
         <translation>Autor</translation>
+    </message>
+</context>
+<context>
+    <name>PackageReadmeViewer</name>
+    <message>
+        <location filename="../core/src/package_manager/view/package_readme_viewer.cpp" line="+343" />
+        <location line="+64" />
+        <location line="+56" />
+        <source>No network connection.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-96" />
+        <location line="+65" />
+        <location line="+144" />
+        <source>The package description could not be loaded.</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -32229,78 +36250,72 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
 <context>
     <name>PlanetDebugManager</name>
     <message>
-        <location filename="../core/src/planet_debug/planet_debug_manager.cpp" line="+107" />
-        <location line="+652" />
+        <location filename="../core/src/planet_debug/planet_debug_manager.cpp" line="+201" />
+        <location line="+736" />
         <source>No internet access.</source>
         <translation>Kein Internetzugang.</translation>
     </message>
     <message>
-        <location line="-591" />
+        <location line="-661" />
         <source>Error connecting to server. Please check your internet connection.</source>
         <translation>Fehler beim Verbinden mit dem Server. Bitte prüfen Sie Ihre Internetverbindung.</translation>
     </message>
     <message>
         <location line="+43" />
-        <location line="+21" />
-        <location line="+618" />
+        <location line="+19" />
+        <location line="+694" />
         <source>Waiting for server response..</source>
         <translation>Warten auf Serverantwort..</translation>
     </message>
     <message>
-        <location line="-639" />
-        <location line="+21" />
-        <location line="+618" />
+        <location line="-713" />
+        <location line="+19" />
+        <location line="+694" />
         <source>Preparing boards...</source>
         <translation>Platinen werden vorbereitet...</translation>
     </message>
     <message>
-        <location line="-632" />
-        <location line="+640" />
-        <location line="+11" />
         <source>%1 %2 Remote board(s)</source>
         <translation>%1 %2 Remote-Platine(n)</translation>
     </message>
     <message>
-        <location line="-650" />
-        <location line="+640" />
-        <location line="+11" />
         <source>Found</source>
         <translation>Gefunden</translation>
     </message>
     <message>
-        <location line="-630" />
+        <location line="-686" />
         <source>Remote Board Farm</source>
         <translation>Remote Board Farm</translation>
     </message>
     <message>
-        <location line="+123" />
+        <location line="+126" />
         <source>Closing session</source>
         <translation>Sitzung wird geschlossen</translation>
     </message>
     <message>
-        <location line="+38" />
+        <location line="+43" />
         <source>Time token has expired.</source>
         <translation>Zeit-Token ist abgelaufen.</translation>
     </message>
     <message>
         <location line="+85" />
-        <location line="+83" />
+        <location line="+123" />
         <source>The default configuration cannot be used for this project type.</source>
         <translation>Die Standardkonfiguration kann für diesen Projekttyp nicht verwendet werden.</translation>
     </message>
     <message>
-        <location line="-82" />
-        <location line="+83" />
+        <location line="-122" />
+        <location line="+123" />
         <source>Please configure the project manually.</source>
         <translation>Bitte konfigurieren Sie das Projekt manuell.</translation>
     </message>
     <message>
-        <location line="-63" />
+        <location line="-103" />
         <source>MCU selected in setup is different from one on Remote Board Farm board.</source>
         <translation>Die im Setup ausgewählte MCU unterscheidet sich von der auf der Remote-Board-Farm-Platine.</translation>
     </message>
     <message>
-        <location line="+286" />
+        <location line="+354" />
         <source>Remote Board Farm session has no backup of the original configuration and no default setup is available; you will need to reconfigure this project after disconnecting.</source>
         <translation>Die Remote-Board-Farm-Sitzung hat keine Sicherung der ursprünglichen Konfiguration und es ist kein Standard-Setup verfügbar; nach dem Trennen müssen Sie dieses Projekt neu konfigurieren.</translation>
     </message>
@@ -32328,12 +36343,22 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>Platine ist nicht mehr verfügbar.</translation>
     </message>
     <message>
-        <location line="+341" />
+        <location line="+381" />
+        <source>Connection to the remote board was lost.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+44" />
+        <source>The Remote Board Farm session has ended.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+121" />
         <source>Configure</source>
         <translation>Konfigurieren</translation>
     </message>
     <message>
-        <location line="+73" />
+        <location line="+86" />
         <source>Network error occured</source>
         <translation>Netzwerkfehler aufgetreten</translation>
     </message>
@@ -32343,9 +36368,27 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>Ein Netzwerkfehler ist aufgetreten</translation>
     </message>
     <message>
-        <location line="+72" />
+        <location line="+79" />
         <source>Error building default configuration from Remote Board Farm! Project is configured with local configuration.</source>
         <translation>Fehler beim Erstellen der Standardkonfiguration aus Remote Board Farm! Projekt ist mit lokaler Konfiguration konfiguriert.</translation>
+    </message>
+</context>
+<context>
+    <name>PlanetDebugModel</name>
+    <message>
+        <location filename="../core/src/planet_debug/model/planet_debug_model.cpp" line="+300" />
+        <source>Requires the %1 MCU set in the project's setup (board has %2)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Requires a TFT display board</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>The project's setup uses the %1 board definition, this board is %2. Pin mapping may differ.</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -32357,7 +36400,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     </message>
     <message>
         <location line="+101" />
-        <location filename="../core/src/planet_debug/view/planet_debug_view.cpp" line="+118" />
+        <location filename="../core/src/planet_debug/view/planet_debug_view.cpp" line="+131" />
         <source>Reserve</source>
         <translation>Reservieren</translation>
     </message>
@@ -32368,7 +36411,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     </message>
     <message>
         <location line="+13" />
-        <location filename="../core/src/planet_debug/view/planet_debug_view.cpp" line="-19" />
+        <location filename="../core/src/planet_debug/view/planet_debug_view.cpp" line="-22" />
         <source>Filter</source>
         <translation>Filter</translation>
     </message>
@@ -32383,22 +36426,32 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>Freie Platinen</translation>
     </message>
     <message>
+        <location line="+10" />
+        <source>Show only boards that can run the active project</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Compatible boards</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <location line="+107" />
         <source>Ok</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../core/src/planet_debug/view/planet_debug_view.cpp" line="-66" />
+        <location filename="../core/src/planet_debug/view/planet_debug_view.cpp" line="-74" />
         <source>Filter boards</source>
         <translation>Platinen filtern</translation>
     </message>
     <message>
-        <location line="+69" />
+        <location line="+77" />
         <source>Close</source>
         <translation>Schließen</translation>
     </message>
     <message>
-        <location line="+14" />
+        <location line="+17" />
         <source>Browse</source>
         <translation>Durchsuchen</translation>
     </message>
@@ -32524,7 +36577,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>Produktivitäts-Hub</translation>
     </message>
     <message>
-        <location filename="../core/src/productivity_hub/productivity_hub.cpp" line="+51" />
+        <location filename="../core/src/productivity_hub/productivity_hub.cpp" line="+71" />
         <location line="+26" />
         <source>NECTO Assistant</source>
         <translation>NECTO Assistant</translation>
@@ -32585,22 +36638,24 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>Behalten Sie alle lokalen Repositories im Blick und verbinden Sie sich über GitHub mit Remote-Repositories.</translation>
     </message>
     <message>
-        <location line="+117" />
+        <location line="+449" />
+        <source>. Implement the application as FreeRTOS tasks: create the tasks, use FreeRTOS primitives for delays and inter-task communication, and start the scheduler from main</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <source>Create and Configure Project</source>
         <translation>Projekt erstellen und konfigurieren</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Generate Code Only</source>
         <translation>Nur Code generieren</translation>
     </message>
     <message>
-        <location line="+5" />
         <source>You are all set. What's your next step?</source>
         <translation>Alles ist bereit. Was ist Ihr nächster Schritt?</translation>
     </message>
     <message>
-        <location line="+65" />
+        <location line="-249" />
         <source>Create example that combines %1</source>
         <translation>Beispiel erstellen, das %1 kombiniert</translation>
     </message>
@@ -32620,7 +36675,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>%1 auf %2</translation>
     </message>
     <message>
-        <location line="+41" />
+        <location line="+45" />
         <source>This feature is available only when a project is open.</source>
         <translation>Diese Funktion ist nur verfügbar, wenn ein Projekt geöffnet ist.</translation>
     </message>
@@ -32704,7 +36759,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     <name>ProjectChatShareController</name>
     <message>
         <source>OK</source>
-        <translation type="obsolete">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Attaching the project failed.</source>
@@ -32815,12 +36870,12 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>Hochladen</translation>
     </message>
     <message>
-        <location filename="../core/src/project_explorer/view/project_explorer_view.cpp" line="+160" />
+        <location filename="../core/src/project_explorer/view/project_explorer_view.cpp" line="+159" />
         <source>Filter project files</source>
         <translation>Projektdateien filtern</translation>
     </message>
     <message>
-        <location line="+71" />
+        <location line="+72" />
         <source>OK</source>
         <translation>OK</translation>
     </message>
@@ -32830,7 +36885,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>In "%1" wurde kein NECTO-Projekt gefunden.</translation>
     </message>
     <message>
-        <location line="+204" />
+        <location line="+206" />
         <source>New</source>
         <translation>Neu</translation>
     </message>
@@ -32845,7 +36900,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>Öffnen</translation>
     </message>
     <message>
-        <location line="+632" />
+        <location line="+644" />
         <source>Open file</source>
         <translation>Datei öffnen</translation>
     </message>
@@ -33259,7 +37314,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
 <context>
     <name>ProjectSetupListDelegate</name>
     <message>
-        <location filename="../core/src/setup/view/delegates/project_setup_list_delegate.cpp" line="+111" />
+        <location filename="../core/src/setup/view/delegates/project_setup_list_delegate.cpp" line="+131" />
         <location line="+43" />
         <source>Unavailable in offline mode</source>
         <translation>Im Offline-Modus nicht verfügbar</translation>
@@ -33275,7 +37330,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     <name>ProjectSetupPage</name>
     <message>
         <location filename="../core/src/project_manager/wizard/pages/project_setup_page.ui" line="+56" />
-        <location filename="../core/src/project_manager/wizard/pages/project_setup_page.cpp" line="+192" />
+        <location filename="../core/src/project_manager/wizard/pages/project_setup_page.cpp" line="+201" />
         <source>Create New Project</source>
         <translation>Neues Projekt erstellen</translation>
     </message>
@@ -33316,7 +37371,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>Dieses Projekt wird automatisch so konfiguriert, dass es zur verbundenen Remote-Platine passt.</translation>
     </message>
     <message>
-        <location filename="../core/src/project_manager/wizard/pages/project_setup_page.cpp" line="-156" />
+        <location filename="../core/src/project_manager/wizard/pages/project_setup_page.cpp" line="-165" />
         <source>Name</source>
         <translation>Name</translation>
     </message>
@@ -33331,7 +37386,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <translation>Konfiguration</translation>
     </message>
     <message>
-        <location line="+145" />
+        <location line="+154" />
         <source>Choose</source>
         <translation>Auswählen</translation>
     </message>
@@ -33347,6 +37402,77 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <location filename="../core/src/setup/view/delegates/project_setup_list_delegate.cpp" line="+96" />
         <source>Add new</source>
         <translation>Neu hinzufügen</translation>
+    </message>
+    <message>
+        <location line="+131" />
+        <source>The configuration could not be read</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+39" />
+        <source>Requires the legacy SDK</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Requires a dual-core MCU</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Requires a TFT display board</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Requires mikroSDK instead of the legacy SDK</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>MCU does not support mikroSDK</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Requires a single-core MCU</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>XC8 compiler is not supported</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Requires GCC, Clang or XC32 (current: %1)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <location line="+51" />
+        <source>Requires GCC, Clang or XC32</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Requires a Cortex-M, PIC32 or RISC-V MCU</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Unsupported MCU core: %1 (requires Cortex-M, PIC32 or RISC-V)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Only GD32VF103 RISC-V MCUs are supported</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Requires %1 KB RAM (available: %2 KB)</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -33638,22 +37764,26 @@ RAM: &gt; 48 kB</translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-1028" />
+        <location filename="../core/src/setup/view/configuration_frame.cpp" line="-1069" />
+        <location filename="../core/src/setup/view/setup_list_item.cpp" line="-636" />
         <source>Disabled</source>
         <translation>Deaktiviert</translation>
     </message>
     <message>
         <location line="+2" />
+        <location filename="../core/src/setup/view/setup_list_item.cpp" line="+2" />
         <source>Low</source>
         <translation>Niedrig</translation>
     </message>
     <message>
         <location line="+2" />
+        <location filename="../core/src/setup/view/setup_list_item.cpp" line="+2" />
         <source>Medium</source>
         <translation>Mittel</translation>
     </message>
     <message>
         <location line="+2" />
+        <location filename="../core/src/setup/view/setup_list_item.cpp" line="+2" />
         <source>High</source>
         <translation>Hoch</translation>
     </message>
@@ -33995,6 +38125,149 @@ Stellen Sie sicher, dass die Variable CMAKE_BUILD_TYPE dem Feld "Build type" ent
     </message>
 </context>
 <context>
+    <name>QueuesViewModel</name>
+    <message>
+        <location filename="../core/src/debugger/debug_view/src/queues_view_model.cpp" line="+18" />
+        <source>Queue</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Semaphore</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Mutex</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Semaphore/Mutex</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+77" />
+        <source>Available</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Taken</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>(unheld)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Address: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Could not be determined on this FreeRTOS version.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>This FreeRTOS version cannot tell the two apart.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Not resolvable for this entry.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 = available, 0 = currently held.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Current count / maximum count.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Available when 1, held when 0.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Capacity unknown - showing queued messages only.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Messages currently queued / queue capacity.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Only meaningful for mutexes.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No task currently holds this mutex.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+98" />
+        <source>Each core runs its own independent FreeRTOS instance.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Only registered objects appear here.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>What kind of object this is.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>How full each object is.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>The task currently holding this mutex.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Core</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Name</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Type</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Fill Level</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Held By</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
     <name>RISCVGNUSettingsView</name>
     <message>
         <location filename="../plugins/toolchains/RISCVGNU/src/view/riscv_gnu_settings_view.ui" line="+14" />
@@ -34040,6 +38313,19 @@ Stellen Sie sicher, dass die Variable CMAKE_BUILD_TYPE dem Feld "Build type" ent
         <location line="+1" />
         <source>Save</source>
         <translation>Speichern</translation>
+    </message>
+</context>
+<context>
+    <name>ReadmePreviewPopup</name>
+    <message>
+        <location filename="../core/src/package_manager/view/readme_preview_popup.ui" line="+54" />
+        <source>Click to open the full description</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/package_manager/view/readme_preview_popup.cpp" line="+134" />
+        <source>Loading description...</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -34516,6 +38802,104 @@ Stellen Sie sicher, dass die Variable CMAKE_BUILD_TYPE dem Feld "Build type" ent
     <message>
         <source>Rename Branch</source>
         <translation>Branch umbenennen</translation>
+    </message>
+</context>
+<context>
+    <name>RenesasE2View</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_view.ui" line="+14" />
+        <source>Frame</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+64" />
+        <source>Renesas E2 options</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+38" />
+        <source>COM port:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Serial port of the USB-serial adapter wired to the MCU's TOOL0 pin, e.g. /dev/ttyUSB0 or COM3</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Target power from E2:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Supply the target board from the E2. Use only for boards without their own supply.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Off (external supply)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>3.3 V</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>5.0 V</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Interface:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>SWD</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>JTAG</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Interface speed (kHz):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Main clock (EXTAL, MHz):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Frequency of the board's crystal. Leave empty to connect with the internal oscillator (HOCO); required for RX parts that cannot use HOCO.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Debugger port:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>OCD security ID (20 hex digits):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Written to the device when programming (unless the program defines it) and used by the debugger to connect.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Additional server options:</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -35401,17 +39785,57 @@ Dies reverted den Commit %2.</translation>
 <context>
     <name>RpcSocket</name>
     <message>
-        <location filename="../plugins/ai_qa/src/rpc_socket.cpp" line="+449" />
+        <location filename="../plugins/ai_qa/src/rpc_socket.cpp" line="+677" />
+        <source>&lt;b&gt;%1&lt;/b&gt; was not found in the project. Use Copy Code instead.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Generated new code for &lt;b&gt;%1&lt;/b&gt;.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Generated for &lt;b&gt;%1&lt;/b&gt;. Choose how to apply it.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <location line="+6" />
+        <source>Replace File</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-5" />
+        <source>Replace %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
         <source>Choose how to apply the generated code to your file.</source>
         <translation>Wählen Sie, wie der generierte Code auf Ihre Datei angewendet werden soll.</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+1" />
         <source>Replace Entire File</source>
         <translation>Gesamte Datei ersetzen</translation>
     </message>
     <message>
         <location line="+8" />
+        <source>Code generation complete</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+371" />
+        <source>The request could not be completed: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Request failed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <source>NECTO Assistant has finished generating code</source>
         <translation>NECTO Assistant hat die Codegenerierung abgeschlossen</translation>
     </message>
@@ -35681,7 +40105,11 @@ Dies reverted den Commit %2.</translation>
         <translation>Rahmen</translation>
     </message>
     <message>
-        <location line="+18" />
+        <location line="+67" />
+        <source>Remove this Click board</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <source>Remove this Click board?</source>
         <translation>Dieses Click-Board entfernen?</translation>
     </message>
@@ -35691,7 +40119,7 @@ Dies reverted den Commit %2.</translation>
         <translation>...</translation>
     </message>
     <message>
-        <location line="+13" />
+        <location line="-37" />
         <source>Loading...</source>
         <translation>Wird geladen...</translation>
     </message>
@@ -35860,7 +40288,7 @@ Dies reverted den Commit %2.</translation>
         <translation>Bearbeiten2</translation>
     </message>
     <message>
-        <location filename="../core/src/setup/view/setup_detail_frame.cpp" line="+77" />
+        <location filename="../core/src/setup/view/setup_detail_frame.cpp" line="+80" />
         <source>Edit Target</source>
         <translation>Ziel bearbeiten</translation>
     </message>
@@ -35896,6 +40324,11 @@ Dies reverted den Commit %2.</translation>
     </message>
     <message>
         <location line="+2" />
+        <source>mikroBUS %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
         <location line="+120" />
         <source>None</source>
         <translation>Keine</translation>
@@ -36070,7 +40503,17 @@ Dies reverted den Commit %2.</translation>
         <translation>Kompatibel mit</translation>
     </message>
     <message>
-        <location line="+48" />
+        <location line="+27" />
+        <source>mikroBUS position:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>mikroBUS socket the click board is plugged into</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+34" />
         <source>Advanced</source>
         <translation>Erweitert</translation>
     </message>
@@ -36102,7 +40545,7 @@ Dies reverted den Commit %2.</translation>
         <translation>Veröffentlichen</translation>
     </message>
     <message>
-        <location filename="../core/src/setup/view/common/setup_item_view.cpp" line="+105" />
+        <location filename="../core/src/setup/view/common/setup_item_view.cpp" line="+110" />
         <source>Single core MCU</source>
         <translation>Single-Core-MCU</translation>
     </message>
@@ -36110,6 +40553,29 @@ Dies reverted den Commit %2.</translation>
         <location line="+6" />
         <source>Dual core MCU</source>
         <translation>Dual-Core-MCU</translation>
+    </message>
+    <message>
+        <location line="+23" />
+        <source>mikroBUS %1</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>SetupLabelToolTip</name>
+    <message>
+        <location filename="../core/src/setup/view/setup_label_tooltip.ui" line="+59" />
+        <source>Selected</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>name</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+69" />
+        <source>Click to configure</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -36140,12 +40606,12 @@ Dies reverted den Commit %2.</translation>
         <translation>Als Standardkonfiguration festlegen</translation>
     </message>
     <message>
-        <location line="+62" />
+        <location line="+75" />
         <source>Repair required for configuration</source>
         <translation>Reparatur für Konfiguration erforderlich</translation>
     </message>
     <message>
-        <location line="+72" />
+        <location line="+85" />
         <source>boardIcon</source>
         <translation>boardIcon</translation>
     </message>
@@ -36166,21 +40632,21 @@ Dies reverted den Commit %2.</translation>
     </message>
     <message>
         <location line="+3" />
-        <location line="+55" />
+        <location line="+67" />
         <location line="+27" />
-        <location line="+43" />
-        <location line="+34" />
-        <location line="+95" />
+        <location line="+49" />
+        <location line="+40" />
+        <location line="+77" />
         <source>TextLabel</source>
         <translation>Textbeschriftung</translation>
     </message>
     <message>
-        <location line="-238" />
+        <location line="-244" />
         <source>stdOutIcon</source>
         <translation>stdOutIcon</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+13" />
         <source>Selected compiler</source>
         <translation>Ausgewählter Compiler</translation>
     </message>
@@ -36195,7 +40661,7 @@ Dies reverted den Commit %2.</translation>
         <translation>displayIcon</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+13" />
         <source>Click to redirect the standard application output</source>
         <translation>Klicken, um die Standardausgabe der Anwendung umzuleiten</translation>
     </message>
@@ -36205,7 +40671,7 @@ Dies reverted den Commit %2.</translation>
         <translation>Ausgewählte Platine</translation>
     </message>
     <message>
-        <location line="+16" />
+        <location line="+22" />
         <source>Click to change MCU settings</source>
         <translation>Klicken, um MCU-Einstellungen zu ändern</translation>
     </message>
@@ -36225,32 +40691,38 @@ Dies reverted den Commit %2.</translation>
         <translation>compilerIcon</translation>
     </message>
     <message>
-        <location line="+19" />
+        <location line="+31" />
         <source>prog</source>
         <translation>prog</translation>
     </message>
     <message>
-        <location line="+7" />
+        <location line="+212" />
+        <source>Install this configuration for editing and reuse.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Install</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <source>[</source>
         <translation>[</translation>
     </message>
     <message>
-        <location line="+7" />
         <source>Open target programming options</source>
         <translation>Ziel-Programmieroptionen öffnen</translation>
     </message>
     <message>
-        <location line="+3" />
         <source>Target options</source>
         <translation>Zieloptionen</translation>
     </message>
     <message>
-        <location line="+7" />
         <source>]</source>
         <translation>]</translation>
     </message>
     <message>
-        <location line="+34" />
+        <location line="-181" />
         <source>sdkIcon</source>
         <translation>sdkIcon</translation>
     </message>
@@ -36662,6 +41134,24 @@ Dies reverted den Commit %2.</translation>
     </message>
 </context>
 <context>
+    <name>SetupNoticePopup</name>
+    <message>
+        <location filename="../core/src/project_manager/setup_notice_popup.ui" line="+50" />
+        <source>...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+49" />
+        <source>secondary</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>primary</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
     <name>SetupRangeFilterWidget</name>
     <message>
         <location filename="../core/src/setup/view/filters/setup_range_filter_widget.ui" line="+52" />
@@ -36734,7 +41224,7 @@ Dies reverted den Commit %2.</translation>
         <translation>Formular</translation>
     </message>
     <message>
-        <location filename="../core/src/settings_manager/shortcuts_editor_page.cpp" line="+109" />
+        <location filename="../core/src/settings_manager/shortcuts_editor_page.cpp" line="+108" />
         <source>This shortcut is already in use. Choose another</source>
         <translation>Dieses Tastenkürzel wird bereits verwendet. Wählen Sie ein anderes</translation>
     </message>
@@ -36744,22 +41234,19 @@ Dies reverted den Commit %2.</translation>
         <translation>Tastenkürzel-Editor-Einstellungen</translation>
     </message>
     <message>
-        <location line="+114" />
         <source>Restart now</source>
         <translation>Jetzt neu starten</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Restart later</source>
         <translation>Später neu starten</translation>
     </message>
     <message>
-        <location line="+2" />
         <source>Changes will be visible after you restart NECTO Studio.</source>
         <translation>Änderungen werden nach einem Neustart von NECTO Studio sichtbar.</translation>
     </message>
     <message>
-        <location line="+35" />
+        <location line="+130" />
         <source>Undo</source>
         <translation>Rückgängig</translation>
     </message>
@@ -37597,12 +42084,13 @@ Diese PDF-Datei ist für die folgenden 15 Tage verfügbar, beginnend mit </trans
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../core/src/web_browser/tabwidget.cpp" line="+183" />
+        <location filename="../core/src/web_browser/tabwidget.cpp" line="+190" />
+        <location line="+9" />
         <source>(Untitled)</source>
         <translation>(Unbenannt)</translation>
     </message>
     <message>
-        <location line="+87" />
+        <location line="+89" />
         <source>New &amp;Tab</source>
         <translation>Neuer &amp;Tab</translation>
     </message>
@@ -37661,6 +42149,224 @@ Diese PDF-Datei ist für die folgenden 15 Tage verfügbar, beginnend mit </trans
     <message>
         <source>Name</source>
         <translation>Name</translation>
+    </message>
+</context>
+<context>
+    <name>TasksViewModel</name>
+    <message>
+        <location filename="../core/src/debugger/debug_view/src/tasks_view_model.cpp" line="+21" />
+        <source>Running</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Ready</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Blocked</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Suspended</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Deleted</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+81" />
+        <source>%1 (base %2)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+33" />
+        <source>Delay / notify</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>0 (clock stopped)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>(current)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Double-click to go to where this task is executing.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Double-click to go to where this task is parked.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>No source location available for this task.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Raised from %1 while it holds a mutex.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Task control block address: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Could not be computed for this task.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Peak so far. Total size unknown for this build.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 B never used.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Blocked on "%1", held by %2.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Blocked on "%1".</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Waiting on an unregistered object.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Waiting on a delay or notification.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Only shown for tasks waiting on an object.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Needs run-time stats enabled in FreeRTOSConfig.h.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Running now - see the Call Stack view.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Not available for this target.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+88" />
+        <source>Double-click a task to go to its code.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>The handle returned when the task was created.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>What each task is doing right now.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Higher runs first. 0 is the lowest.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>The most stack each task has ever used, not its usage now.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>What each blocked task is waiting for.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Share of CPU time used by each task.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Where each waiting task will resume.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Each core runs its own FreeRTOS instance.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Core</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Name</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Task Handle</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>State</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Priority</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Stack Usage</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Event Object</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Runtime</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>PC</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -37776,7 +42482,7 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     </message>
     <message>
         <location line="+3" />
-        <location filename="../plugins/tools/common/terminal/src/terminal_view.cpp" line="+87" />
+        <location filename="../plugins/tools/common/terminal/src/terminal_view.cpp" line="+90" />
         <source>Connect</source>
         <translation>Verbinden</translation>
     </message>
@@ -37907,17 +42613,17 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
         <translation>BIN</translation>
     </message>
     <message>
-        <location filename="../plugins/tools/common/terminal/src/terminal_view.cpp" line="-61" />
+        <location filename="../plugins/tools/common/terminal/src/terminal_view.cpp" line="-64" />
         <source>Type your data here</source>
         <translation>Geben Sie hier Ihre Daten ein</translation>
     </message>
     <message>
-        <location line="+54" />
+        <location line="+57" />
         <source>Disconnect</source>
         <translation>Trennen</translation>
     </message>
     <message>
-        <location line="+212" />
+        <location line="+214" />
         <source>Open file</source>
         <translation>Datei öffnen</translation>
     </message>
@@ -38032,7 +42738,7 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
         <translation>Code kopieren</translation>
     </message>
     <message>
-        <location filename="../plugins/tools/timer_calculator/src/timer_widget.cpp" line="+52" />
+        <location filename="../plugins/tools/timer_calculator/src/timer_widget.cpp" line="+54" />
         <source>Mcu frequency</source>
         <translation>MCU-Frequenz</translation>
     </message>
@@ -38088,7 +42794,7 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
         <translation>Code in die Zwischenablage kopiert</translation>
     </message>
     <message>
-        <location line="+45" />
+        <location line="+47" />
         <source>Preset successfully saved</source>
         <translation>Voreinstellung erfolgreich gespeichert</translation>
     </message>
@@ -38267,17 +42973,17 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
         <translation>Formular</translation>
     </message>
     <message>
-        <location filename="../core/src/tools_manager/tools_view.cpp" line="+22" />
+        <location filename="../core/src/tools_manager/tools_view.cpp" line="+24" />
         <source>Filter tools</source>
         <translation>Werkzeuge filtern</translation>
     </message>
     <message>
-        <location line="+144" />
+        <location line="+198" />
         <source>You need to have an active configuration to enable this tool.</source>
         <translation>Sie benötigen eine aktive Konfiguration, um dieses Werkzeug zu aktivieren.</translation>
     </message>
     <message>
-        <location line="+21" />
+        <location line="+22" />
         <location line="+4" />
         <source>Create custom board</source>
         <translation>Eigene Platine</translation>
@@ -38285,9 +42991,16 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location line="+13" />
         <location line="+8" />
-        <location line="+128" />
+        <location line="+188" />
         <source>Plot</source>
         <translation>Plot</translation>
+    </message>
+    <message>
+        <location line="-175" />
+        <location line="+8" />
+        <location line="+176" />
+        <source>Trace</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -38381,6 +43094,462 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
         <location filename="../core/src/guided_tour/tour_frame.ui" line="+14" />
         <source>Frame</source>
         <translation>Rahmen</translation>
+    </message>
+</context>
+<context>
+    <name>TraceFaultPanel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_fault_panel.ui" line="+46" />
+        <source>Faults NECTO injects into the firmware's drivers, for this debug session</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Faults</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>What to break</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>The lane it holds</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+38" />
+        <source>The byte every read on the bus gives, in hex</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>\0\x&gt;HH</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>0xFF</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>The level the input reads</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>High</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Low</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+24" />
+        <source>The value the input reads</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Inject</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this device.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>No reads on this lane yet</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>TraceNoteDialog</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_note_dialog.ui" line="+14" />
+        <location line="+24" />
+        <source>Add note</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+57" />
+        <source>Cancel</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>OK</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>TraceRecordingNameDialog</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_recording_name_dialog.ui" line="+14" />
+        <location line="+24" />
+        <source>Recording saved</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+45" />
+        <source>Name</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+74" />
+        <source>Keep the automatic name</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Cancel</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Save</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>TraceTriggerPanel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_trigger_panel.ui" line="+35" />
+        <source>Trigger on</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>What to watch for, in the search's words. Every word must match:
+a transfer: failed, ok, w, r, w/r, tx, rx, 0x48, 9F 00, "text", a register's name
+a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>0x18 failed · w 05 · LED_1 rise</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>From this trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+28" />
+        <source>Then</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Pause the debugger</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>The trace comes in buffers: the target runs on a little past the event before the pause holds it.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Place marker A on the event</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+15" />
+        <source>Record, from</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Record to a file, starting before the event: what came before it is kept while the trigger is armed.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source> s before</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>to</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>stopped</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source> s after</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+53" />
+        <source>Arm</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>TraceValueDialog</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_value_dialog.ui" line="+14" />
+        <location line="+24" />
+        <source>Force a value</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+61" />
+        <source>Cancel</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>OK</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>TraceView</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_view.ui" line="+14" />
+        <source>Firmware trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+91" />
+        <source>Start Debugging (F9)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+61" />
+        <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <location line="+684" />
+        <source>Record</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-665" />
+        <source>Faults NECTO injects into the firmware: a device that stops answering, a stuck bus or pin, a forced ADC value. Right-click a lane for its faults too.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <location line="+737" />
+        <source>Faults</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-718" />
+        <source>Watch the trace for a transfer or a pin's change, then pause the debugger, place a marker or record.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Trigger</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Go to, zoom to, copy or export what is between markers A and B, or remove them (Esc)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Markers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+35" />
+        <source>First difference: where the runs part</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Previous difference from the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Next difference from the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Previous failed transfer</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Next failed transfer</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Time span the timeline shows, following the newest events</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>1 ms</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>10 ms</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>100 ms</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>1 s</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>2 s</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>10 s</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Whole trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+24" />
+        <source>Clear the trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Open a recording, compare with one, or export the trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Show or hide the transfers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+82" />
+        <source>Line the recording up with this run: put marker A on an event of the live lane, then marker B on the same event in the recording under it.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Align at markers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Stop comparing</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+141" />
+        <source>Start Debugging</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <location line="+10" />
+        <source>primary</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-3" />
+        <source>Enable Trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+94" />
+        <source>Live</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>View the trace in real time</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+75" />
+        <source>Save the trace for later analysis</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+75" />
+        <source>Inject faults to test the firmware</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+149" />
+        <source>Lanes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Collapse the lane list</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+126" />
+        <source>Transfers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Only the transfers that differ from the recording, or that one run has only</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Differences only</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Previous match</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Next match</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+22" />
+        <source>Search the transfers (Ctrl+F). Every word must match:
+failed, ok, injected: the result
+w, r, w/r, tx, rx, burst: the operation; bytes after it in its direction
+0x48: an I2C address
+9F 00: bytes, in this order
+"ERR", thermo: text in the lane's name or pins, or what a UART sent</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Search transfers</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -38777,8 +43946,8 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
 <context>
     <name>UartPlugin</name>
     <message>
-        <location filename="../plugins/tools/uart_terminal/src/uart_plugin.cpp" line="+23" />
-        <location line="+13" />
+        <location filename="../plugins/tools/uart_terminal/src/uart_plugin.cpp" line="+28" />
+        <location line="+17" />
         <source>UART Terminal</source>
         <translation>UART-Terminal</translation>
     </message>
@@ -38786,7 +43955,7 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
 <context>
     <name>UartTerminal</name>
     <message>
-        <location filename="../plugins/tools/uart_terminal/src/uart_terminal.cpp" line="+73" />
+        <location filename="../plugins/tools/uart_terminal/src/uart_terminal.cpp" line="+77" />
         <source>UART Terminal</source>
         <translation>UART-Terminal</translation>
     </message>
@@ -38853,7 +44022,7 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
 <context>
     <name>UdpTerminal</name>
     <message>
-        <location filename="../plugins/tools/udp_terminal/src/udp_terminal.cpp" line="+93" />
+        <location filename="../plugins/tools/udp_terminal/src/udp_terminal.cpp" line="+97" />
         <source>UDP Terminal</source>
         <translation>UDP-Terminal</translation>
     </message>
@@ -39094,7 +44263,7 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
         <translation>Dialog</translation>
     </message>
     <message>
-        <location line="+29" />
+        <location line="+24" />
         <source>Uploading your project</source>
         <translation>Ihr Projekt wird hochgeladen</translation>
     </message>
@@ -39104,12 +44273,12 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
         <translation>Symbol</translation>
     </message>
     <message>
-        <location line="+30" />
+        <location line="+40" />
         <source>Ok</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_dialog.cpp" line="+57" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_dialog.cpp" line="+67" />
         <source>Packing your project and prepare for upload</source>
         <translation>Ihr Projekt wird gepackt und für den Upload vorbereitet</translation>
     </message>
@@ -39124,7 +44293,51 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
         <translation>Upload zum Server wird gestartet</translation>
     </message>
     <message>
-        <location line="+8" />
+        <location line="+7" />
+        <source>Project packing failed</source>
+        <translation>Projektpacken fehlgeschlagen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <location line="+22" />
+        <source>Please try again.</source>
+        <translation>Bitte versuchen Sie es erneut.</translation>
+    </message>
+    <message>
+        <location line="-13" />
+        <source>Upload successful</source>
+        <translation>Upload erfolgreich</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Your project is ready in My Packages and waiting to be published.
+Click Publish when you're ready to make it available to the community.</source>
+        <translation>Ihr Projekt ist in Meine Pakete bereit und wartet auf die Veröffentlichung.
+Klicken Sie auf Veröffentlichen, wenn Sie es der Community zur Verfügung stellen möchten.</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Upload to server failed.</source>
+        <translation>Upload zum Server fehlgeschlagen.</translation>
+    </message>
+    <message>
+        <location line="+22" />
+        <source>A package with this version already exists.</source>
+        <translation>Ein Paket mit dieser Version existiert bereits.</translation>
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Project upload failed</source>
+        <translation>Projekt-Upload fehlgeschlagen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1
+%2</source>
+        <translation>%1
+%2</translation>
+    </message>
+    <message>
         <source>Project packing failed.
 
 Please try again.</source>
@@ -39133,7 +44346,6 @@ Please try again.</source>
 Bitte versuchen Sie es erneut.</translation>
     </message>
     <message>
-        <location line="+9" />
         <source>Upload successful.
 Your project is now visible in My packages,
 unpublished. Click Publish when you're ready.</source>
@@ -39142,7 +44354,6 @@ Ihr Projekt ist jetzt in Meine Pakete sichtbar,
 unveröffentlicht. Klicken Sie auf Veröffentlichen, wenn Sie bereit sind.</translation>
     </message>
     <message>
-        <location line="+11" />
         <source>Upload to server failed.
 
 Please try again.</source>
@@ -39151,17 +44362,16 @@ Please try again.</source>
 Bitte versuchen Sie es erneut.</translation>
     </message>
     <message>
-        <location line="+19" />
+        <location line="-9" />
         <source>Please go back and increase the project version, then try again.</source>
         <translation>Bitte gehen Sie zurück, erhöhen Sie die Projektversion und versuchen Sie es erneut.</translation>
     </message>
     <message>
-        <location line="+2" />
+        <location line="+5" />
         <source>Please go back and try again.</source>
         <translation>Bitte gehen Sie zurück und versuchen Sie es erneut.</translation>
     </message>
     <message>
-        <location line="+4" />
         <source>Project upload failed.
 
 %1</source>
@@ -39170,7 +44380,6 @@ Bitte versuchen Sie es erneut.</translation>
 %1</translation>
     </message>
     <message>
-        <location line="+1" />
         <source>Project upload failed:
 
 %1
@@ -39232,7 +44441,7 @@ Bitte versuchen Sie es erneut.</translation>
         <translation>Geben Sie den Namen und die Version des Projekts ein und weisen Sie dann die Click-Boards den mikroBUS-Sockeln zu</translation>
     </message>
     <message>
-        <location line="+71" />
+        <location line="+104" />
         <source>Display name</source>
         <translation>Anzeigename</translation>
     </message>
@@ -39248,6 +44457,7 @@ Bitte versuchen Sie es erneut.</translation>
     </message>
     <message>
         <location line="+52" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="+220" />
         <source>Version</source>
         <translation>Version</translation>
     </message>
@@ -39268,6 +44478,7 @@ Bitte versuchen Sie es erneut.</translation>
     </message>
     <message>
         <location line="+28" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="-51" />
         <source>MCU</source>
         <translation>MCU</translation>
     </message>
@@ -39283,26 +44494,31 @@ Bitte versuchen Sie es erneut.</translation>
     </message>
     <message>
         <location line="-115" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="+0" />
         <source>Board</source>
         <translation>Platine</translation>
     </message>
     <message>
         <location line="+27" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="+2" />
         <source>Display</source>
         <translation>Anzeige</translation>
     </message>
     <message>
         <location line="+27" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="+26" />
         <source>Compiler</source>
         <translation>Compiler</translation>
     </message>
     <message>
         <location line="+27" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="+1" />
         <source>Programmer</source>
         <translation>Programmiergerät</translation>
     </message>
     <message>
         <location line="+27" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="-2" />
         <source>SDK</source>
         <translation>SDK</translation>
     </message>
@@ -39314,14 +44530,28 @@ NOTE: The displayed positions are suggestions only - verify them before continui
 HINWEIS: Die angezeigten Positionen sind nur Vorschläge - überprüfen Sie diese, bevor Sie fortfahren.</translation>
     </message>
     <message>
-        <location line="+32" />
+        <location line="+77" />
+        <source>Project description</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Describe your project in Markdown. It is packed as README.md and shown in the Package Manager.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>The description is still the unedited template, so no README.md will be uploaded. Edit it to describe your project in the Package Manager.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <source>WARNING: No Click libraries are included in your project. Cancel this dialog, open the Library Manager, and select the Click board(s) you wish to use, then try uploading again.</source>
         <translation>WARNUNG: Ihr Projekt enthält keine Click-Bibliotheken. Brechen Sie diesen Dialog ab, öffnen Sie den Bibliotheksmanager, wählen Sie die gewünschten Click-Boards aus und versuchen Sie den Upload erneut.</translation>
     </message>
     <message>
-        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="+126" />
-        <location line="+4" />
-        <location line="+7" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="+107" />
+        <location line="+6" />
+        <location line="+10" />
         <location line="+4" />
         <location line="+12" />
         <location line="+4" />
@@ -39329,14 +44559,126 @@ HINWEIS: Die angezeigten Positionen sind nur Vorschläge - überprüfen Sie dies
         <translation>N/V</translation>
     </message>
     <message>
-        <location line="-23" />
+        <location line="-169" />
+        <location line="+146" />
         <source>No display</source>
         <translation>Kein Display</translation>
     </message>
     <message>
-        <location line="+11" />
+        <location line="-130" />
+        <source>Click board (%1)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Click board</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Connect the hardware listed above.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Plug the Click boards into the mikroBUS sockets listed above.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Project Name</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>One sentence that sums up what this project does.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Explain what the project does, which problem it solves and how it works.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>First feature</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Second feature</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Third feature</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Component</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Name</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Open the project in NECTO Studio and build it.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Program the board and describe what the user should see.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Anything else worth knowing: pin configuration, known limitations, links to datasheets.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+104" />
         <source>Bare metal</source>
         <translation>Bare Metal</translation>
+    </message>
+    <message>
+        <location filename="../core/src/package_manager/view/package_readme_viewer.cpp" line="-387" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="-111" />
+        <source>Description</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="+2" />
+        <source>Key Features</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="+1" />
+        <source>Required Hardware</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="+1" />
+        <source>Software</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="+1" />
+        <source>Setup and Usage</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/upload_project_info_dialog.cpp" line="+1" />
+        <source>Notes</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -39394,7 +44736,7 @@ HINWEIS: Die angezeigten Positionen sind nur Vorschläge - überprüfen Sie dies
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location filename="../core/src/package_manager/view/uploading_package_dialog.cpp" line="+48" />
+        <location filename="../core/src/package_manager/view/uploading_package_dialog.cpp" line="+50" />
         <source>Package path</source>
         <translation>Paketpfad</translation>
     </message>
@@ -39450,7 +44792,7 @@ HINWEIS: Die angezeigten Positionen sind nur Vorschläge - überprüfen Sie dies
         <translation>Datenschutzerklärung - Nutzungsbedingungen</translation>
     </message>
     <message>
-        <location filename="../core/src/welcome_page/user_info_view.cpp" line="+30" />
+        <location filename="../core/src/welcome_page/user_info_view.cpp" line="+32" />
         <source>&lt;a href="https://www.mikroe.com/legal/privacy-policy"&gt;Privacy policy - Terms of service&lt;/a&gt;</source>
         <translation>&lt;a href="https://www.mikroe.com/legal/privacy-policy"&gt;Datenschutzerklärung - Nutzungsbedingungen&lt;/a&gt;</translation>
     </message>
@@ -39728,7 +45070,7 @@ HINWEIS: Die angezeigten Positionen sind nur Vorschläge - überprüfen Sie dies
 <context>
     <name>VersionControl</name>
     <message>
-        <location filename="../plugins/version_control/src/version_control.cpp" line="+90" />
+        <location filename="../plugins/version_control/src/version_control.cpp" line="+91" />
         <location line="+4" />
         <source>Version Control</source>
         <translation>Versionsverwaltung</translation>
@@ -39747,7 +45089,7 @@ HINWEIS: Die angezeigten Positionen sind nur Vorschläge - überprüfen Sie dies
 <context>
     <name>VisualCodePrompt</name>
     <message>
-        <location filename="../core/src/productivity_hub/visual_code_prompt/visual_code_prompt.cpp" line="+73" />
+        <location filename="../core/src/productivity_hub/visual_code_prompt/visual_code_prompt.cpp" line="+167" />
         <source>Click</source>
         <translation>Click</translation>
     </message>
@@ -39760,6 +45102,16 @@ HINWEIS: Die angezeigten Positionen sind nur Vorschläge - überprüfen Sie dies
         <location line="+0" />
         <source>Prompt</source>
         <translation>Prompt</translation>
+    </message>
+    <message>
+        <location line="+272" />
+        <source>FreeRTOS is not available for this setup (legacy/bare-metal SDK or dual-core MCU).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>The FreeRTOS %1 project template is not installed. Add it from the Library Manager.</source>
+        <translation type="unfinished" />
     </message>
     <message>
         <source>Setup</source>
@@ -39787,7 +45139,13 @@ HINWEIS: Die angezeigten Positionen sind nur Vorschläge - überprüfen Sie dies
         <translation>Rahmen</translation>
     </message>
     <message>
-        <location line="+27" />
+        <location line="+30" />
+        <source>primary</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <location filename="../core/src/web_browser/web_browser.cpp" line="+224" />
         <source>Back</source>
         <translation>Zurück</translation>
     </message>
@@ -39837,7 +45195,7 @@ HINWEIS: Die angezeigten Positionen sind nur Vorschläge - überprüfen Sie dies
         <translation>...</translation>
     </message>
     <message>
-        <location filename="../core/src/web_browser/web_browser.cpp" line="+42" />
+        <location filename="../core/src/web_browser/web_browser.cpp" line="-178" />
         <source>Enter address</source>
         <translation>Adresse eingeben</translation>
     </message>
@@ -39851,12 +45209,17 @@ HINWEIS: Die angezeigten Positionen sind nur Vorschläge - überprüfen Sie dies
         <source>Web Browser</source>
         <translation>Webbrowser</translation>
     </message>
+    <message>
+        <location line="+170" />
+        <source>Back to %1</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>WebPage</name>
     <message>
         <location filename="../core/src/web_browser/webpage.cpp" line="+59" />
-        <location line="+4" />
+        <location line="+7" />
         <source>Certificate Error</source>
         <translation>Zertifikatfehler</translation>
     </message>
@@ -39915,6 +45278,40 @@ HINWEIS: Die angezeigten Positionen sind nur Vorschläge - überprüfen Sie dies
         <location line="+23" />
         <source>Allow %1 to open all %2 links?</source>
         <translation>%1 erlauben, alle %2-Links zu öffnen?</translation>
+    </message>
+</context>
+<context>
+    <name>WebPeekWindow</name>
+    <message>
+        <location filename="../core/src/web_browser/web_peek_window.ui" line="+20" />
+        <location filename="../core/src/web_browser/web_peek_window.cpp" line="+164" />
+        <source>Web</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+30" />
+        <source>Back</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Forward</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Reload</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Open in Web tab</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Open in system browser</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -40081,17 +45478,17 @@ Möchten Sie die Seite neu laden?</translation>
     </message>
     <message>
         <location line="+36" />
-        <location line="+148" />
+        <location line="+149" />
         <source>Productivity Hub</source>
         <translation>Produktivitäts-Hub</translation>
     </message>
     <message>
-        <location line="-146" />
+        <location line="-147" />
         <source>Quick access to most important tools to boost your productivity.</source>
         <translation>Schneller Zugriff auf die wichtigsten Werkzeuge zur Steigerung Ihrer Produktivität.</translation>
     </message>
     <message>
-        <location line="+88" />
+        <location line="+89" />
         <source>Package manager</source>
         <translation>Paketmanager</translation>
     </message>
@@ -40145,11 +45542,18 @@ Möchten Sie die Seite neu laden?</translation>
     </message>
     <message>
         <location line="+20" />
+        <location filename="../common/widgets/src/widget_detach_container/widget_detach_container.cpp" line="+91" />
+        <source>Stay on top</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+19" />
         <source>Detach</source>
         <translation>Abdocken</translation>
     </message>
     <message>
-        <location line="+3" />
+        <location line="-16" />
+        <location line="+19" />
         <location line="+23" />
         <source>...</source>
         <translation>...</translation>
@@ -40158,6 +45562,11 @@ Möchten Sie die Seite neu laden?</translation>
         <location line="-3" />
         <source>Close</source>
         <translation>Schließen</translation>
+    </message>
+    <message>
+        <location filename="../common/widgets/src/widget_detach_container/widget_detach_container.cpp" line="+0" />
+        <source>Stay on top: on</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -40368,6 +45777,3855 @@ Möchten Sie die Seite neu laden?</translation>
         <location line="+6" />
         <source>Configure %1:</source>
         <translation>%1 konfigurieren:</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::FaultPanel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_fault_panel.cpp" line="+30" />
+        <source>I2C device not answering</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>SPI MISO stuck</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Input held</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>ADC value forced</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>1-Wire devices gone</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+105" />
+        <source>injected while it was recorded</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>None was injected while it was recorded.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Faults go on the lanes that take them: I2C, SPI, inputs, ADC and 1-Wire. None has shown up yet.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+53" />
+        <source> V</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+63" />
+        <source>Type the byte: two hex digits.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Choose the lane to break.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Injected already.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>%1 faults at most: remove one first.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Inject it into the firmware: at once while it is stopped, otherwise within half a second while it records</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+55" />
+        <source>Remove this fault</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+41" />
+        <source>Events this fault changed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>no reads</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this bus.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>waiting</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Not hit yet. The firmware gets the fault when it next hands over its trace (within half a second while it records, or at a stop); it hits at the next call it applies to.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::TriggerPanel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_trigger_panel.cpp" line="+98" />
+        <source>Watch for this</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+35" />
+        <source>Type what to watch for: a transfer, as in "0x18 failed", or a pin's change, as in "LED_1 rise".</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Armed: waiting for the first match.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+17" />
+        <source>Disarm</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Arm</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::DapTraceReader</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_dap_reader.cpp" line="+32" />
+        <source>Firmware trace: no breakpoint on traceBuffFullBreak: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+65" />
+        <source>Firmware trace: the trace buffer was not found in the image.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::TraceFaultPanel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_fault_panel.ui" line="+46" />
+        <source>Faults NECTO injects into the firmware's drivers, for this debug session</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Faults</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>What to break</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>The lane it holds</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+38" />
+        <source>The byte every read on the bus gives, in hex</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>\0\x&gt;HH</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>0xFF</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>The level the input reads</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>High</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Low</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+24" />
+        <source>The value the input reads</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Inject</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this device.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>No reads on this lane yet</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::TraceTabs</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_tabs.cpp" line="+22" />
+        <source>The trace of the session you debug</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+65" />
+        <source>● Live</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Live</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>RenesasE2Proxy</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_proxy.cpp" line="+68" />
+        <source>Renesas E2: the GDB server did not complete the launch sequence.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+102" />
+        <source>Renesas E2 proxy cannot listen on port %1: %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+131" />
+        <source>Renesas E2 proxy cannot reach the GDB server on port %1.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>RenesasE2RfpJob</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_rfp_job.cpp" line="+35" />
+        <source>Renesas E2: Programming</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Renesas E2: Erasing</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+72" />
+        <source>Renesas Flash Programmer CLI not found: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Device is not supported by the installed Renesas E2 support files.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>No COM port is selected in the programmer settings.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Cannot open %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+48" />
+        <source>Renesas Flash Programmer CLI failed to start: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+35" />
+        <source>Waiting for the E2 to reconnect (attempt %1 of %2)...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Renesas E2: this device has no erase operation (MRAM); programming overwrites the memory in place.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Renesas E2: the device rejected the write address. Check that the device's TrustZone boundaries match the project (read them with "rfp-cli -device RA -tool e2 -rfo"; a project without TrustZone needs all code and SRAM secure).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Renesas E2: no %1 found on USB. Check that it is connected and that the programmer selected in the setup matches it (Renesas E2 or Renesas E2 Lite; boards with an on-board emulator use E2 Lite).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Renesas Flash Programmer CLI failed (exit code %1).</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::LaneModel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_lane_model.cpp" line="+78" />
+        <source>Only in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Not in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Recorded on other pins: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+31" />
+        <source>%1 · other pins</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::TraceNoteDialog</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_note_dialog.ui" line="+14" />
+        <location line="+24" />
+        <source>Add note</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+57" />
+        <source>Cancel</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>OK</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::RecordingNameDialog</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_recording_name_dialog.cpp" line="+33" />
+        <source>Saved in %1</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::oneWire</name>
+    <message>
+        <location line="+130" />
+        <location line="+1" />
+        <source>Reset</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <location line="+1" />
+        <source>Presence</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-1" />
+        <source>No presence</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>None</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+40" />
+        <source>Command</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+43" />
+        <location line="+1" />
+        <source>Search</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::SetupLabelToolTip</name>
+    <message>
+        <location filename="../core/src/setup/view/setup_label_tooltip.ui" line="+59" />
+        <source>Selected</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>name</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+69" />
+        <source>Click to configure</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::TraceView</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_view.ui" line="+14" />
+        <source>Firmware trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+91" />
+        <source>Start Debugging (F9)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+61" />
+        <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <location line="+684" />
+        <source>Record</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-665" />
+        <source>Faults NECTO injects into the firmware: a device that stops answering, a stuck bus or pin, a forced ADC value. Right-click a lane for its faults too.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <location line="+737" />
+        <source>Faults</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-718" />
+        <source>Watch the trace for a transfer or a pin's change, then pause the debugger, place a marker or record.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Trigger</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Go to, zoom to, copy or export what is between markers A and B, or remove them (Esc)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Markers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+35" />
+        <source>First difference: where the runs part</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Previous difference from the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Next difference from the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Previous failed transfer</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Next failed transfer</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Time span the timeline shows, following the newest events</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>1 ms</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>10 ms</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>100 ms</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>1 s</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>2 s</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>10 s</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Whole trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+24" />
+        <source>Clear the trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Open a recording, compare with one, or export the trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Show or hide the transfers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+82" />
+        <source>Line the recording up with this run: put marker A on an event of the live lane, then marker B on the same event in the recording under it.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Align at markers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Stop comparing</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+141" />
+        <source>Start Debugging</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <location line="+10" />
+        <source>primary</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-3" />
+        <source>Enable Trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+94" />
+        <source>Live</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>View the trace in real time</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+75" />
+        <source>Save the trace for later analysis</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+75" />
+        <source>Inject faults to test the firmware</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+149" />
+        <source>Lanes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Collapse the lane list</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+126" />
+        <source>Transfers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Only the transfers that differ from the recording, or that one run has only</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Differences only</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Previous match</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Next match</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+22" />
+        <source>Search the transfers (Ctrl+F). Every word must match:
+failed, ok, injected: the result
+w, r, w/r, tx, rx, burst: the operation; bytes after it in its direction
+0x48: an I2C address
+9F 00: bytes, in this order
+"ERR", thermo: text in the lane's name or pins, or what a UART sent</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Search transfers</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>RenesasE2EraseJob</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_job.cpp" line="+220" />
+        <source>Renesas E2: Erasing</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::MarkdownEditor</name>
+    <message>
+        <location filename="../core/src/productivity_hub/upload_project_wizard/markdown_editor.ui" line="+33" />
+        <source>Edit</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+240" />
+        <location filename="../core/src/productivity_hub/upload_project_wizard/markdown_editor.cpp" line="+359" />
+        <source>Text</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>URL</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>https://</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Insert</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Cancel</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+18" />
+        <source>Preview</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/productivity_hub/upload_project_wizard/markdown_editor.cpp" line="-261" />
+        <source>Heading</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Bold (Ctrl+B)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Italic (Ctrl+I)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Strikethrough</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Bulleted list</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Numbered list</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Quote</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Inline code</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Code block</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Table</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Horizontal line</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Link (Ctrl+K)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Image</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Heading %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Image from URL...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Image from file...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <location line="+29" />
+        <source>bold</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-27" />
+        <location line="+29" />
+        <source>italic</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-27" />
+        <source>strikethrough</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>code</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+212" />
+        <source>Column 1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Column 2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Value</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Description</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Insert image</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Insert link</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+28" />
+        <source>image</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Select image</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Images (*.png *.jpg *.jpeg *.gif *.webp)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Only PNG, JPEG, GIF and WebP images are supported.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Image is larger than 1 MB, use an image URL instead.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Cannot read %1.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::TransactionModel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_transaction_model.cpp" line="+225" />
+        <source>Recording: </source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Command %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Register %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+43" />
+        <source>Failed ⚡</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Injected</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 failed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Failed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>OK</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Time from the start of the transfer before it; on a frame, from the frame before it</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Time</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Interval</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Lane</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Op</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Address</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Data</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Duration</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Result</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Compared</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+27" />
+        <source>+ Only in this run</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>The recording has no transfer to compare with</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>✓ Same</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Same as the recording's</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Differs from the recording's, this run's first: %1</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::TraceTriggerPanel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_trigger_panel.ui" line="+35" />
+        <source>Trigger on</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>What to watch for, in the search's words. Every word must match:
+a transfer: failed, ok, w, r, w/r, tx, rx, 0x48, 9F 00, "text", a register's name
+a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>0x18 failed · w 05 · LED_1 rise</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>From this trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+28" />
+        <source>Then</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Pause the debugger</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>The trace comes in buffers: the target runs on a little past the event before the pause holds it.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Place marker A on the event</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+15" />
+        <source>Record, from</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Record to a file, starting before the event: what came before it is kept while the trigger is armed.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source> s before</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>to</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>stopped</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source> s after</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+53" />
+        <source>Arm</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>RenesasE2Server</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_server.cpp" line="+181" />
+        <source>Renesas E2 GDB server is already running.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Renesas E2 GDB server not found: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Device is not supported by the installed Renesas E2 support files.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+25" />
+        <source>Renesas E2 GDB server failed to start: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Timed out waiting for the Renesas E2 GDB server to connect to the target.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+86" />
+        <source>Renesas E2 GDB server exited before connecting (exit code %1).</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::PackageReadmeViewer</name>
+    <message>
+        <location filename="../core/src/package_manager/view/package_readme_viewer.cpp" line="+343" />
+        <location line="+64" />
+        <location line="+56" />
+        <source>No network connection.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-96" />
+        <location line="+65" />
+        <location line="+144" />
+        <source>The package description could not be loaded.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>DapStdoutReader</name>
+    <message>
+        <location filename="../core/src/debugger/dap_stdout_reader.cpp" line="+94" />
+        <source>Standard output: no breakpoint on stdBuffFullBreak (%1): %2</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::TraceRecordingNameDialog</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_recording_name_dialog.ui" line="+14" />
+        <location line="+24" />
+        <source>Recording saved</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+45" />
+        <source>Name</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+74" />
+        <source>Keep the automatic name</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Cancel</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Save</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::WebPeekWindow</name>
+    <message>
+        <location filename="../core/src/web_browser/web_peek_window.ui" line="+20" />
+        <location filename="../core/src/web_browser/web_peek_window.cpp" line="+164" />
+        <source>Web</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+30" />
+        <source>Back</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Forward</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Reload</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Open in Web tab</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Open in system browser</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>RenesasE2ProgramJob</name>
+    <message>
+        <location line="+32" />
+        <source>Renesas E2: Programming</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Renesas E2: %1</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Debugger</name>
+    <message>
+        <location filename="../core/src/debugger/debugger.cpp" line="+318" />
+        <source>No debug port is available for the secondary core; only the primary core is debugged.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+290" />
+        <source>Opening %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Open trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not open %1: %2</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::i2c</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_signals.cpp" line="-498" />
+        <source>Start</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+21" />
+        <source>Stop</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+65" />
+        <source>Not known</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+28" />
+        <source>Address</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Write [%1]</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>W %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Write</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Read [%1]</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>R %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Read</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::BusRenderer</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="+204" />
+        <source>No timer in the firmware: the signals need the transfers' times</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+808" />
+        <source>Not in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Not in this run</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>MemoryViewModel</name>
+    <message>
+        <location filename="../core/src/debugger/debug_view/src/memory_view_model.cpp" line="+124" />
+        <source>%1: 0x%2 (%3)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Address</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>ASCII</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::TimelineViewport</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_timeline_viewport.cpp" line="+67" />
+        <source>New data ▸</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Follow the newest events</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+311" />
+        <source>No firmware trace yet. Link MikroSDK.Trace to the project, call trace_init() and start debugging.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+505" />
+        <source>Not in this run</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Not in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>%1 differ</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 extra</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <location line="+585" />
+        <source>✓ Same</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-429" />
+        <source>Empty recording: nothing came from the firmware while it ran</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>End of recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+127" />
+        <source>Duty: %1 %</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Freq: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>width⁻¹: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+214" />
+        <source>Next edge (Ctrl+→)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Previous edge (Ctrl+←)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Next value (Ctrl+→)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Previous value (Ctrl+←)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Next transfer (Ctrl+→)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Previous transfer (Ctrl+←)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+72" />
+        <source>+ Only in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>+ Only in this run</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Time</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>RenesasE2Job</name>
+    <message>
+        <location line="-176" />
+        <source>No free TCP port for the Renesas E2 GDB server.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+19" />
+        <source>Connection to the Renesas E2 GDB server failed: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Renesas E2: cannot select the target thread (%1).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+22" />
+        <source>Renesas E2: %1 failed (%2).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+66" />
+        <source>Renesas E2 GDB server exited unexpectedly (exit code %1).</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>HeapUsageBar</name>
+    <message>
+        <location filename="../core/src/debugger/debug_view/src/heap_usage_bar.cpp" line="+64" />
+        <source>Total Heap: start a debug session and halt to read</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Total Heap: not available for this allocator</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Total Heap: 0 / %1 (nothing allocated yet)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Total Heap: nothing allocated yet</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Total Heap: %1 / %2 (%3%)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Total Heap: %1 free</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Total Heap: </source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Free: %1 (low: %2)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>The least free heap this run. A big gap means bursts of allocation.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Free: %1</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::ClickPresetChip</name>
+    <message>
+        <location filename="../core/src/productivity_hub/common/click_preset_chip.ui" line="+23" />
+        <source>Frame</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/productivity_hub/common/click_preset_chip.cpp" line="+37" />
+        <source>Delete combination</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::TasksViewModel</name>
+    <message>
+        <location filename="../core/src/debugger/debug_view/src/tasks_view_model.cpp" line="+21" />
+        <source>Running</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Ready</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Blocked</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Suspended</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Deleted</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+81" />
+        <source>%1 (base %2)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+33" />
+        <source>Delay / notify</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>0 (clock stopped)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>(current)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Double-click to go to where this task is executing.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Double-click to go to where this task is parked.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>No source location available for this task.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Raised from %1 while it holds a mutex.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Task control block address: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Could not be computed for this task.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Peak so far. Total size unknown for this build.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 B never used.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Blocked on "%1", held by %2.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Blocked on "%1".</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Waiting on an unregistered object.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Waiting on a delay or notification.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Only shown for tasks waiting on an object.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Needs run-time stats enabled in FreeRTOSConfig.h.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Running now - see the Call Stack view.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Not available for this target.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+88" />
+        <source>Double-click a task to go to its code.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>The handle returned when the task was created.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>What each task is doing right now.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Higher runs first. 0 is the lowest.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>The most stack each task has ever used, not its usage now.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>What each blocked task is waiting for.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Share of CPU time used by each task.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Where each waiting task will resume.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Each core runs its own FreeRTOS instance.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Core</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Name</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Task Handle</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>State</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Priority</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Stack Usage</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Event Object</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Runtime</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>PC</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::LaneNameDelegate</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_view.cpp" line="+187" />
+        <source>Not in this run</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+27" />
+        <source>%1 differ</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 extra</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>✓ Same</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+17" />
+        <source>Not in the recording</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>RenesasE2</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2.cpp" line="+258" />
+        <source>Renesas E2: the selected MCU does not support a %1 V supply from the emulator; target power is switched off for this operation.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+24" />
+        <source>Renesas E2: Renesas Flash Programmer CLI not found (%1); using the GDB server. The application starts after a target reset or power cycle.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Renesas E2: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Device %1 is not supported by the installed Renesas E2 support files (%2).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>The selected MCU does not support a %1 V supply from the emulator. Choose another target power setting.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>COM port debugging is only available for RL78 devices.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>No COM port is selected in the programmer settings.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Invalid debugger port %1.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+51" />
+        <source>Renesas E2: the GDB server did not open a port for the secondary core; only the primary core can be debugged.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+21" />
+        <source>Renesas E2: cannot listen on port %1 for the secondary core; only the primary core can be debugged.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::HoverCard</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_hover_card.cpp" line="+69" />
+        <source>High</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Low</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Level</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>High for</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Low for</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Width⁻¹</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Period</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Frequency</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Duty</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Transfers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Written</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+45" />
+        <source>Read</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-43" />
+        <location line="+68" />
+        <source>Failed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-66" />
+        <location line="+7" />
+        <source>Span</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-5" />
+        <source>Too fast to record each transfer: counted, with their bytes.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Changes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Ends</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Too fast to record each change.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Value</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Operation</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No device answered the reset.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Address</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Command</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Register</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Sent</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Received</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Write</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>failed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Duration</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+18" />
+        <source>Injected</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>OK</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Pin</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Fault</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Compared</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+66" />
+        <source>NECTO made the device not answer.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO held MISO: these bytes were not read.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO took the devices off the bus.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO forced this value.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO held the pin at this level.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::SetupNoticePopup</name>
+    <message>
+        <location filename="../core/src/project_manager/setup_notice_popup.ui" line="+50" />
+        <source>...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+49" />
+        <source>secondary</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>primary</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::QueuesViewModel</name>
+    <message>
+        <location filename="../core/src/debugger/debug_view/src/queues_view_model.cpp" line="+18" />
+        <source>Queue</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Semaphore</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Mutex</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Semaphore/Mutex</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+77" />
+        <source>Available</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Taken</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>(unheld)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Address: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Could not be determined on this FreeRTOS version.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>This FreeRTOS version cannot tell the two apart.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Not resolvable for this entry.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 = available, 0 = currently held.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Current count / maximum count.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Available when 1, held when 0.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Capacity unknown - showing queued messages only.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Messages currently queued / queue capacity.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Only meaningful for mutexes.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No task currently holds this mutex.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+98" />
+        <source>Each core runs its own independent FreeRTOS instance.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Only registered objects appear here.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>What kind of object this is.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>How full each object is.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>The task currently holding this mutex.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Core</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Name</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Type</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Fill Level</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Held By</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::TraceValueDialog</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_value_dialog.ui" line="+14" />
+        <location line="+24" />
+        <source>Force a value</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+61" />
+        <source>Cancel</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>OK</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::ReadmePreviewPopup</name>
+    <message>
+        <location filename="../core/src/package_manager/view/readme_preview_popup.ui" line="+54" />
+        <source>Click to open the full description</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/package_manager/view/readme_preview_popup.cpp" line="+134" />
+        <source>Loading description...</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::ValueRenderer</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="-230" />
+        <source>Fit</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::TraceView</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_view.cpp" line="+558" />
+        <source>Hide the transfers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Show the transfers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Collapse the lane list</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Expand the lane list</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+158" />
+        <source>Project</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>MCU</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Board</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Configuration</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Firmware</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>NECTO</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+64" />
+        <source>Nothing was recorded</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>This recording is empty: the session ended before any trace data arrived.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>No project open</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Open a project to see its I2C, SPI, UART and pin activity on a timeline.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Reading the project's libraries…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Trace is on for %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Restarting: rebuilding with trace and programming the board…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>This firmware was built without trace. Restart debugging to rebuild it.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>The firmware is paused. Continue (F6) to run it and capture its activity.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Waiting for the first trace data from the firmware…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Starting: building and programming the board…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Start debugging to capture your firmware's bus and pin activity.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Restart Debugging</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Continue</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Start Debugging</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Visualize Your Firmware Activity</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Monitor I²C, SPI, UART, and GPIO signals on an interactive timeline.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Trace isn't available for %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Trace works with %1 MCUs.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Trace isn't available with %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Trace needs GCC, Clang or XC32. Choose one in the project's configuration.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Trace isn't in this configuration yet</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Its libraries were built without the trace. Rebuild the configuration (Configure project, Edit), or update mikroSDK.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Turn it off so the project builds.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Turn Off Trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Enable Trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Removes the trace library from your project</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Adds the trace library to your project</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+183" />
+        <source>%n records</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+44" />
+        <source>Open trace…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Compare with recording…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Compare with recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <location line="+1349" />
+        <location line="+79" />
+        <source>NECTO trace (*.nectotrace)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-1424" />
+        <source>Show a recording under this run's lanes, with what differs marked</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Recent recordings</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Export transfers as CSV…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Every bus transfer, with all its bytes: for a spreadsheet or a script.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Export as VCD…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>The checked lanes as signals, for GTKWave or PulseView: pins, values, and when each bus was busy.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+563" />
+        <source>Export A–B transfers as CSV…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-561" />
+        <source>The bus transfers that start between markers A and B.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+561" />
+        <source>Export A–B as VCD…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-560" />
+        <source>The checked lanes from marker A to marker B, A at time 0.</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+426" />
+        <source>%n found</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>No match</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+47" />
+        <source>%1 records lost</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No timer: order only</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>The trace buffer filled up between reads; the timeline has gaps there.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>%1 lanes, %2 events</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+36" />
+        <source>%n failed</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+17" />
+        <source>Go to marker A</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Go to marker B</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Zoom to A–B</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Copy measurement</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>A, B, the time between them and what each lane did then, as text</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Clear markers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Edit note…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Remove note</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Add note here…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Go to note</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <location line="+47" />
+        <source>Place marker A here</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-45" />
+        <location line="+47" />
+        <source>Place marker B here</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-42" />
+        <source>Remove marker A</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Remove marker B</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+46" />
+        <source>Place markers at its start and end</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>A where the frame starts, B where it ends</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>A where the transfer starts, B where it ends</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Add note</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Note at %1:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Edit note</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Note at %1 (empty removes it):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+30" />
+        <source>Save notes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not save the notes to %1: %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+178" />
+        <source>Signals rebuilt from the recorded transfers, not captured; each spread over its transfer's time.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Signals rebuilt from the recorded transfers at the bus's rate, not captured.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>CS is as recorded on its pin.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Only in the recording.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Not in the recording.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Recorded on other pins: %1.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+19" />
+        <source>The same as the recording's lane.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 difference from the recording.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 differences from the recording.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 transfer only one run has (extra).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 transfers only one run has (extra).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Hide lane</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Show all lanes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Default order</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+32" />
+        <source>Fit lanes to height</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Every lane taller or shorter by the same amount, so that they fill the timeline's height</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Reset lane heights</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+25" />
+        <location line="+78" />
+        <source>between markers A and B</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-77" />
+        <location line="+78" />
+        <source>over the whole trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-76" />
+        <source>Find longest gap</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>The longest time the lane did nothing, %1: marked A to B</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Measure delay to</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>From each event of this lane to the next of another, %1: how long the firmware took to react</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>From each rise</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>From each fall</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>From each change</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Longest gap</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Fewer than two events of the lane to find a gap between.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
+        <source>each change of %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>each rise of %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>each fall of %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>From %1 to the next event of %2, %3.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>each event of %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Delay</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>No event of %1 came after one of %2 before the next.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+24" />
+        <source>Close</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-10" />
+        <source>min %1 · avg %2 · max %3 · σ %4 (%5 delays)</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+7" />
+        <source>%n with no event of %1 before the next one.</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Copy</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Show longest</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Markers A and B on the longest delay, zoomed to</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+21" />
+        <source>Show signals</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>The wires drawn under the transfers, rebuilt from their bytes: not a capture of the pins</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Wires</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Inject a fault: needs a newer MikroSDK.Trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+31" />
+        <source>Make 0x%1 not answer</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Stick MISO at 0xFF</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Stick MISO at 0x00</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Hold High</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Hold Low</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Take the devices off the bus</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Force a value…</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Force a value</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Volts the input reads:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Count the input reads:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+18" />
+        <source>Remove fault: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Faults</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>1 Fault</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>%1 Faults</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+16" />
+        <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+41" />
+        <source>Open trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+28" />
+        <source>Export A–B as VCD</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Export A–B transfers as CSV</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Export as VCD</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Export transfers as CSV</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Value Change Dump (*.vcd)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>CSV (*.csv)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Exporting the trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Export trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not write %1: %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
+        <location line="+8" />
+        <source>Record trace</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not record to %1: %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+61" />
+        <source>Nothing came from the firmware while recording: this recording has no trace. Record while the target runs, until the transfers show.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Type a name, or Cancel to keep %1.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>A name only, without folders.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>There is a recording named %1 already.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Could not rename the recording: check the name, or Cancel to keep %1.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+37" />
+        <source>Armed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Trigger</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+18" />
+        <source>marker A placed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>already recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>not recorded: Record needs a debug session of a project</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>not recorded: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>paused</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Fired at %1 on %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+22" />
+        <source>Recording to %1. Press to stop.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Record</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>This is a recording: Record records the live trace, in the Trace tool while debugging.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Record starts with a debug session of a project with trace on.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder; you name it when it stops.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>The last recording stopped: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+33" />
+        <source>Recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>cut short</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>NECTO %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+38" />
+        <source>Comparing with %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Each lane has the recording's lane under it (REC), on the same times from each run's start. What differs is outlined; Align at markers lines the runs up.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+88" />
+        <source> (all failed)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source> (%1 failed)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Nothing compared: the recording is empty</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Nothing compared: no lane is in both runs</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Nothing compared: no transfer is in both runs</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>%1 failed here, OK in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 OK here, failed in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No differences</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>1 difference</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 differences</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 transfer only in this run</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 transfers only in this run</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>1 transfer only in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 transfers only in the recording</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>1 lane in one run only</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 lanes in one run only</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>The recording has no trace: Record was stopped before the firmware handed a buffer over. Record while the target runs, until the transfers show.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Lanes pair by their kind, pins and I2C device, transfers by their order in each lane. This run and the recording have none alike: another firmware, a recording of another project, or one made later in its session.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Transfers and pin changes compared by their order in each lane. Differences are banded on the timeline and said in the table's Compared column; transfers only one run has are outlined dashed. The arrows go through all of them.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+44" />
+        <source>on %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>to %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>%1 transfers %2 failed here that worked in the recording, the first at %3.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>From %1 on, all %2 transfers %3 failed; the recording's worked.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>mikroBUS %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>The device at %1 stopped answering: is %2 fitted%3?</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source> on %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>The device at %1 stopped answering: is it fitted and connected%2?</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source> (%1)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Is the device still connected?</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_recording.cpp" line="+298" />
+        <source>No such file.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+40" />
+        <source>Not a NECTO trace recording.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Recorded by a newer NECTO (file version %1).</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location filename="../core/src/debugger/trace/trace_signals.cpp" line="+124" />
+        <source>%n bytes not kept</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Data</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+526" />
+        <source>%1 baud</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_faults.cpp" line="+138" />
+        <source>Not answering</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>MISO stuck at 0x%1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Held High</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Held Low</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Forced to %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Forced to %1 V</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No device answering</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>pin %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>I2C 0x%1 on %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>SPI on %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Input %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>ADC %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>1-Wire on %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_compare.cpp" line="+235" />
+        <location line="+46" />
+        <location line="+2" />
+        <source>%1: %2 vs %3 bytes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-21" />
+        <source>Kind</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Failed vs OK</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>OK vs failed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Operation</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Address: %1 vs %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>TX</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Write</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>RX</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Read</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>%1 vs %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Duration: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Transfers: %1 vs %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Failed: %1 vs %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Bytes: %1 vs %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Level</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_project.cpp" line="+140" />
+        <source>ARM Cortex-M, RISC-V and PIC32</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_trigger.cpp" line="+27" />
+        <source>once</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>twice</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 times</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+193" />
+        <source>Rose %1 so far</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+36" />
+        <source>%1 failed so far</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Register %1 of %2, written %3</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>%1 transfers start with it</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Received %1 so far</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>%1 changed by a fault so far</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_format.cpp" line="+163" />
+        <location line="+330" />
+        <source>%1 bytes</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-301" />
+        <source>Other</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+40" />
+        <location line="+69" />
+        <source>Output</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-67" />
+        <location line="+67" />
+        <source>Input</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-62" />
+        <location line="+89" />
+        <source>I2C</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-84" />
+        <location line="+77" />
+        <source>SPI</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-75" />
+        <location line="+77" />
+        <source>UART</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-75" />
+        <location line="+74" />
+        <source>1-Wire</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-71" />
+        <location line="+44" />
+        <source>Value</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+198" />
+        <source>1 byte</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Write %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Read %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Write %1 · Read %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <location line="+19" />
+        <location line="+192" />
+        <source>error</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-192" />
+        <source>no presence</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+119" />
+        <source>Burst</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Reset</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Read ROM</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Skip ROM</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Match ROM</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Search ROM</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+26" />
+        <source>%1 transfers</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+6" />
+        <source>%1 failed</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_measure.cpp" line="+76" />
+        <source>No transfers</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+1" />
+        <source>%n transfers</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>%1 busy</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+2" />
+        <source>%n failed</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location line="+48" />
+        <source>%n changes</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>%1 high</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+21" />
+        <source>No values</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+4" />
+        <source>%n values</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 to %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>avg %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+162" />
+        <source>%1: min %2 · avg %3 · max %4 · σ %5 (%6)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+69" />
+        <source>Values</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+42" />
+        <source>High</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Low</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Period</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+32" />
+        <source>Duration</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Interval</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Throughput: %1/s</source>
+        <translation type="unfinished" />
+    </message>
+    <message numerus="yes">
+        <location line="+65" />
+        <source>%n records</source>
+        <translation type="unfinished">
+            <numerusform />
+            <numerusform />
+        </translation>
+    </message>
+    <message>
+        <location line="+24" />
+        <source>Project</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Board</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>MCU</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Firmware</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>NECTO</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Traced</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>From a recording</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::TimelineRuler</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_timeline_ruler.cpp" line="+66" />
+        <source>≠ Runs part</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+219" />
+        <source>%1
+
+%2 · drag to move, double-click to edit</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Where the runs first differ: click to go there</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Drag to move the marker; double-click to remove it</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Click to place marker B</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Click to place marker A</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::PlanetDebugModel</name>
+    <message>
+        <location filename="../core/src/planet_debug/model/planet_debug_model.cpp" line="+300" />
+        <source>Requires the %1 MCU set in the project's setup (board has %2)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Requires a TFT display board</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>The project's setup uses the %1 board definition, this board is %2. Pin mapping may differ.</source>
+        <translation type="unfinished" />
     </message>
 </context>
 </TS>
