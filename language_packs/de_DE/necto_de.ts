@@ -2092,37 +2092,37 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <message>
         <location line="+1" />
         <source>Generate the code only, without creating a project or installing packages</source>
-        <translation type="unfinished" />
+        <translation>Nur den Code generieren, ohne ein Projekt zu erstellen oder Pakete zu installieren</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Code Only (FreeRTOS)</source>
-        <translation type="unfinished" />
+        <translation>Nur Code (FreeRTOS)</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Generate the code only, without creating a project or installing packages, structured as FreeRTOS tasks with the scheduler started</source>
-        <translation type="unfinished" />
+        <translation>Nur den Code generieren, ohne ein Projekt zu erstellen oder Pakete zu installieren, strukturiert als FreeRTOS-Tasks mit gestartetem Scheduler</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Create Project</source>
-        <translation type="unfinished" />
+        <translation>Projekt erstellen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Generate the code and create a new project, installing the required packages and libraries</source>
-        <translation type="unfinished" />
+        <translation>Code generieren und ein neues Projekt erstellen, inklusive Installation der erforderlichen Pakete und Bibliotheken</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Create Project (FreeRTOS)</source>
-        <translation type="unfinished" />
+        <translation>Projekt erstellen (FreeRTOS)</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Generate the code and create a new project, installing the required packages and libraries, structured as FreeRTOS tasks with the scheduler started</source>
-        <translation type="unfinished" />
+        <translation>Code generieren und ein neues Projekt erstellen, inklusive Installation der erforderlichen Pakete und Bibliotheken, strukturiert als FreeRTOS-Tasks mit gestartetem Scheduler</translation>
     </message>
     <message>
         <source>Just generate the code and skip the project creation and package setup</source>
@@ -4357,7 +4357,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <message>
         <location line="+511" />
         <source>No active debug session</source>
-        <translation type="unfinished" />
+        <translation>Keine aktive Debug-Sitzung</translation>
     </message>
 </context>
 <context>
@@ -4370,17 +4370,17 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <message>
         <location line="+229" />
         <source>Address or expression to read from, e.g. 0x20000000 or &amp;buffer. Press Enter to read.</source>
-        <translation type="unfinished" />
+        <translation>Adresse oder Ausdruck, ab dem gelesen wird, z. B. 0x20000000 oder &amp;buffer. Drücken Sie Enter, um zu lesen.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Address or expression (0x20000000, &amp;buffer)</source>
-        <translation type="unfinished" />
+        <translation>Adresse oder Ausdruck (0x20000000, &amp;buffer)</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Number of bytes to read</source>
-        <translation type="unfinished" />
+        <translation>Anzahl der zu lesenden Bytes</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/debug_view/src/debug_view.cpp" line="+105" />
@@ -4405,7 +4405,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <message>
         <location line="+1" />
         <source>  Memory</source>
-        <translation type="unfinished" />
+        <translation>  Speicher</translation>
     </message>
     <message>
         <location line="+1" />
@@ -4425,53 +4425,53 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <message>
         <location line="+290" />
         <source>%1 bytes</source>
-        <translation type="unfinished" />
+        <translation>%1 Bytes</translation>
     </message>
     <message>
         <location line="+42" />
         <source>Refresh memory</source>
-        <translation type="unfinished" />
+        <translation>Speicher aktualisieren</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Copy address</source>
-        <translation type="unfinished" />
+        <translation>Adresse kopieren</translation>
     </message>
     <message>
         <location line="+63" />
         <location line="+71" />
         <source>Start a debug session to read memory.</source>
-        <translation type="unfinished" />
+        <translation>Starten Sie eine Debug-Sitzung, um den Speicher zu lesen.</translation>
     </message>
     <message>
         <location line="-65" />
         <source>The active debugger does not support reading memory.</source>
-        <translation type="unfinished" />
+        <translation>Der aktive Debugger unterstützt das Lesen des Speichers nicht.</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Pause the target to read memory.</source>
-        <translation type="unfinished" />
+        <translation>Halten Sie das Ziel an, um den Speicher zu lesen.</translation>
     </message>
     <message>
         <location line="+31" />
         <source>Cannot evaluate %1.</source>
-        <translation type="unfinished" />
+        <translation>%1 kann nicht ausgewertet werden.</translation>
     </message>
     <message>
         <location line="+49" />
         <source>Cannot read memory at %1.</source>
-        <translation type="unfinished" />
+        <translation>Speicher an %1 kann nicht gelesen werden.</translation>
     </message>
     <message>
         <location line="+16" />
         <source>No readable memory at %1.</source>
-        <translation type="unfinished" />
+        <translation>Kein lesbarer Speicher an %1.</translation>
     </message>
     <message>
         <location line="+23" />
         <source>Memory view is not supported with the mikroC compiler.</source>
-        <translation type="unfinished" />
+        <translation>Die Speicheransicht wird mit dem mikroC-Compiler nicht unterstützt.</translation>
     </message>
     <message>
         <location line="+46" />
@@ -4536,22 +4536,22 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <message>
         <location filename="../core/src/debugger/debugger.cpp" line="+318" />
         <source>No debug port is available for the secondary core; only the primary core is debugged.</source>
-        <translation type="unfinished" />
+        <translation>Für den sekundären Kern ist kein Debug-Port verfügbar; nur der primäre Kern wird debuggt.</translation>
     </message>
     <message>
         <location line="+290" />
         <source>Opening %1</source>
-        <translation type="unfinished" />
+        <translation>%1 wird geöffnet</translation>
     </message>
     <message>
         <location line="+14" />
         <source>Open trace</source>
-        <translation type="unfinished" />
+        <translation>Trace öffnen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Could not open %1: %2</source>
-        <translation type="unfinished" />
+        <translation>%1 konnte nicht geöffnet werden: %2</translation>
     </message>
 </context>
 <context>
@@ -4583,7 +4583,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <message>
         <location line="+6" />
         <source>Stop Debug (Ctrl+F2)</source>
-        <translation type="unfinished" />
+        <translation>Debuggen beenden (Ctrl+F2)</translation>
     </message>
     <message>
         <location line="+6" />
@@ -4650,146 +4650,148 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <location line="+262" />
         <location line="+16" />
         <source>Core %1</source>
-        <translation type="unfinished" />
+        <translation>Kern %1</translation>
     </message>
     <message>
         <location line="+57" />
         <source>Core %1: Task execution has not started yet. Resume debugging and pause again to view active tasks.</source>
-        <translation type="unfinished" />
+        <translation>Kern %1: Die Task-Ausführung hat noch nicht begonnen. Setzen Sie das Debuggen fort und halten Sie erneut an, um aktive Tasks anzuzeigen.</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Tasks are ready but not running yet. Resume debugging and pause again to view their status.</source>
-        <translation type="unfinished" />
+        <translation>Die Tasks sind bereit, laufen aber noch nicht. Setzen Sie das Debuggen fort und halten Sie erneut an, um ihren Status anzuzeigen.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>No active tasks yet. Resume debugging and pause again to check for tasks.</source>
-        <translation type="unfinished" />
+        <translation>Noch keine aktiven Tasks. Setzen Sie das Debuggen fort und halten Sie erneut an, um nach Tasks zu suchen.</translation>
     </message>
     <message>
         <location line="+21" />
         <source>No tasks found - the scheduler has probably not started yet. Continue, then pause, to see the tasks.</source>
-        <translation type="unfinished" />
+        <translation>Keine Tasks gefunden - der Scheduler wurde wahrscheinlich noch nicht gestartet. Fahren Sie fort und halten Sie dann an, um die Tasks zu sehen.</translation>
     </message>
     <message>
         <location line="+31" />
         <source>Not started</source>
-        <translation type="unfinished" />
+        <translation>Nicht gestartet</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Running</source>
-        <translation type="unfinished" />
+        <translation>Läuft</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Suspended</source>
-        <translation type="unfinished" />
+        <translation>Suspendiert</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Unknown</source>
-        <translation type="unfinished" />
+        <translation>Unbekannt</translation>
     </message>
     <message>
         <location line="+105" />
         <source>Tasks</source>
-        <translation type="unfinished" />
+        <translation>Tasks</translation>
     </message>
     <message>
         <location line="+19" />
         <source>Queues</source>
-        <translation type="unfinished" />
+        <translation>Warteschlangen</translation>
     </message>
     <message>
         <location line="+32" />
         <source>The FreeRTOS view needs a debugger that can read target memory.
 Select GDB or LLDB in the project's toolchain settings to inspect tasks and queues.</source>
-        <translation type="unfinished" />
+        <translation>Die FreeRTOS-Ansicht benötigt einen Debugger, der den Speicher des Ziels lesen kann.
+Wählen Sie GDB oder LLDB in den Toolchain-Einstellungen des Projekts, um Tasks und Warteschlangen zu untersuchen.</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Start a debug session and halt the target to inspect tasks, queues and heap.</source>
-        <translation type="unfinished" />
+        <translation>Starten Sie eine Debug-Sitzung und halten Sie das Ziel an, um Tasks, Warteschlangen und Heap zu untersuchen.</translation>
     </message>
     <message>
         <location line="+70" />
         <source>Scheduler: running, suspended or not started yet.
 Tick: kernel ticks counted since the scheduler started.</source>
-        <translation type="unfinished" />
+        <translation>Scheduler: läuft, suspendiert oder noch nicht gestartet.
+Tick: seit dem Start des Schedulers gezählte Kernel-Ticks.</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Tick:</source>
-        <translation type="unfinished" />
+        <translation>Tick:</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Scheduler:</source>
-        <translation type="unfinished" />
+        <translation>Scheduler:</translation>
     </message>
     <message>
         <location line="+42" />
         <source>The FreeRTOS view is open in a separate window.</source>
-        <translation type="unfinished" />
+        <translation>Die FreeRTOS-Ansicht ist in einem separaten Fenster geöffnet.</translation>
     </message>
     <message>
         <location line="+5" />
         <location line="+89" />
         <source>Reattach</source>
-        <translation type="unfinished" />
+        <translation>Wieder andocken</translation>
     </message>
     <message>
         <location line="-76" />
         <location line="+18" />
         <source>FreeRTOS</source>
-        <translation type="unfinished" />
+        <translation>FreeRTOS</translation>
     </message>
     <message>
         <location line="-17" />
         <source>FreeRTOS tasks and queues</source>
-        <translation type="unfinished" />
+        <translation>FreeRTOS-Tasks und -Warteschlangen</translation>
     </message>
     <message>
         <location line="+75" />
         <source>Detach</source>
-        <translation type="unfinished" />
+        <translation>Abdocken</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Reattach to the bottom panel</source>
-        <translation type="unfinished" />
+        <translation>Wieder im unteren Bereich andocken</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Detach into a separate window</source>
-        <translation type="unfinished" />
+        <translation>In ein separates Fenster abdocken</translation>
     </message>
     <message>
         <location line="+191" />
         <source>Core %1: %2</source>
-        <translation type="unfinished" />
+        <translation>Kern %1: %2</translation>
     </message>
     <message>
         <location line="+21" />
         <source>Queue monitoring is not enabled. Enable it in your project settings and rebuild.</source>
-        <translation type="unfinished" />
+        <translation>Die Überwachung von Warteschlangen ist nicht aktiviert. Aktivieren Sie sie in den Projekteinstellungen und erstellen Sie das Projekt neu.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Queue details are not available for this build. The required debugging information is missing.</source>
-        <translation type="unfinished" />
+        <translation>Details zu Warteschlangen sind für diesen Build nicht verfügbar. Die erforderlichen Debug-Informationen fehlen.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>No queues, semaphores or mutexes found. Register them in your application to view them here.</source>
-        <translation type="unfinished" />
+        <translation>Keine Warteschlangen, Semaphore oder Mutexe gefunden. Registrieren Sie sie in Ihrer Anwendung, um sie hier anzuzeigen.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>No queues, semaphores or mutexes are registered. FreeRTOS can only list objects passed to vQueueAddToRegistry() - add a call after each one you create to inspect it here.</source>
-        <translation type="unfinished" />
+        <translation>Es sind keine Warteschlangen, Semaphore oder Mutexe registriert. FreeRTOS kann nur Objekte auflisten, die an vQueueAddToRegistry() übergeben wurden - fügen Sie nach jedem erstellten Objekt einen solchen Aufruf hinzu, um es hier zu untersuchen.</translation>
     </message>
 </context>
 <context>
@@ -14997,7 +14999,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <source>Just generate the code and skip the project creation and package setup</source>
         <translation>Nur den Code generieren und Projekterstellung sowie Paketeinrichtung überspringen</translation>
     </message>
-</context>
+<message><source>Create Project</source><translation>Projekt erstellen</translation></message><message><source>Code Only (FreeRTOS)</source><translation>Nur Code (FreeRTOS)</translation></message><message><source>Generate the code only, without creating a project or installing packages</source><translation>Nur den Code generieren, ohne ein Projekt zu erstellen oder Pakete zu installieren</translation></message><message><source>Generate the code only, without creating a project or installing packages, structured as FreeRTOS tasks with the scheduler started</source><translation>Nur den Code generieren, ohne ein Projekt zu erstellen oder Pakete zu installieren, strukturiert als FreeRTOS-Tasks mit gestartetem Scheduler</translation></message><message><source>Create Project (FreeRTOS)</source><translation>Projekt erstellen (FreeRTOS)</translation></message><message><source>Generate the code and create a new project, installing the required packages and libraries</source><translation>Code generieren und ein neues Projekt erstellen, inklusive Installation der erforderlichen Pakete und Bibliotheken</translation></message><message><source>Generate the code and create a new project, installing the required packages and libraries, structured as FreeRTOS tasks with the scheduler started</source><translation>Code generieren und ein neues Projekt erstellen, inklusive Installation der erforderlichen Pakete und Bibliotheken, strukturiert als FreeRTOS-Tasks mit gestartetem Scheduler</translation></message></context>
 <context>
     <name>Necto::ChooseSetupPage</name>
     <message>
@@ -16791,7 +16793,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
     <message>
         <location filename="../core/src/debugger/dap_stdout_reader.cpp" line="+94" />
         <source>Standard output: no breakpoint on stdBuffFullBreak (%1): %2</source>
-        <translation type="unfinished" />
+        <translation>Standardausgabe: kein Haltepunkt auf stdBuffFullBreak (%1): %2</translation>
     </message>
 </context>
 <context>
@@ -16853,7 +16855,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <source>Debugger: %1</source>
         <translation>Debugger: %1</translation>
     </message>
-</context>
+<message><source>No active debug session</source><translation>Keine aktive Debug-Sitzung</translation></message></context>
 <context>
     <name>Necto::DebugView</name>
     <message>
@@ -16932,7 +16934,7 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <source>Value format</source>
         <translation>Wertformat</translation>
     </message>
-</context>
+<message><source>The active debugger does not support reading memory.</source><translation>Der aktive Debugger unterstützt das Lesen des Speichers nicht.</translation></message><message><source>%1 bytes</source><translation>%1 Bytes</translation></message><message><source>Pause the target to read memory.</source><translation>Halten Sie das Ziel an, um den Speicher zu lesen.</translation></message><message><source>Cannot evaluate %1.</source><translation>%1 kann nicht ausgewertet werden.</translation></message><message><source>  Memory</source><translation>  Speicher</translation></message><message><source>Address or expression (0x20000000, &amp;buffer)</source><translation>Adresse oder Ausdruck (0x20000000, &amp;buffer)</translation></message><message><source>Start a debug session to read memory.</source><translation>Starten Sie eine Debug-Sitzung, um den Speicher zu lesen.</translation></message><message><source>Number of bytes to read</source><translation>Anzahl der zu lesenden Bytes</translation></message><message><source>Cannot read memory at %1.</source><translation>Speicher an %1 kann nicht gelesen werden.</translation></message><message><source>Copy address</source><translation>Adresse kopieren</translation></message><message><source>No readable memory at %1.</source><translation>Kein lesbarer Speicher an %1.</translation></message><message><source>Memory view is not supported with the mikroC compiler.</source><translation>Die Speicheransicht wird mit dem mikroC-Compiler nicht unterstützt.</translation></message><message><source>Refresh memory</source><translation>Speicher aktualisieren</translation></message><message><source>Address or expression to read from, e.g. 0x20000000 or &amp;buffer. Press Enter to read.</source><translation>Adresse oder Ausdruck, ab dem gelesen wird, z. B. 0x20000000 oder &amp;buffer. Drücken Sie Enter, um zu lesen.</translation></message></context>
 <context>
     <name>Necto::DebuggerUIController</name>
     <message>
@@ -17003,7 +17005,11 @@ Möchten Sie die Sicherheitsprüfung überschreiben und fortfahren?   </translat
         <source>Continue Debug (F6)</source>
         <translation>Debuggen fortsetzen (F6)</translation>
     </message>
-</context>
+<message><source>Start a debug session and halt the target to inspect tasks, queues and heap.</source><translation>Starten Sie eine Debug-Sitzung und halten Sie das Ziel an, um Tasks, Warteschlangen und Heap zu untersuchen.</translation></message><message><source>FreeRTOS tasks and queues</source><translation>FreeRTOS-Tasks und -Warteschlangen</translation></message><message><source>Running</source><translation>Läuft</translation></message><message><source>Reattach</source><translation>Wieder andocken</translation></message><message><source>No queues, semaphores or mutexes are registered. FreeRTOS can only list objects passed to vQueueAddToRegistry() - add a call after each one you create to inspect it here.</source><translation>Es sind keine Warteschlangen, Semaphore oder Mutexe registriert. FreeRTOS kann nur Objekte auflisten, die an vQueueAddToRegistry() übergeben wurden - fügen Sie nach jedem erstellten Objekt einen solchen Aufruf hinzu, um es hier zu untersuchen.</translation></message><message><source>Core %1: %2</source><translation>Kern %1: %2</translation></message><message><source>Suspended</source><translation>Suspendiert</translation></message><message><source>Unknown</source><translation>Unbekannt</translation></message><message><source>The FreeRTOS view needs a debugger that can read target memory.
+Select GDB or LLDB in the project's toolchain settings to inspect tasks and queues.</source><translation>Die FreeRTOS-Ansicht benötigt einen Debugger, der den Speicher des Ziels lesen kann.
+Wählen Sie GDB oder LLDB in den Toolchain-Einstellungen des Projekts, um Tasks und Warteschlangen zu untersuchen.</translation></message><message><source>Queue details are not available for this build. The required debugging information is missing.</source><translation>Details zu Warteschlangen sind für diesen Build nicht verfügbar. Die erforderlichen Debug-Informationen fehlen.</translation></message><message><source>Tasks are ready but not running yet. Resume debugging and pause again to view their status.</source><translation>Die Tasks sind bereit, laufen aber noch nicht. Setzen Sie das Debuggen fort und halten Sie erneut an, um ihren Status anzuzeigen.</translation></message><message><source>Queue monitoring is not enabled. Enable it in your project settings and rebuild.</source><translation>Die Überwachung von Warteschlangen ist nicht aktiviert. Aktivieren Sie sie in den Projekteinstellungen und erstellen Sie das Projekt neu.</translation></message><message><source>Not started</source><translation>Nicht gestartet</translation></message><message><source>Reattach to the bottom panel</source><translation>Wieder im unteren Bereich andocken</translation></message><message><source>Scheduler: running, suspended or not started yet.
+Tick: kernel ticks counted since the scheduler started.</source><translation>Scheduler: läuft, suspendiert oder noch nicht gestartet.
+Tick: seit dem Start des Schedulers gezählte Kernel-Ticks.</translation></message><message><source>The FreeRTOS view is open in a separate window.</source><translation>Die FreeRTOS-Ansicht ist in einem separaten Fenster geöffnet.</translation></message><message><source>Core %1</source><translation>Kern %1</translation></message><message><source>Scheduler:</source><translation>Scheduler:</translation></message><message><source>Core %1: Task execution has not started yet. Resume debugging and pause again to view active tasks.</source><translation>Kern %1: Die Task-Ausführung hat noch nicht begonnen. Setzen Sie das Debuggen fort und halten Sie erneut an, um aktive Tasks anzuzeigen.</translation></message><message><source>Detach into a separate window</source><translation>In ein separates Fenster abdocken</translation></message><message><source>Stop Debug (Ctrl+F2)</source><translation>Debuggen beenden (Ctrl+F2)</translation></message><message><source>No active tasks yet. Resume debugging and pause again to check for tasks.</source><translation>Noch keine aktiven Tasks. Setzen Sie das Debuggen fort und halten Sie erneut an, um nach Tasks zu suchen.</translation></message><message><source>Detach</source><translation>Abdocken</translation></message><message><source>Tick:</source><translation>Tick:</translation></message><message><source>No tasks found - the scheduler has probably not started yet. Continue, then pause, to see the tasks.</source><translation>Keine Tasks gefunden - der Scheduler wurde wahrscheinlich noch nicht gestartet. Fahren Sie fort und halten Sie dann an, um die Tasks zu sehen.</translation></message><message><source>Tasks</source><translation>Tasks</translation></message><message><source>No queues, semaphores or mutexes found. Register them in your application to view them here.</source><translation>Keine Warteschlangen, Semaphore oder Mutexe gefunden. Registrieren Sie sie in Ihrer Anwendung, um sie hier anzuzeigen.</translation></message><message><source>Queues</source><translation>Warteschlangen</translation></message><message><source>FreeRTOS</source><translation>FreeRTOS</translation></message></context>
 <context>
     <name>Necto::DefaultWidget</name>
     <message>
@@ -19804,52 +19810,52 @@ Diese Einstellungen werden nicht dauerhaft gespeichert</translation>
     <message>
         <location filename="../core/src/debugger/debug_view/src/heap_usage_bar.cpp" line="+64" />
         <source>Total Heap: start a debug session and halt to read</source>
-        <translation type="unfinished" />
+        <translation>Heap gesamt: zum Lesen eine Debug-Sitzung starten und anhalten</translation>
     </message>
     <message>
         <location line="+14" />
         <source>Total Heap: not available for this allocator</source>
-        <translation type="unfinished" />
+        <translation>Heap gesamt: für diesen Allocator nicht verfügbar</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Total Heap: 0 / %1 (nothing allocated yet)</source>
-        <translation type="unfinished" />
+        <translation>Heap gesamt: 0 / %1 (noch nichts belegt)</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Total Heap: nothing allocated yet</source>
-        <translation type="unfinished" />
+        <translation>Heap gesamt: noch nichts belegt</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Total Heap: %1 / %2 (%3%)</source>
-        <translation type="unfinished" />
+        <translation>Heap gesamt: %1 / %2 (%3%)</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Total Heap: %1 free</source>
-        <translation type="unfinished" />
+        <translation>Heap gesamt: %1 frei</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Total Heap: </source>
-        <translation type="unfinished" />
+        <translation>Heap gesamt: </translation>
     </message>
     <message>
         <location line="+23" />
         <source>Free: %1 (low: %2)</source>
-        <translation type="unfinished" />
+        <translation>Frei: %1 (Tiefstwert: %2)</translation>
     </message>
     <message>
         <location line="+4" />
         <source>The least free heap this run. A big gap means bursts of allocation.</source>
-        <translation type="unfinished" />
+        <translation>Der geringste freie Heap in diesem Lauf. Ein großer Abstand deutet auf Allokationsspitzen hin.</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Free: %1</source>
-        <translation type="unfinished" />
+        <translation>Frei: %1</translation>
     </message>
 </context>
 <context>
@@ -22825,17 +22831,17 @@ Beispiele
     <message>
         <location filename="../core/src/debugger/debug_view/src/memory_view_model.cpp" line="+124" />
         <source>%1: 0x%2 (%3)</source>
-        <translation type="unfinished" />
+        <translation>%1: 0x%2 (%3)</translation>
     </message>
     <message>
         <location line="+23" />
         <source>Address</source>
-        <translation type="unfinished" />
+        <translation>Adresse</translation>
     </message>
     <message>
         <location line="+2" />
         <source>ASCII</source>
-        <translation type="unfinished" />
+        <translation>ASCII</translation>
     </message>
 </context>
 <context>
@@ -25187,7 +25193,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <source>%1 on %2</source>
         <translation>%1 auf %2</translation>
     </message>
-</context>
+<message><source>. Implement the application as FreeRTOS tasks: create the tasks, use FreeRTOS primitives for delays and inter-task communication, and start the scheduler from main</source><translation>. Implementieren Sie die Anwendung als FreeRTOS-Tasks: Erstellen Sie die Tasks, verwenden Sie FreeRTOS-Primitive für Verzögerungen und die Kommunikation zwischen Tasks, und starten Sie den Scheduler aus main</translation></message></context>
 <context>
     <name>Necto::ProgPageDelegate</name>
     <message>
@@ -25589,37 +25595,37 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     <message>
         <location line="-313" />
         <source>Disconnect from the board or connect to a compatible one to make this project active.</source>
-        <translation type="unfinished" />
+        <translation>Trennen Sie die Verbindung zur Platine oder verbinden Sie sich mit einer kompatiblen, um dieses Projekt zu aktivieren.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Disconnect from the board or connect to a compatible one to open this project.</source>
-        <translation type="unfinished" />
+        <translation>Trennen Sie die Verbindung zur Platine oder verbinden Sie sich mit einer kompatiblen, um dieses Projekt zu öffnen.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>&lt;b&gt;%1&lt;/b&gt; can't run on the connected board.&lt;br/&gt;&lt;br/&gt;%2&lt;br/&gt;• %3&lt;br/&gt;&lt;br/&gt;%4</source>
-        <translation type="unfinished" />
+        <translation>&lt;b&gt;%1&lt;/b&gt; kann auf der verbundenen Platine nicht ausgeführt werden.&lt;br/&gt;&lt;br/&gt;%2&lt;br/&gt;• %3&lt;br/&gt;&lt;br/&gt;%4</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Requirements not met:</source>
-        <translation type="unfinished" />
+        <translation>Anforderungen nicht erfüllt:</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Remote Board Farm</source>
-        <translation type="unfinished" />
+        <translation>Remote Board Farm</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Project not activated</source>
-        <translation type="unfinished" />
+        <translation>Projekt nicht aktiviert</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Project not opened</source>
-        <translation type="unfinished" />
+        <translation>Projekt nicht geöffnet</translation>
     </message>
     <message>
         <location line="+194" />
@@ -25694,7 +25700,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     <message>
         <location line="+2138" />
         <source>Copying FreeRTOS kernel</source>
-        <translation type="unfinished" />
+        <translation>FreeRTOS-Kernel wird kopiert</translation>
     </message>
     <message>
         <source>Project contains setup that is not installed. Install now?</source>
@@ -25734,62 +25740,62 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     <message>
         <location line="-662" />
         <source>This project uses an outdated version of the configuration &lt;b&gt;%1&lt;/b&gt;. Click to review.</source>
-        <translation type="unfinished" />
+        <translation>Dieses Projekt verwendet eine veraltete Version der Konfiguration &lt;b&gt;%1&lt;/b&gt;. Zum Überprüfen klicken.</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Configuration &lt;b&gt;%1&lt;/b&gt; is not installed. Click for options.</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration &lt;b&gt;%1&lt;/b&gt; ist nicht installiert. Für Optionen klicken.</translation>
     </message>
     <message>
         <location line="+42" />
         <source>Configuration changed</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration geändert</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Configuration &lt;b&gt;%1&lt;/b&gt; was modified. This project still uses its original copy.</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration &lt;b&gt;%1&lt;/b&gt; wurde geändert. Dieses Projekt verwendet weiterhin seine ursprüngliche Kopie.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Use changes</source>
-        <translation type="unfinished" />
+        <translation>Änderungen übernehmen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Switch to the modified configuration.</source>
-        <translation type="unfinished" />
+        <translation>Zur geänderten Konfiguration wechseln.</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Keep current</source>
-        <translation type="unfinished" />
+        <translation>Aktuelle beibehalten</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Save the project's copy as a separate configuration.</source>
-        <translation type="unfinished" />
+        <translation>Die Kopie des Projekts als separate Konfiguration speichern.</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Configuration not installed</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration nicht installiert</translation>
     </message>
     <message>
         <location line="+1" />
         <source>This project uses &lt;b&gt;%1&lt;/b&gt;, which is not installed.</source>
-        <translation type="unfinished" />
+        <translation>Dieses Projekt verwendet &lt;b&gt;%1&lt;/b&gt;, aber diese Konfiguration ist nicht installiert.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Install</source>
-        <translation type="unfinished" />
+        <translation>Installieren</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Install this configuration.</source>
-        <translation type="unfinished" />
+        <translation>Diese Konfiguration installieren.</translation>
     </message>
     <message>
         <location line="+604" />
@@ -25958,7 +25964,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <source>Add new</source>
         <translation>Neu hinzufügen</translation>
     </message>
-</context>
+<message><source>Requires a dual-core MCU</source><translation>Erfordert eine Dual-Core-MCU</translation></message><message><source>The configuration could not be read</source><translation>Die Konfiguration konnte nicht gelesen werden</translation></message><message><source>XC8 compiler is not supported</source><translation>XC8-Compiler wird nicht unterstützt</translation></message><message><source>Requires a TFT display board</source><translation>Erfordert eine Platine mit TFT-Display</translation></message><message><source>Requires GCC, Clang or XC32 (current: %1)</source><translation>Erfordert GCC, Clang oder XC32 (aktuell: %1)</translation></message><message><source>Requires GCC, Clang or XC32</source><translation>Erfordert GCC, Clang oder XC32</translation></message><message><source>Only GD32VF103 RISC-V MCUs are supported</source><translation>Nur GD32VF103-RISC-V-MCUs werden unterstützt</translation></message><message><source>Requires mikroSDK instead of the legacy SDK</source><translation>Erfordert mikroSDK statt des Legacy-SDK</translation></message><message><source>Unsupported MCU core: %1 (requires Cortex-M, PIC32 or RISC-V)</source><translation>Nicht unterstützter MCU-Kern: %1 (erfordert Cortex-M, PIC32 oder RISC-V)</translation></message><message><source>Requires the legacy SDK</source><translation>Erfordert das Legacy-SDK</translation></message><message><source>Requires %1 KB RAM (available: %2 KB)</source><translation>Erfordert %1 KB RAM (verfügbar: %2 KB)</translation></message><message><source>MCU does not support mikroSDK</source><translation>MCU unterstützt mikroSDK nicht</translation></message><message><source>Requires a single-core MCU</source><translation>Erfordert eine Single-Core-MCU</translation></message><message><source>Requires a Cortex-M, PIC32 or RISC-V MCU</source><translation>Erfordert eine Cortex-M-, PIC32- oder RISC-V-MCU</translation></message></context>
 <context>
     <name>Necto::ProjectTemplates</name>
     <message>
@@ -29855,7 +29861,7 @@ Dies reverted den Commit %2.</translation>
     <message>
         <location line="+1" />
         <source>Firmware trace</source>
-        <translation type="unfinished" />
+        <translation>Firmware-Trace</translation>
     </message>
     <message>
         <location line="+1" />
@@ -29900,12 +29906,12 @@ Dies reverted den Commit %2.</translation>
     <message>
         <location line="+2" />
         <source>Real-time video feed of the remote board</source>
-        <translation type="unfinished" />
+        <translation>Echtzeit-Videoübertragung der Remote-Platine</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Secure connection to the remote board using SSL/TLS encryption</source>
-        <translation type="unfinished" />
+        <translation>Sichere Verbindung zur Remote-Platine mit SSL/TLS-Verschlüsselung</translation>
     </message>
     <message>
         <source>Frame</source>
@@ -30975,7 +30981,7 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
         <source>Plot</source>
         <translation>Plot</translation>
     </message>
-</context>
+<message><source>Trace</source><translation>Trace</translation></message></context>
 <context>
     <name>Necto::TooltipChart</name>
     <message>
@@ -31054,502 +31060,484 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_recording.cpp" line="+298" />
         <source>No such file.</source>
-        <translation type="unfinished" />
+        <translation>Datei nicht vorhanden.</translation>
     </message>
     <message>
         <location line="+40" />
         <source>Not a NECTO trace recording.</source>
-        <translation type="unfinished" />
+        <translation>Keine NECTO-Trace-Aufzeichnung.</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Recorded by a newer NECTO (file version %1).</source>
-        <translation type="unfinished" />
+        <translation>Mit einer neueren NECTO-Version aufgezeichnet (Dateiversion %1).</translation>
     </message>
     <message numerus="yes">
         <location filename="../core/src/debugger/trace/trace_signals.cpp" line="+124" />
         <source>%n bytes not kept</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n Byte nicht gespeichert</numerusform><numerusform>%n Bytes nicht gespeichert</numerusform></translation>
     </message>
     <message>
         <location line="+5" />
         <source>Data</source>
-        <translation type="unfinished" />
+        <translation>Daten</translation>
     </message>
     <message>
         <location line="+526" />
         <source>%1 baud</source>
-        <translation type="unfinished" />
+        <translation>%1 Baud</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_faults.cpp" line="+138" />
         <source>Not answering</source>
-        <translation type="unfinished" />
+        <translation>Antwortet nicht</translation>
     </message>
     <message>
         <location line="+3" />
         <source>MISO stuck at 0x%1</source>
-        <translation type="unfinished" />
+        <translation>MISO hängt auf 0x%1</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Held High</source>
-        <translation type="unfinished" />
+        <translation>Auf High gehalten</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Held Low</source>
-        <translation type="unfinished" />
+        <translation>Auf Low gehalten</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Forced to %1</source>
-        <translation type="unfinished" />
+        <translation>Auf %1 erzwungen</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Forced to %1 V</source>
-        <translation type="unfinished" />
+        <translation>Auf %1 V erzwungen</translation>
     </message>
     <message>
         <location line="+2" />
         <source>No device answering</source>
-        <translation type="unfinished" />
+        <translation>Kein Gerät antwortet</translation>
     </message>
     <message>
         <location line="+13" />
         <source>pin %1</source>
-        <translation type="unfinished" />
+        <translation>Pin %1</translation>
     </message>
     <message>
         <location line="+5" />
         <source>I2C 0x%1 on %2</source>
-        <translation type="unfinished" />
+        <translation>I2C 0x%1 an %2</translation>
     </message>
     <message>
         <location line="+3" />
         <source>SPI on %1</source>
-        <translation type="unfinished" />
+        <translation>SPI an %1</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Input %1</source>
-        <translation type="unfinished" />
+        <translation>Eingang %1</translation>
     </message>
     <message>
         <location line="+4" />
         <source>ADC %1</source>
-        <translation type="unfinished" />
+        <translation>ADC %1</translation>
     </message>
     <message>
         <location line="+3" />
         <source>1-Wire on %1</source>
-        <translation type="unfinished" />
+        <translation>1-Wire an %1</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_compare.cpp" line="+235" />
         <location line="+46" />
         <location line="+2" />
         <source>%1: %2 vs %3 bytes</source>
-        <translation type="unfinished" />
+        <translation>%1: %2 vs. %3 Bytes</translation>
     </message>
     <message>
         <location line="-21" />
         <source>Kind</source>
-        <translation type="unfinished" />
+        <translation>Art</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Failed vs OK</source>
-        <translation type="unfinished" />
+        <translation>Fehlgeschlagen vs. OK</translation>
     </message>
     <message>
         <location line="+0" />
         <source>OK vs failed</source>
-        <translation type="unfinished" />
+        <translation>OK vs. fehlgeschlagen</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Operation</source>
-        <translation type="unfinished" />
+        <translation>Operation</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Address: %1 vs %2</source>
-        <translation type="unfinished" />
+        <translation>Adresse: %1 vs. %2</translation>
     </message>
     <message>
         <location line="+2" />
         <source>TX</source>
-        <translation type="unfinished" />
+        <translation>TX</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Write</source>
-        <translation type="unfinished" />
+        <translation>Schreiben</translation>
     </message>
     <message>
         <location line="+1" />
         <source>RX</source>
-        <translation type="unfinished" />
+        <translation>RX</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Read</source>
-        <translation type="unfinished" />
+        <translation>Lesen</translation>
     </message>
     <message>
         <location line="+12" />
         <source>%1 vs %2</source>
-        <translation type="unfinished" />
+        <translation>%1 vs. %2</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Duration: %1</source>
-        <translation type="unfinished" />
+        <translation>Dauer: %1</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Transfers: %1 vs %2</source>
-        <translation type="unfinished" />
+        <translation>Übertragungen: %1 vs. %2</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Failed: %1 vs %2</source>
-        <translation type="unfinished" />
+        <translation>Fehlgeschlagen: %1 vs. %2</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Bytes: %1 vs %2</source>
-        <translation type="unfinished" />
+        <translation>Bytes: %1 vs. %2</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Level</source>
-        <translation type="unfinished" />
+        <translation>Pegel</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_project.cpp" line="+140" />
         <source>ARM Cortex-M, RISC-V and PIC32</source>
-        <translation type="unfinished" />
+        <translation>ARM Cortex-M, RISC-V und PIC32</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_trigger.cpp" line="+27" />
         <source>once</source>
-        <translation type="unfinished" />
+        <translation>einmal</translation>
     </message>
     <message>
         <location line="+2" />
         <source>twice</source>
-        <translation type="unfinished" />
+        <translation>zweimal</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 times</source>
-        <translation type="unfinished" />
+        <translation>%1-mal</translation>
     </message>
     <message>
         <location line="+193" />
         <source>Rose %1 so far</source>
-        <translation type="unfinished" />
+        <translation>Bisher %1 gestiegen</translation>
     </message>
     <message>
         <location line="+36" />
         <source>%1 failed so far</source>
-        <translation type="unfinished" />
+        <translation>Bisher %1 fehlgeschlagen</translation>
     </message>
     <message>
         <location line="+20" />
         <source>Register %1 of %2, written %3</source>
-        <translation type="unfinished" />
+        <translation>Register %1 von %2, %3 geschrieben</translation>
     </message>
     <message>
         <location line="+5" />
         <source>%1 transfers start with it</source>
-        <translation type="unfinished" />
+        <translation>%1 Übertragungen beginnen damit</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Received %1 so far</source>
-        <translation type="unfinished" />
+        <translation>Bisher %1 empfangen</translation>
     </message>
     <message>
         <location line="+5" />
         <source>%1 changed by a fault so far</source>
-        <translation type="unfinished" />
+        <translation>Bisher %1 durch eine Störung geändert</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_format.cpp" line="+163" />
         <location line="+330" />
         <source>%1 bytes</source>
-        <translation type="unfinished" />
+        <translation>%1 Bytes</translation>
     </message>
     <message>
         <location line="-301" />
         <source>Other</source>
-        <translation type="unfinished" />
+        <translation>Andere</translation>
     </message>
     <message>
         <location line="+40" />
         <location line="+69" />
         <source>Output</source>
-        <translation type="unfinished" />
+        <translation>Ausgang</translation>
     </message>
     <message>
         <location line="-67" />
         <location line="+67" />
         <source>Input</source>
-        <translation type="unfinished" />
+        <translation>Eingang</translation>
     </message>
     <message>
         <location line="-62" />
         <location line="+89" />
         <source>I2C</source>
-        <translation type="unfinished" />
+        <translation>I2C</translation>
     </message>
     <message>
         <location line="-84" />
         <location line="+77" />
         <source>SPI</source>
-        <translation type="unfinished" />
+        <translation>SPI</translation>
     </message>
     <message>
         <location line="-75" />
         <location line="+77" />
         <source>UART</source>
-        <translation type="unfinished" />
+        <translation>UART</translation>
     </message>
     <message>
         <location line="-75" />
         <location line="+74" />
         <source>1-Wire</source>
-        <translation type="unfinished" />
+        <translation>1-Wire</translation>
     </message>
     <message>
         <location line="-71" />
         <location line="+44" />
         <source>Value</source>
-        <translation type="unfinished" />
+        <translation>Wert</translation>
     </message>
     <message>
         <location line="+198" />
         <source>1 byte</source>
-        <translation type="unfinished" />
+        <translation>1 Byte</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Write %1</source>
-        <translation type="unfinished" />
+        <translation>Schreiben %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Read %1</source>
-        <translation type="unfinished" />
+        <translation>Lesen %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Write %1 · Read %2</source>
-        <translation type="unfinished" />
+        <translation>Schreiben %1 · Lesen %2</translation>
     </message>
     <message>
         <location line="+6" />
         <location line="+19" />
         <location line="+192" />
         <source>error</source>
-        <translation type="unfinished" />
+        <translation>Fehler</translation>
     </message>
     <message>
         <location line="-192" />
         <source>no presence</source>
-        <translation type="unfinished" />
+        <translation>keine Präsenz</translation>
     </message>
     <message>
         <location line="+119" />
         <source>Burst</source>
-        <translation type="unfinished" />
+        <translation>Burst</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Reset</source>
-        <translation type="unfinished" />
+        <translation>Reset</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Read ROM</source>
-        <translation type="unfinished" />
+        <translation>Read ROM</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Skip ROM</source>
-        <translation type="unfinished" />
+        <translation>Skip ROM</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Match ROM</source>
-        <translation type="unfinished" />
+        <translation>Match ROM</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Search ROM</source>
-        <translation type="unfinished" />
+        <translation>Search ROM</translation>
     </message>
     <message>
         <location line="+26" />
         <source>%1 transfers</source>
-        <translation type="unfinished" />
+        <translation>%1 Übertragungen</translation>
     </message>
     <message>
         <location line="+6" />
         <source>%1 failed</source>
-        <translation type="unfinished" />
+        <translation>%1 fehlgeschlagen</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_measure.cpp" line="+76" />
         <source>No transfers</source>
-        <translation type="unfinished" />
+        <translation>Keine Übertragungen</translation>
     </message>
     <message numerus="yes">
         <location line="+1" />
         <source>%n transfers</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n Übertragung</numerusform><numerusform>%n Übertragungen</numerusform></translation>
     </message>
     <message>
         <location line="+3" />
         <source>%1 busy</source>
-        <translation type="unfinished" />
+        <translation>%1 belegt</translation>
     </message>
     <message numerus="yes">
         <location line="+2" />
         <source>%n failed</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n fehlgeschlagen</numerusform><numerusform>%n fehlgeschlagen</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+48" />
         <source>%n changes</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n Änderung</numerusform><numerusform>%n Änderungen</numerusform></translation>
     </message>
     <message>
         <location line="+4" />
         <source>%1 high</source>
-        <translation type="unfinished" />
+        <translation>%1 High</translation>
     </message>
     <message>
         <location line="+21" />
         <source>No values</source>
-        <translation type="unfinished" />
+        <translation>Keine Werte</translation>
     </message>
     <message numerus="yes">
         <location line="+4" />
         <source>%n values</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n Wert</numerusform><numerusform>%n Werte</numerusform></translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 to %2</source>
-        <translation type="unfinished" />
+        <translation>%1 bis %2</translation>
     </message>
     <message>
         <location line="+1" />
         <source>avg %1</source>
-        <translation type="unfinished" />
+        <translation>Ø %1</translation>
     </message>
     <message>
         <location line="+162" />
         <source>%1: min %2 · avg %3 · max %4 · σ %5 (%6)</source>
-        <translation type="unfinished" />
+        <translation>%1: min. %2 · Ø %3 · max. %4 · σ %5 (%6)</translation>
     </message>
     <message>
         <location line="+69" />
         <source>Values</source>
-        <translation type="unfinished" />
+        <translation>Werte</translation>
     </message>
     <message>
         <location line="+42" />
         <source>High</source>
-        <translation type="unfinished" />
+        <translation>High</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Low</source>
-        <translation type="unfinished" />
+        <translation>Low</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Period</source>
-        <translation type="unfinished" />
+        <translation>Periode</translation>
     </message>
     <message>
         <location line="+32" />
         <source>Duration</source>
-        <translation type="unfinished" />
+        <translation>Dauer</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Interval</source>
-        <translation type="unfinished" />
+        <translation>Intervall</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Throughput: %1/s</source>
-        <translation type="unfinished" />
+        <translation>Durchsatz: %1/s</translation>
     </message>
     <message numerus="yes">
         <location line="+65" />
         <source>%n records</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n Eintrag</numerusform><numerusform>%n Einträge</numerusform></translation>
     </message>
     <message>
         <location line="+24" />
         <source>Project</source>
-        <translation type="unfinished" />
+        <translation>Projekt</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Board</source>
-        <translation type="unfinished" />
+        <translation>Platine</translation>
     </message>
     <message>
         <location line="+1" />
         <source>MCU</source>
-        <translation type="unfinished" />
+        <translation>MCU</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Firmware</source>
-        <translation type="unfinished" />
+        <translation>Firmware</translation>
     </message>
     <message>
         <location line="+1" />
         <source>NECTO</source>
-        <translation type="unfinished" />
+        <translation>NECTO</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Traced</source>
-        <translation type="unfinished" />
+        <translation>Erfasst</translation>
     </message>
     <message>
         <location line="+10" />
         <source>From a recording</source>
-        <translation type="unfinished" />
+        <translation>Aus einer Aufzeichnung</translation>
     </message>
 </context>
 <context>
@@ -31557,17 +31545,17 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="+204" />
         <source>No timer in the firmware: the signals need the transfers' times</source>
-        <translation type="unfinished" />
+        <translation>Kein Timer in der Firmware: Die Signale benötigen die Zeiten der Übertragungen</translation>
     </message>
     <message>
         <location line="+808" />
         <source>Not in the recording</source>
-        <translation type="unfinished" />
+        <translation>Nicht in der Aufzeichnung</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Not in this run</source>
-        <translation type="unfinished" />
+        <translation>Nicht in diesem Lauf</translation>
     </message>
 </context>
 <context>
@@ -31575,12 +31563,12 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_dap_reader.cpp" line="+32" />
         <source>Firmware trace: no breakpoint on traceBuffFullBreak: %1</source>
-        <translation type="unfinished" />
+        <translation>Firmware-Trace: kein Haltepunkt auf traceBuffFullBreak: %1</translation>
     </message>
     <message>
         <location line="+65" />
         <source>Firmware trace: the trace buffer was not found in the image.</source>
-        <translation type="unfinished" />
+        <translation>Firmware-Trace: Der Trace-Puffer wurde im Image nicht gefunden.</translation>
     </message>
 </context>
 <context>
@@ -31588,107 +31576,107 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_fault_panel.cpp" line="+30" />
         <source>I2C device not answering</source>
-        <translation type="unfinished" />
+        <translation>I2C-Gerät antwortet nicht</translation>
     </message>
     <message>
         <location line="+1" />
         <source>SPI MISO stuck</source>
-        <translation type="unfinished" />
+        <translation>SPI-MISO hängt</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Input held</source>
-        <translation type="unfinished" />
+        <translation>Eingang gehalten</translation>
     </message>
     <message>
         <location line="+1" />
         <source>ADC value forced</source>
-        <translation type="unfinished" />
+        <translation>ADC-Wert erzwungen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>1-Wire devices gone</source>
-        <translation type="unfinished" />
+        <translation>1-Wire-Geräte entfernt</translation>
     </message>
     <message>
         <location line="+105" />
         <source>injected while it was recorded</source>
-        <translation type="unfinished" />
+        <translation>während der Aufzeichnung injiziert</translation>
     </message>
     <message>
         <location line="+1" />
         <source>None was injected while it was recorded.</source>
-        <translation type="unfinished" />
+        <translation>Während der Aufzeichnung wurde keine injiziert.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Faults go on the lanes that take them: I2C, SPI, inputs, ADC and 1-Wire. None has shown up yet.</source>
-        <translation type="unfinished" />
+        <translation>Störungen gibt es für die Spuren, die sie unterstützen: I2C, SPI, Eingänge, ADC und 1-Wire. Bisher ist keine davon aufgetaucht.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
-        <translation type="unfinished" />
+        <translation>MikroSDK.Trace dieser Firmware ist für Störungen zu alt: Aktualisieren Sie mikroSDK und erstellen Sie das Projekt neu.</translation>
     </message>
     <message>
         <location line="+53" />
         <source> V</source>
-        <translation type="unfinished" />
+        <translation> V</translation>
     </message>
     <message>
         <location line="+63" />
         <source>Type the byte: two hex digits.</source>
-        <translation type="unfinished" />
+        <translation>Geben Sie das Byte ein: zwei Hex-Ziffern.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Choose the lane to break.</source>
-        <translation type="unfinished" />
+        <translation>Wählen Sie die Spur, die gestört werden soll.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Injected already.</source>
-        <translation type="unfinished" />
+        <translation>Bereits injiziert.</translation>
     </message>
     <message>
         <location line="+7" />
         <source>%1 faults at most: remove one first.</source>
-        <translation type="unfinished" />
+        <translation>Höchstens %1 Störungen: Entfernen Sie zuerst eine.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Inject it into the firmware: at once while it is stopped, otherwise within half a second while it records</source>
-        <translation type="unfinished" />
+        <translation>In die Firmware injizieren: sofort, wenn sie angehalten ist, sonst innerhalb einer halben Sekunde während der Aufzeichnung</translation>
     </message>
     <message>
         <location line="+55" />
         <source>Remove this fault</source>
-        <translation type="unfinished" />
+        <translation>Diese Störung entfernen</translation>
     </message>
     <message>
         <location line="+41" />
         <source>Events this fault changed</source>
-        <translation type="unfinished" />
+        <translation>Von dieser Störung geänderte Ereignisse</translation>
     </message>
     <message>
         <location line="+5" />
         <source>no reads</source>
-        <translation type="unfinished" />
+        <translation>keine Lesevorgänge</translation>
     </message>
     <message>
         <location line="+1" />
         <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this bus.</source>
-        <translation type="unfinished" />
+        <translation>Ein hängender MISO ändert nur, was gelesen wird: also nichts, solange die Firmware nur auf diesen Bus schreibt.</translation>
     </message>
     <message>
         <location line="+6" />
         <source>waiting</source>
-        <translation type="unfinished" />
+        <translation>wartet</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Not hit yet. The firmware gets the fault when it next hands over its trace (within half a second while it records, or at a stop); it hits at the next call it applies to.</source>
-        <translation type="unfinished" />
+        <translation>Noch nicht ausgelöst. Die Firmware erhält die Störung bei der nächsten Übergabe ihres Trace (innerhalb einer halben Sekunde während der Aufzeichnung oder bei einem Halt); sie greift beim nächsten betroffenen Aufruf.</translation>
     </message>
 </context>
 <context>
@@ -31696,200 +31684,200 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_hover_card.cpp" line="+69" />
         <source>High</source>
-        <translation type="unfinished" />
+        <translation>High</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Low</source>
-        <translation type="unfinished" />
+        <translation>Low</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Level</source>
-        <translation type="unfinished" />
+        <translation>Pegel</translation>
     </message>
     <message>
         <location line="+4" />
         <source>High for</source>
-        <translation type="unfinished" />
+        <translation>High für</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Low for</source>
-        <translation type="unfinished" />
+        <translation>Low für</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Width⁻¹</source>
-        <translation type="unfinished" />
+        <translation>Breite⁻¹</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Period</source>
-        <translation type="unfinished" />
+        <translation>Periode</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Frequency</source>
-        <translation type="unfinished" />
+        <translation>Frequenz</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Duty</source>
-        <translation type="unfinished" />
+        <translation>Tastgrad</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Transfers</source>
-        <translation type="unfinished" />
+        <translation>Übertragungen</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Written</source>
-        <translation type="unfinished" />
+        <translation>Geschrieben</translation>
     </message>
     <message>
         <location line="+2" />
         <location line="+45" />
         <source>Read</source>
-        <translation type="unfinished" />
+        <translation>Lesen</translation>
     </message>
     <message>
         <location line="-43" />
         <location line="+68" />
         <source>Failed</source>
-        <translation type="unfinished" />
+        <translation>Fehlgeschlagen</translation>
     </message>
     <message>
         <location line="-66" />
         <location line="+7" />
         <source>Span</source>
-        <translation type="unfinished" />
+        <translation>Spanne</translation>
     </message>
     <message>
         <location line="-5" />
         <source>Too fast to record each transfer: counted, with their bytes.</source>
-        <translation type="unfinished" />
+        <translation>Zu schnell, um jede Übertragung aufzuzeichnen: gezählt, mit ihren Bytes.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Changes</source>
-        <translation type="unfinished" />
+        <translation>Änderungen</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Ends</source>
-        <translation type="unfinished" />
+        <translation>Endet</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Too fast to record each change.</source>
-        <translation type="unfinished" />
+        <translation>Zu schnell, um jede Änderung aufzuzeichnen.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Value</source>
-        <translation type="unfinished" />
+        <translation>Wert</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Operation</source>
-        <translation type="unfinished" />
+        <translation>Operation</translation>
     </message>
     <message>
         <location line="+2" />
         <source>No device answered the reset.</source>
-        <translation type="unfinished" />
+        <translation>Kein Gerät hat auf den Reset geantwortet.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Address</source>
-        <translation type="unfinished" />
+        <translation>Adresse</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Command</source>
-        <translation type="unfinished" />
+        <translation>Befehl</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Register</source>
-        <translation type="unfinished" />
+        <translation>Register</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Sent</source>
-        <translation type="unfinished" />
+        <translation>Gesendet</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Received</source>
-        <translation type="unfinished" />
+        <translation>Empfangen</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Write</source>
-        <translation type="unfinished" />
+        <translation>Schreiben</translation>
     </message>
     <message>
         <location line="+4" />
         <source>failed</source>
-        <translation type="unfinished" />
+        <translation>fehlgeschlagen</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Duration</source>
-        <translation type="unfinished" />
+        <translation>Dauer</translation>
     </message>
     <message>
         <location line="+18" />
         <source>Injected</source>
-        <translation type="unfinished" />
+        <translation>Injiziert</translation>
     </message>
     <message>
         <location line="+1" />
         <source>OK</source>
-        <translation type="unfinished" />
+        <translation>OK</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Pin</source>
-        <translation type="unfinished" />
+        <translation>Pin</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Fault</source>
-        <translation type="unfinished" />
+        <translation>Störung</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Compared</source>
-        <translation type="unfinished" />
+        <translation>Verglichen</translation>
     </message>
     <message>
         <location line="+66" />
         <source>NECTO made the device not answer.</source>
-        <translation type="unfinished" />
+        <translation>NECTO hat das Gerät nicht antworten lassen.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>NECTO held MISO: these bytes were not read.</source>
-        <translation type="unfinished" />
+        <translation>NECTO hat MISO festgehalten: Diese Bytes wurden nicht gelesen.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>NECTO took the devices off the bus.</source>
-        <translation type="unfinished" />
+        <translation>NECTO hat die Geräte vom Bus genommen.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>NECTO forced this value.</source>
-        <translation type="unfinished" />
+        <translation>NECTO hat diesen Wert erzwungen.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>NECTO held the pin at this level.</source>
-        <translation type="unfinished" />
+        <translation>NECTO hat den Pin auf diesem Pegel gehalten.</translation>
     </message>
 </context>
 <context>
@@ -31897,22 +31885,22 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_lane_model.cpp" line="+78" />
         <source>Only in the recording</source>
-        <translation type="unfinished" />
+        <translation>Nur in der Aufzeichnung</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Not in the recording</source>
-        <translation type="unfinished" />
+        <translation>Nicht in der Aufzeichnung</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Recorded on other pins: %1</source>
-        <translation type="unfinished" />
+        <translation>Auf anderen Pins aufgezeichnet: %1</translation>
     </message>
     <message>
         <location line="+31" />
         <source>%1 · other pins</source>
-        <translation type="unfinished" />
+        <translation>%1 · andere Pins</translation>
     </message>
 </context>
 <context>
@@ -31920,27 +31908,27 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_view.cpp" line="+187" />
         <source>Not in this run</source>
-        <translation type="unfinished" />
+        <translation>Nicht in diesem Lauf</translation>
     </message>
     <message>
         <location line="+27" />
         <source>%1 differ</source>
-        <translation type="unfinished" />
+        <translation>%1 abweichend</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1 extra</source>
-        <translation type="unfinished" />
+        <translation>%1 zusätzlich</translation>
     </message>
     <message>
         <location line="+2" />
         <source>✓ Same</source>
-        <translation type="unfinished" />
+        <translation>✓ Gleich</translation>
     </message>
     <message>
         <location line="+17" />
         <source>Not in the recording</source>
-        <translation type="unfinished" />
+        <translation>Nicht in der Aufzeichnung</translation>
     </message>
 </context>
 <context>
@@ -31948,7 +31936,7 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_recording_name_dialog.cpp" line="+33" />
         <source>Saved in %1</source>
-        <translation type="unfinished" />
+        <translation>Gespeichert in %1</translation>
     </message>
 </context>
 <context>
@@ -31956,34 +31944,36 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_timeline_ruler.cpp" line="+66" />
         <source>≠ Runs part</source>
-        <translation type="unfinished" />
+        <translation>≠ Läufe weichen ab</translation>
     </message>
     <message>
         <location line="+219" />
         <source>%1
 
 %2 · drag to move, double-click to edit</source>
-        <translation type="unfinished" />
+        <translation>%1
+
+%2 · zum Verschieben ziehen, zum Bearbeiten doppelklicken</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Where the runs first differ: click to go there</source>
-        <translation type="unfinished" />
+        <translation>Wo die Läufe zuerst abweichen: zum Hinspringen klicken</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Drag to move the marker; double-click to remove it</source>
-        <translation type="unfinished" />
+        <translation>Ziehen, um den Marker zu verschieben; doppelklicken, um ihn zu entfernen</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Click to place marker B</source>
-        <translation type="unfinished" />
+        <translation>Klicken, um Marker B zu setzen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Click to place marker A</source>
-        <translation type="unfinished" />
+        <translation>Klicken, um Marker A zu setzen</translation>
     </message>
 </context>
 <context>
@@ -31991,113 +31981,113 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_timeline_viewport.cpp" line="+67" />
         <source>New data ▸</source>
-        <translation type="unfinished" />
+        <translation>Neue Daten ▸</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Follow the newest events</source>
-        <translation type="unfinished" />
+        <translation>Den neuesten Ereignissen folgen</translation>
     </message>
     <message>
         <location line="+311" />
         <source>No firmware trace yet. Link MikroSDK.Trace to the project, call trace_init() and start debugging.</source>
-        <translation type="unfinished" />
+        <translation>Noch kein Firmware-Trace. Binden Sie MikroSDK.Trace in das Projekt ein, rufen Sie trace_init() auf und starten Sie das Debuggen.</translation>
     </message>
     <message>
         <location line="+505" />
         <source>Not in this run</source>
-        <translation type="unfinished" />
+        <translation>Nicht in diesem Lauf</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Not in the recording</source>
-        <translation type="unfinished" />
+        <translation>Nicht in der Aufzeichnung</translation>
     </message>
     <message>
         <location line="+10" />
         <source>%1 differ</source>
-        <translation type="unfinished" />
+        <translation>%1 abweichend</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1 extra</source>
-        <translation type="unfinished" />
+        <translation>%1 zusätzlich</translation>
     </message>
     <message>
         <location line="+3" />
         <location line="+585" />
         <source>✓ Same</source>
-        <translation type="unfinished" />
+        <translation>✓ Gleich</translation>
     </message>
     <message>
         <location line="-429" />
         <source>Empty recording: nothing came from the firmware while it ran</source>
-        <translation type="unfinished" />
+        <translation>Leere Aufzeichnung: Die Firmware hat während des Laufs nichts gesendet</translation>
     </message>
     <message>
         <location line="+1" />
         <source>End of recording</source>
-        <translation type="unfinished" />
+        <translation>Ende der Aufzeichnung</translation>
     </message>
     <message>
         <location line="+127" />
         <source>Duty: %1 %</source>
-        <translation type="unfinished" />
+        <translation>Tastgrad: %1 %</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Freq: %1</source>
-        <translation type="unfinished" />
+        <translation>Freq.: %1</translation>
     </message>
     <message>
         <location line="+3" />
         <source>width⁻¹: %1</source>
-        <translation type="unfinished" />
+        <translation>Breite⁻¹: %1</translation>
     </message>
     <message>
         <location line="+214" />
         <source>Next edge (Ctrl+→)</source>
-        <translation type="unfinished" />
+        <translation>Nächste Flanke (Ctrl+→)</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Previous edge (Ctrl+←)</source>
-        <translation type="unfinished" />
+        <translation>Vorherige Flanke (Ctrl+←)</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Next value (Ctrl+→)</source>
-        <translation type="unfinished" />
+        <translation>Nächster Wert (Ctrl+→)</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Previous value (Ctrl+←)</source>
-        <translation type="unfinished" />
+        <translation>Vorheriger Wert (Ctrl+←)</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Next transfer (Ctrl+→)</source>
-        <translation type="unfinished" />
+        <translation>Nächste Übertragung (Ctrl+→)</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Previous transfer (Ctrl+←)</source>
-        <translation type="unfinished" />
+        <translation>Vorherige Übertragung (Ctrl+←)</translation>
     </message>
     <message>
         <location line="+72" />
         <source>+ Only in the recording</source>
-        <translation type="unfinished" />
+        <translation>+ Nur in der Aufzeichnung</translation>
     </message>
     <message>
         <location line="+0" />
         <source>+ Only in this run</source>
-        <translation type="unfinished" />
+        <translation>+ Nur in diesem Lauf</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Time</source>
-        <translation type="unfinished" />
+        <translation>Zeit</translation>
     </message>
 </context>
 <context>
@@ -32105,17 +32095,17 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_tabs.cpp" line="+22" />
         <source>The trace of the session you debug</source>
-        <translation type="unfinished" />
+        <translation>Der Trace der Sitzung, die Sie debuggen</translation>
     </message>
     <message>
         <location line="+65" />
         <source>● Live</source>
-        <translation type="unfinished" />
+        <translation>● Live</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Live</source>
-        <translation type="unfinished" />
+        <translation>Live</translation>
     </message>
 </context>
 <context>
@@ -32123,1069 +32113,1057 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_view.cpp" line="+558" />
         <source>Hide the transfers</source>
-        <translation type="unfinished" />
+        <translation>Übertragungen ausblenden</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Show the transfers</source>
-        <translation type="unfinished" />
+        <translation>Übertragungen anzeigen</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Collapse the lane list</source>
-        <translation type="unfinished" />
+        <translation>Spurliste einklappen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Expand the lane list</source>
-        <translation type="unfinished" />
+        <translation>Spurliste erweitern</translation>
     </message>
     <message>
         <location line="+158" />
         <source>Project</source>
-        <translation type="unfinished" />
+        <translation>Projekt</translation>
     </message>
     <message>
         <location line="+0" />
         <source>MCU</source>
-        <translation type="unfinished" />
+        <translation>MCU</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Board</source>
-        <translation type="unfinished" />
+        <translation>Platine</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Configuration</source>
-        <translation type="unfinished" />
+        <translation>Konfiguration</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Firmware</source>
-        <translation type="unfinished" />
+        <translation>Firmware</translation>
     </message>
     <message>
         <location line="+0" />
         <source>NECTO</source>
-        <translation type="unfinished" />
+        <translation>NECTO</translation>
     </message>
     <message>
         <location line="+64" />
         <source>Nothing was recorded</source>
-        <translation type="unfinished" />
+        <translation>Es wurde nichts aufgezeichnet</translation>
     </message>
     <message>
         <location line="+2" />
         <source>This recording is empty: the session ended before any trace data arrived.</source>
-        <translation type="unfinished" />
+        <translation>Diese Aufzeichnung ist leer: Die Sitzung endete, bevor Trace-Daten eintrafen.</translation>
     </message>
     <message>
         <location line="+4" />
         <source>No project open</source>
-        <translation type="unfinished" />
+        <translation>Kein Projekt geöffnet</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Open a project to see its I2C, SPI, UART and pin activity on a timeline.</source>
-        <translation type="unfinished" />
+        <translation>Öffnen Sie ein Projekt, um seine I2C-, SPI-, UART- und Pin-Aktivität auf einer Zeitleiste zu sehen.</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Reading the project's libraries…</source>
-        <translation type="unfinished" />
+        <translation>Bibliotheken des Projekts werden gelesen…</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Trace is on for %1</source>
-        <translation type="unfinished" />
+        <translation>Trace ist für %1 aktiviert</translation>
     </message>
     <message>
         <location line="+12" />
         <source>Restarting: rebuilding with trace and programming the board…</source>
-        <translation type="unfinished" />
+        <translation>Neustart: Neu erstellen mit Trace und Platine programmieren…</translation>
     </message>
     <message>
         <location line="+5" />
         <source>This firmware was built without trace. Restart debugging to rebuild it.</source>
-        <translation type="unfinished" />
+        <translation>Diese Firmware wurde ohne Trace erstellt. Starten Sie das Debuggen neu, um sie neu zu erstellen.</translation>
     </message>
     <message>
         <location line="+7" />
         <source>The firmware is paused. Continue (F6) to run it and capture its activity.</source>
-        <translation type="unfinished" />
+        <translation>Die Firmware ist angehalten. Fahren Sie fort (F6), um sie auszuführen und ihre Aktivität zu erfassen.</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Waiting for the first trace data from the firmware…</source>
-        <translation type="unfinished" />
+        <translation>Warten auf die ersten Trace-Daten von der Firmware…</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Starting: building and programming the board…</source>
-        <translation type="unfinished" />
+        <translation>Start: Erstellen und Platine programmieren…</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Start debugging to capture your firmware's bus and pin activity.</source>
-        <translation type="unfinished" />
+        <translation>Starten Sie das Debuggen, um die Bus- und Pin-Aktivität Ihrer Firmware zu erfassen.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Restart Debugging</source>
-        <translation type="unfinished" />
+        <translation>Debuggen neu starten</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Continue</source>
-        <translation type="unfinished" />
+        <translation>Fortsetzen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Start Debugging</source>
-        <translation type="unfinished" />
+        <translation>Debuggen starten</translation>
     </message>
     <message>
         <location line="+20" />
         <source>Visualize Your Firmware Activity</source>
-        <translation type="unfinished" />
+        <translation>Visualisieren Sie Ihre Firmware-Aktivität</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Monitor I²C, SPI, UART, and GPIO signals on an interactive timeline.</source>
-        <translation type="unfinished" />
+        <translation>I²C-, SPI-, UART- und GPIO-Signale auf einer interaktiven Zeitleiste überwachen.</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Trace isn't available for %1</source>
-        <translation type="unfinished" />
+        <translation>Trace ist für %1 nicht verfügbar</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Trace works with %1 MCUs.</source>
-        <translation type="unfinished" />
+        <translation>Trace funktioniert mit %1-MCUs.</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Trace isn't available with %1</source>
-        <translation type="unfinished" />
+        <translation>Trace ist mit %1 nicht verfügbar</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Trace needs GCC, Clang or XC32. Choose one in the project's configuration.</source>
-        <translation type="unfinished" />
+        <translation>Trace erfordert GCC, Clang oder XC32. Wählen Sie einen davon in der Konfiguration des Projekts.</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Trace isn't in this configuration yet</source>
-        <translation type="unfinished" />
+        <translation>Trace ist noch nicht in dieser Konfiguration enthalten</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Its libraries were built without the trace. Rebuild the configuration (Configure project, Edit), or update mikroSDK.</source>
-        <translation type="unfinished" />
+        <translation>Die Bibliotheken wurden ohne Trace erstellt. Erstellen Sie die Konfiguration neu (Projekt konfigurieren, Bearbeiten) oder aktualisieren Sie mikroSDK.</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Turn it off so the project builds.</source>
-        <translation type="unfinished" />
+        <translation>Deaktivieren Sie Trace, damit das Projekt erstellt werden kann.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Turn Off Trace</source>
-        <translation type="unfinished" />
+        <translation>Trace deaktivieren</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Enable Trace</source>
-        <translation type="unfinished" />
+        <translation>Trace aktivieren</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Removes the trace library from your project</source>
-        <translation type="unfinished" />
+        <translation>Entfernt die Trace-Bibliothek aus Ihrem Projekt</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Adds the trace library to your project</source>
-        <translation type="unfinished" />
+        <translation>Fügt Ihrem Projekt die Trace-Bibliothek hinzu</translation>
     </message>
     <message numerus="yes">
         <location line="+183" />
         <source>%n records</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n Eintrag</numerusform><numerusform>%n Einträge</numerusform></translation>
     </message>
     <message>
         <location line="+44" />
         <source>Open trace…</source>
-        <translation type="unfinished" />
+        <translation>Trace öffnen…</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Compare with recording…</source>
-        <translation type="unfinished" />
+        <translation>Mit Aufzeichnung vergleichen…</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Compare with recording</source>
-        <translation type="unfinished" />
+        <translation>Mit Aufzeichnung vergleichen</translation>
     </message>
     <message>
         <location line="+1" />
         <location line="+1349" />
         <location line="+79" />
         <source>NECTO trace (*.nectotrace)</source>
-        <translation type="unfinished" />
+        <translation>NECTO-Trace (*.nectotrace)</translation>
     </message>
     <message>
         <location line="-1424" />
         <source>Show a recording under this run's lanes, with what differs marked</source>
-        <translation type="unfinished" />
+        <translation>Eine Aufzeichnung unter den Spuren dieses Laufs anzeigen, mit markierten Abweichungen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Recent recordings</source>
-        <translation type="unfinished" />
+        <translation>Letzte Aufzeichnungen</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Export transfers as CSV…</source>
-        <translation type="unfinished" />
+        <translation>Übertragungen als CSV exportieren…</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Every bus transfer, with all its bytes: for a spreadsheet or a script.</source>
-        <translation type="unfinished" />
+        <translation>Jede Busübertragung mit allen Bytes: für eine Tabellenkalkulation oder ein Skript.</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Export as VCD…</source>
-        <translation type="unfinished" />
+        <translation>Als VCD exportieren…</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The checked lanes as signals, for GTKWave or PulseView: pins, values, and when each bus was busy.</source>
-        <translation type="unfinished" />
+        <translation>Die markierten Spuren als Signale, für GTKWave oder PulseView: Pins, Werte und wann jeder Bus belegt war.</translation>
     </message>
     <message>
         <location line="+2" />
         <location line="+563" />
         <source>Export A–B transfers as CSV…</source>
-        <translation type="unfinished" />
+        <translation>A–B-Übertragungen als CSV exportieren…</translation>
     </message>
     <message>
         <location line="-561" />
         <source>The bus transfers that start between markers A and B.</source>
-        <translation type="unfinished" />
+        <translation>Die Busübertragungen, die zwischen Marker A und B beginnen.</translation>
     </message>
     <message>
         <location line="+2" />
         <location line="+561" />
         <source>Export A–B as VCD…</source>
-        <translation type="unfinished" />
+        <translation>A–B als VCD exportieren…</translation>
     </message>
     <message>
         <location line="-560" />
         <source>The checked lanes from marker A to marker B, A at time 0.</source>
-        <translation type="unfinished" />
+        <translation>Die markierten Spuren von Marker A bis Marker B, A bei Zeit 0.</translation>
     </message>
     <message numerus="yes">
         <location line="+426" />
         <source>%n found</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n gefunden</numerusform><numerusform>%n gefunden</numerusform></translation>
     </message>
     <message>
         <location line="+0" />
         <source>No match</source>
-        <translation type="unfinished" />
+        <translation>Kein Treffer</translation>
     </message>
     <message>
         <location line="+47" />
         <source>%1 records lost</source>
-        <translation type="unfinished" />
+        <translation>%1 Einträge verloren</translation>
     </message>
     <message>
         <location line="+2" />
         <source>No timer: order only</source>
-        <translation type="unfinished" />
+        <translation>Kein Timer: nur Reihenfolge</translation>
     </message>
     <message>
         <location line="+6" />
         <source>The trace buffer filled up between reads; the timeline has gaps there.</source>
-        <translation type="unfinished" />
+        <translation>Der Trace-Puffer ist zwischen Lesevorgängen vollgelaufen; die Zeitleiste hat dort Lücken.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>%1 lanes, %2 events</source>
-        <translation type="unfinished" />
+        <translation>%1 Spuren, %2 Ereignisse</translation>
     </message>
     <message numerus="yes">
         <location line="+36" />
         <source>%n failed</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n fehlgeschlagen</numerusform><numerusform>%n fehlgeschlagen</numerusform></translation>
     </message>
     <message>
         <location line="+17" />
         <source>Go to marker A</source>
-        <translation type="unfinished" />
+        <translation>Zu Marker A springen</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Go to marker B</source>
-        <translation type="unfinished" />
+        <translation>Zu Marker B springen</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Zoom to A–B</source>
-        <translation type="unfinished" />
+        <translation>Auf A–B zoomen</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Copy measurement</source>
-        <translation type="unfinished" />
+        <translation>Messung kopieren</translation>
     </message>
     <message>
         <location line="+1" />
         <source>A, B, the time between them and what each lane did then, as text</source>
-        <translation type="unfinished" />
+        <translation>A, B, die Zeit dazwischen und was jede Spur dabei tat, als Text</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Clear markers</source>
-        <translation type="unfinished" />
+        <translation>Marker entfernen</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Edit note…</source>
-        <translation type="unfinished" />
+        <translation>Notiz bearbeiten…</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Remove note</source>
-        <translation type="unfinished" />
+        <translation>Notiz entfernen</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Add note here…</source>
-        <translation type="unfinished" />
+        <translation>Notiz hier hinzufügen…</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Go to note</source>
-        <translation type="unfinished" />
+        <translation>Zur Notiz springen</translation>
     </message>
     <message>
         <location line="+11" />
         <location line="+47" />
         <source>Place marker A here</source>
-        <translation type="unfinished" />
+        <translation>Marker A hier setzen</translation>
     </message>
     <message>
         <location line="-45" />
         <location line="+47" />
         <source>Place marker B here</source>
-        <translation type="unfinished" />
+        <translation>Marker B hier setzen</translation>
     </message>
     <message>
         <location line="-42" />
         <source>Remove marker A</source>
-        <translation type="unfinished" />
+        <translation>Marker A entfernen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Remove marker B</source>
-        <translation type="unfinished" />
+        <translation>Marker B entfernen</translation>
     </message>
     <message>
         <location line="+46" />
         <source>Place markers at its start and end</source>
-        <translation type="unfinished" />
+        <translation>Marker an Anfang und Ende setzen</translation>
     </message>
     <message>
         <location line="+8" />
         <source>A where the frame starts, B where it ends</source>
-        <translation type="unfinished" />
+        <translation>A am Rahmenbeginn, B am Rahmenende</translation>
     </message>
     <message>
         <location line="+1" />
         <source>A where the transfer starts, B where it ends</source>
-        <translation type="unfinished" />
+        <translation>A am Übertragungsbeginn, B am Übertragungsende</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Add note</source>
-        <translation type="unfinished" />
+        <translation>Notiz hinzufügen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Note at %1:</source>
-        <translation type="unfinished" />
+        <translation>Notiz bei %1:</translation>
     </message>
     <message>
         <location line="+14" />
         <source>Edit note</source>
-        <translation type="unfinished" />
+        <translation>Notiz bearbeiten</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Note at %1 (empty removes it):</source>
-        <translation type="unfinished" />
+        <translation>Notiz bei %1 (leer entfernt sie):</translation>
     </message>
     <message>
         <location line="+30" />
         <source>Save notes</source>
-        <translation type="unfinished" />
+        <translation>Notizen speichern</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Could not save the notes to %1: %2</source>
-        <translation type="unfinished" />
+        <translation>Die Notizen konnten nicht in %1 gespeichert werden: %2</translation>
     </message>
     <message>
         <location line="+178" />
         <source>Signals rebuilt from the recorded transfers, not captured; each spread over its transfer's time.</source>
-        <translation type="unfinished" />
+        <translation>Signale aus den aufgezeichneten Übertragungen rekonstruiert, nicht erfasst; jedes über die Dauer seiner Übertragung verteilt.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Signals rebuilt from the recorded transfers at the bus's rate, not captured.</source>
-        <translation type="unfinished" />
+        <translation>Signale aus den aufgezeichneten Übertragungen mit der Busrate rekonstruiert, nicht erfasst.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>CS is as recorded on its pin.</source>
-        <translation type="unfinished" />
+        <translation>CS entspricht der Aufzeichnung auf seinem Pin.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Only in the recording.</source>
-        <translation type="unfinished" />
+        <translation>Nur in der Aufzeichnung.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Not in the recording.</source>
-        <translation type="unfinished" />
+        <translation>Nicht in der Aufzeichnung.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Recorded on other pins: %1.</source>
-        <translation type="unfinished" />
+        <translation>Auf anderen Pins aufgezeichnet: %1.</translation>
     </message>
     <message>
         <location line="+19" />
         <source>The same as the recording's lane.</source>
-        <translation type="unfinished" />
+        <translation>Wie die Spur der Aufzeichnung.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>1 difference from the recording.</source>
-        <translation type="unfinished" />
+        <translation>1 Unterschied zur Aufzeichnung.</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 differences from the recording.</source>
-        <translation type="unfinished" />
+        <translation>%1 Unterschiede zur Aufzeichnung.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>1 transfer only one run has (extra).</source>
-        <translation type="unfinished" />
+        <translation>1 Übertragung, die nur ein Lauf hat (zusätzlich).</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 transfers only one run has (extra).</source>
-        <translation type="unfinished" />
+        <translation>%1 Übertragungen, die nur ein Lauf hat (zusätzlich).</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Hide lane</source>
-        <translation type="unfinished" />
+        <translation>Spur ausblenden</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Show all lanes</source>
-        <translation type="unfinished" />
+        <translation>Alle Spuren anzeigen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Default order</source>
-        <translation type="unfinished" />
+        <translation>Standardreihenfolge</translation>
     </message>
     <message>
         <location line="+32" />
         <source>Fit lanes to height</source>
-        <translation type="unfinished" />
+        <translation>Spuren an Höhe anpassen</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Every lane taller or shorter by the same amount, so that they fill the timeline's height</source>
-        <translation type="unfinished" />
+        <translation>Jede Spur um denselben Betrag höher oder niedriger, sodass sie die Höhe der Zeitleiste ausfüllen</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Reset lane heights</source>
-        <translation type="unfinished" />
+        <translation>Spurhöhen zurücksetzen</translation>
     </message>
     <message>
         <location line="+25" />
         <location line="+78" />
         <source>between markers A and B</source>
-        <translation type="unfinished" />
+        <translation>zwischen Marker A und B</translation>
     </message>
     <message>
         <location line="-77" />
         <location line="+78" />
         <source>over the whole trace</source>
-        <translation type="unfinished" />
+        <translation>über den gesamten Trace</translation>
     </message>
     <message>
         <location line="-76" />
         <source>Find longest gap</source>
-        <translation type="unfinished" />
+        <translation>Längste Lücke suchen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The longest time the lane did nothing, %1: marked A to B</source>
-        <translation type="unfinished" />
+        <translation>Die längste Zeit ohne Aktivität auf der Spur, %1: markiert von A bis B</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Measure delay to</source>
-        <translation type="unfinished" />
+        <translation>Verzögerung messen bis</translation>
     </message>
     <message>
         <location line="+3" />
         <source>From each event of this lane to the next of another, %1: how long the firmware took to react</source>
-        <translation type="unfinished" />
+        <translation>Von jedem Ereignis dieser Spur bis zum nächsten einer anderen, %1: wie lange die Firmware zum Reagieren brauchte</translation>
     </message>
     <message>
         <location line="+13" />
         <source>From each rise</source>
-        <translation type="unfinished" />
+        <translation>Ab jeder steigenden Flanke</translation>
     </message>
     <message>
         <location line="+1" />
         <source>From each fall</source>
-        <translation type="unfinished" />
+        <translation>Ab jeder fallenden Flanke</translation>
     </message>
     <message>
         <location line="+1" />
         <source>From each change</source>
-        <translation type="unfinished" />
+        <translation>Ab jeder Änderung</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Longest gap</source>
-        <translation type="unfinished" />
+        <translation>Längste Lücke</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Fewer than two events of the lane to find a gap between.</source>
-        <translation type="unfinished" />
+        <translation>Weniger als zwei Ereignisse der Spur, um eine Lücke dazwischen zu finden.</translation>
     </message>
     <message>
         <location line="+20" />
         <source>each change of %1</source>
-        <translation type="unfinished" />
+        <translation>jede Änderung von %1</translation>
     </message>
     <message>
         <location line="+1" />
         <source>each rise of %1</source>
-        <translation type="unfinished" />
+        <translation>jede steigende Flanke von %1</translation>
     </message>
     <message>
         <location line="+1" />
         <source>each fall of %1</source>
-        <translation type="unfinished" />
+        <translation>jede fallende Flanke von %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>From %1 to the next event of %2, %3.</source>
-        <translation type="unfinished" />
+        <translation>Von %1 bis zum nächsten Ereignis von %2, %3.</translation>
     </message>
     <message>
         <location line="+1" />
         <source>each event of %1</source>
-        <translation type="unfinished" />
+        <translation>jedes Ereignis von %1</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Delay</source>
-        <translation type="unfinished" />
+        <translation>Verzögerung</translation>
     </message>
     <message>
         <location line="+4" />
         <source>No event of %1 came after one of %2 before the next.</source>
-        <translation type="unfinished" />
+        <translation>Nach keinem Ereignis von %2 kam ein Ereignis von %1 vor dem nächsten.</translation>
     </message>
     <message>
         <location line="+2" />
         <location line="+24" />
         <source>Close</source>
-        <translation type="unfinished" />
+        <translation>Schließen</translation>
     </message>
     <message>
         <location line="-10" />
         <source>min %1 · avg %2 · max %3 · σ %4 (%5 delays)</source>
-        <translation type="unfinished" />
+        <translation>min. %1 · Ø %2 · max. %3 · σ %4 (%5 Verzögerungen)</translation>
     </message>
     <message numerus="yes">
         <location line="+7" />
         <source>%n with no event of %1 before the next one.</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n ohne Ereignis von %1 vor dem nächsten.</numerusform><numerusform>%n ohne Ereignis von %1 vor dem nächsten.</numerusform></translation>
     </message>
     <message>
         <location line="+4" />
         <source>Copy</source>
-        <translation type="unfinished" />
+        <translation>Kopieren</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Show longest</source>
-        <translation type="unfinished" />
+        <translation>Längste anzeigen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Markers A and B on the longest delay, zoomed to</source>
-        <translation type="unfinished" />
+        <translation>Marker A und B auf der längsten Verzögerung, dorthin gezoomt</translation>
     </message>
     <message>
         <location line="+21" />
         <source>Show signals</source>
-        <translation type="unfinished" />
+        <translation>Signale anzeigen</translation>
     </message>
     <message>
         <location line="+3" />
         <source>The wires drawn under the transfers, rebuilt from their bytes: not a capture of the pins</source>
-        <translation type="unfinished" />
+        <translation>Die unter den Übertragungen gezeichneten Leitungen, aus ihren Bytes rekonstruiert: keine Erfassung der Pins</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Wires</source>
-        <translation type="unfinished" />
+        <translation>Leitungen</translation>
     </message>
     <message>
         <location line="+20" />
         <source>Inject a fault: needs a newer MikroSDK.Trace</source>
-        <translation type="unfinished" />
+        <translation>Störung injizieren: erfordert ein neueres MikroSDK.Trace</translation>
     </message>
     <message>
         <location line="+31" />
         <source>Make 0x%1 not answer</source>
-        <translation type="unfinished" />
+        <translation>0x%1 nicht antworten lassen</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Stick MISO at 0xFF</source>
-        <translation type="unfinished" />
+        <translation>MISO auf 0xFF festsetzen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Stick MISO at 0x00</source>
-        <translation type="unfinished" />
+        <translation>MISO auf 0x00 festsetzen</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Hold High</source>
-        <translation type="unfinished" />
+        <translation>Auf High halten</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Hold Low</source>
-        <translation type="unfinished" />
+        <translation>Auf Low halten</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Take the devices off the bus</source>
-        <translation type="unfinished" />
+        <translation>Geräte vom Bus nehmen</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Force a value…</source>
-        <translation type="unfinished" />
+        <translation>Wert erzwingen…</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Force a value</source>
-        <translation type="unfinished" />
+        <translation>Wert erzwingen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Volts the input reads:</source>
-        <translation type="unfinished" />
+        <translation>Spannung (V), die der Eingang liest:</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Count the input reads:</source>
-        <translation type="unfinished" />
+        <translation>Rohwert, den der Eingang liest:</translation>
     </message>
     <message>
         <location line="+18" />
         <source>Remove fault: %1</source>
-        <translation type="unfinished" />
+        <translation>Störung entfernen: %1</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Faults</source>
-        <translation type="unfinished" />
+        <translation>Störungen</translation>
     </message>
     <message>
         <location line="+0" />
         <source>1 Fault</source>
-        <translation type="unfinished" />
+        <translation>1 Störung</translation>
     </message>
     <message>
         <location line="+0" />
         <source>%1 Faults</source>
-        <translation type="unfinished" />
+        <translation>%1 Störungen</translation>
     </message>
     <message>
         <location line="+16" />
         <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
-        <translation type="unfinished" />
+        <translation>MikroSDK.Trace dieser Firmware ist für Störungen zu alt: Aktualisieren Sie mikroSDK und erstellen Sie das Projekt neu.</translation>
     </message>
     <message>
         <location line="+41" />
         <source>Open trace</source>
-        <translation type="unfinished" />
+        <translation>Trace öffnen</translation>
     </message>
     <message>
         <location line="+28" />
         <source>Export A–B as VCD</source>
-        <translation type="unfinished" />
+        <translation>A–B als VCD exportieren</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Export A–B transfers as CSV</source>
-        <translation type="unfinished" />
+        <translation>A–B-Übertragungen als CSV exportieren</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Export as VCD</source>
-        <translation type="unfinished" />
+        <translation>Als VCD exportieren</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Export transfers as CSV</source>
-        <translation type="unfinished" />
+        <translation>Übertragungen als CSV exportieren</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Value Change Dump (*.vcd)</source>
-        <translation type="unfinished" />
+        <translation>Value Change Dump (*.vcd)</translation>
     </message>
     <message>
         <location line="+0" />
         <source>CSV (*.csv)</source>
-        <translation type="unfinished" />
+        <translation>CSV (*.csv)</translation>
     </message>
     <message>
         <location line="+14" />
         <source>Exporting the trace</source>
-        <translation type="unfinished" />
+        <translation>Trace wird exportiert</translation>
     </message>
     <message>
         <location line="+12" />
         <source>Export trace</source>
-        <translation type="unfinished" />
+        <translation>Trace exportieren</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Could not write %1: %2</source>
-        <translation type="unfinished" />
+        <translation>%1 konnte nicht geschrieben werden: %2</translation>
     </message>
     <message>
         <location line="+20" />
         <location line="+8" />
         <source>Record trace</source>
-        <translation type="unfinished" />
+        <translation>Trace aufzeichnen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Could not record to %1: %2</source>
-        <translation type="unfinished" />
+        <translation>Aufzeichnung in %1 nicht möglich: %2</translation>
     </message>
     <message>
         <location line="+61" />
         <source>Nothing came from the firmware while recording: this recording has no trace. Record while the target runs, until the transfers show.</source>
-        <translation type="unfinished" />
+        <translation>Während der Aufzeichnung kam nichts von der Firmware: Diese Aufzeichnung enthält keinen Trace. Zeichnen Sie auf, während das Ziel läuft, bis die Übertragungen erscheinen.</translation>
     </message>
     <message>
         <location line="+14" />
         <source>Type a name, or Cancel to keep %1.</source>
-        <translation type="unfinished" />
+        <translation>Geben Sie einen Namen ein oder wählen Sie Abbrechen, um %1 beizubehalten.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>A name only, without folders.</source>
-        <translation type="unfinished" />
+        <translation>Nur ein Name, ohne Ordner.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>There is a recording named %1 already.</source>
-        <translation type="unfinished" />
+        <translation>Es gibt bereits eine Aufzeichnung namens %1.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Could not rename the recording: check the name, or Cancel to keep %1.</source>
-        <translation type="unfinished" />
+        <translation>Die Aufzeichnung konnte nicht umbenannt werden: Prüfen Sie den Namen oder wählen Sie Abbrechen, um %1 beizubehalten.</translation>
     </message>
     <message>
         <location line="+37" />
         <source>Armed</source>
-        <translation type="unfinished" />
+        <translation>Aktiv</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Trigger</source>
-        <translation type="unfinished" />
+        <translation>Trigger</translation>
     </message>
     <message>
         <location line="+18" />
         <source>marker A placed</source>
-        <translation type="unfinished" />
+        <translation>Marker A gesetzt</translation>
     </message>
     <message>
         <location line="+12" />
         <source>already recording</source>
-        <translation type="unfinished" />
+        <translation>Aufzeichnung läuft bereits</translation>
     </message>
     <message>
         <location line="+2" />
         <source>not recorded: Record needs a debug session of a project</source>
-        <translation type="unfinished" />
+        <translation>nicht aufgezeichnet: „Aufzeichnen“ erfordert eine Debug-Sitzung eines Projekts</translation>
     </message>
     <message>
         <location line="+2" />
         <source>not recorded: %1</source>
-        <translation type="unfinished" />
+        <translation>nicht aufgezeichnet: %1</translation>
     </message>
     <message>
         <location line="+4" />
         <source>recording</source>
-        <translation type="unfinished" />
+        <translation>zeichnet auf</translation>
     </message>
     <message>
         <location line="+9" />
         <source>paused</source>
-        <translation type="unfinished" />
+        <translation>angehalten</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Fired at %1 on %2</source>
-        <translation type="unfinished" />
+        <translation>Ausgelöst bei %1 auf %2</translation>
     </message>
     <message>
         <location line="+22" />
         <source>Recording to %1. Press to stop.</source>
-        <translation type="unfinished" />
+        <translation>Aufzeichnung in %1. Zum Stoppen drücken.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Record</source>
-        <translation type="unfinished" />
+        <translation>Aufzeichnen</translation>
     </message>
     <message>
         <location line="+3" />
         <source>This is a recording: Record records the live trace, in the Trace tool while debugging.</source>
-        <translation type="unfinished" />
+        <translation>Dies ist eine Aufzeichnung: „Aufzeichnen“ zeichnet den Live-Trace auf, im Trace-Tool während des Debuggens.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Record starts with a debug session of a project with trace on.</source>
-        <translation type="unfinished" />
+        <translation>„Aufzeichnen“ erfordert eine Debug-Sitzung eines Projekts mit aktiviertem Trace.</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder; you name it when it stops.</source>
-        <translation type="unfinished" />
+        <translation>Den Trace ab jetzt in eine Datei aufzeichnen, ohne die Begrenzung der Ansicht: für lange Läufe. Die Datei wird im Ordner .trace des Projekts abgelegt; Sie benennen sie nach dem Stoppen.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>The last recording stopped: %1</source>
-        <translation type="unfinished" />
+        <translation>Die letzte Aufzeichnung wurde beendet: %1</translation>
     </message>
     <message>
         <location line="+33" />
         <source>Recording</source>
-        <translation type="unfinished" />
+        <translation>Aufzeichnung</translation>
     </message>
     <message>
         <location line="+10" />
         <source>cut short</source>
-        <translation type="unfinished" />
+        <translation>vorzeitig beendet</translation>
     </message>
     <message>
         <location line="+6" />
         <source>NECTO %1</source>
-        <translation type="unfinished" />
+        <translation>NECTO %1</translation>
     </message>
     <message>
         <location line="+38" />
         <source>Comparing with %1</source>
-        <translation type="unfinished" />
+        <translation>Vergleich mit %1</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Each lane has the recording's lane under it (REC), on the same times from each run's start. What differs is outlined; Align at markers lines the runs up.</source>
-        <translation type="unfinished" />
+        <translation>Unter jeder Spur liegt die Spur der Aufzeichnung (REC), mit denselben Zeiten ab dem Start des jeweiligen Laufs. Abweichungen sind umrandet; „An Markern ausrichten“ richtet die Läufe aneinander aus.</translation>
     </message>
     <message>
         <location line="+88" />
         <source> (all failed)</source>
-        <translation type="unfinished" />
+        <translation> (alle fehlgeschlagen)</translation>
     </message>
     <message>
         <location line="+0" />
         <source> (%1 failed)</source>
-        <translation type="unfinished" />
+        <translation> (%1 fehlgeschlagen)</translation>
     </message>
     <message>
         <location line="+20" />
         <source>Nothing compared: the recording is empty</source>
-        <translation type="unfinished" />
+        <translation>Nichts verglichen: Die Aufzeichnung ist leer</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Nothing compared: no lane is in both runs</source>
-        <translation type="unfinished" />
+        <translation>Nichts verglichen: Keine Spur ist in beiden Läufen</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Nothing compared: no transfer is in both runs</source>
-        <translation type="unfinished" />
+        <translation>Nichts verglichen: Keine Übertragung ist in beiden Läufen</translation>
     </message>
     <message>
         <location line="+6" />
         <source>%1 failed here, OK in the recording</source>
-        <translation type="unfinished" />
+        <translation>%1 hier fehlgeschlagen, in der Aufzeichnung OK</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1 OK here, failed in the recording</source>
-        <translation type="unfinished" />
+        <translation>%1 hier OK, in der Aufzeichnung fehlgeschlagen</translation>
     </message>
     <message>
         <location line="+2" />
         <source>No differences</source>
-        <translation type="unfinished" />
+        <translation>Keine Unterschiede</translation>
     </message>
     <message>
         <location line="+1" />
         <source>1 difference</source>
-        <translation type="unfinished" />
+        <translation>1 Unterschied</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 differences</source>
-        <translation type="unfinished" />
+        <translation>%1 Unterschiede</translation>
     </message>
     <message>
         <location line="+2" />
         <source>1 transfer only in this run</source>
-        <translation type="unfinished" />
+        <translation>1 Übertragung nur in diesem Lauf</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 transfers only in this run</source>
-        <translation type="unfinished" />
+        <translation>%1 Übertragungen nur in diesem Lauf</translation>
     </message>
     <message>
         <location line="+4" />
         <source>1 transfer only in the recording</source>
-        <translation type="unfinished" />
+        <translation>1 Übertragung nur in der Aufzeichnung</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 transfers only in the recording</source>
-        <translation type="unfinished" />
+        <translation>%1 Übertragungen nur in der Aufzeichnung</translation>
     </message>
     <message>
         <location line="+3" />
         <source>1 lane in one run only</source>
-        <translation type="unfinished" />
+        <translation>1 Spur nur in einem Lauf</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 lanes in one run only</source>
-        <translation type="unfinished" />
+        <translation>%1 Spuren nur in einem Lauf</translation>
     </message>
     <message>
         <location line="+6" />
         <source>The recording has no trace: Record was stopped before the firmware handed a buffer over. Record while the target runs, until the transfers show.</source>
-        <translation type="unfinished" />
+        <translation>Die Aufzeichnung enthält keinen Trace: „Aufzeichnen“ wurde beendet, bevor die Firmware einen Puffer übergeben hat. Zeichnen Sie auf, während das Ziel läuft, bis die Übertragungen erscheinen.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Lanes pair by their kind, pins and I2C device, transfers by their order in each lane. This run and the recording have none alike: another firmware, a recording of another project, or one made later in its session.</source>
-        <translation type="unfinished" />
+        <translation>Spuren werden nach Art, Pins und I2C-Gerät zugeordnet, Übertragungen nach ihrer Reihenfolge in jeder Spur. Dieser Lauf und die Aufzeichnung haben nichts gemeinsam: eine andere Firmware, eine Aufzeichnung eines anderen Projekts oder eine, die später in dessen Sitzung entstand.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Transfers and pin changes compared by their order in each lane. Differences are banded on the timeline and said in the table's Compared column; transfers only one run has are outlined dashed. The arrows go through all of them.</source>
-        <translation type="unfinished" />
+        <translation>Übertragungen und Pin-Änderungen werden nach ihrer Reihenfolge in jeder Spur verglichen. Unterschiede sind auf der Zeitleiste hinterlegt und in der Spalte „Verglichen“ der Tabelle beschrieben; Übertragungen, die nur ein Lauf hat, sind gestrichelt umrandet. Die Pfeile springen durch alle.</translation>
     </message>
     <message>
         <location line="+44" />
         <source>on %1</source>
-        <translation type="unfinished" />
+        <translation>auf %1</translation>
     </message>
     <message>
         <location line="+0" />
         <source>to %1</source>
-        <translation type="unfinished" />
+        <translation>bis %1</translation>
     </message>
     <message>
         <location line="+8" />
         <source>%1 transfers %2 failed here that worked in the recording, the first at %3.</source>
-        <translation type="unfinished" />
+        <translation>%1 Übertragungen %2 sind hier fehlgeschlagen, die in der Aufzeichnung funktionierten; die erste bei %3.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>From %1 on, all %2 transfers %3 failed; the recording's worked.</source>
-        <translation type="unfinished" />
+        <translation>Ab %1 sind alle %2 Übertragungen %3 fehlgeschlagen; die der Aufzeichnung funktionierten.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>mikroBUS %1</source>
-        <translation type="unfinished" />
+        <translation>mikroBUS %1</translation>
     </message>
     <message>
         <location line="+4" />
         <source>The device at %1 stopped answering: is %2 fitted%3?</source>
-        <translation type="unfinished" />
+        <translation>Das Gerät an %1 antwortet nicht mehr: Ist %2 aufgesteckt%3?</translation>
     </message>
     <message>
         <location line="+2" />
         <source> on %1</source>
-        <translation type="unfinished" />
+        <translation> auf %1</translation>
     </message>
     <message>
         <location line="+3" />
         <source>The device at %1 stopped answering: is it fitted and connected%2?</source>
-        <translation type="unfinished" />
+        <translation>Das Gerät an %1 antwortet nicht mehr: Ist es aufgesteckt und angeschlossen%2?</translation>
     </message>
     <message>
         <location line="+1" />
         <source> (%1)</source>
-        <translation type="unfinished" />
+        <translation> (%1)</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Is the device still connected?</source>
-        <translation type="unfinished" />
+        <translation>Ist das Gerät noch angeschlossen?</translation>
     </message>
 </context>
 <context>
@@ -33193,117 +33171,117 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_transaction_model.cpp" line="+225" />
         <source>Recording: </source>
-        <translation type="unfinished" />
+        <translation>Aufzeichnung: </translation>
     </message>
     <message>
         <location line="+4" />
         <source>Command %1</source>
-        <translation type="unfinished" />
+        <translation>Befehl %1</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Register %1</source>
-        <translation type="unfinished" />
+        <translation>Register %1</translation>
     </message>
     <message>
         <location line="+43" />
         <source>Failed ⚡</source>
-        <translation type="unfinished" />
+        <translation>Fehlgeschlagen ⚡</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Injected</source>
-        <translation type="unfinished" />
+        <translation>Injiziert</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1 failed</source>
-        <translation type="unfinished" />
+        <translation>%1 fehlgeschlagen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Failed</source>
-        <translation type="unfinished" />
+        <translation>Fehlgeschlagen</translation>
     </message>
     <message>
         <location line="+0" />
         <source>OK</source>
-        <translation type="unfinished" />
+        <translation>OK</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Time from the start of the transfer before it; on a frame, from the frame before it</source>
-        <translation type="unfinished" />
+        <translation>Zeit ab dem Beginn der vorherigen Übertragung; bei einem Rahmen ab dem vorherigen Rahmen</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Time</source>
-        <translation type="unfinished" />
+        <translation>Zeit</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Interval</source>
-        <translation type="unfinished" />
+        <translation>Intervall</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Lane</source>
-        <translation type="unfinished" />
+        <translation>Spur</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Op</source>
-        <translation type="unfinished" />
+        <translation>Op.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Address</source>
-        <translation type="unfinished" />
+        <translation>Adresse</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Data</source>
-        <translation type="unfinished" />
+        <translation>Daten</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Duration</source>
-        <translation type="unfinished" />
+        <translation>Dauer</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Result</source>
-        <translation type="unfinished" />
+        <translation>Ergebnis</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Compared</source>
-        <translation type="unfinished" />
+        <translation>Verglichen</translation>
     </message>
     <message>
         <location line="+27" />
         <source>+ Only in this run</source>
-        <translation type="unfinished" />
+        <translation>+ Nur in diesem Lauf</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The recording has no transfer to compare with</source>
-        <translation type="unfinished" />
+        <translation>Die Aufzeichnung hat keine Übertragung zum Vergleichen</translation>
     </message>
     <message>
         <location line="+2" />
         <source>✓ Same</source>
-        <translation type="unfinished" />
+        <translation>✓ Gleich</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Same as the recording's</source>
-        <translation type="unfinished" />
+        <translation>Wie in der Aufzeichnung</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Differs from the recording's, this run's first: %1</source>
-        <translation type="unfinished" />
+        <translation>Weicht von der Aufzeichnung ab, Wert dieses Laufs zuerst: %1</translation>
     </message>
 </context>
 <context>
@@ -33311,27 +33289,27 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_trigger_panel.cpp" line="+98" />
         <source>Watch for this</source>
-        <translation type="unfinished" />
+        <translation>Hierauf achten</translation>
     </message>
     <message>
         <location line="+35" />
         <source>Type what to watch for: a transfer, as in "0x18 failed", or a pin's change, as in "LED_1 rise".</source>
-        <translation type="unfinished" />
+        <translation>Geben Sie ein, worauf geachtet werden soll: eine Übertragung, z. B. "0x18 failed", oder eine Pin-Änderung, z. B. "LED_1 rise".</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Armed: waiting for the first match.</source>
-        <translation type="unfinished" />
+        <translation>Aktiv: wartet auf den ersten Treffer.</translation>
     </message>
     <message>
         <location line="+17" />
         <source>Disarm</source>
-        <translation type="unfinished" />
+        <translation>Deaktivieren</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Arm</source>
-        <translation type="unfinished" />
+        <translation>Aktivieren</translation>
     </message>
 </context>
 <context>
@@ -33339,7 +33317,7 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="-230" />
         <source>Fit</source>
-        <translation type="unfinished" />
+        <translation>Einpassen</translation>
     </message>
 </context>
 <context>
@@ -33347,52 +33325,52 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_signals.cpp" line="-498" />
         <source>Start</source>
-        <translation type="unfinished" />
+        <translation>Start</translation>
     </message>
     <message>
         <location line="+21" />
         <source>Stop</source>
-        <translation type="unfinished" />
+        <translation>Stopp</translation>
     </message>
     <message>
         <location line="+65" />
         <source>Not known</source>
-        <translation type="unfinished" />
+        <translation>Unbekannt</translation>
     </message>
     <message>
         <location line="+28" />
         <source>Address</source>
-        <translation type="unfinished" />
+        <translation>Adresse</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Write [%1]</source>
-        <translation type="unfinished" />
+        <translation>Schreiben [%1]</translation>
     </message>
     <message>
         <location line="+1" />
         <source>W %1</source>
-        <translation type="unfinished" />
+        <translation>W %1</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Write</source>
-        <translation type="unfinished" />
+        <translation>Schreiben</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Read [%1]</source>
-        <translation type="unfinished" />
+        <translation>Lesen [%1]</translation>
     </message>
     <message>
         <location line="+1" />
         <source>R %1</source>
-        <translation type="unfinished" />
+        <translation>R %1</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Read</source>
-        <translation type="unfinished" />
+        <translation>Lesen</translation>
     </message>
 </context>
 <context>
@@ -33401,34 +33379,34 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
         <location line="+130" />
         <location line="+1" />
         <source>Reset</source>
-        <translation type="unfinished" />
+        <translation>Reset</translation>
     </message>
     <message>
         <location line="+7" />
         <location line="+1" />
         <source>Presence</source>
-        <translation type="unfinished" />
+        <translation>Präsenz</translation>
     </message>
     <message>
         <location line="-1" />
         <source>No presence</source>
-        <translation type="unfinished" />
+        <translation>Keine Präsenz</translation>
     </message>
     <message>
         <location line="+1" />
         <source>None</source>
-        <translation type="unfinished" />
+        <translation>Keine</translation>
     </message>
     <message>
         <location line="+40" />
         <source>Command</source>
-        <translation type="unfinished" />
+        <translation>Befehl</translation>
     </message>
     <message>
         <location line="+43" />
         <location line="+1" />
         <source>Search</source>
-        <translation type="unfinished" />
+        <translation>Suche</translation>
     </message>
 </context>
 <context>
@@ -34188,7 +34166,11 @@ Click Publish when you're ready to make it available to the community.</source>
         <translation>Ihr Projekt ist in Meine Pakete bereit und wartet auf die Veröffentlichung.
 Klicken Sie auf Veröffentlichen, wenn Sie es der Community zur Verfügung stellen möchten.</translation>
     </message>
-<message><source>A package with this version already exists.</source><translation>Ein Paket mit dieser Version existiert bereits.</translation></message></context>
+    <message>
+        <source>A package with this version already exists.</source>
+        <translation>Ein Paket mit dieser Version existiert bereits.</translation>
+    </message>
+</context>
 <context>
     <name>Necto::UploadProjectInfoDialog</name>
     <message>
@@ -34697,7 +34679,7 @@ HINWEIS: Die angezeigten Positionen sind nur Vorschläge - überprüfen Sie dies
         <source>Prompt</source>
         <translation>Prompt</translation>
     </message>
-</context>
+<message><source>The FreeRTOS %1 project template is not installed. Add it from the Library Manager.</source><translation>Die FreeRTOS-Projektvorlage %1 ist nicht installiert. Fügen Sie sie über den Bibliotheksmanager hinzu.</translation></message><message><source>FreeRTOS is not available for this setup (legacy/bare-metal SDK or dual-core MCU).</source><translation>FreeRTOS ist für dieses Setup nicht verfügbar (Legacy-/Bare-Metal-SDK oder Dual-Core-MCU).</translation></message></context>
 <context>
     <name>Necto::WaitingFrame</name>
     <message>
@@ -35008,7 +34990,7 @@ Möchten Sie die Seite neu laden?</translation>
         <source>Close</source>
         <translation>Schließen</translation>
     </message>
-</context>
+<message><source>Stay on top</source><translation>Im Vordergrund halten</translation></message><message><source>Stay on top: on</source><translation>Im Vordergrund halten: an</translation></message></context>
 <context>
     <name>Necto::WindowPanel</name>
     <message>
@@ -36640,7 +36622,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     <message>
         <location line="+449" />
         <source>. Implement the application as FreeRTOS tasks: create the tasks, use FreeRTOS primitives for delays and inter-task communication, and start the scheduler from main</source>
-        <translation type="unfinished" />
+        <translation>. Implementieren Sie die Anwendung als FreeRTOS-Tasks: Erstellen Sie die Tasks, verwenden Sie FreeRTOS-Primitive für Verzögerungen und die Kommunikation zwischen Tasks, und starten Sie den Scheduler aus main</translation>
     </message>
     <message>
         <source>Create and Configure Project</source>
@@ -37210,7 +37192,7 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
         <source>Folder "%1" already exists in %2.</source>
         <translation>Der Ordner "%1" existiert bereits in %2.</translation>
     </message>
-</context>
+<message><source>Disconnect from the board or connect to a compatible one to make this project active.</source><translation>Trennen Sie die Verbindung zur Platine oder verbinden Sie sich mit einer kompatiblen, um dieses Projekt zu aktivieren.</translation></message><message><source>Configuration &lt;b&gt;%1&lt;/b&gt; is not installed. Click for options.</source><translation>Konfiguration &lt;b&gt;%1&lt;/b&gt; ist nicht installiert. Für Optionen klicken.</translation></message><message><source>Configuration &lt;b&gt;%1&lt;/b&gt; was modified. This project still uses its original copy.</source><translation>Konfiguration &lt;b&gt;%1&lt;/b&gt; wurde geändert. Dieses Projekt verwendet weiterhin seine ursprüngliche Kopie.</translation></message><message><source>&lt;b&gt;%1&lt;/b&gt; can't run on the connected board.&lt;br/&gt;&lt;br/&gt;%2&lt;br/&gt;• %3&lt;br/&gt;&lt;br/&gt;%4</source><translation>&lt;b&gt;%1&lt;/b&gt; kann auf der verbundenen Platine nicht ausgeführt werden.&lt;br/&gt;&lt;br/&gt;%2&lt;br/&gt;• %3&lt;br/&gt;&lt;br/&gt;%4</translation></message><message><source>This project uses &lt;b&gt;%1&lt;/b&gt;, which is not installed.</source><translation>Dieses Projekt verwendet &lt;b&gt;%1&lt;/b&gt;, aber diese Konfiguration ist nicht installiert.</translation></message><message><source>Requirements not met:</source><translation>Anforderungen nicht erfüllt:</translation></message><message><source>Configuration not installed</source><translation>Konfiguration nicht installiert</translation></message><message><source>Use changes</source><translation>Änderungen übernehmen</translation></message><message><source>This project uses an outdated version of the configuration &lt;b&gt;%1&lt;/b&gt;. Click to review.</source><translation>Dieses Projekt verwendet eine veraltete Version der Konfiguration &lt;b&gt;%1&lt;/b&gt;. Zum Überprüfen klicken.</translation></message><message><source>Project not opened</source><translation>Projekt nicht geöffnet</translation></message><message><source>Install this configuration.</source><translation>Diese Konfiguration installieren.</translation></message><message><source>Keep current</source><translation>Aktuelle beibehalten</translation></message><message><source>Configuration changed</source><translation>Konfiguration geändert</translation></message><message><source>Switch to the modified configuration.</source><translation>Zur geänderten Konfiguration wechseln.</translation></message><message><source>Copying FreeRTOS kernel</source><translation>FreeRTOS-Kernel wird kopiert</translation></message><message><source>Install</source><translation>Installieren</translation></message><message><source>Save the project's copy as a separate configuration.</source><translation>Die Kopie des Projekts als separate Konfiguration speichern.</translation></message><message><source>Disconnect from the board or connect to a compatible one to open this project.</source><translation>Trennen Sie die Verbindung zur Platine oder verbinden Sie sich mit einer kompatiblen, um dieses Projekt zu öffnen.</translation></message><message><source>Project not activated</source><translation>Projekt nicht aktiviert</translation></message><message><source>Remote Board Farm</source><translation>Remote Board Farm</translation></message></context>
 <context>
     <name>ProjectNamePage</name>
     <message>
@@ -37406,73 +37388,73 @@ Bitte prüfen Sie Ihre Schreibweise.</translation>
     <message>
         <location line="+131" />
         <source>The configuration could not be read</source>
-        <translation type="unfinished" />
+        <translation>Die Konfiguration konnte nicht gelesen werden</translation>
     </message>
     <message>
         <location line="+39" />
         <source>Requires the legacy SDK</source>
-        <translation type="unfinished" />
+        <translation>Erfordert das Legacy-SDK</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Requires a dual-core MCU</source>
-        <translation type="unfinished" />
+        <translation>Erfordert eine Dual-Core-MCU</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Requires a TFT display board</source>
-        <translation type="unfinished" />
+        <translation>Erfordert eine Platine mit TFT-Display</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Requires mikroSDK instead of the legacy SDK</source>
-        <translation type="unfinished" />
+        <translation>Erfordert mikroSDK statt des Legacy-SDK</translation>
     </message>
     <message>
         <location line="+2" />
         <source>MCU does not support mikroSDK</source>
-        <translation type="unfinished" />
+        <translation>MCU unterstützt mikroSDK nicht</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Requires a single-core MCU</source>
-        <translation type="unfinished" />
+        <translation>Erfordert eine Single-Core-MCU</translation>
     </message>
     <message>
         <location line="+4" />
         <source>XC8 compiler is not supported</source>
-        <translation type="unfinished" />
+        <translation>XC8-Compiler wird nicht unterstützt</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Requires GCC, Clang or XC32 (current: %1)</source>
-        <translation type="unfinished" />
+        <translation>Erfordert GCC, Clang oder XC32 (aktuell: %1)</translation>
     </message>
     <message>
         <location line="+9" />
         <location line="+51" />
         <source>Requires GCC, Clang or XC32</source>
-        <translation type="unfinished" />
+        <translation>Erfordert GCC, Clang oder XC32</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Requires a Cortex-M, PIC32 or RISC-V MCU</source>
-        <translation type="unfinished" />
+        <translation>Erfordert eine Cortex-M-, PIC32- oder RISC-V-MCU</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Unsupported MCU core: %1 (requires Cortex-M, PIC32 or RISC-V)</source>
-        <translation type="unfinished" />
+        <translation>Nicht unterstützter MCU-Kern: %1 (erfordert Cortex-M, PIC32 oder RISC-V)</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Only GD32VF103 RISC-V MCUs are supported</source>
-        <translation type="unfinished" />
+        <translation>Nur GD32VF103-RISC-V-MCUs werden unterstützt</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Requires %1 KB RAM (available: %2 KB)</source>
-        <translation type="unfinished" />
+        <translation>Erfordert %1 KB RAM (verfügbar: %2 KB)</translation>
     </message>
 </context>
 <context>
@@ -38129,142 +38111,142 @@ Stellen Sie sicher, dass die Variable CMAKE_BUILD_TYPE dem Feld "Build type" ent
     <message>
         <location filename="../core/src/debugger/debug_view/src/queues_view_model.cpp" line="+18" />
         <source>Queue</source>
-        <translation type="unfinished" />
+        <translation>Warteschlange</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Semaphore</source>
-        <translation type="unfinished" />
+        <translation>Semaphor</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Mutex</source>
-        <translation type="unfinished" />
+        <translation>Mutex</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Semaphore/Mutex</source>
-        <translation type="unfinished" />
+        <translation>Semaphor/Mutex</translation>
     </message>
     <message>
         <location line="+77" />
         <source>Available</source>
-        <translation type="unfinished" />
+        <translation>Verfügbar</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Taken</source>
-        <translation type="unfinished" />
+        <translation>Belegt</translation>
     </message>
     <message>
         <location line="+8" />
         <source>(unheld)</source>
-        <translation type="unfinished" />
+        <translation>(frei)</translation>
     </message>
     <message>
         <location line="+12" />
         <source>Address: %1</source>
-        <translation type="unfinished" />
+        <translation>Adresse: %1</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Could not be determined on this FreeRTOS version.</source>
-        <translation type="unfinished" />
+        <translation>Konnte bei dieser FreeRTOS-Version nicht ermittelt werden.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>This FreeRTOS version cannot tell the two apart.</source>
-        <translation type="unfinished" />
+        <translation>Diese FreeRTOS-Version kann die beiden nicht unterscheiden.</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Not resolvable for this entry.</source>
-        <translation type="unfinished" />
+        <translation>Für diesen Eintrag nicht auflösbar.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>1 = available, 0 = currently held.</source>
-        <translation type="unfinished" />
+        <translation>1 = verfügbar, 0 = derzeit belegt.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Current count / maximum count.</source>
-        <translation type="unfinished" />
+        <translation>Aktuelle Anzahl / maximale Anzahl.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Available when 1, held when 0.</source>
-        <translation type="unfinished" />
+        <translation>Bei 1 verfügbar, bei 0 belegt.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Capacity unknown - showing queued messages only.</source>
-        <translation type="unfinished" />
+        <translation>Kapazität unbekannt - nur eingereihte Nachrichten werden angezeigt.</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Messages currently queued / queue capacity.</source>
-        <translation type="unfinished" />
+        <translation>Aktuell eingereihte Nachrichten / Kapazität der Warteschlange.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Only meaningful for mutexes.</source>
-        <translation type="unfinished" />
+        <translation>Nur für Mutexe relevant.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>No task currently holds this mutex.</source>
-        <translation type="unfinished" />
+        <translation>Derzeit belegt kein Task diesen Mutex.</translation>
     </message>
     <message>
         <location line="+98" />
         <source>Each core runs its own independent FreeRTOS instance.</source>
-        <translation type="unfinished" />
+        <translation>Jeder Kern führt eine eigene, unabhängige FreeRTOS-Instanz aus.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Only registered objects appear here.</source>
-        <translation type="unfinished" />
+        <translation>Hier erscheinen nur registrierte Objekte.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>What kind of object this is.</source>
-        <translation type="unfinished" />
+        <translation>Um welche Art von Objekt es sich handelt.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>How full each object is.</source>
-        <translation type="unfinished" />
+        <translation>Wie voll jedes Objekt ist.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>The task currently holding this mutex.</source>
-        <translation type="unfinished" />
+        <translation>Der Task, der diesen Mutex derzeit belegt.</translation>
     </message>
     <message>
         <location line="+12" />
         <source>Core</source>
-        <translation type="unfinished" />
+        <translation>Kern</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation>Name</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Type</source>
-        <translation type="unfinished" />
+        <translation>Typ</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Fill Level</source>
-        <translation type="unfinished" />
+        <translation>Füllstand</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Held By</source>
-        <translation type="unfinished" />
+        <translation>Belegt von</translation>
     </message>
 </context>
 <context>
@@ -41585,7 +41567,7 @@ Dies reverted den Commit %2.</translation>
         <source>Click the TFT to tap · drag to swipe · &lt;a href="#" id="sim-recalibrate"&gt;redraw region&lt;/a&gt;</source>
         <translation>Tippen: TFT anklicken · Wischen: ziehen · &lt;a href="#" id="sim-recalibrate"&gt;Bereich neu zeichnen&lt;/a&gt;</translation>
     </message>
-</context>
+<message><source>Firmware trace</source><translation>Firmware-Trace</translation></message><message><source>Secure connection to the remote board using SSL/TLS encryption</source><translation>Sichere Verbindung zur Remote-Platine mit SSL/TLS-Verschlüsselung</translation></message><message><source>Real-time video feed of the remote board</source><translation>Echtzeit-Videoübertragung der Remote-Platine</translation></message></context>
 <context>
     <name>SplashScreen</name>
     <message>
@@ -42156,217 +42138,217 @@ Diese PDF-Datei ist für die folgenden 15 Tage verfügbar, beginnend mit </trans
     <message>
         <location filename="../core/src/debugger/debug_view/src/tasks_view_model.cpp" line="+21" />
         <source>Running</source>
-        <translation type="unfinished" />
+        <translation>Läuft</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Ready</source>
-        <translation type="unfinished" />
+        <translation>Bereit</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Blocked</source>
-        <translation type="unfinished" />
+        <translation>Blockiert</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Suspended</source>
-        <translation type="unfinished" />
+        <translation>Suspendiert</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Deleted</source>
-        <translation type="unfinished" />
+        <translation>Gelöscht</translation>
     </message>
     <message>
         <location line="+81" />
         <source>%1 (base %2)</source>
-        <translation type="unfinished" />
+        <translation>%1 (Basis %2)</translation>
     </message>
     <message>
         <location line="+33" />
         <source>Delay / notify</source>
-        <translation type="unfinished" />
+        <translation>Verzögerung / Benachrichtigung</translation>
     </message>
     <message>
         <location line="+11" />
         <source>0 (clock stopped)</source>
-        <translation type="unfinished" />
+        <translation>0 (Takt gestoppt)</translation>
     </message>
     <message>
         <location line="+7" />
         <source>(current)</source>
-        <translation type="unfinished" />
+        <translation>(aktuell)</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Double-click to go to where this task is executing.</source>
-        <translation type="unfinished" />
+        <translation>Doppelklicken, um zu der Stelle zu springen, an der dieser Task ausgeführt wird.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Double-click to go to where this task is parked.</source>
-        <translation type="unfinished" />
+        <translation>Doppelklicken, um zu der Stelle zu springen, an der dieser Task wartet.</translation>
     </message>
     <message>
         <location line="+1" />
         <source>No source location available for this task.</source>
-        <translation type="unfinished" />
+        <translation>Für diesen Task ist keine Quellposition verfügbar.</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Raised from %1 while it holds a mutex.</source>
-        <translation type="unfinished" />
+        <translation>Von %1 angehoben, solange der Task einen Mutex belegt.</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Task control block address: %1</source>
-        <translation type="unfinished" />
+        <translation>Adresse des Task-Kontrollblocks: %1</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Could not be computed for this task.</source>
-        <translation type="unfinished" />
+        <translation>Konnte für diesen Task nicht berechnet werden.</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Peak so far. Total size unknown for this build.</source>
-        <translation type="unfinished" />
+        <translation>Bisheriger Spitzenwert. Gesamtgröße für diesen Build unbekannt.</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 B never used.</source>
-        <translation type="unfinished" />
+        <translation>%1 B nie genutzt.</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Blocked on "%1", held by %2.</source>
-        <translation type="unfinished" />
+        <translation>Blockiert durch „%1“, belegt von %2.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Blocked on "%1".</source>
-        <translation type="unfinished" />
+        <translation>Blockiert durch „%1“.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Waiting on an unregistered object.</source>
-        <translation type="unfinished" />
+        <translation>Wartet auf ein nicht registriertes Objekt.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Waiting on a delay or notification.</source>
-        <translation type="unfinished" />
+        <translation>Wartet auf eine Verzögerung oder Benachrichtigung.</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Only shown for tasks waiting on an object.</source>
-        <translation type="unfinished" />
+        <translation>Nur für Tasks angezeigt, die auf ein Objekt warten.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Needs run-time stats enabled in FreeRTOSConfig.h.</source>
-        <translation type="unfinished" />
+        <translation>Erfordert aktivierte Laufzeitstatistiken in FreeRTOSConfig.h.</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Running now - see the Call Stack view.</source>
-        <translation type="unfinished" />
+        <translation>Läuft gerade - siehe Ansicht „Aufrufliste“.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Not available for this target.</source>
-        <translation type="unfinished" />
+        <translation>Für dieses Ziel nicht verfügbar.</translation>
     </message>
     <message>
         <location line="+88" />
         <source>Double-click a task to go to its code.</source>
-        <translation type="unfinished" />
+        <translation>Doppelklicken Sie auf einen Task, um zu seinem Code zu springen.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>The handle returned when the task was created.</source>
-        <translation type="unfinished" />
+        <translation>Das beim Erstellen des Tasks zurückgegebene Handle.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>What each task is doing right now.</source>
-        <translation type="unfinished" />
+        <translation>Was jeder Task gerade tut.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Higher runs first. 0 is the lowest.</source>
-        <translation type="unfinished" />
+        <translation>Höhere Priorität läuft zuerst. 0 ist die niedrigste.</translation>
     </message>
     <message>
         <location line="+5" />
         <source>The most stack each task has ever used, not its usage now.</source>
-        <translation type="unfinished" />
+        <translation>Der höchste bisherige Stack-Verbrauch jedes Tasks, nicht die aktuelle Nutzung.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>What each blocked task is waiting for.</source>
-        <translation type="unfinished" />
+        <translation>Worauf jeder blockierte Task wartet.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Share of CPU time used by each task.</source>
-        <translation type="unfinished" />
+        <translation>Anteil der CPU-Zeit, den jeder Task belegt.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Where each waiting task will resume.</source>
-        <translation type="unfinished" />
+        <translation>Wo jeder wartende Task fortgesetzt wird.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Each core runs its own FreeRTOS instance.</source>
-        <translation type="unfinished" />
+        <translation>Jeder Kern führt eine eigene FreeRTOS-Instanz aus.</translation>
     </message>
     <message>
         <location line="+12" />
         <source>Core</source>
-        <translation type="unfinished" />
+        <translation>Kern</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation>Name</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Task Handle</source>
-        <translation type="unfinished" />
+        <translation>Task-Handle</translation>
     </message>
     <message>
         <location line="+2" />
         <source>State</source>
-        <translation type="unfinished" />
+        <translation>Zustand</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Priority</source>
-        <translation type="unfinished" />
+        <translation>Priorität</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Stack Usage</source>
-        <translation type="unfinished" />
+        <translation>Stack-Nutzung</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Event Object</source>
-        <translation type="unfinished" />
+        <translation>Ereignisobjekt</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Runtime</source>
-        <translation type="unfinished" />
+        <translation>Laufzeit</translation>
     </message>
     <message>
         <location line="+2" />
         <source>PC</source>
-        <translation type="unfinished" />
+        <translation>PC</translation>
     </message>
 </context>
 <context>
@@ -43000,7 +42982,7 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
         <location line="+8" />
         <location line="+176" />
         <source>Trace</source>
-        <translation type="unfinished" />
+        <translation>Trace</translation>
     </message>
 </context>
 <context>
@@ -43101,72 +43083,67 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_fault_panel.ui" line="+46" />
         <source>Faults NECTO injects into the firmware's drivers, for this debug session</source>
-        <translation type="unfinished" />
+        <translation>Störungen, die NECTO in die Treiber der Firmware injiziert, für diese Debug-Sitzung</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Faults</source>
-        <translation type="unfinished" />
+        <translation>Störungen</translation>
     </message>
     <message>
         <location line="+14" />
         <source>What to break</source>
-        <translation type="unfinished" />
+        <translation>Was gestört wird</translation>
     </message>
     <message>
         <location line="+13" />
         <source>The lane it holds</source>
-        <translation type="unfinished" />
+        <translation>Die Spur, die gehalten wird</translation>
     </message>
     <message>
         <location line="+38" />
         <source>The byte every read on the bus gives, in hex</source>
-        <translation type="unfinished" />
+        <translation>Das Byte, das jeder Lesevorgang auf dem Bus liefert, in Hex</translation>
     </message>
     <message>
-        <location line="+3" />
-        <source>\0\x&gt;HH</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
+        <location line="+6" />
         <source>0xFF</source>
-        <translation type="unfinished" />
+        <translation>0xFF</translation>
     </message>
     <message>
         <location line="+23" />
         <source>The level the input reads</source>
-        <translation type="unfinished" />
+        <translation>Der Pegel, den der Eingang liest</translation>
     </message>
     <message>
         <location line="+4" />
         <source>High</source>
-        <translation type="unfinished" />
+        <translation>High</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Low</source>
-        <translation type="unfinished" />
+        <translation>Low</translation>
     </message>
     <message>
         <location line="+24" />
         <source>The value the input reads</source>
-        <translation type="unfinished" />
+        <translation>Der Wert, den der Eingang liest</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Inject</source>
-        <translation type="unfinished" />
+        <translation>Injizieren</translation>
     </message>
     <message>
         <location line="+7" />
         <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this device.</source>
-        <translation type="unfinished" />
+        <translation>Ein hängender MISO ändert nur, was gelesen wird: also nichts, solange die Firmware nur auf dieses Gerät schreibt.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>No reads on this lane yet</source>
-        <translation type="unfinished" />
+        <translation>Noch keine Lesevorgänge auf dieser Spur</translation>
     </message>
 </context>
 <context>
@@ -43175,17 +43152,17 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
         <location filename="../core/src/debugger/trace/trace_note_dialog.ui" line="+14" />
         <location line="+24" />
         <source>Add note</source>
-        <translation type="unfinished" />
+        <translation>Notiz hinzufügen</translation>
     </message>
     <message>
         <location line="+57" />
         <source>Cancel</source>
-        <translation type="unfinished" />
+        <translation>Abbrechen</translation>
     </message>
     <message>
         <location line="+10" />
         <source>OK</source>
-        <translation type="unfinished" />
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -43194,27 +43171,27 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
         <location filename="../core/src/debugger/trace/trace_recording_name_dialog.ui" line="+14" />
         <location line="+24" />
         <source>Recording saved</source>
-        <translation type="unfinished" />
+        <translation>Aufzeichnung gespeichert</translation>
     </message>
     <message>
         <location line="+45" />
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation>Name</translation>
     </message>
     <message>
         <location line="+74" />
         <source>Keep the automatic name</source>
-        <translation type="unfinished" />
+        <translation>Automatischen Namen beibehalten</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Cancel</source>
-        <translation type="unfinished" />
+        <translation>Abbrechen</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Save</source>
-        <translation type="unfinished" />
+        <translation>Speichern</translation>
     </message>
 </context>
 <context>
@@ -43222,79 +43199,81 @@ x (Anzahl) bestimmt die maximale Anzahl der angezeigten Dateien</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_trigger_panel.ui" line="+35" />
         <source>Trigger on</source>
-        <translation type="unfinished" />
+        <translation>Triggern bei</translation>
     </message>
     <message>
         <location line="+13" />
         <source>What to watch for, in the search's words. Every word must match:
 a transfer: failed, ok, w, r, w/r, tx, rx, 0x48, 9F 00, "text", a register's name
 a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
-        <translation type="unfinished" />
+        <translation>Worauf geachtet werden soll, in der Syntax der Suche. Jedes Wort muss passen:
+eine Übertragung: failed, ok, w, r, w/r, tx, rx, 0x48, 9F 00, "text", der Name eines Registers
+eine Pin-Änderung: rise, fall, high, low und der Pin-Name, z. B. "LED_1 rise"</translation>
     </message>
     <message>
         <location line="+5" />
         <source>0x18 failed · w 05 · LED_1 rise</source>
-        <translation type="unfinished" />
+        <translation>0x18 failed · w 05 · LED_1 rise</translation>
     </message>
     <message>
         <location line="+7" />
         <source>From this trace</source>
-        <translation type="unfinished" />
+        <translation>Aus diesem Trace</translation>
     </message>
     <message>
         <location line="+28" />
         <source>Then</source>
-        <translation type="unfinished" />
+        <translation>Dann</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Pause the debugger</source>
-        <translation type="unfinished" />
+        <translation>Debugger anhalten</translation>
     </message>
     <message>
         <location line="+3" />
         <source>The trace comes in buffers: the target runs on a little past the event before the pause holds it.</source>
-        <translation type="unfinished" />
+        <translation>Der Trace kommt in Puffern an: Das Ziel läuft noch etwas über das Ereignis hinaus, bevor die Pause es anhält.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Place marker A on the event</source>
-        <translation type="unfinished" />
+        <translation>Marker A auf das Ereignis setzen</translation>
     </message>
     <message>
         <location line="+15" />
         <source>Record, from</source>
-        <translation type="unfinished" />
+        <translation>Aufzeichnen, ab</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Record to a file, starting before the event: what came before it is kept while the trigger is armed.</source>
-        <translation type="unfinished" />
+        <translation>In eine Datei aufzeichnen, beginnend vor dem Ereignis: Was davor kam, wird aufbewahrt, solange der Trigger aktiv ist.</translation>
     </message>
     <message>
         <location line="+7" />
         <source> s before</source>
-        <translation type="unfinished" />
+        <translation> s davor</translation>
     </message>
     <message>
         <location line="+13" />
         <source>to</source>
-        <translation type="unfinished" />
+        <translation>bis</translation>
     </message>
     <message>
         <location line="+7" />
         <source>stopped</source>
-        <translation type="unfinished" />
+        <translation>Stopp</translation>
     </message>
     <message>
         <location line="+3" />
         <source> s after</source>
-        <translation type="unfinished" />
+        <translation> s danach</translation>
     </message>
     <message>
         <location line="+53" />
         <source>Arm</source>
-        <translation type="unfinished" />
+        <translation>Aktivieren</translation>
     </message>
 </context>
 <context>
@@ -43303,17 +43282,17 @@ a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
         <location filename="../core/src/debugger/trace/trace_value_dialog.ui" line="+14" />
         <location line="+24" />
         <source>Force a value</source>
-        <translation type="unfinished" />
+        <translation>Wert erzwingen</translation>
     </message>
     <message>
         <location line="+61" />
         <source>Cancel</source>
-        <translation type="unfinished" />
+        <translation>Abbrechen</translation>
     </message>
     <message>
         <location line="+10" />
         <source>OK</source>
-        <translation type="unfinished" />
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -43321,220 +43300,214 @@ a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
     <message>
         <location filename="../core/src/debugger/trace/trace_view.ui" line="+14" />
         <source>Firmware trace</source>
-        <translation type="unfinished" />
+        <translation>Firmware-Trace</translation>
     </message>
     <message>
         <location line="+91" />
         <source>Start Debugging (F9)</source>
-        <translation type="unfinished" />
+        <translation>Debuggen starten (F9)</translation>
     </message>
     <message>
         <location line="+61" />
         <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder.</source>
-        <translation type="unfinished" />
+        <translation>Den Trace ab jetzt in eine Datei aufzeichnen, ohne die Begrenzung der Ansicht: für lange Läufe. Die Datei wird im Ordner .trace des Projekts abgelegt.</translation>
     </message>
     <message>
         <location line="+3" />
         <location line="+684" />
         <source>Record</source>
-        <translation type="unfinished" />
+        <translation>Aufzeichnen</translation>
     </message>
     <message>
         <location line="-665" />
         <source>Faults NECTO injects into the firmware: a device that stops answering, a stuck bus or pin, a forced ADC value. Right-click a lane for its faults too.</source>
-        <translation type="unfinished" />
+        <translation>Störungen, die NECTO in die Firmware injiziert: ein Gerät, das nicht mehr antwortet, ein hängender Bus oder Pin, ein erzwungener ADC-Wert. Auch per Rechtsklick auf eine Spur verfügbar.</translation>
     </message>
     <message>
         <location line="+3" />
         <location line="+737" />
         <source>Faults</source>
-        <translation type="unfinished" />
+        <translation>Störungen</translation>
     </message>
     <message>
         <location line="-718" />
         <source>Watch the trace for a transfer or a pin's change, then pause the debugger, place a marker or record.</source>
-        <translation type="unfinished" />
+        <translation>Den Trace auf eine Übertragung oder Pin-Änderung überwachen und dann den Debugger anhalten, einen Marker setzen oder aufzeichnen.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Trigger</source>
-        <translation type="unfinished" />
+        <translation>Trigger</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Go to, zoom to, copy or export what is between markers A and B, or remove them (Esc)</source>
-        <translation type="unfinished" />
+        <translation>Den Bereich zwischen Marker A und B anspringen, heranzoomen, kopieren oder exportieren oder die Marker entfernen (Esc)</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Markers</source>
-        <translation type="unfinished" />
+        <translation>Marker</translation>
     </message>
     <message>
         <location line="+35" />
         <source>First difference: where the runs part</source>
-        <translation type="unfinished" />
+        <translation>Erster Unterschied: wo die Läufe abweichen</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Previous difference from the recording</source>
-        <translation type="unfinished" />
+        <translation>Vorheriger Unterschied zur Aufzeichnung</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Next difference from the recording</source>
-        <translation type="unfinished" />
+        <translation>Nächster Unterschied zur Aufzeichnung</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Previous failed transfer</source>
-        <translation type="unfinished" />
+        <translation>Vorherige fehlgeschlagene Übertragung</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Next failed transfer</source>
-        <translation type="unfinished" />
+        <translation>Nächste fehlgeschlagene Übertragung</translation>
     </message>
     <message>
         <location line="+23" />
         <source>Time span the timeline shows, following the newest events</source>
-        <translation type="unfinished" />
+        <translation>Zeitspanne der Zeitleiste, den neuesten Ereignissen folgend</translation>
     </message>
     <message>
         <location line="+13" />
         <source>1 ms</source>
-        <translation type="unfinished" />
+        <translation>1 ms</translation>
     </message>
     <message>
         <location line="+5" />
         <source>10 ms</source>
-        <translation type="unfinished" />
+        <translation>10 ms</translation>
     </message>
     <message>
         <location line="+5" />
         <source>100 ms</source>
-        <translation type="unfinished" />
+        <translation>100 ms</translation>
     </message>
     <message>
         <location line="+5" />
         <source>1 s</source>
-        <translation type="unfinished" />
+        <translation>1 s</translation>
     </message>
     <message>
         <location line="+5" />
         <source>2 s</source>
-        <translation type="unfinished" />
+        <translation>2 s</translation>
     </message>
     <message>
         <location line="+5" />
         <source>10 s</source>
-        <translation type="unfinished" />
+        <translation>10 s</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Whole trace</source>
-        <translation type="unfinished" />
+        <translation>Gesamter Trace</translation>
     </message>
     <message>
         <location line="+24" />
         <source>Clear the trace</source>
-        <translation type="unfinished" />
+        <translation>Trace leeren</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Open a recording, compare with one, or export the trace</source>
-        <translation type="unfinished" />
+        <translation>Eine Aufzeichnung öffnen, mit einer vergleichen oder den Trace exportieren</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Show or hide the transfers</source>
-        <translation type="unfinished" />
+        <translation>Übertragungen ein- oder ausblenden</translation>
     </message>
     <message>
         <location line="+82" />
         <source>Line the recording up with this run: put marker A on an event of the live lane, then marker B on the same event in the recording under it.</source>
-        <translation type="unfinished" />
+        <translation>Die Aufzeichnung an diesem Lauf ausrichten: Setzen Sie Marker A auf ein Ereignis der Live-Spur, dann Marker B auf dasselbe Ereignis in der Aufzeichnung darunter.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Align at markers</source>
-        <translation type="unfinished" />
+        <translation>An Markern ausrichten</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Stop comparing</source>
-        <translation type="unfinished" />
+        <translation>Vergleich beenden</translation>
     </message>
     <message>
         <location line="+141" />
         <source>Start Debugging</source>
-        <translation type="unfinished" />
+        <translation>Debuggen starten</translation>
     </message>
     <message>
-        <location line="+3" />
         <location line="+10" />
-        <source>primary</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-3" />
         <source>Enable Trace</source>
-        <translation type="unfinished" />
+        <translation>Trace aktivieren</translation>
     </message>
     <message>
         <location line="+94" />
         <source>Live</source>
-        <translation type="unfinished" />
+        <translation>Live</translation>
     </message>
     <message>
         <location line="+10" />
         <source>View the trace in real time</source>
-        <translation type="unfinished" />
+        <translation>Trace in Echtzeit anzeigen</translation>
     </message>
     <message>
         <location line="+75" />
         <source>Save the trace for later analysis</source>
-        <translation type="unfinished" />
+        <translation>Trace für spätere Analyse speichern</translation>
     </message>
     <message>
         <location line="+75" />
         <source>Inject faults to test the firmware</source>
-        <translation type="unfinished" />
+        <translation>Störungen injizieren, um die Firmware zu testen</translation>
     </message>
     <message>
         <location line="+149" />
         <source>Lanes</source>
-        <translation type="unfinished" />
+        <translation>Spuren</translation>
     </message>
     <message>
         <location line="+20" />
         <source>Collapse the lane list</source>
-        <translation type="unfinished" />
+        <translation>Spurliste einklappen</translation>
     </message>
     <message>
         <location line="+126" />
         <source>Transfers</source>
-        <translation type="unfinished" />
+        <translation>Übertragungen</translation>
     </message>
     <message>
         <location line="+23" />
         <source>Only the transfers that differ from the recording, or that one run has only</source>
-        <translation type="unfinished" />
+        <translation>Nur die Übertragungen, die von der Aufzeichnung abweichen oder die nur ein Lauf hat</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Differences only</source>
-        <translation type="unfinished" />
+        <translation>Nur Unterschiede</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Previous match</source>
-        <translation type="unfinished" />
+        <translation>Vorheriger Treffer</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Next match</source>
-        <translation type="unfinished" />
+        <translation>Nächster Treffer</translation>
     </message>
     <message>
         <location line="+22" />
@@ -43544,12 +43517,17 @@ w, r, w/r, tx, rx, burst: the operation; bytes after it in its direction
 0x48: an I2C address
 9F 00: bytes, in this order
 "ERR", thermo: text in the lane's name or pins, or what a UART sent</source>
-        <translation type="unfinished" />
+        <translation>Übertragungen durchsuchen (Ctrl+F). Jedes Wort muss passen:
+failed, ok, injected: das Ergebnis
+w, r, w/r, tx, rx, burst: die Operation; Bytes danach in ihrer Richtung
+0x48: eine I2C-Adresse
+9F 00: Bytes, in dieser Reihenfolge
+"ERR", thermo: Text im Namen oder in den Pins der Spur oder was ein UART gesendet hat</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Search transfers</source>
-        <translation type="unfinished" />
+        <translation>Übertragungen durchsuchen</translation>
     </message>
 </context>
 <context>
@@ -45106,12 +45084,12 @@ HINWEIS: Die angezeigten Positionen sind nur Vorschläge - überprüfen Sie dies
     <message>
         <location line="+272" />
         <source>FreeRTOS is not available for this setup (legacy/bare-metal SDK or dual-core MCU).</source>
-        <translation type="unfinished" />
+        <translation>FreeRTOS ist für dieses Setup nicht verfügbar (Legacy-/Bare-Metal-SDK oder Dual-Core-MCU).</translation>
     </message>
     <message>
         <location line="+11" />
         <source>The FreeRTOS %1 project template is not installed. Add it from the Library Manager.</source>
-        <translation type="unfinished" />
+        <translation>Die FreeRTOS-Projektvorlage %1 ist nicht installiert. Fügen Sie sie über den Bibliotheksmanager hinzu.</translation>
     </message>
     <message>
         <source>Setup</source>
@@ -45544,7 +45522,7 @@ Möchten Sie die Seite neu laden?</translation>
         <location line="+20" />
         <location filename="../common/widgets/src/widget_detach_container/widget_detach_container.cpp" line="+91" />
         <source>Stay on top</source>
-        <translation type="unfinished" />
+        <translation>Im Vordergrund halten</translation>
     </message>
     <message>
         <location line="+19" />
@@ -45566,7 +45544,7 @@ Möchten Sie die Seite neu laden?</translation>
     <message>
         <location filename="../common/widgets/src/widget_detach_container/widget_detach_container.cpp" line="+0" />
         <source>Stay on top: on</source>
-        <translation type="unfinished" />
+        <translation>Im Vordergrund halten: an</translation>
     </message>
 </context>
 <context>
@@ -45780,111 +45758,51 @@ Möchten Sie die Seite neu laden?</translation>
     </message>
 </context>
 <context>
-    <name>Trace::FaultPanel</name>
+    <name>Necto::TraceRecordingNameDialog</name>
     <message>
-        <location filename="../core/src/debugger/trace/trace_fault_panel.cpp" line="+30" />
-        <source>I2C device not answering</source>
-        <translation type="unfinished" />
+        <location filename="../core/src/debugger/trace/trace_recording_name_dialog.ui" line="+14" />
+        <location line="+24" />
+        <source>Recording saved</source>
+        <translation>Aufzeichnung gespeichert</translation>
     </message>
     <message>
-        <location line="+1" />
-        <source>SPI MISO stuck</source>
-        <translation type="unfinished" />
+        <location line="+45" />
+        <source>Name</source>
+        <translation>Name</translation>
     </message>
     <message>
-        <location line="+1" />
-        <source>Input held</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>ADC value forced</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>1-Wire devices gone</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+105" />
-        <source>injected while it was recorded</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>None was injected while it was recorded.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Faults go on the lanes that take them: I2C, SPI, inputs, ADC and 1-Wire. None has shown up yet.</source>
-        <translation type="unfinished" />
+        <location line="+74" />
+        <source>Keep the automatic name</source>
+        <translation>Automatischen Namen beibehalten</translation>
     </message>
     <message>
         <location line="+3" />
-        <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
-        <translation type="unfinished" />
+        <source>Cancel</source>
+        <translation>Abbrechen</translation>
     </message>
     <message>
-        <location line="+53" />
-        <source> V</source>
-        <translation type="unfinished" />
+        <location line="+10" />
+        <source>Save</source>
+        <translation>Speichern</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::TraceValueDialog</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_value_dialog.ui" line="+14" />
+        <location line="+24" />
+        <source>Force a value</source>
+        <translation>Wert erzwingen</translation>
     </message>
     <message>
-        <location line="+63" />
-        <source>Type the byte: two hex digits.</source>
-        <translation type="unfinished" />
+        <location line="+61" />
+        <source>Cancel</source>
+        <translation>Abbrechen</translation>
     </message>
     <message>
-        <location line="+2" />
-        <source>Choose the lane to break.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Injected already.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>%1 faults at most: remove one first.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Inject it into the firmware: at once while it is stopped, otherwise within half a second while it records</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+55" />
-        <source>Remove this fault</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+41" />
-        <source>Events this fault changed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>no reads</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this bus.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>waiting</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Not hit yet. The firmware gets the fault when it next hands over its trace (within half a second while it records, or at a stop); it hits at the next call it applies to.</source>
-        <translation type="unfinished" />
+        <location line="+10" />
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -45892,297 +45810,44 @@ Möchten Sie die Seite neu laden?</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_trigger_panel.cpp" line="+98" />
         <source>Watch for this</source>
-        <translation type="unfinished" />
+        <translation>Hierauf achten</translation>
     </message>
     <message>
         <location line="+35" />
         <source>Type what to watch for: a transfer, as in "0x18 failed", or a pin's change, as in "LED_1 rise".</source>
-        <translation type="unfinished" />
+        <translation>Geben Sie ein, worauf geachtet werden soll: eine Übertragung, z. B. "0x18 failed", oder eine Pin-Änderung, z. B. "LED_1 rise".</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Armed: waiting for the first match.</source>
-        <translation type="unfinished" />
+        <translation>Aktiv: wartet auf den ersten Treffer.</translation>
     </message>
     <message>
         <location line="+17" />
         <source>Disarm</source>
-        <translation type="unfinished" />
+        <translation>Deaktivieren</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Arm</source>
-        <translation type="unfinished" />
+        <translation>Aktivieren</translation>
     </message>
 </context>
 <context>
-    <name>Trace::DapTraceReader</name>
+    <name>Necto::PlanetDebugModel</name>
     <message>
-        <location filename="../core/src/debugger/trace/trace_dap_reader.cpp" line="+32" />
-        <source>Firmware trace: no breakpoint on traceBuffFullBreak: %1</source>
+        <location filename="../core/src/planet_debug/model/planet_debug_model.cpp" line="+300" />
+        <source>Requires the %1 MCU set in the project's setup (board has %2)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location line="+65" />
-        <source>Firmware trace: the trace buffer was not found in the image.</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::TraceFaultPanel</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_fault_panel.ui" line="+46" />
-        <source>Faults NECTO injects into the firmware's drivers, for this debug session</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Faults</source>
+        <location line="+12" />
+        <source>Requires a TFT display board</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location line="+14" />
-        <source>What to break</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>The lane it holds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+38" />
-        <source>The byte every read on the bus gives, in hex</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>\0\x&gt;HH</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>0xFF</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+23" />
-        <source>The level the input reads</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>High</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Low</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+24" />
-        <source>The value the input reads</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Inject</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this device.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>No reads on this lane yet</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::TraceTabs</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_tabs.cpp" line="+22" />
-        <source>The trace of the session you debug</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+65" />
-        <source>● Live</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Live</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>RenesasE2Proxy</name>
-    <message>
-        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_proxy.cpp" line="+68" />
-        <source>Renesas E2: the GDB server did not complete the launch sequence.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+102" />
-        <source>Renesas E2 proxy cannot listen on port %1: %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+131" />
-        <source>Renesas E2 proxy cannot reach the GDB server on port %1.</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>RenesasE2RfpJob</name>
-    <message>
-        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_rfp_job.cpp" line="+35" />
-        <source>Renesas E2: Programming</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Renesas E2: Erasing</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+72" />
-        <source>Renesas Flash Programmer CLI not found: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Device is not supported by the installed Renesas E2 support files.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>No COM port is selected in the programmer settings.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Cannot open %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+48" />
-        <source>Renesas Flash Programmer CLI failed to start: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+35" />
-        <source>Waiting for the E2 to reconnect (attempt %1 of %2)...</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+14" />
-        <source>Renesas E2: this device has no erase operation (MRAM); programming overwrites the memory in place.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Renesas E2: the device rejected the write address. Check that the device's TrustZone boundaries match the project (read them with "rfp-cli -device RA -tool e2 -rfo"; a project without TrustZone needs all code and SRAM secure).</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Renesas E2: no %1 found on USB. Check that it is connected and that the programmer selected in the setup matches it (Renesas E2 or Renesas E2 Lite; boards with an on-board emulator use E2 Lite).</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Renesas Flash Programmer CLI failed (exit code %1).</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::LaneModel</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_lane_model.cpp" line="+78" />
-        <source>Only in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Not in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Recorded on other pins: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+31" />
-        <source>%1 · other pins</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::TraceNoteDialog</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_note_dialog.ui" line="+14" />
-        <location line="+24" />
-        <source>Add note</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+57" />
-        <source>Cancel</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>OK</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::RecordingNameDialog</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_recording_name_dialog.cpp" line="+33" />
-        <source>Saved in %1</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::oneWire</name>
-    <message>
-        <location line="+130" />
-        <location line="+1" />
-        <source>Reset</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <location line="+1" />
-        <source>Presence</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-1" />
-        <source>No presence</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>None</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+40" />
-        <source>Command</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+43" />
-        <location line="+1" />
-        <source>Search</source>
+        <source>The project's setup uses the %1 board definition, this board is %2. Pin mapping may differ.</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -46205,239 +45870,39 @@ Möchten Sie die Seite neu laden?</translation>
     </message>
 </context>
 <context>
-    <name>Necto::TraceView</name>
+    <name>Trace::oneWire</name>
     <message>
-        <location filename="../core/src/debugger/trace/trace_view.ui" line="+14" />
-        <source>Firmware trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+91" />
-        <source>Start Debugging (F9)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+61" />
-        <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <location line="+684" />
-        <source>Record</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-665" />
-        <source>Faults NECTO injects into the firmware: a device that stops answering, a stuck bus or pin, a forced ADC value. Right-click a lane for its faults too.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <location line="+737" />
-        <source>Faults</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-718" />
-        <source>Watch the trace for a transfer or a pin's change, then pause the debugger, place a marker or record.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Trigger</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Go to, zoom to, copy or export what is between markers A and B, or remove them (Esc)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Markers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+35" />
-        <source>First difference: where the runs part</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Previous difference from the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Next difference from the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Previous failed transfer</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Next failed transfer</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+23" />
-        <source>Time span the timeline shows, following the newest events</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>1 ms</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>10 ms</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>100 ms</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>1 s</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>2 s</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>10 s</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Whole trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+24" />
-        <source>Clear the trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Open a recording, compare with one, or export the trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Show or hide the transfers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+82" />
-        <source>Line the recording up with this run: put marker A on an event of the live lane, then marker B on the same event in the recording under it.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Align at markers</source>
-        <translation type="unfinished" />
+        <location line="+130" />
+        <location line="+1" />
+        <source>Reset</source>
+        <translation>Reset</translation>
     </message>
     <message>
         <location line="+7" />
-        <source>Stop comparing</source>
-        <translation type="unfinished" />
+        <location line="+1" />
+        <source>Presence</source>
+        <translation>Präsenz</translation>
     </message>
     <message>
-        <location line="+141" />
-        <source>Start Debugging</source>
-        <translation type="unfinished" />
+        <location line="-1" />
+        <source>No presence</source>
+        <translation>Keine Präsenz</translation>
     </message>
     <message>
-        <location line="+3" />
-        <location line="+10" />
-        <source>primary</source>
-        <translation type="unfinished" />
+        <location line="+1" />
+        <source>None</source>
+        <translation>Keine</translation>
     </message>
     <message>
-        <location line="-3" />
-        <source>Enable Trace</source>
-        <translation type="unfinished" />
+        <location line="+40" />
+        <source>Command</source>
+        <translation>Befehl</translation>
     </message>
     <message>
-        <location line="+94" />
-        <source>Live</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>View the trace in real time</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+75" />
-        <source>Save the trace for later analysis</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+75" />
-        <source>Inject faults to test the firmware</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+149" />
-        <source>Lanes</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+20" />
-        <source>Collapse the lane list</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+126" />
-        <source>Transfers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+23" />
-        <source>Only the transfers that differ from the recording, or that one run has only</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Differences only</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Previous match</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Next match</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+22" />
-        <source>Search the transfers (Ctrl+F). Every word must match:
-failed, ok, injected: the result
-w, r, w/r, tx, rx, burst: the operation; bytes after it in its direction
-0x48: an I2C address
-9F 00: bytes, in this order
-"ERR", thermo: text in the lane's name or pins, or what a UART sent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Search transfers</source>
-        <translation type="unfinished" />
+        <location line="+43" />
+        <location line="+1" />
+        <source>Search</source>
+        <translation>Suche</translation>
     </message>
 </context>
 <context>
@@ -46446,6 +45911,183 @@ w, r, w/r, tx, rx, burst: the operation; bytes after it in its direction
         <location filename="../plugins/programers/renesas_e2/src/renesas_e2_job.cpp" line="+220" />
         <source>Renesas E2: Erasing</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::PackageReadmeViewer</name>
+    <message>
+        <location filename="../core/src/package_manager/view/package_readme_viewer.cpp" line="+343" />
+        <location line="+64" />
+        <location line="+56" />
+        <source>No network connection.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-96" />
+        <location line="+65" />
+        <location line="+144" />
+        <source>The package description could not be loaded.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::Debugger</name>
+    <message>
+        <location filename="../core/src/debugger/debugger.cpp" line="+318" />
+        <source>No debug port is available for the secondary core; only the primary core is debugged.</source>
+        <translation>Für den sekundären Kern ist kein Debug-Port verfügbar; nur der primäre Kern wird debuggt.</translation>
+    </message>
+    <message>
+        <location line="+290" />
+        <source>Opening %1</source>
+        <translation>%1 wird geöffnet</translation>
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Open trace</source>
+        <translation>Trace öffnen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not open %1: %2</source>
+        <translation>%1 konnte nicht geöffnet werden: %2</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::TransactionModel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_transaction_model.cpp" line="+225" />
+        <source>Recording: </source>
+        <translation>Aufzeichnung: </translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Command %1</source>
+        <translation>Befehl %1</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Register %1</source>
+        <translation>Register %1</translation>
+    </message>
+    <message>
+        <location line="+43" />
+        <source>Failed ⚡</source>
+        <translation>Fehlgeschlagen ⚡</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Injected</source>
+        <translation>Injiziert</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 failed</source>
+        <translation>%1 fehlgeschlagen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Failed</source>
+        <translation>Fehlgeschlagen</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Time from the start of the transfer before it; on a frame, from the frame before it</source>
+        <translation>Zeit ab dem Beginn der vorherigen Übertragung; bei einem Rahmen ab dem vorherigen Rahmen</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Time</source>
+        <translation>Zeit</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Interval</source>
+        <translation>Intervall</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Lane</source>
+        <translation>Spur</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Op</source>
+        <translation>Op.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Address</source>
+        <translation>Adresse</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Data</source>
+        <translation>Daten</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Duration</source>
+        <translation>Dauer</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Result</source>
+        <translation>Ergebnis</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Compared</source>
+        <translation>Verglichen</translation>
+    </message>
+    <message>
+        <location line="+27" />
+        <source>+ Only in this run</source>
+        <translation>+ Nur in diesem Lauf</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>The recording has no transfer to compare with</source>
+        <translation>Die Aufzeichnung hat keine Übertragung zum Vergleichen</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>✓ Same</source>
+        <translation>✓ Gleich</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Same as the recording's</source>
+        <translation>Wie in der Aufzeichnung</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Differs from the recording's, this run's first: %1</source>
+        <translation>Weicht von der Aufzeichnung ab, Wert dieses Laufs zuerst: %1</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::TraceNoteDialog</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_note_dialog.ui" line="+14" />
+        <location line="+24" />
+        <source>Add note</source>
+        <translation>Notiz hinzufügen</translation>
+    </message>
+    <message>
+        <location line="+57" />
+        <source>Cancel</source>
+        <translation>Abbrechen</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -46650,121 +46292,1162 @@ w, r, w/r, tx, rx, burst: the operation; bytes after it in its direction
     </message>
 </context>
 <context>
-    <name>Trace::TransactionModel</name>
+    <name>Necto::TasksViewModel</name>
     <message>
-        <location filename="../core/src/debugger/trace/trace_transaction_model.cpp" line="+225" />
-        <source>Recording: </source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Command %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Register %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+43" />
-        <source>Failed ⚡</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Injected</source>
-        <translation type="unfinished" />
+        <location filename="../core/src/debugger/debug_view/src/tasks_view_model.cpp" line="+21" />
+        <source>Running</source>
+        <translation>Läuft</translation>
     </message>
     <message>
         <location line="+2" />
-        <source>%1 failed</source>
-        <translation type="unfinished" />
+        <source>Ready</source>
+        <translation>Bereit</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Blocked</source>
+        <translation>Blockiert</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Suspended</source>
+        <translation>Suspendiert</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Deleted</source>
+        <translation>Gelöscht</translation>
+    </message>
+    <message>
+        <location line="+81" />
+        <source>%1 (base %2)</source>
+        <translation>%1 (Basis %2)</translation>
+    </message>
+    <message>
+        <location line="+33" />
+        <source>Delay / notify</source>
+        <translation>Verzögerung / Benachrichtigung</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>0 (clock stopped)</source>
+        <translation>0 (Takt gestoppt)</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>(current)</source>
+        <translation>(aktuell)</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Double-click to go to where this task is executing.</source>
+        <translation>Doppelklicken, um zu der Stelle zu springen, an der dieser Task ausgeführt wird.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Double-click to go to where this task is parked.</source>
+        <translation>Doppelklicken, um zu der Stelle zu springen, an der dieser Task wartet.</translation>
     </message>
     <message>
         <location line="+1" />
-        <source>Failed</source>
-        <translation type="unfinished" />
+        <source>No source location available for this task.</source>
+        <translation>Für diesen Task ist keine Quellposition verfügbar.</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Raised from %1 while it holds a mutex.</source>
+        <translation>Von %1 angehoben, solange der Task einen Mutex belegt.</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Task control block address: %1</source>
+        <translation>Adresse des Task-Kontrollblocks: %1</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Could not be computed for this task.</source>
+        <translation>Konnte für diesen Task nicht berechnet werden.</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Peak so far. Total size unknown for this build.</source>
+        <translation>Bisheriger Spitzenwert. Gesamtgröße für diesen Build unbekannt.</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 B never used.</source>
+        <translation>%1 B nie genutzt.</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Blocked on "%1", held by %2.</source>
+        <translation>Blockiert durch „%1“, belegt von %2.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Blocked on "%1".</source>
+        <translation>Blockiert durch „%1“.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Waiting on an unregistered object.</source>
+        <translation>Wartet auf ein nicht registriertes Objekt.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Waiting on a delay or notification.</source>
+        <translation>Wartet auf eine Verzögerung oder Benachrichtigung.</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Only shown for tasks waiting on an object.</source>
+        <translation>Nur für Tasks angezeigt, die auf ein Objekt warten.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Needs run-time stats enabled in FreeRTOSConfig.h.</source>
+        <translation>Erfordert aktivierte Laufzeitstatistiken in FreeRTOSConfig.h.</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Running now - see the Call Stack view.</source>
+        <translation>Läuft gerade - siehe Ansicht „Aufrufliste“.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Not available for this target.</source>
+        <translation>Für dieses Ziel nicht verfügbar.</translation>
+    </message>
+    <message>
+        <location line="+88" />
+        <source>Double-click a task to go to its code.</source>
+        <translation>Doppelklicken Sie auf einen Task, um zu seinem Code zu springen.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>The handle returned when the task was created.</source>
+        <translation>Das beim Erstellen des Tasks zurückgegebene Handle.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>What each task is doing right now.</source>
+        <translation>Was jeder Task gerade tut.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Higher runs first. 0 is the lowest.</source>
+        <translation>Höhere Priorität läuft zuerst. 0 ist die niedrigste.</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>The most stack each task has ever used, not its usage now.</source>
+        <translation>Der höchste bisherige Stack-Verbrauch jedes Tasks, nicht die aktuelle Nutzung.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>What each blocked task is waiting for.</source>
+        <translation>Worauf jeder blockierte Task wartet.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Share of CPU time used by each task.</source>
+        <translation>Anteil der CPU-Zeit, den jeder Task belegt.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Where each waiting task will resume.</source>
+        <translation>Wo jeder wartende Task fortgesetzt wird.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Each core runs its own FreeRTOS instance.</source>
+        <translation>Jeder Kern führt eine eigene FreeRTOS-Instanz aus.</translation>
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Core</source>
+        <translation>Kern</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Name</source>
+        <translation>Name</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Task Handle</source>
+        <translation>Task-Handle</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>State</source>
+        <translation>Zustand</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Priority</source>
+        <translation>Priorität</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Stack Usage</source>
+        <translation>Stack-Nutzung</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Event Object</source>
+        <translation>Ereignisobjekt</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Runtime</source>
+        <translation>Laufzeit</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>PC</source>
+        <translation>PC</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::RecordingNameDialog</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_recording_name_dialog.cpp" line="+33" />
+        <source>Saved in %1</source>
+        <translation>Gespeichert in %1</translation>
+    </message>
+</context>
+<context>
+    <name>HeapUsageBar</name>
+    <message>
+        <location filename="../core/src/debugger/debug_view/src/heap_usage_bar.cpp" line="+64" />
+        <source>Total Heap: start a debug session and halt to read</source>
+        <translation>Heap gesamt: zum Lesen eine Debug-Sitzung starten und anhalten</translation>
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Total Heap: not available for this allocator</source>
+        <translation>Heap gesamt: für diesen Allocator nicht verfügbar</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Total Heap: 0 / %1 (nothing allocated yet)</source>
+        <translation>Heap gesamt: 0 / %1 (noch nichts belegt)</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Total Heap: nothing allocated yet</source>
+        <translation>Heap gesamt: noch nichts belegt</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Total Heap: %1 / %2 (%3%)</source>
+        <translation>Heap gesamt: %1 / %2 (%3%)</translation>
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Total Heap: %1 free</source>
+        <translation>Heap gesamt: %1 frei</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Total Heap: </source>
+        <translation>Heap gesamt: </translation>
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Free: %1 (low: %2)</source>
+        <translation>Frei: %1 (Tiefstwert: %2)</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>The least free heap this run. A big gap means bursts of allocation.</source>
+        <translation>Der geringste freie Heap in diesem Lauf. Ein großer Abstand deutet auf Allokationsspitzen hin.</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Free: %1</source>
+        <translation>Frei: %1</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::TraceTabs</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_tabs.cpp" line="+22" />
+        <source>The trace of the session you debug</source>
+        <translation>Der Trace der Sitzung, die Sie debuggen</translation>
+    </message>
+    <message>
+        <location line="+65" />
+        <source>● Live</source>
+        <translation>● Live</translation>
     </message>
     <message>
         <location line="+0" />
+        <source>Live</source>
+        <translation>Live</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::TraceView</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_view.ui" line="+14" />
+        <source>Firmware trace</source>
+        <translation>Firmware-Trace</translation>
+    </message>
+    <message>
+        <location line="+91" />
+        <source>Start Debugging (F9)</source>
+        <translation>Debuggen starten (F9)</translation>
+    </message>
+    <message>
+        <location line="+61" />
+        <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder.</source>
+        <translation>Den Trace ab jetzt in eine Datei aufzeichnen, ohne die Begrenzung der Ansicht: für lange Läufe. Die Datei wird im Ordner .trace des Projekts abgelegt.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <location line="+684" />
+        <source>Record</source>
+        <translation>Aufzeichnen</translation>
+    </message>
+    <message>
+        <location line="-665" />
+        <source>Faults NECTO injects into the firmware: a device that stops answering, a stuck bus or pin, a forced ADC value. Right-click a lane for its faults too.</source>
+        <translation>Störungen, die NECTO in die Firmware injiziert: ein Gerät, das nicht mehr antwortet, ein hängender Bus oder Pin, ein erzwungener ADC-Wert. Auch per Rechtsklick auf eine Spur verfügbar.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <location line="+737" />
+        <source>Faults</source>
+        <translation>Störungen</translation>
+    </message>
+    <message>
+        <location line="-718" />
+        <source>Watch the trace for a transfer or a pin's change, then pause the debugger, place a marker or record.</source>
+        <translation>Den Trace auf eine Übertragung oder Pin-Änderung überwachen und dann den Debugger anhalten, einen Marker setzen oder aufzeichnen.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Trigger</source>
+        <translation>Trigger</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Go to, zoom to, copy or export what is between markers A and B, or remove them (Esc)</source>
+        <translation>Den Bereich zwischen Marker A und B anspringen, heranzoomen, kopieren oder exportieren oder die Marker entfernen (Esc)</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Markers</source>
+        <translation>Marker</translation>
+    </message>
+    <message>
+        <location line="+35" />
+        <source>First difference: where the runs part</source>
+        <translation>Erster Unterschied: wo die Läufe abweichen</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Previous difference from the recording</source>
+        <translation>Vorheriger Unterschied zur Aufzeichnung</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Next difference from the recording</source>
+        <translation>Nächster Unterschied zur Aufzeichnung</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Previous failed transfer</source>
+        <translation>Vorherige fehlgeschlagene Übertragung</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Next failed transfer</source>
+        <translation>Nächste fehlgeschlagene Übertragung</translation>
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Time span the timeline shows, following the newest events</source>
+        <translation>Zeitspanne der Zeitleiste, den neuesten Ereignissen folgend</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>1 ms</source>
+        <translation>1 ms</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>10 ms</source>
+        <translation>10 ms</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>100 ms</source>
+        <translation>100 ms</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>1 s</source>
+        <translation>1 s</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>2 s</source>
+        <translation>2 s</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>10 s</source>
+        <translation>10 s</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Whole trace</source>
+        <translation>Gesamter Trace</translation>
+    </message>
+    <message>
+        <location line="+24" />
+        <source>Clear the trace</source>
+        <translation>Trace leeren</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Open a recording, compare with one, or export the trace</source>
+        <translation>Eine Aufzeichnung öffnen, mit einer vergleichen oder den Trace exportieren</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Show or hide the transfers</source>
+        <translation>Übertragungen ein- oder ausblenden</translation>
+    </message>
+    <message>
+        <location line="+82" />
+        <source>Line the recording up with this run: put marker A on an event of the live lane, then marker B on the same event in the recording under it.</source>
+        <translation>Die Aufzeichnung an diesem Lauf ausrichten: Setzen Sie Marker A auf ein Ereignis der Live-Spur, dann Marker B auf dasselbe Ereignis in der Aufzeichnung darunter.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Align at markers</source>
+        <translation>An Markern ausrichten</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Stop comparing</source>
+        <translation>Vergleich beenden</translation>
+    </message>
+    <message>
+        <location line="+141" />
+        <source>Start Debugging</source>
+        <translation>Debuggen starten</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Enable Trace</source>
+        <translation>Trace aktivieren</translation>
+    </message>
+    <message>
+        <location line="+94" />
+        <source>Live</source>
+        <translation>Live</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>View the trace in real time</source>
+        <translation>Trace in Echtzeit anzeigen</translation>
+    </message>
+    <message>
+        <location line="+75" />
+        <source>Save the trace for later analysis</source>
+        <translation>Trace für spätere Analyse speichern</translation>
+    </message>
+    <message>
+        <location line="+75" />
+        <source>Inject faults to test the firmware</source>
+        <translation>Störungen injizieren, um die Firmware zu testen</translation>
+    </message>
+    <message>
+        <location line="+149" />
+        <source>Lanes</source>
+        <translation>Spuren</translation>
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Collapse the lane list</source>
+        <translation>Spurliste einklappen</translation>
+    </message>
+    <message>
+        <location line="+126" />
+        <source>Transfers</source>
+        <translation>Übertragungen</translation>
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Only the transfers that differ from the recording, or that one run has only</source>
+        <translation>Nur die Übertragungen, die von der Aufzeichnung abweichen oder die nur ein Lauf hat</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Differences only</source>
+        <translation>Nur Unterschiede</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Previous match</source>
+        <translation>Vorheriger Treffer</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Next match</source>
+        <translation>Nächster Treffer</translation>
+    </message>
+    <message>
+        <location line="+22" />
+        <source>Search the transfers (Ctrl+F). Every word must match:
+failed, ok, injected: the result
+w, r, w/r, tx, rx, burst: the operation; bytes after it in its direction
+0x48: an I2C address
+9F 00: bytes, in this order
+"ERR", thermo: text in the lane's name or pins, or what a UART sent</source>
+        <translation>Übertragungen durchsuchen (Ctrl+F). Jedes Wort muss passen:
+failed, ok, injected: das Ergebnis
+w, r, w/r, tx, rx, burst: die Operation; Bytes danach in ihrer Richtung
+0x48: eine I2C-Adresse
+9F 00: Bytes, in dieser Reihenfolge
+"ERR", thermo: Text im Namen oder in den Pins der Spur oder was ein UART gesendet hat</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Search transfers</source>
+        <translation>Übertragungen durchsuchen</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::DapTraceReader</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_dap_reader.cpp" line="+32" />
+        <source>Firmware trace: no breakpoint on traceBuffFullBreak: %1</source>
+        <translation>Firmware-Trace: kein Haltepunkt auf traceBuffFullBreak: %1</translation>
+    </message>
+    <message>
+        <location line="+65" />
+        <source>Firmware trace: the trace buffer was not found in the image.</source>
+        <translation>Firmware-Trace: Der Trace-Puffer wurde im Image nicht gefunden.</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::TimelineViewport</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_timeline_viewport.cpp" line="+67" />
+        <source>New data ▸</source>
+        <translation>Neue Daten ▸</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Follow the newest events</source>
+        <translation>Den neuesten Ereignissen folgen</translation>
+    </message>
+    <message>
+        <location line="+311" />
+        <source>No firmware trace yet. Link MikroSDK.Trace to the project, call trace_init() and start debugging.</source>
+        <translation>Noch kein Firmware-Trace. Binden Sie MikroSDK.Trace in das Projekt ein, rufen Sie trace_init() auf und starten Sie das Debuggen.</translation>
+    </message>
+    <message>
+        <location line="+505" />
+        <source>Not in this run</source>
+        <translation>Nicht in diesem Lauf</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Not in the recording</source>
+        <translation>Nicht in der Aufzeichnung</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>%1 differ</source>
+        <translation>%1 abweichend</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 extra</source>
+        <translation>%1 zusätzlich</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <location line="+585" />
+        <source>✓ Same</source>
+        <translation>✓ Gleich</translation>
+    </message>
+    <message>
+        <location line="-429" />
+        <source>Empty recording: nothing came from the firmware while it ran</source>
+        <translation>Leere Aufzeichnung: Die Firmware hat während des Laufs nichts gesendet</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>End of recording</source>
+        <translation>Ende der Aufzeichnung</translation>
+    </message>
+    <message>
+        <location line="+127" />
+        <source>Duty: %1 %</source>
+        <translation>Tastgrad: %1 %</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Freq: %1</source>
+        <translation>Freq.: %1</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>width⁻¹: %1</source>
+        <translation>Breite⁻¹: %1</translation>
+    </message>
+    <message>
+        <location line="+214" />
+        <source>Next edge (Ctrl+→)</source>
+        <translation>Nächste Flanke (Ctrl+→)</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Previous edge (Ctrl+←)</source>
+        <translation>Vorherige Flanke (Ctrl+←)</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Next value (Ctrl+→)</source>
+        <translation>Nächster Wert (Ctrl+→)</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Previous value (Ctrl+←)</source>
+        <translation>Vorheriger Wert (Ctrl+←)</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Next transfer (Ctrl+→)</source>
+        <translation>Nächste Übertragung (Ctrl+→)</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Previous transfer (Ctrl+←)</source>
+        <translation>Vorherige Übertragung (Ctrl+←)</translation>
+    </message>
+    <message>
+        <location line="+72" />
+        <source>+ Only in the recording</source>
+        <translation>+ Nur in der Aufzeichnung</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>+ Only in this run</source>
+        <translation>+ Nur in diesem Lauf</translation>
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Time</source>
+        <translation>Zeit</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::HoverCard</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_hover_card.cpp" line="+69" />
+        <source>High</source>
+        <translation>High</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Low</source>
+        <translation>Low</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Level</source>
+        <translation>Pegel</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>High for</source>
+        <translation>High für</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Low for</source>
+        <translation>Low für</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Width⁻¹</source>
+        <translation>Breite⁻¹</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Period</source>
+        <translation>Periode</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Frequency</source>
+        <translation>Frequenz</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Duty</source>
+        <translation>Tastgrad</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Transfers</source>
+        <translation>Übertragungen</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Written</source>
+        <translation>Geschrieben</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+45" />
+        <source>Read</source>
+        <translation>Lesen</translation>
+    </message>
+    <message>
+        <location line="-43" />
+        <location line="+68" />
+        <source>Failed</source>
+        <translation>Fehlgeschlagen</translation>
+    </message>
+    <message>
+        <location line="-66" />
+        <location line="+7" />
+        <source>Span</source>
+        <translation>Spanne</translation>
+    </message>
+    <message>
+        <location line="-5" />
+        <source>Too fast to record each transfer: counted, with their bytes.</source>
+        <translation>Zu schnell, um jede Übertragung aufzuzeichnen: gezählt, mit ihren Bytes.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Changes</source>
+        <translation>Änderungen</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Ends</source>
+        <translation>Endet</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Too fast to record each change.</source>
+        <translation>Zu schnell, um jede Änderung aufzuzeichnen.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Value</source>
+        <translation>Wert</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Operation</source>
+        <translation>Operation</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No device answered the reset.</source>
+        <translation>Kein Gerät hat auf den Reset geantwortet.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Address</source>
+        <translation>Adresse</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Command</source>
+        <translation>Befehl</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Register</source>
+        <translation>Register</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Sent</source>
+        <translation>Gesendet</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Received</source>
+        <translation>Empfangen</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Write</source>
+        <translation>Schreiben</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>failed</source>
+        <translation>fehlgeschlagen</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Duration</source>
+        <translation>Dauer</translation>
+    </message>
+    <message>
+        <location line="+18" />
+        <source>Injected</source>
+        <translation>Injiziert</translation>
+    </message>
+    <message>
+        <location line="+1" />
         <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Pin</source>
+        <translation>Pin</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Fault</source>
+        <translation>Störung</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Compared</source>
+        <translation>Verglichen</translation>
+    </message>
+    <message>
+        <location line="+66" />
+        <source>NECTO made the device not answer.</source>
+        <translation>NECTO hat das Gerät nicht antworten lassen.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO held MISO: these bytes were not read.</source>
+        <translation>NECTO hat MISO festgehalten: Diese Bytes wurden nicht gelesen.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO took the devices off the bus.</source>
+        <translation>NECTO hat die Geräte vom Bus genommen.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO forced this value.</source>
+        <translation>NECTO hat diesen Wert erzwungen.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO held the pin at this level.</source>
+        <translation>NECTO hat den Pin auf diesem Pegel gehalten.</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::SetupNoticePopup</name>
+    <message>
+        <location filename="../core/src/project_manager/setup_notice_popup.ui" line="+50" />
+        <source>...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+49" />
+        <source>secondary</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location line="+10" />
-        <source>Time from the start of the transfer before it; on a frame, from the frame before it</source>
+        <source>primary</source>
         <translation type="unfinished" />
     </message>
+</context>
+<context>
+    <name>RenesasE2RfpJob</name>
     <message>
-        <location line="+7" />
-        <source>Time</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Lane</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Op</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Address</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Data</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Duration</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Result</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Compared</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+27" />
-        <source>+ Only in this run</source>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_rfp_job.cpp" line="+35" />
+        <source>Renesas E2: Programming</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location line="+1" />
-        <source>The recording has no transfer to compare with</source>
+        <source>Renesas E2: Erasing</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+72" />
+        <source>Renesas Flash Programmer CLI not found: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Device is not supported by the installed Renesas E2 support files.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>No COM port is selected in the programmer settings.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Cannot open %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+48" />
+        <source>Renesas Flash Programmer CLI failed to start: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+35" />
+        <source>Waiting for the E2 to reconnect (attempt %1 of %2)...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Renesas E2: this device has no erase operation (MRAM); programming overwrites the memory in place.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Renesas E2: the device rejected the write address. Check that the device's TrustZone boundaries match the project (read them with "rfp-cli -device RA -tool e2 -rfo"; a project without TrustZone needs all code and SRAM secure).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Renesas E2: no %1 found on USB. Check that it is connected and that the programmer selected in the setup matches it (Renesas E2 or Renesas E2 Lite; boards with an on-board emulator use E2 Lite).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Renesas Flash Programmer CLI failed (exit code %1).</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::ReadmePreviewPopup</name>
+    <message>
+        <location filename="../core/src/package_manager/view/readme_preview_popup.ui" line="+54" />
+        <source>Click to open the full description</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/package_manager/view/readme_preview_popup.cpp" line="+134" />
+        <source>Loading description...</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::BusRenderer</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="+204" />
+        <source>No timer in the firmware: the signals need the transfers' times</source>
+        <translation>Kein Timer in der Firmware: Die Signale benötigen die Zeiten der Übertragungen</translation>
+    </message>
+    <message>
+        <location line="+808" />
+        <source>Not in the recording</source>
+        <translation>Nicht in der Aufzeichnung</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Not in this run</source>
+        <translation>Nicht in diesem Lauf</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::LaneModel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_lane_model.cpp" line="+78" />
+        <source>Only in the recording</source>
+        <translation>Nur in der Aufzeichnung</translation>
     </message>
     <message>
         <location line="+2" />
-        <source>✓ Same</source>
+        <source>Not in the recording</source>
+        <translation>Nicht in der Aufzeichnung</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Recorded on other pins: %1</source>
+        <translation>Auf anderen Pins aufgezeichnet: %1</translation>
+    </message>
+    <message>
+        <location line="+31" />
+        <source>%1 · other pins</source>
+        <translation>%1 · andere Pins</translation>
+    </message>
+</context>
+<context>
+    <name>RenesasE2ProgramJob</name>
+    <message>
+        <location line="+32" />
+        <source>Renesas E2: Programming</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Renesas E2: %1</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::QueuesViewModel</name>
+    <message>
+        <location filename="../core/src/debugger/debug_view/src/queues_view_model.cpp" line="+18" />
+        <source>Queue</source>
+        <translation>Warteschlange</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Semaphore</source>
+        <translation>Semaphor</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Mutex</source>
+        <translation>Mutex</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Semaphore/Mutex</source>
+        <translation>Semaphor/Mutex</translation>
+    </message>
+    <message>
+        <location line="+77" />
+        <source>Available</source>
+        <translation>Verfügbar</translation>
     </message>
     <message>
         <location line="+0" />
-        <source>Same as the recording's</source>
-        <translation type="unfinished" />
+        <source>Taken</source>
+        <translation>Belegt</translation>
     </message>
     <message>
-        <location line="+6" />
-        <source>Differs from the recording's, this run's first: %1</source>
-        <translation type="unfinished" />
+        <location line="+8" />
+        <source>(unheld)</source>
+        <translation>(frei)</translation>
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Address: %1</source>
+        <translation>Adresse: %1</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Could not be determined on this FreeRTOS version.</source>
+        <translation>Konnte bei dieser FreeRTOS-Version nicht ermittelt werden.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>This FreeRTOS version cannot tell the two apart.</source>
+        <translation>Diese FreeRTOS-Version kann die beiden nicht unterscheiden.</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Not resolvable for this entry.</source>
+        <translation>Für diesen Eintrag nicht auflösbar.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 = available, 0 = currently held.</source>
+        <translation>1 = verfügbar, 0 = derzeit belegt.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Current count / maximum count.</source>
+        <translation>Aktuelle Anzahl / maximale Anzahl.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Available when 1, held when 0.</source>
+        <translation>Bei 1 verfügbar, bei 0 belegt.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Capacity unknown - showing queued messages only.</source>
+        <translation>Kapazität unbekannt - nur eingereihte Nachrichten werden angezeigt.</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Messages currently queued / queue capacity.</source>
+        <translation>Aktuell eingereihte Nachrichten / Kapazität der Warteschlange.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Only meaningful for mutexes.</source>
+        <translation>Nur für Mutexe relevant.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No task currently holds this mutex.</source>
+        <translation>Derzeit belegt kein Task diesen Mutex.</translation>
+    </message>
+    <message>
+        <location line="+98" />
+        <source>Each core runs its own independent FreeRTOS instance.</source>
+        <translation>Jeder Kern führt eine eigene, unabhängige FreeRTOS-Instanz aus.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Only registered objects appear here.</source>
+        <translation>Hier erscheinen nur registrierte Objekte.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>What kind of object this is.</source>
+        <translation>Um welche Art von Objekt es sich handelt.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>How full each object is.</source>
+        <translation>Wie voll jedes Objekt ist.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>The task currently holding this mutex.</source>
+        <translation>Der Task, der diesen Mutex derzeit belegt.</translation>
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Core</source>
+        <translation>Kern</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Name</source>
+        <translation>Name</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Type</source>
+        <translation>Typ</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Fill Level</source>
+        <translation>Füllstand</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Held By</source>
+        <translation>Belegt von</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::ValueRenderer</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="-230" />
+        <source>Fit</source>
+        <translation>Einpassen</translation>
     </message>
 </context>
 <context>
@@ -46772,79 +47455,1167 @@ w, r, w/r, tx, rx, burst: the operation; bytes after it in its direction
     <message>
         <location filename="../core/src/debugger/trace/trace_trigger_panel.ui" line="+35" />
         <source>Trigger on</source>
-        <translation type="unfinished" />
+        <translation>Triggern bei</translation>
     </message>
     <message>
         <location line="+13" />
         <source>What to watch for, in the search's words. Every word must match:
 a transfer: failed, ok, w, r, w/r, tx, rx, 0x48, 9F 00, "text", a register's name
 a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
-        <translation type="unfinished" />
+        <translation>Worauf geachtet werden soll, in der Syntax der Suche. Jedes Wort muss passen:
+eine Übertragung: failed, ok, w, r, w/r, tx, rx, 0x48, 9F 00, "text", der Name eines Registers
+eine Pin-Änderung: rise, fall, high, low und der Pin-Name, z. B. "LED_1 rise"</translation>
     </message>
     <message>
         <location line="+5" />
         <source>0x18 failed · w 05 · LED_1 rise</source>
-        <translation type="unfinished" />
+        <translation>0x18 failed · w 05 · LED_1 rise</translation>
     </message>
     <message>
         <location line="+7" />
         <source>From this trace</source>
-        <translation type="unfinished" />
+        <translation>Aus diesem Trace</translation>
     </message>
     <message>
         <location line="+28" />
         <source>Then</source>
-        <translation type="unfinished" />
+        <translation>Dann</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Pause the debugger</source>
-        <translation type="unfinished" />
+        <translation>Debugger anhalten</translation>
     </message>
     <message>
         <location line="+3" />
         <source>The trace comes in buffers: the target runs on a little past the event before the pause holds it.</source>
-        <translation type="unfinished" />
+        <translation>Der Trace kommt in Puffern an: Das Ziel läuft noch etwas über das Ereignis hinaus, bevor die Pause es anhält.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Place marker A on the event</source>
-        <translation type="unfinished" />
+        <translation>Marker A auf das Ereignis setzen</translation>
     </message>
     <message>
         <location line="+15" />
         <source>Record, from</source>
-        <translation type="unfinished" />
+        <translation>Aufzeichnen, ab</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Record to a file, starting before the event: what came before it is kept while the trigger is armed.</source>
-        <translation type="unfinished" />
+        <translation>In eine Datei aufzeichnen, beginnend vor dem Ereignis: Was davor kam, wird aufbewahrt, solange der Trigger aktiv ist.</translation>
     </message>
     <message>
         <location line="+7" />
         <source> s before</source>
-        <translation type="unfinished" />
+        <translation> s davor</translation>
     </message>
     <message>
         <location line="+13" />
         <source>to</source>
-        <translation type="unfinished" />
+        <translation>bis</translation>
     </message>
     <message>
         <location line="+7" />
         <source>stopped</source>
-        <translation type="unfinished" />
+        <translation>Stopp</translation>
     </message>
     <message>
         <location line="+3" />
         <source> s after</source>
-        <translation type="unfinished" />
+        <translation> s danach</translation>
     </message>
     <message>
         <location line="+53" />
         <source>Arm</source>
-        <translation type="unfinished" />
+        <translation>Aktivieren</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::TraceView</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_view.cpp" line="+558" />
+        <source>Hide the transfers</source>
+        <translation>Übertragungen ausblenden</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Show the transfers</source>
+        <translation>Übertragungen anzeigen</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Collapse the lane list</source>
+        <translation>Spurliste einklappen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Expand the lane list</source>
+        <translation>Spurliste erweitern</translation>
+    </message>
+    <message>
+        <location line="+158" />
+        <source>Project</source>
+        <translation>Projekt</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>MCU</source>
+        <translation>MCU</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Board</source>
+        <translation>Platine</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Configuration</source>
+        <translation>Konfiguration</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Firmware</source>
+        <translation>Firmware</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>NECTO</source>
+        <translation>NECTO</translation>
+    </message>
+    <message>
+        <location line="+64" />
+        <source>Nothing was recorded</source>
+        <translation>Es wurde nichts aufgezeichnet</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>This recording is empty: the session ended before any trace data arrived.</source>
+        <translation>Diese Aufzeichnung ist leer: Die Sitzung endete, bevor Trace-Daten eintrafen.</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>No project open</source>
+        <translation>Kein Projekt geöffnet</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Open a project to see its I2C, SPI, UART and pin activity on a timeline.</source>
+        <translation>Öffnen Sie ein Projekt, um seine I2C-, SPI-, UART- und Pin-Aktivität auf einer Zeitleiste zu sehen.</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Reading the project's libraries…</source>
+        <translation>Bibliotheken des Projekts werden gelesen…</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Trace is on for %1</source>
+        <translation>Trace ist für %1 aktiviert</translation>
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Restarting: rebuilding with trace and programming the board…</source>
+        <translation>Neustart: Neu erstellen mit Trace und Platine programmieren…</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>This firmware was built without trace. Restart debugging to rebuild it.</source>
+        <translation>Diese Firmware wurde ohne Trace erstellt. Starten Sie das Debuggen neu, um sie neu zu erstellen.</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>The firmware is paused. Continue (F6) to run it and capture its activity.</source>
+        <translation>Die Firmware ist angehalten. Fahren Sie fort (F6), um sie auszuführen und ihre Aktivität zu erfassen.</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Waiting for the first trace data from the firmware…</source>
+        <translation>Warten auf die ersten Trace-Daten von der Firmware…</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Starting: building and programming the board…</source>
+        <translation>Start: Erstellen und Platine programmieren…</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Start debugging to capture your firmware's bus and pin activity.</source>
+        <translation>Starten Sie das Debuggen, um die Bus- und Pin-Aktivität Ihrer Firmware zu erfassen.</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Restart Debugging</source>
+        <translation>Debuggen neu starten</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Continue</source>
+        <translation>Fortsetzen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Start Debugging</source>
+        <translation>Debuggen starten</translation>
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Visualize Your Firmware Activity</source>
+        <translation>Visualisieren Sie Ihre Firmware-Aktivität</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Monitor I²C, SPI, UART, and GPIO signals on an interactive timeline.</source>
+        <translation>I²C-, SPI-, UART- und GPIO-Signale auf einer interaktiven Zeitleiste überwachen.</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Trace isn't available for %1</source>
+        <translation>Trace ist für %1 nicht verfügbar</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Trace works with %1 MCUs.</source>
+        <translation>Trace funktioniert mit %1-MCUs.</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Trace isn't available with %1</source>
+        <translation>Trace ist mit %1 nicht verfügbar</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Trace needs GCC, Clang or XC32. Choose one in the project's configuration.</source>
+        <translation>Trace erfordert GCC, Clang oder XC32. Wählen Sie einen davon in der Konfiguration des Projekts.</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Trace isn't in this configuration yet</source>
+        <translation>Trace ist noch nicht in dieser Konfiguration enthalten</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Its libraries were built without the trace. Rebuild the configuration (Configure project, Edit), or update mikroSDK.</source>
+        <translation>Die Bibliotheken wurden ohne Trace erstellt. Erstellen Sie die Konfiguration neu (Projekt konfigurieren, Bearbeiten) oder aktualisieren Sie mikroSDK.</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Turn it off so the project builds.</source>
+        <translation>Deaktivieren Sie Trace, damit das Projekt erstellt werden kann.</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Turn Off Trace</source>
+        <translation>Trace deaktivieren</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Enable Trace</source>
+        <translation>Trace aktivieren</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Removes the trace library from your project</source>
+        <translation>Entfernt die Trace-Bibliothek aus Ihrem Projekt</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Adds the trace library to your project</source>
+        <translation>Fügt Ihrem Projekt die Trace-Bibliothek hinzu</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+183" />
+        <source>%n records</source>
+        <translation><numerusform>%n Eintrag</numerusform><numerusform>%n Einträge</numerusform></translation>
+    </message>
+    <message>
+        <location line="+44" />
+        <source>Open trace…</source>
+        <translation>Trace öffnen…</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Compare with recording…</source>
+        <translation>Mit Aufzeichnung vergleichen…</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Compare with recording</source>
+        <translation>Mit Aufzeichnung vergleichen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <location line="+1349" />
+        <location line="+79" />
+        <source>NECTO trace (*.nectotrace)</source>
+        <translation>NECTO-Trace (*.nectotrace)</translation>
+    </message>
+    <message>
+        <location line="-1424" />
+        <source>Show a recording under this run's lanes, with what differs marked</source>
+        <translation>Eine Aufzeichnung unter den Spuren dieses Laufs anzeigen, mit markierten Abweichungen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Recent recordings</source>
+        <translation>Letzte Aufzeichnungen</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Export transfers as CSV…</source>
+        <translation>Übertragungen als CSV exportieren…</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Every bus transfer, with all its bytes: for a spreadsheet or a script.</source>
+        <translation>Jede Busübertragung mit allen Bytes: für eine Tabellenkalkulation oder ein Skript.</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Export as VCD…</source>
+        <translation>Als VCD exportieren…</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>The checked lanes as signals, for GTKWave or PulseView: pins, values, and when each bus was busy.</source>
+        <translation>Die markierten Spuren als Signale, für GTKWave oder PulseView: Pins, Werte und wann jeder Bus belegt war.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+563" />
+        <source>Export A–B transfers as CSV…</source>
+        <translation>A–B-Übertragungen als CSV exportieren…</translation>
+    </message>
+    <message>
+        <location line="-561" />
+        <source>The bus transfers that start between markers A and B.</source>
+        <translation>Die Busübertragungen, die zwischen Marker A und B beginnen.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+561" />
+        <source>Export A–B as VCD…</source>
+        <translation>A–B als VCD exportieren…</translation>
+    </message>
+    <message>
+        <location line="-560" />
+        <source>The checked lanes from marker A to marker B, A at time 0.</source>
+        <translation>Die markierten Spuren von Marker A bis Marker B, A bei Zeit 0.</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+426" />
+        <source>%n found</source>
+        <translation><numerusform>%n gefunden</numerusform><numerusform>%n gefunden</numerusform></translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>No match</source>
+        <translation>Kein Treffer</translation>
+    </message>
+    <message>
+        <location line="+47" />
+        <source>%1 records lost</source>
+        <translation>%1 Einträge verloren</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No timer: order only</source>
+        <translation>Kein Timer: nur Reihenfolge</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>The trace buffer filled up between reads; the timeline has gaps there.</source>
+        <translation>Der Trace-Puffer ist zwischen Lesevorgängen vollgelaufen; die Zeitleiste hat dort Lücken.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>%1 lanes, %2 events</source>
+        <translation>%1 Spuren, %2 Ereignisse</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+36" />
+        <source>%n failed</source>
+        <translation><numerusform>%n fehlgeschlagen</numerusform><numerusform>%n fehlgeschlagen</numerusform></translation>
+    </message>
+    <message>
+        <location line="+17" />
+        <source>Go to marker A</source>
+        <translation>Zu Marker A springen</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Go to marker B</source>
+        <translation>Zu Marker B springen</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Zoom to A–B</source>
+        <translation>Auf A–B zoomen</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Copy measurement</source>
+        <translation>Messung kopieren</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>A, B, the time between them and what each lane did then, as text</source>
+        <translation>A, B, die Zeit dazwischen und was jede Spur dabei tat, als Text</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Clear markers</source>
+        <translation>Marker entfernen</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Edit note…</source>
+        <translation>Notiz bearbeiten…</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Remove note</source>
+        <translation>Notiz entfernen</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Add note here…</source>
+        <translation>Notiz hier hinzufügen…</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Go to note</source>
+        <translation>Zur Notiz springen</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <location line="+47" />
+        <source>Place marker A here</source>
+        <translation>Marker A hier setzen</translation>
+    </message>
+    <message>
+        <location line="-45" />
+        <location line="+47" />
+        <source>Place marker B here</source>
+        <translation>Marker B hier setzen</translation>
+    </message>
+    <message>
+        <location line="-42" />
+        <source>Remove marker A</source>
+        <translation>Marker A entfernen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Remove marker B</source>
+        <translation>Marker B entfernen</translation>
+    </message>
+    <message>
+        <location line="+46" />
+        <source>Place markers at its start and end</source>
+        <translation>Marker an Anfang und Ende setzen</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>A where the frame starts, B where it ends</source>
+        <translation>A am Rahmenbeginn, B am Rahmenende</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>A where the transfer starts, B where it ends</source>
+        <translation>A am Übertragungsbeginn, B am Übertragungsende</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Add note</source>
+        <translation>Notiz hinzufügen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Note at %1:</source>
+        <translation>Notiz bei %1:</translation>
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Edit note</source>
+        <translation>Notiz bearbeiten</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Note at %1 (empty removes it):</source>
+        <translation>Notiz bei %1 (leer entfernt sie):</translation>
+    </message>
+    <message>
+        <location line="+30" />
+        <source>Save notes</source>
+        <translation>Notizen speichern</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not save the notes to %1: %2</source>
+        <translation>Die Notizen konnten nicht in %1 gespeichert werden: %2</translation>
+    </message>
+    <message>
+        <location line="+178" />
+        <source>Signals rebuilt from the recorded transfers, not captured; each spread over its transfer's time.</source>
+        <translation>Signale aus den aufgezeichneten Übertragungen rekonstruiert, nicht erfasst; jedes über die Dauer seiner Übertragung verteilt.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Signals rebuilt from the recorded transfers at the bus's rate, not captured.</source>
+        <translation>Signale aus den aufgezeichneten Übertragungen mit der Busrate rekonstruiert, nicht erfasst.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>CS is as recorded on its pin.</source>
+        <translation>CS entspricht der Aufzeichnung auf seinem Pin.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Only in the recording.</source>
+        <translation>Nur in der Aufzeichnung.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Not in the recording.</source>
+        <translation>Nicht in der Aufzeichnung.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Recorded on other pins: %1.</source>
+        <translation>Auf anderen Pins aufgezeichnet: %1.</translation>
+    </message>
+    <message>
+        <location line="+19" />
+        <source>The same as the recording's lane.</source>
+        <translation>Wie die Spur der Aufzeichnung.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 difference from the recording.</source>
+        <translation>1 Unterschied zur Aufzeichnung.</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 differences from the recording.</source>
+        <translation>%1 Unterschiede zur Aufzeichnung.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 transfer only one run has (extra).</source>
+        <translation>1 Übertragung, die nur ein Lauf hat (zusätzlich).</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 transfers only one run has (extra).</source>
+        <translation>%1 Übertragungen, die nur ein Lauf hat (zusätzlich).</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Hide lane</source>
+        <translation>Spur ausblenden</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Show all lanes</source>
+        <translation>Alle Spuren anzeigen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Default order</source>
+        <translation>Standardreihenfolge</translation>
+    </message>
+    <message>
+        <location line="+32" />
+        <source>Fit lanes to height</source>
+        <translation>Spuren an Höhe anpassen</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Every lane taller or shorter by the same amount, so that they fill the timeline's height</source>
+        <translation>Jede Spur um denselben Betrag höher oder niedriger, sodass sie die Höhe der Zeitleiste ausfüllen</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Reset lane heights</source>
+        <translation>Spurhöhen zurücksetzen</translation>
+    </message>
+    <message>
+        <location line="+25" />
+        <location line="+78" />
+        <source>between markers A and B</source>
+        <translation>zwischen Marker A und B</translation>
+    </message>
+    <message>
+        <location line="-77" />
+        <location line="+78" />
+        <source>over the whole trace</source>
+        <translation>über den gesamten Trace</translation>
+    </message>
+    <message>
+        <location line="-76" />
+        <source>Find longest gap</source>
+        <translation>Längste Lücke suchen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>The longest time the lane did nothing, %1: marked A to B</source>
+        <translation>Die längste Zeit ohne Aktivität auf der Spur, %1: markiert von A bis B</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Measure delay to</source>
+        <translation>Verzögerung messen bis</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>From each event of this lane to the next of another, %1: how long the firmware took to react</source>
+        <translation>Von jedem Ereignis dieser Spur bis zum nächsten einer anderen, %1: wie lange die Firmware zum Reagieren brauchte</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>From each rise</source>
+        <translation>Ab jeder steigenden Flanke</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>From each fall</source>
+        <translation>Ab jeder fallenden Flanke</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>From each change</source>
+        <translation>Ab jeder Änderung</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Longest gap</source>
+        <translation>Längste Lücke</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Fewer than two events of the lane to find a gap between.</source>
+        <translation>Weniger als zwei Ereignisse der Spur, um eine Lücke dazwischen zu finden.</translation>
+    </message>
+    <message>
+        <location line="+20" />
+        <source>each change of %1</source>
+        <translation>jede Änderung von %1</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>each rise of %1</source>
+        <translation>jede steigende Flanke von %1</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>each fall of %1</source>
+        <translation>jede fallende Flanke von %1</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>From %1 to the next event of %2, %3.</source>
+        <translation>Von %1 bis zum nächsten Ereignis von %2, %3.</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>each event of %1</source>
+        <translation>jedes Ereignis von %1</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Delay</source>
+        <translation>Verzögerung</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>No event of %1 came after one of %2 before the next.</source>
+        <translation>Nach keinem Ereignis von %2 kam ein Ereignis von %1 vor dem nächsten.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+24" />
+        <source>Close</source>
+        <translation>Schließen</translation>
+    </message>
+    <message>
+        <location line="-10" />
+        <source>min %1 · avg %2 · max %3 · σ %4 (%5 delays)</source>
+        <translation>min. %1 · Ø %2 · max. %3 · σ %4 (%5 Verzögerungen)</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+7" />
+        <source>%n with no event of %1 before the next one.</source>
+        <translation><numerusform>%n ohne Ereignis von %1 vor dem nächsten.</numerusform><numerusform>%n ohne Ereignis von %1 vor dem nächsten.</numerusform></translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Copy</source>
+        <translation>Kopieren</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Show longest</source>
+        <translation>Längste anzeigen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Markers A and B on the longest delay, zoomed to</source>
+        <translation>Marker A und B auf der längsten Verzögerung, dorthin gezoomt</translation>
+    </message>
+    <message>
+        <location line="+21" />
+        <source>Show signals</source>
+        <translation>Signale anzeigen</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>The wires drawn under the transfers, rebuilt from their bytes: not a capture of the pins</source>
+        <translation>Die unter den Übertragungen gezeichneten Leitungen, aus ihren Bytes rekonstruiert: keine Erfassung der Pins</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Wires</source>
+        <translation>Leitungen</translation>
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Inject a fault: needs a newer MikroSDK.Trace</source>
+        <translation>Störung injizieren: erfordert ein neueres MikroSDK.Trace</translation>
+    </message>
+    <message>
+        <location line="+31" />
+        <source>Make 0x%1 not answer</source>
+        <translation>0x%1 nicht antworten lassen</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Stick MISO at 0xFF</source>
+        <translation>MISO auf 0xFF festsetzen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Stick MISO at 0x00</source>
+        <translation>MISO auf 0x00 festsetzen</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Hold High</source>
+        <translation>Auf High halten</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Hold Low</source>
+        <translation>Auf Low halten</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Take the devices off the bus</source>
+        <translation>Geräte vom Bus nehmen</translation>
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Force a value…</source>
+        <translation>Wert erzwingen…</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Force a value</source>
+        <translation>Wert erzwingen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Volts the input reads:</source>
+        <translation>Spannung (V), die der Eingang liest:</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Count the input reads:</source>
+        <translation>Rohwert, den der Eingang liest:</translation>
+    </message>
+    <message>
+        <location line="+18" />
+        <source>Remove fault: %1</source>
+        <translation>Störung entfernen: %1</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Faults</source>
+        <translation>Störungen</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>1 Fault</source>
+        <translation>1 Störung</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>%1 Faults</source>
+        <translation>%1 Störungen</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
+        <translation>MikroSDK.Trace dieser Firmware ist für Störungen zu alt: Aktualisieren Sie mikroSDK und erstellen Sie das Projekt neu.</translation>
+    </message>
+    <message>
+        <location line="+41" />
+        <source>Open trace</source>
+        <translation>Trace öffnen</translation>
+    </message>
+    <message>
+        <location line="+28" />
+        <source>Export A–B as VCD</source>
+        <translation>A–B als VCD exportieren</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Export A–B transfers as CSV</source>
+        <translation>A–B-Übertragungen als CSV exportieren</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Export as VCD</source>
+        <translation>Als VCD exportieren</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Export transfers as CSV</source>
+        <translation>Übertragungen als CSV exportieren</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Value Change Dump (*.vcd)</source>
+        <translation>Value Change Dump (*.vcd)</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>CSV (*.csv)</source>
+        <translation>CSV (*.csv)</translation>
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Exporting the trace</source>
+        <translation>Trace wird exportiert</translation>
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Export trace</source>
+        <translation>Trace exportieren</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not write %1: %2</source>
+        <translation>%1 konnte nicht geschrieben werden: %2</translation>
+    </message>
+    <message>
+        <location line="+20" />
+        <location line="+8" />
+        <source>Record trace</source>
+        <translation>Trace aufzeichnen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not record to %1: %2</source>
+        <translation>Aufzeichnung in %1 nicht möglich: %2</translation>
+    </message>
+    <message>
+        <location line="+61" />
+        <source>Nothing came from the firmware while recording: this recording has no trace. Record while the target runs, until the transfers show.</source>
+        <translation>Während der Aufzeichnung kam nichts von der Firmware: Diese Aufzeichnung enthält keinen Trace. Zeichnen Sie auf, während das Ziel läuft, bis die Übertragungen erscheinen.</translation>
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Type a name, or Cancel to keep %1.</source>
+        <translation>Geben Sie einen Namen ein oder wählen Sie Abbrechen, um %1 beizubehalten.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>A name only, without folders.</source>
+        <translation>Nur ein Name, ohne Ordner.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>There is a recording named %1 already.</source>
+        <translation>Es gibt bereits eine Aufzeichnung namens %1.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Could not rename the recording: check the name, or Cancel to keep %1.</source>
+        <translation>Die Aufzeichnung konnte nicht umbenannt werden: Prüfen Sie den Namen oder wählen Sie Abbrechen, um %1 beizubehalten.</translation>
+    </message>
+    <message>
+        <location line="+37" />
+        <source>Armed</source>
+        <translation>Aktiv</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Trigger</source>
+        <translation>Trigger</translation>
+    </message>
+    <message>
+        <location line="+18" />
+        <source>marker A placed</source>
+        <translation>Marker A gesetzt</translation>
+    </message>
+    <message>
+        <location line="+12" />
+        <source>already recording</source>
+        <translation>Aufzeichnung läuft bereits</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>not recorded: Record needs a debug session of a project</source>
+        <translation>nicht aufgezeichnet: „Aufzeichnen“ erfordert eine Debug-Sitzung eines Projekts</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>not recorded: %1</source>
+        <translation>nicht aufgezeichnet: %1</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>recording</source>
+        <translation>zeichnet auf</translation>
+    </message>
+    <message>
+        <location line="+9" />
+        <source>paused</source>
+        <translation>angehalten</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Fired at %1 on %2</source>
+        <translation>Ausgelöst bei %1 auf %2</translation>
+    </message>
+    <message>
+        <location line="+22" />
+        <source>Recording to %1. Press to stop.</source>
+        <translation>Aufzeichnung in %1. Zum Stoppen drücken.</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Record</source>
+        <translation>Aufzeichnen</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>This is a recording: Record records the live trace, in the Trace tool while debugging.</source>
+        <translation>Dies ist eine Aufzeichnung: „Aufzeichnen“ zeichnet den Live-Trace auf, im Trace-Tool während des Debuggens.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Record starts with a debug session of a project with trace on.</source>
+        <translation>„Aufzeichnen“ erfordert eine Debug-Sitzung eines Projekts mit aktiviertem Trace.</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder; you name it when it stops.</source>
+        <translation>Den Trace ab jetzt in eine Datei aufzeichnen, ohne die Begrenzung der Ansicht: für lange Läufe. Die Datei wird im Ordner .trace des Projekts abgelegt; Sie benennen sie nach dem Stoppen.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>The last recording stopped: %1</source>
+        <translation>Die letzte Aufzeichnung wurde beendet: %1</translation>
+    </message>
+    <message>
+        <location line="+33" />
+        <source>Recording</source>
+        <translation>Aufzeichnung</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>cut short</source>
+        <translation>vorzeitig beendet</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>NECTO %1</source>
+        <translation>NECTO %1</translation>
+    </message>
+    <message>
+        <location line="+38" />
+        <source>Comparing with %1</source>
+        <translation>Vergleich mit %1</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Each lane has the recording's lane under it (REC), on the same times from each run's start. What differs is outlined; Align at markers lines the runs up.</source>
+        <translation>Unter jeder Spur liegt die Spur der Aufzeichnung (REC), mit denselben Zeiten ab dem Start des jeweiligen Laufs. Abweichungen sind umrandet; „An Markern ausrichten“ richtet die Läufe aneinander aus.</translation>
+    </message>
+    <message>
+        <location line="+88" />
+        <source> (all failed)</source>
+        <translation> (alle fehlgeschlagen)</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source> (%1 failed)</source>
+        <translation> (%1 fehlgeschlagen)</translation>
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Nothing compared: the recording is empty</source>
+        <translation>Nichts verglichen: Die Aufzeichnung ist leer</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Nothing compared: no lane is in both runs</source>
+        <translation>Nichts verglichen: Keine Spur ist in beiden Läufen</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Nothing compared: no transfer is in both runs</source>
+        <translation>Nichts verglichen: Keine Übertragung ist in beiden Läufen</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>%1 failed here, OK in the recording</source>
+        <translation>%1 hier fehlgeschlagen, in der Aufzeichnung OK</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 OK here, failed in the recording</source>
+        <translation>%1 hier OK, in der Aufzeichnung fehlgeschlagen</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No differences</source>
+        <translation>Keine Unterschiede</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>1 difference</source>
+        <translation>1 Unterschied</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 differences</source>
+        <translation>%1 Unterschiede</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 transfer only in this run</source>
+        <translation>1 Übertragung nur in diesem Lauf</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 transfers only in this run</source>
+        <translation>%1 Übertragungen nur in diesem Lauf</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>1 transfer only in the recording</source>
+        <translation>1 Übertragung nur in der Aufzeichnung</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 transfers only in the recording</source>
+        <translation>%1 Übertragungen nur in der Aufzeichnung</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>1 lane in one run only</source>
+        <translation>1 Spur nur in einem Lauf</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 lanes in one run only</source>
+        <translation>%1 Spuren nur in einem Lauf</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>The recording has no trace: Record was stopped before the firmware handed a buffer over. Record while the target runs, until the transfers show.</source>
+        <translation>Die Aufzeichnung enthält keinen Trace: „Aufzeichnen“ wurde beendet, bevor die Firmware einen Puffer übergeben hat. Zeichnen Sie auf, während das Ziel läuft, bis die Übertragungen erscheinen.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Lanes pair by their kind, pins and I2C device, transfers by their order in each lane. This run and the recording have none alike: another firmware, a recording of another project, or one made later in its session.</source>
+        <translation>Spuren werden nach Art, Pins und I2C-Gerät zugeordnet, Übertragungen nach ihrer Reihenfolge in jeder Spur. Dieser Lauf und die Aufzeichnung haben nichts gemeinsam: eine andere Firmware, eine Aufzeichnung eines anderen Projekts oder eine, die später in dessen Sitzung entstand.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Transfers and pin changes compared by their order in each lane. Differences are banded on the timeline and said in the table's Compared column; transfers only one run has are outlined dashed. The arrows go through all of them.</source>
+        <translation>Übertragungen und Pin-Änderungen werden nach ihrer Reihenfolge in jeder Spur verglichen. Unterschiede sind auf der Zeitleiste hinterlegt und in der Spalte „Verglichen“ der Tabelle beschrieben; Übertragungen, die nur ein Lauf hat, sind gestrichelt umrandet. Die Pfeile springen durch alle.</translation>
+    </message>
+    <message>
+        <location line="+44" />
+        <source>on %1</source>
+        <translation>auf %1</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>to %1</source>
+        <translation>bis %1</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>%1 transfers %2 failed here that worked in the recording, the first at %3.</source>
+        <translation>%1 Übertragungen %2 sind hier fehlgeschlagen, die in der Aufzeichnung funktionierten; die erste bei %3.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>From %1 on, all %2 transfers %3 failed; the recording's worked.</source>
+        <translation>Ab %1 sind alle %2 Übertragungen %3 fehlgeschlagen; die der Aufzeichnung funktionierten.</translation>
+    </message>
+    <message>
+        <location line="+9" />
+        <source>mikroBUS %1</source>
+        <translation>mikroBUS %1</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>The device at %1 stopped answering: is %2 fitted%3?</source>
+        <translation>Das Gerät an %1 antwortet nicht mehr: Ist %2 aufgesteckt%3?</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source> on %1</source>
+        <translation> auf %1</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>The device at %1 stopped answering: is it fitted and connected%2?</source>
+        <translation>Das Gerät an %1 antwortet nicht mehr: Ist es aufgesteckt und angeschlossen%2?</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source> (%1)</source>
+        <translation> (%1)</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Is the device still connected?</source>
+        <translation>Ist das Gerät noch angeschlossen?</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::LaneNameDelegate</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_view.cpp" line="+187" />
+        <source>Not in this run</source>
+        <translation>Nicht in diesem Lauf</translation>
+    </message>
+    <message>
+        <location line="+27" />
+        <source>%1 differ</source>
+        <translation>%1 abweichend</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 extra</source>
+        <translation>%1 zusätzlich</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>✓ Same</source>
+        <translation>✓ Gleich</translation>
+    </message>
+    <message>
+        <location line="+17" />
+        <source>Not in the recording</source>
+        <translation>Nicht in der Aufzeichnung</translation>
     </message>
 </context>
 <context>
@@ -46881,198 +48652,56 @@ a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
     </message>
 </context>
 <context>
-    <name>Necto::PackageReadmeViewer</name>
-    <message>
-        <location filename="../core/src/package_manager/view/package_readme_viewer.cpp" line="+343" />
-        <location line="+64" />
-        <location line="+56" />
-        <source>No network connection.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-96" />
-        <location line="+65" />
-        <location line="+144" />
-        <source>The package description could not be loaded.</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>DapStdoutReader</name>
-    <message>
-        <location filename="../core/src/debugger/dap_stdout_reader.cpp" line="+94" />
-        <source>Standard output: no breakpoint on stdBuffFullBreak (%1): %2</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::TraceRecordingNameDialog</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_recording_name_dialog.ui" line="+14" />
-        <location line="+24" />
-        <source>Recording saved</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+45" />
-        <source>Name</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+74" />
-        <source>Keep the automatic name</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Cancel</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Save</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::WebPeekWindow</name>
-    <message>
-        <location filename="../core/src/web_browser/web_peek_window.ui" line="+20" />
-        <location filename="../core/src/web_browser/web_peek_window.cpp" line="+164" />
-        <source>Web</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+30" />
-        <source>Back</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Forward</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Reload</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+23" />
-        <source>Open in Web tab</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Open in system browser</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>RenesasE2ProgramJob</name>
-    <message>
-        <location line="+32" />
-        <source>Renesas E2: Programming</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Renesas E2: %1</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::Debugger</name>
-    <message>
-        <location filename="../core/src/debugger/debugger.cpp" line="+318" />
-        <source>No debug port is available for the secondary core; only the primary core is debugged.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+290" />
-        <source>Opening %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+14" />
-        <source>Open trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Could not open %1: %2</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
     <name>Trace::i2c</name>
     <message>
         <location filename="../core/src/debugger/trace/trace_signals.cpp" line="-498" />
         <source>Start</source>
-        <translation type="unfinished" />
+        <translation>Start</translation>
     </message>
     <message>
         <location line="+21" />
         <source>Stop</source>
-        <translation type="unfinished" />
+        <translation>Stopp</translation>
     </message>
     <message>
         <location line="+65" />
         <source>Not known</source>
-        <translation type="unfinished" />
+        <translation>Unbekannt</translation>
     </message>
     <message>
         <location line="+28" />
         <source>Address</source>
-        <translation type="unfinished" />
+        <translation>Adresse</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Write [%1]</source>
-        <translation type="unfinished" />
+        <translation>Schreiben [%1]</translation>
     </message>
     <message>
         <location line="+1" />
         <source>W %1</source>
-        <translation type="unfinished" />
+        <translation>W %1</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Write</source>
-        <translation type="unfinished" />
+        <translation>Schreiben</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Read [%1]</source>
-        <translation type="unfinished" />
+        <translation>Lesen [%1]</translation>
     </message>
     <message>
         <location line="+1" />
         <source>R %1</source>
-        <translation type="unfinished" />
+        <translation>R %1</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Read</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::BusRenderer</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="+204" />
-        <source>No timer in the firmware: the signals need the transfers' times</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+808" />
-        <source>Not in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Not in this run</source>
-        <translation type="unfinished" />
+        <translation>Lesen</translation>
     </message>
 </context>
 <context>
@@ -47080,471 +48709,17 @@ a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
     <message>
         <location filename="../core/src/debugger/debug_view/src/memory_view_model.cpp" line="+124" />
         <source>%1: 0x%2 (%3)</source>
-        <translation type="unfinished" />
+        <translation>%1: 0x%2 (%3)</translation>
     </message>
     <message>
         <location line="+23" />
         <source>Address</source>
-        <translation type="unfinished" />
+        <translation>Adresse</translation>
     </message>
     <message>
         <location line="+2" />
         <source>ASCII</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::TimelineViewport</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_timeline_viewport.cpp" line="+67" />
-        <source>New data ▸</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Follow the newest events</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+311" />
-        <source>No firmware trace yet. Link MikroSDK.Trace to the project, call trace_init() and start debugging.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+505" />
-        <source>Not in this run</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Not in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>%1 differ</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>%1 extra</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <location line="+585" />
-        <source>✓ Same</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-429" />
-        <source>Empty recording: nothing came from the firmware while it ran</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>End of recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+127" />
-        <source>Duty: %1 %</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Freq: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>width⁻¹: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+214" />
-        <source>Next edge (Ctrl+→)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Previous edge (Ctrl+←)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Next value (Ctrl+→)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Previous value (Ctrl+←)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Next transfer (Ctrl+→)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Previous transfer (Ctrl+←)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+72" />
-        <source>+ Only in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>+ Only in this run</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Time</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>RenesasE2Job</name>
-    <message>
-        <location line="-176" />
-        <source>No free TCP port for the Renesas E2 GDB server.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+19" />
-        <source>Connection to the Renesas E2 GDB server failed: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Renesas E2: cannot select the target thread (%1).</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+22" />
-        <source>Renesas E2: %1 failed (%2).</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+66" />
-        <source>Renesas E2 GDB server exited unexpectedly (exit code %1).</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>HeapUsageBar</name>
-    <message>
-        <location filename="../core/src/debugger/debug_view/src/heap_usage_bar.cpp" line="+64" />
-        <source>Total Heap: start a debug session and halt to read</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+14" />
-        <source>Total Heap: not available for this allocator</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Total Heap: 0 / %1 (nothing allocated yet)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Total Heap: nothing allocated yet</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Total Heap: %1 / %2 (%3%)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Total Heap: %1 free</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Total Heap: </source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+23" />
-        <source>Free: %1 (low: %2)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>The least free heap this run. A big gap means bursts of allocation.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Free: %1</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::ClickPresetChip</name>
-    <message>
-        <location filename="../core/src/productivity_hub/common/click_preset_chip.ui" line="+23" />
-        <source>Frame</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../core/src/productivity_hub/common/click_preset_chip.cpp" line="+37" />
-        <source>Delete combination</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::TasksViewModel</name>
-    <message>
-        <location filename="../core/src/debugger/debug_view/src/tasks_view_model.cpp" line="+21" />
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Ready</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Blocked</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Suspended</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Deleted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+81" />
-        <source>%1 (base %2)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+33" />
-        <source>Delay / notify</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>0 (clock stopped)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>(current)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Double-click to go to where this task is executing.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Double-click to go to where this task is parked.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>No source location available for this task.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Raised from %1 while it holds a mutex.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Task control block address: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Could not be computed for this task.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Peak so far. Total size unknown for this build.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 B never used.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Blocked on "%1", held by %2.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Blocked on "%1".</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Waiting on an unregistered object.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Waiting on a delay or notification.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Only shown for tasks waiting on an object.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Needs run-time stats enabled in FreeRTOSConfig.h.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Running now - see the Call Stack view.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Not available for this target.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+88" />
-        <source>Double-click a task to go to its code.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>The handle returned when the task was created.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>What each task is doing right now.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Higher runs first. 0 is the lowest.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>The most stack each task has ever used, not its usage now.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>What each blocked task is waiting for.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Share of CPU time used by each task.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Where each waiting task will resume.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Each core runs its own FreeRTOS instance.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+12" />
-        <source>Core</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Name</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Task Handle</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>State</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Priority</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Stack Usage</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Event Object</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Runtime</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>PC</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::LaneNameDelegate</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_view.cpp" line="+187" />
-        <source>Not in this run</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+27" />
-        <source>%1 differ</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>%1 extra</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>✓ Same</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+17" />
-        <source>Not in the recording</source>
-        <translation type="unfinished" />
+        <translation>ASCII</translation>
     </message>
 </context>
 <context>
@@ -47601,1475 +48776,11 @@ a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
     </message>
 </context>
 <context>
-    <name>Trace::HoverCard</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_hover_card.cpp" line="+69" />
-        <source>High</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Low</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Level</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>High for</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Low for</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Width⁻¹</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Period</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Frequency</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Duty</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Transfers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Written</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <location line="+45" />
-        <source>Read</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-43" />
-        <location line="+68" />
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-66" />
-        <location line="+7" />
-        <source>Span</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-5" />
-        <source>Too fast to record each transfer: counted, with their bytes.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Changes</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Ends</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Too fast to record each change.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Value</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Operation</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>No device answered the reset.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Address</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Command</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Register</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Sent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Received</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Write</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Duration</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+18" />
-        <source>Injected</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>OK</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Pin</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Fault</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Compared</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+66" />
-        <source>NECTO made the device not answer.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>NECTO held MISO: these bytes were not read.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>NECTO took the devices off the bus.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>NECTO forced this value.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>NECTO held the pin at this level.</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::SetupNoticePopup</name>
-    <message>
-        <location filename="../core/src/project_manager/setup_notice_popup.ui" line="+50" />
-        <source>...</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+49" />
-        <source>secondary</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>primary</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::QueuesViewModel</name>
-    <message>
-        <location filename="../core/src/debugger/debug_view/src/queues_view_model.cpp" line="+18" />
-        <source>Queue</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Semaphore</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Mutex</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Semaphore/Mutex</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+77" />
-        <source>Available</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Taken</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>(unheld)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+12" />
-        <source>Address: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Could not be determined on this FreeRTOS version.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>This FreeRTOS version cannot tell the two apart.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Not resolvable for this entry.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>1 = available, 0 = currently held.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Current count / maximum count.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Available when 1, held when 0.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Capacity unknown - showing queued messages only.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Messages currently queued / queue capacity.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Only meaningful for mutexes.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>No task currently holds this mutex.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+98" />
-        <source>Each core runs its own independent FreeRTOS instance.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Only registered objects appear here.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>What kind of object this is.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>How full each object is.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>The task currently holding this mutex.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+12" />
-        <source>Core</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Name</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Type</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Fill Level</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Held By</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::TraceValueDialog</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_value_dialog.ui" line="+14" />
-        <location line="+24" />
-        <source>Force a value</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+61" />
-        <source>Cancel</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>OK</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::ReadmePreviewPopup</name>
-    <message>
-        <location filename="../core/src/package_manager/view/readme_preview_popup.ui" line="+54" />
-        <source>Click to open the full description</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../core/src/package_manager/view/readme_preview_popup.cpp" line="+134" />
-        <source>Loading description...</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::ValueRenderer</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="-230" />
-        <source>Fit</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::TraceView</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_view.cpp" line="+558" />
-        <source>Hide the transfers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Show the transfers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Collapse the lane list</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Expand the lane list</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+158" />
-        <source>Project</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>MCU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Board</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Configuration</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Firmware</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>NECTO</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+64" />
-        <source>Nothing was recorded</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>This recording is empty: the session ended before any trace data arrived.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>No project open</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Open a project to see its I2C, SPI, UART and pin activity on a timeline.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Reading the project's libraries…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Trace is on for %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+12" />
-        <source>Restarting: rebuilding with trace and programming the board…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>This firmware was built without trace. Restart debugging to rebuild it.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>The firmware is paused. Continue (F6) to run it and capture its activity.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Waiting for the first trace data from the firmware…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Starting: building and programming the board…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Start debugging to capture your firmware's bus and pin activity.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Restart Debugging</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Continue</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Start Debugging</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+20" />
-        <source>Visualize Your Firmware Activity</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Monitor I²C, SPI, UART, and GPIO signals on an interactive timeline.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Trace isn't available for %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Trace works with %1 MCUs.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Trace isn't available with %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Trace needs GCC, Clang or XC32. Choose one in the project's configuration.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Trace isn't in this configuration yet</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Its libraries were built without the trace. Rebuild the configuration (Configure project, Edit), or update mikroSDK.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Turn it off so the project builds.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Turn Off Trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Enable Trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Removes the trace library from your project</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Adds the trace library to your project</source>
-        <translation type="unfinished" />
-    </message>
-    <message numerus="yes">
-        <location line="+183" />
-        <source>%n records</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
-    </message>
-    <message>
-        <location line="+44" />
-        <source>Open trace…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Compare with recording…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Compare with recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <location line="+1349" />
-        <location line="+79" />
-        <source>NECTO trace (*.nectotrace)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-1424" />
-        <source>Show a recording under this run's lanes, with what differs marked</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Recent recordings</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Export transfers as CSV…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Every bus transfer, with all its bytes: for a spreadsheet or a script.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Export as VCD…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>The checked lanes as signals, for GTKWave or PulseView: pins, values, and when each bus was busy.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <location line="+563" />
-        <source>Export A–B transfers as CSV…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-561" />
-        <source>The bus transfers that start between markers A and B.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <location line="+561" />
-        <source>Export A–B as VCD…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-560" />
-        <source>The checked lanes from marker A to marker B, A at time 0.</source>
-        <translation type="unfinished" />
-    </message>
-    <message numerus="yes">
-        <location line="+426" />
-        <source>%n found</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
-    </message>
-    <message>
-        <location line="+0" />
-        <source>No match</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+47" />
-        <source>%1 records lost</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>No timer: order only</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>The trace buffer filled up between reads; the timeline has gaps there.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>%1 lanes, %2 events</source>
-        <translation type="unfinished" />
-    </message>
-    <message numerus="yes">
-        <location line="+36" />
-        <source>%n failed</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
-    </message>
-    <message>
-        <location line="+17" />
-        <source>Go to marker A</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Go to marker B</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Zoom to A–B</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Copy measurement</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>A, B, the time between them and what each lane did then, as text</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Clear markers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Edit note…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Remove note</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Add note here…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Go to note</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <location line="+47" />
-        <source>Place marker A here</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-45" />
-        <location line="+47" />
-        <source>Place marker B here</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-42" />
-        <source>Remove marker A</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Remove marker B</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+46" />
-        <source>Place markers at its start and end</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>A where the frame starts, B where it ends</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>A where the transfer starts, B where it ends</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Add note</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Note at %1:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+14" />
-        <source>Edit note</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Note at %1 (empty removes it):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+30" />
-        <source>Save notes</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Could not save the notes to %1: %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+178" />
-        <source>Signals rebuilt from the recorded transfers, not captured; each spread over its transfer's time.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Signals rebuilt from the recorded transfers at the bus's rate, not captured.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>CS is as recorded on its pin.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Only in the recording.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Not in the recording.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Recorded on other pins: %1.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+19" />
-        <source>The same as the recording's lane.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>1 difference from the recording.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 differences from the recording.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>1 transfer only one run has (extra).</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 transfers only one run has (extra).</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Hide lane</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Show all lanes</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Default order</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+32" />
-        <source>Fit lanes to height</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Every lane taller or shorter by the same amount, so that they fill the timeline's height</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Reset lane heights</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+25" />
-        <location line="+78" />
-        <source>between markers A and B</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-77" />
-        <location line="+78" />
-        <source>over the whole trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-76" />
-        <source>Find longest gap</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>The longest time the lane did nothing, %1: marked A to B</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Measure delay to</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>From each event of this lane to the next of another, %1: how long the firmware took to react</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>From each rise</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>From each fall</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>From each change</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Longest gap</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Fewer than two events of the lane to find a gap between.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+20" />
-        <source>each change of %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>each rise of %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>each fall of %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>From %1 to the next event of %2, %3.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>each event of %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Delay</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>No event of %1 came after one of %2 before the next.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <location line="+24" />
-        <source>Close</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-10" />
-        <source>min %1 · avg %2 · max %3 · σ %4 (%5 delays)</source>
-        <translation type="unfinished" />
-    </message>
-    <message numerus="yes">
-        <location line="+7" />
-        <source>%n with no event of %1 before the next one.</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Copy</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Show longest</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Markers A and B on the longest delay, zoomed to</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+21" />
-        <source>Show signals</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>The wires drawn under the transfers, rebuilt from their bytes: not a capture of the pins</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Wires</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+20" />
-        <source>Inject a fault: needs a newer MikroSDK.Trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+31" />
-        <source>Make 0x%1 not answer</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Stick MISO at 0xFF</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Stick MISO at 0x00</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Hold High</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Hold Low</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Take the devices off the bus</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Force a value…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Force a value</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Volts the input reads:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Count the input reads:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+18" />
-        <source>Remove fault: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Faults</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>1 Fault</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>%1 Faults</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+41" />
-        <source>Open trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+28" />
-        <source>Export A–B as VCD</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Export A–B transfers as CSV</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Export as VCD</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Export transfers as CSV</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Value Change Dump (*.vcd)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>CSV (*.csv)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+14" />
-        <source>Exporting the trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+12" />
-        <source>Export trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Could not write %1: %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+20" />
-        <location line="+8" />
-        <source>Record trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Could not record to %1: %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+61" />
-        <source>Nothing came from the firmware while recording: this recording has no trace. Record while the target runs, until the transfers show.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+14" />
-        <source>Type a name, or Cancel to keep %1.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>A name only, without folders.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>There is a recording named %1 already.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Could not rename the recording: check the name, or Cancel to keep %1.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+37" />
-        <source>Armed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Trigger</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+18" />
-        <source>marker A placed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+12" />
-        <source>already recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>not recorded: Record needs a debug session of a project</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>not recorded: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+9" />
-        <source>paused</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Fired at %1 on %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+22" />
-        <source>Recording to %1. Press to stop.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Record</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>This is a recording: Record records the live trace, in the Trace tool while debugging.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Record starts with a debug session of a project with trace on.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder; you name it when it stops.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>The last recording stopped: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+33" />
-        <source>Recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>cut short</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>NECTO %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+38" />
-        <source>Comparing with %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Each lane has the recording's lane under it (REC), on the same times from each run's start. What differs is outlined; Align at markers lines the runs up.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+88" />
-        <source> (all failed)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source> (%1 failed)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+20" />
-        <source>Nothing compared: the recording is empty</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Nothing compared: no lane is in both runs</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Nothing compared: no transfer is in both runs</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>%1 failed here, OK in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>%1 OK here, failed in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>No differences</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>1 difference</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 differences</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>1 transfer only in this run</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 transfers only in this run</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>1 transfer only in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 transfers only in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>1 lane in one run only</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 lanes in one run only</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>The recording has no trace: Record was stopped before the firmware handed a buffer over. Record while the target runs, until the transfers show.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Lanes pair by their kind, pins and I2C device, transfers by their order in each lane. This run and the recording have none alike: another firmware, a recording of another project, or one made later in its session.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Transfers and pin changes compared by their order in each lane. Differences are banded on the timeline and said in the table's Compared column; transfers only one run has are outlined dashed. The arrows go through all of them.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+44" />
-        <source>on %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>to %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>%1 transfers %2 failed here that worked in the recording, the first at %3.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>From %1 on, all %2 transfers %3 failed; the recording's worked.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+9" />
-        <source>mikroBUS %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>The device at %1 stopped answering: is %2 fitted%3?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source> on %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>The device at %1 stopped answering: is it fitted and connected%2?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source> (%1)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Is the device still connected?</source>
-        <translation type="unfinished" />
+    <name>DapStdoutReader</name>
+    <message>
+        <location filename="../core/src/debugger/dap_stdout_reader.cpp" line="+94" />
+        <source>Standard output: no breakpoint on stdBuffFullBreak (%1): %2</source>
+        <translation>Standardausgabe: kein Haltepunkt auf stdBuffFullBreak (%1): %2</translation>
     </message>
 </context>
 <context>
@@ -49077,502 +48788,592 @@ a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
     <message>
         <location filename="../core/src/debugger/trace/trace_recording.cpp" line="+298" />
         <source>No such file.</source>
-        <translation type="unfinished" />
+        <translation>Datei nicht vorhanden.</translation>
     </message>
     <message>
         <location line="+40" />
         <source>Not a NECTO trace recording.</source>
-        <translation type="unfinished" />
+        <translation>Keine NECTO-Trace-Aufzeichnung.</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Recorded by a newer NECTO (file version %1).</source>
-        <translation type="unfinished" />
+        <translation>Mit einer neueren NECTO-Version aufgezeichnet (Dateiversion %1).</translation>
     </message>
     <message numerus="yes">
         <location filename="../core/src/debugger/trace/trace_signals.cpp" line="+124" />
         <source>%n bytes not kept</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n Byte nicht gespeichert</numerusform><numerusform>%n Bytes nicht gespeichert</numerusform></translation>
     </message>
     <message>
         <location line="+5" />
         <source>Data</source>
-        <translation type="unfinished" />
+        <translation>Daten</translation>
     </message>
     <message>
         <location line="+526" />
         <source>%1 baud</source>
-        <translation type="unfinished" />
+        <translation>%1 Baud</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_faults.cpp" line="+138" />
         <source>Not answering</source>
-        <translation type="unfinished" />
+        <translation>Antwortet nicht</translation>
     </message>
     <message>
         <location line="+3" />
         <source>MISO stuck at 0x%1</source>
-        <translation type="unfinished" />
+        <translation>MISO hängt auf 0x%1</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Held High</source>
-        <translation type="unfinished" />
+        <translation>Auf High gehalten</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Held Low</source>
-        <translation type="unfinished" />
+        <translation>Auf Low gehalten</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Forced to %1</source>
-        <translation type="unfinished" />
+        <translation>Auf %1 erzwungen</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Forced to %1 V</source>
-        <translation type="unfinished" />
+        <translation>Auf %1 V erzwungen</translation>
     </message>
     <message>
         <location line="+2" />
         <source>No device answering</source>
-        <translation type="unfinished" />
+        <translation>Kein Gerät antwortet</translation>
     </message>
     <message>
         <location line="+13" />
         <source>pin %1</source>
-        <translation type="unfinished" />
+        <translation>Pin %1</translation>
     </message>
     <message>
         <location line="+5" />
         <source>I2C 0x%1 on %2</source>
-        <translation type="unfinished" />
+        <translation>I2C 0x%1 an %2</translation>
     </message>
     <message>
         <location line="+3" />
         <source>SPI on %1</source>
-        <translation type="unfinished" />
+        <translation>SPI an %1</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Input %1</source>
-        <translation type="unfinished" />
+        <translation>Eingang %1</translation>
     </message>
     <message>
         <location line="+4" />
         <source>ADC %1</source>
-        <translation type="unfinished" />
+        <translation>ADC %1</translation>
     </message>
     <message>
         <location line="+3" />
         <source>1-Wire on %1</source>
-        <translation type="unfinished" />
+        <translation>1-Wire an %1</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_compare.cpp" line="+235" />
         <location line="+46" />
         <location line="+2" />
         <source>%1: %2 vs %3 bytes</source>
-        <translation type="unfinished" />
+        <translation>%1: %2 vs. %3 Bytes</translation>
     </message>
     <message>
         <location line="-21" />
         <source>Kind</source>
-        <translation type="unfinished" />
+        <translation>Art</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Failed vs OK</source>
-        <translation type="unfinished" />
+        <translation>Fehlgeschlagen vs. OK</translation>
     </message>
     <message>
         <location line="+0" />
         <source>OK vs failed</source>
-        <translation type="unfinished" />
+        <translation>OK vs. fehlgeschlagen</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Operation</source>
-        <translation type="unfinished" />
+        <translation>Operation</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Address: %1 vs %2</source>
-        <translation type="unfinished" />
+        <translation>Adresse: %1 vs. %2</translation>
     </message>
     <message>
         <location line="+2" />
         <source>TX</source>
-        <translation type="unfinished" />
+        <translation>TX</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Write</source>
-        <translation type="unfinished" />
+        <translation>Schreiben</translation>
     </message>
     <message>
         <location line="+1" />
         <source>RX</source>
-        <translation type="unfinished" />
+        <translation>RX</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Read</source>
-        <translation type="unfinished" />
+        <translation>Lesen</translation>
     </message>
     <message>
         <location line="+12" />
         <source>%1 vs %2</source>
-        <translation type="unfinished" />
+        <translation>%1 vs. %2</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Duration: %1</source>
-        <translation type="unfinished" />
+        <translation>Dauer: %1</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Transfers: %1 vs %2</source>
-        <translation type="unfinished" />
+        <translation>Übertragungen: %1 vs. %2</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Failed: %1 vs %2</source>
-        <translation type="unfinished" />
+        <translation>Fehlgeschlagen: %1 vs. %2</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Bytes: %1 vs %2</source>
-        <translation type="unfinished" />
+        <translation>Bytes: %1 vs. %2</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Level</source>
-        <translation type="unfinished" />
+        <translation>Pegel</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_project.cpp" line="+140" />
         <source>ARM Cortex-M, RISC-V and PIC32</source>
-        <translation type="unfinished" />
+        <translation>ARM Cortex-M, RISC-V und PIC32</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_trigger.cpp" line="+27" />
         <source>once</source>
-        <translation type="unfinished" />
+        <translation>einmal</translation>
     </message>
     <message>
         <location line="+2" />
         <source>twice</source>
-        <translation type="unfinished" />
+        <translation>zweimal</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 times</source>
-        <translation type="unfinished" />
+        <translation>%1-mal</translation>
     </message>
     <message>
         <location line="+193" />
         <source>Rose %1 so far</source>
-        <translation type="unfinished" />
+        <translation>Bisher %1 gestiegen</translation>
     </message>
     <message>
         <location line="+36" />
         <source>%1 failed so far</source>
-        <translation type="unfinished" />
+        <translation>Bisher %1 fehlgeschlagen</translation>
     </message>
     <message>
         <location line="+20" />
         <source>Register %1 of %2, written %3</source>
-        <translation type="unfinished" />
+        <translation>Register %1 von %2, %3 geschrieben</translation>
     </message>
     <message>
         <location line="+5" />
         <source>%1 transfers start with it</source>
-        <translation type="unfinished" />
+        <translation>%1 Übertragungen beginnen damit</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Received %1 so far</source>
-        <translation type="unfinished" />
+        <translation>Bisher %1 empfangen</translation>
     </message>
     <message>
         <location line="+5" />
         <source>%1 changed by a fault so far</source>
-        <translation type="unfinished" />
+        <translation>Bisher %1 durch eine Störung geändert</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_format.cpp" line="+163" />
         <location line="+330" />
         <source>%1 bytes</source>
-        <translation type="unfinished" />
+        <translation>%1 Bytes</translation>
     </message>
     <message>
         <location line="-301" />
         <source>Other</source>
-        <translation type="unfinished" />
+        <translation>Andere</translation>
     </message>
     <message>
         <location line="+40" />
         <location line="+69" />
         <source>Output</source>
-        <translation type="unfinished" />
+        <translation>Ausgang</translation>
     </message>
     <message>
         <location line="-67" />
         <location line="+67" />
         <source>Input</source>
-        <translation type="unfinished" />
+        <translation>Eingang</translation>
     </message>
     <message>
         <location line="-62" />
         <location line="+89" />
         <source>I2C</source>
-        <translation type="unfinished" />
+        <translation>I2C</translation>
     </message>
     <message>
         <location line="-84" />
         <location line="+77" />
         <source>SPI</source>
-        <translation type="unfinished" />
+        <translation>SPI</translation>
     </message>
     <message>
         <location line="-75" />
         <location line="+77" />
         <source>UART</source>
-        <translation type="unfinished" />
+        <translation>UART</translation>
     </message>
     <message>
         <location line="-75" />
         <location line="+74" />
         <source>1-Wire</source>
-        <translation type="unfinished" />
+        <translation>1-Wire</translation>
     </message>
     <message>
         <location line="-71" />
         <location line="+44" />
         <source>Value</source>
-        <translation type="unfinished" />
+        <translation>Wert</translation>
     </message>
     <message>
         <location line="+198" />
         <source>1 byte</source>
-        <translation type="unfinished" />
+        <translation>1 Byte</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Write %1</source>
-        <translation type="unfinished" />
+        <translation>Schreiben %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Read %1</source>
-        <translation type="unfinished" />
+        <translation>Lesen %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Write %1 · Read %2</source>
-        <translation type="unfinished" />
+        <translation>Schreiben %1 · Lesen %2</translation>
     </message>
     <message>
         <location line="+6" />
         <location line="+19" />
         <location line="+192" />
         <source>error</source>
-        <translation type="unfinished" />
+        <translation>Fehler</translation>
     </message>
     <message>
         <location line="-192" />
         <source>no presence</source>
-        <translation type="unfinished" />
+        <translation>keine Präsenz</translation>
     </message>
     <message>
         <location line="+119" />
         <source>Burst</source>
-        <translation type="unfinished" />
+        <translation>Burst</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Reset</source>
-        <translation type="unfinished" />
+        <translation>Reset</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Read ROM</source>
-        <translation type="unfinished" />
+        <translation>Read ROM</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Skip ROM</source>
-        <translation type="unfinished" />
+        <translation>Skip ROM</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Match ROM</source>
-        <translation type="unfinished" />
+        <translation>Match ROM</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Search ROM</source>
-        <translation type="unfinished" />
+        <translation>Search ROM</translation>
     </message>
     <message>
         <location line="+26" />
         <source>%1 transfers</source>
-        <translation type="unfinished" />
+        <translation>%1 Übertragungen</translation>
     </message>
     <message>
         <location line="+6" />
         <source>%1 failed</source>
-        <translation type="unfinished" />
+        <translation>%1 fehlgeschlagen</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_measure.cpp" line="+76" />
         <source>No transfers</source>
-        <translation type="unfinished" />
+        <translation>Keine Übertragungen</translation>
     </message>
     <message numerus="yes">
         <location line="+1" />
         <source>%n transfers</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n Übertragung</numerusform><numerusform>%n Übertragungen</numerusform></translation>
     </message>
     <message>
         <location line="+3" />
         <source>%1 busy</source>
-        <translation type="unfinished" />
+        <translation>%1 belegt</translation>
     </message>
     <message numerus="yes">
         <location line="+2" />
         <source>%n failed</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n fehlgeschlagen</numerusform><numerusform>%n fehlgeschlagen</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+48" />
         <source>%n changes</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n Änderung</numerusform><numerusform>%n Änderungen</numerusform></translation>
     </message>
     <message>
         <location line="+4" />
         <source>%1 high</source>
-        <translation type="unfinished" />
+        <translation>%1 High</translation>
     </message>
     <message>
         <location line="+21" />
         <source>No values</source>
-        <translation type="unfinished" />
+        <translation>Keine Werte</translation>
     </message>
     <message numerus="yes">
         <location line="+4" />
         <source>%n values</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n Wert</numerusform><numerusform>%n Werte</numerusform></translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 to %2</source>
-        <translation type="unfinished" />
+        <translation>%1 bis %2</translation>
     </message>
     <message>
         <location line="+1" />
         <source>avg %1</source>
-        <translation type="unfinished" />
+        <translation>Ø %1</translation>
     </message>
     <message>
         <location line="+162" />
         <source>%1: min %2 · avg %3 · max %4 · σ %5 (%6)</source>
-        <translation type="unfinished" />
+        <translation>%1: min. %2 · Ø %3 · max. %4 · σ %5 (%6)</translation>
     </message>
     <message>
         <location line="+69" />
         <source>Values</source>
-        <translation type="unfinished" />
+        <translation>Werte</translation>
     </message>
     <message>
         <location line="+42" />
         <source>High</source>
-        <translation type="unfinished" />
+        <translation>High</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Low</source>
-        <translation type="unfinished" />
+        <translation>Low</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Period</source>
-        <translation type="unfinished" />
+        <translation>Periode</translation>
     </message>
     <message>
         <location line="+32" />
         <source>Duration</source>
-        <translation type="unfinished" />
+        <translation>Dauer</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Interval</source>
-        <translation type="unfinished" />
+        <translation>Intervall</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Throughput: %1/s</source>
-        <translation type="unfinished" />
+        <translation>Durchsatz: %1/s</translation>
     </message>
     <message numerus="yes">
         <location line="+65" />
         <source>%n records</source>
-        <translation type="unfinished">
-            <numerusform />
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n Eintrag</numerusform><numerusform>%n Einträge</numerusform></translation>
     </message>
     <message>
         <location line="+24" />
         <source>Project</source>
-        <translation type="unfinished" />
+        <translation>Projekt</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Board</source>
-        <translation type="unfinished" />
+        <translation>Platine</translation>
     </message>
     <message>
         <location line="+1" />
         <source>MCU</source>
-        <translation type="unfinished" />
+        <translation>MCU</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Firmware</source>
-        <translation type="unfinished" />
+        <translation>Firmware</translation>
     </message>
     <message>
         <location line="+1" />
         <source>NECTO</source>
-        <translation type="unfinished" />
+        <translation>NECTO</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Traced</source>
-        <translation type="unfinished" />
+        <translation>Erfasst</translation>
     </message>
     <message>
         <location line="+10" />
         <source>From a recording</source>
-        <translation type="unfinished" />
+        <translation>Aus einer Aufzeichnung</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::FaultPanel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_fault_panel.cpp" line="+30" />
+        <source>I2C device not answering</source>
+        <translation>I2C-Gerät antwortet nicht</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>SPI MISO stuck</source>
+        <translation>SPI-MISO hängt</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Input held</source>
+        <translation>Eingang gehalten</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>ADC value forced</source>
+        <translation>ADC-Wert erzwungen</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>1-Wire devices gone</source>
+        <translation>1-Wire-Geräte entfernt</translation>
+    </message>
+    <message>
+        <location line="+105" />
+        <source>injected while it was recorded</source>
+        <translation>während der Aufzeichnung injiziert</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>None was injected while it was recorded.</source>
+        <translation>Während der Aufzeichnung wurde keine injiziert.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Faults go on the lanes that take them: I2C, SPI, inputs, ADC and 1-Wire. None has shown up yet.</source>
+        <translation>Störungen gibt es für die Spuren, die sie unterstützen: I2C, SPI, Eingänge, ADC und 1-Wire. Bisher ist keine davon aufgetaucht.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
+        <translation>MikroSDK.Trace dieser Firmware ist für Störungen zu alt: Aktualisieren Sie mikroSDK und erstellen Sie das Projekt neu.</translation>
+    </message>
+    <message>
+        <location line="+53" />
+        <source> V</source>
+        <translation> V</translation>
+    </message>
+    <message>
+        <location line="+63" />
+        <source>Type the byte: two hex digits.</source>
+        <translation>Geben Sie das Byte ein: zwei Hex-Ziffern.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Choose the lane to break.</source>
+        <translation>Wählen Sie die Spur, die gestört werden soll.</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Injected already.</source>
+        <translation>Bereits injiziert.</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>%1 faults at most: remove one first.</source>
+        <translation>Höchstens %1 Störungen: Entfernen Sie zuerst eine.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Inject it into the firmware: at once while it is stopped, otherwise within half a second while it records</source>
+        <translation>In die Firmware injizieren: sofort, wenn sie angehalten ist, sonst innerhalb einer halben Sekunde während der Aufzeichnung</translation>
+    </message>
+    <message>
+        <location line="+55" />
+        <source>Remove this fault</source>
+        <translation>Diese Störung entfernen</translation>
+    </message>
+    <message>
+        <location line="+41" />
+        <source>Events this fault changed</source>
+        <translation>Von dieser Störung geänderte Ereignisse</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>no reads</source>
+        <translation>keine Lesevorgänge</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this bus.</source>
+        <translation>Ein hängender MISO ändert nur, was gelesen wird: also nichts, solange die Firmware nur auf diesen Bus schreibt.</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>waiting</source>
+        <translation>wartet</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Not hit yet. The firmware gets the fault when it next hands over its trace (within half a second while it records, or at a stop); it hits at the next call it applies to.</source>
+        <translation>Noch nicht ausgelöst. Die Firmware erhält die Störung bei der nächsten Übergabe ihres Trace (innerhalb einer halben Sekunde während der Aufzeichnung oder bei einem Halt); sie greift beim nächsten betroffenen Aufruf.</translation>
     </message>
 </context>
 <context>
@@ -49580,52 +49381,197 @@ a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
     <message>
         <location filename="../core/src/debugger/trace/trace_timeline_ruler.cpp" line="+66" />
         <source>≠ Runs part</source>
-        <translation type="unfinished" />
+        <translation>≠ Läufe weichen ab</translation>
     </message>
     <message>
         <location line="+219" />
         <source>%1
 
 %2 · drag to move, double-click to edit</source>
-        <translation type="unfinished" />
+        <translation>%1
+
+%2 · zum Verschieben ziehen, zum Bearbeiten doppelklicken</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Where the runs first differ: click to go there</source>
-        <translation type="unfinished" />
+        <translation>Wo die Läufe zuerst abweichen: zum Hinspringen klicken</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Drag to move the marker; double-click to remove it</source>
-        <translation type="unfinished" />
+        <translation>Ziehen, um den Marker zu verschieben; doppelklicken, um ihn zu entfernen</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Click to place marker B</source>
-        <translation type="unfinished" />
+        <translation>Klicken, um Marker B zu setzen</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Click to place marker A</source>
+        <translation>Klicken, um Marker A zu setzen</translation>
+    </message>
+</context>
+<context>
+    <name>RenesasE2Job</name>
+    <message>
+        <location line="-176" />
+        <source>No free TCP port for the Renesas E2 GDB server.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+19" />
+        <source>Connection to the Renesas E2 GDB server failed: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Renesas E2: cannot select the target thread (%1).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+22" />
+        <source>Renesas E2: %1 failed (%2).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+66" />
+        <source>Renesas E2 GDB server exited unexpectedly (exit code %1).</source>
         <translation type="unfinished" />
     </message>
 </context>
 <context>
-    <name>Necto::PlanetDebugModel</name>
+    <name>RenesasE2Proxy</name>
     <message>
-        <location filename="../core/src/planet_debug/model/planet_debug_model.cpp" line="+300" />
-        <source>Requires the %1 MCU set in the project's setup (board has %2)</source>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_proxy.cpp" line="+68" />
+        <source>Renesas E2: the GDB server did not complete the launch sequence.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location line="+12" />
-        <source>Requires a TFT display board</source>
+        <location line="+102" />
+        <source>Renesas E2 proxy cannot listen on port %1: %2</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+131" />
+        <source>Renesas E2 proxy cannot reach the GDB server on port %1.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::WebPeekWindow</name>
+    <message>
+        <location filename="../core/src/web_browser/web_peek_window.ui" line="+20" />
+        <location filename="../core/src/web_browser/web_peek_window.cpp" line="+164" />
+        <source>Web</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+30" />
+        <source>Back</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Forward</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Reload</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Open in Web tab</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Open in system browser</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::ClickPresetChip</name>
+    <message>
+        <location filename="../core/src/productivity_hub/common/click_preset_chip.ui" line="+23" />
+        <source>Frame</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/productivity_hub/common/click_preset_chip.cpp" line="+37" />
+        <source>Delete combination</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::TraceFaultPanel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_fault_panel.ui" line="+46" />
+        <source>Faults NECTO injects into the firmware's drivers, for this debug session</source>
+        <translation>Störungen, die NECTO in die Treiber der Firmware injiziert, für diese Debug-Sitzung</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Faults</source>
+        <translation>Störungen</translation>
     </message>
     <message>
         <location line="+14" />
-        <source>The project's setup uses the %1 board definition, this board is %2. Pin mapping may differ.</source>
-        <translation type="unfinished" />
+        <source>What to break</source>
+        <translation>Was gestört wird</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>The lane it holds</source>
+        <translation>Die Spur, die gehalten wird</translation>
+    </message>
+    <message>
+        <location line="+38" />
+        <source>The byte every read on the bus gives, in hex</source>
+        <translation>Das Byte, das jeder Lesevorgang auf dem Bus liefert, in Hex</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>0xFF</source>
+        <translation>0xFF</translation>
+    </message>
+    <message>
+        <location line="+23" />
+        <source>The level the input reads</source>
+        <translation>Der Pegel, den der Eingang liest</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>High</source>
+        <translation>High</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Low</source>
+        <translation>Low</translation>
+    </message>
+    <message>
+        <location line="+24" />
+        <source>The value the input reads</source>
+        <translation>Der Wert, den der Eingang liest</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Inject</source>
+        <translation>Injizieren</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this device.</source>
+        <translation>Ein hängender MISO ändert nur, was gelesen wird: also nichts, solange die Firmware nur auf dieses Gerät schreibt.</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>No reads on this lane yet</source>
+        <translation>Noch keine Lesevorgänge auf dieser Spur</translation>
     </message>
 </context>
 </TS>

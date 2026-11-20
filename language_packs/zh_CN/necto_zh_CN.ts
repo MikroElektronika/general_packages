@@ -2092,37 +2092,37 @@ Do you wish to override the security check and continue ?   </source>
     <message>
         <location line="+1" />
         <source>Generate the code only, without creating a project or installing packages</source>
-        <translation type="unfinished" />
+        <translation>仅生成代码，不新建项目，也不安装软件包</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Code Only (FreeRTOS)</source>
-        <translation type="unfinished" />
+        <translation>仅代码（FreeRTOS）</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Generate the code only, without creating a project or installing packages, structured as FreeRTOS tasks with the scheduler started</source>
-        <translation type="unfinished" />
+        <translation>仅生成代码，不新建项目，也不安装软件包，代码按 FreeRTOS 任务组织并启动调度器</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Create Project</source>
-        <translation type="unfinished" />
+        <translation>新建项目</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Generate the code and create a new project, installing the required packages and libraries</source>
-        <translation type="unfinished" />
+        <translation>生成代码并新建项目，同时安装所需的软件包和库</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Create Project (FreeRTOS)</source>
-        <translation type="unfinished" />
+        <translation>新建项目（FreeRTOS）</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Generate the code and create a new project, installing the required packages and libraries, structured as FreeRTOS tasks with the scheduler started</source>
-        <translation type="unfinished" />
+        <translation>生成代码并新建项目，同时安装所需的软件包和库，代码按 FreeRTOS 任务组织并启动调度器</translation>
     </message>
     <message>
         <source>Just generate the code and skip the project creation and package setup</source>
@@ -4381,7 +4381,7 @@ Do you wish to override the security check and continue ?   </source>
     <message>
         <location line="+511" />
         <source>No active debug session</source>
-        <translation type="unfinished" />
+        <translation>没有活动的调试会话</translation>
     </message>
 </context>
 <context>
@@ -4394,17 +4394,17 @@ Do you wish to override the security check and continue ?   </source>
     <message>
         <location line="+229" />
         <source>Address or expression to read from, e.g. 0x20000000 or &amp;buffer. Press Enter to read.</source>
-        <translation type="unfinished" />
+        <translation>要读取的地址或表达式，例如 0x20000000 或 &amp;buffer。按 Enter 读取。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Address or expression (0x20000000, &amp;buffer)</source>
-        <translation type="unfinished" />
+        <translation>地址或表达式（0x20000000，&amp;buffer）</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Number of bytes to read</source>
-        <translation type="unfinished" />
+        <translation>要读取的字节数</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/debug_view/src/debug_view.cpp" line="+105" />
@@ -4429,7 +4429,7 @@ Do you wish to override the security check and continue ?   </source>
     <message>
         <location line="+1" />
         <source>  Memory</source>
-        <translation type="unfinished" />
+        <translation>  内存</translation>
     </message>
     <message>
         <location line="+1" />
@@ -4449,53 +4449,53 @@ Do you wish to override the security check and continue ?   </source>
     <message>
         <location line="+290" />
         <source>%1 bytes</source>
-        <translation type="unfinished" />
+        <translation>%1 字节</translation>
     </message>
     <message>
         <location line="+42" />
         <source>Refresh memory</source>
-        <translation type="unfinished" />
+        <translation>刷新内存</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Copy address</source>
-        <translation type="unfinished" />
+        <translation>复制地址</translation>
     </message>
     <message>
         <location line="+63" />
         <location line="+71" />
         <source>Start a debug session to read memory.</source>
-        <translation type="unfinished" />
+        <translation>请启动调试会话以读取内存。</translation>
     </message>
     <message>
         <location line="-65" />
         <source>The active debugger does not support reading memory.</source>
-        <translation type="unfinished" />
+        <translation>当前调试器不支持读取内存。</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Pause the target to read memory.</source>
-        <translation type="unfinished" />
+        <translation>请暂停目标以读取内存。</translation>
     </message>
     <message>
         <location line="+31" />
         <source>Cannot evaluate %1.</source>
-        <translation type="unfinished" />
+        <translation>无法对 %1 求值。</translation>
     </message>
     <message>
         <location line="+49" />
         <source>Cannot read memory at %1.</source>
-        <translation type="unfinished" />
+        <translation>无法读取 %1 处的内存。</translation>
     </message>
     <message>
         <location line="+16" />
         <source>No readable memory at %1.</source>
-        <translation type="unfinished" />
+        <translation>%1 处没有可读取的内存。</translation>
     </message>
     <message>
         <location line="+23" />
         <source>Memory view is not supported with the mikroC compiler.</source>
-        <translation type="unfinished" />
+        <translation>使用 mikroC 编译器时不支持内存视图。</translation>
     </message>
     <message>
         <location line="+46" />
@@ -4560,22 +4560,22 @@ Do you wish to override the security check and continue ?   </source>
     <message>
         <location filename="../core/src/debugger/debugger.cpp" line="+318" />
         <source>No debug port is available for the secondary core; only the primary core is debugged.</source>
-        <translation type="unfinished" />
+        <translation>副内核没有可用的调试端口；仅调试主内核。</translation>
     </message>
     <message>
         <location line="+290" />
         <source>Opening %1</source>
-        <translation type="unfinished" />
+        <translation>正在打开 %1</translation>
     </message>
     <message>
         <location line="+14" />
         <source>Open trace</source>
-        <translation type="unfinished" />
+        <translation>打开跟踪</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Could not open %1: %2</source>
-        <translation type="unfinished" />
+        <translation>无法打开 %1：%2</translation>
     </message>
 </context>
 <context>
@@ -4607,7 +4607,7 @@ Do you wish to override the security check and continue ?   </source>
     <message>
         <location line="+6" />
         <source>Stop Debug (Ctrl+F2)</source>
-        <translation type="unfinished" />
+        <translation>停止调试（Ctrl+F2）</translation>
     </message>
     <message>
         <location line="+6" />
@@ -4674,146 +4674,148 @@ Do you wish to override the security check and continue ?   </source>
         <location line="+262" />
         <location line="+16" />
         <source>Core %1</source>
-        <translation type="unfinished" />
+        <translation>内核 %1</translation>
     </message>
     <message>
         <location line="+57" />
         <source>Core %1: Task execution has not started yet. Resume debugging and pause again to view active tasks.</source>
-        <translation type="unfinished" />
+        <translation>内核 %1：任务尚未开始执行。请继续调试，然后再次暂停以查看活动任务。</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Tasks are ready but not running yet. Resume debugging and pause again to view their status.</source>
-        <translation type="unfinished" />
+        <translation>任务已就绪但尚未运行。请继续调试，然后再次暂停以查看其状态。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>No active tasks yet. Resume debugging and pause again to check for tasks.</source>
-        <translation type="unfinished" />
+        <translation>暂无活动任务。请继续调试，然后再次暂停以检查任务。</translation>
     </message>
     <message>
         <location line="+21" />
         <source>No tasks found - the scheduler has probably not started yet. Continue, then pause, to see the tasks.</source>
-        <translation type="unfinished" />
+        <translation>未找到任务——调度器可能尚未启动。请继续运行，然后暂停，以查看任务。</translation>
     </message>
     <message>
         <location line="+31" />
         <source>Not started</source>
-        <translation type="unfinished" />
+        <translation>未启动</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Running</source>
-        <translation type="unfinished" />
+        <translation>运行中</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Suspended</source>
-        <translation type="unfinished" />
+        <translation>已挂起</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Unknown</source>
-        <translation type="unfinished" />
+        <translation>未知</translation>
     </message>
     <message>
         <location line="+105" />
         <source>Tasks</source>
-        <translation type="unfinished" />
+        <translation>任务</translation>
     </message>
     <message>
         <location line="+19" />
         <source>Queues</source>
-        <translation type="unfinished" />
+        <translation>队列</translation>
     </message>
     <message>
         <location line="+32" />
         <source>The FreeRTOS view needs a debugger that can read target memory.
 Select GDB or LLDB in the project's toolchain settings to inspect tasks and queues.</source>
-        <translation type="unfinished" />
+        <translation>FreeRTOS 视图需要能够读取目标内存的调试器。
+请在项目的工具链设置中选择 GDB 或 LLDB，以查看任务和队列。</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Start a debug session and halt the target to inspect tasks, queues and heap.</source>
-        <translation type="unfinished" />
+        <translation>启动调试会话并暂停目标，即可查看任务、队列和堆。</translation>
     </message>
     <message>
         <location line="+70" />
         <source>Scheduler: running, suspended or not started yet.
 Tick: kernel ticks counted since the scheduler started.</source>
-        <translation type="unfinished" />
+        <translation>调度器：运行中、已挂起或尚未启动。
+节拍：自调度器启动以来累计的内核节拍数。</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Tick:</source>
-        <translation type="unfinished" />
+        <translation>节拍：</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Scheduler:</source>
-        <translation type="unfinished" />
+        <translation>调度器：</translation>
     </message>
     <message>
         <location line="+42" />
         <source>The FreeRTOS view is open in a separate window.</source>
-        <translation type="unfinished" />
+        <translation>FreeRTOS 视图已在独立窗口中打开。</translation>
     </message>
     <message>
         <location line="+5" />
         <location line="+89" />
         <source>Reattach</source>
-        <translation type="unfinished" />
+        <translation>重新附加</translation>
     </message>
     <message>
         <location line="-76" />
         <location line="+18" />
         <source>FreeRTOS</source>
-        <translation type="unfinished" />
+        <translation>FreeRTOS</translation>
     </message>
     <message>
         <location line="-17" />
         <source>FreeRTOS tasks and queues</source>
-        <translation type="unfinished" />
+        <translation>FreeRTOS 任务和队列</translation>
     </message>
     <message>
         <location line="+75" />
         <source>Detach</source>
-        <translation type="unfinished" />
+        <translation>分离</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Reattach to the bottom panel</source>
-        <translation type="unfinished" />
+        <translation>重新附加到底部面板</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Detach into a separate window</source>
-        <translation type="unfinished" />
+        <translation>分离到独立窗口</translation>
     </message>
     <message>
         <location line="+191" />
         <source>Core %1: %2</source>
-        <translation type="unfinished" />
+        <translation>内核 %1：%2</translation>
     </message>
     <message>
         <location line="+21" />
         <source>Queue monitoring is not enabled. Enable it in your project settings and rebuild.</source>
-        <translation type="unfinished" />
+        <translation>未启用队列监视。请在项目设置中启用并重新构建。</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Queue details are not available for this build. The required debugging information is missing.</source>
-        <translation type="unfinished" />
+        <translation>此构建不提供队列详情。缺少所需的调试信息。</translation>
     </message>
     <message>
         <location line="+9" />
         <source>No queues, semaphores or mutexes found. Register them in your application to view them here.</source>
-        <translation type="unfinished" />
+        <translation>未找到队列、信号量或互斥量。请在应用程序中注册它们，以便在此查看。</translation>
     </message>
     <message>
         <location line="+10" />
         <source>No queues, semaphores or mutexes are registered. FreeRTOS can only list objects passed to vQueueAddToRegistry() - add a call after each one you create to inspect it here.</source>
-        <translation type="unfinished" />
+        <translation>未注册任何队列、信号量或互斥量。FreeRTOS 只能列出传给 vQueueAddToRegistry() 的对象——在创建每个对象后添加此调用，即可在此查看。</translation>
     </message>
 </context>
 <context>
@@ -15037,7 +15039,7 @@ Do you wish to override the security check and continue ?   </source>
         <source>Just generate the code and skip the project creation and package setup</source>
         <translation>仅生成代码，跳过项目创建和软件包设置</translation>
     </message>
-</context>
+<message><source>Code Only (FreeRTOS)</source><translation>仅代码（FreeRTOS）</translation></message><message><source>Generate the code only, without creating a project or installing packages, structured as FreeRTOS tasks with the scheduler started</source><translation>仅生成代码，不新建项目，也不安装软件包，代码按 FreeRTOS 任务组织并启动调度器</translation></message><message><source>Generate the code and create a new project, installing the required packages and libraries</source><translation>生成代码并新建项目，同时安装所需的软件包和库</translation></message><message><source>Generate the code only, without creating a project or installing packages</source><translation>仅生成代码，不新建项目，也不安装软件包</translation></message><message><source>Create Project (FreeRTOS)</source><translation>新建项目（FreeRTOS）</translation></message><message><source>Create Project</source><translation>新建项目</translation></message><message><source>Generate the code and create a new project, installing the required packages and libraries, structured as FreeRTOS tasks with the scheduler started</source><translation>生成代码并新建项目，同时安装所需的软件包和库，代码按 FreeRTOS 任务组织并启动调度器</translation></message></context>
 <context>
     <name>Necto::ChooseSetupPage</name>
     <message>
@@ -16855,7 +16857,7 @@ Do you wish to override the security check and continue ?   </source>
     <message>
         <location filename="../core/src/debugger/dap_stdout_reader.cpp" line="+94" />
         <source>Standard output: no breakpoint on stdBuffFullBreak (%1): %2</source>
-        <translation type="unfinished" />
+        <translation>标准输出：无法在 stdBuffFullBreak（%1）处设置断点：%2</translation>
     </message>
 </context>
 <context>
@@ -16917,7 +16919,7 @@ Do you wish to override the security check and continue ?   </source>
         <source>Debugger: %1</source>
         <translation>调试器：%1</translation>
     </message>
-</context>
+<message><source>No active debug session</source><translation>没有活动的调试会话</translation></message></context>
 <context>
     <name>Necto::DebugView</name>
     <message>
@@ -16996,7 +16998,7 @@ Do you wish to override the security check and continue ?   </source>
         <source>Value format</source>
         <translation>值格式</translation>
     </message>
-</context>
+<message><source>Copy address</source><translation>复制地址</translation></message><message><source>Number of bytes to read</source><translation>要读取的字节数</translation></message><message><source>  Memory</source><translation>  内存</translation></message><message><source>Refresh memory</source><translation>刷新内存</translation></message><message><source>No readable memory at %1.</source><translation>%1 处没有可读取的内存。</translation></message><message><source>Address or expression (0x20000000, &amp;buffer)</source><translation>地址或表达式（0x20000000，&amp;buffer）</translation></message><message><source>Memory view is not supported with the mikroC compiler.</source><translation>使用 mikroC 编译器时不支持内存视图。</translation></message><message><source>Cannot read memory at %1.</source><translation>无法读取 %1 处的内存。</translation></message><message><source>%1 bytes</source><translation>%1 字节</translation></message><message><source>Cannot evaluate %1.</source><translation>无法对 %1 求值。</translation></message><message><source>The active debugger does not support reading memory.</source><translation>当前调试器不支持读取内存。</translation></message><message><source>Pause the target to read memory.</source><translation>请暂停目标以读取内存。</translation></message><message><source>Address or expression to read from, e.g. 0x20000000 or &amp;buffer. Press Enter to read.</source><translation>要读取的地址或表达式，例如 0x20000000 或 &amp;buffer。按 Enter 读取。</translation></message><message><source>Start a debug session to read memory.</source><translation>请启动调试会话以读取内存。</translation></message></context>
 <context>
     <name>Necto::DebuggerUIController</name>
     <message>
@@ -17067,7 +17069,11 @@ Do you wish to override the security check and continue ?   </source>
         <source>Continue Debug (F6)</source>
         <translation>继续调试 (F6)</translation>
     </message>
-</context>
+<message><source>Unknown</source><translation>未知</translation></message><message><source>No tasks found - the scheduler has probably not started yet. Continue, then pause, to see the tasks.</source><translation>未找到任务——调度器可能尚未启动。请继续运行，然后暂停，以查看任务。</translation></message><message><source>Not started</source><translation>未启动</translation></message><message><source>FreeRTOS tasks and queues</source><translation>FreeRTOS 任务和队列</translation></message><message><source>Detach into a separate window</source><translation>分离到独立窗口</translation></message><message><source>Core %1: %2</source><translation>内核 %1：%2</translation></message><message><source>Tasks are ready but not running yet. Resume debugging and pause again to view their status.</source><translation>任务已就绪但尚未运行。请继续调试，然后再次暂停以查看其状态。</translation></message><message><source>The FreeRTOS view needs a debugger that can read target memory.
+Select GDB or LLDB in the project's toolchain settings to inspect tasks and queues.</source><translation>FreeRTOS 视图需要能够读取目标内存的调试器。
+请在项目的工具链设置中选择 GDB 或 LLDB，以查看任务和队列。</translation></message><message><source>Detach</source><translation>分离</translation></message><message><source>Reattach to the bottom panel</source><translation>重新附加到底部面板</translation></message><message><source>Suspended</source><translation>已挂起</translation></message><message><source>Tick:</source><translation>节拍：</translation></message><message><source>FreeRTOS</source><translation>FreeRTOS</translation></message><message><source>Stop Debug (Ctrl+F2)</source><translation>停止调试（Ctrl+F2）</translation></message><message><source>Tasks</source><translation>任务</translation></message><message><source>Core %1</source><translation>内核 %1</translation></message><message><source>Start a debug session and halt the target to inspect tasks, queues and heap.</source><translation>启动调试会话并暂停目标，即可查看任务、队列和堆。</translation></message><message><source>Reattach</source><translation>重新附加</translation></message><message><source>No queues, semaphores or mutexes found. Register them in your application to view them here.</source><translation>未找到队列、信号量或互斥量。请在应用程序中注册它们，以便在此查看。</translation></message><message><source>Running</source><translation>运行中</translation></message><message><source>Scheduler:</source><translation>调度器：</translation></message><message><source>Queues</source><translation>队列</translation></message><message><source>Core %1: Task execution has not started yet. Resume debugging and pause again to view active tasks.</source><translation>内核 %1：任务尚未开始执行。请继续调试，然后再次暂停以查看活动任务。</translation></message><message><source>No queues, semaphores or mutexes are registered. FreeRTOS can only list objects passed to vQueueAddToRegistry() - add a call after each one you create to inspect it here.</source><translation>未注册任何队列、信号量或互斥量。FreeRTOS 只能列出传给 vQueueAddToRegistry() 的对象——在创建每个对象后添加此调用，即可在此查看。</translation></message><message><source>Queue monitoring is not enabled. Enable it in your project settings and rebuild.</source><translation>未启用队列监视。请在项目设置中启用并重新构建。</translation></message><message><source>Queue details are not available for this build. The required debugging information is missing.</source><translation>此构建不提供队列详情。缺少所需的调试信息。</translation></message><message><source>Scheduler: running, suspended or not started yet.
+Tick: kernel ticks counted since the scheduler started.</source><translation>调度器：运行中、已挂起或尚未启动。
+节拍：自调度器启动以来累计的内核节拍数。</translation></message><message><source>No active tasks yet. Resume debugging and pause again to check for tasks.</source><translation>暂无活动任务。请继续调试，然后再次暂停以检查任务。</translation></message><message><source>The FreeRTOS view is open in a separate window.</source><translation>FreeRTOS 视图已在独立窗口中打开。</translation></message></context>
 <context>
     <name>Necto::DefaultWidget</name>
     <message>
@@ -19872,52 +19878,52 @@ These settings will not be saved permanently</source>
     <message>
         <location filename="../core/src/debugger/debug_view/src/heap_usage_bar.cpp" line="+64" />
         <source>Total Heap: start a debug session and halt to read</source>
-        <translation type="unfinished" />
+        <translation>堆总量：启动调试会话并暂停后读取</translation>
     </message>
     <message>
         <location line="+14" />
         <source>Total Heap: not available for this allocator</source>
-        <translation type="unfinished" />
+        <translation>堆总量：此分配器不支持</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Total Heap: 0 / %1 (nothing allocated yet)</source>
-        <translation type="unfinished" />
+        <translation>堆总量：0 / %1（尚未分配）</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Total Heap: nothing allocated yet</source>
-        <translation type="unfinished" />
+        <translation>堆总量：尚未分配</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Total Heap: %1 / %2 (%3%)</source>
-        <translation type="unfinished" />
+        <translation>堆总量：%1 / %2（%3%）</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Total Heap: %1 free</source>
-        <translation type="unfinished" />
+        <translation>堆总量：%1 空闲</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Total Heap: </source>
-        <translation type="unfinished" />
+        <translation>堆总量：</translation>
     </message>
     <message>
         <location line="+23" />
         <source>Free: %1 (low: %2)</source>
-        <translation type="unfinished" />
+        <translation>空闲：%1（最低：%2）</translation>
     </message>
     <message>
         <location line="+4" />
         <source>The least free heap this run. A big gap means bursts of allocation.</source>
-        <translation type="unfinished" />
+        <translation>本次运行中堆空闲量的最低值。差距大表示存在突发的内存分配。</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Free: %1</source>
-        <translation type="unfinished" />
+        <translation>空闲：%1</translation>
     </message>
 </context>
 <context>
@@ -22905,17 +22911,17 @@ Examples
     <message>
         <location filename="../core/src/debugger/debug_view/src/memory_view_model.cpp" line="+124" />
         <source>%1: 0x%2 (%3)</source>
-        <translation type="unfinished" />
+        <translation>%1：0x%2（%3）</translation>
     </message>
     <message>
         <location line="+23" />
         <source>Address</source>
-        <translation type="unfinished" />
+        <translation>地址</translation>
     </message>
     <message>
         <location line="+2" />
         <source>ASCII</source>
-        <translation type="unfinished" />
+        <translation>ASCII</translation>
     </message>
 </context>
 <context>
@@ -25267,7 +25273,7 @@ Please, check your spelling.</source>
         <source>%1 on %2</source>
         <translation>%2 上的 %1</translation>
     </message>
-</context>
+<message><source>. Implement the application as FreeRTOS tasks: create the tasks, use FreeRTOS primitives for delays and inter-task communication, and start the scheduler from main</source><translation>。将应用程序实现为 FreeRTOS 任务：创建任务，使用 FreeRTOS 原语实现延时和任务间通信，并从 main 启动调度器</translation></message></context>
 <context>
     <name>Necto::ProgPageDelegate</name>
     <message>
@@ -25669,37 +25675,37 @@ Please, check your spelling.</source>
     <message>
         <location line="-313" />
         <source>Disconnect from the board or connect to a compatible one to make this project active.</source>
-        <translation type="unfinished" />
+        <translation>请断开与开发板的连接，或连接兼容的开发板，以激活此项目。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Disconnect from the board or connect to a compatible one to open this project.</source>
-        <translation type="unfinished" />
+        <translation>请断开与开发板的连接，或连接兼容的开发板，以打开此项目。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>&lt;b&gt;%1&lt;/b&gt; can't run on the connected board.&lt;br/&gt;&lt;br/&gt;%2&lt;br/&gt;• %3&lt;br/&gt;&lt;br/&gt;%4</source>
-        <translation type="unfinished" />
+        <translation>&lt;b&gt;%1&lt;/b&gt; 无法在已连接的开发板上运行。&lt;br/&gt;&lt;br/&gt;%2&lt;br/&gt;• %3&lt;br/&gt;&lt;br/&gt;%4</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Requirements not met:</source>
-        <translation type="unfinished" />
+        <translation>未满足要求：</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Remote Board Farm</source>
-        <translation type="unfinished" />
+        <translation>远程板卡农场</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Project not activated</source>
-        <translation type="unfinished" />
+        <translation>项目未激活</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Project not opened</source>
-        <translation type="unfinished" />
+        <translation>项目未打开</translation>
     </message>
     <message>
         <location line="+194" />
@@ -25774,7 +25780,7 @@ Please, check your spelling.</source>
     <message>
         <location line="+2138" />
         <source>Copying FreeRTOS kernel</source>
-        <translation type="unfinished" />
+        <translation>正在复制 FreeRTOS 内核</translation>
     </message>
     <message>
         <source>Project contains setup that is not installed. Install now?</source>
@@ -25814,62 +25820,62 @@ Please, check your spelling.</source>
     <message>
         <location line="-662" />
         <source>This project uses an outdated version of the configuration &lt;b&gt;%1&lt;/b&gt;. Click to review.</source>
-        <translation type="unfinished" />
+        <translation>此项目使用的配置 &lt;b&gt;%1&lt;/b&gt; 版本已过时。点击查看。</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Configuration &lt;b&gt;%1&lt;/b&gt; is not installed. Click for options.</source>
-        <translation type="unfinished" />
+        <translation>配置 &lt;b&gt;%1&lt;/b&gt; 未安装。点击查看选项。</translation>
     </message>
     <message>
         <location line="+42" />
         <source>Configuration changed</source>
-        <translation type="unfinished" />
+        <translation>配置已更改</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Configuration &lt;b&gt;%1&lt;/b&gt; was modified. This project still uses its original copy.</source>
-        <translation type="unfinished" />
+        <translation>配置 &lt;b&gt;%1&lt;/b&gt; 已被修改。此项目仍在使用其原始副本。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Use changes</source>
-        <translation type="unfinished" />
+        <translation>使用更改</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Switch to the modified configuration.</source>
-        <translation type="unfinished" />
+        <translation>切换到修改后的配置。</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Keep current</source>
-        <translation type="unfinished" />
+        <translation>保持当前</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Save the project's copy as a separate configuration.</source>
-        <translation type="unfinished" />
+        <translation>将项目中的副本另存为单独的配置。</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Configuration not installed</source>
-        <translation type="unfinished" />
+        <translation>配置未安装</translation>
     </message>
     <message>
         <location line="+1" />
         <source>This project uses &lt;b&gt;%1&lt;/b&gt;, which is not installed.</source>
-        <translation type="unfinished" />
+        <translation>此项目使用的 &lt;b&gt;%1&lt;/b&gt; 尚未安装。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Install</source>
-        <translation type="unfinished" />
+        <translation>安装</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Install this configuration.</source>
-        <translation type="unfinished" />
+        <translation>安装此配置。</translation>
     </message>
     <message>
         <location line="+604" />
@@ -26038,7 +26044,7 @@ Please, check your spelling.</source>
         <source>Add new</source>
         <translation>新增</translation>
     </message>
-</context>
+<message><source>Only GD32VF103 RISC-V MCUs are supported</source><translation>仅支持 GD32VF103 RISC-V MCU</translation></message><message><source>Requires a Cortex-M, PIC32 or RISC-V MCU</source><translation>需要 Cortex-M、PIC32 或 RISC-V MCU</translation></message><message><source>Requires a dual-core MCU</source><translation>需要双核 MCU</translation></message><message><source>Requires the legacy SDK</source><translation>需要旧版 SDK</translation></message><message><source>Unsupported MCU core: %1 (requires Cortex-M, PIC32 or RISC-V)</source><translation>不支持的 MCU 内核：%1（需要 Cortex-M、PIC32 或 RISC-V）</translation></message><message><source>MCU does not support mikroSDK</source><translation>MCU 不支持 mikroSDK</translation></message><message><source>Requires GCC, Clang or XC32</source><translation>需要 GCC、Clang 或 XC32</translation></message><message><source>Requires mikroSDK instead of the legacy SDK</source><translation>需要 mikroSDK，而非旧版 SDK</translation></message><message><source>Requires GCC, Clang or XC32 (current: %1)</source><translation>需要 GCC、Clang 或 XC32（当前：%1）</translation></message><message><source>Requires %1 KB RAM (available: %2 KB)</source><translation>需要 %1 KB RAM（可用：%2 KB）</translation></message><message><source>Requires a single-core MCU</source><translation>需要单核 MCU</translation></message><message><source>Requires a TFT display board</source><translation>需要 TFT 显示屏开发板</translation></message><message><source>The configuration could not be read</source><translation>无法读取配置</translation></message><message><source>XC8 compiler is not supported</source><translation>不支持 XC8 编译器</translation></message></context>
 <context>
     <name>Necto::ProjectTemplates</name>
     <message>
@@ -29971,7 +29977,7 @@ This reverts commit %2.</source>
     <message>
         <location line="+1" />
         <source>Firmware trace</source>
-        <translation type="unfinished" />
+        <translation>固件跟踪</translation>
     </message>
     <message>
         <location line="+1" />
@@ -30016,12 +30022,12 @@ This reverts commit %2.</source>
     <message>
         <location line="+2" />
         <source>Real-time video feed of the remote board</source>
-        <translation type="unfinished" />
+        <translation>远程开发板的实时视频画面</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Secure connection to the remote board using SSL/TLS encryption</source>
-        <translation type="unfinished" />
+        <translation>使用 SSL/TLS 加密与远程开发板安全连接</translation>
     </message>
     <message>
         <source>Frame</source>
@@ -31111,7 +31117,7 @@ x（数字）决定显示的最大文件数</translation>
         <source>Plot</source>
         <translation>绘图</translation>
     </message>
-</context>
+<message><source>Trace</source><translation>跟踪</translation></message></context>
 <context>
     <name>Necto::TooltipChart</name>
     <message>
@@ -31190,496 +31196,484 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_recording.cpp" line="+298" />
         <source>No such file.</source>
-        <translation type="unfinished" />
+        <translation>文件不存在。</translation>
     </message>
     <message>
         <location line="+40" />
         <source>Not a NECTO trace recording.</source>
-        <translation type="unfinished" />
+        <translation>不是 NECTO 跟踪录制文件。</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Recorded by a newer NECTO (file version %1).</source>
-        <translation type="unfinished" />
+        <translation>由更新版本的 NECTO 录制（文件版本 %1）。</translation>
     </message>
     <message numerus="yes">
         <location filename="../core/src/debugger/trace/trace_signals.cpp" line="+124" />
         <source>%n bytes not kept</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n 字节未保留</numerusform></translation>
     </message>
     <message>
         <location line="+5" />
         <source>Data</source>
-        <translation type="unfinished" />
+        <translation>数据</translation>
     </message>
     <message>
         <location line="+526" />
         <source>%1 baud</source>
-        <translation type="unfinished" />
+        <translation>%1 波特</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_faults.cpp" line="+138" />
         <source>Not answering</source>
-        <translation type="unfinished" />
+        <translation>无应答</translation>
     </message>
     <message>
         <location line="+3" />
         <source>MISO stuck at 0x%1</source>
-        <translation type="unfinished" />
+        <translation>MISO 卡在 0x%1</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Held High</source>
-        <translation type="unfinished" />
+        <translation>保持高电平</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Held Low</source>
-        <translation type="unfinished" />
+        <translation>保持低电平</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Forced to %1</source>
-        <translation type="unfinished" />
+        <translation>强制为 %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Forced to %1 V</source>
-        <translation type="unfinished" />
+        <translation>强制为 %1 V</translation>
     </message>
     <message>
         <location line="+2" />
         <source>No device answering</source>
-        <translation type="unfinished" />
+        <translation>无设备应答</translation>
     </message>
     <message>
         <location line="+13" />
         <source>pin %1</source>
-        <translation type="unfinished" />
+        <translation>引脚 %1</translation>
     </message>
     <message>
         <location line="+5" />
         <source>I2C 0x%1 on %2</source>
-        <translation type="unfinished" />
+        <translation>%2 上的 I2C 0x%1</translation>
     </message>
     <message>
         <location line="+3" />
         <source>SPI on %1</source>
-        <translation type="unfinished" />
+        <translation>%1 上的 SPI</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Input %1</source>
-        <translation type="unfinished" />
+        <translation>输入 %1</translation>
     </message>
     <message>
         <location line="+4" />
         <source>ADC %1</source>
-        <translation type="unfinished" />
+        <translation>ADC %1</translation>
     </message>
     <message>
         <location line="+3" />
         <source>1-Wire on %1</source>
-        <translation type="unfinished" />
+        <translation>%1 上的 1-Wire</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_compare.cpp" line="+235" />
         <location line="+46" />
         <location line="+2" />
         <source>%1: %2 vs %3 bytes</source>
-        <translation type="unfinished" />
+        <translation>%1：%2 vs %3 字节</translation>
     </message>
     <message>
         <location line="-21" />
         <source>Kind</source>
-        <translation type="unfinished" />
+        <translation>种类</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Failed vs OK</source>
-        <translation type="unfinished" />
+        <translation>失败 vs OK</translation>
     </message>
     <message>
         <location line="+0" />
         <source>OK vs failed</source>
-        <translation type="unfinished" />
+        <translation>OK vs 失败</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Operation</source>
-        <translation type="unfinished" />
+        <translation>操作</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Address: %1 vs %2</source>
-        <translation type="unfinished" />
+        <translation>地址：%1 vs %2</translation>
     </message>
     <message>
         <location line="+2" />
         <source>TX</source>
-        <translation type="unfinished" />
+        <translation>TX</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Write</source>
-        <translation type="unfinished" />
+        <translation>写入</translation>
     </message>
     <message>
         <location line="+1" />
         <source>RX</source>
-        <translation type="unfinished" />
+        <translation>RX</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Read</source>
-        <translation type="unfinished" />
+        <translation>读取</translation>
     </message>
     <message>
         <location line="+12" />
         <source>%1 vs %2</source>
-        <translation type="unfinished" />
+        <translation>%1 vs %2</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Duration: %1</source>
-        <translation type="unfinished" />
+        <translation>持续时间：%1</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Transfers: %1 vs %2</source>
-        <translation type="unfinished" />
+        <translation>传输：%1 vs %2</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Failed: %1 vs %2</source>
-        <translation type="unfinished" />
+        <translation>失败：%1 vs %2</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Bytes: %1 vs %2</source>
-        <translation type="unfinished" />
+        <translation>字节数：%1 vs %2</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Level</source>
-        <translation type="unfinished" />
+        <translation>电平</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_project.cpp" line="+140" />
         <source>ARM Cortex-M, RISC-V and PIC32</source>
-        <translation type="unfinished" />
+        <translation>ARM Cortex-M、RISC-V 和 PIC32</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_trigger.cpp" line="+27" />
         <source>once</source>
-        <translation type="unfinished" />
+        <translation>1 次</translation>
     </message>
     <message>
         <location line="+2" />
         <source>twice</source>
-        <translation type="unfinished" />
+        <translation>2 次</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 times</source>
-        <translation type="unfinished" />
+        <translation>%1 次</translation>
     </message>
     <message>
         <location line="+193" />
         <source>Rose %1 so far</source>
-        <translation type="unfinished" />
+        <translation>迄今已上升 %1</translation>
     </message>
     <message>
         <location line="+36" />
         <source>%1 failed so far</source>
-        <translation type="unfinished" />
+        <translation>迄今已失败 %1 次</translation>
     </message>
     <message>
         <location line="+20" />
         <source>Register %1 of %2, written %3</source>
-        <translation type="unfinished" />
+        <translation>%2 的寄存器 %1，已写入 %3</translation>
     </message>
     <message>
         <location line="+5" />
         <source>%1 transfers start with it</source>
-        <translation type="unfinished" />
+        <translation>%1 次传输以此开头</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Received %1 so far</source>
-        <translation type="unfinished" />
+        <translation>迄今已接收 %1</translation>
     </message>
     <message>
         <location line="+5" />
         <source>%1 changed by a fault so far</source>
-        <translation type="unfinished" />
+        <translation>迄今已有 %1 个事件被故障改变</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_format.cpp" line="+163" />
         <location line="+330" />
         <source>%1 bytes</source>
-        <translation type="unfinished" />
+        <translation>%1 字节</translation>
     </message>
     <message>
         <location line="-301" />
         <source>Other</source>
-        <translation type="unfinished" />
+        <translation>其他</translation>
     </message>
     <message>
         <location line="+40" />
         <location line="+69" />
         <source>Output</source>
-        <translation type="unfinished" />
+        <translation>输出</translation>
     </message>
     <message>
         <location line="-67" />
         <location line="+67" />
         <source>Input</source>
-        <translation type="unfinished" />
+        <translation>输入</translation>
     </message>
     <message>
         <location line="-62" />
         <location line="+89" />
         <source>I2C</source>
-        <translation type="unfinished" />
+        <translation>I2C</translation>
     </message>
     <message>
         <location line="-84" />
         <location line="+77" />
         <source>SPI</source>
-        <translation type="unfinished" />
+        <translation>SPI</translation>
     </message>
     <message>
         <location line="-75" />
         <location line="+77" />
         <source>UART</source>
-        <translation type="unfinished" />
+        <translation>UART</translation>
     </message>
     <message>
         <location line="-75" />
         <location line="+74" />
         <source>1-Wire</source>
-        <translation type="unfinished" />
+        <translation>1-Wire</translation>
     </message>
     <message>
         <location line="-71" />
         <location line="+44" />
         <source>Value</source>
-        <translation type="unfinished" />
+        <translation>值</translation>
     </message>
     <message>
         <location line="+198" />
         <source>1 byte</source>
-        <translation type="unfinished" />
+        <translation>1 字节</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Write %1</source>
-        <translation type="unfinished" />
+        <translation>写入 %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Read %1</source>
-        <translation type="unfinished" />
+        <translation>读取 %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Write %1 · Read %2</source>
-        <translation type="unfinished" />
+        <translation>写入 %1 · 读取 %2</translation>
     </message>
     <message>
         <location line="+6" />
         <location line="+19" />
         <location line="+192" />
         <source>error</source>
-        <translation type="unfinished" />
+        <translation>错误</translation>
     </message>
     <message>
         <location line="-192" />
         <source>no presence</source>
-        <translation type="unfinished" />
+        <translation>无存在脉冲</translation>
     </message>
     <message>
         <location line="+119" />
         <source>Burst</source>
-        <translation type="unfinished" />
+        <translation>突发</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Reset</source>
-        <translation type="unfinished" />
+        <translation>复位</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Read ROM</source>
-        <translation type="unfinished" />
+        <translation>读取 ROM</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Skip ROM</source>
-        <translation type="unfinished" />
+        <translation>跳过 ROM</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Match ROM</source>
-        <translation type="unfinished" />
+        <translation>匹配 ROM</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Search ROM</source>
-        <translation type="unfinished" />
+        <translation>搜索 ROM</translation>
     </message>
     <message>
         <location line="+26" />
         <source>%1 transfers</source>
-        <translation type="unfinished" />
+        <translation>%1 次传输</translation>
     </message>
     <message>
         <location line="+6" />
         <source>%1 failed</source>
-        <translation type="unfinished" />
+        <translation>%1 次失败</translation>
     </message>
     <message>
         <location filename="../core/src/debugger/trace/trace_measure.cpp" line="+76" />
         <source>No transfers</source>
-        <translation type="unfinished" />
+        <translation>无传输</translation>
     </message>
     <message numerus="yes">
         <location line="+1" />
         <source>%n transfers</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n 次传输</numerusform></translation>
     </message>
     <message>
         <location line="+3" />
         <source>%1 busy</source>
-        <translation type="unfinished" />
+        <translation>%1 忙碌</translation>
     </message>
     <message numerus="yes">
         <location line="+2" />
         <source>%n failed</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n 次失败</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+48" />
         <source>%n changes</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n 次变化</numerusform></translation>
     </message>
     <message>
         <location line="+4" />
         <source>%1 high</source>
-        <translation type="unfinished" />
+        <translation>%1 高电平</translation>
     </message>
     <message>
         <location line="+21" />
         <source>No values</source>
-        <translation type="unfinished" />
+        <translation>无值</translation>
     </message>
     <message numerus="yes">
         <location line="+4" />
         <source>%n values</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n 个值</numerusform></translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 to %2</source>
-        <translation type="unfinished" />
+        <translation>%1 至 %2</translation>
     </message>
     <message>
         <location line="+1" />
         <source>avg %1</source>
-        <translation type="unfinished" />
+        <translation>平均 %1</translation>
     </message>
     <message>
         <location line="+162" />
         <source>%1: min %2 · avg %3 · max %4 · σ %5 (%6)</source>
-        <translation type="unfinished" />
+        <translation>%1：最小 %2 · 平均 %3 · 最大 %4 · σ %5（%6）</translation>
     </message>
     <message>
         <location line="+69" />
         <source>Values</source>
-        <translation type="unfinished" />
+        <translation>值</translation>
     </message>
     <message>
         <location line="+42" />
         <source>High</source>
-        <translation type="unfinished" />
+        <translation>高</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Low</source>
-        <translation type="unfinished" />
+        <translation>低</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Period</source>
-        <translation type="unfinished" />
+        <translation>周期</translation>
     </message>
     <message>
         <location line="+32" />
         <source>Duration</source>
-        <translation type="unfinished" />
+        <translation>持续时间</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Interval</source>
-        <translation type="unfinished" />
+        <translation>间隔</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Throughput: %1/s</source>
-        <translation type="unfinished" />
+        <translation>吞吐量：%1/s</translation>
     </message>
     <message numerus="yes">
         <location line="+65" />
         <source>%n records</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n 条记录</numerusform></translation>
     </message>
     <message>
         <location line="+24" />
         <source>Project</source>
-        <translation type="unfinished" />
+        <translation>项目</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Board</source>
-        <translation type="unfinished" />
+        <translation>开发板</translation>
     </message>
     <message>
         <location line="+1" />
         <source>MCU</source>
-        <translation type="unfinished" />
+        <translation>MCU</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Firmware</source>
-        <translation type="unfinished" />
+        <translation>固件</translation>
     </message>
     <message>
         <location line="+1" />
         <source>NECTO</source>
-        <translation type="unfinished" />
+        <translation>NECTO</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Traced</source>
-        <translation type="unfinished" />
+        <translation>跟踪时间</translation>
     </message>
     <message>
         <location line="+10" />
         <source>From a recording</source>
-        <translation type="unfinished" />
+        <translation>来自录制</translation>
     </message>
 </context>
 <context>
@@ -31687,17 +31681,17 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="+204" />
         <source>No timer in the firmware: the signals need the transfers' times</source>
-        <translation type="unfinished" />
+        <translation>固件中没有定时器：信号需要传输的时间</translation>
     </message>
     <message>
         <location line="+808" />
         <source>Not in the recording</source>
-        <translation type="unfinished" />
+        <translation>不在录制中</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Not in this run</source>
-        <translation type="unfinished" />
+        <translation>不在本次运行中</translation>
     </message>
 </context>
 <context>
@@ -31705,12 +31699,12 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_dap_reader.cpp" line="+32" />
         <source>Firmware trace: no breakpoint on traceBuffFullBreak: %1</source>
-        <translation type="unfinished" />
+        <translation>固件跟踪：无法在 traceBuffFullBreak 处设置断点：%1</translation>
     </message>
     <message>
         <location line="+65" />
         <source>Firmware trace: the trace buffer was not found in the image.</source>
-        <translation type="unfinished" />
+        <translation>固件跟踪：在映像中未找到跟踪缓冲区。</translation>
     </message>
 </context>
 <context>
@@ -31718,107 +31712,107 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_fault_panel.cpp" line="+30" />
         <source>I2C device not answering</source>
-        <translation type="unfinished" />
+        <translation>I2C 设备无应答</translation>
     </message>
     <message>
         <location line="+1" />
         <source>SPI MISO stuck</source>
-        <translation type="unfinished" />
+        <translation>SPI MISO 卡死</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Input held</source>
-        <translation type="unfinished" />
+        <translation>输入保持</translation>
     </message>
     <message>
         <location line="+1" />
         <source>ADC value forced</source>
-        <translation type="unfinished" />
+        <translation>ADC 值强制</translation>
     </message>
     <message>
         <location line="+1" />
         <source>1-Wire devices gone</source>
-        <translation type="unfinished" />
+        <translation>1-Wire 设备离线</translation>
     </message>
     <message>
         <location line="+105" />
         <source>injected while it was recorded</source>
-        <translation type="unfinished" />
+        <translation>录制期间已注入</translation>
     </message>
     <message>
         <location line="+1" />
         <source>None was injected while it was recorded.</source>
-        <translation type="unfinished" />
+        <translation>录制期间未注入任何故障。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Faults go on the lanes that take them: I2C, SPI, inputs, ADC and 1-Wire. None has shown up yet.</source>
-        <translation type="unfinished" />
+        <translation>故障只能注入支持的通道：I2C、SPI、输入、ADC 和 1-Wire。目前尚未出现此类通道。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
-        <translation type="unfinished" />
+        <translation>此固件的 MikroSDK.Trace 版本过旧，不支持故障注入：请更新 mikroSDK 并重新构建项目。</translation>
     </message>
     <message>
         <location line="+53" />
         <source> V</source>
-        <translation type="unfinished" />
+        <translation> V</translation>
     </message>
     <message>
         <location line="+63" />
         <source>Type the byte: two hex digits.</source>
-        <translation type="unfinished" />
+        <translation>输入字节：两位十六进制数字。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Choose the lane to break.</source>
-        <translation type="unfinished" />
+        <translation>选择要注入故障的通道。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Injected already.</source>
-        <translation type="unfinished" />
+        <translation>已注入。</translation>
     </message>
     <message>
         <location line="+7" />
         <source>%1 faults at most: remove one first.</source>
-        <translation type="unfinished" />
+        <translation>最多 %1 个故障：请先移除一个。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Inject it into the firmware: at once while it is stopped, otherwise within half a second while it records</source>
-        <translation type="unfinished" />
+        <translation>注入固件：固件停止时立即生效，否则在其记录跟踪期间半秒内生效</translation>
     </message>
     <message>
         <location line="+55" />
         <source>Remove this fault</source>
-        <translation type="unfinished" />
+        <translation>移除此故障</translation>
     </message>
     <message>
         <location line="+41" />
         <source>Events this fault changed</source>
-        <translation type="unfinished" />
+        <translation>此故障改变的事件</translation>
     </message>
     <message>
         <location line="+5" />
         <source>no reads</source>
-        <translation type="unfinished" />
+        <translation>无读取</translation>
     </message>
     <message>
         <location line="+1" />
         <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this bus.</source>
-        <translation type="unfinished" />
+        <translation>MISO 卡死只影响读取的数据：固件只向此总线写入时，不会产生任何影响。</translation>
     </message>
     <message>
         <location line="+6" />
         <source>waiting</source>
-        <translation type="unfinished" />
+        <translation>等待中</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Not hit yet. The firmware gets the fault when it next hands over its trace (within half a second while it records, or at a stop); it hits at the next call it applies to.</source>
-        <translation type="unfinished" />
+        <translation>尚未生效。固件会在下次移交跟踪数据时收到该故障（记录跟踪期间半秒内，或在停止时）；之后在下一次适用的调用中生效。</translation>
     </message>
 </context>
 <context>
@@ -31826,200 +31820,200 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_hover_card.cpp" line="+69" />
         <source>High</source>
-        <translation type="unfinished" />
+        <translation>高</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Low</source>
-        <translation type="unfinished" />
+        <translation>低</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Level</source>
-        <translation type="unfinished" />
+        <translation>电平</translation>
     </message>
     <message>
         <location line="+4" />
         <source>High for</source>
-        <translation type="unfinished" />
+        <translation>高电平时长</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Low for</source>
-        <translation type="unfinished" />
+        <translation>低电平时长</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Width⁻¹</source>
-        <translation type="unfinished" />
+        <translation>宽度⁻¹</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Period</source>
-        <translation type="unfinished" />
+        <translation>周期</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Frequency</source>
-        <translation type="unfinished" />
+        <translation>频率</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Duty</source>
-        <translation type="unfinished" />
+        <translation>占空比</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Transfers</source>
-        <translation type="unfinished" />
+        <translation>传输</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Written</source>
-        <translation type="unfinished" />
+        <translation>已写入</translation>
     </message>
     <message>
         <location line="+2" />
         <location line="+45" />
         <source>Read</source>
-        <translation type="unfinished" />
+        <translation>读取</translation>
     </message>
     <message>
         <location line="-43" />
         <location line="+68" />
         <source>Failed</source>
-        <translation type="unfinished" />
+        <translation>失败</translation>
     </message>
     <message>
         <location line="-66" />
         <location line="+7" />
         <source>Span</source>
-        <translation type="unfinished" />
+        <translation>跨度</translation>
     </message>
     <message>
         <location line="-5" />
         <source>Too fast to record each transfer: counted, with their bytes.</source>
-        <translation type="unfinished" />
+        <translation>传输过快，无法逐一记录：仅统计次数及字节。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Changes</source>
-        <translation type="unfinished" />
+        <translation>变化次数</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Ends</source>
-        <translation type="unfinished" />
+        <translation>结束电平</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Too fast to record each change.</source>
-        <translation type="unfinished" />
+        <translation>变化过快，无法逐一记录。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Value</source>
-        <translation type="unfinished" />
+        <translation>值</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Operation</source>
-        <translation type="unfinished" />
+        <translation>操作</translation>
     </message>
     <message>
         <location line="+2" />
         <source>No device answered the reset.</source>
-        <translation type="unfinished" />
+        <translation>没有设备应答复位。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Address</source>
-        <translation type="unfinished" />
+        <translation>地址</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Command</source>
-        <translation type="unfinished" />
+        <translation>命令</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Register</source>
-        <translation type="unfinished" />
+        <translation>寄存器</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Sent</source>
-        <translation type="unfinished" />
+        <translation>已发送</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Received</source>
-        <translation type="unfinished" />
+        <translation>已接收</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Write</source>
-        <translation type="unfinished" />
+        <translation>写入</translation>
     </message>
     <message>
         <location line="+4" />
         <source>failed</source>
-        <translation type="unfinished" />
+        <translation>失败</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Duration</source>
-        <translation type="unfinished" />
+        <translation>持续时间</translation>
     </message>
     <message>
         <location line="+18" />
         <source>Injected</source>
-        <translation type="unfinished" />
+        <translation>已注入</translation>
     </message>
     <message>
         <location line="+1" />
         <source>OK</source>
-        <translation type="unfinished" />
+        <translation>OK</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Pin</source>
-        <translation type="unfinished" />
+        <translation>引脚</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Fault</source>
-        <translation type="unfinished" />
+        <translation>故障</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Compared</source>
-        <translation type="unfinished" />
+        <translation>对比</translation>
     </message>
     <message>
         <location line="+66" />
         <source>NECTO made the device not answer.</source>
-        <translation type="unfinished" />
+        <translation>NECTO 使设备不应答。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>NECTO held MISO: these bytes were not read.</source>
-        <translation type="unfinished" />
+        <translation>NECTO 固定了 MISO：这些字节并非实际读取所得。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>NECTO took the devices off the bus.</source>
-        <translation type="unfinished" />
+        <translation>NECTO 将设备从总线上移除。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>NECTO forced this value.</source>
-        <translation type="unfinished" />
+        <translation>NECTO 强制设定了此值。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>NECTO held the pin at this level.</source>
-        <translation type="unfinished" />
+        <translation>NECTO 将引脚保持在此电平。</translation>
     </message>
 </context>
 <context>
@@ -32027,22 +32021,22 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_lane_model.cpp" line="+78" />
         <source>Only in the recording</source>
-        <translation type="unfinished" />
+        <translation>仅在录制中</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Not in the recording</source>
-        <translation type="unfinished" />
+        <translation>不在录制中</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Recorded on other pins: %1</source>
-        <translation type="unfinished" />
+        <translation>录制于其他引脚：%1</translation>
     </message>
     <message>
         <location line="+31" />
         <source>%1 · other pins</source>
-        <translation type="unfinished" />
+        <translation>%1 · 其他引脚</translation>
     </message>
 </context>
 <context>
@@ -32050,27 +32044,27 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_view.cpp" line="+187" />
         <source>Not in this run</source>
-        <translation type="unfinished" />
+        <translation>不在本次运行中</translation>
     </message>
     <message>
         <location line="+27" />
         <source>%1 differ</source>
-        <translation type="unfinished" />
+        <translation>%1 处不同</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1 extra</source>
-        <translation type="unfinished" />
+        <translation>多出 %1 个</translation>
     </message>
     <message>
         <location line="+2" />
         <source>✓ Same</source>
-        <translation type="unfinished" />
+        <translation>✓ 相同</translation>
     </message>
     <message>
         <location line="+17" />
         <source>Not in the recording</source>
-        <translation type="unfinished" />
+        <translation>不在录制中</translation>
     </message>
 </context>
 <context>
@@ -32078,7 +32072,7 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_recording_name_dialog.cpp" line="+33" />
         <source>Saved in %1</source>
-        <translation type="unfinished" />
+        <translation>保存在 %1</translation>
     </message>
 </context>
 <context>
@@ -32086,34 +32080,36 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_timeline_ruler.cpp" line="+66" />
         <source>≠ Runs part</source>
-        <translation type="unfinished" />
+        <translation>≠ 运行分歧</translation>
     </message>
     <message>
         <location line="+219" />
         <source>%1
 
 %2 · drag to move, double-click to edit</source>
-        <translation type="unfinished" />
+        <translation>%1
+
+%2 · 拖动可移动，双击可编辑</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Where the runs first differ: click to go there</source>
-        <translation type="unfinished" />
+        <translation>两次运行首次出现差异的位置：点击跳转</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Drag to move the marker; double-click to remove it</source>
-        <translation type="unfinished" />
+        <translation>拖动可移动标记；双击可移除</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Click to place marker B</source>
-        <translation type="unfinished" />
+        <translation>点击放置标记 B</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Click to place marker A</source>
-        <translation type="unfinished" />
+        <translation>点击放置标记 A</translation>
     </message>
 </context>
 <context>
@@ -32121,113 +32117,113 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_timeline_viewport.cpp" line="+67" />
         <source>New data ▸</source>
-        <translation type="unfinished" />
+        <translation>新数据 ▸</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Follow the newest events</source>
-        <translation type="unfinished" />
+        <translation>跟随最新事件</translation>
     </message>
     <message>
         <location line="+311" />
         <source>No firmware trace yet. Link MikroSDK.Trace to the project, call trace_init() and start debugging.</source>
-        <translation type="unfinished" />
+        <translation>尚无固件跟踪。请将 MikroSDK.Trace 链接到项目，调用 trace_init() 并开始调试。</translation>
     </message>
     <message>
         <location line="+505" />
         <source>Not in this run</source>
-        <translation type="unfinished" />
+        <translation>不在本次运行中</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Not in the recording</source>
-        <translation type="unfinished" />
+        <translation>不在录制中</translation>
     </message>
     <message>
         <location line="+10" />
         <source>%1 differ</source>
-        <translation type="unfinished" />
+        <translation>%1 处不同</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1 extra</source>
-        <translation type="unfinished" />
+        <translation>多出 %1 个</translation>
     </message>
     <message>
         <location line="+3" />
         <location line="+585" />
         <source>✓ Same</source>
-        <translation type="unfinished" />
+        <translation>✓ 相同</translation>
     </message>
     <message>
         <location line="-429" />
         <source>Empty recording: nothing came from the firmware while it ran</source>
-        <translation type="unfinished" />
+        <translation>空录制：运行期间固件没有发送任何数据</translation>
     </message>
     <message>
         <location line="+1" />
         <source>End of recording</source>
-        <translation type="unfinished" />
+        <translation>录制结束</translation>
     </message>
     <message>
         <location line="+127" />
         <source>Duty: %1 %</source>
-        <translation type="unfinished" />
+        <translation>占空比：%1 %</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Freq: %1</source>
-        <translation type="unfinished" />
+        <translation>频率：%1</translation>
     </message>
     <message>
         <location line="+3" />
         <source>width⁻¹: %1</source>
-        <translation type="unfinished" />
+        <translation>宽度⁻¹：%1</translation>
     </message>
     <message>
         <location line="+214" />
         <source>Next edge (Ctrl+→)</source>
-        <translation type="unfinished" />
+        <translation>下一个边沿（Ctrl+→）</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Previous edge (Ctrl+←)</source>
-        <translation type="unfinished" />
+        <translation>上一个边沿（Ctrl+←）</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Next value (Ctrl+→)</source>
-        <translation type="unfinished" />
+        <translation>下一个值（Ctrl+→）</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Previous value (Ctrl+←)</source>
-        <translation type="unfinished" />
+        <translation>上一个值（Ctrl+←）</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Next transfer (Ctrl+→)</source>
-        <translation type="unfinished" />
+        <translation>下一个传输（Ctrl+→）</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Previous transfer (Ctrl+←)</source>
-        <translation type="unfinished" />
+        <translation>上一个传输（Ctrl+←）</translation>
     </message>
     <message>
         <location line="+72" />
         <source>+ Only in the recording</source>
-        <translation type="unfinished" />
+        <translation>+ 仅在录制中</translation>
     </message>
     <message>
         <location line="+0" />
         <source>+ Only in this run</source>
-        <translation type="unfinished" />
+        <translation>+ 仅在本次运行中</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Time</source>
-        <translation type="unfinished" />
+        <translation>时间</translation>
     </message>
 </context>
 <context>
@@ -32235,17 +32231,17 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_tabs.cpp" line="+22" />
         <source>The trace of the session you debug</source>
-        <translation type="unfinished" />
+        <translation>当前调试会话的跟踪</translation>
     </message>
     <message>
         <location line="+65" />
         <source>● Live</source>
-        <translation type="unfinished" />
+        <translation>● 实时</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Live</source>
-        <translation type="unfinished" />
+        <translation>实时</translation>
     </message>
 </context>
 <context>
@@ -32253,1065 +32249,1057 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_view.cpp" line="+558" />
         <source>Hide the transfers</source>
-        <translation type="unfinished" />
+        <translation>隐藏传输</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Show the transfers</source>
-        <translation type="unfinished" />
+        <translation>显示传输</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Collapse the lane list</source>
-        <translation type="unfinished" />
+        <translation>折叠通道列表</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Expand the lane list</source>
-        <translation type="unfinished" />
+        <translation>展开通道列表</translation>
     </message>
     <message>
         <location line="+158" />
         <source>Project</source>
-        <translation type="unfinished" />
+        <translation>项目</translation>
     </message>
     <message>
         <location line="+0" />
         <source>MCU</source>
-        <translation type="unfinished" />
+        <translation>MCU</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Board</source>
-        <translation type="unfinished" />
+        <translation>开发板</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Configuration</source>
-        <translation type="unfinished" />
+        <translation>配置</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Firmware</source>
-        <translation type="unfinished" />
+        <translation>固件</translation>
     </message>
     <message>
         <location line="+0" />
         <source>NECTO</source>
-        <translation type="unfinished" />
+        <translation>NECTO</translation>
     </message>
     <message>
         <location line="+64" />
         <source>Nothing was recorded</source>
-        <translation type="unfinished" />
+        <translation>未录制任何内容</translation>
     </message>
     <message>
         <location line="+2" />
         <source>This recording is empty: the session ended before any trace data arrived.</source>
-        <translation type="unfinished" />
+        <translation>此录制为空：会话在收到任何跟踪数据之前已结束。</translation>
     </message>
     <message>
         <location line="+4" />
         <source>No project open</source>
-        <translation type="unfinished" />
+        <translation>未打开项目</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Open a project to see its I2C, SPI, UART and pin activity on a timeline.</source>
-        <translation type="unfinished" />
+        <translation>打开项目，即可在时间轴上查看其 I2C、SPI、UART 和引脚活动。</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Reading the project's libraries…</source>
-        <translation type="unfinished" />
+        <translation>正在读取项目的库…</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Trace is on for %1</source>
-        <translation type="unfinished" />
+        <translation>%1 已启用跟踪</translation>
     </message>
     <message>
         <location line="+12" />
         <source>Restarting: rebuilding with trace and programming the board…</source>
-        <translation type="unfinished" />
+        <translation>正在重启：正在启用跟踪重新构建并烧录开发板…</translation>
     </message>
     <message>
         <location line="+5" />
         <source>This firmware was built without trace. Restart debugging to rebuild it.</source>
-        <translation type="unfinished" />
+        <translation>此固件构建时未启用跟踪。请重新开始调试以重新构建。</translation>
     </message>
     <message>
         <location line="+7" />
         <source>The firmware is paused. Continue (F6) to run it and capture its activity.</source>
-        <translation type="unfinished" />
+        <translation>固件已暂停。按“继续”（F6）运行固件并采集其活动。</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Waiting for the first trace data from the firmware…</source>
-        <translation type="unfinished" />
+        <translation>正在等待来自固件的首批跟踪数据…</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Starting: building and programming the board…</source>
-        <translation type="unfinished" />
+        <translation>正在启动：正在构建并烧录开发板…</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Start debugging to capture your firmware's bus and pin activity.</source>
-        <translation type="unfinished" />
+        <translation>开始调试以采集固件的总线和引脚活动。</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Restart Debugging</source>
-        <translation type="unfinished" />
+        <translation>重新开始调试</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Continue</source>
-        <translation type="unfinished" />
+        <translation>继续</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Start Debugging</source>
-        <translation type="unfinished" />
+        <translation>开始调试</translation>
     </message>
     <message>
         <location line="+20" />
         <source>Visualize Your Firmware Activity</source>
-        <translation type="unfinished" />
+        <translation>可视化您的固件活动</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Monitor I²C, SPI, UART, and GPIO signals on an interactive timeline.</source>
-        <translation type="unfinished" />
+        <translation>在交互式时间轴上监视 I²C、SPI、UART 和 GPIO 信号。</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Trace isn't available for %1</source>
-        <translation type="unfinished" />
+        <translation>%1 不支持跟踪</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Trace works with %1 MCUs.</source>
-        <translation type="unfinished" />
+        <translation>跟踪适用于 %1 MCU。</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Trace isn't available with %1</source>
-        <translation type="unfinished" />
+        <translation>使用 %1 时无法使用跟踪</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Trace needs GCC, Clang or XC32. Choose one in the project's configuration.</source>
-        <translation type="unfinished" />
+        <translation>跟踪需要 GCC、Clang 或 XC32。请在项目配置中选择其一。</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Trace isn't in this configuration yet</source>
-        <translation type="unfinished" />
+        <translation>此配置尚未包含跟踪</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Its libraries were built without the trace. Rebuild the configuration (Configure project, Edit), or update mikroSDK.</source>
-        <translation type="unfinished" />
+        <translation>其库在构建时未包含跟踪。请重新构建配置（配置项目 &gt; 编辑），或更新 mikroSDK。</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Turn it off so the project builds.</source>
-        <translation type="unfinished" />
+        <translation>关闭跟踪，以便项目能够构建。</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Turn Off Trace</source>
-        <translation type="unfinished" />
+        <translation>关闭跟踪</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Enable Trace</source>
-        <translation type="unfinished" />
+        <translation>启用跟踪</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Removes the trace library from your project</source>
-        <translation type="unfinished" />
+        <translation>从项目中移除跟踪库</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Adds the trace library to your project</source>
-        <translation type="unfinished" />
+        <translation>将跟踪库添加到项目中</translation>
     </message>
     <message numerus="yes">
         <location line="+183" />
         <source>%n records</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n 条记录</numerusform></translation>
     </message>
     <message>
         <location line="+44" />
         <source>Open trace…</source>
-        <translation type="unfinished" />
+        <translation>打开跟踪…</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Compare with recording…</source>
-        <translation type="unfinished" />
+        <translation>与录制对比…</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Compare with recording</source>
-        <translation type="unfinished" />
+        <translation>与录制对比</translation>
     </message>
     <message>
         <location line="+1" />
         <location line="+1349" />
         <location line="+79" />
         <source>NECTO trace (*.nectotrace)</source>
-        <translation type="unfinished" />
+        <translation>NECTO 跟踪 (*.nectotrace)</translation>
     </message>
     <message>
         <location line="-1424" />
         <source>Show a recording under this run's lanes, with what differs marked</source>
-        <translation type="unfinished" />
+        <translation>在本次运行的通道下方显示录制，并标出不同之处</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Recent recordings</source>
-        <translation type="unfinished" />
+        <translation>最近的录制</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Export transfers as CSV…</source>
-        <translation type="unfinished" />
+        <translation>将传输导出为 CSV…</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Every bus transfer, with all its bytes: for a spreadsheet or a script.</source>
-        <translation type="unfinished" />
+        <translation>每次总线传输及其全部字节：适用于电子表格或脚本。</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Export as VCD…</source>
-        <translation type="unfinished" />
+        <translation>导出为 VCD…</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The checked lanes as signals, for GTKWave or PulseView: pins, values, and when each bus was busy.</source>
-        <translation type="unfinished" />
+        <translation>将选中的通道导出为信号，供 GTKWave 或 PulseView 使用：引脚、值以及各总线的忙碌时段。</translation>
     </message>
     <message>
         <location line="+2" />
         <location line="+563" />
         <source>Export A–B transfers as CSV…</source>
-        <translation type="unfinished" />
+        <translation>将 A–B 的传输导出为 CSV…</translation>
     </message>
     <message>
         <location line="-561" />
         <source>The bus transfers that start between markers A and B.</source>
-        <translation type="unfinished" />
+        <translation>在标记 A 和 B 之间开始的总线传输。</translation>
     </message>
     <message>
         <location line="+2" />
         <location line="+561" />
         <source>Export A–B as VCD…</source>
-        <translation type="unfinished" />
+        <translation>将 A–B 导出为 VCD…</translation>
     </message>
     <message>
         <location line="-560" />
         <source>The checked lanes from marker A to marker B, A at time 0.</source>
-        <translation type="unfinished" />
+        <translation>选中通道从标记 A 到标记 B 的部分，以 A 为时间 0。</translation>
     </message>
     <message numerus="yes">
         <location line="+426" />
         <source>%n found</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
+        <translation><numerusform>找到 %n 个</numerusform></translation>
     </message>
     <message>
         <location line="+0" />
         <source>No match</source>
-        <translation type="unfinished" />
+        <translation>无匹配</translation>
     </message>
     <message>
         <location line="+47" />
         <source>%1 records lost</source>
-        <translation type="unfinished" />
+        <translation>丢失 %1 条记录</translation>
     </message>
     <message>
         <location line="+2" />
         <source>No timer: order only</source>
-        <translation type="unfinished" />
+        <translation>无定时器：仅顺序</translation>
     </message>
     <message>
         <location line="+6" />
         <source>The trace buffer filled up between reads; the timeline has gaps there.</source>
-        <translation type="unfinished" />
+        <translation>两次读取之间跟踪缓冲区已满；时间轴在这些位置存在间隙。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>%1 lanes, %2 events</source>
-        <translation type="unfinished" />
+        <translation>%1 个通道，%2 个事件</translation>
     </message>
     <message numerus="yes">
         <location line="+36" />
         <source>%n failed</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
+        <translation><numerusform>%n 次失败</numerusform></translation>
     </message>
     <message>
         <location line="+17" />
         <source>Go to marker A</source>
-        <translation type="unfinished" />
+        <translation>转到标记 A</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Go to marker B</source>
-        <translation type="unfinished" />
+        <translation>转到标记 B</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Zoom to A–B</source>
-        <translation type="unfinished" />
+        <translation>缩放至 A–B</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Copy measurement</source>
-        <translation type="unfinished" />
+        <translation>复制测量结果</translation>
     </message>
     <message>
         <location line="+1" />
         <source>A, B, the time between them and what each lane did then, as text</source>
-        <translation type="unfinished" />
+        <translation>以文本形式复制 A、B、两者之间的时间以及各通道当时的活动</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Clear markers</source>
-        <translation type="unfinished" />
+        <translation>清除标记</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Edit note…</source>
-        <translation type="unfinished" />
+        <translation>编辑备注…</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Remove note</source>
-        <translation type="unfinished" />
+        <translation>移除备注</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Add note here…</source>
-        <translation type="unfinished" />
+        <translation>在此添加备注…</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Go to note</source>
-        <translation type="unfinished" />
+        <translation>转到备注</translation>
     </message>
     <message>
         <location line="+11" />
         <location line="+47" />
         <source>Place marker A here</source>
-        <translation type="unfinished" />
+        <translation>在此放置标记 A</translation>
     </message>
     <message>
         <location line="-45" />
         <location line="+47" />
         <source>Place marker B here</source>
-        <translation type="unfinished" />
+        <translation>在此放置标记 B</translation>
     </message>
     <message>
         <location line="-42" />
         <source>Remove marker A</source>
-        <translation type="unfinished" />
+        <translation>移除标记 A</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Remove marker B</source>
-        <translation type="unfinished" />
+        <translation>移除标记 B</translation>
     </message>
     <message>
         <location line="+46" />
         <source>Place markers at its start and end</source>
-        <translation type="unfinished" />
+        <translation>在其开始和结束处放置标记</translation>
     </message>
     <message>
         <location line="+8" />
         <source>A where the frame starts, B where it ends</source>
-        <translation type="unfinished" />
+        <translation>A 位于帧开始处，B 位于帧结束处</translation>
     </message>
     <message>
         <location line="+1" />
         <source>A where the transfer starts, B where it ends</source>
-        <translation type="unfinished" />
+        <translation>A 位于传输开始处，B 位于传输结束处</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Add note</source>
-        <translation type="unfinished" />
+        <translation>添加备注</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Note at %1:</source>
-        <translation type="unfinished" />
+        <translation>%1 处的备注：</translation>
     </message>
     <message>
         <location line="+14" />
         <source>Edit note</source>
-        <translation type="unfinished" />
+        <translation>编辑备注</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Note at %1 (empty removes it):</source>
-        <translation type="unfinished" />
+        <translation>%1 处的备注（留空则删除）：</translation>
     </message>
     <message>
         <location line="+30" />
         <source>Save notes</source>
-        <translation type="unfinished" />
+        <translation>保存备注</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Could not save the notes to %1: %2</source>
-        <translation type="unfinished" />
+        <translation>无法将备注保存到 %1：%2</translation>
     </message>
     <message>
         <location line="+178" />
         <source>Signals rebuilt from the recorded transfers, not captured; each spread over its transfer's time.</source>
-        <translation type="unfinished" />
+        <translation>信号根据录制的传输重建，并非实际采集；每个信号分布在其传输的时间内。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Signals rebuilt from the recorded transfers at the bus's rate, not captured.</source>
-        <translation type="unfinished" />
+        <translation>信号根据录制的传输按总线速率重建，并非实际采集。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>CS is as recorded on its pin.</source>
-        <translation type="unfinished" />
+        <translation>CS 按其引脚上的录制显示。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Only in the recording.</source>
-        <translation type="unfinished" />
+        <translation>仅在录制中。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Not in the recording.</source>
-        <translation type="unfinished" />
+        <translation>不在录制中。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Recorded on other pins: %1.</source>
-        <translation type="unfinished" />
+        <translation>录制于其他引脚：%1。</translation>
     </message>
     <message>
         <location line="+19" />
         <source>The same as the recording's lane.</source>
-        <translation type="unfinished" />
+        <translation>与录制中的通道相同。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>1 difference from the recording.</source>
-        <translation type="unfinished" />
+        <translation>与录制有 1 处差异。</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 differences from the recording.</source>
-        <translation type="unfinished" />
+        <translation>与录制有 %1 处差异。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>1 transfer only one run has (extra).</source>
-        <translation type="unfinished" />
+        <translation>1 次传输仅存在于其中一次运行（多出）。</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 transfers only one run has (extra).</source>
-        <translation type="unfinished" />
+        <translation>%1 次传输仅存在于其中一次运行（多出）。</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Hide lane</source>
-        <translation type="unfinished" />
+        <translation>隐藏通道</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Show all lanes</source>
-        <translation type="unfinished" />
+        <translation>显示所有通道</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Default order</source>
-        <translation type="unfinished" />
+        <translation>默认顺序</translation>
     </message>
     <message>
         <location line="+32" />
         <source>Fit lanes to height</source>
-        <translation type="unfinished" />
+        <translation>通道适配高度</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Every lane taller or shorter by the same amount, so that they fill the timeline's height</source>
-        <translation type="unfinished" />
+        <translation>将所有通道等量加高或减低，使其填满时间轴的高度</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Reset lane heights</source>
-        <translation type="unfinished" />
+        <translation>重置通道高度</translation>
     </message>
     <message>
         <location line="+25" />
         <location line="+78" />
         <source>between markers A and B</source>
-        <translation type="unfinished" />
+        <translation>在标记 A 和 B 之间</translation>
     </message>
     <message>
         <location line="-77" />
         <location line="+78" />
         <source>over the whole trace</source>
-        <translation type="unfinished" />
+        <translation>在整个跟踪中</translation>
     </message>
     <message>
         <location line="-76" />
         <source>Find longest gap</source>
-        <translation type="unfinished" />
+        <translation>查找最长间隙</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The longest time the lane did nothing, %1: marked A to B</source>
-        <translation type="unfinished" />
+        <translation>此通道无活动的最长时间，%1：已用 A 至 B 标出</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Measure delay to</source>
-        <translation type="unfinished" />
+        <translation>测量延迟至</translation>
     </message>
     <message>
         <location line="+3" />
         <source>From each event of this lane to the next of another, %1: how long the firmware took to react</source>
-        <translation type="unfinished" />
+        <translation>从此通道的每个事件到另一通道的下一个事件，%1：固件的反应用时</translation>
     </message>
     <message>
         <location line="+13" />
         <source>From each rise</source>
-        <translation type="unfinished" />
+        <translation>从每个上升沿</translation>
     </message>
     <message>
         <location line="+1" />
         <source>From each fall</source>
-        <translation type="unfinished" />
+        <translation>从每个下降沿</translation>
     </message>
     <message>
         <location line="+1" />
         <source>From each change</source>
-        <translation type="unfinished" />
+        <translation>从每次变化</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Longest gap</source>
-        <translation type="unfinished" />
+        <translation>最长间隙</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Fewer than two events of the lane to find a gap between.</source>
-        <translation type="unfinished" />
+        <translation>此通道的事件少于两个，无法查找间隙。</translation>
     </message>
     <message>
         <location line="+20" />
         <source>each change of %1</source>
-        <translation type="unfinished" />
+        <translation>%1 的每次变化</translation>
     </message>
     <message>
         <location line="+1" />
         <source>each rise of %1</source>
-        <translation type="unfinished" />
+        <translation>%1 的每个上升沿</translation>
     </message>
     <message>
         <location line="+1" />
         <source>each fall of %1</source>
-        <translation type="unfinished" />
+        <translation>%1 的每个下降沿</translation>
     </message>
     <message>
         <location line="+2" />
         <source>From %1 to the next event of %2, %3.</source>
-        <translation type="unfinished" />
+        <translation>从 %1 到 %2 的下一个事件，%3。</translation>
     </message>
     <message>
         <location line="+1" />
         <source>each event of %1</source>
-        <translation type="unfinished" />
+        <translation>%1 的每个事件</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Delay</source>
-        <translation type="unfinished" />
+        <translation>延迟</translation>
     </message>
     <message>
         <location line="+4" />
         <source>No event of %1 came after one of %2 before the next.</source>
-        <translation type="unfinished" />
+        <translation>在 %2 的事件与其下一个事件之间，均未出现 %1 的事件。</translation>
     </message>
     <message>
         <location line="+2" />
         <location line="+24" />
         <source>Close</source>
-        <translation type="unfinished" />
+        <translation>关闭</translation>
     </message>
     <message>
         <location line="-10" />
         <source>min %1 · avg %2 · max %3 · σ %4 (%5 delays)</source>
-        <translation type="unfinished" />
+        <translation>最小 %1 · 平均 %2 · 最大 %3 · σ %4（%5 个延迟）</translation>
     </message>
     <message numerus="yes">
         <location line="+7" />
         <source>%n with no event of %1 before the next one.</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
+        <translation><numerusform>有 %n 个事件在下一个事件之前未出现 %1 的事件。</numerusform></translation>
     </message>
     <message>
         <location line="+4" />
         <source>Copy</source>
-        <translation type="unfinished" />
+        <translation>复制</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Show longest</source>
-        <translation type="unfinished" />
+        <translation>显示最长</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Markers A and B on the longest delay, zoomed to</source>
-        <translation type="unfinished" />
+        <translation>将标记 A 和 B 放在最长延迟处并缩放至该处</translation>
     </message>
     <message>
         <location line="+21" />
         <source>Show signals</source>
-        <translation type="unfinished" />
+        <translation>显示信号</translation>
     </message>
     <message>
         <location line="+3" />
         <source>The wires drawn under the transfers, rebuilt from their bytes: not a capture of the pins</source>
-        <translation type="unfinished" />
+        <translation>传输下方绘制的信号线根据其字节重建，并非引脚的实际采集</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Wires</source>
-        <translation type="unfinished" />
+        <translation>信号线</translation>
     </message>
     <message>
         <location line="+20" />
         <source>Inject a fault: needs a newer MikroSDK.Trace</source>
-        <translation type="unfinished" />
+        <translation>注入故障：需要更新版本的 MikroSDK.Trace</translation>
     </message>
     <message>
         <location line="+31" />
         <source>Make 0x%1 not answer</source>
-        <translation type="unfinished" />
+        <translation>使 0x%1 不应答</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Stick MISO at 0xFF</source>
-        <translation type="unfinished" />
+        <translation>将 MISO 固定为 0xFF</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Stick MISO at 0x00</source>
-        <translation type="unfinished" />
+        <translation>将 MISO 固定为 0x00</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Hold High</source>
-        <translation type="unfinished" />
+        <translation>保持高电平</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Hold Low</source>
-        <translation type="unfinished" />
+        <translation>保持低电平</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Take the devices off the bus</source>
-        <translation type="unfinished" />
+        <translation>将设备从总线上移除</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Force a value…</source>
-        <translation type="unfinished" />
+        <translation>强制设定值…</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Force a value</source>
-        <translation type="unfinished" />
+        <translation>强制设定值</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Volts the input reads:</source>
-        <translation type="unfinished" />
+        <translation>输入读取到的电压（V）：</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Count the input reads:</source>
-        <translation type="unfinished" />
+        <translation>输入读取的计数值：</translation>
     </message>
     <message>
         <location line="+18" />
         <source>Remove fault: %1</source>
-        <translation type="unfinished" />
+        <translation>移除故障：%1</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Faults</source>
-        <translation type="unfinished" />
+        <translation>故障</translation>
     </message>
     <message>
         <location line="+0" />
         <source>1 Fault</source>
-        <translation type="unfinished" />
+        <translation>1 个故障</translation>
     </message>
     <message>
         <location line="+0" />
         <source>%1 Faults</source>
-        <translation type="unfinished" />
+        <translation>%1 个故障</translation>
     </message>
     <message>
         <location line="+16" />
         <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
-        <translation type="unfinished" />
+        <translation>此固件的 MikroSDK.Trace 版本过旧，不支持故障注入：请更新 mikroSDK 并重新构建项目。</translation>
     </message>
     <message>
         <location line="+41" />
         <source>Open trace</source>
-        <translation type="unfinished" />
+        <translation>打开跟踪</translation>
     </message>
     <message>
         <location line="+28" />
         <source>Export A–B as VCD</source>
-        <translation type="unfinished" />
+        <translation>将 A–B 导出为 VCD</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Export A–B transfers as CSV</source>
-        <translation type="unfinished" />
+        <translation>将 A–B 的传输导出为 CSV</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Export as VCD</source>
-        <translation type="unfinished" />
+        <translation>导出为 VCD</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Export transfers as CSV</source>
-        <translation type="unfinished" />
+        <translation>将传输导出为 CSV</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Value Change Dump (*.vcd)</source>
-        <translation type="unfinished" />
+        <translation>Value Change Dump (*.vcd)</translation>
     </message>
     <message>
         <location line="+0" />
         <source>CSV (*.csv)</source>
-        <translation type="unfinished" />
+        <translation>CSV 文件 (*.csv)</translation>
     </message>
     <message>
         <location line="+14" />
         <source>Exporting the trace</source>
-        <translation type="unfinished" />
+        <translation>正在导出跟踪</translation>
     </message>
     <message>
         <location line="+12" />
         <source>Export trace</source>
-        <translation type="unfinished" />
+        <translation>导出跟踪</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Could not write %1: %2</source>
-        <translation type="unfinished" />
+        <translation>无法写入 %1：%2</translation>
     </message>
     <message>
         <location line="+20" />
         <location line="+8" />
         <source>Record trace</source>
-        <translation type="unfinished" />
+        <translation>录制跟踪</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Could not record to %1: %2</source>
-        <translation type="unfinished" />
+        <translation>无法录制到 %1：%2</translation>
     </message>
     <message>
         <location line="+61" />
         <source>Nothing came from the firmware while recording: this recording has no trace. Record while the target runs, until the transfers show.</source>
-        <translation type="unfinished" />
+        <translation>录制期间固件未发送任何数据：此录制不含跟踪。请在目标运行时录制，直到出现传输。</translation>
     </message>
     <message>
         <location line="+14" />
         <source>Type a name, or Cancel to keep %1.</source>
-        <translation type="unfinished" />
+        <translation>输入名称，或点击“取消”保留 %1。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>A name only, without folders.</source>
-        <translation type="unfinished" />
+        <translation>仅输入名称，不含文件夹。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>There is a recording named %1 already.</source>
-        <translation type="unfinished" />
+        <translation>已存在名为 %1 的录制。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Could not rename the recording: check the name, or Cancel to keep %1.</source>
-        <translation type="unfinished" />
+        <translation>无法重命名录制：请检查名称，或点击“取消”保留 %1。</translation>
     </message>
     <message>
         <location line="+37" />
         <source>Armed</source>
-        <translation type="unfinished" />
+        <translation>已启用</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Trigger</source>
-        <translation type="unfinished" />
+        <translation>触发器</translation>
     </message>
     <message>
         <location line="+18" />
         <source>marker A placed</source>
-        <translation type="unfinished" />
+        <translation>已放置标记 A</translation>
     </message>
     <message>
         <location line="+12" />
         <source>already recording</source>
-        <translation type="unfinished" />
+        <translation>已在录制</translation>
     </message>
     <message>
         <location line="+2" />
         <source>not recorded: Record needs a debug session of a project</source>
-        <translation type="unfinished" />
+        <translation>未录制：录制需要项目的调试会话</translation>
     </message>
     <message>
         <location line="+2" />
         <source>not recorded: %1</source>
-        <translation type="unfinished" />
+        <translation>未录制：%1</translation>
     </message>
     <message>
         <location line="+4" />
         <source>recording</source>
-        <translation type="unfinished" />
+        <translation>正在录制</translation>
     </message>
     <message>
         <location line="+9" />
         <source>paused</source>
-        <translation type="unfinished" />
+        <translation>已暂停</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Fired at %1 on %2</source>
-        <translation type="unfinished" />
+        <translation>于 %1 在 %2 上触发</translation>
     </message>
     <message>
         <location line="+22" />
         <source>Recording to %1. Press to stop.</source>
-        <translation type="unfinished" />
+        <translation>正在录制到 %1。按下即可停止。</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Record</source>
-        <translation type="unfinished" />
+        <translation>录制</translation>
     </message>
     <message>
         <location line="+3" />
         <source>This is a recording: Record records the live trace, in the Trace tool while debugging.</source>
-        <translation type="unfinished" />
+        <translation>这是一个录制：“录制”功能仅在调试时于跟踪工具中录制实时跟踪。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Record starts with a debug session of a project with trace on.</source>
-        <translation type="unfinished" />
+        <translation>需要在已启用跟踪的项目调试会话中才能开始录制。</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder; you name it when it stops.</source>
-        <translation type="unfinished" />
+        <translation>从现在起将跟踪录制到文件，不受视图限制：适用于长时间运行。文件保存在项目的 .trace 文件夹中；停止时再为其命名。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>The last recording stopped: %1</source>
-        <translation type="unfinished" />
+        <translation>上次录制已停止：%1</translation>
     </message>
     <message>
         <location line="+33" />
         <source>Recording</source>
-        <translation type="unfinished" />
+        <translation>录制</translation>
     </message>
     <message>
         <location line="+10" />
         <source>cut short</source>
-        <translation type="unfinished" />
+        <translation>已截断</translation>
     </message>
     <message>
         <location line="+6" />
         <source>NECTO %1</source>
-        <translation type="unfinished" />
+        <translation>NECTO %1</translation>
     </message>
     <message>
         <location line="+38" />
         <source>Comparing with %1</source>
-        <translation type="unfinished" />
+        <translation>正在与 %1 对比</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Each lane has the recording's lane under it (REC), on the same times from each run's start. What differs is outlined; Align at markers lines the runs up.</source>
-        <translation type="unfinished" />
+        <translation>每个通道下方都有录制中的对应通道（REC），时间均从各次运行的开始算起。不同之处以轮廓标出；“在标记处对齐”可将两次运行对齐。</translation>
     </message>
     <message>
         <location line="+88" />
         <source> (all failed)</source>
-        <translation type="unfinished" />
+        <translation>（全部失败）</translation>
     </message>
     <message>
         <location line="+0" />
         <source> (%1 failed)</source>
-        <translation type="unfinished" />
+        <translation>（%1 次失败）</translation>
     </message>
     <message>
         <location line="+20" />
         <source>Nothing compared: the recording is empty</source>
-        <translation type="unfinished" />
+        <translation>未对比：录制为空</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Nothing compared: no lane is in both runs</source>
-        <translation type="unfinished" />
+        <translation>未对比：没有通道同时存在于两次运行中</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Nothing compared: no transfer is in both runs</source>
-        <translation type="unfinished" />
+        <translation>未对比：没有传输同时存在于两次运行中</translation>
     </message>
     <message>
         <location line="+6" />
         <source>%1 failed here, OK in the recording</source>
-        <translation type="unfinished" />
+        <translation>%1 次在此失败，但在录制中成功</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1 OK here, failed in the recording</source>
-        <translation type="unfinished" />
+        <translation>%1 次在此成功，但在录制中失败</translation>
     </message>
     <message>
         <location line="+2" />
         <source>No differences</source>
-        <translation type="unfinished" />
+        <translation>无差异</translation>
     </message>
     <message>
         <location line="+1" />
         <source>1 difference</source>
-        <translation type="unfinished" />
+        <translation>1 处差异</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 differences</source>
-        <translation type="unfinished" />
+        <translation>%1 处差异</translation>
     </message>
     <message>
         <location line="+2" />
         <source>1 transfer only in this run</source>
-        <translation type="unfinished" />
+        <translation>1 次传输仅在本次运行中</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 transfers only in this run</source>
-        <translation type="unfinished" />
+        <translation>%1 次传输仅在本次运行中</translation>
     </message>
     <message>
         <location line="+4" />
         <source>1 transfer only in the recording</source>
-        <translation type="unfinished" />
+        <translation>1 次传输仅在录制中</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 transfers only in the recording</source>
-        <translation type="unfinished" />
+        <translation>%1 次传输仅在录制中</translation>
     </message>
     <message>
         <location line="+3" />
         <source>1 lane in one run only</source>
-        <translation type="unfinished" />
+        <translation>1 个通道仅存在于一次运行中</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 lanes in one run only</source>
-        <translation type="unfinished" />
+        <translation>%1 个通道仅存在于一次运行中</translation>
     </message>
     <message>
         <location line="+6" />
         <source>The recording has no trace: Record was stopped before the firmware handed a buffer over. Record while the target runs, until the transfers show.</source>
-        <translation type="unfinished" />
+        <translation>此录制不含跟踪：在固件移交缓冲区之前录制已停止。请在目标运行时录制，直到出现传输。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Lanes pair by their kind, pins and I2C device, transfers by their order in each lane. This run and the recording have none alike: another firmware, a recording of another project, or one made later in its session.</source>
-        <translation type="unfinished" />
+        <translation>通道按类型、引脚和 I2C 设备配对，传输按其在各通道中的顺序配对。本次运行与录制没有任何相同之处：可能是其他固件、其他项目的录制，或是在其会话较晚时录制的。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Transfers and pin changes compared by their order in each lane. Differences are banded on the timeline and said in the table's Compared column; transfers only one run has are outlined dashed. The arrows go through all of them.</source>
-        <translation type="unfinished" />
+        <translation>传输和引脚变化按其在各通道中的顺序进行对比。差异在时间轴上以色带标出，并在表格的“对比”列中说明；仅一次运行中存在的传输以虚线轮廓标出。箭头按钮可逐一浏览所有差异。</translation>
     </message>
     <message>
         <location line="+44" />
         <source>on %1</source>
-        <translation type="unfinished" />
+        <translation>在 %1 上</translation>
     </message>
     <message>
         <location line="+0" />
         <source>to %1</source>
-        <translation type="unfinished" />
+        <translation>发往 %1</translation>
     </message>
     <message>
         <location line="+8" />
         <source>%1 transfers %2 failed here that worked in the recording, the first at %3.</source>
-        <translation type="unfinished" />
+        <translation>%2的 %1 次传输在此失败，但在录制中成功，首次发生在 %3。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>From %1 on, all %2 transfers %3 failed; the recording's worked.</source>
-        <translation type="unfinished" />
+        <translation>从 %1 起，%3的全部 %2 次传输均失败；而录制中的均成功。</translation>
     </message>
     <message>
         <location line="+9" />
         <source>mikroBUS %1</source>
-        <translation type="unfinished" />
+        <translation>mikroBUS %1</translation>
     </message>
     <message>
         <location line="+4" />
         <source>The device at %1 stopped answering: is %2 fitted%3?</source>
-        <translation type="unfinished" />
+        <translation>地址为 %1 的设备停止应答：%2 是否已安装%3？</translation>
     </message>
     <message>
         <location line="+2" />
         <source> on %1</source>
-        <translation type="unfinished" />
+        <translation>（位于 %1）</translation>
     </message>
     <message>
         <location line="+3" />
         <source>The device at %1 stopped answering: is it fitted and connected%2?</source>
-        <translation type="unfinished" />
+        <translation>地址为 %1 的设备停止应答：是否已安装并连接%2？</translation>
     </message>
     <message>
         <location line="+1" />
         <source> (%1)</source>
-        <translation type="unfinished" />
+        <translation>（%1）</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Is the device still connected?</source>
-        <translation type="unfinished" />
+        <translation>设备是否仍处于连接状态？</translation>
     </message>
 </context>
 <context>
@@ -33319,117 +33307,117 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_transaction_model.cpp" line="+225" />
         <source>Recording: </source>
-        <translation type="unfinished" />
+        <translation>录制：</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Command %1</source>
-        <translation type="unfinished" />
+        <translation>命令 %1</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Register %1</source>
-        <translation type="unfinished" />
+        <translation>寄存器 %1</translation>
     </message>
     <message>
         <location line="+43" />
         <source>Failed ⚡</source>
-        <translation type="unfinished" />
+        <translation>失败 ⚡</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Injected</source>
-        <translation type="unfinished" />
+        <translation>已注入</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1 failed</source>
-        <translation type="unfinished" />
+        <translation>%1 次失败</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Failed</source>
-        <translation type="unfinished" />
+        <translation>失败</translation>
     </message>
     <message>
         <location line="+0" />
         <source>OK</source>
-        <translation type="unfinished" />
+        <translation>OK</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Time from the start of the transfer before it; on a frame, from the frame before it</source>
-        <translation type="unfinished" />
+        <translation>距上一个传输开始的时间；对于帧，则为距上一帧的时间</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Time</source>
-        <translation type="unfinished" />
+        <translation>时间</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Interval</source>
-        <translation type="unfinished" />
+        <translation>间隔</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Lane</source>
-        <translation type="unfinished" />
+        <translation>通道</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Op</source>
-        <translation type="unfinished" />
+        <translation>操作</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Address</source>
-        <translation type="unfinished" />
+        <translation>地址</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Data</source>
-        <translation type="unfinished" />
+        <translation>数据</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Duration</source>
-        <translation type="unfinished" />
+        <translation>持续时间</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Result</source>
-        <translation type="unfinished" />
+        <translation>结果</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Compared</source>
-        <translation type="unfinished" />
+        <translation>对比</translation>
     </message>
     <message>
         <location line="+27" />
         <source>+ Only in this run</source>
-        <translation type="unfinished" />
+        <translation>+ 仅在本次运行中</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The recording has no transfer to compare with</source>
-        <translation type="unfinished" />
+        <translation>录制中没有可供对比的传输</translation>
     </message>
     <message>
         <location line="+2" />
         <source>✓ Same</source>
-        <translation type="unfinished" />
+        <translation>✓ 相同</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Same as the recording's</source>
-        <translation type="unfinished" />
+        <translation>与录制相同</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Differs from the recording's, this run's first: %1</source>
-        <translation type="unfinished" />
+        <translation>与录制不同（本次运行的值在前）：%1</translation>
     </message>
 </context>
 <context>
@@ -33437,27 +33425,27 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_trigger_panel.cpp" line="+98" />
         <source>Watch for this</source>
-        <translation type="unfinished" />
+        <translation>监视此项</translation>
     </message>
     <message>
         <location line="+35" />
         <source>Type what to watch for: a transfer, as in "0x18 failed", or a pin's change, as in "LED_1 rise".</source>
-        <translation type="unfinished" />
+        <translation>输入要监视的内容：传输，例如 "0x18 failed"；或引脚变化，例如 "LED_1 rise"。</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Armed: waiting for the first match.</source>
-        <translation type="unfinished" />
+        <translation>已启用：正在等待首次匹配。</translation>
     </message>
     <message>
         <location line="+17" />
         <source>Disarm</source>
-        <translation type="unfinished" />
+        <translation>停用</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Arm</source>
-        <translation type="unfinished" />
+        <translation>启用</translation>
     </message>
 </context>
 <context>
@@ -33465,7 +33453,7 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="-230" />
         <source>Fit</source>
-        <translation type="unfinished" />
+        <translation>适配</translation>
     </message>
 </context>
 <context>
@@ -33473,52 +33461,52 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_signals.cpp" line="-498" />
         <source>Start</source>
-        <translation type="unfinished" />
+        <translation>起始</translation>
     </message>
     <message>
         <location line="+21" />
         <source>Stop</source>
-        <translation type="unfinished" />
+        <translation>停止</translation>
     </message>
     <message>
         <location line="+65" />
         <source>Not known</source>
-        <translation type="unfinished" />
+        <translation>未知</translation>
     </message>
     <message>
         <location line="+28" />
         <source>Address</source>
-        <translation type="unfinished" />
+        <translation>地址</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Write [%1]</source>
-        <translation type="unfinished" />
+        <translation>写入 [%1]</translation>
     </message>
     <message>
         <location line="+1" />
         <source>W %1</source>
-        <translation type="unfinished" />
+        <translation>W %1</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Write</source>
-        <translation type="unfinished" />
+        <translation>写入</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Read [%1]</source>
-        <translation type="unfinished" />
+        <translation>读取 [%1]</translation>
     </message>
     <message>
         <location line="+1" />
         <source>R %1</source>
-        <translation type="unfinished" />
+        <translation>R %1</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Read</source>
-        <translation type="unfinished" />
+        <translation>读取</translation>
     </message>
 </context>
 <context>
@@ -33527,34 +33515,34 @@ x（数字）决定显示的最大文件数</translation>
         <location line="+130" />
         <location line="+1" />
         <source>Reset</source>
-        <translation type="unfinished" />
+        <translation>复位</translation>
     </message>
     <message>
         <location line="+7" />
         <location line="+1" />
         <source>Presence</source>
-        <translation type="unfinished" />
+        <translation>存在脉冲</translation>
     </message>
     <message>
         <location line="-1" />
         <source>No presence</source>
-        <translation type="unfinished" />
+        <translation>无存在脉冲</translation>
     </message>
     <message>
         <location line="+1" />
         <source>None</source>
-        <translation type="unfinished" />
+        <translation>无</translation>
     </message>
     <message>
         <location line="+40" />
         <source>Command</source>
-        <translation type="unfinished" />
+        <translation>命令</translation>
     </message>
     <message>
         <location line="+43" />
         <location line="+1" />
         <source>Search</source>
-        <translation type="unfinished" />
+        <translation>搜索</translation>
     </message>
 </context>
 <context>
@@ -34314,7 +34302,11 @@ Click Publish when you're ready to make it available to the community.</source>
         <translation>您的项目已在“我的包”中就绪，等待发布。
 准备好后点击发布，即可让社区使用。</translation>
     </message>
-<message><source>A package with this version already exists.</source><translation>已存在具有此版本的包。</translation></message></context>
+    <message>
+        <source>A package with this version already exists.</source>
+        <translation>已存在具有此版本的包。</translation>
+    </message>
+</context>
 <context>
     <name>Necto::UploadProjectInfoDialog</name>
     <message>
@@ -34823,7 +34815,7 @@ NOTE: The displayed positions are suggestions only - verify them before continui
         <source>Prompt</source>
         <translation>提示</translation>
     </message>
-</context>
+<message><source>The FreeRTOS %1 project template is not installed. Add it from the Library Manager.</source><translation>FreeRTOS %1 项目模板未安装。请从库管理器中添加。</translation></message><message><source>FreeRTOS is not available for this setup (legacy/bare-metal SDK or dual-core MCU).</source><translation>当前配置不支持 FreeRTOS（旧版/裸机 SDK 或双核 MCU）。</translation></message></context>
 <context>
     <name>Necto::WaitingFrame</name>
     <message>
@@ -35134,7 +35126,7 @@ Do you want to reload the page ?</source>
         <source>Close</source>
         <translation>关闭</translation>
     </message>
-</context>
+<message><source>Stay on top: on</source><translation>置顶：开</translation></message><message><source>Stay on top</source><translation>置顶</translation></message></context>
 <context>
     <name>Necto::WindowPanel</name>
     <message>
@@ -36766,7 +36758,7 @@ Please, check your spelling.</source>
     <message>
         <location line="+449" />
         <source>. Implement the application as FreeRTOS tasks: create the tasks, use FreeRTOS primitives for delays and inter-task communication, and start the scheduler from main</source>
-        <translation type="unfinished" />
+        <translation>。将应用程序实现为 FreeRTOS 任务：创建任务，使用 FreeRTOS 原语实现延时和任务间通信，并从 main 启动调度器</translation>
     </message>
     <message>
         <source>Create and Configure Project</source>
@@ -37336,7 +37328,7 @@ Please, check your spelling.</source>
         <source>No NECTO project was found inside "%1".</source>
         <translation>在“%1”中未找到 NECTO 项目。</translation>
     </message>
-</context>
+<message><source>Project not opened</source><translation>项目未打开</translation></message><message><source>&lt;b&gt;%1&lt;/b&gt; can't run on the connected board.&lt;br/&gt;&lt;br/&gt;%2&lt;br/&gt;• %3&lt;br/&gt;&lt;br/&gt;%4</source><translation>&lt;b&gt;%1&lt;/b&gt; 无法在已连接的开发板上运行。&lt;br/&gt;&lt;br/&gt;%2&lt;br/&gt;• %3&lt;br/&gt;&lt;br/&gt;%4</translation></message><message><source>Configuration changed</source><translation>配置已更改</translation></message><message><source>Configuration &lt;b&gt;%1&lt;/b&gt; was modified. This project still uses its original copy.</source><translation>配置 &lt;b&gt;%1&lt;/b&gt; 已被修改。此项目仍在使用其原始副本。</translation></message><message><source>Keep current</source><translation>保持当前</translation></message><message><source>Save the project's copy as a separate configuration.</source><translation>将项目中的副本另存为单独的配置。</translation></message><message><source>Disconnect from the board or connect to a compatible one to make this project active.</source><translation>请断开与开发板的连接，或连接兼容的开发板，以激活此项目。</translation></message><message><source>Project not activated</source><translation>项目未激活</translation></message><message><source>Install this configuration.</source><translation>安装此配置。</translation></message><message><source>Requirements not met:</source><translation>未满足要求：</translation></message><message><source>Switch to the modified configuration.</source><translation>切换到修改后的配置。</translation></message><message><source>Remote Board Farm</source><translation>远程板卡农场</translation></message><message><source>Copying FreeRTOS kernel</source><translation>正在复制 FreeRTOS 内核</translation></message><message><source>Configuration not installed</source><translation>配置未安装</translation></message><message><source>Configuration &lt;b&gt;%1&lt;/b&gt; is not installed. Click for options.</source><translation>配置 &lt;b&gt;%1&lt;/b&gt; 未安装。点击查看选项。</translation></message><message><source>This project uses &lt;b&gt;%1&lt;/b&gt;, which is not installed.</source><translation>此项目使用的 &lt;b&gt;%1&lt;/b&gt; 尚未安装。</translation></message><message><source>Disconnect from the board or connect to a compatible one to open this project.</source><translation>请断开与开发板的连接，或连接兼容的开发板，以打开此项目。</translation></message><message><source>Install</source><translation>安装</translation></message><message><source>This project uses an outdated version of the configuration &lt;b&gt;%1&lt;/b&gt;. Click to review.</source><translation>此项目使用的配置 &lt;b&gt;%1&lt;/b&gt; 版本已过时。点击查看。</translation></message><message><source>Use changes</source><translation>使用更改</translation></message></context>
 <context>
     <name>ProjectNamePage</name>
     <message>
@@ -37532,73 +37524,73 @@ Please, check your spelling.</source>
     <message>
         <location line="+131" />
         <source>The configuration could not be read</source>
-        <translation type="unfinished" />
+        <translation>无法读取配置</translation>
     </message>
     <message>
         <location line="+39" />
         <source>Requires the legacy SDK</source>
-        <translation type="unfinished" />
+        <translation>需要旧版 SDK</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Requires a dual-core MCU</source>
-        <translation type="unfinished" />
+        <translation>需要双核 MCU</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Requires a TFT display board</source>
-        <translation type="unfinished" />
+        <translation>需要 TFT 显示屏开发板</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Requires mikroSDK instead of the legacy SDK</source>
-        <translation type="unfinished" />
+        <translation>需要 mikroSDK，而非旧版 SDK</translation>
     </message>
     <message>
         <location line="+2" />
         <source>MCU does not support mikroSDK</source>
-        <translation type="unfinished" />
+        <translation>MCU 不支持 mikroSDK</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Requires a single-core MCU</source>
-        <translation type="unfinished" />
+        <translation>需要单核 MCU</translation>
     </message>
     <message>
         <location line="+4" />
         <source>XC8 compiler is not supported</source>
-        <translation type="unfinished" />
+        <translation>不支持 XC8 编译器</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Requires GCC, Clang or XC32 (current: %1)</source>
-        <translation type="unfinished" />
+        <translation>需要 GCC、Clang 或 XC32（当前：%1）</translation>
     </message>
     <message>
         <location line="+9" />
         <location line="+51" />
         <source>Requires GCC, Clang or XC32</source>
-        <translation type="unfinished" />
+        <translation>需要 GCC、Clang 或 XC32</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Requires a Cortex-M, PIC32 or RISC-V MCU</source>
-        <translation type="unfinished" />
+        <translation>需要 Cortex-M、PIC32 或 RISC-V MCU</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Unsupported MCU core: %1 (requires Cortex-M, PIC32 or RISC-V)</source>
-        <translation type="unfinished" />
+        <translation>不支持的 MCU 内核：%1（需要 Cortex-M、PIC32 或 RISC-V）</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Only GD32VF103 RISC-V MCUs are supported</source>
-        <translation type="unfinished" />
+        <translation>仅支持 GD32VF103 RISC-V MCU</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Requires %1 KB RAM (available: %2 KB)</source>
-        <translation type="unfinished" />
+        <translation>需要 %1 KB RAM（可用：%2 KB）</translation>
     </message>
 </context>
 <context>
@@ -38255,142 +38247,142 @@ Make sure that CMAKE_BUILD_TYPE variable matches the "构建 类型" field.</tra
     <message>
         <location filename="../core/src/debugger/debug_view/src/queues_view_model.cpp" line="+18" />
         <source>Queue</source>
-        <translation type="unfinished" />
+        <translation>队列</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Semaphore</source>
-        <translation type="unfinished" />
+        <translation>信号量</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Mutex</source>
-        <translation type="unfinished" />
+        <translation>互斥量</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Semaphore/Mutex</source>
-        <translation type="unfinished" />
+        <translation>信号量/互斥量</translation>
     </message>
     <message>
         <location line="+77" />
         <source>Available</source>
-        <translation type="unfinished" />
+        <translation>可用</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Taken</source>
-        <translation type="unfinished" />
+        <translation>已获取</translation>
     </message>
     <message>
         <location line="+8" />
         <source>(unheld)</source>
-        <translation type="unfinished" />
+        <translation>（未持有）</translation>
     </message>
     <message>
         <location line="+12" />
         <source>Address: %1</source>
-        <translation type="unfinished" />
+        <translation>地址：%1</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Could not be determined on this FreeRTOS version.</source>
-        <translation type="unfinished" />
+        <translation>此 FreeRTOS 版本无法确定。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>This FreeRTOS version cannot tell the two apart.</source>
-        <translation type="unfinished" />
+        <translation>此 FreeRTOS 版本无法区分这两者。</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Not resolvable for this entry.</source>
-        <translation type="unfinished" />
+        <translation>此条目无法解析。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>1 = available, 0 = currently held.</source>
-        <translation type="unfinished" />
+        <translation>1 = 可用，0 = 当前被持有。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Current count / maximum count.</source>
-        <translation type="unfinished" />
+        <translation>当前计数 / 最大计数。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Available when 1, held when 0.</source>
-        <translation type="unfinished" />
+        <translation>为 1 时可用，为 0 时被持有。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Capacity unknown - showing queued messages only.</source>
-        <translation type="unfinished" />
+        <translation>容量未知——仅显示已排队的消息。</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Messages currently queued / queue capacity.</source>
-        <translation type="unfinished" />
+        <translation>当前排队的消息数 / 队列容量。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Only meaningful for mutexes.</source>
-        <translation type="unfinished" />
+        <translation>仅对互斥量有意义。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>No task currently holds this mutex.</source>
-        <translation type="unfinished" />
+        <translation>当前没有任务持有此互斥量。</translation>
     </message>
     <message>
         <location line="+98" />
         <source>Each core runs its own independent FreeRTOS instance.</source>
-        <translation type="unfinished" />
+        <translation>每个内核运行各自独立的 FreeRTOS 实例。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Only registered objects appear here.</source>
-        <translation type="unfinished" />
+        <translation>此处仅显示已注册的对象。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>What kind of object this is.</source>
-        <translation type="unfinished" />
+        <translation>此对象的类型。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>How full each object is.</source>
-        <translation type="unfinished" />
+        <translation>每个对象的填充程度。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>The task currently holding this mutex.</source>
-        <translation type="unfinished" />
+        <translation>当前持有此互斥量的任务。</translation>
     </message>
     <message>
         <location line="+12" />
         <source>Core</source>
-        <translation type="unfinished" />
+        <translation>内核</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation>名称</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Type</source>
-        <translation type="unfinished" />
+        <translation>类型</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Fill Level</source>
-        <translation type="unfinished" />
+        <translation>填充程度</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Held By</source>
-        <translation type="unfinished" />
+        <translation>持有者</translation>
     </message>
 </context>
 <context>
@@ -41747,7 +41739,7 @@ This reverts commit %2.</source>
         <source>Click the TFT to tap · drag to swipe · &lt;a href="#" id="sim-recalibrate"&gt;redraw region&lt;/a&gt;</source>
         <translation>点击 TFT 轻触 · 拖动以滑动 · &lt;a href="#" id="sim-recalibrate"&gt;重画区域&lt;/a&gt;</translation>
     </message>
-</context>
+<message><source>Real-time video feed of the remote board</source><translation>远程开发板的实时视频画面</translation></message><message><source>Secure connection to the remote board using SSL/TLS encryption</source><translation>使用 SSL/TLS 加密与远程开发板安全连接</translation></message><message><source>Firmware trace</source><translation>固件跟踪</translation></message></context>
 <context>
     <name>SplashScreen</name>
     <message>
@@ -42318,217 +42310,217 @@ This PDF file will be available for the following 15 days, starting with </sourc
     <message>
         <location filename="../core/src/debugger/debug_view/src/tasks_view_model.cpp" line="+21" />
         <source>Running</source>
-        <translation type="unfinished" />
+        <translation>运行中</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Ready</source>
-        <translation type="unfinished" />
+        <translation>就绪</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Blocked</source>
-        <translation type="unfinished" />
+        <translation>阻塞</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Suspended</source>
-        <translation type="unfinished" />
+        <translation>已挂起</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Deleted</source>
-        <translation type="unfinished" />
+        <translation>已删除</translation>
     </message>
     <message>
         <location line="+81" />
         <source>%1 (base %2)</source>
-        <translation type="unfinished" />
+        <translation>%1（基础 %2）</translation>
     </message>
     <message>
         <location line="+33" />
         <source>Delay / notify</source>
-        <translation type="unfinished" />
+        <translation>延迟 / 通知</translation>
     </message>
     <message>
         <location line="+11" />
         <source>0 (clock stopped)</source>
-        <translation type="unfinished" />
+        <translation>0（时钟已停止）</translation>
     </message>
     <message>
         <location line="+7" />
         <source>(current)</source>
-        <translation type="unfinished" />
+        <translation>（当前）</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Double-click to go to where this task is executing.</source>
-        <translation type="unfinished" />
+        <translation>双击可跳转到此任务正在执行的位置。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Double-click to go to where this task is parked.</source>
-        <translation type="unfinished" />
+        <translation>双击可跳转到此任务停留的位置。</translation>
     </message>
     <message>
         <location line="+1" />
         <source>No source location available for this task.</source>
-        <translation type="unfinished" />
+        <translation>此任务没有可用的源代码位置。</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Raised from %1 while it holds a mutex.</source>
-        <translation type="unfinished" />
+        <translation>持有互斥量期间从 %1 提升。</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Task control block address: %1</source>
-        <translation type="unfinished" />
+        <translation>任务控制块地址：%1</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Could not be computed for this task.</source>
-        <translation type="unfinished" />
+        <translation>无法为此任务计算。</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Peak so far. Total size unknown for this build.</source>
-        <translation type="unfinished" />
+        <translation>迄今为止的峰值。此构建的总大小未知。</translation>
     </message>
     <message>
         <location line="+1" />
         <source>%1 B never used.</source>
-        <translation type="unfinished" />
+        <translation>%1 B 从未使用。</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Blocked on "%1", held by %2.</source>
-        <translation type="unfinished" />
+        <translation>阻塞于“%1”，由 %2 持有。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Blocked on "%1".</source>
-        <translation type="unfinished" />
+        <translation>阻塞于“%1”。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Waiting on an unregistered object.</source>
-        <translation type="unfinished" />
+        <translation>正在等待未注册的对象。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Waiting on a delay or notification.</source>
-        <translation type="unfinished" />
+        <translation>正在等待延迟或通知。</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Only shown for tasks waiting on an object.</source>
-        <translation type="unfinished" />
+        <translation>仅对等待某个对象的任务显示。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Needs run-time stats enabled in FreeRTOSConfig.h.</source>
-        <translation type="unfinished" />
+        <translation>需要在 FreeRTOSConfig.h 中启用运行时统计。</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Running now - see the Call Stack view.</source>
-        <translation type="unfinished" />
+        <translation>正在运行——请查看调用堆栈视图。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Not available for this target.</source>
-        <translation type="unfinished" />
+        <translation>此目标不可用。</translation>
     </message>
     <message>
         <location line="+88" />
         <source>Double-click a task to go to its code.</source>
-        <translation type="unfinished" />
+        <translation>双击任务可跳转到其代码。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>The handle returned when the task was created.</source>
-        <translation type="unfinished" />
+        <translation>创建任务时返回的句柄。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>What each task is doing right now.</source>
-        <translation type="unfinished" />
+        <translation>每个任务当前的状态。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Higher runs first. 0 is the lowest.</source>
-        <translation type="unfinished" />
+        <translation>数值越大越先运行。0 为最低。</translation>
     </message>
     <message>
         <location line="+5" />
         <source>The most stack each task has ever used, not its usage now.</source>
-        <translation type="unfinished" />
+        <translation>每个任务曾使用的最大堆栈量，而非当前使用量。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>What each blocked task is waiting for.</source>
-        <translation type="unfinished" />
+        <translation>每个阻塞任务正在等待的对象。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Share of CPU time used by each task.</source>
-        <translation type="unfinished" />
+        <translation>每个任务占用的 CPU 时间比例。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Where each waiting task will resume.</source>
-        <translation type="unfinished" />
+        <translation>每个等待中的任务将从何处恢复。</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Each core runs its own FreeRTOS instance.</source>
-        <translation type="unfinished" />
+        <translation>每个内核运行各自的 FreeRTOS 实例。</translation>
     </message>
     <message>
         <location line="+12" />
         <source>Core</source>
-        <translation type="unfinished" />
+        <translation>内核</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation>名称</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Task Handle</source>
-        <translation type="unfinished" />
+        <translation>任务句柄</translation>
     </message>
     <message>
         <location line="+2" />
         <source>State</source>
-        <translation type="unfinished" />
+        <translation>状态</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Priority</source>
-        <translation type="unfinished" />
+        <translation>优先级</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Stack Usage</source>
-        <translation type="unfinished" />
+        <translation>堆栈使用量</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Event Object</source>
-        <translation type="unfinished" />
+        <translation>事件对象</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Runtime</source>
-        <translation type="unfinished" />
+        <translation>运行时间</translation>
     </message>
     <message>
         <location line="+2" />
         <source>PC</source>
-        <translation type="unfinished" />
+        <translation>PC</translation>
     </message>
 </context>
 <context>
@@ -43182,7 +43174,7 @@ x（数字）决定显示的最大文件数</translation>
         <location line="+8" />
         <location line="+176" />
         <source>Trace</source>
-        <translation type="unfinished" />
+        <translation>跟踪</translation>
     </message>
 </context>
 <context>
@@ -43283,72 +43275,67 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_fault_panel.ui" line="+46" />
         <source>Faults NECTO injects into the firmware's drivers, for this debug session</source>
-        <translation type="unfinished" />
+        <translation>NECTO 在本次调试会话中注入固件驱动程序的故障</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Faults</source>
-        <translation type="unfinished" />
+        <translation>故障</translation>
     </message>
     <message>
         <location line="+14" />
         <source>What to break</source>
-        <translation type="unfinished" />
+        <translation>故障对象</translation>
     </message>
     <message>
         <location line="+13" />
         <source>The lane it holds</source>
-        <translation type="unfinished" />
+        <translation>要保持的通道</translation>
     </message>
     <message>
         <location line="+38" />
         <source>The byte every read on the bus gives, in hex</source>
-        <translation type="unfinished" />
+        <translation>总线上每次读取返回的字节（十六进制）</translation>
     </message>
     <message>
-        <location line="+3" />
-        <source>\0\x&gt;HH</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
+        <location line="+6" />
         <source>0xFF</source>
-        <translation type="unfinished" />
+        <translation>0xFF</translation>
     </message>
     <message>
         <location line="+23" />
         <source>The level the input reads</source>
-        <translation type="unfinished" />
+        <translation>输入读取到的电平</translation>
     </message>
     <message>
         <location line="+4" />
         <source>High</source>
-        <translation type="unfinished" />
+        <translation>高</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Low</source>
-        <translation type="unfinished" />
+        <translation>低</translation>
     </message>
     <message>
         <location line="+24" />
         <source>The value the input reads</source>
-        <translation type="unfinished" />
+        <translation>输入读取到的值</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Inject</source>
-        <translation type="unfinished" />
+        <translation>注入</translation>
     </message>
     <message>
         <location line="+7" />
         <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this device.</source>
-        <translation type="unfinished" />
+        <translation>MISO 卡死只影响读取的数据：固件只向此设备写入时，不会产生任何影响。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>No reads on this lane yet</source>
-        <translation type="unfinished" />
+        <translation>此通道尚无读取</translation>
     </message>
 </context>
 <context>
@@ -43357,17 +43344,17 @@ x（数字）决定显示的最大文件数</translation>
         <location filename="../core/src/debugger/trace/trace_note_dialog.ui" line="+14" />
         <location line="+24" />
         <source>Add note</source>
-        <translation type="unfinished" />
+        <translation>添加备注</translation>
     </message>
     <message>
         <location line="+57" />
         <source>Cancel</source>
-        <translation type="unfinished" />
+        <translation>取消</translation>
     </message>
     <message>
         <location line="+10" />
         <source>OK</source>
-        <translation type="unfinished" />
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -43376,27 +43363,27 @@ x（数字）决定显示的最大文件数</translation>
         <location filename="../core/src/debugger/trace/trace_recording_name_dialog.ui" line="+14" />
         <location line="+24" />
         <source>Recording saved</source>
-        <translation type="unfinished" />
+        <translation>录制已保存</translation>
     </message>
     <message>
         <location line="+45" />
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation>名称</translation>
     </message>
     <message>
         <location line="+74" />
         <source>Keep the automatic name</source>
-        <translation type="unfinished" />
+        <translation>保留自动生成的名称</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Cancel</source>
-        <translation type="unfinished" />
+        <translation>取消</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Save</source>
-        <translation type="unfinished" />
+        <translation>保存</translation>
     </message>
 </context>
 <context>
@@ -43404,79 +43391,81 @@ x（数字）决定显示的最大文件数</translation>
     <message>
         <location filename="../core/src/debugger/trace/trace_trigger_panel.ui" line="+35" />
         <source>Trigger on</source>
-        <translation type="unfinished" />
+        <translation>触发条件</translation>
     </message>
     <message>
         <location line="+13" />
         <source>What to watch for, in the search's words. Every word must match:
 a transfer: failed, ok, w, r, w/r, tx, rx, 0x48, 9F 00, "text", a register's name
 a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
-        <translation type="unfinished" />
+        <translation>要监视的内容，使用搜索的关键词。每个词都必须匹配：
+传输：failed、ok、w、r、w/r、tx、rx、0x48、9F 00、"text"、寄存器名称
+引脚变化：rise、fall、high、low 及引脚名称，例如 "LED_1 rise"</translation>
     </message>
     <message>
         <location line="+5" />
         <source>0x18 failed · w 05 · LED_1 rise</source>
-        <translation type="unfinished" />
+        <translation>0x18 failed · w 05 · LED_1 rise</translation>
     </message>
     <message>
         <location line="+7" />
         <source>From this trace</source>
-        <translation type="unfinished" />
+        <translation>来自此跟踪</translation>
     </message>
     <message>
         <location line="+28" />
         <source>Then</source>
-        <translation type="unfinished" />
+        <translation>然后</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Pause the debugger</source>
-        <translation type="unfinished" />
+        <translation>暂停调试器</translation>
     </message>
     <message>
         <location line="+3" />
         <source>The trace comes in buffers: the target runs on a little past the event before the pause holds it.</source>
-        <translation type="unfinished" />
+        <translation>跟踪数据按缓冲区传送：暂停生效前，目标会在事件之后继续运行一小段时间。</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Place marker A on the event</source>
-        <translation type="unfinished" />
+        <translation>在事件处放置标记 A</translation>
     </message>
     <message>
         <location line="+15" />
         <source>Record, from</source>
-        <translation type="unfinished" />
+        <translation>录制，从</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Record to a file, starting before the event: what came before it is kept while the trigger is armed.</source>
-        <translation type="unfinished" />
+        <translation>录制到文件，从事件发生之前开始：触发器启用期间会保留事件之前的数据。</translation>
     </message>
     <message>
         <location line="+7" />
         <source> s before</source>
-        <translation type="unfinished" />
+        <translation> s 前</translation>
     </message>
     <message>
         <location line="+13" />
         <source>to</source>
-        <translation type="unfinished" />
+        <translation>到</translation>
     </message>
     <message>
         <location line="+7" />
         <source>stopped</source>
-        <translation type="unfinished" />
+        <translation>停止时</translation>
     </message>
     <message>
         <location line="+3" />
         <source> s after</source>
-        <translation type="unfinished" />
+        <translation> s 后</translation>
     </message>
     <message>
         <location line="+53" />
         <source>Arm</source>
-        <translation type="unfinished" />
+        <translation>启用</translation>
     </message>
 </context>
 <context>
@@ -43485,17 +43474,17 @@ a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
         <location filename="../core/src/debugger/trace/trace_value_dialog.ui" line="+14" />
         <location line="+24" />
         <source>Force a value</source>
-        <translation type="unfinished" />
+        <translation>强制设定值</translation>
     </message>
     <message>
         <location line="+61" />
         <source>Cancel</source>
-        <translation type="unfinished" />
+        <translation>取消</translation>
     </message>
     <message>
         <location line="+10" />
         <source>OK</source>
-        <translation type="unfinished" />
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -43503,220 +43492,214 @@ a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
     <message>
         <location filename="../core/src/debugger/trace/trace_view.ui" line="+14" />
         <source>Firmware trace</source>
-        <translation type="unfinished" />
+        <translation>固件跟踪</translation>
     </message>
     <message>
         <location line="+91" />
         <source>Start Debugging (F9)</source>
-        <translation type="unfinished" />
+        <translation>开始调试（F9）</translation>
     </message>
     <message>
         <location line="+61" />
         <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder.</source>
-        <translation type="unfinished" />
+        <translation>从现在起将跟踪录制到文件，不受视图限制：适用于长时间运行。文件保存在项目的 .trace 文件夹中。</translation>
     </message>
     <message>
         <location line="+3" />
         <location line="+684" />
         <source>Record</source>
-        <translation type="unfinished" />
+        <translation>录制</translation>
     </message>
     <message>
         <location line="-665" />
         <source>Faults NECTO injects into the firmware: a device that stops answering, a stuck bus or pin, a forced ADC value. Right-click a lane for its faults too.</source>
-        <translation type="unfinished" />
+        <translation>NECTO 注入固件的故障：设备停止应答、总线或引脚卡死、强制 ADC 值。也可右键单击通道查看其故障。</translation>
     </message>
     <message>
         <location line="+3" />
         <location line="+737" />
         <source>Faults</source>
-        <translation type="unfinished" />
+        <translation>故障</translation>
     </message>
     <message>
         <location line="-718" />
         <source>Watch the trace for a transfer or a pin's change, then pause the debugger, place a marker or record.</source>
-        <translation type="unfinished" />
+        <translation>监视跟踪中的传输或引脚变化，然后暂停调试器、放置标记或录制。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Trigger</source>
-        <translation type="unfinished" />
+        <translation>触发器</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Go to, zoom to, copy or export what is between markers A and B, or remove them (Esc)</source>
-        <translation type="unfinished" />
+        <translation>转到、缩放、复制或导出标记 A 和 B 之间的内容，或移除标记（Esc）</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Markers</source>
-        <translation type="unfinished" />
+        <translation>标记</translation>
     </message>
     <message>
         <location line="+35" />
         <source>First difference: where the runs part</source>
-        <translation type="unfinished" />
+        <translation>第一处差异：两次运行开始分歧的位置</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Previous difference from the recording</source>
-        <translation type="unfinished" />
+        <translation>与录制的上一处差异</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Next difference from the recording</source>
-        <translation type="unfinished" />
+        <translation>与录制的下一处差异</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Previous failed transfer</source>
-        <translation type="unfinished" />
+        <translation>上一个失败的传输</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Next failed transfer</source>
-        <translation type="unfinished" />
+        <translation>下一个失败的传输</translation>
     </message>
     <message>
         <location line="+23" />
         <source>Time span the timeline shows, following the newest events</source>
-        <translation type="unfinished" />
+        <translation>时间轴显示的时间跨度，跟随最新事件</translation>
     </message>
     <message>
         <location line="+13" />
         <source>1 ms</source>
-        <translation type="unfinished" />
+        <translation>1 ms</translation>
     </message>
     <message>
         <location line="+5" />
         <source>10 ms</source>
-        <translation type="unfinished" />
+        <translation>10 ms</translation>
     </message>
     <message>
         <location line="+5" />
         <source>100 ms</source>
-        <translation type="unfinished" />
+        <translation>100 ms</translation>
     </message>
     <message>
         <location line="+5" />
         <source>1 s</source>
-        <translation type="unfinished" />
+        <translation>1 s</translation>
     </message>
     <message>
         <location line="+5" />
         <source>2 s</source>
-        <translation type="unfinished" />
+        <translation>2 s</translation>
     </message>
     <message>
         <location line="+5" />
         <source>10 s</source>
-        <translation type="unfinished" />
+        <translation>10 s</translation>
     </message>
     <message>
         <location line="+5" />
         <source>Whole trace</source>
-        <translation type="unfinished" />
+        <translation>整个跟踪</translation>
     </message>
     <message>
         <location line="+24" />
         <source>Clear the trace</source>
-        <translation type="unfinished" />
+        <translation>清除跟踪</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Open a recording, compare with one, or export the trace</source>
-        <translation type="unfinished" />
+        <translation>打开录制、与录制对比或导出跟踪</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Show or hide the transfers</source>
-        <translation type="unfinished" />
+        <translation>显示或隐藏传输</translation>
     </message>
     <message>
         <location line="+82" />
         <source>Line the recording up with this run: put marker A on an event of the live lane, then marker B on the same event in the recording under it.</source>
-        <translation type="unfinished" />
+        <translation>将录制与本次运行对齐：将标记 A 放在实时通道的某个事件上，再将标记 B 放在其下方录制中的同一事件上。</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Align at markers</source>
-        <translation type="unfinished" />
+        <translation>在标记处对齐</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Stop comparing</source>
-        <translation type="unfinished" />
+        <translation>停止对比</translation>
     </message>
     <message>
         <location line="+141" />
         <source>Start Debugging</source>
-        <translation type="unfinished" />
+        <translation>开始调试</translation>
     </message>
     <message>
-        <location line="+3" />
         <location line="+10" />
-        <source>primary</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-3" />
         <source>Enable Trace</source>
-        <translation type="unfinished" />
+        <translation>启用跟踪</translation>
     </message>
     <message>
         <location line="+94" />
         <source>Live</source>
-        <translation type="unfinished" />
+        <translation>实时</translation>
     </message>
     <message>
         <location line="+10" />
         <source>View the trace in real time</source>
-        <translation type="unfinished" />
+        <translation>实时查看跟踪</translation>
     </message>
     <message>
         <location line="+75" />
         <source>Save the trace for later analysis</source>
-        <translation type="unfinished" />
+        <translation>保存跟踪以供后续分析</translation>
     </message>
     <message>
         <location line="+75" />
         <source>Inject faults to test the firmware</source>
-        <translation type="unfinished" />
+        <translation>注入故障以测试固件</translation>
     </message>
     <message>
         <location line="+149" />
         <source>Lanes</source>
-        <translation type="unfinished" />
+        <translation>通道</translation>
     </message>
     <message>
         <location line="+20" />
         <source>Collapse the lane list</source>
-        <translation type="unfinished" />
+        <translation>折叠通道列表</translation>
     </message>
     <message>
         <location line="+126" />
         <source>Transfers</source>
-        <translation type="unfinished" />
+        <translation>传输</translation>
     </message>
     <message>
         <location line="+23" />
         <source>Only the transfers that differ from the recording, or that one run has only</source>
-        <translation type="unfinished" />
+        <translation>仅显示与录制不同或仅一次运行中存在的传输</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Differences only</source>
-        <translation type="unfinished" />
+        <translation>仅显示差异</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Previous match</source>
-        <translation type="unfinished" />
+        <translation>上一个匹配项</translation>
     </message>
     <message>
         <location line="+16" />
         <source>Next match</source>
-        <translation type="unfinished" />
+        <translation>下一个匹配项</translation>
     </message>
     <message>
         <location line="+22" />
@@ -43726,12 +43709,17 @@ w, r, w/r, tx, rx, burst: the operation; bytes after it in its direction
 0x48: an I2C address
 9F 00: bytes, in this order
 "ERR", thermo: text in the lane's name or pins, or what a UART sent</source>
-        <translation type="unfinished" />
+        <translation>搜索传输（Ctrl+F）。每个词都必须匹配：
+failed、ok、injected：结果
+w、r、w/r、tx、rx、burst：操作；其后的字节按该方向匹配
+0x48：I2C 地址
+9F 00：字节，按此顺序
+"ERR"、thermo：通道名称或引脚中的文本，或 UART 发送的内容</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Search transfers</source>
-        <translation type="unfinished" />
+        <translation>搜索传输</translation>
     </message>
 </context>
 <context>
@@ -45288,12 +45276,12 @@ NOTE: The displayed positions are suggestions only - verify them before continui
     <message>
         <location line="+272" />
         <source>FreeRTOS is not available for this setup (legacy/bare-metal SDK or dual-core MCU).</source>
-        <translation type="unfinished" />
+        <translation>当前配置不支持 FreeRTOS（旧版/裸机 SDK 或双核 MCU）。</translation>
     </message>
     <message>
         <location line="+11" />
         <source>The FreeRTOS %1 project template is not installed. Add it from the Library Manager.</source>
-        <translation type="unfinished" />
+        <translation>FreeRTOS %1 项目模板未安装。请从库管理器中添加。</translation>
     </message>
     <message>
         <source>Setup</source>
@@ -45726,7 +45714,7 @@ Do you want to reload the page ?</source>
         <location line="+20" />
         <location filename="../common/widgets/src/widget_detach_container/widget_detach_container.cpp" line="+91" />
         <source>Stay on top</source>
-        <translation type="unfinished" />
+        <translation>置顶</translation>
     </message>
     <message>
         <location line="+19" />
@@ -45748,7 +45736,7 @@ Do you want to reload the page ?</source>
     <message>
         <location filename="../common/widgets/src/widget_detach_container/widget_detach_container.cpp" line="+0" />
         <source>Stay on top: on</source>
-        <translation type="unfinished" />
+        <translation>置顶：开</translation>
     </message>
 </context>
 <context>
@@ -45962,177 +45950,1061 @@ Do you want to reload the page ?</source>
     </message>
 </context>
 <context>
-    <name>Necto::TraceRecordingNameDialog</name>
+    <name>Trace::TraceView</name>
     <message>
-        <location filename="../core/src/debugger/trace/trace_recording_name_dialog.ui" line="+14" />
-        <location line="+24" />
-        <source>Recording saved</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+45" />
-        <source>Name</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+74" />
-        <source>Keep the automatic name</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Cancel</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Save</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::TraceFaultPanel</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_fault_panel.ui" line="+46" />
-        <source>Faults NECTO injects into the firmware's drivers, for this debug session</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Faults</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+14" />
-        <source>What to break</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>The lane it holds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+38" />
-        <source>The byte every read on the bus gives, in hex</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>\0\x&gt;HH</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>0xFF</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+23" />
-        <source>The level the input reads</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>High</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Low</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+24" />
-        <source>The value the input reads</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Inject</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this device.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>No reads on this lane yet</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>RenesasE2ProgramJob</name>
-    <message>
-        <location line="+32" />
-        <source>Renesas E2: Programming</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Renesas E2: %1</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>MemoryViewModel</name>
-    <message>
-        <location filename="../core/src/debugger/debug_view/src/memory_view_model.cpp" line="+124" />
-        <source>%1: 0x%2 (%3)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+23" />
-        <source>Address</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>ASCII</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::TriggerPanel</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_trigger_panel.cpp" line="+98" />
-        <source>Watch for this</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+35" />
-        <source>Type what to watch for: a transfer, as in "0x18 failed", or a pin's change, as in "LED_1 rise".</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Armed: waiting for the first match.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+17" />
-        <source>Disarm</source>
-        <translation type="unfinished" />
+        <location filename="../core/src/debugger/trace/trace_view.cpp" line="+558" />
+        <source>Hide the transfers</source>
+        <translation>隐藏传输</translation>
     </message>
     <message>
         <location line="+0" />
-        <source>Arm</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::ClickPresetChip</name>
-    <message>
-        <location filename="../core/src/productivity_hub/common/click_preset_chip.ui" line="+23" />
-        <source>Frame</source>
-        <translation type="unfinished" />
+        <source>Show the transfers</source>
+        <translation>显示传输</translation>
     </message>
     <message>
-        <location filename="../core/src/productivity_hub/common/click_preset_chip.cpp" line="+37" />
-        <source>Delete combination</source>
-        <translation type="unfinished" />
+        <location line="+10" />
+        <source>Collapse the lane list</source>
+        <translation>折叠通道列表</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Expand the lane list</source>
+        <translation>展开通道列表</translation>
+    </message>
+    <message>
+        <location line="+158" />
+        <source>Project</source>
+        <translation>项目</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>MCU</source>
+        <translation>MCU</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Board</source>
+        <translation>开发板</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Configuration</source>
+        <translation>配置</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Firmware</source>
+        <translation>固件</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>NECTO</source>
+        <translation>NECTO</translation>
+    </message>
+    <message>
+        <location line="+64" />
+        <source>Nothing was recorded</source>
+        <translation>未录制任何内容</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>This recording is empty: the session ended before any trace data arrived.</source>
+        <translation>此录制为空：会话在收到任何跟踪数据之前已结束。</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>No project open</source>
+        <translation>未打开项目</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Open a project to see its I2C, SPI, UART and pin activity on a timeline.</source>
+        <translation>打开项目，即可在时间轴上查看其 I2C、SPI、UART 和引脚活动。</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Reading the project's libraries…</source>
+        <translation>正在读取项目的库…</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Trace is on for %1</source>
+        <translation>%1 已启用跟踪</translation>
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Restarting: rebuilding with trace and programming the board…</source>
+        <translation>正在重启：正在启用跟踪重新构建并烧录开发板…</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>This firmware was built without trace. Restart debugging to rebuild it.</source>
+        <translation>此固件构建时未启用跟踪。请重新开始调试以重新构建。</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>The firmware is paused. Continue (F6) to run it and capture its activity.</source>
+        <translation>固件已暂停。按“继续”（F6）运行固件并采集其活动。</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Waiting for the first trace data from the firmware…</source>
+        <translation>正在等待来自固件的首批跟踪数据…</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Starting: building and programming the board…</source>
+        <translation>正在启动：正在构建并烧录开发板…</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Start debugging to capture your firmware's bus and pin activity.</source>
+        <translation>开始调试以采集固件的总线和引脚活动。</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Restart Debugging</source>
+        <translation>重新开始调试</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Continue</source>
+        <translation>继续</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Start Debugging</source>
+        <translation>开始调试</translation>
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Visualize Your Firmware Activity</source>
+        <translation>可视化您的固件活动</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Monitor I²C, SPI, UART, and GPIO signals on an interactive timeline.</source>
+        <translation>在交互式时间轴上监视 I²C、SPI、UART 和 GPIO 信号。</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Trace isn't available for %1</source>
+        <translation>%1 不支持跟踪</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Trace works with %1 MCUs.</source>
+        <translation>跟踪适用于 %1 MCU。</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Trace isn't available with %1</source>
+        <translation>使用 %1 时无法使用跟踪</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Trace needs GCC, Clang or XC32. Choose one in the project's configuration.</source>
+        <translation>跟踪需要 GCC、Clang 或 XC32。请在项目配置中选择其一。</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Trace isn't in this configuration yet</source>
+        <translation>此配置尚未包含跟踪</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Its libraries were built without the trace. Rebuild the configuration (Configure project, Edit), or update mikroSDK.</source>
+        <translation>其库在构建时未包含跟踪。请重新构建配置（配置项目 &gt; 编辑），或更新 mikroSDK。</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Turn it off so the project builds.</source>
+        <translation>关闭跟踪，以便项目能够构建。</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Turn Off Trace</source>
+        <translation>关闭跟踪</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Enable Trace</source>
+        <translation>启用跟踪</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Removes the trace library from your project</source>
+        <translation>从项目中移除跟踪库</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Adds the trace library to your project</source>
+        <translation>将跟踪库添加到项目中</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+183" />
+        <source>%n records</source>
+        <translation><numerusform>%n 条记录</numerusform></translation>
+    </message>
+    <message>
+        <location line="+44" />
+        <source>Open trace…</source>
+        <translation>打开跟踪…</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Compare with recording…</source>
+        <translation>与录制对比…</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Compare with recording</source>
+        <translation>与录制对比</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <location line="+1349" />
+        <location line="+79" />
+        <source>NECTO trace (*.nectotrace)</source>
+        <translation>NECTO 跟踪 (*.nectotrace)</translation>
+    </message>
+    <message>
+        <location line="-1424" />
+        <source>Show a recording under this run's lanes, with what differs marked</source>
+        <translation>在本次运行的通道下方显示录制，并标出不同之处</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Recent recordings</source>
+        <translation>最近的录制</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Export transfers as CSV…</source>
+        <translation>将传输导出为 CSV…</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Every bus transfer, with all its bytes: for a spreadsheet or a script.</source>
+        <translation>每次总线传输及其全部字节：适用于电子表格或脚本。</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Export as VCD…</source>
+        <translation>导出为 VCD…</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>The checked lanes as signals, for GTKWave or PulseView: pins, values, and when each bus was busy.</source>
+        <translation>将选中的通道导出为信号，供 GTKWave 或 PulseView 使用：引脚、值以及各总线的忙碌时段。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+563" />
+        <source>Export A–B transfers as CSV…</source>
+        <translation>将 A–B 的传输导出为 CSV…</translation>
+    </message>
+    <message>
+        <location line="-561" />
+        <source>The bus transfers that start between markers A and B.</source>
+        <translation>在标记 A 和 B 之间开始的总线传输。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+561" />
+        <source>Export A–B as VCD…</source>
+        <translation>将 A–B 导出为 VCD…</translation>
+    </message>
+    <message>
+        <location line="-560" />
+        <source>The checked lanes from marker A to marker B, A at time 0.</source>
+        <translation>选中通道从标记 A 到标记 B 的部分，以 A 为时间 0。</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+426" />
+        <source>%n found</source>
+        <translation><numerusform>找到 %n 个</numerusform></translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>No match</source>
+        <translation>无匹配</translation>
+    </message>
+    <message>
+        <location line="+47" />
+        <source>%1 records lost</source>
+        <translation>丢失 %1 条记录</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No timer: order only</source>
+        <translation>无定时器：仅顺序</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>The trace buffer filled up between reads; the timeline has gaps there.</source>
+        <translation>两次读取之间跟踪缓冲区已满；时间轴在这些位置存在间隙。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>%1 lanes, %2 events</source>
+        <translation>%1 个通道，%2 个事件</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+36" />
+        <source>%n failed</source>
+        <translation><numerusform>%n 次失败</numerusform></translation>
+    </message>
+    <message>
+        <location line="+17" />
+        <source>Go to marker A</source>
+        <translation>转到标记 A</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Go to marker B</source>
+        <translation>转到标记 B</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Zoom to A–B</source>
+        <translation>缩放至 A–B</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Copy measurement</source>
+        <translation>复制测量结果</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>A, B, the time between them and what each lane did then, as text</source>
+        <translation>以文本形式复制 A、B、两者之间的时间以及各通道当时的活动</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Clear markers</source>
+        <translation>清除标记</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Edit note…</source>
+        <translation>编辑备注…</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Remove note</source>
+        <translation>移除备注</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Add note here…</source>
+        <translation>在此添加备注…</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Go to note</source>
+        <translation>转到备注</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <location line="+47" />
+        <source>Place marker A here</source>
+        <translation>在此放置标记 A</translation>
+    </message>
+    <message>
+        <location line="-45" />
+        <location line="+47" />
+        <source>Place marker B here</source>
+        <translation>在此放置标记 B</translation>
+    </message>
+    <message>
+        <location line="-42" />
+        <source>Remove marker A</source>
+        <translation>移除标记 A</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Remove marker B</source>
+        <translation>移除标记 B</translation>
+    </message>
+    <message>
+        <location line="+46" />
+        <source>Place markers at its start and end</source>
+        <translation>在其开始和结束处放置标记</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>A where the frame starts, B where it ends</source>
+        <translation>A 位于帧开始处，B 位于帧结束处</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>A where the transfer starts, B where it ends</source>
+        <translation>A 位于传输开始处，B 位于传输结束处</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Add note</source>
+        <translation>添加备注</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Note at %1:</source>
+        <translation>%1 处的备注：</translation>
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Edit note</source>
+        <translation>编辑备注</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Note at %1 (empty removes it):</source>
+        <translation>%1 处的备注（留空则删除）：</translation>
+    </message>
+    <message>
+        <location line="+30" />
+        <source>Save notes</source>
+        <translation>保存备注</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not save the notes to %1: %2</source>
+        <translation>无法将备注保存到 %1：%2</translation>
+    </message>
+    <message>
+        <location line="+178" />
+        <source>Signals rebuilt from the recorded transfers, not captured; each spread over its transfer's time.</source>
+        <translation>信号根据录制的传输重建，并非实际采集；每个信号分布在其传输的时间内。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Signals rebuilt from the recorded transfers at the bus's rate, not captured.</source>
+        <translation>信号根据录制的传输按总线速率重建，并非实际采集。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>CS is as recorded on its pin.</source>
+        <translation>CS 按其引脚上的录制显示。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Only in the recording.</source>
+        <translation>仅在录制中。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Not in the recording.</source>
+        <translation>不在录制中。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Recorded on other pins: %1.</source>
+        <translation>录制于其他引脚：%1。</translation>
+    </message>
+    <message>
+        <location line="+19" />
+        <source>The same as the recording's lane.</source>
+        <translation>与录制中的通道相同。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 difference from the recording.</source>
+        <translation>与录制有 1 处差异。</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 differences from the recording.</source>
+        <translation>与录制有 %1 处差异。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 transfer only one run has (extra).</source>
+        <translation>1 次传输仅存在于其中一次运行（多出）。</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 transfers only one run has (extra).</source>
+        <translation>%1 次传输仅存在于其中一次运行（多出）。</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Hide lane</source>
+        <translation>隐藏通道</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Show all lanes</source>
+        <translation>显示所有通道</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Default order</source>
+        <translation>默认顺序</translation>
+    </message>
+    <message>
+        <location line="+32" />
+        <source>Fit lanes to height</source>
+        <translation>通道适配高度</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Every lane taller or shorter by the same amount, so that they fill the timeline's height</source>
+        <translation>将所有通道等量加高或减低，使其填满时间轴的高度</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Reset lane heights</source>
+        <translation>重置通道高度</translation>
+    </message>
+    <message>
+        <location line="+25" />
+        <location line="+78" />
+        <source>between markers A and B</source>
+        <translation>在标记 A 和 B 之间</translation>
+    </message>
+    <message>
+        <location line="-77" />
+        <location line="+78" />
+        <source>over the whole trace</source>
+        <translation>在整个跟踪中</translation>
+    </message>
+    <message>
+        <location line="-76" />
+        <source>Find longest gap</source>
+        <translation>查找最长间隙</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>The longest time the lane did nothing, %1: marked A to B</source>
+        <translation>此通道无活动的最长时间，%1：已用 A 至 B 标出</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Measure delay to</source>
+        <translation>测量延迟至</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>From each event of this lane to the next of another, %1: how long the firmware took to react</source>
+        <translation>从此通道的每个事件到另一通道的下一个事件，%1：固件的反应用时</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>From each rise</source>
+        <translation>从每个上升沿</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>From each fall</source>
+        <translation>从每个下降沿</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>From each change</source>
+        <translation>从每次变化</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Longest gap</source>
+        <translation>最长间隙</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Fewer than two events of the lane to find a gap between.</source>
+        <translation>此通道的事件少于两个，无法查找间隙。</translation>
+    </message>
+    <message>
+        <location line="+20" />
+        <source>each change of %1</source>
+        <translation>%1 的每次变化</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>each rise of %1</source>
+        <translation>%1 的每个上升沿</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>each fall of %1</source>
+        <translation>%1 的每个下降沿</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>From %1 to the next event of %2, %3.</source>
+        <translation>从 %1 到 %2 的下一个事件，%3。</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>each event of %1</source>
+        <translation>%1 的每个事件</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Delay</source>
+        <translation>延迟</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>No event of %1 came after one of %2 before the next.</source>
+        <translation>在 %2 的事件与其下一个事件之间，均未出现 %1 的事件。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+24" />
+        <source>Close</source>
+        <translation>关闭</translation>
+    </message>
+    <message>
+        <location line="-10" />
+        <source>min %1 · avg %2 · max %3 · σ %4 (%5 delays)</source>
+        <translation>最小 %1 · 平均 %2 · 最大 %3 · σ %4（%5 个延迟）</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+7" />
+        <source>%n with no event of %1 before the next one.</source>
+        <translation><numerusform>有 %n 个事件在下一个事件之前未出现 %1 的事件。</numerusform></translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Copy</source>
+        <translation>复制</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Show longest</source>
+        <translation>显示最长</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Markers A and B on the longest delay, zoomed to</source>
+        <translation>将标记 A 和 B 放在最长延迟处并缩放至该处</translation>
+    </message>
+    <message>
+        <location line="+21" />
+        <source>Show signals</source>
+        <translation>显示信号</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>The wires drawn under the transfers, rebuilt from their bytes: not a capture of the pins</source>
+        <translation>传输下方绘制的信号线根据其字节重建，并非引脚的实际采集</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Wires</source>
+        <translation>信号线</translation>
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Inject a fault: needs a newer MikroSDK.Trace</source>
+        <translation>注入故障：需要更新版本的 MikroSDK.Trace</translation>
+    </message>
+    <message>
+        <location line="+31" />
+        <source>Make 0x%1 not answer</source>
+        <translation>使 0x%1 不应答</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Stick MISO at 0xFF</source>
+        <translation>将 MISO 固定为 0xFF</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Stick MISO at 0x00</source>
+        <translation>将 MISO 固定为 0x00</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Hold High</source>
+        <translation>保持高电平</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Hold Low</source>
+        <translation>保持低电平</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Take the devices off the bus</source>
+        <translation>将设备从总线上移除</translation>
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Force a value…</source>
+        <translation>强制设定值…</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Force a value</source>
+        <translation>强制设定值</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Volts the input reads:</source>
+        <translation>输入读取到的电压（V）：</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Count the input reads:</source>
+        <translation>输入读取的计数值：</translation>
+    </message>
+    <message>
+        <location line="+18" />
+        <source>Remove fault: %1</source>
+        <translation>移除故障：%1</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Faults</source>
+        <translation>故障</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>1 Fault</source>
+        <translation>1 个故障</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>%1 Faults</source>
+        <translation>%1 个故障</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
+        <translation>此固件的 MikroSDK.Trace 版本过旧，不支持故障注入：请更新 mikroSDK 并重新构建项目。</translation>
+    </message>
+    <message>
+        <location line="+41" />
+        <source>Open trace</source>
+        <translation>打开跟踪</translation>
+    </message>
+    <message>
+        <location line="+28" />
+        <source>Export A–B as VCD</source>
+        <translation>将 A–B 导出为 VCD</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Export A–B transfers as CSV</source>
+        <translation>将 A–B 的传输导出为 CSV</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Export as VCD</source>
+        <translation>导出为 VCD</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Export transfers as CSV</source>
+        <translation>将传输导出为 CSV</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Value Change Dump (*.vcd)</source>
+        <translation>Value Change Dump (*.vcd)</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>CSV (*.csv)</source>
+        <translation>CSV 文件 (*.csv)</translation>
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Exporting the trace</source>
+        <translation>正在导出跟踪</translation>
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Export trace</source>
+        <translation>导出跟踪</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not write %1: %2</source>
+        <translation>无法写入 %1：%2</translation>
+    </message>
+    <message>
+        <location line="+20" />
+        <location line="+8" />
+        <source>Record trace</source>
+        <translation>录制跟踪</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not record to %1: %2</source>
+        <translation>无法录制到 %1：%2</translation>
+    </message>
+    <message>
+        <location line="+61" />
+        <source>Nothing came from the firmware while recording: this recording has no trace. Record while the target runs, until the transfers show.</source>
+        <translation>录制期间固件未发送任何数据：此录制不含跟踪。请在目标运行时录制，直到出现传输。</translation>
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Type a name, or Cancel to keep %1.</source>
+        <translation>输入名称，或点击“取消”保留 %1。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>A name only, without folders.</source>
+        <translation>仅输入名称，不含文件夹。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>There is a recording named %1 already.</source>
+        <translation>已存在名为 %1 的录制。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Could not rename the recording: check the name, or Cancel to keep %1.</source>
+        <translation>无法重命名录制：请检查名称，或点击“取消”保留 %1。</translation>
+    </message>
+    <message>
+        <location line="+37" />
+        <source>Armed</source>
+        <translation>已启用</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Trigger</source>
+        <translation>触发器</translation>
+    </message>
+    <message>
+        <location line="+18" />
+        <source>marker A placed</source>
+        <translation>已放置标记 A</translation>
+    </message>
+    <message>
+        <location line="+12" />
+        <source>already recording</source>
+        <translation>已在录制</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>not recorded: Record needs a debug session of a project</source>
+        <translation>未录制：录制需要项目的调试会话</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>not recorded: %1</source>
+        <translation>未录制：%1</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>recording</source>
+        <translation>正在录制</translation>
+    </message>
+    <message>
+        <location line="+9" />
+        <source>paused</source>
+        <translation>已暂停</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Fired at %1 on %2</source>
+        <translation>于 %1 在 %2 上触发</translation>
+    </message>
+    <message>
+        <location line="+22" />
+        <source>Recording to %1. Press to stop.</source>
+        <translation>正在录制到 %1。按下即可停止。</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Record</source>
+        <translation>录制</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>This is a recording: Record records the live trace, in the Trace tool while debugging.</source>
+        <translation>这是一个录制：“录制”功能仅在调试时于跟踪工具中录制实时跟踪。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Record starts with a debug session of a project with trace on.</source>
+        <translation>需要在已启用跟踪的项目调试会话中才能开始录制。</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder; you name it when it stops.</source>
+        <translation>从现在起将跟踪录制到文件，不受视图限制：适用于长时间运行。文件保存在项目的 .trace 文件夹中；停止时再为其命名。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>The last recording stopped: %1</source>
+        <translation>上次录制已停止：%1</translation>
+    </message>
+    <message>
+        <location line="+33" />
+        <source>Recording</source>
+        <translation>录制</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>cut short</source>
+        <translation>已截断</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>NECTO %1</source>
+        <translation>NECTO %1</translation>
+    </message>
+    <message>
+        <location line="+38" />
+        <source>Comparing with %1</source>
+        <translation>正在与 %1 对比</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Each lane has the recording's lane under it (REC), on the same times from each run's start. What differs is outlined; Align at markers lines the runs up.</source>
+        <translation>每个通道下方都有录制中的对应通道（REC），时间均从各次运行的开始算起。不同之处以轮廓标出；“在标记处对齐”可将两次运行对齐。</translation>
+    </message>
+    <message>
+        <location line="+88" />
+        <source> (all failed)</source>
+        <translation>（全部失败）</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source> (%1 failed)</source>
+        <translation>（%1 次失败）</translation>
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Nothing compared: the recording is empty</source>
+        <translation>未对比：录制为空</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Nothing compared: no lane is in both runs</source>
+        <translation>未对比：没有通道同时存在于两次运行中</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Nothing compared: no transfer is in both runs</source>
+        <translation>未对比：没有传输同时存在于两次运行中</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>%1 failed here, OK in the recording</source>
+        <translation>%1 次在此失败，但在录制中成功</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 OK here, failed in the recording</source>
+        <translation>%1 次在此成功，但在录制中失败</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No differences</source>
+        <translation>无差异</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>1 difference</source>
+        <translation>1 处差异</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 differences</source>
+        <translation>%1 处差异</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 transfer only in this run</source>
+        <translation>1 次传输仅在本次运行中</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 transfers only in this run</source>
+        <translation>%1 次传输仅在本次运行中</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>1 transfer only in the recording</source>
+        <translation>1 次传输仅在录制中</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 transfers only in the recording</source>
+        <translation>%1 次传输仅在录制中</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>1 lane in one run only</source>
+        <translation>1 个通道仅存在于一次运行中</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 lanes in one run only</source>
+        <translation>%1 个通道仅存在于一次运行中</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>The recording has no trace: Record was stopped before the firmware handed a buffer over. Record while the target runs, until the transfers show.</source>
+        <translation>此录制不含跟踪：在固件移交缓冲区之前录制已停止。请在目标运行时录制，直到出现传输。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Lanes pair by their kind, pins and I2C device, transfers by their order in each lane. This run and the recording have none alike: another firmware, a recording of another project, or one made later in its session.</source>
+        <translation>通道按类型、引脚和 I2C 设备配对，传输按其在各通道中的顺序配对。本次运行与录制没有任何相同之处：可能是其他固件、其他项目的录制，或是在其会话较晚时录制的。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Transfers and pin changes compared by their order in each lane. Differences are banded on the timeline and said in the table's Compared column; transfers only one run has are outlined dashed. The arrows go through all of them.</source>
+        <translation>传输和引脚变化按其在各通道中的顺序进行对比。差异在时间轴上以色带标出，并在表格的“对比”列中说明；仅一次运行中存在的传输以虚线轮廓标出。箭头按钮可逐一浏览所有差异。</translation>
+    </message>
+    <message>
+        <location line="+44" />
+        <source>on %1</source>
+        <translation>在 %1 上</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>to %1</source>
+        <translation>发往 %1</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>%1 transfers %2 failed here that worked in the recording, the first at %3.</source>
+        <translation>%2的 %1 次传输在此失败，但在录制中成功，首次发生在 %3。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>From %1 on, all %2 transfers %3 failed; the recording's worked.</source>
+        <translation>从 %1 起，%3的全部 %2 次传输均失败；而录制中的均成功。</translation>
+    </message>
+    <message>
+        <location line="+9" />
+        <source>mikroBUS %1</source>
+        <translation>mikroBUS %1</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>The device at %1 stopped answering: is %2 fitted%3?</source>
+        <translation>地址为 %1 的设备停止应答：%2 是否已安装%3？</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source> on %1</source>
+        <translation>（位于 %1）</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>The device at %1 stopped answering: is it fitted and connected%2?</source>
+        <translation>地址为 %1 的设备停止应答：是否已安装并连接%2？</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source> (%1)</source>
+        <translation>（%1）</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Is the device still connected?</source>
+        <translation>设备是否仍处于连接状态？</translation>
     </message>
 </context>
 <context>
@@ -46161,6 +47033,1144 @@ Do you want to reload the page ?</source>
         <location line="+66" />
         <source>Renesas E2 GDB server exited unexpectedly (exit code %1).</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::DapTraceReader</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_dap_reader.cpp" line="+32" />
+        <source>Firmware trace: no breakpoint on traceBuffFullBreak: %1</source>
+        <translation>固件跟踪：无法在 traceBuffFullBreak 处设置断点：%1</translation>
+    </message>
+    <message>
+        <location line="+65" />
+        <source>Firmware trace: the trace buffer was not found in the image.</source>
+        <translation>固件跟踪：在映像中未找到跟踪缓冲区。</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::oneWire</name>
+    <message>
+        <location line="+130" />
+        <location line="+1" />
+        <source>Reset</source>
+        <translation>复位</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <location line="+1" />
+        <source>Presence</source>
+        <translation>存在脉冲</translation>
+    </message>
+    <message>
+        <location line="-1" />
+        <source>No presence</source>
+        <translation>无存在脉冲</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>None</source>
+        <translation>无</translation>
+    </message>
+    <message>
+        <location line="+40" />
+        <source>Command</source>
+        <translation>命令</translation>
+    </message>
+    <message>
+        <location line="+43" />
+        <location line="+1" />
+        <source>Search</source>
+        <translation>搜索</translation>
+    </message>
+</context>
+<context>
+    <name>MemoryViewModel</name>
+    <message>
+        <location filename="../core/src/debugger/debug_view/src/memory_view_model.cpp" line="+124" />
+        <source>%1: 0x%2 (%3)</source>
+        <translation>%1：0x%2（%3）</translation>
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Address</source>
+        <translation>地址</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>ASCII</source>
+        <translation>ASCII</translation>
+    </message>
+</context>
+<context>
+    <name>RenesasE2RfpJob</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_rfp_job.cpp" line="+35" />
+        <source>Renesas E2: Programming</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Renesas E2: Erasing</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+72" />
+        <source>Renesas Flash Programmer CLI not found: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Device is not supported by the installed Renesas E2 support files.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>No COM port is selected in the programmer settings.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Cannot open %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+48" />
+        <source>Renesas Flash Programmer CLI failed to start: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+35" />
+        <source>Waiting for the E2 to reconnect (attempt %1 of %2)...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Renesas E2: this device has no erase operation (MRAM); programming overwrites the memory in place.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Renesas E2: the device rejected the write address. Check that the device's TrustZone boundaries match the project (read them with "rfp-cli -device RA -tool e2 -rfo"; a project without TrustZone needs all code and SRAM secure).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Renesas E2: no %1 found on USB. Check that it is connected and that the programmer selected in the setup matches it (Renesas E2 or Renesas E2 Lite; boards with an on-board emulator use E2 Lite).</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Renesas Flash Programmer CLI failed (exit code %1).</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::ValueRenderer</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="-230" />
+        <source>Fit</source>
+        <translation>适配</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::i2c</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_signals.cpp" line="-498" />
+        <source>Start</source>
+        <translation>起始</translation>
+    </message>
+    <message>
+        <location line="+21" />
+        <source>Stop</source>
+        <translation>停止</translation>
+    </message>
+    <message>
+        <location line="+65" />
+        <source>Not known</source>
+        <translation>未知</translation>
+    </message>
+    <message>
+        <location line="+28" />
+        <source>Address</source>
+        <translation>地址</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Write [%1]</source>
+        <translation>写入 [%1]</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>W %1</source>
+        <translation>W %1</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Write</source>
+        <translation>写入</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Read [%1]</source>
+        <translation>读取 [%1]</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>R %1</source>
+        <translation>R %1</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Read</source>
+        <translation>读取</translation>
+    </message>
+</context>
+<context>
+    <name>RenesasE2EraseJob</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_job.cpp" line="+220" />
+        <source>Renesas E2: Erasing</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::TasksViewModel</name>
+    <message>
+        <location filename="../core/src/debugger/debug_view/src/tasks_view_model.cpp" line="+21" />
+        <source>Running</source>
+        <translation>运行中</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Ready</source>
+        <translation>就绪</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Blocked</source>
+        <translation>阻塞</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Suspended</source>
+        <translation>已挂起</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Deleted</source>
+        <translation>已删除</translation>
+    </message>
+    <message>
+        <location line="+81" />
+        <source>%1 (base %2)</source>
+        <translation>%1（基础 %2）</translation>
+    </message>
+    <message>
+        <location line="+33" />
+        <source>Delay / notify</source>
+        <translation>延迟 / 通知</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>0 (clock stopped)</source>
+        <translation>0（时钟已停止）</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>(current)</source>
+        <translation>（当前）</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Double-click to go to where this task is executing.</source>
+        <translation>双击可跳转到此任务正在执行的位置。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Double-click to go to where this task is parked.</source>
+        <translation>双击可跳转到此任务停留的位置。</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>No source location available for this task.</source>
+        <translation>此任务没有可用的源代码位置。</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Raised from %1 while it holds a mutex.</source>
+        <translation>持有互斥量期间从 %1 提升。</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Task control block address: %1</source>
+        <translation>任务控制块地址：%1</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Could not be computed for this task.</source>
+        <translation>无法为此任务计算。</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Peak so far. Total size unknown for this build.</source>
+        <translation>迄今为止的峰值。此构建的总大小未知。</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 B never used.</source>
+        <translation>%1 B 从未使用。</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Blocked on "%1", held by %2.</source>
+        <translation>阻塞于“%1”，由 %2 持有。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Blocked on "%1".</source>
+        <translation>阻塞于“%1”。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Waiting on an unregistered object.</source>
+        <translation>正在等待未注册的对象。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Waiting on a delay or notification.</source>
+        <translation>正在等待延迟或通知。</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Only shown for tasks waiting on an object.</source>
+        <translation>仅对等待某个对象的任务显示。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Needs run-time stats enabled in FreeRTOSConfig.h.</source>
+        <translation>需要在 FreeRTOSConfig.h 中启用运行时统计。</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Running now - see the Call Stack view.</source>
+        <translation>正在运行——请查看调用堆栈视图。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Not available for this target.</source>
+        <translation>此目标不可用。</translation>
+    </message>
+    <message>
+        <location line="+88" />
+        <source>Double-click a task to go to its code.</source>
+        <translation>双击任务可跳转到其代码。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>The handle returned when the task was created.</source>
+        <translation>创建任务时返回的句柄。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>What each task is doing right now.</source>
+        <translation>每个任务当前的状态。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Higher runs first. 0 is the lowest.</source>
+        <translation>数值越大越先运行。0 为最低。</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>The most stack each task has ever used, not its usage now.</source>
+        <translation>每个任务曾使用的最大堆栈量，而非当前使用量。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>What each blocked task is waiting for.</source>
+        <translation>每个阻塞任务正在等待的对象。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Share of CPU time used by each task.</source>
+        <translation>每个任务占用的 CPU 时间比例。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Where each waiting task will resume.</source>
+        <translation>每个等待中的任务将从何处恢复。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Each core runs its own FreeRTOS instance.</source>
+        <translation>每个内核运行各自的 FreeRTOS 实例。</translation>
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Core</source>
+        <translation>内核</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Name</source>
+        <translation>名称</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Task Handle</source>
+        <translation>任务句柄</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>State</source>
+        <translation>状态</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Priority</source>
+        <translation>优先级</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Stack Usage</source>
+        <translation>堆栈使用量</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Event Object</source>
+        <translation>事件对象</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Runtime</source>
+        <translation>运行时间</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>PC</source>
+        <translation>PC</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::RecordingNameDialog</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_recording_name_dialog.cpp" line="+33" />
+        <source>Saved in %1</source>
+        <translation>保存在 %1</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::QueuesViewModel</name>
+    <message>
+        <location filename="../core/src/debugger/debug_view/src/queues_view_model.cpp" line="+18" />
+        <source>Queue</source>
+        <translation>队列</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Semaphore</source>
+        <translation>信号量</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Mutex</source>
+        <translation>互斥量</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Semaphore/Mutex</source>
+        <translation>信号量/互斥量</translation>
+    </message>
+    <message>
+        <location line="+77" />
+        <source>Available</source>
+        <translation>可用</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Taken</source>
+        <translation>已获取</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>(unheld)</source>
+        <translation>（未持有）</translation>
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Address: %1</source>
+        <translation>地址：%1</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Could not be determined on this FreeRTOS version.</source>
+        <translation>此 FreeRTOS 版本无法确定。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>This FreeRTOS version cannot tell the two apart.</source>
+        <translation>此 FreeRTOS 版本无法区分这两者。</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Not resolvable for this entry.</source>
+        <translation>此条目无法解析。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>1 = available, 0 = currently held.</source>
+        <translation>1 = 可用，0 = 当前被持有。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Current count / maximum count.</source>
+        <translation>当前计数 / 最大计数。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Available when 1, held when 0.</source>
+        <translation>为 1 时可用，为 0 时被持有。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Capacity unknown - showing queued messages only.</source>
+        <translation>容量未知——仅显示已排队的消息。</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Messages currently queued / queue capacity.</source>
+        <translation>当前排队的消息数 / 队列容量。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Only meaningful for mutexes.</source>
+        <translation>仅对互斥量有意义。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No task currently holds this mutex.</source>
+        <translation>当前没有任务持有此互斥量。</translation>
+    </message>
+    <message>
+        <location line="+98" />
+        <source>Each core runs its own independent FreeRTOS instance.</source>
+        <translation>每个内核运行各自独立的 FreeRTOS 实例。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Only registered objects appear here.</source>
+        <translation>此处仅显示已注册的对象。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>What kind of object this is.</source>
+        <translation>此对象的类型。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>How full each object is.</source>
+        <translation>每个对象的填充程度。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>The task currently holding this mutex.</source>
+        <translation>当前持有此互斥量的任务。</translation>
+    </message>
+    <message>
+        <location line="+12" />
+        <source>Core</source>
+        <translation>内核</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Name</source>
+        <translation>名称</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Type</source>
+        <translation>类型</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Fill Level</source>
+        <translation>填充程度</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Held By</source>
+        <translation>持有者</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::FaultPanel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_fault_panel.cpp" line="+30" />
+        <source>I2C device not answering</source>
+        <translation>I2C 设备无应答</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>SPI MISO stuck</source>
+        <translation>SPI MISO 卡死</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Input held</source>
+        <translation>输入保持</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>ADC value forced</source>
+        <translation>ADC 值强制</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>1-Wire devices gone</source>
+        <translation>1-Wire 设备离线</translation>
+    </message>
+    <message>
+        <location line="+105" />
+        <source>injected while it was recorded</source>
+        <translation>录制期间已注入</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>None was injected while it was recorded.</source>
+        <translation>录制期间未注入任何故障。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Faults go on the lanes that take them: I2C, SPI, inputs, ADC and 1-Wire. None has shown up yet.</source>
+        <translation>故障只能注入支持的通道：I2C、SPI、输入、ADC 和 1-Wire。目前尚未出现此类通道。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
+        <translation>此固件的 MikroSDK.Trace 版本过旧，不支持故障注入：请更新 mikroSDK 并重新构建项目。</translation>
+    </message>
+    <message>
+        <location line="+53" />
+        <source> V</source>
+        <translation> V</translation>
+    </message>
+    <message>
+        <location line="+63" />
+        <source>Type the byte: two hex digits.</source>
+        <translation>输入字节：两位十六进制数字。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Choose the lane to break.</source>
+        <translation>选择要注入故障的通道。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Injected already.</source>
+        <translation>已注入。</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>%1 faults at most: remove one first.</source>
+        <translation>最多 %1 个故障：请先移除一个。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Inject it into the firmware: at once while it is stopped, otherwise within half a second while it records</source>
+        <translation>注入固件：固件停止时立即生效，否则在其记录跟踪期间半秒内生效</translation>
+    </message>
+    <message>
+        <location line="+55" />
+        <source>Remove this fault</source>
+        <translation>移除此故障</translation>
+    </message>
+    <message>
+        <location line="+41" />
+        <source>Events this fault changed</source>
+        <translation>此故障改变的事件</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>no reads</source>
+        <translation>无读取</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this bus.</source>
+        <translation>MISO 卡死只影响读取的数据：固件只向此总线写入时，不会产生任何影响。</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>waiting</source>
+        <translation>等待中</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Not hit yet. The firmware gets the fault when it next hands over its trace (within half a second while it records, or at a stop); it hits at the next call it applies to.</source>
+        <translation>尚未生效。固件会在下次移交跟踪数据时收到该故障（记录跟踪期间半秒内，或在停止时）；之后在下一次适用的调用中生效。</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::TransactionModel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_transaction_model.cpp" line="+225" />
+        <source>Recording: </source>
+        <translation>录制：</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Command %1</source>
+        <translation>命令 %1</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Register %1</source>
+        <translation>寄存器 %1</translation>
+    </message>
+    <message>
+        <location line="+43" />
+        <source>Failed ⚡</source>
+        <translation>失败 ⚡</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Injected</source>
+        <translation>已注入</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 failed</source>
+        <translation>%1 次失败</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Failed</source>
+        <translation>失败</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Time from the start of the transfer before it; on a frame, from the frame before it</source>
+        <translation>距上一个传输开始的时间；对于帧，则为距上一帧的时间</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Time</source>
+        <translation>时间</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Interval</source>
+        <translation>间隔</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Lane</source>
+        <translation>通道</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Op</source>
+        <translation>操作</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Address</source>
+        <translation>地址</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Data</source>
+        <translation>数据</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Duration</source>
+        <translation>持续时间</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Result</source>
+        <translation>结果</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Compared</source>
+        <translation>对比</translation>
+    </message>
+    <message>
+        <location line="+27" />
+        <source>+ Only in this run</source>
+        <translation>+ 仅在本次运行中</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>The recording has no transfer to compare with</source>
+        <translation>录制中没有可供对比的传输</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>✓ Same</source>
+        <translation>✓ 相同</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Same as the recording's</source>
+        <translation>与录制相同</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>Differs from the recording's, this run's first: %1</source>
+        <translation>与录制不同（本次运行的值在前）：%1</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::ReadmePreviewPopup</name>
+    <message>
+        <location filename="../core/src/package_manager/view/readme_preview_popup.ui" line="+54" />
+        <source>Click to open the full description</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/package_manager/view/readme_preview_popup.cpp" line="+134" />
+        <source>Loading description...</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>DapStdoutReader</name>
+    <message>
+        <location filename="../core/src/debugger/dap_stdout_reader.cpp" line="+94" />
+        <source>Standard output: no breakpoint on stdBuffFullBreak (%1): %2</source>
+        <translation>标准输出：无法在 stdBuffFullBreak（%1）处设置断点：%2</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::TraceView</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_view.ui" line="+14" />
+        <source>Firmware trace</source>
+        <translation>固件跟踪</translation>
+    </message>
+    <message>
+        <location line="+91" />
+        <source>Start Debugging (F9)</source>
+        <translation>开始调试（F9）</translation>
+    </message>
+    <message>
+        <location line="+61" />
+        <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder.</source>
+        <translation>从现在起将跟踪录制到文件，不受视图限制：适用于长时间运行。文件保存在项目的 .trace 文件夹中。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <location line="+684" />
+        <source>Record</source>
+        <translation>录制</translation>
+    </message>
+    <message>
+        <location line="-665" />
+        <source>Faults NECTO injects into the firmware: a device that stops answering, a stuck bus or pin, a forced ADC value. Right-click a lane for its faults too.</source>
+        <translation>NECTO 注入固件的故障：设备停止应答、总线或引脚卡死、强制 ADC 值。也可右键单击通道查看其故障。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <location line="+737" />
+        <source>Faults</source>
+        <translation>故障</translation>
+    </message>
+    <message>
+        <location line="-718" />
+        <source>Watch the trace for a transfer or a pin's change, then pause the debugger, place a marker or record.</source>
+        <translation>监视跟踪中的传输或引脚变化，然后暂停调试器、放置标记或录制。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Trigger</source>
+        <translation>触发器</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Go to, zoom to, copy or export what is between markers A and B, or remove them (Esc)</source>
+        <translation>转到、缩放、复制或导出标记 A 和 B 之间的内容，或移除标记（Esc）</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Markers</source>
+        <translation>标记</translation>
+    </message>
+    <message>
+        <location line="+35" />
+        <source>First difference: where the runs part</source>
+        <translation>第一处差异：两次运行开始分歧的位置</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Previous difference from the recording</source>
+        <translation>与录制的上一处差异</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Next difference from the recording</source>
+        <translation>与录制的下一处差异</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Previous failed transfer</source>
+        <translation>上一个失败的传输</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Next failed transfer</source>
+        <translation>下一个失败的传输</translation>
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Time span the timeline shows, following the newest events</source>
+        <translation>时间轴显示的时间跨度，跟随最新事件</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>1 ms</source>
+        <translation>1 ms</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>10 ms</source>
+        <translation>10 ms</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>100 ms</source>
+        <translation>100 ms</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>1 s</source>
+        <translation>1 s</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>2 s</source>
+        <translation>2 s</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>10 s</source>
+        <translation>10 s</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Whole trace</source>
+        <translation>整个跟踪</translation>
+    </message>
+    <message>
+        <location line="+24" />
+        <source>Clear the trace</source>
+        <translation>清除跟踪</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Open a recording, compare with one, or export the trace</source>
+        <translation>打开录制、与录制对比或导出跟踪</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Show or hide the transfers</source>
+        <translation>显示或隐藏传输</translation>
+    </message>
+    <message>
+        <location line="+82" />
+        <source>Line the recording up with this run: put marker A on an event of the live lane, then marker B on the same event in the recording under it.</source>
+        <translation>将录制与本次运行对齐：将标记 A 放在实时通道的某个事件上，再将标记 B 放在其下方录制中的同一事件上。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Align at markers</source>
+        <translation>在标记处对齐</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Stop comparing</source>
+        <translation>停止对比</translation>
+    </message>
+    <message>
+        <location line="+141" />
+        <source>Start Debugging</source>
+        <translation>开始调试</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Enable Trace</source>
+        <translation>启用跟踪</translation>
+    </message>
+    <message>
+        <location line="+94" />
+        <source>Live</source>
+        <translation>实时</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>View the trace in real time</source>
+        <translation>实时查看跟踪</translation>
+    </message>
+    <message>
+        <location line="+75" />
+        <source>Save the trace for later analysis</source>
+        <translation>保存跟踪以供后续分析</translation>
+    </message>
+    <message>
+        <location line="+75" />
+        <source>Inject faults to test the firmware</source>
+        <translation>注入故障以测试固件</translation>
+    </message>
+    <message>
+        <location line="+149" />
+        <source>Lanes</source>
+        <translation>通道</translation>
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Collapse the lane list</source>
+        <translation>折叠通道列表</translation>
+    </message>
+    <message>
+        <location line="+126" />
+        <source>Transfers</source>
+        <translation>传输</translation>
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Only the transfers that differ from the recording, or that one run has only</source>
+        <translation>仅显示与录制不同或仅一次运行中存在的传输</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Differences only</source>
+        <translation>仅显示差异</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Previous match</source>
+        <translation>上一个匹配项</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Next match</source>
+        <translation>下一个匹配项</translation>
+    </message>
+    <message>
+        <location line="+22" />
+        <source>Search the transfers (Ctrl+F). Every word must match:
+failed, ok, injected: the result
+w, r, w/r, tx, rx, burst: the operation; bytes after it in its direction
+0x48: an I2C address
+9F 00: bytes, in this order
+"ERR", thermo: text in the lane's name or pins, or what a UART sent</source>
+        <translation>搜索传输（Ctrl+F）。每个词都必须匹配：
+failed、ok、injected：结果
+w、r、w/r、tx、rx、burst：操作；其后的字节按该方向匹配
+0x48：I2C 地址
+9F 00：字节，按此顺序
+"ERR"、thermo：通道名称或引脚中的文本，或 UART 发送的内容</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Search transfers</source>
+        <translation>搜索传输</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::SetupNoticePopup</name>
+    <message>
+        <location filename="../core/src/project_manager/setup_notice_popup.ui" line="+50" />
+        <source>...</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+49" />
+        <source>secondary</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>primary</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::TraceValueDialog</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_value_dialog.ui" line="+14" />
+        <location line="+24" />
+        <source>Force a value</source>
+        <translation>强制设定值</translation>
+    </message>
+    <message>
+        <location line="+61" />
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::Debugger</name>
+    <message>
+        <location filename="../core/src/debugger/debugger.cpp" line="+318" />
+        <source>No debug port is available for the secondary core; only the primary core is debugged.</source>
+        <translation>副内核没有可用的调试端口；仅调试主内核。</translation>
+    </message>
+    <message>
+        <location line="+290" />
+        <source>Opening %1</source>
+        <translation>正在打开 %1</translation>
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Open trace</source>
+        <translation>打开跟踪</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Could not open %1: %2</source>
+        <translation>无法打开 %1：%2</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::LaneNameDelegate</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_view.cpp" line="+187" />
+        <source>Not in this run</source>
+        <translation>不在本次运行中</translation>
+    </message>
+    <message>
+        <location line="+27" />
+        <source>%1 differ</source>
+        <translation>%1 处不同</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>%1 extra</source>
+        <translation>多出 %1 个</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>✓ Same</source>
+        <translation>✓ 相同</translation>
+    </message>
+    <message>
+        <location line="+17" />
+        <source>Not in the recording</source>
+        <translation>不在录制中</translation>
     </message>
 </context>
 <context>
@@ -46217,810 +48227,588 @@ Do you want to reload the page ?</source>
     </message>
 </context>
 <context>
-    <name>Necto::TraceView</name>
+    <name>Trace</name>
     <message>
-        <location filename="../core/src/debugger/trace/trace_view.ui" line="+14" />
-        <source>Firmware trace</source>
-        <translation type="unfinished" />
+        <location filename="../core/src/debugger/trace/trace_recording.cpp" line="+298" />
+        <source>No such file.</source>
+        <translation>文件不存在。</translation>
     </message>
     <message>
-        <location line="+91" />
-        <source>Start Debugging (F9)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+61" />
-        <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <location line="+684" />
-        <source>Record</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-665" />
-        <source>Faults NECTO injects into the firmware: a device that stops answering, a stuck bus or pin, a forced ADC value. Right-click a lane for its faults too.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <location line="+737" />
-        <source>Faults</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-718" />
-        <source>Watch the trace for a transfer or a pin's change, then pause the debugger, place a marker or record.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Trigger</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Go to, zoom to, copy or export what is between markers A and B, or remove them (Esc)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Markers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+35" />
-        <source>First difference: where the runs part</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Previous difference from the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Next difference from the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Previous failed transfer</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Next failed transfer</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+23" />
-        <source>Time span the timeline shows, following the newest events</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>1 ms</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>10 ms</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>100 ms</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>1 s</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>2 s</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>10 s</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Whole trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+24" />
-        <source>Clear the trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Open a recording, compare with one, or export the trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Show or hide the transfers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+82" />
-        <source>Line the recording up with this run: put marker A on an event of the live lane, then marker B on the same event in the recording under it.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Align at markers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Stop comparing</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+141" />
-        <source>Start Debugging</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <location line="+10" />
-        <source>primary</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-3" />
-        <source>Enable Trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+94" />
-        <source>Live</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>View the trace in real time</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+75" />
-        <source>Save the trace for later analysis</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+75" />
-        <source>Inject faults to test the firmware</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+149" />
-        <source>Lanes</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+20" />
-        <source>Collapse the lane list</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+126" />
-        <source>Transfers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+23" />
-        <source>Only the transfers that differ from the recording, or that one run has only</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Differences only</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Previous match</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Next match</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+22" />
-        <source>Search the transfers (Ctrl+F). Every word must match:
-failed, ok, injected: the result
-w, r, w/r, tx, rx, burst: the operation; bytes after it in its direction
-0x48: an I2C address
-9F 00: bytes, in this order
-"ERR", thermo: text in the lane's name or pins, or what a UART sent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Search transfers</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::DapTraceReader</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_dap_reader.cpp" line="+32" />
-        <source>Firmware trace: no breakpoint on traceBuffFullBreak: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+65" />
-        <source>Firmware trace: the trace buffer was not found in the image.</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::LaneNameDelegate</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_view.cpp" line="+187" />
-        <source>Not in this run</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+27" />
-        <source>%1 differ</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>%1 extra</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>✓ Same</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+17" />
-        <source>Not in the recording</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::TasksViewModel</name>
-    <message>
-        <location filename="../core/src/debugger/debug_view/src/tasks_view_model.cpp" line="+21" />
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Ready</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Blocked</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Suspended</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Deleted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+81" />
-        <source>%1 (base %2)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+33" />
-        <source>Delay / notify</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>0 (clock stopped)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>(current)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Double-click to go to where this task is executing.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Double-click to go to where this task is parked.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>No source location available for this task.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Raised from %1 while it holds a mutex.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Task control block address: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Could not be computed for this task.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Peak so far. Total size unknown for this build.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 B never used.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Blocked on "%1", held by %2.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Blocked on "%1".</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Waiting on an unregistered object.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Waiting on a delay or notification.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Only shown for tasks waiting on an object.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Needs run-time stats enabled in FreeRTOSConfig.h.</source>
-        <translation type="unfinished" />
+        <location line="+40" />
+        <source>Not a NECTO trace recording.</source>
+        <translation>不是 NECTO 跟踪录制文件。</translation>
     </message>
     <message>
         <location line="+4" />
-        <source>Running now - see the Call Stack view.</source>
-        <translation type="unfinished" />
+        <source>Recorded by a newer NECTO (file version %1).</source>
+        <translation>由更新版本的 NECTO 录制（文件版本 %1）。</translation>
     </message>
-    <message>
-        <location line="+2" />
-        <source>Not available for this target.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+88" />
-        <source>Double-click a task to go to its code.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>The handle returned when the task was created.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>What each task is doing right now.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Higher runs first. 0 is the lowest.</source>
-        <translation type="unfinished" />
+    <message numerus="yes">
+        <location filename="../core/src/debugger/trace/trace_signals.cpp" line="+124" />
+        <source>%n bytes not kept</source>
+        <translation><numerusform>%n 字节未保留</numerusform></translation>
     </message>
     <message>
         <location line="+5" />
-        <source>The most stack each task has ever used, not its usage now.</source>
-        <translation type="unfinished" />
+        <source>Data</source>
+        <translation>数据</translation>
     </message>
     <message>
-        <location line="+2" />
-        <source>What each blocked task is waiting for.</source>
-        <translation type="unfinished" />
+        <location line="+526" />
+        <source>%1 baud</source>
+        <translation>%1 波特</translation>
     </message>
     <message>
-        <location line="+2" />
-        <source>Share of CPU time used by each task.</source>
-        <translation type="unfinished" />
+        <location filename="../core/src/debugger/trace/trace_faults.cpp" line="+138" />
+        <source>Not answering</source>
+        <translation>无应答</translation>
     </message>
     <message>
-        <location line="+2" />
-        <source>Where each waiting task will resume.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Each core runs its own FreeRTOS instance.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+12" />
-        <source>Core</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Name</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Task Handle</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>State</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Priority</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Stack Usage</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Event Object</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Runtime</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>PC</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>RenesasE2Server</name>
-    <message>
-        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_server.cpp" line="+181" />
-        <source>Renesas E2 GDB server is already running.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Renesas E2 GDB server not found: %1</source>
-        <translation type="unfinished" />
+        <location line="+3" />
+        <source>MISO stuck at 0x%1</source>
+        <translation>MISO 卡在 0x%1</translation>
     </message>
     <message>
         <location line="+5" />
-        <source>Device is not supported by the installed Renesas E2 support files.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+25" />
-        <source>Renesas E2 GDB server failed to start: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Timed out waiting for the Renesas E2 GDB server to connect to the target.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+86" />
-        <source>Renesas E2 GDB server exited before connecting (exit code %1).</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::TraceTabs</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_tabs.cpp" line="+22" />
-        <source>The trace of the session you debug</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+65" />
-        <source>● Live</source>
-        <translation type="unfinished" />
+        <source>Held High</source>
+        <translation>保持高电平</translation>
     </message>
     <message>
         <location line="+0" />
-        <source>Live</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::TraceValueDialog</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_value_dialog.ui" line="+14" />
-        <location line="+24" />
-        <source>Force a value</source>
-        <translation type="unfinished" />
+        <source>Held Low</source>
+        <translation>保持低电平</translation>
     </message>
     <message>
-        <location line="+61" />
-        <source>Cancel</source>
-        <translation type="unfinished" />
+        <location line="+2" />
+        <source>Forced to %1</source>
+        <translation>强制为 %1</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Forced to %1 V</source>
+        <translation>强制为 %1 V</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No device answering</source>
+        <translation>无设备应答</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>pin %1</source>
+        <translation>引脚 %1</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>I2C 0x%1 on %2</source>
+        <translation>%2 上的 I2C 0x%1</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>SPI on %1</source>
+        <translation>%1 上的 SPI</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Input %1</source>
+        <translation>输入 %1</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>ADC %1</source>
+        <translation>ADC %1</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>1-Wire on %1</source>
+        <translation>%1 上的 1-Wire</translation>
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_compare.cpp" line="+235" />
+        <location line="+46" />
+        <location line="+2" />
+        <source>%1: %2 vs %3 bytes</source>
+        <translation>%1：%2 vs %3 字节</translation>
+    </message>
+    <message>
+        <location line="-21" />
+        <source>Kind</source>
+        <translation>种类</translation>
     </message>
     <message>
         <location line="+10" />
-        <source>OK</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::PackageReadmeViewer</name>
-    <message>
-        <location filename="../core/src/package_manager/view/package_readme_viewer.cpp" line="+343" />
-        <location line="+64" />
-        <location line="+56" />
-        <source>No network connection.</source>
-        <translation type="unfinished" />
+        <source>Failed vs OK</source>
+        <translation>失败 vs OK</translation>
     </message>
     <message>
-        <location line="-96" />
-        <location line="+65" />
-        <location line="+144" />
-        <source>The package description could not be loaded.</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::TimelineRuler</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_timeline_ruler.cpp" line="+66" />
-        <source>≠ Runs part</source>
-        <translation type="unfinished" />
+        <location line="+0" />
+        <source>OK vs failed</source>
+        <translation>OK vs 失败</translation>
     </message>
     <message>
-        <location line="+219" />
-        <source>%1
-
-%2 · drag to move, double-click to edit</source>
-        <translation type="unfinished" />
+        <location line="+2" />
+        <source>Operation</source>
+        <translation>操作</translation>
     </message>
     <message>
-        <location line="+7" />
-        <source>Where the runs first differ: click to go there</source>
-        <translation type="unfinished" />
+        <location line="+2" />
+        <source>Address: %1 vs %2</source>
+        <translation>地址：%1 vs %2</translation>
     </message>
     <message>
-        <location line="+5" />
-        <source>Drag to move the marker; double-click to remove it</source>
-        <translation type="unfinished" />
+        <location line="+2" />
+        <source>TX</source>
+        <translation>TX</translation>
     </message>
     <message>
-        <location line="+5" />
-        <source>Click to place marker B</source>
-        <translation type="unfinished" />
+        <location line="+0" />
+        <source>Write</source>
+        <translation>写入</translation>
     </message>
     <message>
         <location line="+1" />
-        <source>Click to place marker A</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::TraceTriggerPanel</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_trigger_panel.ui" line="+35" />
-        <source>Trigger on</source>
-        <translation type="unfinished" />
+        <source>RX</source>
+        <translation>RX</translation>
     </message>
     <message>
-        <location line="+13" />
-        <source>What to watch for, in the search's words. Every word must match:
-a transfer: failed, ok, w, r, w/r, tx, rx, 0x48, 9F 00, "text", a register's name
-a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>0x18 failed · w 05 · LED_1 rise</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>From this trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+28" />
-        <source>Then</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Pause the debugger</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>The trace comes in buffers: the target runs on a little past the event before the pause holds it.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Place marker A on the event</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+15" />
-        <source>Record, from</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Record to a file, starting before the event: what came before it is kept while the trigger is armed.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source> s before</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>to</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>stopped</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source> s after</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+53" />
-        <source>Arm</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::ReadmePreviewPopup</name>
-    <message>
-        <location filename="../core/src/package_manager/view/readme_preview_popup.ui" line="+54" />
-        <source>Click to open the full description</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../core/src/package_manager/view/readme_preview_popup.cpp" line="+134" />
-        <source>Loading description...</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::SetupLabelToolTip</name>
-    <message>
-        <location filename="../core/src/setup/view/setup_label_tooltip.ui" line="+59" />
-        <source>Selected</source>
-        <translation type="unfinished" />
+        <location line="+0" />
+        <source>Read</source>
+        <translation>读取</translation>
     </message>
     <message>
         <location line="+12" />
-        <source>name</source>
-        <translation type="unfinished" />
+        <source>%1 vs %2</source>
+        <translation>%1 vs %2</translation>
     </message>
     <message>
+        <location line="+1" />
+        <source>Duration: %1</source>
+        <translation>持续时间：%1</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Transfers: %1 vs %2</source>
+        <translation>传输：%1 vs %2</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Failed: %1 vs %2</source>
+        <translation>失败：%1 vs %2</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Bytes: %1 vs %2</source>
+        <translation>字节数：%1 vs %2</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Level</source>
+        <translation>电平</translation>
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_project.cpp" line="+140" />
+        <source>ARM Cortex-M, RISC-V and PIC32</source>
+        <translation>ARM Cortex-M、RISC-V 和 PIC32</translation>
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_trigger.cpp" line="+27" />
+        <source>once</source>
+        <translation>1 次</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>twice</source>
+        <translation>2 次</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>%1 times</source>
+        <translation>%1 次</translation>
+    </message>
+    <message>
+        <location line="+193" />
+        <source>Rose %1 so far</source>
+        <translation>迄今已上升 %1</translation>
+    </message>
+    <message>
+        <location line="+36" />
+        <source>%1 failed so far</source>
+        <translation>迄今已失败 %1 次</translation>
+    </message>
+    <message>
+        <location line="+20" />
+        <source>Register %1 of %2, written %3</source>
+        <translation>%2 的寄存器 %1，已写入 %3</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>%1 transfers start with it</source>
+        <translation>%1 次传输以此开头</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Received %1 so far</source>
+        <translation>迄今已接收 %1</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>%1 changed by a fault so far</source>
+        <translation>迄今已有 %1 个事件被故障改变</translation>
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_format.cpp" line="+163" />
+        <location line="+330" />
+        <source>%1 bytes</source>
+        <translation>%1 字节</translation>
+    </message>
+    <message>
+        <location line="-301" />
+        <source>Other</source>
+        <translation>其他</translation>
+    </message>
+    <message>
+        <location line="+40" />
         <location line="+69" />
-        <source>Click to configure</source>
-        <translation type="unfinished" />
+        <source>Output</source>
+        <translation>输出</translation>
     </message>
-</context>
-<context>
-    <name>RenesasE2EraseJob</name>
     <message>
-        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_job.cpp" line="+220" />
-        <source>Renesas E2: Erasing</source>
-        <translation type="unfinished" />
+        <location line="-67" />
+        <location line="+67" />
+        <source>Input</source>
+        <translation>输入</translation>
     </message>
-</context>
-<context>
-    <name>Trace::i2c</name>
     <message>
-        <location filename="../core/src/debugger/trace/trace_signals.cpp" line="-498" />
-        <source>Start</source>
-        <translation type="unfinished" />
+        <location line="-62" />
+        <location line="+89" />
+        <source>I2C</source>
+        <translation>I2C</translation>
+    </message>
+    <message>
+        <location line="-84" />
+        <location line="+77" />
+        <source>SPI</source>
+        <translation>SPI</translation>
+    </message>
+    <message>
+        <location line="-75" />
+        <location line="+77" />
+        <source>UART</source>
+        <translation>UART</translation>
+    </message>
+    <message>
+        <location line="-75" />
+        <location line="+74" />
+        <source>1-Wire</source>
+        <translation>1-Wire</translation>
+    </message>
+    <message>
+        <location line="-71" />
+        <location line="+44" />
+        <source>Value</source>
+        <translation>值</translation>
+    </message>
+    <message>
+        <location line="+198" />
+        <source>1 byte</source>
+        <translation>1 字节</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Write %1</source>
+        <translation>写入 %1</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Read %1</source>
+        <translation>读取 %1</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Write %1 · Read %2</source>
+        <translation>写入 %1 · 读取 %2</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <location line="+19" />
+        <location line="+192" />
+        <source>error</source>
+        <translation>错误</translation>
+    </message>
+    <message>
+        <location line="-192" />
+        <source>no presence</source>
+        <translation>无存在脉冲</translation>
+    </message>
+    <message>
+        <location line="+119" />
+        <source>Burst</source>
+        <translation>突发</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Reset</source>
+        <translation>复位</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Read ROM</source>
+        <translation>读取 ROM</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Skip ROM</source>
+        <translation>跳过 ROM</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Match ROM</source>
+        <translation>匹配 ROM</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Search ROM</source>
+        <translation>搜索 ROM</translation>
+    </message>
+    <message>
+        <location line="+26" />
+        <source>%1 transfers</source>
+        <translation>%1 次传输</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>%1 failed</source>
+        <translation>%1 次失败</translation>
+    </message>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_measure.cpp" line="+76" />
+        <source>No transfers</source>
+        <translation>无传输</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+1" />
+        <source>%n transfers</source>
+        <translation><numerusform>%n 次传输</numerusform></translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>%1 busy</source>
+        <translation>%1 忙碌</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+2" />
+        <source>%n failed</source>
+        <translation><numerusform>%n 次失败</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+48" />
+        <source>%n changes</source>
+        <translation><numerusform>%n 次变化</numerusform></translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>%1 high</source>
+        <translation>%1 高电平</translation>
     </message>
     <message>
         <location line="+21" />
-        <source>Stop</source>
-        <translation type="unfinished" />
+        <source>No values</source>
+        <translation>无值</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+4" />
+        <source>%n values</source>
+        <translation><numerusform>%n 个值</numerusform></translation>
     </message>
     <message>
+        <location line="+1" />
+        <source>%1 to %2</source>
+        <translation>%1 至 %2</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>avg %1</source>
+        <translation>平均 %1</translation>
+    </message>
+    <message>
+        <location line="+162" />
+        <source>%1: min %2 · avg %3 · max %4 · σ %5 (%6)</source>
+        <translation>%1：最小 %2 · 平均 %3 · 最大 %4 · σ %5（%6）</translation>
+    </message>
+    <message>
+        <location line="+69" />
+        <source>Values</source>
+        <translation>值</translation>
+    </message>
+    <message>
+        <location line="+42" />
+        <source>High</source>
+        <translation>高</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Low</source>
+        <translation>低</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Period</source>
+        <translation>周期</translation>
+    </message>
+    <message>
+        <location line="+32" />
+        <source>Duration</source>
+        <translation>持续时间</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Interval</source>
+        <translation>间隔</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Throughput: %1/s</source>
+        <translation>吞吐量：%1/s</translation>
+    </message>
+    <message numerus="yes">
         <location line="+65" />
-        <source>Not known</source>
-        <translation type="unfinished" />
+        <source>%n records</source>
+        <translation><numerusform>%n 条记录</numerusform></translation>
     </message>
     <message>
-        <location line="+28" />
-        <source>Address</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Write [%1]</source>
-        <translation type="unfinished" />
+        <location line="+24" />
+        <source>Project</source>
+        <translation>项目</translation>
     </message>
     <message>
         <location line="+1" />
-        <source>W %1</source>
-        <translation type="unfinished" />
+        <source>Board</source>
+        <translation>开发板</translation>
     </message>
     <message>
         <location line="+1" />
-        <source>Write</source>
-        <translation type="unfinished" />
+        <source>MCU</source>
+        <translation>MCU</translation>
     </message>
     <message>
-        <location line="+7" />
-        <source>Read [%1]</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>R %1</source>
-        <translation type="unfinished" />
+        <location line="+2" />
+        <source>Firmware</source>
+        <translation>固件</translation>
     </message>
     <message>
         <location line="+1" />
-        <source>Read</source>
+        <source>NECTO</source>
+        <translation>NECTO</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Traced</source>
+        <translation>跟踪时间</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>From a recording</source>
+        <translation>来自录制</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::ClickPresetChip</name>
+    <message>
+        <location filename="../core/src/productivity_hub/common/click_preset_chip.ui" line="+23" />
+        <source>Frame</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../core/src/productivity_hub/common/click_preset_chip.cpp" line="+37" />
+        <source>Delete combination</source>
         <translation type="unfinished" />
     </message>
 </context>
 <context>
-    <name>RenesasE2Proxy</name>
+    <name>Necto::WebPeekWindow</name>
     <message>
-        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_proxy.cpp" line="+68" />
-        <source>Renesas E2: the GDB server did not complete the launch sequence.</source>
+        <location filename="../core/src/web_browser/web_peek_window.ui" line="+20" />
+        <location filename="../core/src/web_browser/web_peek_window.cpp" line="+164" />
+        <source>Web</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location line="+102" />
-        <source>Renesas E2 proxy cannot listen on port %1: %2</source>
+        <location line="+30" />
+        <source>Back</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location line="+131" />
-        <source>Renesas E2 proxy cannot reach the GDB server on port %1.</source>
+        <location line="+10" />
+        <source>Forward</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Reload</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Open in Web tab</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Open in system browser</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>HeapUsageBar</name>
+    <message>
+        <location filename="../core/src/debugger/debug_view/src/heap_usage_bar.cpp" line="+64" />
+        <source>Total Heap: start a debug session and halt to read</source>
+        <translation>堆总量：启动调试会话并暂停后读取</translation>
+    </message>
+    <message>
+        <location line="+14" />
+        <source>Total Heap: not available for this allocator</source>
+        <translation>堆总量：此分配器不支持</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Total Heap: 0 / %1 (nothing allocated yet)</source>
+        <translation>堆总量：0 / %1（尚未分配）</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Total Heap: nothing allocated yet</source>
+        <translation>堆总量：尚未分配</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Total Heap: %1 / %2 (%3%)</source>
+        <translation>堆总量：%1 / %2（%3%）</translation>
+    </message>
+    <message>
+        <location line="+9" />
+        <source>Total Heap: %1 free</source>
+        <translation>堆总量：%1 空闲</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Total Heap: </source>
+        <translation>堆总量：</translation>
+    </message>
+    <message>
+        <location line="+23" />
+        <source>Free: %1 (low: %2)</source>
+        <translation>空闲：%1（最低：%2）</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>The least free heap this run. A big gap means bursts of allocation.</source>
+        <translation>本次运行中堆空闲量的最低值。差距大表示存在突发的内存分配。</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Free: %1</source>
+        <translation>空闲：%1</translation>
     </message>
 </context>
 <context>
@@ -47225,1702 +49013,22 @@ a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
     </message>
 </context>
 <context>
-    <name>Trace::TraceView</name>
+    <name>Necto::TraceNoteDialog</name>
     <message>
-        <location filename="../core/src/debugger/trace/trace_view.cpp" line="+558" />
-        <source>Hide the transfers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Show the transfers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Collapse the lane list</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Expand the lane list</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+158" />
-        <source>Project</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>MCU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Board</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Configuration</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Firmware</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>NECTO</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+64" />
-        <source>Nothing was recorded</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>This recording is empty: the session ended before any trace data arrived.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>No project open</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Open a project to see its I2C, SPI, UART and pin activity on a timeline.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Reading the project's libraries…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Trace is on for %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+12" />
-        <source>Restarting: rebuilding with trace and programming the board…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>This firmware was built without trace. Restart debugging to rebuild it.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>The firmware is paused. Continue (F6) to run it and capture its activity.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Waiting for the first trace data from the firmware…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Starting: building and programming the board…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Start debugging to capture your firmware's bus and pin activity.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Restart Debugging</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Continue</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Start Debugging</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+20" />
-        <source>Visualize Your Firmware Activity</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Monitor I²C, SPI, UART, and GPIO signals on an interactive timeline.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Trace isn't available for %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Trace works with %1 MCUs.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Trace isn't available with %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Trace needs GCC, Clang or XC32. Choose one in the project's configuration.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Trace isn't in this configuration yet</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Its libraries were built without the trace. Rebuild the configuration (Configure project, Edit), or update mikroSDK.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Turn it off so the project builds.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Turn Off Trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Enable Trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Removes the trace library from your project</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Adds the trace library to your project</source>
-        <translation type="unfinished" />
-    </message>
-    <message numerus="yes">
-        <location line="+183" />
-        <source>%n records</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
-    </message>
-    <message>
-        <location line="+44" />
-        <source>Open trace…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Compare with recording…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Compare with recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <location line="+1349" />
-        <location line="+79" />
-        <source>NECTO trace (*.nectotrace)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-1424" />
-        <source>Show a recording under this run's lanes, with what differs marked</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Recent recordings</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Export transfers as CSV…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Every bus transfer, with all its bytes: for a spreadsheet or a script.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Export as VCD…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>The checked lanes as signals, for GTKWave or PulseView: pins, values, and when each bus was busy.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <location line="+563" />
-        <source>Export A–B transfers as CSV…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-561" />
-        <source>The bus transfers that start between markers A and B.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <location line="+561" />
-        <source>Export A–B as VCD…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-560" />
-        <source>The checked lanes from marker A to marker B, A at time 0.</source>
-        <translation type="unfinished" />
-    </message>
-    <message numerus="yes">
-        <location line="+426" />
-        <source>%n found</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
-    </message>
-    <message>
-        <location line="+0" />
-        <source>No match</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+47" />
-        <source>%1 records lost</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>No timer: order only</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>The trace buffer filled up between reads; the timeline has gaps there.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>%1 lanes, %2 events</source>
-        <translation type="unfinished" />
-    </message>
-    <message numerus="yes">
-        <location line="+36" />
-        <source>%n failed</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
-    </message>
-    <message>
-        <location line="+17" />
-        <source>Go to marker A</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Go to marker B</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Zoom to A–B</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Copy measurement</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>A, B, the time between them and what each lane did then, as text</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Clear markers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Edit note…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Remove note</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Add note here…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Go to note</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <location line="+47" />
-        <source>Place marker A here</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-45" />
-        <location line="+47" />
-        <source>Place marker B here</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-42" />
-        <source>Remove marker A</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Remove marker B</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+46" />
-        <source>Place markers at its start and end</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>A where the frame starts, B where it ends</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>A where the transfer starts, B where it ends</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
+        <location filename="../core/src/debugger/trace/trace_note_dialog.ui" line="+14" />
+        <location line="+24" />
         <source>Add note</source>
-        <translation type="unfinished" />
+        <translation>添加备注</translation>
     </message>
     <message>
-        <location line="+1" />
-        <source>Note at %1:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+14" />
-        <source>Edit note</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Note at %1 (empty removes it):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+30" />
-        <source>Save notes</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Could not save the notes to %1: %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+178" />
-        <source>Signals rebuilt from the recorded transfers, not captured; each spread over its transfer's time.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Signals rebuilt from the recorded transfers at the bus's rate, not captured.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>CS is as recorded on its pin.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Only in the recording.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Not in the recording.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Recorded on other pins: %1.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+19" />
-        <source>The same as the recording's lane.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>1 difference from the recording.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 differences from the recording.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>1 transfer only one run has (extra).</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 transfers only one run has (extra).</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Hide lane</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Show all lanes</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Default order</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+32" />
-        <source>Fit lanes to height</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Every lane taller or shorter by the same amount, so that they fill the timeline's height</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Reset lane heights</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+25" />
-        <location line="+78" />
-        <source>between markers A and B</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-77" />
-        <location line="+78" />
-        <source>over the whole trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-76" />
-        <source>Find longest gap</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>The longest time the lane did nothing, %1: marked A to B</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Measure delay to</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>From each event of this lane to the next of another, %1: how long the firmware took to react</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>From each rise</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>From each fall</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>From each change</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Longest gap</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Fewer than two events of the lane to find a gap between.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+20" />
-        <source>each change of %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>each rise of %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>each fall of %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>From %1 to the next event of %2, %3.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>each event of %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Delay</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>No event of %1 came after one of %2 before the next.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <location line="+24" />
-        <source>Close</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-10" />
-        <source>min %1 · avg %2 · max %3 · σ %4 (%5 delays)</source>
-        <translation type="unfinished" />
-    </message>
-    <message numerus="yes">
-        <location line="+7" />
-        <source>%n with no event of %1 before the next one.</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Copy</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Show longest</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Markers A and B on the longest delay, zoomed to</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+21" />
-        <source>Show signals</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>The wires drawn under the transfers, rebuilt from their bytes: not a capture of the pins</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Wires</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+20" />
-        <source>Inject a fault: needs a newer MikroSDK.Trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+31" />
-        <source>Make 0x%1 not answer</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Stick MISO at 0xFF</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Stick MISO at 0x00</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Hold High</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Hold Low</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Take the devices off the bus</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Force a value…</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Force a value</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Volts the input reads:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Count the input reads:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+18" />
-        <source>Remove fault: %1</source>
-        <translation type="unfinished" />
+        <location line="+57" />
+        <source>Cancel</source>
+        <translation>取消</translation>
     </message>
     <message>
         <location line="+10" />
-        <source>Faults</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>1 Fault</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>%1 Faults</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+41" />
-        <source>Open trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+28" />
-        <source>Export A–B as VCD</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Export A–B transfers as CSV</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Export as VCD</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Export transfers as CSV</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Value Change Dump (*.vcd)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>CSV (*.csv)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+14" />
-        <source>Exporting the trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+12" />
-        <source>Export trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Could not write %1: %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+20" />
-        <location line="+8" />
-        <source>Record trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Could not record to %1: %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+61" />
-        <source>Nothing came from the firmware while recording: this recording has no trace. Record while the target runs, until the transfers show.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+14" />
-        <source>Type a name, or Cancel to keep %1.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>A name only, without folders.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>There is a recording named %1 already.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Could not rename the recording: check the name, or Cancel to keep %1.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+37" />
-        <source>Armed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Trigger</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+18" />
-        <source>marker A placed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+12" />
-        <source>already recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>not recorded: Record needs a debug session of a project</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>not recorded: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+9" />
-        <source>paused</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Fired at %1 on %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+22" />
-        <source>Recording to %1. Press to stop.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Record</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>This is a recording: Record records the live trace, in the Trace tool while debugging.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Record starts with a debug session of a project with trace on.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Record the trace to a file from now on, without the view's limit: for long runs. The file goes to the project's .trace folder; you name it when it stops.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>The last recording stopped: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+33" />
-        <source>Recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>cut short</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>NECTO %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+38" />
-        <source>Comparing with %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Each lane has the recording's lane under it (REC), on the same times from each run's start. What differs is outlined; Align at markers lines the runs up.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+88" />
-        <source> (all failed)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source> (%1 failed)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+20" />
-        <source>Nothing compared: the recording is empty</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Nothing compared: no lane is in both runs</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Nothing compared: no transfer is in both runs</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>%1 failed here, OK in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>%1 OK here, failed in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>No differences</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>1 difference</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 differences</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>1 transfer only in this run</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 transfers only in this run</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>1 transfer only in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 transfers only in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>1 lane in one run only</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 lanes in one run only</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>The recording has no trace: Record was stopped before the firmware handed a buffer over. Record while the target runs, until the transfers show.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Lanes pair by their kind, pins and I2C device, transfers by their order in each lane. This run and the recording have none alike: another firmware, a recording of another project, or one made later in its session.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Transfers and pin changes compared by their order in each lane. Differences are banded on the timeline and said in the table's Compared column; transfers only one run has are outlined dashed. The arrows go through all of them.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+44" />
-        <source>on %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>to %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>%1 transfers %2 failed here that worked in the recording, the first at %3.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>From %1 on, all %2 transfers %3 failed; the recording's worked.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+9" />
-        <source>mikroBUS %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>The device at %1 stopped answering: is %2 fitted%3?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source> on %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>The device at %1 stopped answering: is it fitted and connected%2?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source> (%1)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Is the device still connected?</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::TransactionModel</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_transaction_model.cpp" line="+225" />
-        <source>Recording: </source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Command %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Register %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+43" />
-        <source>Failed ⚡</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Injected</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>%1 failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
         <source>OK</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Time from the start of the transfer before it; on a frame, from the frame before it</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>Time</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Lane</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Op</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Address</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Data</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Duration</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Result</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Compared</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+27" />
-        <source>+ Only in this run</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>The recording has no transfer to compare with</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>✓ Same</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Same as the recording's</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>Differs from the recording's, this run's first: %1</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::BusRenderer</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="+204" />
-        <source>No timer in the firmware: the signals need the transfers' times</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+808" />
-        <source>Not in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Not in this run</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_recording.cpp" line="+298" />
-        <source>No such file.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+40" />
-        <source>Not a NECTO trace recording.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Recorded by a newer NECTO (file version %1).</source>
-        <translation type="unfinished" />
-    </message>
-    <message numerus="yes">
-        <location filename="../core/src/debugger/trace/trace_signals.cpp" line="+124" />
-        <source>%n bytes not kept</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Data</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+526" />
-        <source>%1 baud</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_faults.cpp" line="+138" />
-        <source>Not answering</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>MISO stuck at 0x%1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Held High</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Held Low</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Forced to %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Forced to %1 V</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>No device answering</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>pin %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>I2C 0x%1 on %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>SPI on %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Input %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>ADC %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>1-Wire on %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_compare.cpp" line="+235" />
-        <location line="+46" />
-        <location line="+2" />
-        <source>%1: %2 vs %3 bytes</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-21" />
-        <source>Kind</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Failed vs OK</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>OK vs failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Operation</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Address: %1 vs %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>TX</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Write</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>RX</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Read</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+12" />
-        <source>%1 vs %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Duration: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Transfers: %1 vs %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Failed: %1 vs %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Bytes: %1 vs %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Level</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_project.cpp" line="+140" />
-        <source>ARM Cortex-M, RISC-V and PIC32</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_trigger.cpp" line="+27" />
-        <source>once</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>twice</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 times</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+193" />
-        <source>Rose %1 so far</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+36" />
-        <source>%1 failed so far</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+20" />
-        <source>Register %1 of %2, written %3</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>%1 transfers start with it</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Received %1 so far</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>%1 changed by a fault so far</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_format.cpp" line="+163" />
-        <location line="+330" />
-        <source>%1 bytes</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-301" />
-        <source>Other</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+40" />
-        <location line="+69" />
-        <source>Output</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-67" />
-        <location line="+67" />
-        <source>Input</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-62" />
-        <location line="+89" />
-        <source>I2C</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-84" />
-        <location line="+77" />
-        <source>SPI</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-75" />
-        <location line="+77" />
-        <source>UART</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-75" />
-        <location line="+74" />
-        <source>1-Wire</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-71" />
-        <location line="+44" />
-        <source>Value</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+198" />
-        <source>1 byte</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Write %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Read %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Write %1 · Read %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <location line="+19" />
-        <location line="+192" />
-        <source>error</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-192" />
-        <source>no presence</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+119" />
-        <source>Burst</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Reset</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Read ROM</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Skip ROM</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Match ROM</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Search ROM</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+26" />
-        <source>%1 transfers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>%1 failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_measure.cpp" line="+76" />
-        <source>No transfers</source>
-        <translation type="unfinished" />
-    </message>
-    <message numerus="yes">
-        <location line="+1" />
-        <source>%n transfers</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
-    </message>
-    <message>
-        <location line="+3" />
-        <source>%1 busy</source>
-        <translation type="unfinished" />
-    </message>
-    <message numerus="yes">
-        <location line="+2" />
-        <source>%n failed</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
-    </message>
-    <message numerus="yes">
-        <location line="+48" />
-        <source>%n changes</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
-    </message>
-    <message>
-        <location line="+4" />
-        <source>%1 high</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+21" />
-        <source>No values</source>
-        <translation type="unfinished" />
-    </message>
-    <message numerus="yes">
-        <location line="+4" />
-        <source>%n values</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
-    </message>
-    <message>
-        <location line="+1" />
-        <source>%1 to %2</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>avg %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+162" />
-        <source>%1: min %2 · avg %3 · max %4 · σ %5 (%6)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+69" />
-        <source>Values</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+42" />
-        <source>High</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Low</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Period</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+32" />
-        <source>Duration</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Throughput: %1/s</source>
-        <translation type="unfinished" />
-    </message>
-    <message numerus="yes">
-        <location line="+65" />
-        <source>%n records</source>
-        <translation type="unfinished">
-            <numerusform />
-        </translation>
-    </message>
-    <message>
-        <location line="+24" />
-        <source>Project</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Board</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>MCU</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Firmware</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>NECTO</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Traced</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>From a recording</source>
-        <translation type="unfinished" />
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -48928,858 +49036,113 @@ a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
     <message>
         <location filename="../core/src/debugger/trace/trace_timeline_viewport.cpp" line="+67" />
         <source>New data ▸</source>
-        <translation type="unfinished" />
+        <translation>新数据 ▸</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Follow the newest events</source>
-        <translation type="unfinished" />
+        <translation>跟随最新事件</translation>
     </message>
     <message>
         <location line="+311" />
         <source>No firmware trace yet. Link MikroSDK.Trace to the project, call trace_init() and start debugging.</source>
-        <translation type="unfinished" />
+        <translation>尚无固件跟踪。请将 MikroSDK.Trace 链接到项目，调用 trace_init() 并开始调试。</translation>
     </message>
     <message>
         <location line="+505" />
         <source>Not in this run</source>
-        <translation type="unfinished" />
+        <translation>不在本次运行中</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Not in the recording</source>
-        <translation type="unfinished" />
+        <translation>不在录制中</translation>
     </message>
     <message>
         <location line="+10" />
         <source>%1 differ</source>
-        <translation type="unfinished" />
+        <translation>%1 处不同</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1 extra</source>
-        <translation type="unfinished" />
+        <translation>多出 %1 个</translation>
     </message>
     <message>
         <location line="+3" />
         <location line="+585" />
         <source>✓ Same</source>
-        <translation type="unfinished" />
+        <translation>✓ 相同</translation>
     </message>
     <message>
         <location line="-429" />
         <source>Empty recording: nothing came from the firmware while it ran</source>
-        <translation type="unfinished" />
+        <translation>空录制：运行期间固件没有发送任何数据</translation>
     </message>
     <message>
         <location line="+1" />
         <source>End of recording</source>
-        <translation type="unfinished" />
+        <translation>录制结束</translation>
     </message>
     <message>
         <location line="+127" />
         <source>Duty: %1 %</source>
-        <translation type="unfinished" />
+        <translation>占空比：%1 %</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Freq: %1</source>
-        <translation type="unfinished" />
+        <translation>频率：%1</translation>
     </message>
     <message>
         <location line="+3" />
         <source>width⁻¹: %1</source>
-        <translation type="unfinished" />
+        <translation>宽度⁻¹：%1</translation>
     </message>
     <message>
         <location line="+214" />
         <source>Next edge (Ctrl+→)</source>
-        <translation type="unfinished" />
+        <translation>下一个边沿（Ctrl+→）</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Previous edge (Ctrl+←)</source>
-        <translation type="unfinished" />
+        <translation>上一个边沿（Ctrl+←）</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Next value (Ctrl+→)</source>
-        <translation type="unfinished" />
+        <translation>下一个值（Ctrl+→）</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Previous value (Ctrl+←)</source>
-        <translation type="unfinished" />
+        <translation>上一个值（Ctrl+←）</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Next transfer (Ctrl+→)</source>
-        <translation type="unfinished" />
+        <translation>下一个传输（Ctrl+→）</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Previous transfer (Ctrl+←)</source>
-        <translation type="unfinished" />
+        <translation>上一个传输（Ctrl+←）</translation>
     </message>
     <message>
         <location line="+72" />
         <source>+ Only in the recording</source>
-        <translation type="unfinished" />
+        <translation>+ 仅在录制中</translation>
     </message>
     <message>
         <location line="+0" />
         <source>+ Only in this run</source>
-        <translation type="unfinished" />
+        <translation>+ 仅在本次运行中</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Time</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::RecordingNameDialog</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_recording_name_dialog.cpp" line="+33" />
-        <source>Saved in %1</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::WebPeekWindow</name>
-    <message>
-        <location filename="../core/src/web_browser/web_peek_window.ui" line="+20" />
-        <location filename="../core/src/web_browser/web_peek_window.cpp" line="+164" />
-        <source>Web</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+30" />
-        <source>Back</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Forward</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Reload</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+23" />
-        <source>Open in Web tab</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>Open in system browser</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::FaultPanel</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_fault_panel.cpp" line="+30" />
-        <source>I2C device not answering</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>SPI MISO stuck</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Input held</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>ADC value forced</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>1-Wire devices gone</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+105" />
-        <source>injected while it was recorded</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>None was injected while it was recorded.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Faults go on the lanes that take them: I2C, SPI, inputs, ADC and 1-Wire. None has shown up yet.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>This firmware's MikroSDK.Trace is too old for faults: update mikroSDK and rebuild the project.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+53" />
-        <source> V</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+63" />
-        <source>Type the byte: two hex digits.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Choose the lane to break.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Injected already.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <source>%1 faults at most: remove one first.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Inject it into the firmware: at once while it is stopped, otherwise within half a second while it records</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+55" />
-        <source>Remove this fault</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+41" />
-        <source>Events this fault changed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>no reads</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this bus.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+6" />
-        <source>waiting</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Not hit yet. The firmware gets the fault when it next hands over its trace (within half a second while it records, or at a stop); it hits at the next call it applies to.</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::HoverCard</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_hover_card.cpp" line="+69" />
-        <source>High</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Low</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Level</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>High for</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Low for</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Width⁻¹</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Period</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Frequency</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Duty</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Transfers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Written</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <location line="+45" />
-        <source>Read</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-43" />
-        <location line="+68" />
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-66" />
-        <location line="+7" />
-        <source>Span</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-5" />
-        <source>Too fast to record each transfer: counted, with their bytes.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Changes</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Ends</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Too fast to record each change.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Value</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Operation</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>No device answered the reset.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Address</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Command</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Register</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Sent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Received</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>Write</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Duration</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+18" />
-        <source>Injected</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>OK</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+16" />
-        <source>Pin</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Fault</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Compared</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+66" />
-        <source>NECTO made the device not answer.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>NECTO held MISO: these bytes were not read.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>NECTO took the devices off the bus.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>NECTO forced this value.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>NECTO held the pin at this level.</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::ValueRenderer</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="-230" />
-        <source>Fit</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::Debugger</name>
-    <message>
-        <location filename="../core/src/debugger/debugger.cpp" line="+318" />
-        <source>No debug port is available for the secondary core; only the primary core is debugged.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+290" />
-        <source>Opening %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+14" />
-        <source>Open trace</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Could not open %1: %2</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>RenesasE2RfpJob</name>
-    <message>
-        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_rfp_job.cpp" line="+35" />
-        <source>Renesas E2: Programming</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Renesas E2: Erasing</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+72" />
-        <source>Renesas Flash Programmer CLI not found: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Device is not supported by the installed Renesas E2 support files.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>No COM port is selected in the programmer settings.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Cannot open %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+48" />
-        <source>Renesas Flash Programmer CLI failed to start: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+35" />
-        <source>Waiting for the E2 to reconnect (attempt %1 of %2)...</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+14" />
-        <source>Renesas E2: this device has no erase operation (MRAM); programming overwrites the memory in place.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Renesas E2: the device rejected the write address. Check that the device's TrustZone boundaries match the project (read them with "rfp-cli -device RA -tool e2 -rfo"; a project without TrustZone needs all code and SRAM secure).</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Renesas E2: no %1 found on USB. Check that it is connected and that the programmer selected in the setup matches it (Renesas E2 or Renesas E2 Lite; boards with an on-board emulator use E2 Lite).</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Renesas Flash Programmer CLI failed (exit code %1).</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::QueuesViewModel</name>
-    <message>
-        <location filename="../core/src/debugger/debug_view/src/queues_view_model.cpp" line="+18" />
-        <source>Queue</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Semaphore</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Mutex</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Semaphore/Mutex</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+77" />
-        <source>Available</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+0" />
-        <source>Taken</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+8" />
-        <source>(unheld)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+12" />
-        <source>Address: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Could not be determined on this FreeRTOS version.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>This FreeRTOS version cannot tell the two apart.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Not resolvable for this entry.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>1 = available, 0 = currently held.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Current count / maximum count.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Available when 1, held when 0.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Capacity unknown - showing queued messages only.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>Messages currently queued / queue capacity.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Only meaningful for mutexes.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>No task currently holds this mutex.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+98" />
-        <source>Each core runs its own independent FreeRTOS instance.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Only registered objects appear here.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>What kind of object this is.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>How full each object is.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>The task currently holding this mutex.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+12" />
-        <source>Core</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Name</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Type</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Fill Level</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Held By</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::SetupNoticePopup</name>
-    <message>
-        <location filename="../core/src/project_manager/setup_notice_popup.ui" line="+50" />
-        <source>...</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+49" />
-        <source>secondary</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>primary</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>DapStdoutReader</name>
-    <message>
-        <location filename="../core/src/debugger/dap_stdout_reader.cpp" line="+94" />
-        <source>Standard output: no breakpoint on stdBuffFullBreak (%1): %2</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::LaneModel</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_lane_model.cpp" line="+78" />
-        <source>Only in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Not in the recording</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+3" />
-        <source>Recorded on other pins: %1</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+31" />
-        <source>%1 · other pins</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Necto::TraceNoteDialog</name>
-    <message>
-        <location filename="../core/src/debugger/trace/trace_note_dialog.ui" line="+14" />
-        <location line="+24" />
-        <source>Add note</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+57" />
-        <source>Cancel</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+10" />
-        <source>OK</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>HeapUsageBar</name>
-    <message>
-        <location filename="../core/src/debugger/debug_view/src/heap_usage_bar.cpp" line="+64" />
-        <source>Total Heap: start a debug session and halt to read</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+14" />
-        <source>Total Heap: not available for this allocator</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+13" />
-        <source>Total Heap: 0 / %1 (nothing allocated yet)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+2" />
-        <source>Total Heap: nothing allocated yet</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+11" />
-        <source>Total Heap: %1 / %2 (%3%)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+9" />
-        <source>Total Heap: %1 free</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>Total Heap: </source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+23" />
-        <source>Free: %1 (low: %2)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+4" />
-        <source>The least free heap this run. A big gap means bursts of allocation.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+5" />
-        <source>Free: %1</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
-    <name>Trace::oneWire</name>
-    <message>
-        <location line="+130" />
-        <location line="+1" />
-        <source>Reset</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+7" />
-        <location line="+1" />
-        <source>Presence</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="-1" />
-        <source>No presence</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+1" />
-        <source>None</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+40" />
-        <source>Command</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location line="+43" />
-        <location line="+1" />
-        <source>Search</source>
-        <translation type="unfinished" />
+        <translation>时间</translation>
     </message>
 </context>
 <context>
@@ -49798,6 +49161,609 @@ a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
         <location line="+14" />
         <source>The project's setup uses the %1 board definition, this board is %2. Pin mapping may differ.</source>
         <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::TimelineRuler</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_timeline_ruler.cpp" line="+66" />
+        <source>≠ Runs part</source>
+        <translation>≠ 运行分歧</translation>
+    </message>
+    <message>
+        <location line="+219" />
+        <source>%1
+
+%2 · drag to move, double-click to edit</source>
+        <translation>%1
+
+%2 · 拖动可移动，双击可编辑</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Where the runs first differ: click to go there</source>
+        <translation>两次运行首次出现差异的位置：点击跳转</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Drag to move the marker; double-click to remove it</source>
+        <translation>拖动可移动标记；双击可移除</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Click to place marker B</source>
+        <translation>点击放置标记 B</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Click to place marker A</source>
+        <translation>点击放置标记 A</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::TraceTabs</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_tabs.cpp" line="+22" />
+        <source>The trace of the session you debug</source>
+        <translation>当前调试会话的跟踪</translation>
+    </message>
+    <message>
+        <location line="+65" />
+        <source>● Live</source>
+        <translation>● 实时</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Live</source>
+        <translation>实时</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::LaneModel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_lane_model.cpp" line="+78" />
+        <source>Only in the recording</source>
+        <translation>仅在录制中</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Not in the recording</source>
+        <translation>不在录制中</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Recorded on other pins: %1</source>
+        <translation>录制于其他引脚：%1</translation>
+    </message>
+    <message>
+        <location line="+31" />
+        <source>%1 · other pins</source>
+        <translation>%1 · 其他引脚</translation>
+    </message>
+</context>
+<context>
+    <name>RenesasE2ProgramJob</name>
+    <message>
+        <location line="+32" />
+        <source>Renesas E2: Programming</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Renesas E2: %1</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::PackageReadmeViewer</name>
+    <message>
+        <location filename="../core/src/package_manager/view/package_readme_viewer.cpp" line="+343" />
+        <location line="+64" />
+        <location line="+56" />
+        <source>No network connection.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="-96" />
+        <location line="+65" />
+        <location line="+144" />
+        <source>The package description could not be loaded.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::SetupLabelToolTip</name>
+    <message>
+        <location filename="../core/src/setup/view/setup_label_tooltip.ui" line="+59" />
+        <source>Selected</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+12" />
+        <source>name</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+69" />
+        <source>Click to configure</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Trace::TriggerPanel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_trigger_panel.cpp" line="+98" />
+        <source>Watch for this</source>
+        <translation>监视此项</translation>
+    </message>
+    <message>
+        <location line="+35" />
+        <source>Type what to watch for: a transfer, as in "0x18 failed", or a pin's change, as in "LED_1 rise".</source>
+        <translation>输入要监视的内容：传输，例如 "0x18 failed"；或引脚变化，例如 "LED_1 rise"。</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Armed: waiting for the first match.</source>
+        <translation>已启用：正在等待首次匹配。</translation>
+    </message>
+    <message>
+        <location line="+17" />
+        <source>Disarm</source>
+        <translation>停用</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Arm</source>
+        <translation>启用</translation>
+    </message>
+</context>
+<context>
+    <name>RenesasE2Proxy</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_proxy.cpp" line="+68" />
+        <source>Renesas E2: the GDB server did not complete the launch sequence.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+102" />
+        <source>Renesas E2 proxy cannot listen on port %1: %2</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+131" />
+        <source>Renesas E2 proxy cannot reach the GDB server on port %1.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::TraceFaultPanel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_fault_panel.ui" line="+46" />
+        <source>Faults NECTO injects into the firmware's drivers, for this debug session</source>
+        <translation>NECTO 在本次调试会话中注入固件驱动程序的故障</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Faults</source>
+        <translation>故障</translation>
+    </message>
+    <message>
+        <location line="+14" />
+        <source>What to break</source>
+        <translation>故障对象</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>The lane it holds</source>
+        <translation>要保持的通道</translation>
+    </message>
+    <message>
+        <location line="+38" />
+        <source>The byte every read on the bus gives, in hex</source>
+        <translation>总线上每次读取返回的字节（十六进制）</translation>
+    </message>
+    <message>
+        <location line="+6" />
+        <source>0xFF</source>
+        <translation>0xFF</translation>
+    </message>
+    <message>
+        <location line="+23" />
+        <source>The level the input reads</source>
+        <translation>输入读取到的电平</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>High</source>
+        <translation>高</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Low</source>
+        <translation>低</translation>
+    </message>
+    <message>
+        <location line="+24" />
+        <source>The value the input reads</source>
+        <translation>输入读取到的值</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Inject</source>
+        <translation>注入</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>A stuck MISO changes only what is read: nothing, while the firmware only writes to this device.</source>
+        <translation>MISO 卡死只影响读取的数据：固件只向此设备写入时，不会产生任何影响。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>No reads on this lane yet</source>
+        <translation>此通道尚无读取</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::HoverCard</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_hover_card.cpp" line="+69" />
+        <source>High</source>
+        <translation>高</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Low</source>
+        <translation>低</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Level</source>
+        <translation>电平</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>High for</source>
+        <translation>高电平时长</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Low for</source>
+        <translation>低电平时长</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Width⁻¹</source>
+        <translation>宽度⁻¹</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Period</source>
+        <translation>周期</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Frequency</source>
+        <translation>频率</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Duty</source>
+        <translation>占空比</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Transfers</source>
+        <translation>传输</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>Written</source>
+        <translation>已写入</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <location line="+45" />
+        <source>Read</source>
+        <translation>读取</translation>
+    </message>
+    <message>
+        <location line="-43" />
+        <location line="+68" />
+        <source>Failed</source>
+        <translation>失败</translation>
+    </message>
+    <message>
+        <location line="-66" />
+        <location line="+7" />
+        <source>Span</source>
+        <translation>跨度</translation>
+    </message>
+    <message>
+        <location line="-5" />
+        <source>Too fast to record each transfer: counted, with their bytes.</source>
+        <translation>传输过快，无法逐一记录：仅统计次数及字节。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Changes</source>
+        <translation>变化次数</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Ends</source>
+        <translation>结束电平</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Too fast to record each change.</source>
+        <translation>变化过快，无法逐一记录。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Value</source>
+        <translation>值</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Operation</source>
+        <translation>操作</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>No device answered the reset.</source>
+        <translation>没有设备应答复位。</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Address</source>
+        <translation>地址</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Command</source>
+        <translation>命令</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Register</source>
+        <translation>寄存器</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>Sent</source>
+        <translation>已发送</translation>
+    </message>
+    <message>
+        <location line="+0" />
+        <source>Received</source>
+        <translation>已接收</translation>
+    </message>
+    <message>
+        <location line="+8" />
+        <source>Write</source>
+        <translation>写入</translation>
+    </message>
+    <message>
+        <location line="+4" />
+        <source>failed</source>
+        <translation>失败</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Duration</source>
+        <translation>持续时间</translation>
+    </message>
+    <message>
+        <location line="+18" />
+        <source>Injected</source>
+        <translation>已注入</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <location line="+16" />
+        <source>Pin</source>
+        <translation>引脚</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Fault</source>
+        <translation>故障</translation>
+    </message>
+    <message>
+        <location line="+11" />
+        <source>Compared</source>
+        <translation>对比</translation>
+    </message>
+    <message>
+        <location line="+66" />
+        <source>NECTO made the device not answer.</source>
+        <translation>NECTO 使设备不应答。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO held MISO: these bytes were not read.</source>
+        <translation>NECTO 固定了 MISO：这些字节并非实际读取所得。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO took the devices off the bus.</source>
+        <translation>NECTO 将设备从总线上移除。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO forced this value.</source>
+        <translation>NECTO 强制设定了此值。</translation>
+    </message>
+    <message>
+        <location line="+2" />
+        <source>NECTO held the pin at this level.</source>
+        <translation>NECTO 将引脚保持在此电平。</translation>
+    </message>
+</context>
+<context>
+    <name>RenesasE2Server</name>
+    <message>
+        <location filename="../plugins/programers/renesas_e2/src/renesas_e2_server.cpp" line="+181" />
+        <source>Renesas E2 GDB server is already running.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Renesas E2 GDB server not found: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+5" />
+        <source>Device is not supported by the installed Renesas E2 support files.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+25" />
+        <source>Renesas E2 GDB server failed to start: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+13" />
+        <source>Timed out waiting for the Renesas E2 GDB server to connect to the target.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location line="+86" />
+        <source>Renesas E2 GDB server exited before connecting (exit code %1).</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>Necto::TraceTriggerPanel</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_trigger_panel.ui" line="+35" />
+        <source>Trigger on</source>
+        <translation>触发条件</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>What to watch for, in the search's words. Every word must match:
+a transfer: failed, ok, w, r, w/r, tx, rx, 0x48, 9F 00, "text", a register's name
+a pin's change: rise, fall, high, low and its name, as in "LED_1 rise"</source>
+        <translation>要监视的内容，使用搜索的关键词。每个词都必须匹配：
+传输：failed、ok、w、r、w/r、tx、rx、0x48、9F 00、"text"、寄存器名称
+引脚变化：rise、fall、high、low 及引脚名称，例如 "LED_1 rise"</translation>
+    </message>
+    <message>
+        <location line="+5" />
+        <source>0x18 failed · w 05 · LED_1 rise</source>
+        <translation>0x18 failed · w 05 · LED_1 rise</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>From this trace</source>
+        <translation>来自此跟踪</translation>
+    </message>
+    <message>
+        <location line="+28" />
+        <source>Then</source>
+        <translation>然后</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>Pause the debugger</source>
+        <translation>暂停调试器</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>The trace comes in buffers: the target runs on a little past the event before the pause holds it.</source>
+        <translation>跟踪数据按缓冲区传送：暂停生效前，目标会在事件之后继续运行一小段时间。</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Place marker A on the event</source>
+        <translation>在事件处放置标记 A</translation>
+    </message>
+    <message>
+        <location line="+15" />
+        <source>Record, from</source>
+        <translation>录制，从</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Record to a file, starting before the event: what came before it is kept while the trigger is armed.</source>
+        <translation>录制到文件，从事件发生之前开始：触发器启用期间会保留事件之前的数据。</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source> s before</source>
+        <translation> s 前</translation>
+    </message>
+    <message>
+        <location line="+13" />
+        <source>to</source>
+        <translation>到</translation>
+    </message>
+    <message>
+        <location line="+7" />
+        <source>stopped</source>
+        <translation>停止时</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source> s after</source>
+        <translation> s 后</translation>
+    </message>
+    <message>
+        <location line="+53" />
+        <source>Arm</source>
+        <translation>启用</translation>
+    </message>
+</context>
+<context>
+    <name>Necto::TraceRecordingNameDialog</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_recording_name_dialog.ui" line="+14" />
+        <location line="+24" />
+        <source>Recording saved</source>
+        <translation>录制已保存</translation>
+    </message>
+    <message>
+        <location line="+45" />
+        <source>Name</source>
+        <translation>名称</translation>
+    </message>
+    <message>
+        <location line="+74" />
+        <source>Keep the automatic name</source>
+        <translation>保留自动生成的名称</translation>
+    </message>
+    <message>
+        <location line="+3" />
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <location line="+10" />
+        <source>Save</source>
+        <translation>保存</translation>
+    </message>
+</context>
+<context>
+    <name>Trace::BusRenderer</name>
+    <message>
+        <location filename="../core/src/debugger/trace/trace_lane_renderers.cpp" line="+204" />
+        <source>No timer in the firmware: the signals need the transfers' times</source>
+        <translation>固件中没有定时器：信号需要传输的时间</translation>
+    </message>
+    <message>
+        <location line="+808" />
+        <source>Not in the recording</source>
+        <translation>不在录制中</translation>
+    </message>
+    <message>
+        <location line="+1" />
+        <source>Not in this run</source>
+        <translation>不在本次运行中</translation>
     </message>
 </context>
 </TS>
