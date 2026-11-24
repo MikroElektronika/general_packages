@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "id": "xmc4",
+  "title": "XMC4000 clock tree",
+  "vendor": "Infineon",
+  "source": "XMC4000 reference manuals, SCU \"Clock Generation Unit\"; XMC4000 data sheets",
+  "devices": ["^XMC4"],
+  "fosc": "cpu",
+  "inputs": {
+    "osc": {"label": "OSC_HP frequency", "default": 12000000, "min": 4000000, "max": 40000000}
+  },
+  "settings": ["SCU_PLLCON0.OFICAL", "?SCU_OSCHPCTRL.GAINSEL"],
+  "nodes": [
+    {
+      "id": "osc",
+      "label": "OSC_HP",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "input": "osc",
+      "enable": {"field": "SCU_OSCHPCTRL.MODE", "on": "00000000", "off": "00000030", "auto": "both"},
+      "tooltip": "Crystal or external clock on XTAL1 (4-25 MHz crystal)."
+    },
+    {
+      "id": "ofi",
+      "label": "fOFI 24 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 2,
+      "options": [
+        {"id": "on", "label": "fOFI 24 MHz", "mul": 24000000}
+      ],
+      "tooltip": "Internal backup clock (calibrated, see fOFI calibration)."
+    },
+    {
+      "id": "pllin",
+      "label": "PLL input",
+      "kind": "mux",
+      "x": 1,
+      "y": 1,
+      "options": [
+        {"id": "osc", "label": "OSC_HP", "from": "osc", "set": {"SCU_PLLCON2.PINSEL": "00000000"}},
+        {"id": "ofi", "label": "fOFI", "from": "ofi", "set": {"SCU_PLLCON2.PINSEL": "00000101"}}
+      ]
+    },
+    {
+      "id": "pdiv",
+      "label": "/P",
+      "kind": "divider",
+      "x": 2,
+      "y": 1,
+      "range": {"from": "pllin", "op": "div", "min": 1, "max": 16, "field": "SCU_PLLCON1.PDIV", "lsb": 24, "scale": 1, "offset": -1},
+      "min": 4000000,
+      "max": 16000000,
+      "tooltip": "VCO input: 4-16 MHz."
+    },
+    {
+      "id": "vco",
+      "label": "VCO xN",
+      "kind": "multiplier",
+      "x": 3,
+      "y": 1,
+      "range": {"from": "pdiv", "op": "mul", "min": 1, "max": 128, "field": "SCU_PLLCON1.NDIV", "lsb": 8, "scale": 1, "offset": -1},
+      "min": 260000000,
+      "max": 520000000,
+      "tooltip": "VCO: 260-520 MHz."
+    },
+    {
+      "id": "pll",
+      "label": "fPLL /K2",
+      "kind": "divider",
+      "x": 4,
+      "y": 1,
+      "range": {"from": "vco", "op": "div", "min": 1, "max": 128, "field": "SCU_PLLCON1.K2DIV", "lsb": 16, "scale": 1, "offset": -1}
+    },
+    {
+      "id": "syssel",
+      "label": "fSYS source",
+      "kind": "mux",
+      "x": 5,
+      "y": 2,
+      "options": [
+        {"id": "pll", "label": "Main PLL", "from": "pll", "set": {"SCU_SYSCLKCR.SYSSEL": "00010000"}},
+        {"id": "ofi", "label": "fOFI", "from": "ofi", "set": {"SCU_SYSCLKCR.SYSSEL": "00000000"}}
+      ]
+    },
+    {
+      "id": "sys",
+      "label": "fSYS (SYSDIV)",
+      "kind": "divider",
+      "x": 6,
+      "y": 2,
+      "range": {"from": "syssel", "op": "div", "min": 1, "max": 256, "field": "SCU_SYSCLKCR.SYSDIV", "lsb": 0, "scale": 1, "offset": -1},
+      "max": 144000000,
+      "consumer": true
+    },
+    {
+      "id": "cpu",
+      "label": "fCPU",
+      "kind": "divider",
+      "x": 7,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "sys", "set": {"SCU_CPUCLKCR.CPUDIV": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "sys", "set": {"SCU_CPUCLKCR.CPUDIV": "00000001"}, "div": 2}
+      ],
+      "max": 144000000,
+      "consumer": true
+    },
+    {
+      "id": "periph",
+      "label": "fPERIPH",
+      "kind": "divider",
+      "x": 8,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "cpu", "set": {"SCU_PBCLKCR.PBDIV": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "cpu", "set": {"SCU_PBCLKCR.PBDIV": "00000001"}, "div": 2}
+      ],
+      "consumer": true
+    },
+    {
+      "id": "ccu",
+      "label": "fCCU",
+      "kind": "divider",
+      "x": 7,
+      "y": 3,
+      "options": [
+        {"id": "1", "label": "/1", "from": "sys", "set": {"SCU_CCUCLKCR.CCUDIV": "00000000"}, "div": 1},
+        {"id": "2", "label": "/2", "from": "sys", "set": {"SCU_CCUCLKCR.CCUDIV": "00000001"}, "div": 2}
+      ],
+      "max": 144000000,
+      "consumer": true
+    }
+  ],
+  "derive": [
+    {"field": "SCU_OSCHPCTRL.OSCVAL", "cases": [{"when": "sel.pllin == 'osc' && in.osc < 7500000", "value": "00010000"}, {"when": "sel.pllin == 'osc' && in.osc < 10000000", "value": "00020000"}, {"when": "sel.pllin == 'osc' && in.osc < 12500000", "value": "00030000"}, {"when": "sel.pllin == 'osc' && in.osc < 15000000", "value": "00040000"}, {"when": "sel.pllin == 'osc' && in.osc < 17500000", "value": "00050000"}, {"when": "sel.pllin == 'osc' && in.osc < 20000000", "value": "00060000"}, {"when": "sel.pllin == 'osc' && in.osc < 22500000", "value": "00070000"}, {"when": "sel.pllin == 'osc' && in.osc < 25000000", "value": "00080000"}, {"when": "sel.pllin == 'osc' && in.osc < 27500000", "value": "00090000"}, {"when": "sel.pllin == 'osc' && in.osc < 30000000", "value": "000A0000"}, {"when": "sel.pllin == 'osc' && in.osc < 32500000", "value": "000B0000"}, {"when": "sel.pllin == 'osc' && in.osc < 35000000", "value": "000C0000"}, {"when": "sel.pllin == 'osc' && in.osc < 37500000", "value": "000D0000"}, {"when": "sel.pllin == 'osc' && in.osc < 40000000", "value": "000E0000"}, {"when": "sel.pllin == 'osc'", "value": "000F0000"}], "default": "00040000"},
+    {"field": "FLASH0_FCON.WSPFLASH", "cases": [{"when": "f.cpu <= 45454545", "value": "00000001"}, {"when": "f.cpu <= 90909091", "value": "00000002"}, {"when": "f.cpu <= 136363636", "value": "00000003"}, {"when": "f.cpu <= 181818182", "value": "00000004"}, {"when": "f.cpu <= 227272727", "value": "00000005"}], "default": "00000006"}
+  ],
+  "variants": [
+    {"devices": ["^XMC4[12]"], "limits": {"sys": {"max": 80000000}, "cpu": {"max": 80000000}, "ccu": {"max": 80000000}}},
+    {"devices": ["^XMC4[45]"], "limits": {"sys": {"max": 120000000}, "cpu": {"max": 120000000}, "ccu": {"max": 120000000}}}
+  ]
+}

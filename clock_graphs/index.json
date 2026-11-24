@@ -373,6 +373,82 @@
       ]
     },
     {
+      "id": "fm0p_s6e1a",
+      "file": "infineon/fm0p_s6e1a.json",
+      "vendor": "Infineon",
+      "title": "FM0+ S6E1A clock tree",
+      "devices": [
+        "^S6E1A"
+      ]
+    },
+    {
+      "id": "fm0p_s6e1c",
+      "file": "infineon/fm0p_s6e1c.json",
+      "vendor": "Infineon",
+      "title": "FM0+ S6E1C clock tree",
+      "devices": [
+        "^S6E1C"
+      ]
+    },
+    {
+      "id": "fm3",
+      "file": "infineon/fm3.json",
+      "vendor": "Infineon",
+      "title": "FM3 clock tree",
+      "devices": [
+        "^CY9AF",
+        "^CY9BF[1-5][12]",
+        "^CY9BF6",
+        "^CY9BFD"
+      ]
+    },
+    {
+      "id": "fm4",
+      "file": "infineon/fm4.json",
+      "vendor": "Infineon",
+      "title": "FM4 clock tree",
+      "devices": [
+        "^S6E2",
+        "^CY9BF[1-5]6"
+      ]
+    },
+    {
+      "id": "psoc4",
+      "file": "infineon/psoc4.json",
+      "vendor": "Infineon",
+      "title": "PSOC 4 clock tree",
+      "devices": [
+        "^CY8C4"
+      ]
+    },
+    {
+      "id": "xmc1100",
+      "file": "infineon/xmc1100.json",
+      "vendor": "Infineon",
+      "title": "XMC1100/1200/1300 clock tree",
+      "devices": [
+        "^XMC1[1-3]"
+      ]
+    },
+    {
+      "id": "xmc1400",
+      "file": "infineon/xmc1400.json",
+      "vendor": "Infineon",
+      "title": "XMC1400 clock tree",
+      "devices": [
+        "^XMC14"
+      ]
+    },
+    {
+      "id": "xmc4",
+      "file": "infineon/xmc4.json",
+      "vendor": "Infineon",
+      "title": "XMC4000 clock tree",
+      "devices": [
+        "^XMC4"
+      ]
+    },
+    {
       "id": "pic_pic10f320",
       "file": "microchip_pic/pic_pic10f320.json",
       "vendor": "Microchip",
