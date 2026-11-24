@@ -441,7 +441,7 @@ def getProgDbgAsJson(docLink, saveToFile=False):
         else:
             data_dict = df.set_index('Device').to_dict(orient='index')
     else:
-        data_dict = df.set_index('Name').to_dict(orient='index')
+        data_dict = df.set_index('Name' if 'Name' in df.columns else 'Device').to_dict(orient='index')
     formatted_dict = {mcu.lower(): data for mcu, data in data_dict.items()}
     if os.path.exists(os.path.join(os.path.dirname(__file__), "devices.txt")):
         os.remove(os.path.join(os.path.dirname(__file__), "devices.txt"))
@@ -453,7 +453,44 @@ def getProgDbgAsJson(docLink, saveToFile=False):
 
     return formatted_dict
 
-def checkProgrammerToDevice(database, devices, progDbgInfo, addGeneral=False):
+# J-Link device list names many parts differently from our device definitions,
+# so beside exact and family-prefix matching we need a few extra rules:
+#   - wildcard entries, e.g. "CY8C4147xxx-Sxxx" or "MK22FN128xxx10" ("xxx" = any part/package code)
+#   - Infineon XMC parts are listed by flash size only, e.g. XMC1402-Q048X0128 -> XMC1402-0128,
+#     XMC4700-F144K1536 -> XMC4700-1536
+#   - Infineon (ex Cypress/Spansion) FM0+/FM3/FM4 parts are listed with the legacy
+#     Spansion "MB9" prefix instead of "CY9", e.g. CY9BF367MPMC-G-MNE2 -> MB9BF367M
+_seggerWildcardCache = {}
+
+def _seggerWildcards(progDbgInfo):
+    cacheKey = id(progDbgInfo)
+    if cacheKey not in _seggerWildcardCache:
+        _seggerWildcardCache[cacheKey] = [
+            (key, re.compile(re.escape(key).replace('xxx', '[a-z0-9]+')))
+            for key in progDbgInfo if 'xxx' in key
+        ]
+    return _seggerWildcardCache[cacheKey]
+
+def _seggerNameAliases(deviceName):
+    aliases = [deviceName]
+    xmcMatch = re.fullmatch(r'(xmc\d{4})-[a-z]\d+[a-z](\d+)', deviceName)
+    if xmcMatch:
+        aliases.append(f'{xmcMatch.group(1)}-{xmcMatch.group(2)}')
+    if deviceName.startswith('cy9'):
+        aliases.append('mb9' + deviceName[3:])
+    return aliases
+
+def getFamilyMatchKeys(deviceName, progDbgInfo, seggerMatching=False):
+    """Keys of progDbgInfo matching deviceName when there is no exact match."""
+    # Workaround for SEGGER - it has support per device family, not device name
+    # so we need to see if there is any device matching the family
+    candidates = _seggerNameAliases(deviceName) if seggerMatching else [deviceName]
+    matched = [key for key in progDbgInfo if any(name.startswith(key) for name in candidates)]
+    if seggerMatching:
+        matched += [key for key, pattern in _seggerWildcards(progDbgInfo) if pattern.fullmatch(deviceName)]
+    return matched
+
+def checkProgrammerToDevice(database, devices, progDbgInfo, addGeneral=False, seggerMatching=False):
     ProgrammerToDeviceColumns = 'programer_uid, device_uid, device_support_package'
 
     progUidList = [
@@ -515,37 +552,37 @@ def checkProgrammerToDevice(database, devices, progDbgInfo, addGeneral=False):
                                 #     )
                                 # )
         else:
-            # Workaround for SEGGER - it has support per device family, not device name
-            # so we need to see if there is any device matching the family
-            for key in progDbgInfo:
-                if eachDevice[enums.dbSync.DEVICETOPACKAGEDEF.value].replace('.json', '').lower().startswith(key):
-                    for eachProgCheckKey in progDbgInfo[key].keys():
-                        if re.search('Programmers', eachProgCheckKey, re.IGNORECASE):
-                            if progDbgInfo[key][eachProgCheckKey]:
-                                splitProgsDebuggers = progDbgInfo[key][eachProgCheckKey].split('/')
-                                for eachProgDebug in splitProgsDebuggers:
-                                    progDebugUid = read_data_from_db(
+            for key in getFamilyMatchKeys(
+                eachDevice[enums.dbSync.DEVICETOPACKAGEDEF.value].replace('.json', '').lower(),
+                progDbgInfo, seggerMatching
+            ):
+                for eachProgCheckKey in progDbgInfo[key].keys():
+                    if re.search('Programmers', eachProgCheckKey, re.IGNORECASE):
+                        if progDbgInfo[key][eachProgCheckKey]:
+                            splitProgsDebuggers = progDbgInfo[key][eachProgCheckKey].split('/')
+                            for eachProgDebug in splitProgsDebuggers:
+                                progDebugUid = read_data_from_db(
+                                    database,
+                                    f'SELECT uid FROM Programmers WHERE name IS "{eachProgDebug}"'
+                                )
+                                if 'package_name' in progDbgInfo[key]:
+                                    device_support_package = f'["{progDbgInfo[key]['package_name']}"]'
+                                    # If there is no Debugger support for Codegrip in csv file, add it but without any codegrip package
+                                    if device_support_package == '["False"]':
+                                        device_support_package = '[""]'
+                                else:
+                                    device_support_package = ''
+                                if progDebugUid[enums.dbSync.COUNT.value]:
+                                    insertIntoTable(
                                         database,
-                                        f'SELECT uid FROM Programmers WHERE name IS "{eachProgDebug}"'
+                                        'ProgrammerToDevice',
+                                        [
+                                            progDebugUid[enums.dbSync.ELEMENTS.value][0][enums.dbSync.PROGRAMMERTODEVICEPROGRAMMER.value], ## programer_uid
+                                            eachDevice[enums.dbSync.DEVICETOPACKAGEUID.value], ## device_uid
+                                            device_support_package
+                                        ],
+                                        ProgrammerToDeviceColumns
                                     )
-                                    if 'package_name' in progDbgInfo[key]:
-                                        device_support_package = f'["{progDbgInfo[key]['package_name']}"]'
-                                        # If there is no Debugger support for Codegrip in csv file, add it but without any codegrip package
-                                        if device_support_package == '["False"]':
-                                            device_support_package = '[""]'
-                                    else:
-                                        device_support_package = ''
-                                    if progDebugUid[enums.dbSync.COUNT.value]:
-                                        insertIntoTable(
-                                            database,
-                                            'ProgrammerToDevice',
-                                            [
-                                                progDebugUid[enums.dbSync.ELEMENTS.value][0][enums.dbSync.PROGRAMMERTODEVICEPROGRAMMER.value], ## programer_uid
-                                                eachDevice[enums.dbSync.DEVICETOPACKAGEUID.value], ## device_uid
-                                                device_support_package
-                                            ],
-                                            ProgrammerToDeviceColumns
-                                        )
         # Always add gdb_general
         if addGeneral:
             insertIntoTable(
@@ -568,7 +605,7 @@ def checkProgrammerToDevice(database, devices, progDbgInfo, addGeneral=False):
 
     return
 
-def checkDebuggerToDevice(database, devices, progDbgInfo, addGeneral=False):
+def checkDebuggerToDevice(database, devices, progDbgInfo, addGeneral=False, seggerMatching=False):
     DebuggerToDeviceColumns = 'debugger_uid, device_uid'
 
     progUidList = [
@@ -621,29 +658,29 @@ def checkDebuggerToDevice(database, devices, progDbgInfo, addGeneral=False):
                                 #     )
                                 # )
         else:
-            # Workaround for SEGGER - it has support per device family, not device name
-            # so we need to see if there is any device matching the family
-            for key in progDbgInfo:
-                if eachDevice[enums.dbSync.DEVICETOPACKAGEDEF.value].replace('.json', '').lower().startswith(key):
-                    for eachProgCheckKey in progDbgInfo[key].keys():
-                        if re.search('Debuggers',eachProgCheckKey, re.IGNORECASE):
-                            if progDbgInfo[key][eachProgCheckKey]:
-                                splitProgsDebuggers = progDbgInfo[key][eachProgCheckKey].split('/')
-                                for eachProgDebug in splitProgsDebuggers:
-                                    progDebugUid = read_data_from_db(
+            for key in getFamilyMatchKeys(
+                eachDevice[enums.dbSync.DEVICETOPACKAGEDEF.value].replace('.json', '').lower(),
+                progDbgInfo, seggerMatching
+            ):
+                for eachProgCheckKey in progDbgInfo[key].keys():
+                    if re.search('Debuggers',eachProgCheckKey, re.IGNORECASE):
+                        if progDbgInfo[key][eachProgCheckKey]:
+                            splitProgsDebuggers = progDbgInfo[key][eachProgCheckKey].split('/')
+                            for eachProgDebug in splitProgsDebuggers:
+                                progDebugUid = read_data_from_db(
+                                    database,
+                                    f'SELECT uid FROM Debuggers WHERE name IS "{eachProgDebug}"'
+                                )
+                                if progDebugUid[enums.dbSync.COUNT.value]:
+                                    insertIntoTable(
                                         database,
-                                        f'SELECT uid FROM Debuggers WHERE name IS "{eachProgDebug}"'
+                                        'DebuggerToDevice',
+                                        [
+                                            progDebugUid[enums.dbSync.ELEMENTS.value][0][enums.dbSync.PROGRAMMERTODEVICEPROGRAMMER.value], ## debugger_uid
+                                            eachDevice[enums.dbSync.DEVICETOPACKAGEUID.value] ## device_uid
+                                        ],
+                                        DebuggerToDeviceColumns
                                     )
-                                    if progDebugUid[enums.dbSync.COUNT.value]:
-                                        insertIntoTable(
-                                            database,
-                                            'DebuggerToDevice',
-                                            [
-                                                progDebugUid[enums.dbSync.ELEMENTS.value][0][enums.dbSync.PROGRAMMERTODEVICEPROGRAMMER.value], ## debugger_uid
-                                                eachDevice[enums.dbSync.DEVICETOPACKAGEUID.value] ## device_uid
-                                            ],
-                                            DebuggerToDeviceColumns
-                                        )
         ## Always add gdb_general?
         if addGeneral:
             insertIntoTable(
@@ -1791,9 +1828,9 @@ async def main(
             True
         )
         log_step(f'\033[96mStep 11.1: Adding JLink packs information into ProgrammerToDevice for {databaseNecto}.\033[0m')
-        checkProgrammerToDevice(databaseNecto, allDevicesGithub, progDbgAsJson, True)
+        checkProgrammerToDevice(databaseNecto, allDevicesGithub, progDbgAsJson, True, seggerMatching=True)
         log_step(f'\033[96mStep 11.2: Adding JLink packs information into DebuggerToDevice for {databaseNecto}.\033[0m')
-        checkDebuggerToDevice(databaseNecto, allDevicesGithub, progDbgAsJson, False)
+        checkDebuggerToDevice(databaseNecto, allDevicesGithub, progDbgAsJson, False, seggerMatching=True)
     ## EOF Step 11
 
     ## Step 12 add microchip info to programmers table
