@@ -23,6 +23,7 @@ clock_graphs/
   hpmicro/*.json       written by scripts/clock_graphs/hpmicro_graphs.py (HPM5301, RISC-V)
   renesas_rx/*.json    written by scripts/clock_graphs/renesas_rx_graphs.py
   renesas_rl78/*.json  written by scripts/clock_graphs/renesas_rl78_graphs.py
+  infineon/*.json      written by scripts/clock_graphs/infineon_graphs.py (XMC1/XMC4, PSOC 4, FM0+/FM3/FM4)
   microchip_pic32/*.json written by scripts/clock_graphs/microchip_pic32_graphs.py (mikroC and XC32)
   microchip_pic32c/*.json written by scripts/clock_graphs/microchip_pic32c_graphs.py (ARM PIC32C)
   avr/*.json           converted from the mikroC AVR definitions by scripts/clock_graphs/convert_avr.py
@@ -59,6 +60,11 @@ do not validate.
   Apache-2.0): rtc_clk_cpu_freq_mhz_to_config() and clk_tree_ll.h of each chip.
 * **HPMicro** graphs (HPM5301) are written by hand from the register definitions and clock drivers of the
   HPM SDK (https://github.com/hpmicro/hpm_sdk, BSD-3-Clause): PLLCTLV2, SYSCTL clock nodes and PCFG DCDC.
+* **Infineon** graphs (XMC1100/1200/1300, XMC1400, XMC4000, PSOC 4 with and without EXCO, FM0+ S6E1A/S6E1C,
+  FM3 MB9A/MB9B, FM4 S6E2/MB9B160-560) are written by hand from the reference manuals' clock chapters (SCU,
+  SRSS/EXCO, CRG) and the data sheets' operating limits, for the registers the core_packages system library
+  applies (`system/src/infineon/<group>/init_clock.c`). The FM graphs also check the headroom the trimmed
+  high-speed CR needs when it feeds the PLL (3-5 % below the data sheet maximum).
 * **Renesas RX/RL78**, **GigaDevice GD32VF103** and **Microchip PIC32** graphs are written by hand from
   the hardware manuals / family reference manuals (Renesas Smart Configurator data was used only to
   cross-check limits, never copied).

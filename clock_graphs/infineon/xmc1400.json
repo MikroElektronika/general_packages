@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "xmc1400",
+  "title": "XMC1400 clock tree",
+  "vendor": "Infineon",
+  "source": "XMC1400 reference manual, SCU \"Clock Control\"",
+  "devices": ["^XMC14"],
+  "fosc": "mclk",
+  "inputs": {
+    "xtal": {"label": "OSC_HP frequency", "default": 16000000, "min": 4000000, "max": 48000000}
+  },
+  "settings": ["SCU_CLKCR.RTCCLKSEL", "SCU_CLKCR1.ADCCLKSEL"],
+  "nodes": [
+    {
+      "id": "xtal",
+      "label": "XTAL1 input",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "input": "xtal",
+      "tooltip": "Crystal (4-20 MHz) or external clock (4-48 MHz) on XTAL1."
+    },
+    {
+      "id": "oschp",
+      "label": "OSC_HP",
+      "kind": "mux",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "crystal", "label": "Crystal", "from": "xtal", "set": {"SCU_ANAOSCHPCTRL.MODE": "00000000"}},
+        {"id": "external", "label": "External clock", "from": "xtal", "set": {"SCU_ANAOSCHPCTRL.MODE": "00000010"}},
+        {"id": "off", "label": "Disabled", "mul": 0, "set": {"SCU_ANAOSCHPCTRL.MODE": "00000030"}}
+      ]
+    },
+    {
+      "id": "dco1",
+      "label": "DCO1 48 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 2,
+      "options": [
+        {"id": "on", "label": "DCO1 48 MHz", "mul": 48000000}
+      ]
+    },
+    {
+      "id": "dclk",
+      "label": "DCLK (x2)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "max": 96000000,
+      "options": [
+        {"id": "dco1", "label": "DCO1 x 2", "from": "dco1", "mul": 2, "set": {"SCU_CLKCR1.DCLKSEL": "00000000"}},
+        {"id": "osc", "label": "OSC_HP x 2", "from": "oschp", "mul": 2, "set": {"SCU_CLKCR1.DCLKSEL": "00000200"}}
+      ]
+    },
+    {
+      "id": "dclk2",
+      "label": "/2",
+      "kind": "divider",
+      "x": 3,
+      "y": 1,
+      "options": [
+        {"id": "2", "label": "/2", "from": "dclk", "div": 2}
+      ]
+    },
+    {
+      "id": "mclk",
+      "label": "MCLK (IDIV)",
+      "kind": "divider",
+      "x": 4,
+      "y": 1,
+      "range": {"from": "dclk2", "op": "div", "min": 1, "max": 255, "field": "SCU_CLKCR.IDIV", "lsb": 8, "scale": 1, "offset": 0},
+      "max": 48000000,
+      "consumer": true,
+      "tooltip": "CPU and bus clock: DCLK / 2 / IDIV (the fractional FDIV is kept at 0)."
+    },
+    {
+      "id": "pclk",
+      "label": "PCLK",
+      "kind": "multiplier",
+      "x": 5,
+      "y": 1,
+      "max": 96000000,
+      "consumer": true,
+      "tooltip": "Peripheral clock of CCU4/CCU8/POSIF/MATH/BCCU: MCLK or 2 x MCLK.",
+      "options": [
+        {"id": "1", "label": "x1", "from": "mclk", "set": {"SCU_CLKCR.PCLKSEL": "00000000"}},
+        {"id": "2", "label": "x2", "from": "mclk", "mul": 2, "set": {"SCU_CLKCR.PCLKSEL": "00010000"}}
+      ]
+    }
+  ],
+  "derive": [
+    {"field": "SCU_CLKCR.FDIV", "cases": [], "default": "00000000"},
+    {"field": "SCU_CLKCR1.FDIV_HI", "cases": [], "default": "00000000"},
+    {"field": "SCU_ANAOSCHPCTRL.GAINSEL", "cases": [{"when": "in.xtal <= 10000000", "value": "00000000"}], "default": "00000008"},
+    {"field": "SCU_ANAOSCHPCTRL.HYSCTRL", "cases": [{"when": "in.xtal > 20000000", "value": "00000000"}], "default": "00000040"}
+  ],
+  "constraints": [
+    {"expr": "sel.dclk != 'osc' || sel.oschp != 'off'", "message": "DCLK from OSC_HP needs OSC_HP enabled (crystal or external clock)."},
+    {"expr": "sel.dclk != 'osc' || sel.oschp != 'crystal' || in.xtal <= 20000000", "message": "An OSC_HP crystal must be 4-20 MHz (an external clock up to 48 MHz)."}
+  ]
+}
