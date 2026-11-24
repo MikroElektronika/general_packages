@@ -1,8 +1,11 @@
 name: Apply external database update
 
-run-name: "Database update: ${{ github.event.client_payload.request_id || inputs.request_id || github.run_id }}"
+run-name: "Database update: ${{ github.event.client_payload.request_id || inputs.request_id || (github.event_name == 'schedule' && format('weekly-live-{0}', github.run_id)) || github.run_id }}"
 
 on:
+  # Weekly full Live refresh (including Microchip packs): Mondays 02:00 CET (01:00 UTC).
+  schedule:
+    - cron: '0 1 * * 1'
   repository_dispatch:
     types: [database-update]
   workflow_dispatch:
@@ -98,7 +101,17 @@ jobs:
           from pathlib import Path
 
           event = json.loads(Path(os.environ['GITHUB_EVENT_PATH']).read_text(encoding='utf-8'))
-          if os.environ['GITHUB_EVENT_NAME'] == 'repository_dispatch':
+          event_name = os.environ['GITHUB_EVENT_NAME']
+          if event_name == 'schedule':
+              # Weekly full Live refresh, including Microchip pack mappings.
+              raw = {
+                  'request_id': f"weekly-live-{os.environ['GITHUB_RUN_ID']}",
+                  'channel': 'live',
+                  'operation': 'refresh',
+                  'mcus_only': False,
+                  'skip_mchp_packs': False,
+              }
+          elif event_name == 'repository_dispatch':
               raw = event.get('client_payload') or {}
           else:
               raw = event.get('inputs') or {}
@@ -141,6 +154,11 @@ jobs:
               'skip_mchp_packs': boolean('skip_mchp_packs'),
               'regex': str(raw.get('regex') or ''),
           }
+          # SDK-triggered updates (mikrosdk_v2) keep existing Microchip tool mappings;
+          # the Microchip pack refresh runs in the weekly scheduled Live update instead.
+          if event_name == 'repository_dispatch' and operation == 'sdk':
+              request['skip_mchp_packs'] = True
+
           if request['set_sdk_support']:
               if not request['sdk_support_regex']:
                   raise SystemExit('sdk_support_regex is required when set_sdk_support=true')
