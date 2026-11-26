@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "dspic30f_smps_dspic30f1010",
+  "title": "dsPIC30F SMPS clock tree (DSPIC30F1010, DSPIC30F2020, DSPIC30F2023)",
+  "vendor": "Microchip",
+  "source": "dsPIC30F/dsPIC33/PIC24 family reference manuals (Oscillator sections) and data sheets; fuse values from the Microchip DFP EDC files",
+  "devices": ["^DSPIC30F1010$", "^DSPIC30F2020$", "^DSPIC30F2023$"],
+  "fosc": "sysclk",
+  "inputs": {
+    "posc": {"label": "POSC frequency", "default": 10000000, "min": 1, "max": 60000000}
+  },
+  "settings": ["FOSC.OSCIOFNC", "FOSC.FCKSM"],
+  "nodes": [
+    {
+      "id": "frc",
+      "label": "FRC (FRANGE)",
+      "kind": "mux",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "hi", "label": "FRC 14.55 MHz", "mul": 14550000, "set": {"FOSC.FRANGE": "00000020"}},
+        {"id": "lo", "label": "FRC 9.7 MHz", "mul": 9700000, "set": {"FOSC.FRANGE": "00000000"}}
+      ]
+    },
+    {
+      "id": "posc",
+      "label": "Primary oscillator (POSC)",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "posc",
+      "tooltip": "Crystal (XT up to 10 MHz, HS above) or external clock (EC); POSCMD follows."
+    },
+    {
+      "id": "poscmode",
+      "label": "POSC type",
+      "kind": "mux",
+      "x": 0,
+      "y": 2,
+      "default": "crystal",
+      "options": [
+        {"id": "crystal", "label": "Crystal (XT/HS)", "mul": 1},
+        {"id": "ec", "label": "External clock (EC)", "mul": 1}
+      ]
+    },
+    {
+      "id": "pllin",
+      "label": "PLL input",
+      "kind": "mux",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "frc", "label": "FRC", "from": "frc", "when": "sel.sysclk != 'pripll'"},
+        {"id": "posc", "label": "POSC", "from": "posc", "when": "sel.sysclk == 'pripll'"}
+      ]
+    },
+    {
+      "id": "pll",
+      "label": "x32 PLL /8",
+      "kind": "multiplier",
+      "x": 2,
+      "y": 0,
+      "tooltip": "The x32 PLL also clocks the PWM and ADC; Fosc = PLL / 8.",
+      "options": [
+        {"id": "4", "label": "x32 /8", "from": "pllin", "mul": 4}
+      ]
+    },
+    {
+      "id": "sysclk",
+      "label": "Fosc (FNOSC)",
+      "kind": "mux",
+      "x": 3,
+      "y": 1,
+      "max": 60000000,
+      "consumer": true,
+      "options": [
+        {"id": "frc", "label": "FRC (FRC)", "from": "frc", "set": {"FOSCSEL.FNOSC": "00000000"}},
+        {"id": "frcpll", "label": "FRC + PLL (FRC_PLL)", "from": "pll", "set": {"FOSCSEL.FNOSC": "00000001"}},
+        {"id": "pri", "label": "POSC (PRIOSC)", "from": "posc", "set": {"FOSCSEL.FNOSC": "00000002"}},
+        {"id": "pripll", "label": "POSC + PLL (PRIOSC_PLL)", "from": "pll", "set": {"FOSCSEL.FNOSC": "00000003"}}
+      ]
+    },
+    {
+      "id": "fcy",
+      "label": "Fcy (Fosc/2)",
+      "kind": "output",
+      "x": 4,
+      "y": 1,
+      "options": [
+        {"id": "2", "label": "/2", "from": "sysclk", "div": 2}
+      ]
+    }
+  ],
+  "derive": [
+    {"field": "FOSC.POSCMD", "cases": [{"when": "!(sel.sysclk == 'pri' || sel.sysclk == 'pripll')", "value": "00000003"}, {"when": "sel.poscmode == 'ec'", "value": "00000000"}], "default": "00000002"}
+  ],
+  "symbols": {
+    "FOSC.FRANGE": {"FRC_HI_RANGE": "00000020", "FRC_LO_RANGE": "00000000"},
+    "FOSC.POSCMD": {"EC": "00000000", "HS": "00000002", "PRIOSC_OFF": "00000003"},
+    "FOSCSEL.FNOSC": {"FRC": "00000000", "FRC_PLL": "00000001", "PRIOSC": "00000002", "PRIOSC_PLL": "00000003"}
+  }
+}

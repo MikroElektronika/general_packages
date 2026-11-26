@@ -4,7 +4,7 @@
   "title": "PIC32CX MTC/MTG/MTSH clock tree",
   "vendor": "Microchip",
   "source": "PIC32CXMTSH/MTC/MTG datasheet DS60001765, PMC / SUPC / SEFC",
-  "devices": ["^PIC32CX(1025|2051|5112)MT(C|G|SH)(64|128)$"],
+  "devices": ["^PIC32CX(1025|2051|5112)MTG(64|128)$"],
   "fosc": "cpu",
   "inputs": {
     "main_xtal": {"label": "Main crystal frequency", "default": 12000000, "min": 12000000, "max": 48000000}

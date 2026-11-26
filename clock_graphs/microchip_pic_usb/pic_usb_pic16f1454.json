@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "pic_usb_pic16f1454",
+  "title": "PIC USB clock tree (3x/4x PLL) (PIC16F1454, PIC16F1455, PIC16F1459 and 3 more)",
+  "vendor": "Microchip",
+  "source": "PIC16F145x/PIC18 USB data sheets (Oscillator sections); fuse values from the Microchip DFP EDC files",
+  "devices": ["^PIC16F1454$", "^PIC16F1455$", "^PIC16F1459$", "^PIC16LF1454$", "^PIC16LF1455$", "^PIC16LF1459$"],
+  "fosc": "sysclk",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 12000000, "min": 1, "max": 48000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 16000000, "min": 31000, "max": 16000000}
+  },
+  "settings": ["CONFIG1.CLKOUTEN", "CONFIG1.IESO", "CONFIG1.FCMEN", "CONFIG2.USBLSCLK"],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON.IRCF): 16 MHz (HFINTOSC) feeds the 3x PLL."
+    },
+    {
+      "id": "primary",
+      "label": "Oscillator (FOSC)",
+      "kind": "mux",
+      "x": 1,
+      "y": 1,
+      "options": [
+        {"id": "ech", "label": "ECH, External Clock, High Power Mode (4-20 MHz): device cloc", "set": {"CONFIG1.FOSC": "00000007"}, "from": "ext"},
+        {"id": "ecl", "label": "ECL, External Clock, Low Power Mode (0-0.5 MHz): device cloc", "set": {"CONFIG1.FOSC": "00000005"}, "from": "ext"},
+        {"id": "ecm", "label": "ECM, External Clock, Medium Power Mode (0.5-4 MHz): device c", "set": {"CONFIG1.FOSC": "00000006"}, "from": "ext"},
+        {"id": "extrc", "label": "EXTRC oscillator: External RC circuit connected to CLKIN pin", "set": {"CONFIG1.FOSC": "00000003"}, "from": "ext"},
+        {"id": "hs", "label": "HS Oscillator, High-speed crystal/resonator connected betwee", "set": {"CONFIG1.FOSC": "00000002"}, "from": "ext"},
+        {"id": "intosc", "label": "INTOSC oscillator: I/O function on CLKIN pin", "set": {"CONFIG1.FOSC": "00000004"}, "from": "intosc"},
+        {"id": "lp", "label": "LP Oscillator, Low-power crystal connected between OSC1 and ", "set": {"CONFIG1.FOSC": "00000000"}, "mul": 32768},
+        {"id": "xt", "label": "XT Oscillator, Crystal/resonator connected between OSC1 and ", "set": {"CONFIG1.FOSC": "00000001"}, "from": "ext"}
+      ]
+    },
+    {
+      "id": "pll",
+      "label": "PLL (PLLEN)",
+      "kind": "multiplier",
+      "x": 2,
+      "y": 1,
+      "max": 48000000,
+      "options": [
+        {"id": "off", "label": "PLL off (or enabled by your code)", "from": "primary", "set": {"CONFIG2.PLLEN": "00000000"}},
+        {"id": "x3", "label": "x3", "from": "primary", "mul": 3, "set": {"CONFIG2.PLLEN": "00000100", "CONFIG2.PLLMULT": "00000080"}},
+        {"id": "x4", "label": "x4", "from": "primary", "mul": 4, "set": {"CONFIG2.PLLEN": "00000100", "CONFIG2.PLLMULT": "00000000"}}
+      ],
+      "tooltip": "USB needs 48 MHz from the PLL: 12 MHz x4 or 16 MHz x3."
+    },
+    {
+      "id": "sysclk",
+      "label": "CPU clock (CPUDIV)",
+      "kind": "divider",
+      "x": 3,
+      "y": 1,
+      "options": [
+        {"id": "2", "label": "/2", "from": "pll", "div": 2, "set": {"CONFIG2.CPUDIV": "00000010"}},
+        {"id": "3", "label": "/3", "from": "pll", "div": 3, "set": {"CONFIG2.CPUDIV": "00000020"}},
+        {"id": "6", "label": "/6", "from": "pll", "div": 6, "set": {"CONFIG2.CPUDIV": "00000030"}},
+        {"id": "1", "label": "/1", "from": "pll", "div": 1, "set": {"CONFIG2.CPUDIV": "00000000"}}
+      ],
+      "max": 48000000,
+      "consumer": true
+    },
+    {
+      "id": "fcy",
+      "label": "Instruction clock (Fosc/4)",
+      "kind": "output",
+      "x": 6,
+      "y": 1,
+      "options": [
+        {"id": "4", "label": "/4", "from": "sysclk", "div": 4}
+      ]
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.primary != 'ech' || (in.ext >= 4000000 && in.ext <= 20000000)", "message": "ECH: the external frequency must be 4-20 MHz."},
+    {"expr": "sel.primary != 'ecl' || (in.ext <= 500000)", "message": "ECL: the external frequency must be 0-0.5 MHz."},
+    {"expr": "sel.primary != 'ecm' || (in.ext >= 500000 && in.ext <= 4000000)", "message": "ECM: the external frequency must be 0.5-4 MHz."},
+    {"expr": "sel.primary != 'hs' || (in.ext >= 4000000)", "message": "HS Oscillator: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.primary != 'xt' || (in.ext >= 100000 && in.ext <= 4000000)", "message": "XT Oscillator: the external frequency must be 0.1-4 MHz."}
+  ],
+  "symbols": {
+    "CONFIG1.FOSC": {"ECH": "00000007", "ECL": "00000005", "ECM": "00000006", "EXTRC": "00000003", "HS": "00000002", "INTOSC": "00000004", "LP": "00000000", "XT": "00000001"},
+    "CONFIG2.CPUDIV": {"CLKDIV2": "00000010", "CLKDIV3": "00000020", "CLKDIV6": "00000030", "NOCLKDIV": "00000000"},
+    "CONFIG2.PLLEN": {"DISABLED": "00000000", "ENABLED": "00000100"},
+    "CONFIG2.PLLMULT": {"3x": "00000080", "4x": "00000000"}
+  }
+}

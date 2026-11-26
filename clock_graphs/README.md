@@ -28,6 +28,8 @@ clock_graphs/
   microchip_pic32c/*.json written by scripts/clock_graphs/microchip_pic32c_graphs.py (ARM PIC32C)
   avr/*.json           converted from the mikroC AVR definitions by scripts/clock_graphs/convert_avr.py
   microchip_pic/*.json converted from the mikroC/XC8 PIC definitions by scripts/clock_graphs/convert_pic.py
+  microchip_pic_usb/*.json written by scripts/clock_graphs/microchip_pic_usb_graphs.py (USB PIC16/PIC18: CPUDIV/PLLDIV)
+  microchip_dspic/*.json written by scripts/clock_graphs/microchip_dspic_graphs.py (dsPIC30F/dsPIC33F/E, PIC24F/H/E)
   renesas_ra/*.json    converted from Renesas FSP packs by scripts/clock_graphs/convert_fsp_ra.py
 ```
 
@@ -48,7 +50,7 @@ do not validate.
 * **Microchip SAM** graphs (SAM E70/S70/V70/V71/V71RT, G51/G53/G54/G55, SAM4E/4N/4S/4SA/4SD, SAM4L,
   D09/D10/D11/D20/D21/DA1/R21/HA0/HA1, C20/C21, L21/L22/R30/R34/R35, D51/E51/E53/E54, RH71/RH707) are
   written by hand from the datasheets' clock chapters (PMC, SYSCTRL/GCLK/PM, OSCCTRL/GCLK/MCLK, SCIF/PM/BPM).
-* **Microchip PIC32C** (ARM) graphs (PIC32CX SG41/SG60/SG61, PIC32CZ CA70/MC70, PIC32CX MTC/MTG/MTSH,
+* **Microchip PIC32C** (ARM) graphs (PIC32CX SG41/SG60/SG61, PIC32CZ CA70/MC70, PIC32CX MTG and dual-core MTC/MTSH (both cores),
   PIC32CX SG12, PIC32CX BZ2/BZ3/BZ6, PIC32CZ CA80/CA90/CA91) are written by hand from the datasheets'
   clock chapters; SG41/SG6x and CA70/MC70 reuse the SAM D5x/E5x and SAM E70 clock trees they share.
   MPLAB Harmony csp clock plibs were used only to cross-check defaults and limits.
@@ -71,6 +73,13 @@ do not validate.
 * **AVR** and **PIC10/12/16/18** graphs are converted from the oscillator fuses of MikroE's own NECTO
   definitions (`convert_avr.py`, `convert_pic.py`, run locally against core_packages); their
   internal-oscillator frequency, when chosen at runtime, is entered by the user.
+* **Microchip USB PIC16/PIC18** graphs (PIC18F2455/2550/4455/4550 family, PIC18FxxJ50/J53/J13, PIC18F8xJ5x,
+  PIC18FxxJ94/J99, PIC18F13K50/14K50, PIC18F2xK50/45K50, PIC16F145x) and **dsPIC/PIC24** graphs (dsPIC30F,
+  dsPIC33F/PIC24H, dsPIC33E/PIC24E/dsPIC33EV, PIC24F) are written by hand from the data sheets and family
+  reference manuals (Oscillator sections). Their fuse values come from the parts' EDC files (`<MCU>.PIC`, `edc/`
+  folder of the Microchip device family packs, Apache-2.0), run locally with `--edc`. Settings programmed in code
+  stay runtime choices: the dsPIC33/PIC24H/E PLL output (CLKDIV/PLLFBD) and the internal oscillator frequency are
+  entered, FRC postscalers (FRCDIV/RCDIV) are dropdowns with their reset value.
 * **Renesas RA** graphs are converted from the `<clock>` section of the FSP MCU packs
   (`.module_descriptions/Renesas##BSP##<family>##fsp####<version>.xml`), part of the RA MCU BSP
   released by Renesas under BSD-3-Clause (see https://github.com/renesas/fsp/blob/master/LICENSE.md).

@@ -53,7 +53,7 @@
     {"expr": "sel.source != 'ecl_external_clock_low_power_mod' || (in.ext <= 500000)", "message": "ECL: the external frequency must be 0-0.5 MHz."}
   ],
   "symbols": {
-    "CONFIG1.FOSC": {"HS": "00000002", "INTOSC": "00000004"},
+    "CONFIG1.FOSC": {"HS": "00000002", "ECH": "00000007", "ECM": "00000006", "ECL": "00000005", "INTOSC": "00000004"},
     "CONFIG2.PLLEN": {"ON": "00000100", "OFF": "00000100"}
   }
 }

@@ -4,7 +4,7 @@ Hand-written from the PIC32C datasheets' clock chapters (MPLAB Harmony csp clock
 only to cross-check defaults and limits). Only families whose NECTO definitions carry the clock
 registers and whose core system library (system/src/pic32/<lib>/init_clock.c) applies them are
 described: PIC32CX SG41/SG60/SG61 and PIC32CZ CA70/MC70 (the SAM D5x/E5x and SAM E70 clock
-systems), PIC32CX MTC/MTG/MTSH (core 0), PIC32CX SG12, PIC32CX BZ2/BZ3/BZ6 and PIC32CZ
+systems), PIC32CX MTG and dual-core MTC/MTSH (both cores), PIC32CX SG12, PIC32CX BZ2/BZ3/BZ6 and PIC32CZ
 CA80/CA90/CA91. Register values are absolute bit values (see clock_graphs/README.md).
 
 Run:  python scripts/clock_graphs/microchip_pic32c_graphs.py
@@ -44,9 +44,8 @@ PIC32CZ_CA70 = derived(
 #
 # Hand-written from the PIC32CXMTSH/MTC/MTG datasheet (DS60001765) PMC, SUPC and SEFC chapters; the
 # PLL VCO ranges and the flash access time are cross-checked against the MPLAB Harmony
-# clk_pic32cx_mt / sefc plibs. Serves the core 0 parts (system/src/pic32/pic32cx_mt*/init_clock.c);
-# the S1 parts are core 1 images whose clock is set by the core 0 application, they carry no
-# clock registers.
+# clk_pic32cx_mt / sefc plibs (system/src/pic32/pic32cx_mt*/init_clock.c). Serves the single-core MTG
+# parts; the dual-core MTC/MTSH parts extend it with core 1 (PIC32CX_MT_DUAL below).
 #
 # TD_SLCK (32 kHz RC or 32.768 kHz crystal) or MAINCK (12 MHz main RC or 12-48 MHz crystal) -> PLLA
 # = reference x (MUL + 1) (VCO 380-600 MHz) -> PLLACK0 / PLLACK1 = VCO / (DIVPMC + 1);
@@ -59,7 +58,7 @@ FWS_CASES = [{'when': f'f.cpu <= {k * 31250000}', 'value': hexv(k << 8)} for k i
 
 PIC32CX_MT = sam(
     'pic32cx_mt', 'PIC32CX MTC/MTG/MTSH clock tree', 'PIC32CXMTSH/MTC/MTG datasheet DS60001765, PMC / SUPC / SEFC',
-    ['^PIC32CX(1025|2051|5112)MT(C|G|SH)(64|128)$'], 'cpu',
+    ['^PIC32CX(1025|2051|5112)MTG(64|128)$'], 'cpu',
     {'main_xtal': {'label': 'Main crystal frequency', 'default': 12 * MHZ, 'min': 12 * MHZ, 'max': 48 * MHZ}},
     [
         fixed('main_rc', 'Main RC 12 MHz', 0, 0, 12 * MHZ, en('CKGR_MOR.MOSCRCEN', 1 << 3, auto='on')),
@@ -102,6 +101,36 @@ PIC32CX_MT = sam(
         # Flash high-speed patch on from 160 MHz (SFR_FLASH = 0), bypassed below.
         {'field': 'SFR_FLASH.PATCH_BYPASS', 'cases': [{'when': 'f.cpu >= 160000000', 'value': hexv(0)}], 'default': hexv(1)},
     ])
+
+
+
+# ---------------------------------------------------------------------------------------------
+# PIC32CX MTC/MTSH dual-core parts (NECTO dual-core projects, one definition for both cores): the
+# core 0 tree above plus core 1, which core 0 configures (init_clock.c): PLLC = PLLACK0 or MAINCK
+# x (MUL + 1) (VCO 300-600 MHz, MPLAB Harmony clk_pic32cx_mt) -> PLLCCK = VCO / (DIVPMC0 + 1);
+# MD_SLCK | MAINCK | MCK0 | PLLACK1 | PLLBCK | PLLCCK -> CPPRES (/1../16) -> CPU_CLK1 = MCK1 (at most
+# 240 MHz, Harmony's default core 1 clock) -> MCK1DIV. FOSC is the core 0 clock (definition "clock");
+# core 1 runs from SRAM, so its clock does not enter the flash wait states.
+# Default: MAINCK 12 MHz -> PLLC x40 = 480 MHz -> /2 = 240 MHz.
+PIC32CX_MT_DUAL = copy.deepcopy(PIC32CX_MT)
+PIC32CX_MT_DUAL.update({'id': 'pic32cx_mt_dual', 'title': 'PIC32CX MTC/MTSH dual-core clock tree',
+                        'devices': ['^PIC32CX(1025|2051|5112)MT(C|SH)128$'],
+                        'source': PIC32CX_MT['source'] + '; core 1: MPLAB Harmony clk_pic32cx_mt'})
+PIC32CX_MT_DUAL['nodes'] += [
+    mux('pllcsrc', 'PLLC reference', 2, 7, 'PMC_PLLC_CTRL0.PLLMS', [('pllack0', 'PLLACK0', 'pllack0', 0), ('mainck', 'MAINCK', 'mainck', 1 << 27)]),
+    span('pllc', 'PLLC xMUL', 3, 7, 'pllcsrc', 'PMC_PLLC_CTRL1.MUL', 0, 1, 256, 'mul', offset=-1,
+         min=300 * MHZ, max=600 * MHZ, enable=en('PMC_PLLC_CTRL0.ENPLL', 1 << 28),
+         tooltip='PLLC VCO = reference x (MUL + 1): 300-600 MHz.'),
+    span('pllcck', 'PLLCCK /DIVPMC0', 4, 7, 'pllc', 'PMC_PLLC_CTRL0.DIVPMC0', 0, 1, 256, 'div', offset=-1,
+         enable=en('PMC_PLLC_CTRL0.ENPLLO0', 1 << 29), tooltip='PLLC output (core 1).'),
+    mux('cpcss', 'CPU_CLK1 / MCK1 source (CPCSS)', 5, 6, 'PMC_CPU_CKR.CPCSS',
+        [('md_slck', 'MD_SLCK', 'md_slck', 0), ('mainck', 'MAINCK', 'mainck', 1 << 16), ('mck0', 'MCK0', 'cpu', 2 << 16),
+         ('pllack1', 'PLLACK1', 'pllack1', 3 << 16), ('pllbck', 'PLLBCK', 'pllbck', 4 << 16), ('pllcck', 'PLLCCK', 'pllcck', 5 << 16)]),
+    factors('cpu1', 'Core 1: CPU_CLK1 / MCK1 (CPPRES)', 6, 6, 'cpcss', 'PMC_CPU_CKR.CPPRES', 20, [(n, n - 1) for n in range(1, 17)],
+            max=240 * MHZ, consumer=True, tooltip='Core 1 processor clock and master clock MCK1: at most 240 MHz.'),
+    factors('mck1div', 'MCK1DIV', 7, 6, 'cpu1', 'PMC_CPU_CKR.RATIO_MCK1DIV', 25, [(1, 0), (2, 1)], consumer=True,
+            tooltip='Core 1 peripheral bus clock; Microchip configures MCK1 / 2 at 240 MHz.'),
+]
 
 
 # ---------------------------------------------------------------------------------------------
@@ -312,7 +341,7 @@ PIC32CZ_CA = sam(
              'PLL0/PLL1 need the PLL voltage regulator (VREGCTRL.AVREGEN).'),
     ])
 
-GRAPHS = [PIC32CX_SG, PIC32CZ_CA70, PIC32CX_MT, PIC32CX_SG1, PIC32CX_BZ2, PIC32CX_BZ3, PIC32CX_BZ6, PIC32CZ_CA]
+GRAPHS = [PIC32CX_SG, PIC32CZ_CA70, PIC32CX_MT, PIC32CX_MT_DUAL, PIC32CX_SG1, PIC32CX_BZ2, PIC32CX_BZ3, PIC32CX_BZ6, PIC32CZ_CA]
 
 
 def main():

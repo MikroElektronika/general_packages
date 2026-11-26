@@ -1,0 +1,147 @@
+{
+  "schema": 1,
+  "id": "pic24f_pic24fj16ga002",
+  "title": "PIC24F clock tree (PIC24FJ16GA002, PIC24FJ16GA004, PIC24FJ32GA002 and 5 more)",
+  "vendor": "Microchip",
+  "source": "dsPIC30F/dsPIC33/PIC24 family reference manuals (Oscillator sections) and data sheets; fuse values from the Microchip DFP EDC files",
+  "devices": ["^PIC24FJ16GA002$", "^PIC24FJ16GA004$", "^PIC24FJ32GA002$", "^PIC24FJ32GA004$", "^PIC24FJ48GA002$", "^PIC24FJ48GA004$", "^PIC24FJ64GA002$", "^PIC24FJ64GA004$"],
+  "fosc": "sysclk",
+  "inputs": {
+    "posc": {"label": "POSC frequency", "default": 8000000, "min": 1, "max": 32000000}
+  },
+  "settings": ["CONFIG2.OSCIOFNC", "CONFIG2.FCKSM", "CONFIG2.SOSCSEL", "CONFIG2.IESO"],
+  "nodes": [
+    {
+      "id": "frc",
+      "label": "FRC 8 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "FRC 8 MHz", "mul": 8000000}
+      ]
+    },
+    {
+      "id": "posc",
+      "label": "Primary oscillator (POSC)",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "posc",
+      "tooltip": "Crystal (XT up to 10 MHz, HS above) or external clock (EC); POSCMD follows."
+    },
+    {
+      "id": "poscmode",
+      "label": "POSC type",
+      "kind": "mux",
+      "x": 0,
+      "y": 2,
+      "default": "crystal",
+      "options": [
+        {"id": "crystal", "label": "Crystal (XT/HS)", "mul": 1},
+        {"id": "ec", "label": "External clock (EC)", "mul": 1}
+      ]
+    },
+    {
+      "id": "sosc",
+      "label": "SOSC 32.768 kHz",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "options": [
+        {"id": "on", "label": "SOSC 32.768 kHz", "mul": 32768}
+      ]
+    },
+    {
+      "id": "lprc",
+      "label": "LPRC 31 kHz",
+      "kind": "source",
+      "x": 0,
+      "y": 4,
+      "options": [
+        {"id": "on", "label": "LPRC 31 kHz", "mul": 31000}
+      ]
+    },
+    {
+      "id": "frcdiv",
+      "label": "RCDIV (your code)",
+      "kind": "divider",
+      "x": 1,
+      "y": 6,
+      "default": "2",
+      "tooltip": "CLKDIV.RCDIV postscaler, reset 1:2 (4 MHz).",
+      "options": [
+        {"id": "1", "label": "/1", "from": "frc", "div": 1},
+        {"id": "2", "label": "/2", "from": "frc", "div": 2},
+        {"id": "4", "label": "/4", "from": "frc", "div": 4},
+        {"id": "8", "label": "/8", "from": "frc", "div": 8},
+        {"id": "16", "label": "/16", "from": "frc", "div": 16},
+        {"id": "32", "label": "/32", "from": "frc", "div": 32},
+        {"id": "64", "label": "/64", "from": "frc", "div": 64},
+        {"id": "256", "label": "/256", "from": "frc", "div": 256}
+      ]
+    },
+    {
+      "id": "pllin",
+      "label": "PLL input",
+      "kind": "mux",
+      "x": 1,
+      "y": 0,
+      "tooltip": "FRCPLL: FRC (through the RCDIV postscaler on parts whose 4x/6x/8x PLL follows it); PRIPLL: POSC.",
+      "options": [
+        {"id": "frc", "label": "FRC", "from": "frc", "when": "sel.sysclk != 'pripll'"},
+        {"id": "posc", "label": "POSC", "from": "posc", "when": "sel.sysclk == 'pripll'"}
+      ],
+      "min": 4000000,
+      "max": 8000000
+    },
+    {
+      "id": "pll",
+      "label": "4x PLL",
+      "kind": "multiplier",
+      "x": 2,
+      "y": 0,
+      "options": [
+        {"id": "4", "label": "x4", "from": "pllin", "mul": 4}
+      ]
+    },
+    {
+      "id": "sysclk",
+      "label": "Fosc (FNOSC)",
+      "kind": "mux",
+      "x": 3,
+      "y": 1,
+      "max": 32000000,
+      "consumer": true,
+      "options": [
+        {"id": "frc", "label": "FRC (FRC)", "from": "frc", "set": {"CONFIG2.FNOSC": "00000000"}},
+        {"id": "frcpll", "label": "FRC + PLL (FRCPLL)", "from": "pll", "set": {"CONFIG2.FNOSC": "00000100"}},
+        {"id": "pri", "label": "POSC (PRI)", "from": "posc", "set": {"CONFIG2.FNOSC": "00000200"}},
+        {"id": "pripll", "label": "POSC + PLL (PRIPLL)", "from": "pll", "set": {"CONFIG2.FNOSC": "00000300"}},
+        {"id": "sosc", "label": "SOSC (SOSC)", "from": "sosc", "set": {"CONFIG2.FNOSC": "00000400"}},
+        {"id": "lprc", "label": "LPRC (LPRC)", "from": "lprc", "set": {"CONFIG2.FNOSC": "00000500"}},
+        {"id": "frcdiv", "label": "FRC/RCDIV (FRCDIV)", "from": "frcdiv", "set": {"CONFIG2.FNOSC": "00000700"}}
+      ]
+    },
+    {
+      "id": "fcy",
+      "label": "Fcy (Fosc/2)",
+      "kind": "output",
+      "x": 4,
+      "y": 1,
+      "options": [
+        {"id": "2", "label": "/2", "from": "sysclk", "div": 2}
+      ]
+    }
+  ],
+  "derive": [
+    {"field": "CONFIG2.POSCMOD", "cases": [{"when": "!(sel.sysclk == 'pri' || sel.sysclk == 'pripll')", "value": "00000003"}, {"when": "sel.poscmode == 'ec'", "value": "00000000"}, {"when": "in.posc <= 10000000", "value": "00000001"}], "default": "00000002"}
+  ],
+  "constraints": [
+    {"expr": "!(sel.sysclk == 'pri' || sel.sysclk == 'pripll') || sel.poscmode == 'ec' || (in.posc >= 3500000 && in.posc <= 32000000)", "message": "A primary crystal must be 3.5 MHz - 32 MHz."}
+  ],
+  "symbols": {
+    "CONFIG2.FNOSC": {"FRC": "00000000", "FRCDIV": "00000700", "FRCPLL": "00000100", "LPRC": "00000500", "PRI": "00000200", "PRIPLL": "00000300", "SOSC": "00000400"},
+    "CONFIG2.POSCMOD": {"EC": "00000000", "HS": "00000002", "NONE": "00000003", "XT": "00000001"}
+  }
+}

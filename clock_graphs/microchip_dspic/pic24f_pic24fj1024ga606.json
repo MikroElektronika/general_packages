@@ -1,0 +1,188 @@
+{
+  "schema": 1,
+  "id": "pic24f_pic24fj1024ga606",
+  "title": "PIC24F clock tree (PIC24FJ1024GA606, PIC24FJ1024GA610, PIC24FJ1024GB606 and 22 more)",
+  "vendor": "Microchip",
+  "source": "dsPIC30F/dsPIC33/PIC24 family reference manuals (Oscillator sections) and data sheets; fuse values from the Microchip DFP EDC files",
+  "devices": ["^PIC24FJ1024GA606$", "^PIC24FJ1024GA610$", "^PIC24FJ1024GB606$", "^PIC24FJ1024GB610$", "^PIC24FJ128GA606$", "^PIC24FJ128GA610$", "^PIC24FJ128GA702$", "^PIC24FJ128GA704$", "^PIC24FJ128GA705$", "^PIC24FJ128GB606$", "^PIC24FJ128GB610$", "^PIC24FJ256GA606$", "^PIC24FJ256GA610$", "^PIC24FJ256GA702$", "^PIC24FJ256GA704$", "^PIC24FJ256GA705$", "^PIC24FJ256GB606$", "^PIC24FJ256GB610$", "^PIC24FJ512GA606$", "^PIC24FJ512GA610$", "^PIC24FJ512GB606$", "^PIC24FJ512GB610$", "^PIC24FJ64GA702$", "^PIC24FJ64GA704$", "^PIC24FJ64GA705$"],
+  "fosc": "sysclk",
+  "inputs": {
+    "posc": {"label": "POSC frequency", "default": 8000000, "min": 1, "max": 32000000},
+    "oscfdiv": {"label": "Divided oscillator frequency (OSCDIV)", "default": 4000000, "min": 1, "max": 32000000},
+    "dco": {"label": "DCO frequency", "default": 8000000, "min": 1000000, "max": 32000000}
+  },
+  "settings": ["FOSCSEL.IESO", "FOSC.SOSCSEL", "FOSC.PLLSS", "FOSC.FCKSM", "FDEVOPT1.SOSCHP"],
+  "nodes": [
+    {
+      "id": "frc",
+      "label": "FRC 8 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "FRC 8 MHz", "mul": 8000000}
+      ]
+    },
+    {
+      "id": "posc",
+      "label": "Primary oscillator (POSC)",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "posc",
+      "tooltip": "Crystal (XT up to 10 MHz, HS above) or external clock (EC); POSCMD follows."
+    },
+    {
+      "id": "poscmode",
+      "label": "POSC type",
+      "kind": "mux",
+      "x": 0,
+      "y": 2,
+      "default": "crystal",
+      "options": [
+        {"id": "crystal", "label": "Crystal (XT/HS)", "mul": 1},
+        {"id": "ec", "label": "External clock (EC)", "mul": 1}
+      ]
+    },
+    {
+      "id": "sosc",
+      "label": "SOSC 32.768 kHz",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "options": [
+        {"id": "on", "label": "SOSC 32.768 kHz", "mul": 32768}
+      ]
+    },
+    {
+      "id": "lprc",
+      "label": "LPRC 31 kHz",
+      "kind": "source",
+      "x": 0,
+      "y": 4,
+      "options": [
+        {"id": "on", "label": "LPRC 31 kHz", "mul": 31000}
+      ]
+    },
+    {
+      "id": "frcdiv",
+      "label": "RCDIV (your code)",
+      "kind": "divider",
+      "x": 1,
+      "y": 6,
+      "default": "2",
+      "tooltip": "CLKDIV.RCDIV postscaler, reset 1:2 (4 MHz).",
+      "options": [
+        {"id": "1", "label": "/1", "from": "frc", "div": 1},
+        {"id": "2", "label": "/2", "from": "frc", "div": 2},
+        {"id": "4", "label": "/4", "from": "frc", "div": 4},
+        {"id": "8", "label": "/8", "from": "frc", "div": 8},
+        {"id": "16", "label": "/16", "from": "frc", "div": 16},
+        {"id": "32", "label": "/32", "from": "frc", "div": 32},
+        {"id": "64", "label": "/64", "from": "frc", "div": 64},
+        {"id": "256", "label": "/256", "from": "frc", "div": 256}
+      ]
+    },
+    {
+      "id": "oscfdiv",
+      "label": "Divided oscillator (your code)",
+      "kind": "source",
+      "x": 1,
+      "y": 7,
+      "input": "oscfdiv",
+      "tooltip": "OSCDIV output, programmed at runtime."
+    },
+    {
+      "id": "dco",
+      "label": "DCO (your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 7,
+      "input": "dco",
+      "tooltip": "DCO frequency (DCOFSEL), programmed at runtime."
+    },
+    {
+      "id": "pllin",
+      "label": "PLL input",
+      "kind": "mux",
+      "x": 1,
+      "y": 0,
+      "tooltip": "FRCPLL: FRC (through the RCDIV postscaler on parts whose 4x/6x/8x PLL follows it); PRIPLL: POSC.",
+      "options": [
+        {"id": "frc", "label": "FRC", "from": "frc", "when": "sel.sysclk != 'pripll' && !(sel.pll == 'x4' || sel.pll == 'x6' || sel.pll == 'x8')"},
+        {"id": "frcdiv", "label": "FRC/RCDIV", "from": "frcdiv", "when": "sel.sysclk != 'pripll' && (sel.pll == 'x4' || sel.pll == 'x6' || sel.pll == 'x8')"},
+        {"id": "posc", "label": "POSC", "from": "posc", "when": "sel.sysclk == 'pripll'"}
+      ]
+    },
+    {
+      "id": "pll",
+      "label": "PLL (PLLMODE)",
+      "kind": "multiplier",
+      "x": 2,
+      "y": 0,
+      "options": [
+        {"id": "off", "label": "PLL disabled", "mul": 0, "set": {"FOSCSEL.PLLMODE": "00000078"}},
+        {"id": "x4", "label": "x4", "from": "pllin", "mul": 4, "set": {"FOSCSEL.PLLMODE": "00000060"}},
+        {"id": "x6", "label": "x6", "from": "pllin", "mul": 6, "set": {"FOSCSEL.PLLMODE": "00000068"}},
+        {"id": "x8", "label": "x8", "from": "pllin", "mul": 8, "set": {"FOSCSEL.PLLMODE": "00000070"}},
+        {"id": "usb1", "label": "/1 -> 96 MHz PLL /3", "from": "pllin", "mul": 8, "div": 1, "set": {"FOSCSEL.PLLMODE": "00000000"}},
+        {"id": "usb12", "label": "/12 -> 96 MHz PLL /3", "from": "pllin", "mul": 8, "div": 12, "set": {"FOSCSEL.PLLMODE": "00000038"}},
+        {"id": "usb2", "label": "/2 -> 96 MHz PLL /3", "from": "pllin", "mul": 8, "div": 2, "set": {"FOSCSEL.PLLMODE": "00000008"}},
+        {"id": "usb3", "label": "/3 -> 96 MHz PLL /3", "from": "pllin", "mul": 8, "div": 3, "set": {"FOSCSEL.PLLMODE": "00000010"}},
+        {"id": "usb4", "label": "/4 -> 96 MHz PLL /3", "from": "pllin", "mul": 8, "div": 4, "set": {"FOSCSEL.PLLMODE": "00000018"}},
+        {"id": "usb5", "label": "/5 -> 96 MHz PLL /3", "from": "pllin", "mul": 8, "div": 5, "set": {"FOSCSEL.PLLMODE": "00000020"}},
+        {"id": "usb6", "label": "/6 -> 96 MHz PLL /3", "from": "pllin", "mul": 8, "div": 6, "set": {"FOSCSEL.PLLMODE": "00000028"}},
+        {"id": "usb8", "label": "/8 -> 96 MHz PLL /3", "from": "pllin", "mul": 8, "div": 8, "set": {"FOSCSEL.PLLMODE": "00000030"}}
+      ],
+      "tooltip": "96 MHz PLL: prescaler to 4 MHz, Fosc = 96 MHz / 3 / CPDIV (reset 1:1). 4x/6x/8x PLL: input times the factor."
+    },
+    {
+      "id": "sysclk",
+      "label": "Fosc (FNOSC)",
+      "kind": "mux",
+      "x": 3,
+      "y": 1,
+      "max": 32000000,
+      "consumer": true,
+      "options": [
+        {"id": "frc", "label": "FRC (FRC)", "from": "frc", "set": {"FOSCSEL.FNOSC": "00000000"}},
+        {"id": "frcpll", "label": "FRC + PLL (FRCPLL)", "from": "pll", "set": {"FOSCSEL.FNOSC": "00000001"}},
+        {"id": "pri", "label": "POSC (PRI)", "from": "posc", "set": {"FOSCSEL.FNOSC": "00000002"}},
+        {"id": "pripll", "label": "POSC + PLL (PRIPLL)", "from": "pll", "set": {"FOSCSEL.FNOSC": "00000003"}},
+        {"id": "sosc", "label": "SOSC (SOSC)", "from": "sosc", "set": {"FOSCSEL.FNOSC": "00000004"}},
+        {"id": "lprc", "label": "LPRC (LPRC)", "from": "lprc", "set": {"FOSCSEL.FNOSC": "00000005"}},
+        {"id": "dco", "label": "DCO (DCO)", "from": "dco", "set": {"FOSCSEL.FNOSC": "00000006"}},
+        {"id": "oscfdiv", "label": "Divided oscillator (OSCFDIV)", "from": "oscfdiv", "set": {"FOSCSEL.FNOSC": "00000007"}}
+      ]
+    },
+    {
+      "id": "fcy",
+      "label": "Fcy (Fosc/2)",
+      "kind": "output",
+      "x": 4,
+      "y": 1,
+      "options": [
+        {"id": "2", "label": "/2", "from": "sysclk", "div": 2}
+      ]
+    }
+  ],
+  "derive": [
+    {"field": "FOSC.POSCMD", "cases": [{"when": "!(sel.sysclk == 'pri' || sel.sysclk == 'pripll')", "value": "00000003"}, {"when": "sel.poscmode == 'ec'", "value": "00000000"}, {"when": "in.posc <= 10000000", "value": "00000001"}], "default": "00000002"}
+  ],
+  "constraints": [
+    {"expr": "!(sel.sysclk == 'pri' || sel.sysclk == 'pripll') || sel.poscmode == 'ec' || (in.posc >= 3500000 && in.posc <= 32000000)", "message": "A primary crystal must be 3.5 MHz - 32 MHz."},
+    {"expr": "sel.pll != 'usb1' || !(sel.sysclk == 'frcpll' || sel.sysclk == 'pripll') || (f.pllin >= 3990000 && f.pllin <= 4010000)", "message": "The 96 MHz PLL needs 4 MHz after the prescaler: PLL input / 1 must be 4 MHz."},
+    {"expr": "sel.pll != 'usb12' || !(sel.sysclk == 'frcpll' || sel.sysclk == 'pripll') || (f.pllin >= 47880000 && f.pllin <= 48120000)", "message": "The 96 MHz PLL needs 4 MHz after the prescaler: PLL input / 12 must be 4 MHz."},
+    {"expr": "sel.pll != 'usb2' || !(sel.sysclk == 'frcpll' || sel.sysclk == 'pripll') || (f.pllin >= 7980000 && f.pllin <= 8020000)", "message": "The 96 MHz PLL needs 4 MHz after the prescaler: PLL input / 2 must be 4 MHz."},
+    {"expr": "sel.pll != 'usb3' || !(sel.sysclk == 'frcpll' || sel.sysclk == 'pripll') || (f.pllin >= 11970000 && f.pllin <= 12030000)", "message": "The 96 MHz PLL needs 4 MHz after the prescaler: PLL input / 3 must be 4 MHz."},
+    {"expr": "sel.pll != 'usb4' || !(sel.sysclk == 'frcpll' || sel.sysclk == 'pripll') || (f.pllin >= 15960000 && f.pllin <= 16040000)", "message": "The 96 MHz PLL needs 4 MHz after the prescaler: PLL input / 4 must be 4 MHz."},
+    {"expr": "sel.pll != 'usb5' || !(sel.sysclk == 'frcpll' || sel.sysclk == 'pripll') || (f.pllin >= 19950000 && f.pllin <= 20050000)", "message": "The 96 MHz PLL needs 4 MHz after the prescaler: PLL input / 5 must be 4 MHz."},
+    {"expr": "sel.pll != 'usb6' || !(sel.sysclk == 'frcpll' || sel.sysclk == 'pripll') || (f.pllin >= 23940000 && f.pllin <= 24060000)", "message": "The 96 MHz PLL needs 4 MHz after the prescaler: PLL input / 6 must be 4 MHz."},
+    {"expr": "sel.pll != 'usb8' || !(sel.sysclk == 'frcpll' || sel.sysclk == 'pripll') || (f.pllin >= 31920000 && f.pllin <= 32080000)", "message": "The 96 MHz PLL needs 4 MHz after the prescaler: PLL input / 8 must be 4 MHz."}
+  ],
+  "symbols": {
+    "FOSC.POSCMD": {"EC": "00000000", "HS": "00000002", "NONE": "00000003", "XT": "00000001"},
+    "FOSCSEL.FNOSC": {"DCO": "00000006", "FRC": "00000000", "FRCPLL": "00000001", "LPRC": "00000005", "OSCFDIV": "00000007", "PRI": "00000002", "PRIPLL": "00000003", "SOSC": "00000004"},
+    "FOSCSEL.PLLMODE": {"DISABLED": "00000078", "PLL4X": "00000060", "PLL6X": "00000068", "PLL8X": "00000070", "PLL96DIV1": "00000000", "PLL96DIV12": "00000038", "PLL96DIV2": "00000008", "PLL96DIV3": "00000010", "PLL96DIV4": "00000018", "PLL96DIV5": "00000020", "PLL96DIV6": "00000028", "PLL96DIV8": "00000030"}
+  }
+}

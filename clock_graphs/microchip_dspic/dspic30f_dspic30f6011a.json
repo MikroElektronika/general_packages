@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "id": "dspic30f_dspic30f6011a",
+  "title": "dsPIC30F clock tree (DSPIC30F6011A, DSPIC30F6012A, DSPIC30F6013A and 1 more)",
+  "vendor": "Microchip",
+  "source": "dsPIC30F/dsPIC33/PIC24 family reference manuals (Oscillator sections) and data sheets; fuse values from the Microchip DFP EDC files",
+  "devices": ["^DSPIC30F6011A$", "^DSPIC30F6012A$", "^DSPIC30F6013A$", "^DSPIC30F6014A$"],
+  "fosc": "sysclk",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 10000000, "min": 1, "max": 40000000}
+  },
+  "settings": ["FOSC.FCKSMEN"],
+  "nodes": [
+    {
+      "id": "frc",
+      "label": "FRC 7.37 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "FRC 7.37 MHz", "mul": 7370000}
+      ]
+    },
+    {
+      "id": "ext",
+      "label": "External crystal / clock / RC",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "sosc",
+      "label": "LP oscillator 32.768 kHz",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "options": [
+        {"id": "on", "label": "LP oscillator 32.768 kHz", "mul": 32768}
+      ]
+    },
+    {
+      "id": "lprc",
+      "label": "LPRC 512 kHz",
+      "kind": "source",
+      "x": 0,
+      "y": 4,
+      "options": [
+        {"id": "on", "label": "LPRC 512 kHz", "mul": 512000}
+      ]
+    },
+    {
+      "id": "sysclk",
+      "label": "Fosc (FOSFPR)",
+      "kind": "mux",
+      "x": 2,
+      "y": 1,
+      "options": [
+        {"id": "ec", "label": "EC (EC)", "from": "ext", "mul": 1, "div": 1, "set": {"FOSC.FOSFPR": "0000030B"}},
+        {"id": "ecio", "label": "ECIO (ECIO)", "from": "ext", "mul": 1, "div": 1, "set": {"FOSC.FOSFPR": "0000030C"}},
+        {"id": "ecio_pll16", "label": "ECIO x16 (ECIO_PLL16)", "from": "ext", "mul": 16, "div": 1, "set": {"FOSC.FOSFPR": "0000070F"}},
+        {"id": "ecio_pll4", "label": "ECIO x4 (ECIO_PLL4)", "from": "ext", "mul": 4, "div": 1, "set": {"FOSC.FOSFPR": "0000070D"}},
+        {"id": "ecio_pll8", "label": "ECIO x8 (ECIO_PLL8)", "from": "ext", "mul": 8, "div": 1, "set": {"FOSC.FOSFPR": "0000070E"}},
+        {"id": "erc", "label": "ERC (ERC)", "from": "ext", "mul": 1, "div": 1, "set": {"FOSC.FOSFPR": "00000309"}},
+        {"id": "ercio", "label": "ERCIO (ERCIO)", "from": "ext", "mul": 1, "div": 1, "set": {"FOSC.FOSFPR": "00000308"}},
+        {"id": "frc", "label": "FRC (FRC)", "from": "frc", "mul": 1, "div": 1, "set": {"FOSC.FOSFPR": "00000100"}},
+        {"id": "frc_pll16", "label": "FRC x16 (FRC_PLL16)", "from": "frc", "mul": 16, "div": 1, "set": {"FOSC.FOSFPR": "00000703"}},
+        {"id": "frc_pll4", "label": "FRC x4 (FRC_PLL4)", "from": "frc", "mul": 4, "div": 1, "set": {"FOSC.FOSFPR": "00000701"}},
+        {"id": "frc_pll8", "label": "FRC x8 (FRC_PLL8)", "from": "frc", "mul": 8, "div": 1, "set": {"FOSC.FOSFPR": "0000070A"}},
+        {"id": "hs", "label": "HS (HS)", "from": "ext", "mul": 1, "div": 1, "set": {"FOSC.FOSFPR": "00000302"}},
+        {"id": "hs2_pll16", "label": "HS/2 x16 (HS2_PLL16)", "from": "ext", "mul": 16, "div": 2, "set": {"FOSC.FOSFPR": "00000713"}},
+        {"id": "hs2_pll4", "label": "HS/2 x4 (HS2_PLL4)", "from": "ext", "mul": 4, "div": 2, "set": {"FOSC.FOSFPR": "00000711"}},
+        {"id": "hs2_pll8", "label": "HS/2 x8 (HS2_PLL8)", "from": "ext", "mul": 8, "div": 2, "set": {"FOSC.FOSFPR": "00000712"}},
+        {"id": "hs3_pll16", "label": "HS/3 x16 (HS3_PLL16)", "from": "ext", "mul": 16, "div": 3, "set": {"FOSC.FOSFPR": "00000717"}},
+        {"id": "hs3_pll4", "label": "HS/3 x4 (HS3_PLL4)", "from": "ext", "mul": 4, "div": 3, "set": {"FOSC.FOSFPR": "00000715"}},
+        {"id": "hs3_pll8", "label": "HS/3 x8 (HS3_PLL8)", "from": "ext", "mul": 8, "div": 3, "set": {"FOSC.FOSFPR": "00000716"}},
+        {"id": "lposc", "label": "LP secondary oscillator (LPOSC)", "from": "sosc", "mul": 1, "div": 1, "set": {"FOSC.FOSFPR": "00000000"}},
+        {"id": "lprc", "label": "LPRC (LPRC)", "from": "lprc", "mul": 1, "div": 1, "set": {"FOSC.FOSFPR": "00000200"}},
+        {"id": "xt", "label": "XT (XT)", "from": "ext", "mul": 1, "div": 1, "set": {"FOSC.FOSFPR": "00000304"}},
+        {"id": "xtl", "label": "XTL (XTL)", "from": "ext", "mul": 1, "div": 1, "set": {"FOSC.FOSFPR": "00000300"}},
+        {"id": "xt_pll16", "label": "XT x16 (XT_PLL16)", "from": "ext", "mul": 16, "div": 1, "set": {"FOSC.FOSFPR": "00000707"}},
+        {"id": "xt_pll4", "label": "XT x4 (XT_PLL4)", "from": "ext", "mul": 4, "div": 1, "set": {"FOSC.FOSFPR": "00000705"}},
+        {"id": "xt_pll8", "label": "XT x8 (XT_PLL8)", "from": "ext", "mul": 8, "div": 1, "set": {"FOSC.FOSFPR": "00000706"}}
+      ],
+      "max": 120000000,
+      "consumer": true
+    },
+    {
+      "id": "fcy",
+      "label": "Fcy (Fosc/4)",
+      "kind": "output",
+      "x": 3,
+      "y": 1,
+      "options": [
+        {"id": "4", "label": "/4", "from": "sysclk", "div": 4}
+      ]
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.sysclk != 'ec' || (in.ext >= 1 && in.ext <= 40000000)", "message": "EC: the external frequency must be 0.001 kHz - 40 MHz."},
+    {"expr": "sel.sysclk != 'ecio' || (in.ext >= 1 && in.ext <= 40000000)", "message": "ECIO: the external frequency must be 0.001 kHz - 40 MHz."},
+    {"expr": "sel.sysclk != 'ecio_pll16' || (in.ext >= 4000000 && in.ext <= 7500000)", "message": "ECIO_PLL16: the external frequency must be 4 MHz - 7.5 MHz."},
+    {"expr": "sel.sysclk != 'ecio_pll4' || (in.ext >= 4000000 && in.ext <= 10000000)", "message": "ECIO_PLL4: the external frequency must be 4 MHz - 10 MHz."},
+    {"expr": "sel.sysclk != 'ecio_pll8' || (in.ext >= 4000000 && in.ext <= 10000000)", "message": "ECIO_PLL8: the external frequency must be 4 MHz - 10 MHz."},
+    {"expr": "sel.sysclk != 'hs' || (in.ext >= 10000000 && in.ext <= 25000000)", "message": "HS: the external frequency must be 10 MHz - 25 MHz."},
+    {"expr": "sel.sysclk != 'hs2_pll16' || (in.ext >= 10000000 && in.ext <= 25000000)", "message": "HS2_PLL16: the external frequency must be 10 MHz - 25 MHz."},
+    {"expr": "sel.sysclk != 'hs2_pll4' || (in.ext >= 10000000 && in.ext <= 25000000)", "message": "HS2_PLL4: the external frequency must be 10 MHz - 25 MHz."},
+    {"expr": "sel.sysclk != 'hs2_pll8' || (in.ext >= 10000000 && in.ext <= 25000000)", "message": "HS2_PLL8: the external frequency must be 10 MHz - 25 MHz."},
+    {"expr": "sel.sysclk != 'hs3_pll16' || (in.ext >= 10000000 && in.ext <= 25000000)", "message": "HS3_PLL16: the external frequency must be 10 MHz - 25 MHz."},
+    {"expr": "sel.sysclk != 'hs3_pll4' || (in.ext >= 10000000 && in.ext <= 25000000)", "message": "HS3_PLL4: the external frequency must be 10 MHz - 25 MHz."},
+    {"expr": "sel.sysclk != 'hs3_pll8' || (in.ext >= 10000000 && in.ext <= 25000000)", "message": "HS3_PLL8: the external frequency must be 10 MHz - 25 MHz."},
+    {"expr": "sel.sysclk != 'xt' || (in.ext >= 4000000 && in.ext <= 10000000)", "message": "XT: the external frequency must be 4 MHz - 10 MHz."},
+    {"expr": "sel.sysclk != 'xtl' || (in.ext >= 200000 && in.ext <= 4000000)", "message": "XTL: the external frequency must be 200 kHz - 4 MHz."},
+    {"expr": "sel.sysclk != 'xt_pll16' || (in.ext >= 4000000 && in.ext <= 7500000)", "message": "XT_PLL16: the external frequency must be 4 MHz - 7.5 MHz."},
+    {"expr": "sel.sysclk != 'xt_pll4' || (in.ext >= 4000000 && in.ext <= 10000000)", "message": "XT_PLL4: the external frequency must be 4 MHz - 10 MHz."},
+    {"expr": "sel.sysclk != 'xt_pll8' || (in.ext >= 4000000 && in.ext <= 10000000)", "message": "XT_PLL8: the external frequency must be 4 MHz - 10 MHz."}
+  ],
+  "symbols": {
+    "FOSC.FOSFPR": {"EC": "0000030B", "ECIO": "0000030C", "ECIO_PLL16": "0000070F", "ECIO_PLL4": "0000070D", "ECIO_PLL8": "0000070E", "ERC": "00000309", "ERCIO": "00000308", "FRC": "00000100", "FRC_PLL16": "00000703", "FRC_PLL4": "00000701", "FRC_PLL8": "0000070A", "HS": "00000302", "HS2_PLL16": "00000713", "HS2_PLL4": "00000711", "HS2_PLL8": "00000712", "HS3_PLL16": "00000717", "HS3_PLL4": "00000715", "HS3_PLL8": "00000716", "LPOSC": "00000000", "LPRC": "00000200", "XT": "00000304", "XTL": "00000300", "XT_PLL16": "00000707", "XT_PLL4": "00000705", "XT_PLL8": "00000706"}
+  }
+}

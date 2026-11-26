@@ -6,12 +6,17 @@ FOSC/OSC (classic) or FEXTOSC + RSTOSC (newer parts), and a 4x PLL fuse (PLLEN/C
 The fuse labels name each source; external sources take the frequency you enter (with the label's
 range as a constraint), fixed internal sources take the label's frequency, and an internal oscillator
 whose frequency is chosen at runtime (OSCCON/OSCFRQ) takes the frequency your code sets. Each
-distinct layout becomes one graph. USB parts with CPUDIV/PLLDIV are not converted yet.
+distinct layout becomes one graph. USB parts with CPUDIV/PLLDIV are written by hand instead
+(microchip_pic_usb_graphs.py).
 
-  python scripts/clock_graphs/convert_pic.py --defs <PIC/mikroC/def folder> [--xc8 <PIC/XC8/def folder>] [--db <necto_db.db>]
+  python scripts/clock_graphs/convert_pic.py --defs <PIC/mikroC/def folder> [--xc8 <PIC/XC8/def folder>]
+                                             [--edc <DFP edc folder>] [--db <necto_db.db>]
 
 With --xc8 each graph also gets a symbols table, matching the XC8 config_words (symbolic FOSC = HSMP)
-to the mikroC values by their labels, so the same graph drives XC8 setups.
+to the mikroC values by their labels (the text before '; PFM ...' remarks when the wording differs), so
+the same graph drives XC8 setups. Parts that only have an XC8 definition are converted too: their numeric
+fuse values come from a mikroC part with the same XC8 oscillator settings, or, with --edc, from the
+part's EDC file (<MCU>.PIC) of the Microchip device family pack (edc/ folder of the .atpack, Apache-2.0).
 """
 
 import argparse
@@ -187,6 +192,24 @@ def normalize(label):
     return re.sub(r'\s+', ' ', re.sub(r'^[01X]{3,4}\s+', '', label.strip())).lower()
 
 
+def head(label):
+    """A label without the trailing remarks the mikroC and XC8 definitions word differently ('; PFM set to ...')."""
+    return re.split(r';|:\s|\(fosc', normalize(label))[0].strip(' ,')
+
+
+def match_label(numeric, label):
+    """The mikroC setting naming the same option as an XC8 label: same text, same head, or a unique prefix."""
+    found = [item for item in numeric if normalize(item['label']) == normalize(label)]
+    if found:
+        return found[0]  # several: the same option encoded more than once ('11XX', '0011'), any of them will do
+    found = [item for item in numeric if head(item['label']) == head(label)]
+    if len(found) == 1:
+        return found[0]
+    wanted = head(label)
+    found = [item for item in numeric if head(item['label']) and (wanted.startswith(head(item['label'])) or head(item['label']).startswith(wanted))]
+    return found[0] if len(found) == 1 else None
+
+
 def pll_state(label):
     return 'off' if re.search(r'disab|off|direct|not', label.lower()) else 'on'
 
@@ -210,7 +233,7 @@ def xc8_symbols(mcus, mikroc_fields, xc8_root):
                 if is_pll:
                     match = next((item for item in numeric if pll_state(item['label']) == pll_state(setting['label'])), None)
                 else:
-                    match = next((item for item in numeric if normalize(item['label']) == normalize(setting['label'])), None)
+                    match = match_label(numeric, setting['label'])
                 if not match:
                     continue
                 value = hexv(int(match['value'], 16))
@@ -222,10 +245,113 @@ def xc8_symbols(mcus, mikroc_fields, xc8_root):
     return {field: symbols for field, symbols in table.items() if symbols}
 
 
+EDC_PARTS = set()  # XC8-only parts whose fuse values came from a DFP EDC file
+OSC_KEYS = ('FOSC', 'OSC', 'FOSC0', 'FEXTOSC', 'RSTOSC', 'CPUDIV', 'PLLDIV') + PLL_FIELDS
+
+
+def xc8_oscillator_words(path):
+    words = json.loads(path.read_text(encoding='utf-8', errors='ignore')).get('config_words') or []
+    return {f'{word.get("label_group")}.{word["key"]}': word for word in words
+            if word.get('key') in OSC_KEYS and word.get('settings') and not word.get('hidden')}
+
+
+def donor_values(words, donor_words, donor_fields):
+    """field id -> {XC8 symbol: numeric value} of a mikroC part, through its own XC8 labels."""
+    table = {}
+    for field_id, word in donor_words.items():
+        numeric = donor_fields.get(field_id)
+        if not numeric:
+            continue
+        is_pll = word['key'] in PLL_FIELDS
+        for setting in word['settings']:
+            if is_pll:
+                match = next((item for item in numeric['settings'] if pll_state(item['label']) == pll_state(setting['label'])), None)
+            else:
+                match = match_label(numeric['settings'], setting['label'])
+            if match:
+                table.setdefault(field_id, {})[str(setting['value'])] = match['value']
+    return table
+
+
+def edc_fields(path, words):
+    """Numeric fuse fields from a DFP EDC file: each DCRFieldSemantic's value shifted to the field's position."""
+    text = path.read_text(encoding='utf-8', errors='ignore')
+    fields = {}
+    for field_id, word in words.items():
+        group, key = field_id.split('.', 1)
+        register = re.search(r'<edc:DCRDef\b[^>]*edc:cname="%s".*?</edc:DCRDef>' % re.escape(group), text, re.S)
+        if not register:
+            return None
+        position, found = 0, None
+        for item in re.finditer(r'<edc:AdjustPoint\b[^>]*edc:offset="([^"]+)"|<edc:DCRFieldDef\b([^>]*)>(.*?)</edc:DCRFieldDef>',
+                                register.group(0), re.S):
+            if item.group(1):
+                position += int(item.group(1), 0)
+                continue
+            attributes = dict(re.findall(r'edc:(\w+)="([^"]*)"', item.group(2)))
+            if attributes.get('cname') == key:
+                found = {semantic['cname']: int(re.search(r'==\s*(0x[0-9A-Fa-f]+|\d+)', semantic['when']).group(1), 0) << position
+                         for semantic in (dict(re.findall(r'edc:(\w+)="([^"]*)"', tag))
+                                          for tag in re.findall(r'<edc:DCRFieldSemantic\b[^>]*>', item.group(3)))
+                         if semantic.get('cname') and re.search(r'==\s*(0x[0-9A-Fa-f]+|\d+)', semantic.get('when', ''))}
+                break
+            position += int(attributes.get('nzwidth', '0'), 0)
+        if not found:
+            return None
+        settings = [{'value': hexv(found[str(setting['value'])]), 'label': setting['label']}
+                    for setting in word['settings'] if str(setting['value']) in found]
+        fields[field_id] = {'key': key, 'settings': settings}
+    return fields
+
+
+def xc8_only_fields(xc8_root, mikroc_fields, edc_root=None):
+    """Numeric fuse fields for parts that only have an XC8 definition (symbolic config_words).
+
+    The numbers come from a mikroC part (the donor) whose XC8 definition names the same oscillator fields:
+    a donor with the very same XC8 settings lends its mikroC fields unchanged (so the part joins the donor's
+    graph); otherwise each XC8 symbol takes the number the donor's mikroC definition gives the same symbol.
+    Parts without a donor covering every symbol get no fields (and are reported as skipped)."""
+    donors = {}
+    for mcu in mikroc_fields:
+        path = Path(xc8_root) / f'{mcu}.json'
+        if path.exists():
+            donors[mcu] = xc8_oscillator_words(path)
+    result = {}
+    for path in sorted(Path(xc8_root).glob('*.json')):
+        mcu = path.stem.upper()
+        if mcu in mikroc_fields:
+            continue
+        words = xc8_oscillator_words(path)
+        signature = json.dumps(words, sort_keys=True)
+        exact = next((donor for donor, donor_words in donors.items()
+                      if json.dumps(donor_words, sort_keys=True) == signature and set(mikroc_fields[donor]) >= set(words)), None)
+        if exact:
+            result[mcu] = {field_id: mikroc_fields[exact][field_id] for field_id in words}
+            continue
+        result[mcu] = {}
+        for donor, donor_words in donors.items():
+            if set(donor_words) != set(words):
+                continue
+            table = donor_values(words, donor_words, mikroc_fields[donor])
+            wanted = {(field_id, str(setting['value'])) for field_id, word in words.items() for setting in word['settings']
+                      if classify(setting['label']) or word['key'] in PLL_FIELDS}
+            if all(symbol in table.get(field_id, {}) for field_id, symbol in wanted):
+                result[mcu] = {field_id: {'key': word['key'], 'settings': [
+                    {'value': table[field_id][str(setting['value'])], 'label': setting['label']}
+                    for setting in word['settings'] if str(setting['value']) in table.get(field_id, {})]} for field_id, word in words.items()}
+                break
+        if not result[mcu] and edc_root and (Path(edc_root) / f'{path.stem}.PIC').exists():
+            result[mcu] = edc_fields(Path(edc_root) / f'{path.stem}.PIC', words) or {}
+            if result[mcu]:
+                EDC_PARTS.add(mcu)
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--defs', required=True, help='PIC/mikroC/def folder of core_packages')
     parser.add_argument('--xc8', help='PIC/XC8/def folder: add XC8 symbols to the graphs')
+    parser.add_argument('--edc', help='edc/ folder of Microchip DFPs: fuse values of XC8-only parts without a mikroC donor')
     parser.add_argument('--db', help='necto_db.db, for each part\'s maximum frequency (max_speed)')
     args = parser.parse_args()
 
@@ -254,6 +380,15 @@ def main():
         key = json.dumps([nodes, constraints])
         layouts.setdefault(key, []).append(mcu)
 
+    if args.xc8:
+        for mcu, fields in xc8_only_fields(args.xc8, mikroc_fields, args.edc).items():
+            mikroc_fields[mcu] = fields
+            body = convert(mcu, fields, 1) if fields else None
+            if not body:
+                skipped.append(mcu)
+                continue
+            layouts.setdefault(json.dumps(list(body)), []).append(mcu)
+
     out_dir = GRAPHS_ROOT / 'microchip_pic'
     for old in out_dir.glob('*.json') if out_dir.exists() else []:
         old.unlink()
@@ -269,7 +404,8 @@ def main():
         fosc = next(node['id'] for node in nodes if node.get('consumer'))
         graph = {
             'schema': 1, 'id': name, 'title': f'PIC oscillator fuses ({shown})', 'vendor': 'Microchip',
-            'source': 'NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets',
+            'source': 'NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets'
+                      + ('; fuse values of XC8-only parts from the Microchip DFP EDC files' if EDC_PARTS & set(mcus) else ''),
             'devices': [f'^{re.escape(mcu)}$' for mcu in mcus], 'fosc': fosc,
             'inputs': {'ext': {'label': 'External frequency', 'default': 8 * MHZ, 'min': 1, 'max': max_hz},
                        'intosc': {'label': 'Internal oscillator frequency', 'default': 8 * MHZ, 'min': 31000, 'max': max_hz}},
@@ -286,7 +422,7 @@ def main():
         write_graph(graph, f'microchip_pic/{name}.json')
         written += 1
     print(f'Wrote {written} PIC clock graphs for {sum(len(m) for m in layouts.values())} MCUs to {out_dir.relative_to(REPO_ROOT)}; '
-          f'skipped {len(skipped)} (USB CPUDIV/PLLDIV parts or fuses not understood): {", ".join(skipped[:10])}{" ..." if len(skipped) > 10 else ""}')
+          f'skipped {len(skipped)} (USB CPUDIV/PLLDIV parts, written by microchip_pic_usb_graphs.py, or fuses not understood): {", ".join(skipped[:10])}{" ..." if len(skipped) > 10 else ""}')
 
 
 if __name__ == '__main__':

@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "id": "pic_usb_pic18f24j50",
+  "title": "PIC18 USB clock tree (96 MHz PLL) (PIC18F24J50, PIC18F25J50, PIC18F26J50 and 9 more)",
+  "vendor": "Microchip",
+  "source": "PIC16F145x/PIC18 USB data sheets (Oscillator sections); fuse values from the Microchip DFP EDC files",
+  "devices": ["^PIC18F24J50$", "^PIC18F25J50$", "^PIC18F26J50$", "^PIC18F44J50$", "^PIC18F45J50$", "^PIC18F46J50$", "^PIC18LF24J50$", "^PIC18LF25J50$", "^PIC18LF26J50$", "^PIC18LF44J50$", "^PIC18LF45J50$", "^PIC18LF46J50$"],
+  "fosc": "sysclk",
+  "inputs": {
+    "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 48000000},
+    "intosc": {"label": "Internal oscillator frequency", "default": 8000000, "min": 31000, "max": 8000000}
+  },
+  "settings": ["CONFIG2L.FCMEN", "CONFIG2L.IESO"],
+  "nodes": [
+    {
+      "id": "ext",
+      "label": "External oscillator / clock",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "ext"
+    },
+    {
+      "id": "intosc",
+      "label": "Internal oscillator (set by your code)",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "input": "intosc",
+      "tooltip": "The internal oscillator frequency is chosen at runtime (OSCCON.IRCF): enter the frequency your code sets."
+    },
+    {
+      "id": "int8",
+      "label": "INTOSC 8 MHz (PLL)",
+      "kind": "source",
+      "x": 0,
+      "y": 4,
+      "options": [
+        {"id": "on", "label": "INTOSC 8 MHz (PLL)", "mul": 8000000}
+      ]
+    },
+    {
+      "id": "pllsrc",
+      "label": "PLL input",
+      "kind": "mux",
+      "x": 1,
+      "y": 0,
+      "options": [
+        {"id": "ext", "label": "External oscillator", "from": "ext", "when": "sel.primary != 'intoscpll' && sel.primary != 'intoscpllo'"},
+        {"id": "int8", "label": "INTOSC 8 MHz", "from": "int8", "when": "sel.primary == 'intoscpll' || sel.primary == 'intoscpllo'"}
+      ]
+    },
+    {
+      "id": "prediv",
+      "label": "PLL prescaler (PLLDIV)",
+      "kind": "divider",
+      "x": 2,
+      "y": 0,
+      "tooltip": "Divides the oscillator to the 4 MHz the 96 MHz PLL needs.",
+      "options": [
+        {"id": "1", "label": "/1", "from": "pllsrc", "div": 1, "set": {"CONFIG1L.PLLDIV": "0000000E"}},
+        {"id": "10", "label": "/10", "from": "pllsrc", "div": 10, "set": {"CONFIG1L.PLLDIV": "00000002"}},
+        {"id": "12", "label": "/12", "from": "pllsrc", "div": 12, "set": {"CONFIG1L.PLLDIV": "00000000"}},
+        {"id": "2", "label": "/2", "from": "pllsrc", "div": 2, "set": {"CONFIG1L.PLLDIV": "0000000C"}},
+        {"id": "3", "label": "/3", "from": "pllsrc", "div": 3, "set": {"CONFIG1L.PLLDIV": "0000000A"}},
+        {"id": "4", "label": "/4", "from": "pllsrc", "div": 4, "set": {"CONFIG1L.PLLDIV": "00000008"}},
+        {"id": "5", "label": "/5", "from": "pllsrc", "div": 5, "set": {"CONFIG1L.PLLDIV": "00000006"}},
+        {"id": "6", "label": "/6", "from": "pllsrc", "div": 6, "set": {"CONFIG1L.PLLDIV": "00000004"}}
+      ]
+    },
+    {
+      "id": "pll",
+      "label": "96 MHz PLL /2",
+      "kind": "multiplier",
+      "x": 3,
+      "y": 0,
+      "tooltip": "The PLL runs once CFGPLLEN is ON or your code sets OSCTUNE.PLLEN.",
+      "options": [
+        {"id": "12", "label": "x24 /2", "from": "prediv", "mul": 12}
+      ]
+    },
+    {
+      "id": "primary",
+      "label": "Oscillator (OSC)",
+      "kind": "mux",
+      "x": 4,
+      "y": 1,
+      "options": [
+        {"id": "ec", "label": "EC (CLKO-RA6), USB-EC", "set": {"CONFIG2L.OSC": "00000006"}, "from": "ext"},
+        {"id": "ecpll", "label": "EC+PLL (CLKO-RA6), USB-EC+PLL", "set": {"CONFIG2L.OSC": "00000007"}, "from": "pll", "keeps": ["ext"]},
+        {"id": "hs", "label": "HS, USB-HS", "set": {"CONFIG2L.OSC": "00000004"}, "from": "ext"},
+        {"id": "hspll", "label": "HS+PLL, USB-HS+PLL", "set": {"CONFIG2L.OSC": "00000005"}, "from": "pll", "keeps": ["ext"]},
+        {"id": "intosc", "label": "INTOSC", "set": {"CONFIG2L.OSC": "00000000"}, "from": "intosc"},
+        {"id": "intosco", "label": "INTOSCO (CLKO-RA6)", "set": {"CONFIG2L.OSC": "00000001"}, "from": "intosc"},
+        {"id": "intoscpll", "label": "INTOSCPLL", "set": {"CONFIG2L.OSC": "00000002"}, "from": "pll", "keeps": ["int8"]},
+        {"id": "intoscpllo", "label": "INTOSCPLLO (CLKO-RA6)", "set": {"CONFIG2L.OSC": "00000003"}, "from": "pll", "keeps": ["int8"]}
+      ]
+    },
+    {
+      "id": "sysclk",
+      "label": "CPU clock (CPUDIV)",
+      "kind": "divider",
+      "x": 5,
+      "y": 1,
+      "options": [
+        {"id": "1", "label": "/1", "from": "primary", "div": 1, "set": {"CONFIG1H.CPUDIV": "00000003"}},
+        {"id": "2", "label": "/2", "from": "primary", "div": 2, "set": {"CONFIG1H.CPUDIV": "00000002"}},
+        {"id": "3", "label": "/3", "from": "primary", "div": 3, "set": {"CONFIG1H.CPUDIV": "00000001"}},
+        {"id": "6", "label": "/6", "from": "primary", "div": 6, "set": {"CONFIG1H.CPUDIV": "00000000"}}
+      ],
+      "bypass": "sel.primary == 'intosc' || sel.primary == 'intosco'",
+      "tooltip": "CPUDIV divides the primary oscillator and the PLL, not the internal oscillator.",
+      "max": 48000000,
+      "consumer": true
+    },
+    {
+      "id": "fcy",
+      "label": "Instruction clock (Fosc/4)",
+      "kind": "output",
+      "x": 6,
+      "y": 1,
+      "options": [
+        {"id": "4", "label": "/4", "from": "sysclk", "div": 4}
+      ]
+    }
+  ],
+  "constraints": [
+    {"expr": "sel.primary != 'hs' || (in.ext >= 4000000)", "message": "HS: the external frequency must be 4 MHz or more."},
+    {"expr": "sel.primary != 'hspll' || (in.ext >= 4000000)", "message": "HS+PLL: the external frequency must be 4 MHz or more."},
+    {"expr": "!(sel.primary == 'ecpll' || sel.primary == 'hspll' || sel.primary == 'intoscpll' || sel.primary == 'intoscpllo') || !(1) || (f.prediv >= 3990000 && f.prediv <= 4010000)", "message": "The 96 MHz PLL needs 4 MHz: choose PLLDIV so that the oscillator / PLLDIV is 4 MHz."}
+  ],
+  "symbols": {
+    "CONFIG1H.CPUDIV": {"OSC1": "00000003", "OSC2_PLL2": "00000002", "OSC3_PLL3": "00000001", "OSC4_PLL6": "00000000"},
+    "CONFIG1L.PLLDIV": {"1": "0000000E", "10": "00000002", "12": "00000000", "2": "0000000C", "3": "0000000A", "4": "00000008", "5": "00000006", "6": "00000004"},
+    "CONFIG2L.OSC": {"EC": "00000006", "ECPLL": "00000007", "HS": "00000004", "HSPLL": "00000005", "INTOSC": "00000000", "INTOSCO": "00000001", "INTOSCPLL": "00000002", "INTOSCPLLO": "00000003"}
+  }
+}

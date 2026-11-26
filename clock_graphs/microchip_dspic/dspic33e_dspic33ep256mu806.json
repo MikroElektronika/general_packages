@@ -1,0 +1,150 @@
+{
+  "schema": 1,
+  "id": "dspic33e_dspic33ep256mu806",
+  "title": "dsPIC33E/PIC24E clock tree (DSPIC33EP256MU806, DSPIC33EP256MU810, DSPIC33EP256MU814 and 9 more)",
+  "vendor": "Microchip",
+  "source": "dsPIC30F/dsPIC33/PIC24 family reference manuals (Oscillator sections) and data sheets; fuse values from the Microchip DFP EDC files",
+  "devices": ["^DSPIC33EP256MU806$", "^DSPIC33EP256MU810$", "^DSPIC33EP256MU814$", "^DSPIC33EP512GP806$", "^DSPIC33EP512MC806$", "^DSPIC33EP512MU810$", "^DSPIC33EP512MU814$", "^PIC24EP256GU810$", "^PIC24EP256GU814$", "^PIC24EP512GP806$", "^PIC24EP512GU810$", "^PIC24EP512GU814$"],
+  "fosc": "sysclk",
+  "inputs": {
+    "posc": {"label": "POSC frequency", "default": 8000000, "min": 1, "max": 140000000},
+    "pll": {"label": "PLL output (Fosc) set by your code", "default": 140000000, "min": 15000000, "max": 140000000}
+  },
+  "settings": ["FOSCSEL.IESO", "FOSC.OSCIOFNC", "FOSC.FCKSM", "FWDT.PLLKEN"],
+  "nodes": [
+    {
+      "id": "frc",
+      "label": "FRC 7.37 MHz",
+      "kind": "source",
+      "x": 0,
+      "y": 0,
+      "options": [
+        {"id": "on", "label": "FRC 7.37 MHz", "mul": 7370000}
+      ]
+    },
+    {
+      "id": "posc",
+      "label": "Primary oscillator (POSC)",
+      "kind": "source",
+      "x": 0,
+      "y": 1,
+      "input": "posc",
+      "tooltip": "Crystal (XT up to 10 MHz, HS above) or external clock (EC); POSCMD follows."
+    },
+    {
+      "id": "poscmode",
+      "label": "POSC type",
+      "kind": "mux",
+      "x": 0,
+      "y": 2,
+      "default": "crystal",
+      "options": [
+        {"id": "crystal", "label": "Crystal (XT/HS)", "mul": 1},
+        {"id": "ec", "label": "External clock (EC)", "mul": 1}
+      ]
+    },
+    {
+      "id": "sosc",
+      "label": "SOSC 32.768 kHz",
+      "kind": "source",
+      "x": 0,
+      "y": 3,
+      "options": [
+        {"id": "on", "label": "SOSC 32.768 kHz", "mul": 32768}
+      ]
+    },
+    {
+      "id": "lprc",
+      "label": "LPRC 32.768 kHz",
+      "kind": "source",
+      "x": 0,
+      "y": 4,
+      "options": [
+        {"id": "on", "label": "LPRC 32.768 kHz", "mul": 32768}
+      ]
+    },
+    {
+      "id": "pll",
+      "label": "PLL output (your code)",
+      "kind": "source",
+      "x": 2,
+      "y": 0,
+      "input": "pll",
+      "min": 15000000,
+      "max": 140000000,
+      "tooltip": "Fosc = Fin x M / (N1 x N2), programmed at runtime (CLKDIV.PLLPRE = N1, PLLFBD = M, CLKDIV.PLLPOST = N2). Keep Fin / N1 at 0.8-8 MHz and the VCO (Fin x M / N1) in its data sheet range."
+    },
+    {
+      "id": "frcdiv16",
+      "label": "FRC/16",
+      "kind": "divider",
+      "x": 1,
+      "y": 5,
+      "options": [
+        {"id": "16", "label": "/16", "from": "frc", "div": 16}
+      ]
+    },
+    {
+      "id": "frcdivn",
+      "label": "FRCDIV (your code)",
+      "kind": "divider",
+      "x": 1,
+      "y": 6,
+      "default": "1",
+      "tooltip": "CLKDIV.FRCDIV postscaler, reset 1:1.",
+      "options": [
+        {"id": "1", "label": "/1", "from": "frc", "div": 1},
+        {"id": "2", "label": "/2", "from": "frc", "div": 2},
+        {"id": "4", "label": "/4", "from": "frc", "div": 4},
+        {"id": "8", "label": "/8", "from": "frc", "div": 8},
+        {"id": "16", "label": "/16", "from": "frc", "div": 16},
+        {"id": "32", "label": "/32", "from": "frc", "div": 32},
+        {"id": "64", "label": "/64", "from": "frc", "div": 64},
+        {"id": "256", "label": "/256", "from": "frc", "div": 256}
+      ]
+    },
+    {
+      "id": "sysclk",
+      "label": "Fosc (FNOSC)",
+      "kind": "mux",
+      "x": 3,
+      "y": 1,
+      "max": 140000000,
+      "consumer": true,
+      "options": [
+        {"id": "frc", "label": "FRC (FRC)", "from": "frc", "set": {"FOSCSEL.FNOSC": "00000000"}},
+        {"id": "frcpll", "label": "FRC + PLL (FRCPLL)", "from": "pll", "set": {"FOSCSEL.FNOSC": "00000001"}, "keeps": ["frc"]},
+        {"id": "pri", "label": "POSC (PRI)", "from": "posc", "set": {"FOSCSEL.FNOSC": "00000002"}},
+        {"id": "pripll", "label": "POSC + PLL (PRIPLL)", "from": "pll", "set": {"FOSCSEL.FNOSC": "00000003"}, "keeps": ["posc"]},
+        {"id": "sosc", "label": "SOSC (SOSC)", "from": "sosc", "set": {"FOSCSEL.FNOSC": "00000004"}},
+        {"id": "lprc", "label": "LPRC (LPRC)", "from": "lprc", "set": {"FOSCSEL.FNOSC": "00000005"}},
+        {"id": "frcdiv16", "label": "FRC/16 (FRCDIV16)", "from": "frcdiv16", "set": {"FOSCSEL.FNOSC": "00000006"}},
+        {"id": "frcdivn", "label": "FRC/FRCDIV (FRCDIVN)", "from": "frcdivn", "set": {"FOSCSEL.FNOSC": "00000007"}}
+      ]
+    },
+    {
+      "id": "fcy",
+      "label": "Fcy (Fosc/2)",
+      "kind": "output",
+      "x": 4,
+      "y": 1,
+      "options": [
+        {"id": "2", "label": "/2", "from": "sysclk", "div": 2}
+      ]
+    }
+  ],
+  "derive": [
+    {"field": "FOSC.POSCMD", "cases": [{"when": "!(sel.sysclk == 'pri' || sel.sysclk == 'pripll')", "value": "00000003"}, {"when": "sel.poscmode == 'ec'", "value": "00000000"}, {"when": "in.posc <= 10000000", "value": "00000001"}], "default": "00000002"}
+  ],
+  "constraints": [
+    {"expr": "!(sel.sysclk == 'pri' || sel.sysclk == 'pripll') || sel.poscmode == 'ec' || (in.posc >= 3500000 && in.posc <= 25000000)", "message": "A primary crystal must be 3.5 MHz - 25 MHz."},
+    {"expr": "sel.sysclk != 'pripll' || in.posc >= 1600000", "message": "The PLL needs at least 1.6 MHz at its input (0.8 MHz after N1 = 2)."}
+  ],
+  "variants": [
+    {"devices": ["^DSPIC33EP256MU806$", "^DSPIC33EP256MU810$", "^DSPIC33EP256MU814$", "^DSPIC33EP512GP806$", "^DSPIC33EP512MC806$", "^DSPIC33EP512MU810$", "^DSPIC33EP512MU814$", "^PIC24EP256GU810$", "^PIC24EP256GU814$", "^PIC24EP512GP806$", "^PIC24EP512GU810$", "^PIC24EP512GU814$"], "limits": {"sysclk": {"max": 120000000}, "pll": {"max": 120000000}}}
+  ],
+  "symbols": {
+    "FOSC.POSCMD": {"EC": "00000000", "HS": "00000002", "NONE": "00000003", "XT": "00000001"},
+    "FOSCSEL.FNOSC": {"FRC": "00000000", "FRCDIV16": "00000006", "FRCDIVN": "00000007", "FRCPLL": "00000001", "LPRC": "00000005", "PRI": "00000002", "PRIPLL": "00000003", "SOSC": "00000004"}
+  }
+}

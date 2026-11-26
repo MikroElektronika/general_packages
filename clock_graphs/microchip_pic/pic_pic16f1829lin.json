@@ -68,7 +68,7 @@
     {"expr": "sel.source != 'xt_oscillator_crystal_resonator_' || (in.ext >= 100000 && in.ext <= 4000000)", "message": "XT Oscillator: the external frequency must be 0.1-4 MHz."}
   ],
   "symbols": {
-    "CONFIG1.FOSC": {"INTOSC": "00000004", "HS": "00000002", "XT": "00000001", "LP": "00000000"},
+    "CONFIG1.FOSC": {"ECH": "00000007", "ECM": "00000006", "ECL": "00000005", "INTOSC": "00000004", "EXTRC": "00000003", "HS": "00000002", "XT": "00000001", "LP": "00000000"},
     "CONFIG2.PLLEN": {"ON": "00000100", "OFF": "00000000"}
   }
 }

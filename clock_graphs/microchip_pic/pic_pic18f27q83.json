@@ -1,10 +1,10 @@
 {
   "schema": 1,
   "id": "pic_pic18f27q83",
-  "title": "PIC oscillator fuses (PIC18F27Q83, PIC18F27Q84, PIC18F47Q83, PIC18F47Q84 and 3 more)",
+  "title": "PIC oscillator fuses (PIC18F27Q83, PIC18F27Q84, PIC18F47Q83, PIC18F47Q84 and 17 more)",
   "vendor": "Microchip",
   "source": "NECTO mikroC PIC definitions (oscillator configuration fuses), PIC datasheets",
-  "devices": ["^PIC18F27Q83$", "^PIC18F27Q84$", "^PIC18F47Q83$", "^PIC18F47Q84$", "^PIC18F57Q43$", "^PIC18F57Q83$", "^PIC18F57Q84$"],
+  "devices": ["^PIC18F27Q83$", "^PIC18F27Q84$", "^PIC18F47Q83$", "^PIC18F47Q84$", "^PIC18F57Q43$", "^PIC18F57Q83$", "^PIC18F57Q84$", "^PIC18F25Q43$", "^PIC18F26Q43$", "^PIC18F26Q83$", "^PIC18F26Q84$", "^PIC18F27Q43$", "^PIC18F45Q43$", "^PIC18F46Q43$", "^PIC18F46Q83$", "^PIC18F46Q84$", "^PIC18F47Q43$", "^PIC18F55Q43$", "^PIC18F56Q43$", "^PIC18F56Q83$", "^PIC18F56Q84$"],
   "fosc": "source",
   "inputs": {
     "ext": {"label": "External frequency", "default": 8000000, "min": 1, "max": 64000000},

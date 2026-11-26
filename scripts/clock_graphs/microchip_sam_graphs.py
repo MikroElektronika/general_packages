@@ -86,7 +86,7 @@ SAM_X7 = sam(
 
 # SAM G51/G53/G54/G55: PLLA (and PLLB on G55) multiply the 32 kHz slow clock: (MUL + 1) x SLCK.
 SAM_G5 = sam(
-    'sam_g5x', 'SAM G51/G53/G54/G55 clock tree', 'SAM G51/G53/G54/G55 datasheets, PMC', ['^ATSAMG5[1345]'], 'hclk', xtal_input(12 * MHZ),
+    'sam_g5x', 'SAM G51/G53/G54/G55 clock tree', 'SAM G51/G53/G54/G55 datasheets, PMC', ['^ATSAMG5[1345]', '^SAMG51'], 'hclk', xtal_input(12 * MHZ),
     [
         *main_clock([8 * MHZ, 16 * MHZ, 24 * MHZ]),
         slow_clock(4),
@@ -107,7 +107,7 @@ SAM_G5 = sam(
     settings=['EEFC_FMR.FWS', 'CKGR_MOR.MOSCXTBY', 'CKGR_MOR.CFDEN'],
     variants=[
         # G51: MULA is 0..1463 (PLLA from the slow clock up to 48 MHz).
-        {'devices': ['^ATSAMG51'], 'limits': {'plla': {'max': 48 * MHZ}, 'hclk': {'max': 48 * MHZ}}},
+        {'devices': ['^(AT)?SAMG51'], 'limits': {'plla': {'max': 48 * MHZ}, 'hclk': {'max': 48 * MHZ}}},
         {'devices': ['^ATSAMG53'], 'limits': {'plla': {'max': 48 * MHZ}, 'hclk': {'max': 48 * MHZ}}},
         {'devices': ['^ATSAMG54'], 'limits': {'plla': {'max': 96 * MHZ}, 'hclk': {'max': 96 * MHZ}}},
     ])
